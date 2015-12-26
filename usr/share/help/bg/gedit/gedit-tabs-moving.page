@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Даниел Нийл</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Местене и подреждане на раздели</title>
+  <p>Разделите в <app>gedit</app> могат да се разместват, като това улеснява работата ви с файлове. Разделите могат да се подреждат в същия прозорец, да се местят извън <app>gedit</app> (като се създаде нов прозорец на <app>gedit</app>) или да се местят в друг прозорец.</p>
+
+  <section id="tabs-change-order">
+    <title>Подреждане на разделите в прозореца на gedit</title>
+
+    <p>За да подредите разделите в прозореца:</p>
+
+    <steps>
+      <item>
+        <p>Натиснете и задръжте бутона на мишката върху раздел.</p>
+      </item>
+      <item>
+        <p>Move the tab to the desired position among the other tab.</p>
+      </item>
+      <item>
+        <p>Отпуснете бутона на мишката.</p>
+      </item>
+    </steps>
+
+    <p>Разделът ще бъде поставен до най-близката позиция, на която го пуснете измежду другите раздели.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Преместване на раздел, създаване на нов прозорец с gedit</title>
+    <p>To create a new window from an existing tab:</p>
+
+    <steps>
+      <item>
+        <p>Натиснете и задръжте бутона на мишката върху раздел.</p>
+      </item>
+      <item>
+        <p>Провлачете раздела извън прозореца на <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Отпуснете бутона на мишката.</p>
+      </item>
+    </steps>
+
+    <p>или натиснете <guiseq><gui>Документи</gui><gui>Преминаване към нов прозорец</gui></guiseq></p>
+
+    <note style="tip">
+      <p>За да преместите раздел в нов прозорец, когато <app>gedit</app> е максимизиран, провлечете раздела върху лентата в горната част на екрана.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Преместване на раздел в друг прозорец на gedit</title>
+
+    <p>Ако искате да преместите раздел в друг прозорец:</p>
+
+    <steps>
+      <item>
+        <p>Натиснете и задръжте бутона на мишката върху раздел.</p>
+      </item>
+      <item>
+        <p>Drag the tab to the new window.</p>
+      </item>
+      <item>
+        <p>Place it beside other tabs in the new window.</p>
+      </item>
+      <item>
+        <p>Отпуснете бутона на мишката.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>You may find it easier to move a tab from one window to another by
+      dragging the tab to the <gui>Activities</gui> hot-corner of
+      <gui>GNOME Shell</gui>. This will reveal each of the open
+      <app>gedit</app> windows. You can then release the tab on the
+      desired <app>gedit</app> window.</p>
+    </note>
+
+    <p>See the <link xref="gedit-shortcut-keys">tab-related shortcut
+    keys</link> table to make it easier to manage your tabs.</p>
+
+  </section>
+
+</page>

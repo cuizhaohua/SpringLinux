@@ -1,0 +1,430 @@
+
+Start-Date: 2014-08-01  20:19:58
+Commandline: /usr/bin/apt-get -qq -y install locales makedev
+Install: locales:armhf (2.13-38+deb7u3), makedev:armhf (2.3.1-92)
+End-Date: 2014-08-01  20:20:58
+
+Start-Date: 2014-08-01  20:22:08
+Commandline: /usr/bin/apt-get -qq -y install u-boot-tools makedev libfuse2 libc6 libnl-3-dev bluetooth libbluetooth3 libbluetooth-dev lirc alsa-utils netselect-apt sysfsutils hddtemp bc figlet toilet screen hdparm libfuse2 ntfs-3g bash-completion lsof sudo git hostapd dosfstools htop openssh-server ca-certificates module-init-tools dhcp3-client udev ifupdown iproute iputils-ping ntp rsync usbutils pciutils wireless-tools wpasupplicant procps parted cpufrequtils unzip bridge-utils
+Install: libkeyutils1:armhf (1.5.5-3, automatic), libpci3:armhf (3.1.9-6, automatic), dmsetup:armhf (1.02.74-8, automatic), libedit2:armhf (2.11-20080614-5, automatic), lirc:armhf (0.9.0~pre1-1), libkrb5-3:armhf (1.10.1+dfsg-5+deb7u1, automatic), hdparm:armhf (9.39-1+b1), libkrb5support0:armhf (1.10.1+dfsg-5+deb7u1, automatic), libnl-3-200:armhf (3.2.7-4, automatic), netselect-apt:armhf (0.3.ds1-25), libbluetooth-dev:armhf (4.99-2), mime-support:armhf (3.52-1, automatic), libwrap0:armhf (7.6.q-24, automatic), figlet:armhf (2.2.5-2), libcaca0:armhf (0.99.beta18-1, automatic), bluetooth:armhf (4.99-2), lsof:armhf (4.86+dfsg-1), wireless-tools:armhf (30~pre9-8), libclass-isa-perl:armhf (0.36-3, automatic), bash-completion:armhf (2.0-1), libftdi1:armhf (0.20-1+b1, automatic), libswitch-perl:armhf (2.16-2, automatic), libdbus-1-3:armhf (1.6.8-1+deb7u3, automatic), unzip:armhf (6.0-8), perl:armhf (5.14.2-21+deb7u1, automatic), libopts25:armhf (5.12-0.1, automatic), libdbus-glib-1-2:armhf (0.100.2-1, automatic), netselect:armhf (0.3.ds1-25, automatic), libcap2:armhf (2.22-1.2, automatic), git-man:armhf (1.7.10.4-1+wheezy1, automatic), liblircclient0:armhf (0.9.0~pre1-1, automatic), bridge-utils:armhf (1.5-6), libc-dev-bin:armhf (2.13-38+deb7u3, automatic), screen:armhf (4.1.0~20120320gitdb59704-7), bc:armhf (1.06.95-2), dosfstools:armhf (3.0.13-1), python-dbus-dev:armhf (1.1.1-1, automatic), libpcre3:armhf (8.30-5, automatic), libcpufreq0:armhf (008-1, automatic), libusb-1.0-0:armhf (1.0.11-1, automatic), liberror-perl:armhf (0.17-1, automatic), module-init-tools:armhf (9-3), linux-libc-dev:armhf (3.2.60-1+deb7u3, automatic), libbsd0:armhf (0.4.2-1, automatic), bluez:armhf (4.99-2, automatic), python2.7:armhf (2.7.3-6+deb7u2, automatic), libcurl3-gnutls:armhf (7.26.0-1+wheezy9, automatic), libparted0debian1:armhf (2.3-12, automatic), python-minimal:armhf (2.7.3-4+deb7u1, automatic), parted:armhf (2.3-12), libexpat1:armhf (2.1.0-1+deb7u1, automatic), libdevmapper1.02.1:armhf (1.02.74-8, automatic), libk5crypto3:armhf (1.10.1+dfsg-5+deb7u1, automatic), libfuse2:armhf (2.9.0-2+deb7u1), libpcsclite1:armhf (1.8.4-1+deb7u1, automatic), u-boot-tools:armhf (2012.04.01-2), openssh-client:armhf (6.0p1-4+deb7u2, automatic), libffi5:armhf (3.0.10-3+b1, automatic), python2.7-minimal:armhf (2.7.3-6+deb7u2, automatic), hostapd:armhf (1.0-3+b1), python-gi:armhf (3.2.2-2, automatic), dbus:armhf (1.6.8-1+deb7u3, automatic), git:armhf (1.7.10.4-1+wheezy1), python:armhf (2.7.3-4+deb7u1, automatic), sudo:armhf (1.8.5p2-1+nmu1), pciutils:armhf (3.1.9-6), gir1.2-glib-2.0:armhf (1.32.1-1, automatic), libssh2-1:armhf (1.4.2-1.1, automatic), alsa-utils:armhf (1.0.25-4), ca-certificates:armhf (20130119), rsync:armhf (3.0.9-4), python-dbus:armhf (1.1.1-1, automatic), libgirepository-1.0-1:armhf (1.32.1-1, automatic), libsamplerate0:armhf (0.1.8-5, automatic), libbluetooth3:armhf (4.99-2), hddtemp:armhf (0.3-beta15-52), ntp:armhf (4.2.6.p5+dfsg-2), libasound2:armhf (1.0.25-4, automatic), libiw30:armhf (30~pre9-8, automatic), perl-modules:armhf (5.14.2-21+deb7u1, automatic), libsystemd-login0:armhf (44-11+deb7u4, automatic), libcap-ng0:armhf (0.6.6-2, automatic), wpasupplicant:armhf (1.0-3+b1), libldap-2.4-2:armhf (2.4.31-1+nmu2, automatic), usbutils:armhf (005-3), toilet-fonts:armhf (0.3-1, automatic), libc6-dev:armhf (2.13-38+deb7u3, automatic), libglib2.0-0:armhf (2.33.12+really2.32.4-5, automatic), libsysfs2:armhf (2.1.0+repack-2, automatic), fuse:armhf (2.9.0-2+deb7u1, automatic), libsasl2-2:armhf (2.1.25.dfsg1-6+deb7u1, automatic), libnl-3-dev:armhf (3.2.7-4), openssl:armhf (1.0.1e-2+deb7u11, automatic), libgssapi-krb5-2:armhf (1.10.1+dfsg-5+deb7u1, automatic), libnl-genl-3-200:armhf (3.2.7-4, automatic), librtmp0:armhf (2.4+20111222.git4e06e21-1, automatic), toilet:armhf (0.3-1), htop:armhf (1.0.1-1), openssh-server:armhf (6.0p1-4+deb7u2), cpufrequtils:armhf (008-1), libreadline5:armhf (5.2+dfsg-2~deb7u1, automatic), ntfs-3g:armhf (2012.1.15AR.5-2.1), sysfsutils:armhf (2.1.0+repack-2)
+Upgrade: libc-bin:armhf (2.13-38+deb7u2, 2.13-38+deb7u3), libc6:armhf (2.13-38+deb7u2, 2.13-38+deb7u3)
+End-Date: 2014-08-01  20:27:03
+
+Start-Date: 2014-08-16  09:39:09
+Commandline: apt-get install wifi-radar
+Install: libgtk2.0-common:armhf (2.24.10-2, automatic), libatk1.0-0:armhf (2.4.0-2, automatic), menu:armhf (2.1.46+b1, automatic), ttf-dejavu-core:armhf (2.33-3, automatic), libxfixes3:armhf (5.0-4+deb7u1, automatic), shared-mime-info:armhf (1.0-1+b1, automatic), python-support:armhf (1.0.15, automatic), libjpeg8:armhf (8d-1+deb7u1, automatic), libpixman-1-0:armhf (0.26.0-4+deb7u1, automatic), libx11-data:armhf (1.5.0-1+deb7u1, automatic), libgfortran3:armhf (4.7.2-5, automatic), libavahi-common-data:armhf (0.6.31-2, automatic), libcairo2:armhf (1.12.2-3, automatic), libfontconfig1:armhf (2.9.0-7.1, automatic), fontconfig-config:armhf (2.9.0-7.1, automatic), libjbig0:armhf (2.0-2+deb7u1), libgdk-pixbuf2.0-common:armhf (2.26.1-1, automatic), libxcb-render0:armhf (1.8.1-2+deb7u1, automatic), libdatrie1:armhf (0.2.5-3, automatic), fontconfig:armhf (2.9.0-7.1, automatic), libxcb1:armhf (1.8.1-2+deb7u1, automatic), python-numpy:armhf (1.6.2-1.2, automatic), libxau6:armhf (1.0.7-1, automatic), libblas3:armhf (1.2.20110419-5, automatic), libpango1.0-0:armhf (1.30.0-1, automatic), libcups2:armhf (1.5.3-5+deb7u4, automatic), libxft2:armhf (2.3.1-1, automatic), libxcomposite1:armhf (0.4.3-2+b1, automatic), libxdmcp6:armhf (1.1.1-1, automatic), libthai0:armhf (0.1.18-2, automatic), libxml2:armhf (2.8.0+dfsg1-7+wheezy1, automatic), libatk1.0-data:armhf (2.4.0-2, automatic), libxrender1:armhf (0.9.7-1+deb7u1, automatic), ucf:armhf (3.0025+nmu3, automatic), libtiff4:armhf (3.9.6-11, automatic), libjasper1:armhf (1.900.1-13, automatic), libpng12-0:armhf (1.2.49-1, automatic), libfreetype6:armhf (2.4.9-1.1, automatic), libthai-data:armhf (0.1.18-2, automatic), libgdk-pixbuf2.0-0:armhf (2.26.1-1, automatic), libavahi-client3:armhf (0.6.31-2, automatic), wifi-radar:armhf (2.0.s08+dfsg-1.1), libx11-6:armhf (1.5.0-1+deb7u1, automatic), liblapack3:armhf (3.4.1+dfsg-1+deb70u1, automatic), libxdamage1:armhf (1.1.3-2+b1, automatic), python-gobject-2:armhf (2.28.6-10, automatic), libxi6:armhf (1.6.1-1+deb7u1, automatic), libxcursor1:armhf (1.1.13-1+deb7u1, automatic), libxcb-shm0:armhf (1.8.1-2+deb7u1, automatic), libavahi-common3:armhf (0.6.31-2, automatic), libxinerama1:armhf (1.1.2-1+deb7u1, automatic), libxext6:armhf (1.3.1-2+deb7u1, automatic), libxrandr2:armhf (1.3.2-2+deb7u1, automatic), python-gtk2:armhf (2.24.0-3+b1, automatic), python-cairo:armhf (1.8.8-1, automatic), libgtk2.0-0:armhf (2.24.10-2, automatic)
+End-Date: 2014-08-16  09:40:17
+
+Start-Date: 2014-08-16  10:20:58
+Install: rfkill:armhf (0.4-1)
+End-Date: 2014-08-16  10:21:02
+
+Start-Date: 2010-01-01  01:21:10
+Commandline: apt-get upgrade
+Upgrade: libkeyutils1:armhf (1.5.5-3, 1.5.9-5+b1), libpci3:armhf (3.1.9-6, 3.2.1-3), libgtk2.0-common:armhf (2.24.10-2, 2.24.25-3), libedit2:armhf (2.11-20080614-5, 3.1-20140620-2), lirc:armhf (0.9.0~pre1-1, 0.9.0~pre1-1.2), libkrb5-3:armhf (1.10.1+dfsg-5+deb7u1, 1.12.1+dfsg-19), netcat-traditional:armhf (1.10-40, 1.10-41), libpopt0:armhf (1.16-7, 1.16-10), nano:armhf (2.2.6-1+b2, 2.2.6-3), libusb-0.1-4:armhf (0.1.12-20+nmu1, 0.1.12-25), hdparm:armhf (9.39-1+b1, 9.43-2), libxfixes3:armhf (5.0-4+deb7u1, 5.0.1-2+b2), libncurses5:armhf (5.9-10, 5.9+20140913-1+b1), libc-bin:armhf (2.13-38+deb7u3, 2.19-18+deb8u1), libkrb5support0:armhf (1.10.1+dfsg-5+deb7u1, 1.12.1+dfsg-19), vim-common:armhf (7.3.547-7, 7.4.488-7), libnl-3-200:armhf (3.2.7-4, 3.2.24-2), traceroute:armhf (2.0.18-3, 2.0.20-2+b1), base-files:armhf (7.1wheezy6, 8+deb8u2), libmount1:armhf (2.20.1-5.3, 2.25.2-6), netselect-apt:armhf (0.3.ds1-25, 0.3.ds1-26), libblkid1:armhf (2.20.1-5.3, 2.25.2-6), mime-support:armhf (3.52-1, 3.58), libidn11:armhf (1.25-2, 1.29-1+b2), libwrap0:armhf (7.6.q-24, 7.6.q-25), libcaca0:armhf (0.99.beta18-1, 0.99.beta19-2), bluetooth:armhf (4.99-2, 5.23-2), libacl1:armhf (2.2.51-8, 2.2.52-2), libcomerr2:armhf (1.42.5-1.1, 1.42.12-1.1), libselinux1:armhf (2.1.9-5, 2.3-2), whiptail:armhf (0.52.14-11.1, 0.52.17-1+b1), libclass-isa-perl:armhf (0.36-3, 0.36-5), bash-completion:armhf (2.0-1, 2.1-4), libpixman-1-0:armhf (0.26.0-4+deb7u1, 0.32.6-3), libx11-data:armhf (1.5.0-1+deb7u1, 1.6.2-3), ncurses-base:armhf (5.9-10, 5.9+20140913-1), libftdi1:armhf (0.20-1+b1, 0.20-2), libswitch-perl:armhf (2.16-2, 2.17-2), libbz2-1.0:armhf (1.0.6-4, 1.0.6-7+b3), libavahi-common-data:armhf (0.6.31-2, 0.6.31-5), libdbus-1-3:armhf (1.6.8-1+deb7u3, 1.8.20-0+deb8u1), install-info:armhf (4.13a.dfsg.1-10, 5.2.0.dfsg.1-6), unzip:armhf (6.0-8, 6.0-16), libnfnetlink0:armhf (1.0.0-1.1, 1.0.1-3), libopts25:armhf (5.12-0.1, 5.18.4-3), libtinfo5:armhf (5.9-10, 5.9+20140913-1+b1), diffutils:armhf (3.2-6, 3.3-1+b1), libdbus-glib-1-2:armhf (0.100.2-1, 0.102-1), netselect:armhf (0.3.ds1-25, 0.3.ds1-26), libcap2:armhf (2.22-1.2, 2.24-8), libpam-runtime:armhf (1.1.3-7.1, 1.1.8-3.1), git-man:armhf (1.7.10.4-1+wheezy1, 2.1.4-2.1), liblircclient0:armhf (0.9.0~pre1-1, 0.9.0~pre1-1.2), bridge-utils:armhf (1.5-6, 1.5-9), libc-dev-bin:armhf (2.13-38+deb7u3, 2.19-18+deb8u1), logrotate:armhf (3.8.1-4, 3.8.7-1+b1), screen:armhf (4.1.0~20120320gitdb59704-7, 4.2.1-3), bc:armhf (1.06.95-2, 1.06.95-9), dosfstools:armhf (3.0.13-1, 3.0.27-1), python-dbus-dev:armhf (1.1.1-1, 1.2.0-2), libpcre3:armhf (8.30-5, 8.35-3.3), groff-base:armhf (1.21-9, 1.22.2-8), rfkill:armhf (0.4-1, 0.5-1), bash:armhf (4.2+dfsg-0.1, 4.3-11+b1), libgnutls26:armhf (2.12.20-8+deb7u2, 2.12.20-8+deb7u3), liberror-perl:armhf (0.17-1, 0.17-1.1), module-init-tools:armhf (9-3, 18-3), libsqlite3-0:armhf (3.7.13-1+deb7u1, 3.8.7.1-1+deb8u1), libjbig0:armhf (2.0-2+deb7u1, 2.1-3.1), linux-libc-dev:armhf (3.2.60-1+deb7u3, 3.16.7-ckt11-1+deb8u3), libbsd0:armhf (0.4.2-1, 0.7.0-2), libtasn1-3:armhf (2.13-2, 2.13-2+deb7u2), libxcb-render0:armhf (1.8.1-2+deb7u1, 1.10-3+b1), libkmod2:armhf (9-3, 18-3), e2fsprogs:armhf (1.42.5-1.1, 1.42.12-1.1), libexpat1:armhf (2.1.0-1+deb7u1, 2.1.0-6+deb8u1), libk5crypto3:armhf (1.10.1+dfsg-5+deb7u1, 1.12.1+dfsg-19), libfuse2:armhf (2.9.0-2+deb7u1, 2.9.3-15+deb8u1), libpcsclite1:armhf (1.8.4-1+deb7u1, 1.8.13-1), u-boot-tools:armhf (2012.04.01-2, 2014.10+dfsg1-5), liblzma5:armhf (5.1.1alpha+20120614-2, 5.1.1alpha+20120614-2+b3), vim-tiny:armhf (7.3.547-7, 7.4.488-7), libdatrie1:armhf (0.2.5-3, 0.2.8-1), dash:armhf (0.5.7-3, 0.5.7-4+b1), tasksel-data:armhf (3.14.1, 3.31+deb8u1), coreutils:armhf (8.13-3.5, 8.23-4), readline-common:armhf (6.2+dfsg-0.1, 6.3-8), libxcb1:armhf (1.8.1-2+deb7u1, 1.10-3+b1), locales:armhf (2.13-38+deb7u3, 2.19-18+deb8u1), libxau6:armhf (1.0.7-1, 1.0.8-1), libgdbm3:armhf (1.8.3-11, 1.8.3-13.1), netbase:armhf (5.0, 5.3), libustr-1.0-1:armhf (1.0.4-3, 1.0.4-3+b2), libsigc++-2.0-0c2a:armhf (2.2.10-0.2, 2.4.0-1), git:armhf (1.7.10.4-1+wheezy1, 2.1.4-2.1), ifupdown:armhf (0.7.8, 0.7.53.1), cpio:armhf (2.11+dfsg-0.1, 2.11+dfsg-4.1), pciutils:armhf (3.1.9-6, 3.2.1-3), libxcomposite1:armhf (0.4.3-2+b1, 0.4.4-1), ca-certificates:armhf (20130119, 20141019), libxdmcp6:armhf (1.1.1-1, 1.1.1-1+b1), libgcrypt11:armhf (1.5.0-5+deb7u1, 1.5.0-5+deb7u3), libpipeline1:armhf (1.2.1-1, 1.4.0-1), libthai0:armhf (0.1.18-2, 0.1.21-1), makedev:armhf (2.3.1-92, 2.3.1-93), rsync:armhf (3.0.9-4, 3.1.1-3), python-dbus:armhf (1.1.1-1, 1.2.0-2+b3), findutils:armhf (4.4.2-4, 4.4.2-9+b1), manpages:armhf (3.44-1, 3.74-1), libxml2:armhf (2.8.0+dfsg1-7+wheezy1, 2.9.1+dfsg1-5), libsamplerate0:armhf (0.1.8-5, 0.1.8-8), multiarch-support:armhf (2.13-38+deb7u2, 2.19-18+deb8u1), sensible-utils:armhf (0.0.7, 0.0.9), debianutils:armhf (4.3.2, 4.4+b1), ntp:armhf (4.2.6.p5+dfsg-2, 4.2.6.p5+dfsg-7), net-tools:armhf (1.60-24.2, 1.60-26+b1), bsdmainutils:armhf (9.0.3, 9.0.6), libgpg-error0:armhf (1.10-3.1, 1.17-3), sed:armhf (4.2.1-10, 4.2.2-4+b1), libxrender1:armhf (0.9.7-1+deb7u1, 0.9.8-1+b1), lsb-base:armhf (4.1+Debian8+deb7u1, 4.1+Debian13+nmu1), tar:armhf (1.26+dfsg-0.1, 1.27.1-2+b1), debian-archive-keyring:armhf (2012.4, 2014.3), ucf:armhf (3.0025+nmu3, 3.0030), e2fslibs:armhf (1.42.5-1.1, 1.42.12-1.1), zlib1g:armhf (1.2.7.dfsg-13, 1.2.8.dfsg-2+b1), tasksel:armhf (3.14.1, 3.31+deb8u1), libsystemd-login0:armhf (44-11+deb7u4, 215-17+deb8u2), libpng12-0:armhf (1.2.49-1, 1.2.50-2+b2), libcap-ng0:armhf (0.6.6-2, 0.7.4-2), xz-utils:armhf (5.1.1alpha+20120614-2, 5.1.1alpha+20120614-2+b3), libnewt0.52:armhf (0.52.14-11.1, 0.52.17-1+b1), wpasupplicant:armhf (1.0-3+b1, 2.3-1+deb8u1), libsepol1:armhf (2.1.4-3, 2.3-2), libfreetype6:armhf (2.4.9-1.1, 2.5.2-3), libthai-data:armhf (0.1.18-2, 0.1.21-1), usbutils:armhf (005-3, 007-2), libuuid1:armhf (2.20.1-5.3, 2.25.2-6), libavahi-client3:armhf (0.6.31-2, 0.6.31-5), libc6-dev:armhf (2.13-38+deb7u3, 2.19-18+deb8u1), tzdata:armhf (2014e-0wheezy1, 2015g-0+deb7u1), gpgv:armhf (1.4.12-7+deb7u4, 1.4.18-7), grep:armhf (2.12-2, 2.20-4.1), libsysfs2:armhf (2.1.0+repack-2, 2.1.0+repack-4), libx11-6:armhf (1.5.0-1+deb7u1, 1.6.2-3), fuse:armhf (2.9.0-2+deb7u1, 2.9.3-15+deb8u1), liblapack3:armhf (3.4.1+dfsg-1+deb70u1, 3.5.0-4), debconf:armhf (1.5.49, 1.5.56), man-db:armhf (2.6.2-1, 2.7.0.2-5), libnl-3-dev:armhf (3.2.7-4, 3.2.24-2), openssl:armhf (1.0.1e-2+deb7u11, 1.0.1k-3+deb8u1), libncursesw5:armhf (5.9-10, 5.9+20140913-1+b1), libss2:armhf (1.42.5-1.1, 1.42.12-1.1), libxdamage1:armhf (1.1.3-2+b1, 1.1.4-2+b1), libapt-inst1.5:armhf (0.9.7.9+deb7u2, 1.0.9.8.1), libgssapi-krb5-2:armhf (1.10.1+dfsg-5+deb7u1, 1.12.1+dfsg-19), libnl-genl-3-200:armhf (3.2.7-4, 3.2.24-2), info:armhf (4.13a.dfsg.1-10, 5.2.0.dfsg.1-6), debconf-i18n:armhf (1.5.49, 1.5.56), libxi6:armhf (1.6.1-1+deb7u1, 1.7.4-1+b2), libc6:armhf (2.13-38+deb7u3, 2.19-18+deb8u1), libattr1:armhf (2.4.46-8, 2.4.47-2), gzip:armhf (1.5-1.1, 1.6-4), libxcursor1:armhf (1.1.13-1+deb7u1, 1.1.14-1+b1), libxcb-shm0:armhf (1.8.1-2+deb7u1, 1.10-3+b1), libavahi-common3:armhf (0.6.31-2, 0.6.31-5), htop:armhf (1.0.1-1, 1.0.3-1), libxinerama1:armhf (1.1.2-1+deb7u1, 1.1.3-1+b1), libslang2:armhf (2.2.4-15, 2.3.0-2), libxext6:armhf (1.3.1-2+deb7u1, 1.3.3-1), libreadline5:armhf (5.2+dfsg-2~deb7u1, 5.2+dfsg-2), libreadline6:armhf (6.2+dfsg-0.1, 6.3-8+b3), fbset:armhf (2.1-25, 2.1-28), libxrandr2:armhf (1.3.2-2+deb7u1, 1.4.2-1+b1), ncurses-bin:armhf (5.9-10, 5.9+20140913-1+b1), hostname:armhf (3.11, 3.15), libssl1.0.0:armhf (1.0.1e-2+deb7u11, 1.0.1k-3+deb8u1), gnupg:armhf (1.4.12-7+deb7u4, 1.4.18-7), kmod:armhf (9-3, 18-3), sysfsutils:armhf (2.1.0+repack-2, 2.1.0+repack-4)
+End-Date: 2010-01-01  01:36:24
+
+Start-Date: 2010-01-01  02:18:14
+Commandline: apt-get install xorg xdm xfce4
+Install: xserver-xorg:armhf (7.7+7, automatic), x11-apps:armhf (7.7+4, automatic), libglapi-mesa:armhf (10.3.2-1+deb8u1, automatic), gstreamer0.10-alsa:armhf (0.10.36-2, automatic), xorg-docs-core:armhf (1.7-1, automatic), libpangoxft-1.0-0:armhf (1.36.8-3), liborc-0.4-0:armhf (0.4.22-1, automatic), libpolkit-gobject-1-0:armhf (0.105-8, automatic), libegl1-mesa:armhf (10.3.2-1+deb8u1, automatic), xserver-xorg-input-evdev:armhf (2.9.0-2, automatic), libgmp10:armhf (6.0.0+dfsg-6, automatic), libxcb-sync1:armhf (1.10-3+b1, automatic), libmpfr4:armhf (3.1.2-2, automatic), xfonts-scalable:armhf (1.0.3-1, automatic), libgstreamer0.10-0:armhf (0.10.36-1.5, automatic), xserver-xorg-video-all:armhf (7.7+7, automatic), gcc-4.9-base:armhf (4.9.2-10, automatic), xserver-xorg-video-ati:armhf (7.5.0-1, automatic), libevdev2:armhf (1.3+dfsg-1, automatic), libutempter0:armhf (1.1.5-4, automatic), iso-codes:armhf (3.57-1, automatic), x11-utils:armhf (7.7+2, automatic), libthunarx-2-0:armhf (1.6.3-2, automatic), xserver-xorg-video-fbdev:armhf (0.4.4-1+b2, automatic), libical1a:armhf (1.0-1.3, automatic), libxxf86vm1:armhf (1.1.3-1+b1, automatic), xterm:armhf (312-2, automatic), libepoxy0:armhf (1.2-1, automatic), xfce4-panel:armhf (4.10.1-1, automatic), x11-xserver-utils:armhf (7.7+3+b1, automatic), libpangoft2-1.0-0:armhf (1.36.8-3, automatic), libglu1-mesa:armhf (9.0.0-2, automatic), libsystemd0:armhf (215-17+deb8u2, automatic), libxcb-glx0:armhf (1.10-3+b1, automatic), xserver-xorg-video-r128:armhf (6.9.2-1+b2, automatic), xserver-common:armhf (1.16.4-1, automatic), xauth:armhf (1.0.9-1, automatic), libwnck-common:armhf (2.30.7-2, automatic), libxcb-xfixes0:armhf (1.10-3+b1, automatic), xserver-xorg-video-vesa:armhf (2.3.3-1+b3, automatic), xfce4:armhf (4.10.1), xserver-xorg-video-mach64:armhf (6.9.4-2, automatic), xserver-xorg-video-modesetting:armhf (0.9.0-2, automatic), libnotify4:armhf (0.7.6-2, automatic), libx11-xcb1:armhf (1.6.2-3, automatic), libxcb-util0:armhf (0.3.8-3, automatic), orage:armhf (4.10.0-1+b2, automatic), libvorbisenc2:armhf (1.3.4-2, automatic), libwayland-server0:armhf (1.6.0-2, automatic), libxmuu1:armhf (1.1.2-1, automatic), xserver-xorg-core:armhf (1.16.4-1, automatic), xfce4-appfinder:armhf (4.10.1-1, automatic), libxcb-present0:armhf (1.10-3+b1, automatic), libgraphite2-3:armhf (1.2.4-3, automatic), libaudit-common:armhf (2.4-1, automatic), libpciaccess0:armhf (0.13.2-3+b1, automatic), libpangocairo-1.0-0:armhf (1.36.8-3), libgarcon-1-0:armhf (0.2.1-2, automatic), libxfce4util6:armhf (4.10.1-2, automatic), xfce-keyboard-shortcuts:armhf (4.10.0-6, automatic), xkb-data:armhf (2.12-1, automatic), libwnck22:armhf (2.30.7-2, automatic), xfonts-75dpi:armhf (1.0.3, automatic), libxfont1:armhf (1.5.1-1, automatic), libffi6:armhf (3.1-2+b2, automatic), libelf1:armhf (0.159-4.2, automatic), libxres1:armhf (1.0.7-1+b1, automatic), libmtdev1:armhf (1.1.5-1, automatic), libgbm1:armhf (10.3.2-1+deb8u1, automatic), libxfce4util-common:armhf (4.10.1-2, automatic), xbitmaps:armhf (1.1.1-2, automatic), libdrm2:armhf (2.4.58-2, automatic), libstartup-notification0:armhf (0.12-4, automatic), libxxf86dga1:armhf (1.1.4-1+b1, automatic), libxaw7:armhf (1.0.12-2+b1, automatic), cpp:armhf (4.9.2-2, automatic), xserver-xorg-input-all:armhf (7.7+7, automatic), libxshmfence1:armhf (1.1-4, automatic), libpango-1.0-0:armhf (1.36.8-3, automatic), xfonts-base:armhf (1.0.3, automatic), thunar:armhf (1.6.3-2, automatic), libgarcon-common:armhf (0.2.1-2, automatic), libpangox-1.0-0:armhf (0.0.2-5), libxcb-shape0:armhf (1.10-3+b1, automatic), xfwm4:armhf (4.10.1-3, automatic), xserver-xorg-video-nouveau:armhf (1.0.11-1, automatic), libtheora0:armhf (1.1.1+dfsg.1-6, automatic), libice6:armhf (1.0.9-1+b1, automatic), libunique-1.0-0:armhf (1.1.6-5, automatic), libgcrypt20:armhf (1.6.3-2, automatic), libgudev-1.0-0:armhf (215-17+deb8u2, automatic), libdrm-nouveau2:armhf (2.4.58-2, automatic), libxmu6:armhf (1.1.2-1, automatic), libcdparanoia0:armhf (3.10.2+debian-11, automatic), libdrm-freedreno1:armhf (2.4.58-2, automatic), libxpm4:armhf (3.5.11-1+b1, automatic), libxfce4ui-1-0:armhf (4.10.0-6, automatic), xfce4-settings:armhf (4.10.1-2, automatic), xinit:armhf (1.3.4-1, automatic), x11-session-utils:armhf (7.7+1, automatic), thunar-data:armhf (1.6.3-2, automatic), xfonts-100dpi:armhf (1.0.3, automatic), libdrm-radeon1:armhf (2.4.58-2, automatic), libxfce4ui-utils:armhf (4.10.0-6, automatic), keyboard-configuration:armhf (1.123, automatic), xfdesktop4:armhf (4.10.2-3, automatic), libfontenc1:armhf (1.1.2-1+b2, automatic), xdm:armhf (1.1.11-1), xfonts-utils:armhf (7.7+2, automatic), libudev1:armhf (215-17+deb8u2, automatic), libxtst6:armhf (1.2.2-1+b1, automatic), fonts-dejavu-core:armhf (2.34-1, automatic), libgl1-mesa-dri:armhf (10.3.2-1+deb8u1, automatic), gtk2-engines-xfce:armhf (3.0.1-2, automatic), libexo-1-0:armhf (0.10.2-4, automatic), libxcb-dri2-0:armhf (1.10-3+b1, automatic), libxklavier16:armhf (5.2.1-1, automatic), x11-common:armhf (7.7+7, automatic), libgl1-mesa-glx:armhf (10.3.2-1+deb8u1, automatic), libkeybinder0:armhf (0.3.0-3, automatic), exo-utils:armhf (0.10.2-4, automatic), libxcb-dri3-0:armhf (1.10-3+b1, automatic), xorg:armhf (7.7+7), libharfbuzz0b:armhf (0.9.35-2, automatic), libsm6:armhf (1.2.2-1+b1, automatic), cpp-4.9:armhf (4.9.2-10, automatic), x11-xkb-utils:armhf (7.7+1, automatic), xfconf:armhf (4.10.0-3, automatic), libvisual-0.4-0:armhf (0.4.0-6, automatic), libexif12:armhf (0.6.21-2, automatic), dbus-x11:armhf (1.8.20-0+deb8u1, automatic), libvorbis0a:armhf (1.3.4-2, automatic), xfce4-session:armhf (4.10.1-10, automatic), libxfconf-0-2:armhf (4.10.0-3, automatic), xserver-xorg-input-synaptics:armhf (1.8.1-1, automatic), xfonts-encodings:armhf (1.0.4-2, automatic), libxt6:armhf (1.1.4-1+b1, automatic), gstreamer0.10-plugins-base:armhf (0.10.36-2, automatic), desktop-file-utils:armhf (0.22-1, automatic), libxv1:armhf (1.0.10-1+b1, automatic), libaudit1:armhf (2.4-1+b1, automatic), libgstreamer-plugins-base0.10-0:armhf (0.10.36-2, automatic), xfdesktop4-data:armhf (4.10.2-3, automatic), libwayland-client0:armhf (1.6.0-2, automatic), libexo-common:armhf (0.10.2-4, automatic), xfce4-mixer:armhf (4.10.0-3, automatic), libcloog-isl4:armhf (0.18.2-1+b2, automatic), xserver-xorg-video-radeon:armhf (7.5.0-1, automatic), libxkbfile1:armhf (1.0.8-1, automatic), libmpc3:armhf (1.0.2-1, automatic), libisl10:armhf (0.12.2-2, automatic), libllvm3.5:armhf (3.5-10, automatic), libogg0:armhf (1.3.2-1, automatic), libexo-helpers:armhf (0.10.2-4, automatic)
+Upgrade: ttf-dejavu-core:armhf (2.33-3, 2.34-1), libstdc++6:armhf (4.7.2-5, 4.9.2-10), libgfortran3:armhf (4.7.2-5, 4.9.2-10), libcairo2:armhf (1.12.2-3, 1.14.0-2.1), libfontconfig1:armhf (2.9.0-7.1, 2.11.0-6.3), fontconfig-config:armhf (2.9.0-7.1, 2.11.0-6.3), libgcc1:armhf (4.7.2-5, 4.9.2-10), python-gi:armhf (3.2.2-2, 3.14.0-1), libpango1.0-0:armhf (1.30.0-1, 1.36.8-3), gir1.2-glib-2.0:armhf (1.32.1-1, 1.42.0-2.2), libgirepository-1.0-1:armhf (1.32.1-1, 1.42.0-2.2), libglib2.0-0:armhf (2.33.12+really2.32.4-5, 2.42.1-1)
+Remove: gcc-4.7-base:armhf (4.7.2-5)
+End-Date: 2010-01-01  02:24:21
+
+Start-Date: 2015-11-15  03:32:28
+Commandline: /usr/bin/apt-get install network-manager
+Install: libnih-dbus1:armhf (1.0.3-4.3, automatic), libpam-systemd:armhf (215-17+deb8u2, automatic), libnettle4:armhf (2.7.1-5, automatic), network-manager:armhf (0.9.10.0-7), glib-networking-services:armhf (2.42.0-2, automatic), glib-networking:armhf (2.42.0-2, automatic), libproxy1:armhf (0.4.11-4+b2, automatic), libnm-util2:armhf (0.9.10.0-7, automatic), libcryptsetup4:armhf (1.6.6-5, automatic), libmm-glib0:armhf (1.4.0-1, automatic), startpar:armhf (0.59-3, automatic), policykit-1:armhf (0.105-8, automatic), libnl-route-3-200:armhf (3.2.24-2, automatic), libtasn1-6:armhf (4.2-3+deb8u1, automatic), libsoup2.4-1:armhf (2.48.0-1, automatic), libcap2-bin:armhf (2.24-8, automatic), gsettings-desktop-schemas:armhf (3.14.1-1, automatic), systemd:armhf (215-17+deb8u2, automatic), glib-networking-common:armhf (2.42.0-2, automatic), libteamdctl0:armhf (1.12-2, automatic), acl:armhf (2.2.52-2, automatic), libnm-glib4:armhf (0.9.10.0-7, automatic), dconf-service:armhf (0.22.0-1, automatic), libhogweed2:armhf (2.7.1-5, automatic), libdconf1:armhf (0.22.0-1, automatic), init-system-helpers:armhf (1.22, automatic), libgnutls-deb0-28:armhf (3.3.8-6+deb8u3, automatic), cgmanager:armhf (0.33-2+deb8u2, automatic), libpolkit-backend-1-0:armhf (0.105-8, automatic), libdb5.3:armhf (5.3.28-9, automatic), dconf-gsettings-backend:armhf (0.22.0-1, automatic), systemd-shim:armhf (9-1, automatic), libcgmanager0:armhf (0.33-2+deb8u2, automatic), libndp0:armhf (1.4-2, automatic), libnih1:armhf (1.0.3-4.3, automatic), libpolkit-agent-1-0:armhf (0.105-8, automatic), libsmartcols1:armhf (2.25.2-6, automatic), libperl4-corelibs-perl:armhf (0.003-1, automatic)
+Upgrade: dmsetup:armhf (1.02.74-8, 1.02.90-2.2), liblocale-gettext-perl:armhf (1.05-7+b3, 1.05-8+b1), perl:armhf (5.14.2-21+deb7u1, 5.20.2-3+deb8u1), perl-base:armhf (5.14.2-21+deb7u1, 5.20.2-3+deb8u1), libtext-charwidth-perl:armhf (0.04-7+b2, 0.04-7+b4), libdevmapper1.02.1:armhf (1.02.74-8, 1.02.90-2.2), fontconfig:armhf (2.9.0-7.1, 2.11.0-6.3), udev:armhf (175-7.2, 215-17+deb8u2), libp11-kit0:armhf (0.12-3, 0.20.7-1), dpkg:armhf (1.16.15, 1.17.25), libtext-iconv-perl:armhf (1.7-5, 1.7-5+b2), perl-modules:armhf (5.14.2-21+deb7u1, 5.20.2-3+deb8u1), sysvinit-utils:armhf (2.88dsf-41+deb7u1, 2.88dsf-59), mount:armhf (2.20.1-5.3, 2.25.2-6), initscripts:armhf (2.88dsf-41+deb7u1, 2.88dsf-59)
+End-Date: 2015-11-15  03:44:52
+
+Start-Date: 2015-11-22  03:09:12
+Commandline: apt-get install vim
+Install: libgpm2:armhf (1.20.4-6.1+b2, automatic), vim:armhf (7.4.488-7), vim-runtime:armhf (7.4.488-7, automatic)
+End-Date: 2015-11-22  03:10:48
+
+Start-Date: 2015-11-22  03:21:18
+Commandline: apt-get upgrade
+Upgrade: libatk1.0-0:armhf (2.4.0-2, 2.14.0-1), libpam0g:armhf (1.1.3-7.1, 1.1.8-3.1), menu:armhf (2.1.46+b1, 2.1.47), libpam-modules-bin:armhf (1.1.3-7.1, 1.1.8-3.1), shared-mime-info:armhf (1.0-1+b1, 1.3-1), libbluetooth-dev:armhf (4.99-2, 5.23-2+b1), libpam-modules:armhf (1.1.3-7.1, 1.1.8-3.1), libapt-pkg4.12:armhf (0.9.7.9+deb7u2, 1.0.9.8.1), util-linux:armhf (2.20.1-5.3, 2.25.2-6), libept1.4.12:armhf (1.0.9, 1.0.12.1), libsemanage1:armhf (2.1.6-6, 2.3-1+b1), libusb-1.0-0:armhf (1.0.11-1, 1.0.19-1), login:armhf (4.1.5.1-1, 4.2-3), bluez:armhf (4.99-2, 5.23-2+b1), libcwidget3:armhf (0.5.16-3.4, 0.5.17-2), apt-utils:armhf (0.9.7.9+deb7u2, 1.0.9.8.1), hostapd:armhf (1.0-3+b1, 2.3-1+deb8u1), dbus:armhf (1.6.8-1+deb7u3, 1.8.20-0+deb8u1), passwd:armhf (4.1.5.1-1, 4.2-3), apt:armhf (0.9.7.9+deb7u2, 1.0.9.8.1), libcups2:armhf (1.5.3-5+deb7u4, 1.7.5-11+deb8u1), libsemanage-common:armhf (2.1.6-6, 2.3-1), bsdutils:armhf (2.20.1-5.3, 2.25.2-6), sudo:armhf (1.8.5p2-1+nmu1, 1.8.10p3-1+deb8u2), libxft2:armhf (2.3.1-1, 2.3.2-1), libssh2-1:armhf (1.4.2-1.1, 1.4.3-4.1), cron:armhf (3.0pl1-124, 3.0pl1-127+deb8u1), libxapian22:armhf (1.2.12-2, 1.2.19-1), libbluetooth3:armhf (4.99-2, 5.23-2+b1), libatk1.0-data:armhf (2.4.0-2, 2.14.0-1), libldap-2.4-2:armhf (2.4.31-1+nmu2, 2.4.40+dfsg-1), python-gobject-2:armhf (2.28.6-10, 2.28.6-12), sysv-rc:armhf (2.88dsf-41+deb7u1, 2.88dsf-59), ntfs-3g:armhf (2012.1.15AR.5-2.1, 2014.2.15AR.2-1+deb8u2), libgtk2.0-0:armhf (2.24.10-2, 2.24.25-3)
+End-Date: 2015-11-22  03:26:08
+
+Start-Date: 2015-11-22  03:36:12
+Commandline: apt-get install iceweasel
+Install: libhunspell-1.3-0:armhf (1.3.3-3, automatic), libevent-2.0-5:armhf (2.0.21-stable-2, automatic), iceweasel:armhf (38.4.0esr-1~deb7u1)
+End-Date: 2015-11-22  03:36:48
+
+Start-Date: 2015-11-22  04:32:57
+Commandline: apt-get install ibus
+Install: libpython2.7-minimal:armhf (2.7.9-2, automatic), libcroco3:armhf (0.6.8-3+b1, automatic), libpython2.7-stdlib:armhf (2.7.9-2, automatic), libgtk-3-bin:armhf (3.14.5-1+deb8u1, automatic), libpython3-stdlib:armhf (3.4.2-2, automatic), libjson-glib-1.0-common:armhf (1.0.2-1, automatic), libgtk-3-0:armhf (3.14.5-1+deb8u1, automatic), gir1.2-freedesktop:armhf (1.42.0-2.2, automatic), dconf-cli:armhf (0.22.0-1, automatic), librsvg2-2:armhf (2.40.5-1, automatic), libxkbcommon0:armhf (0.4.3-2, automatic), python3.4-minimal:armhf (3.4.2-1, automatic), libcolord2:armhf (1.2.1-1+b2, automatic), libjson-glib-1.0-0:armhf (1.0.2-1, automatic), libpython-stdlib:armhf (2.7.9-1, automatic), libcairo-gobject2:armhf (1.14.0-2.1, automatic), librest-0.7-0:armhf (0.7.92-3, automatic), hicolor-icon-theme:armhf (0.13-1, automatic), gir1.2-gtk-3.0:armhf (3.14.5-1+deb8u1, automatic), libsoup-gnome2.4-1:armhf (2.48.0-1, automatic), python3:armhf (3.4.2-2, automatic), gir1.2-atk-1.0:armhf (2.14.0-1, automatic), gir1.2-gdkpixbuf-2.0:armhf (2.31.1-2+deb8u2, automatic), ibus:armhf (1.5.9-1), gir1.2-pango-1.0:armhf (1.36.8-3, automatic), liblcms2-2:armhf (2.6-3+b3, automatic), libpython3.4-stdlib:armhf (3.4.2-1, automatic), libatk-bridge2.0-0:armhf (2.14.0-2, automatic), gnome-icon-theme:armhf (3.12.0-1, automatic), libibus-1.0-5:armhf (1.5.9-1, automatic), adwaita-icon-theme:armhf (3.14.0-2, automatic), libpython3.4-minimal:armhf (3.4.2-1, automatic), libatspi2.0-0:armhf (2.14.0-1, automatic), python-notify:armhf (0.1.1-4, automatic), dh-python:armhf (1.20141111-2, automatic), libjpeg62-turbo:armhf (1.3.1-12, automatic), libtiff5:armhf (4.0.3-12.3, automatic), libmpdec2:armhf (2.4.1-1, automatic), gir1.2-ibus-1.0:armhf (1.5.9-1, automatic), python3.4:armhf (3.4.2-1, automatic), python3-gi:armhf (3.14.0-1, automatic), librsvg2-common:armhf (2.40.5-1, automatic), libgtk-3-common:armhf (3.14.5-1+deb8u1, automatic), libwayland-cursor0:armhf (1.6.0-2, automatic), python3-minimal:armhf (3.4.2-2, automatic)
+Upgrade: libgdk-pixbuf2.0-0:armhf (2.26.1-1, 2.31.1-2+deb8u2), python2.7:armhf (2.7.3-6+deb7u2, 2.7.9-2), python-minimal:armhf (2.7.3-4+deb7u1, 2.7.9-1), libgdk-pixbuf2.0-common:armhf (2.26.1-1, 2.31.1-2+deb8u2), python2.7-minimal:armhf (2.7.3-6+deb7u2, 2.7.9-2), python:armhf (2.7.3-4+deb7u1, 2.7.9-1)
+End-Date: 2015-11-22  04:40:16
+
+Start-Date: 2015-11-22  07:27:51
+Commandline: apt-get install scim-pinyin
+Install: libscim8c2a:armhf (1.4.15-3, automatic), scim-pinyin:armhf (0.5.92-3), libltdl7:armhf (2.4.2-1.11, automatic), scim:armhf (1.4.15-3, automatic)
+End-Date: 2015-11-22  07:28:19
+
+Start-Date: 2015-11-22  07:35:18
+Commandline: apt-get install ttf-bitstream-vera
+Install: ttf-bitstream-vera:armhf (1.10-8)
+End-Date: 2015-11-22  07:35:25
+
+Start-Date: 2015-11-22  07:49:18
+Commandline: apt-get install fonts-arphic-ukai
+Install: fonts-arphic-ukai:armhf (0.2.20080216.2-4)
+End-Date: 2015-11-22  07:49:44
+
+Start-Date: 2015-11-22  08:19:38
+Commandline: apt-get install ibus-pinyin
+Install: libpyzy-1.0-0:armhf (1.0.1-4, automatic), liblua5.1-0:armhf (5.1.5-7.1, automatic), libopencc1:armhf (0.4.3-2, automatic), python-xdg:armhf (0.25-4, automatic), ibus-pinyin:armhf (1.5.0-3)
+End-Date: 2015-11-22  08:20:13
+
+Start-Date: 2015-11-22  08:55:22
+Commandline: apt-get install gedit
+Install: gir1.2-peas-1.0:armhf (1.12.1-2, automatic), gedit-common:armhf (3.14.0-3, automatic), emacsen-common:armhf (2.0.8, automatic), libpeas-1.0-0:armhf (1.12.1-2, automatic), gnome-icon-theme-symbolic:armhf (3.12.0-1, automatic), python3-gi-cairo:armhf (3.14.0-1, automatic), libpeas-common:armhf (1.12.1-2, automatic), libaspell15:armhf (0.60.7~20110707-1.3, automatic), libpython3.4:armhf (3.4.2-1, automatic), gedit:armhf (3.14.0-3), libpython2.7:armhf (2.7.9-2, automatic), libenchant1c2a:armhf (1.6.0-10.1, automatic), libgtksourceview-3.0-common:armhf (3.14.1-1, automatic), aspell:armhf (0.60.7~20110707-1.3, automatic), libgtksourceview-3.0-1:armhf (3.14.1-1, automatic), python3-cairo:armhf (1.10.0+dfsg-4+b1, automatic), dictionaries-common:armhf (1.23.17, automatic), aspell-en:armhf (7.1-0-1.1, automatic)
+End-Date: 2015-11-22  09:00:09
+
+Start-Date: 2015-11-22  09:17:45
+Commandline: apt-get install file
+Install: libmagic1:armhf (5.22+15-2, automatic), file:armhf (5.22+15-2)
+End-Date: 2015-11-22  09:17:53
+
+Start-Date: 2015-11-22  09:51:22
+Commandline: apt-get install python-glade2
+Install: python-glade2:armhf (2.24.0-4), libglade2-0:armhf (2.6.4-2, automatic)
+Upgrade: python-gtk2:armhf (2.24.0-3+b1, 2.24.0-4), python-numpy:armhf (1.6.2-1.2, 1.8.2-2)
+End-Date: 2015-11-22  09:52:14
+
+Start-Date: 2015-11-22  09:53:00
+Commandline: apt-get remove scim
+Remove: scim-pinyin:armhf (0.5.92-3), scim:armhf (1.4.15-3)
+End-Date: 2015-11-22  09:53:08
+
+Start-Date: 2015-11-22  10:01:15
+Commandline: apt-get remove ibus-pinyin
+Remove: ibus-pinyin:armhf (1.5.0-3)
+End-Date: 2015-11-22  10:01:18
+
+Start-Date: 2015-11-22  10:02:20
+Commandline: apt-get remove ibus
+Remove: ibus:armhf (1.5.9-1)
+End-Date: 2015-11-22  10:02:31
+
+Start-Date: 2015-11-22  10:16:19
+Commandline: apt-get install fcitx-googlepinyin
+Install: libgettextpo0:armhf (0.19.3-2, automatic), fcitx-modules:armhf (4.2.8.5-2, automatic), libgooglepinyin0:armhf (0.1.2-1, automatic), libunistring0:armhf (0.9.3-5.2+b1, automatic), fcitx-googlepinyin:armhf (0.1.6-1), fcitx-data:armhf (4.2.8.5-2, automatic), libicu52:armhf (52.1-8+deb8u2, automatic), fcitx-libs:armhf (4.2.8.5-2, automatic), fcitx-bin:armhf (4.2.8.5-2, automatic)
+End-Date: 2015-11-22  10:17:31
+
+Start-Date: 2015-11-22  10:19:24
+Commandline: apt-get install fcitx
+Install: fcitx:armhf (4.2.8.5-2)
+End-Date: 2015-11-22  10:19:26
+
+Start-Date: 2015-11-22  10:24:17
+Commandline: apt-get install fcitx-module-cloudpinyin
+Install: fcitx-module-cloudpinyin:armhf (0.3.4-1)
+End-Date: 2015-11-22  10:24:21
+
+Start-Date: 2015-11-22  10:28:47
+Commandline: apt-get install fcitx-sunpinyin
+Install: sunpinyin-data:armhf (0.1.22+20131212-1, automatic), fcitx-sunpinyin:armhf (0.4.1-1), libsunpinyin3:armhf (2.0.3+git20140127-1, automatic)
+End-Date: 2015-11-22  10:29:13
+
+Start-Date: 2015-11-22  10:33:31
+Commandline: apt-get install iceweasel-l10n-zh-cn
+Install: iceweasel-l10n-zh-cn:armhf (38.4.0esr-1~deb7u1)
+End-Date: 2015-11-22  10:33:36
+
+Start-Date: 2015-11-22  10:39:34
+Commandline: apt-get install xfonts-intl-chinese xfonts-wqy
+Install: xfonts-wqy:armhf (0.9.9-7), xfonts-intl-chinese:armhf (1.2.1-8)
+End-Date: 2015-11-22  10:40:31
+
+Start-Date: 2015-11-22  10:42:25
+Commandline: apt-get remove fcitx
+Remove: fcitx:armhf (4.2.8.5-2)
+End-Date: 2015-11-22  10:42:27
+
+Start-Date: 2015-11-22  10:43:21
+Commandline: apt-get remove fcitx-googlepinyin
+Remove: fcitx-googlepinyin:armhf (0.1.6-1)
+End-Date: 2015-11-22  10:43:24
+
+Start-Date: 2015-11-22  10:43:46
+Commandline: apt-get remove fcitx-sunpinyin
+Remove: fcitx-sunpinyin:armhf (0.4.1-1)
+End-Date: 2015-11-22  10:43:47
+
+Start-Date: 2015-11-22  10:45:32
+Commandline: apt-get purge fcitx
+Purge: fcitx:armhf ()
+End-Date: 2015-11-22  10:45:33
+
+Start-Date: 2015-11-22  10:46:07
+Commandline: apt-get purge ibus
+Purge: ibus:armhf ()
+End-Date: 2015-11-22  10:46:09
+
+Start-Date: 2015-11-22  10:46:38
+Commandline: apt-get purge scim
+Purge: scim:armhf ()
+End-Date: 2015-11-22  10:46:42
+
+Start-Date: 2015-11-22  10:49:03
+Commandline: apt-get purge fcitx-bin
+Purge: fcitx-bin:armhf (4.2.8.5-2)
+End-Date: 2015-11-22  10:49:10
+
+Start-Date: 2015-11-22  10:49:35
+Commandline: apt-get purge fcitx-data
+Purge: fcitx-data:armhf (4.2.8.5-2)
+End-Date: 2015-11-22  10:50:02
+
+Start-Date: 2015-11-22  10:50:30
+Commandline: apt-get purge fcitx-libs
+Purge: fcitx-libs:armhf (4.2.8.5-2)
+End-Date: 2015-11-22  10:50:35
+
+Start-Date: 2015-11-22  10:51:03
+Commandline: apt-get purge fcitx-module-cloudpinyin
+Purge: fcitx-module-cloudpinyin:armhf (0.3.4-1)
+End-Date: 2015-11-22  10:51:05
+
+Start-Date: 2015-11-22  10:51:27
+Commandline: apt-get purge fcitx-modules
+Purge: fcitx-modules:armhf (4.2.8.5-2)
+End-Date: 2015-11-22  10:51:27
+
+Start-Date: 2015-11-22  10:52:41
+Commandline: apt-get install ibus ibus-pinyin
+Install: ibus:armhf (1.5.9-1), ibus-pinyin:armhf (1.5.0-3)
+End-Date: 2015-11-22  10:53:09
+
+Start-Date: 2015-11-22  10:58:26
+Commandline: apt-get install ibus-sunpinyin
+Install: ibus-sunpinyin:armhf (2.0.3-5+b1)
+End-Date: 2015-11-22  10:58:33
+
+Start-Date: 2015-11-22  11:04:19
+Commandline: apt-get install im-config
+Install: libgstreamer-plugins-base1.0-0:armhf (1.4.4-2, automatic), zenity:armhf (3.14.0-1, automatic), libsecret-common:armhf (0.18-1, automatic), libsecret-1-0:armhf (0.18-1+b1, automatic), libxslt1.1:armhf (1.1.28-2+b2, automatic), libwebkitgtk-3.0-0:armhf (2.4.8-2, automatic), libharfbuzz-icu0:armhf (0.9.35-2, automatic), libwebkitgtk-3.0-common:armhf (2.4.8-2, automatic), libgles2-mesa:armhf (10.3.2-1+deb8u1, automatic), libgstreamer1.0-0:armhf (1.4.4-2, automatic), libjavascriptcoregtk-3.0-0:armhf (2.4.8-2, automatic), libwebp5:armhf (0.4.1-1.2+b2, automatic), gettext-base:armhf (0.19.3-2, automatic), libasprintf0c2:armhf (0.19.3-2, automatic), im-config:armhf (0.27-2), zenity-common:armhf (3.14.0-1, automatic)
+End-Date: 2015-11-22  11:06:02
+
+Start-Date: 2015-11-22  11:21:19
+Commandline: apt-get install ibus-gtk
+Install: ibus-gtk:armhf (1.5.9-1)
+End-Date: 2015-11-22  11:21:24
+
+Start-Date: 2015-11-22  12:07:04
+Commandline: apt-get install p7zip p7zip-rar
+Install: p7zip-rar:armhf (9.20.1~ds.1-3), p7zip:armhf (9.20.1~dfsg.1-4.1+deb8u1), p7zip-full:armhf (9.20.1~dfsg.1-4.1+deb8u1, automatic)
+End-Date: 2015-11-22  12:07:18
+
+Start-Date: 2015-11-22  12:15:04
+Commandline: apt-get install ttf-wqy-zenhei
+Install: fonts-wqy-zenhei:armhf (0.9.45-6, automatic), ttf-wqy-zenhei:armhf (0.9.45-6)
+End-Date: 2015-11-22  12:15:45
+
+Start-Date: 2015-11-22  12:32:00
+Commandline: apt-get install roxterm
+Install: libvte-2.90-common:armhf (0.36.3-1, automatic), libvte-2.90-9:armhf (0.36.3-1, automatic), roxterm-gtk3:armhf (2.9.5-1, automatic), roxterm-common:armhf (2.9.5-1, automatic), roxterm:armhf (2.9.5-1)
+End-Date: 2015-11-22  12:32:22
+
+Start-Date: 2015-11-22  12:51:09
+Commandline: apt-get install python-tk
+Install: libxss1:armhf (1.2.2-1, automatic), tk8.6-blt2.5:armhf (2.5.3+dfsg-1, automatic), python-tk:armhf (2.7.8-2+b1), libtk8.6:armhf (8.6.2-1, automatic), blt:armhf (2.5.3+dfsg-1, automatic), libtcl8.6:armhf (8.6.2+dfsg-2, automatic)
+End-Date: 2015-11-22  12:51:36
+
+Start-Date: 2015-11-22  12:54:12
+Commandline: apt-get install libx264-142
+Install: libx264-142:armhf (0.142.2431+gita5831aa-1+b2)
+End-Date: 2015-11-22  12:54:18
+
+Start-Date: 2010-01-01  01:09:15
+Commandline: apt-get install libreoffice
+Install: libreoffice-common:armhf (4.3.3-2+deb8u1, automatic), fonts-dejavu-extra:armhf (2.34-1, automatic), libetonyek-0.1-1:armhf (0.1.1-2, automatic), coinor-libcgl1:armhf (0.58.9-1, automatic), libreoffice-impress:armhf (4.3.3-2+deb8u1, automatic), libeot0:armhf (0.01-3, automatic), ure:armhf (4.3.3-2+deb8u1, automatic), lp-solve:armhf (5.5.0.13-7+b1, automatic), libboost-date-time1.55.0:armhf (1.55.0+dfsg-3, automatic), libmhash2:armhf (0.9.9.9-7, automatic), coinor-libclp1:armhf (1.15.10-1, automatic), libexttextcat-2.0-0:armhf (3.4.4-1, automatic), libexttextcat-data:armhf (3.4.4-1, automatic), libnss3:armhf (3.17.2-1.1+deb8u2, automatic), coinor-libosi1:armhf (0.106.9-1, automatic), libglew1.10:armhf (1.10.0-3, automatic), libreoffice-math:armhf (4.3.3-2+deb8u1, automatic), libreoffice-calc:armhf (4.3.3-2+deb8u1, automatic), libraptor2-0:armhf (2.0.14-1, automatic), libcdr-0.1-1:armhf (0.1.0-3, automatic), libneon27-gnutls:armhf (0.30.1-1, automatic), liborcus-0.8-0:armhf (0.7.0+dfsg-9, automatic), fonts-opensymbol:armhf (102.6+LibO4.3.3-2+deb8u1, automatic), liblangtag-common:armhf (0.5.1-3, automatic), libreoffice-base-drivers:armhf (4.3.3-2+deb8u1, automatic), libboost-iostreams1.55.0:armhf (1.55.0+dfsg-3, automatic), fonts-dejavu:armhf (2.34-1, automatic), libodfgen-0.1-1:armhf (0.1.1-2, automatic), libreoffice-java-common:armhf (4.3.3-2+deb8u1, automatic), libgltf-0.0-0:armhf (0.0.2-2, automatic), librdf0:armhf (1.0.17-1+b1, automatic), uno-libs3:armhf (4.3.3-2+deb8u1, automatic), libhyphen0:armhf (2.8.8-1, automatic), libreoffice-base:armhf (4.3.3-2+deb8u1, automatic), libcolamd2.8.0:armhf (4.2.1-3, automatic), libreoffice:armhf (4.3.3-2+deb8u1), libclucene-contribs1:armhf (2.3.3.4-4, automatic), libwpg-0.3-3:armhf (0.3.0-3, automatic), libreoffice-draw:armhf (4.3.3-2+deb8u1, automatic), libboost-system1.55.0:armhf (1.55.0+dfsg-3, automatic), libabw-0.1-1:armhf (0.1.0-2, automatic), fonts-sil-gentium-basic:armhf (1.1-7, automatic), libreoffice-base-core:armhf (4.3.3-2+deb8u1, automatic), librevenge-0.0-0:armhf (0.0.1-3, automatic), coinor-libcoinmp1:armhf (1.7.6+dfsg1-1, automatic), libreoffice-core:armhf (4.3.3-2+deb8u1, automatic), liblangtag1:armhf (0.5.1-3, automatic), libe-book-0.1-1:armhf (0.1.1-2, automatic), libmythes-1.2-0:armhf (1.2.4-1, automatic), libcmis-0.4-4:armhf (0.4.1-7, automatic), libreoffice-report-builder-bin:armhf (4.3.3-2+deb8u1, automatic), libmspub-0.1-1:armhf (0.1.1-2, automatic), libwpd-0.10-10:armhf (0.10.0-2+b1, automatic), python3-uno:armhf (4.3.3-2+deb8u1, automatic), libreoffice-style-galaxy:armhf (4.3.3-2+deb8u1, automatic), libreoffice-avmedia-backend-gstreamer:armhf (4.3.3-2+deb8u1, automatic), coinor-libcoinutils3:armhf (2.9.15-3, automatic), libmwaw-0.3-3:armhf (0.3.1-2, automatic), libnspr4:armhf (4.10.7-1, automatic), libwps-0.3-3:armhf (0.3.0-2, automatic), libfreehand-0.1-1:armhf (0.1.0-2, automatic), libreoffice-writer:armhf (4.3.3-2+deb8u1, automatic), libclucene-core1:armhf (2.3.3.4-4, automatic), librasqal3:armhf (0.9.32-1, automatic), libyajl2:armhf (2.1.0-2, automatic), coinor-libcbc3:armhf (2.8.12-1, automatic), libvisio-0.1-1:armhf (0.1.0-2, automatic)
+End-Date: 2010-01-01  01:15:59
+
+Start-Date: 2010-01-01  01:34:08
+Commandline: apt-get install gdebi
+Install: gconf-service:armhf (3.2.6-3, automatic), python3-debian:armhf (0.1.27, automatic), python3-six:armhf (1.8.0-1, automatic), libgnome-keyring-common:armhf (3.12.0-1, automatic), libgtop2-7:armhf (2.28.5-2+b1, automatic), python-apt-common:armhf (0.9.3.12, automatic), libgnome-keyring0:armhf (3.12.0-1+b1, automatic), gir1.2-vte-2.90:armhf (0.36.3-1, automatic), python3-chardet:armhf (2.3.0-1, automatic), gdebi:armhf (0.9.5.5+nmu1), psmisc:armhf (22.21-2, automatic), libgtop2-common:armhf (2.28.5-2, automatic), gdebi-core:armhf (0.9.5.5+nmu1, automatic), python3-apt:armhf (0.9.3.12, automatic), libgksu2-0:armhf (2.0.13~pre1-8, automatic), gconf2:armhf (3.2.6-3, automatic), libgconf-2-4:armhf (3.2.6-3, automatic), python3-pkg-resources:armhf (5.5.1-1, automatic), gconf2-common:armhf (3.2.6-3, automatic), gksu:armhf (2.0.2-9, automatic)
+End-Date: 2010-01-01  01:35:58
+
+Start-Date: 2010-01-01  01:38:14
+Install: libjavascriptcoregtk-1.0-0:armhf (2.4.8-2, automatic), libxerces-c3.1:armhf (3.1.1-5.1, automatic), libwebkitgtk-1.0-common:armhf (2.4.8-2, automatic), libwebkitgtk-1.0-0:armhf (2.4.8-2, automatic)
+End-Date: 2010-01-01  01:38:39
+
+Start-Date: 2010-01-01  02:00:03
+Commandline: apt-get install ntpdate
+Install: ntpdate:armhf (4.2.6.p5+dfsg-7)
+End-Date: 2010-01-01  02:00:09
+
+Start-Date: 2015-11-29  03:20:53
+Commandline: apt-get install rhythmbox
+Install: libflac8:armhf (1.3.0-3, automatic), libraw1394-11:armhf (2.1.0-3, automatic), liblua5.2-0:armhf (5.2.3-1.1, automatic), libassuan0:armhf (2.1.2-2, automatic), libv4l-0:armhf (1.6.0-2, automatic), libquvi-scripts:armhf (0.4.21-2, automatic), libavc1394-0:armhf (0.5.4-2, automatic), libv4lconvert0:armhf (1.6.0-2, automatic), libtdb1:armhf (1.3.1-1, automatic), libdv4:armhf (1.0.0-6, automatic), libgmime-2.6-0:armhf (2.6.20-1+b1, automatic), libwavpack1:armhf (4.70.0-1, automatic), libarchive13:armhf (3.1.2-11, automatic), media-player-info:armhf (22-2, automatic), libaa1:armhf (1.4p5-43, automatic), liblzo2-2:armhf (2.08-1.2, automatic), rhythmbox:armhf (3.1-1), gstreamer1.0-plugins-good:armhf (1.4.4-2, automatic), libpth20:armhf (2.0.7-20, automatic), libopus0:armhf (1.1-2, automatic), rhythmbox-data:armhf (3.1-1, automatic), libiec61883-0:armhf (1.2.0-0.2, automatic), libspeex1:armhf (1.2~rc1.2-1, automatic), gnupg2:armhf (2.0.26-6, automatic), libgpgme11:armhf (1.5.1-6, automatic), libjack-jackd2-0:armhf (1.9.10+20140719git3eb0ae6a~dfsg-2, automatic), libtotem-plparser18:armhf (3.10.3-1, automatic), libquvi7:armhf (0.4.1-3, automatic), libtag1-vanilla:armhf (1.9.1-2.1, automatic), pinentry-gtk2:armhf (0.8.3-2, automatic), libshout3:armhf (2.3.1-3, automatic), libksba8:armhf (1.3.2-1, automatic), gstreamer1.0-plugins-base:armhf (1.4.4-2, automatic), libtag1c2a:armhf (1.9.1-2.1, automatic), gstreamer1.0-x:armhf (1.4.4-2, automatic), librhythmbox-core8:armhf (3.1-1, automatic), libvpx1:armhf (1.3.0-3, automatic), gnupg-agent:armhf (2.0.26-6, automatic)
+End-Date: 2015-11-29  03:23:27
+
+Start-Date: 2015-12-05  02:13:46
+Commandline: apt-get install intltool
+Install: gettext:armhf (0.19.3-2, automatic), libxml-parser-perl:armhf (2.41-3, automatic), liblwp-mediatypes-perl:armhf (6.02-1, automatic), libhttp-message-perl:armhf (6.06-1, automatic), autoconf:armhf (2.69-8, automatic), libfile-listing-perl:armhf (6.04-1, automatic), m4:armhf (1.4.17-4, automatic), libsigsegv2:armhf (2.10-4+b1, automatic), liburi-perl:armhf (1.64-1, automatic), libhttp-cookies-perl:armhf (6.01-1, automatic), libwww-perl:armhf (6.08-1, automatic), patch:armhf (2.7.5-1, automatic), libhttp-negotiate-perl:armhf (6.00-2, automatic), libhtml-tree-perl:armhf (5.03-1, automatic), libtimedate-perl:armhf (2.3000-2, automatic), libnet-http-perl:armhf (6.07-1, automatic), intltool:armhf (0.50.2-2), libhtml-parser-perl:armhf (3.71-1+b3, automatic), automake:armhf (1.14.1-4, automatic), libgomp1:armhf (4.9.2-10, automatic), libhttp-date-perl:armhf (6.02-1, automatic), libwww-robotrules-perl:armhf (6.01-1, automatic), libencode-locale-perl:armhf (1.03-1, automatic), libio-socket-ssl-perl:armhf (2.002-2+deb8u1, automatic), autotools-dev:armhf (20140911.1, automatic), libhtml-tagset-perl:armhf (3.20-2, automatic), libio-html-perl:armhf (1.001-1, automatic), liblwp-protocol-https-perl:armhf (6.06-2, automatic), libnet-ssleay-perl:armhf (1.65-1+b1, automatic)
+End-Date: 2015-12-05  02:15:38
+
+Start-Date: 2015-12-05  08:20:24
+Commandline: apt-get install xfce4-artwork
+Install: xfce4-artwork:armhf (0.1.1a~git+20110420-1)
+End-Date: 2015-12-05  08:20:39
+
+Start-Date: 2015-12-05  08:22:56
+Commandline: apt-get install xfce4-notifyd
+Install: xfce4-notifyd:armhf (0.2.4-3)
+End-Date: 2015-12-05  08:23:07
+
+Start-Date: 2015-12-05  08:26:27
+Commandline: apt-get install xfce4-Whiskermenu-plugin
+Install: xfce4-whiskermenu-plugin:armhf (1.4.0-1)
+End-Date: 2015-12-05  08:26:33
+
+Start-Date: 2015-12-05  08:42:03
+Commandline: apt-get install xfce4-datetime-plugin
+Install: xfce4-datetime-plugin:armhf (0.6.2-2)
+End-Date: 2015-12-05  08:42:07
+
+Start-Date: 2015-12-05  08:42:56
+Commandline: apt-get install xfce4-dict
+Install: xfce4-dict:armhf (0.7.0-1)
+End-Date: 2015-12-05  08:43:06
+
+Start-Date: 2015-12-05  08:44:04
+Commandline: apt-get install xfce4-indicator-plugin
+Install: xfce4-indicator-plugin:armhf (1.0.0-1), libindicator7:armhf (0.5.0-2, automatic)
+End-Date: 2015-12-05  08:44:10
+
+Start-Date: 2015-12-05  08:45:23
+Commandline: apt-get install xfce4-weather-plugin
+Install: xfce4-weather-plugin:armhf (0.8.3-2)
+End-Date: 2015-12-05  08:45:47
+
+Start-Date: 2015-12-05  08:46:24
+Commandline: apt-get install xfce4-xkb-plugin
+Install: xfce4-xkb-plugin:armhf (0.5.6-1)
+End-Date: 2015-12-05  08:46:35
+
+Start-Date: 2015-12-05  09:00:32
+Commandline: apt-get install xfce4-places-plugin
+Install: xfce4-places-plugin:armhf (1.6.0-1)
+End-Date: 2015-12-05  09:00:40
+
+Start-Date: 2015-12-05  09:45:05
+Commandline: apt-get install totem
+Install: libopenal1:armhf (1.15.1-5, automatic), libgstreamer-plugins-bad1.0-0:armhf (1.4.4-2.1+b1, automatic), totem-common:armhf (3.14.0-2, automatic), libsndfile1:armhf (1.0.25-9.1, automatic), gstreamer1.0-clutter:armhf (2.0.12-1, automatic), libjson-c2:armhf (0.11-4, automatic), libspandsp2:armhf (0.0.6-2+b2, automatic), libopencv-contrib2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libfluidsynth1:armhf (1.1.6-2, automatic), libchromaprint0:armhf (1.2-1, automatic), libgoa-1.0-common:armhf (3.14.2-1, automatic), libgnome-desktop-3-10:armhf (3.14.1-1, automatic), libmpeg2encpp-2.1-0:armhf (2.1.0+debian-3, automatic), libasyncns0:armhf (0.8-5, automatic), libgrilo-0.2-1:armhf (0.2.11-2, automatic), libgcr-base-3-1:armhf (3.14.0-2, automatic), libenca0:armhf (1.16-1, automatic), libilmbase6:armhf (1.0.1-6.1, automatic), libva1:armhf (1.4.1-1, automatic), libwildmidi1:armhf (0.3.7-1, automatic), libgtkglext1:armhf (1.2.0-3.2, automatic), libiptcdata0:armhf (1.0.4-4, automatic), libdca0:armhf (0.0.5-7, automatic), grilo-plugins-0.2:armhf (0.2.13-3, automatic), liboauth0:armhf (1.0.1-1, automatic), libclutter-gtk-1.0-0:armhf (1.6.0-1, automatic), libmpg123-0:armhf (1.20.1-2, automatic), libopencv-objdetect2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libopencv-core2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libflite1:armhf (1.4-release-12, automatic), libtotem0:armhf (3.14.0-2, automatic), libgdata19:armhf (0.16.1-1, automatic), libfaad2:armhf (2.7-8, automatic), libopencv-calib3d2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libofa0:armhf (0.9.3-7, automatic), libavresample2:armhf (11.4-1~deb8u1, automatic), libfftw3-double3:armhf (3.3.4-2, automatic), libnautilus-extension1a:armhf (3.14.1-2, automatic), libgdata-common:armhf (0.16.1-1, automatic), libdc1394-22:armhf (2.2.3-1, automatic), libopencv-legacy2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libcogl-pango20:armhf (1.18.2-3, automatic), libkate1:armhf (0.4.1-4, automatic), libdvdread4:armhf (5.0.0-1, automatic), libclutter-1.0-0:armhf (1.20.0-1, automatic), libexempi3:armhf (2.2.1-2, automatic), libavutil54:armhf (11.4-1~deb8u1, automatic), libfribidi0:armhf (0.19.6-3, automatic), libvo-aacenc0:armhf (0.1.3-1, automatic), totem:armhf (3.14.0-2), libcogl20:armhf (1.18.2-3, automatic), libmms0:armhf (0.6.2-4, automatic), libmediaart-1.0-0:armhf (0.7.0-2, automatic), libopenal-data:armhf (1.15.1-5, automatic), libopencv-ml2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libopencv-features2d2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libwildmidi-config:armhf (0.3.7-1, automatic), libcogl-path20:armhf (1.18.2-3, automatic), libopencv-video2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libclutter-gst-2.0-0:armhf (2.0.12-1, automatic), libinput5:armhf (0.6.0+dfsg-2, automatic), libavahi-gobject0:armhf (0.6.31-5, automatic), libdmapsharing-3.0-2:armhf (2.9.28-1, automatic), libsbc1:armhf (1.2-3, automatic), libopencv-imgproc2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libdvdnav4:armhf (5.0.1-1, automatic), libpulse0:armhf (5.0-13, automatic), libgcr-3-common:armhf (3.14.0-2, automatic), libavahi-glib1:armhf (0.6.31-5, automatic), libopenjpeg5:armhf (1.5.2-3, automatic), libgoa-1.0-0b:armhf (3.14.2-1, automatic), libass5:armhf (0.10.2-3, automatic), libmplex2-2.1-0:armhf (2.1.0+debian-3, automatic), libopencv-highgui2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libmimic0:armhf (1.0.4-2.2, automatic), libmp3lame0:armhf (3.99.5+repack1-7+deb8u1, automatic), libtracker-sparql-1.0-0:armhf (1.2.4-2, automatic), libswscale3:armhf (11.4-1~deb8u1, automatic), libzbar0:armhf (0.10+doc-10, automatic), libopencv-flann2.4:armhf (2.4.9.1+dfsg-1+deb8u1, automatic), libgck-1-0:armhf (3.14.0-2, automatic), libvo-amrwbenc0:armhf (0.1.3-1, automatic), libxvidcore4:armhf (1.3.3-1, automatic), libmodplug1:armhf (0.8.8.4-4.1+b1, automatic), libwayland-egl1-mesa:armhf (10.3.2-1+deb8u1, automatic), gnome-desktop3-data:armhf (3.14.1-1, automatic), libavformat56:armhf (11.4-1~deb8u1, automatic), libavcodec56:armhf (11.4-1~deb8u1, automatic), libgsm1:armhf (1.0.13-4, automatic), libopenexr6:armhf (1.6.1-8, automatic), librtmp1:armhf (2.4+20150115.gita107cef-1, automatic), libsoundtouch0:armhf (1.8.0-1, automatic), libgme0:armhf (0.5.5-2, automatic), libschroedinger-1.0-0:armhf (1.0.11-2.1, automatic), gstreamer1.0-plugins-bad:armhf (1.4.4-2.1+b1, automatic), libsrtp0:armhf (1.4.5~20130609~dfsg-1.1, automatic), libmjpegutils-2.1-0:armhf (2.1.0+debian-3, automatic)
+End-Date: 2015-12-05  09:49:05
+
+Start-Date: 2015-12-12  00:06:34
+Commandline: apt-get install libicu-dev
+Install: icu-devtools:armhf (52.1-8+deb8u2, automatic), libicu-dev:armhf (52.1-8+deb8u2)
+End-Date: 2015-12-12  00:07:35
+
+Start-Date: 2015-12-12  00:08:57
+Commandline: apt-get install libcurl3-dev
+Install: libcurl3:armhf (7.38.0-4+deb8u2, automatic), libcurl4-openssl-dev:armhf (7.38.0-4+deb8u2)
+End-Date: 2015-12-12  00:09:09
+
+Start-Date: 2015-12-12  00:10:46
+Commandline: apt-get install libboost-signals-dev
+Install: libboost-signals1.55-dev:armhf (1.55.0+dfsg-3, automatic), libboost-signals1.55.0:armhf (1.55.0+dfsg-3, automatic), libgcc-4.8-dev:armhf (4.8.4-1, automatic), libstdc++-4.8-dev:armhf (4.8.4-1, automatic), gcc-4.8-base:armhf (4.8.4-1, automatic), libatomic1:armhf (4.9.2-10, automatic), libasan0:armhf (4.8.4-1, automatic), libboost-signals-dev:armhf (1.55.0.2), libboost1.55-dev:armhf (1.55.0+dfsg-3, automatic)
+End-Date: 2015-12-12  00:20:39
+
+Start-Date: 2015-12-12  00:26:03
+Commandline: apt-get install pkg-config
+Install: pkg-config:armhf (0.28-1)
+End-Date: 2015-12-12  00:26:10
+
+Start-Date: 2015-12-12  00:29:48
+Commandline: apt-get install glib-2.0
+Install: libqtcore4:armhf (4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1, automatic), qtcore4-l10n:armhf (4.8.6+git64-g5dc8b2b+dfsg-3+deb8u1, automatic), libqtglib-2.0-0:armhf (0.10.2-2.1)
+End-Date: 2015-12-12  00:30:03
+
+Start-Date: 2015-12-12  00:39:45
+Commandline: apt-get install libglib2.0
+Install: libglib2.0-data:armhf (2.42.1-1), libglib2.0-0-refdbg:armhf (2.42.1-1), libpcre3-dev:armhf (8.35-3.3, automatic), libglib2.0-dev:armhf (2.42.1-1), mono-runtime-sgen:armhf (3.2.8+dfsg-10, automatic), libmono-system-xml4.0-cil:armhf (3.2.8+dfsg-10, automatic), libmono-security4.0-cil:armhf (3.2.8+dfsg-10, automatic), libmono-system-security4.0-cil:armhf (3.2.8+dfsg-10, automatic), libglib2.0-doc:armhf (2.42.1-1), mono-4.0-gac:armhf (3.2.8+dfsg-10, automatic), libglib2.0-cil-dev:armhf (2.12.10-5.1), libglib2.0-cil:armhf (2.12.10-5.1), libmono-corlib4.5-cil:armhf (3.2.8+dfsg-10, automatic), mono-gac:armhf (3.2.8+dfsg-10, automatic), libglib2.0-0-dbg:armhf (2.42.1-1), cli-common:armhf (0.9+nmu1, automatic), zlib1g-dev:armhf (1.2.8.dfsg-2+b1, automatic), libglib2.0-bin:armhf (2.42.1-1), libglib2.0-tests:armhf (2.42.1-1), libpcrecpp0:armhf (8.35-3.3, automatic), mono-runtime-common:armhf (3.2.8+dfsg-10, automatic), libelfg0:armhf (0.8.13-5, automatic), libmono-system4.0-cil:armhf (3.2.8+dfsg-10, automatic), libmono-system-configuration4.0-cil:armhf (3.2.8+dfsg-10, automatic), mono-runtime:armhf (3.2.8+dfsg-10, automatic)
+End-Date: 2015-12-12  00:43:29
+
+Start-Date: 2015-12-12  00:50:08
+Commandline: apt-get install libgtk2.0 libgtk2.0-dev
+Install: libxdmcp-dev:armhf (1.1.1-1+b1, automatic), x11proto-render-dev:armhf (0.11.1-2, automatic), libxext-dev:armhf (1.3.3-1, automatic), libxcomposite-dev:armhf (0.4.4-1, automatic), libpango1.0-dev:armhf (1.36.8-3, automatic), libcairo-script-interpreter2:armhf (1.14.0-2.1, automatic), libfontconfig1-dev:armhf (2.11.0-6.3, automatic), libcairo2-dev:armhf (1.14.0-2.1, automatic), libxdamage-dev:armhf (1.1.4-2+b1, automatic), libexpat1-dev:armhf (2.1.0-6+deb8u1, automatic), libgtk2.0-doc:armhf (2.24.25-3), x11proto-fixes-dev:armhf (5.0-2, automatic), x11proto-xinerama-dev:armhf (1.2.1-2, automatic), libxft-dev:armhf (2.3.2-1, automatic), libfreetype6-dev:armhf (2.5.2-3, automatic), libpng12-dev:armhf (1.2.50-2+b2, automatic), libgtk2.0-cil:armhf (2.12.10-5.1), libatk1.0-dev:armhf (2.14.0-1, automatic), libpixman-1-dev:armhf (0.32.6-3, automatic), libgdiplus:armhf (3.6-1+b2, automatic), libgtk2.0-0-dbg:armhf (2.24.25-3), libxi-dev:armhf (1.7.4-1+b2, automatic), x11proto-composite-dev:armhf (0.4.2-2, automatic), libxfixes-dev:armhf (5.0.1-2+b2, automatic), libgtk2.0-bin:armhf (2.24.25-3), libharfbuzz-gobject0:armhf (0.9.35-2, automatic), libpthread-stubs0-dev:armhf (0.3-4, automatic), libsm-dev:armhf (1.2.2-1+b1, automatic), x11proto-input-dev:armhf (2.3.1-1, automatic), libxcb-render0-dev:armhf (1.10-3+b1, automatic), libmono-system-drawing4.0-cil:armhf (3.2.8+dfsg-10, automatic), libxrender-dev:armhf (0.9.8-1+b1, automatic), libx11-dev:armhf (1.6.2-3, automatic), libharfbuzz-dev:armhf (0.9.35-2, automatic), libxml2-utils:armhf (2.9.1+dfsg1-5, automatic), x11proto-damage-dev:armhf (1.2.1-2, automatic), x11proto-xext-dev:armhf (7.3.0-1, automatic), gir1.2-gtk-2.0:armhf (2.24.25-3, automatic), xorg-sgml-doctools:armhf (1.11-1, automatic), libgtk2.0-cil-dev:armhf (2.12.10-5.1), x11proto-randr-dev:armhf (1.4.0-2, automatic), libxcursor-dev:armhf (1.1.14-1+b1, automatic), xtrans-dev:armhf (1.3.4-1, automatic), libgif4:armhf (4.1.6-11, automatic), x11proto-core-dev:armhf (7.0.26-1, automatic), libmono-cairo4.0-cil:armhf (3.2.8+dfsg-10, automatic), libxcb-shm0-dev:armhf (1.10-3+b1, automatic), libxinerama-dev:armhf (1.1.3-1+b1, automatic), libxau-dev:armhf (1.0.8-1, automatic), libice-dev:armhf (1.0.9-1+b1, automatic), libxcb1-dev:armhf (1.10-3+b1, automatic), libgdk-pixbuf2.0-dev:armhf (2.31.1-2+deb8u2, automatic), libxrandr-dev:armhf (1.4.2-1+b1, automatic), libgtk2.0-dev:armhf (2.24.25-3), x11proto-kb-dev:armhf (1.0.6-2, automatic)
+End-Date: 2015-12-12  00:54:41
+
+Start-Date: 2015-12-12  01:31:46
+Commandline: apt-get install build-essential
+Install: libdpkg-perl:armhf (1.17.25, automatic), make:armhf (4.0-8.1, automatic), dpkg-dev:armhf (1.17.25, automatic), build-essential:armhf (11.7), g++-4.9:armhf (4.9.2-10, automatic), libgcc-4.9-dev:armhf (4.9.2-10, automatic), g++:armhf (4.9.2-2, automatic), libstdc++-4.9-dev:armhf (4.9.2-10, automatic), bzip2:armhf (1.0.6-7+b3, automatic), libasan1:armhf (4.9.2-10, automatic), gcc:armhf (4.9.2-2, automatic), binutils:armhf (2.25-5, automatic), gcc-4.9:armhf (4.9.2-10, automatic), libubsan0:armhf (4.9.2-10, automatic)
+End-Date: 2015-12-12  01:34:34
+
+Start-Date: 2015-12-12  01:36:05
+Commandline: apt-get install libxml2-dev
+Install: libxml2-dev:armhf (2.9.1+dfsg1-5)
+End-Date: 2015-12-12  01:36:17
+
+Start-Date: 2015-12-12  01:42:21
+Commandline: apt-get install libssl-dev
+Install: libssl-dev:armhf (1.0.1k-3+deb8u1)
+End-Date: 2015-12-12  01:42:37
+
+Start-Date: 2015-12-13  02:29:11
+Remove: python-dbus:armhf (1.2.0-2+b3), python-wicd:armhf (1.7.2.4-4.1), python-dbus-dev:armhf (1.2.0-2)
+End-Date: 2015-12-13  02:29:16
+
+Start-Date: 2015-12-13  02:30:02
+End-Date: 2015-12-13  02:30:03
+
+Start-Date: 2015-12-13  02:31:12
+End-Date: 2015-12-13  02:31:13
+
+Start-Date: 2015-12-13  02:50:15
+Commandline: apt-get install network-manager-gnome
+Install: libnm-gtk0:armhf (0.9.10.0-2, automatic), policykit-1-gnome:armhf (0.105-2, automatic), libnm-glib-vpn1:armhf (0.9.10.0-7, automatic), network-manager-gnome:armhf (0.9.10.0-2), libnm-gtk-common:armhf (0.9.10.0-2, automatic)
+End-Date: 2015-12-13  02:51:01
+
+Start-Date: 2015-12-16  13:36:15
+Commandline: apt-get install libgcrypt11 libgcrypt11-dev libgcrypt20 libgcrypt20-dev
+Install: libgcrypt11-dev:armhf (1.5.4-3+really1.6.3-2), libgcrypt20-dev:armhf (1.6.3-2), libgpg-error-dev:armhf (1.17-3, automatic)
+End-Date: 2015-12-16  13:36:33
+
+Start-Date: 2015-12-17  12:16:04
+Commandline: apt-get install alsa-tools alsa-tools-gui
+Install: alsa-tools:armhf (1.0.28-1), libfltk1.1:armhf (1.1.10-19+b1, automatic), alsa-tools-gui:armhf (1.0.28-1)
+End-Date: 2015-12-17  12:16:28
+
+Start-Date: 2015-12-17  12:31:02
+Commandline: apt-get install alsamixergui
+Install: alsamixergui:armhf (0.9.0rc2-1-9.1)
+End-Date: 2015-12-17  12:31:11
+
+Start-Date: 2010-01-01  01:03:48
+Commandline: apt-get install alsa-base
+Install: alsa-base:armhf (1.0.27+1)
+End-Date: 2010-01-01  01:03:53
+
+Start-Date: 2015-12-18  11:59:18
+Commandline: apt-get install pulseaudio
+Install: pulseaudio:armhf (5.0-13), libfftw3-single3:armhf (3.3.4-2, automatic), libpulsedsp:armhf (5.0-13, automatic), libwebrtc-audio-processing-0:armhf (0.1-3, automatic), libspeexdsp1:armhf (1.2~rc1.2-1, automatic), libasound2-data:armhf (1.0.28-1, automatic), libasound2-plugins:armhf (1.0.28-1+b1, automatic), pulseaudio-utils:armhf (5.0-13, automatic)
+Upgrade: libasound2:armhf (1.0.25-4, 1.0.28-1)
+End-Date: 2015-12-18  12:00:11
+
+Start-Date: 2015-12-18  13:05:58
+Commandline: apt-get install ristretto
+Install: ristretto:armhf (0.6.3-2)
+End-Date: 2015-12-18  13:06:18
+
+Start-Date: 2015-12-18  13:10:57
+Commandline: apt-get install tumbler
+Install: libpoppler-glib8:armhf (0.26.5-2, automatic), libtumbler-1-0:armhf (0.1.30-1+b1, automatic), tumbler-common:armhf (0.1.30-1, automatic), libpoppler46:armhf (0.26.5-2, automatic), tumbler:armhf (0.1.30-1+b1)
+End-Date: 2015-12-18  13:11:15
+
+Start-Date: 2015-12-18  13:19:02
+Commandline: apt-get install sylpheed
+Install: libcompfaceg1:armhf (1.5.2-5, automatic), libonig2:armhf (5.9.5-3.2, automatic), sylpheed:armhf (3.5.0~beta1~r3426-1), libgtkspell0:armhf (2.0.16-1.1, automatic), libpisock9:armhf (0.12.5-dfsg-1, automatic)
+End-Date: 2015-12-18  13:19:28
+
+Start-Date: 2015-12-26  01:44:49
+Commandline: apt-get install libusb-1.0-0-dev
+Install: libusb-1.0-0-dev:armhf (1.0.19-1)
+End-Date: 2015-12-26  01:44:54

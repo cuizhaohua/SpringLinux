@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Öffnen einer Datei auf einem Server</title>
+
+  <p>Vor dem Öffnen einer Datei in <app>gedit</app>, die sich auf einem Server befindet, sollten Sie über einige technische Informationen über den Server verfügen. Beispielsweise müssen Sie die IP-Adresse oder Adresse (URL) des Servers sowie die Art des Servers kennen (z.B. HTTP, FTP usw.). </p>
+
+  <p>Außerdem schränken einige Servertypen die Nutzung der auf dem Server gespeicherten Dateien ein. Sie könnten beispielsweise in der Lage sein, eine Datei auf einem Server zu öffnen, aber die geänderte Datei nur lokal auf Ihrem eigenen Rechner speichern können.</p>
+
+  <p>Führen Sie unter Beachtung dieser Beschränkungen die folgenden Schritte aus, um mit <app>gedit</app> eine Datei auf einem Server zu öffnen:</p>
+
+    <steps>
+      <item><p>Wählen Sie <menuchoice><guimenu>Datei</guimenu><guimenuitem>Öffnen</guimenuitem></menuchoice>, um den Dialog <guilabel>Dateien öffnen</guilabel> anzuzeigen.</p></item>
+      <item><p>Wählen Sie das <gui>Bleistift</gui>-Symbol im oberen Bereich des <gui>Dateien auswählen</gui>-Dialogs.</p></item>
+      <item><p>Geben Sie die IP-Adresse oder Adresse (URL) des entsprechenden Servers ein.</p></item>
+      <item><p>Suchen Sie die zu öffnende Datei und wählen Sie sie aus.</p></item>
+      <item><p>Verwenden Sie die <gui>Zeichenkodierung</gui>-Auswahlliste, um die passende Zeichenkodierung auszuwählen.</p></item>
+      <item><p>Klicken Sie auf <gui>Öffnen</gui>.</p></item>
+    </steps>
+
+  <p>Zu den zulässigen Typen für URI (Adresse) gehören <em>http:</em>, <em>ftp:</em>, <em>file:</em> sowie alle anderen von <app>gvfs</app> unterstützten Methoden.</p>
+
+  <note>
+    <p>Dateien mancher URI-Typen werden nur als lesbar geöffnet, so dass jegliche von Ihnen ausgeführte Änderungen an einem anderen Ort gespeichert werden müssen. HTTP ermöglicht beispielsweise nur das Lesen von Dateien. Auf einem FTP-Server liegende Dateien werden auch als nur lesbar geöffnet, weil nicht alle FTP-Server entfernte Dateien korrekt speichern können.</p>
+  </note>
+
+</page>

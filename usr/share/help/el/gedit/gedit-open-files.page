@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Άνοιγμα ενός αρχείου ή σύνολο αρχείων</title>
+
+  <p>Για να ανοίξετε ένα αρχείο στο <app>gedit</app>, πατήστε στο κουμπί <gui>Άνοιγμα</gui>, ή πατήστε <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>Αυτό θα προκαλέσει την εμφάνιση του διαλόγου <gui>Άνοιγμα αρχείων</gui>. Χρησιμοποιείστε το ποντίκι ή το πληκτρολόγιο για να επιλέξετε το αρχείο που επιθυμείτε να ανοίξετε, και πατήστε στο <gui>Άνοιγμα</gui>. Το αρχείο που έχετε επιλέξει θα ανοίξει σε καινούρια καρτέλα.</p>
+  <p>Για να κλείσετε το παράθυρο διαλόγου <gui>Άνοιγμα αρχείων</gui> χωρίς να ανοίξετε ένα αρχείο, πατήστε <gui>Ακύρωση</gui>.</p>
+
+  <note style="tip"><p>Μπορείτε να χρησιμοποιήσετε τα πλήκτρα <key>Ctrl</key> και <key>Shift</key> για να ανοίξετε περισσότερα από ένα αρχεία τη φορά. Αν κρατήσετε πατημένο το πλήκτρο <key>Ctrl</key> καθώς επιλέγετε πολλαπλά αρχεία, πατώντας <gui>Άνοιγμα</gui> θα ανοίξει κάθε αρχείο που έχετε επιλέξει.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Κρατώντας πατημένο το πλήκτρο <key>Shift</key> καθώς επιλέγετε πολλαπλά αρχεία θα ανοίξει το πρώτο αρχείο που έχετε επιλέξει, το τελευταίο, και όλα τα ενδιάμεσα.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

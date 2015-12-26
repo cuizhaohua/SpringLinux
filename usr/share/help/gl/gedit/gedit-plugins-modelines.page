@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="gl">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Compatibilidade para gedit para os estios dos modos de liñas de Emacs, Kate e Vim.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Liñas de modo</title>
+
+  <p>O engadido <app>Modos de liña</app> permítelle a <app>gedit</app> analizar as liñas de texto que comezan e rematan un ficheiro e logo aplicar un conxunto de preferencias do documento ao ficheiro. O engadido <app>Modos de liña</app> son compatíbeis con un subconxunto de opcións usados polos editores de texto <app>Emacs</app>, <app>Kate</app> e <app>Vim</app></p>
+
+  <p>Para activar o engadido <app>Modos de liña</app> seleccione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferencias</gui><gui>Engadidos</gui><gui>Modos de liñas</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Opcións xerais dos modos de liña</title>
+  <p>Pódense configurar as seguintes opcións usando os modos de liñas de <app>gedit</app>:</p>
+  <list>
+    <item><p>Ancho de tabulación</p></item>
+    <item><p>Ancho da sangría</p></item>
+    <item><p>Inserir espazos no lugar de tabuladores</p></item>
+    <item><p>Axuste de texto</p></item>
+    <item><p>Ancho da marxe dereita</p></item>
+  </list>
+
+  <note>
+    <p>As preferencias estabelecidas para usar liñas de modo teñen preferencia sobre as especificadas no diálogo de preferencias.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Líneas de modo Emacs</title>
+
+  <p>As primeiras dúas liñas dun documento analízanse buscando liñas de modos <app>Emacs</app>, e <app>gedit</app> admite as seguintes opcións de liñas de modo <app>Emacs</app>:</p>
+  <list>
+    <item><p>Tab-width</p></item>
+    <item><p>Indent-offset</p></item>
+    <item><p>Indent-tabs-mode</p></item>
+    <item><p>Text auto-wrap</p></item>
+  </list>
+  <p>Para obter máis información sobre os modos de liñas de <app>Emacs</app>, visite o <link href="http://www.gnu.org/software/emacs/manual/emacs.html">Manual de GNU Emacs</link>.</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Líneas de modo Kate</title>
+
+  <p>As primeiras e últimas liñas dun documento son analizadas polos modos de liña de <app>Kate</app> e <app>gedit</app> é compatíbel cos seguintes modos de liña de <app>Kate</app>:</p>
+
+  <list>
+    <item><p>tab-width</p></item>
+    <item><p>indent-width</p></item>
+    <item><p>space-indent</p></item>
+    <item><p>word-wrap</p></item>
+    <item><p>word-wrap-column</p></item>
+  </list>
+
+  <p>Para máis información sobre os modos de liña de <app>Kate</app>, visite a <link href="http://kate-editor.org/">páxina web de Kate</link>.</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Líneas de modo Vim</title>
+  <p>A primeira e as últimas 3 liñas dun documento analízanse buscando liñas de modo <app>Vim</app> e <app>gedit</app> admite as seguintes opcións de liñas de modo <app>Vim</app>:</p>
+
+  <list>
+    <item><p>et (expandir tabulador)</p></item>
+    <item><p>ts (deter tabulador)</p></item>
+    <item><p>sw (cambiar ancho)</p></item>
+    <item><p>wrap</p></item>
+    <item><p>textwidth</p></item>
+  </list>
+
+  <p>Para obter máis información sobre <app>Vim</app> visite o <link href="http://www.vim.org/">sitio web de Vim</link>.</p>
+</section>
+</page>

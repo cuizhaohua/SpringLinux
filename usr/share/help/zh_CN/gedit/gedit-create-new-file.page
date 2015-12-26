@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-create-new-file" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="first"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>创建新文件</title>
+
+  <p>The easiest way to create a new file in <app>gedit</app>, is to click the
+  <gui>Create a new document</gui> button on the left side of the toolbar,
+  or press <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+
+  <p>这些操作都会在 <app>gedit</app> 窗口中创建一个新文件，如果窗口中已经打开有文件，那么新文件会在那个文件的右边新建一个标签。</p>
+
+</page>

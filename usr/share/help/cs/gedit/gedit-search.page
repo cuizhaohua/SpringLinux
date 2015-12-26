@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hledání textu</title>
+  
+    <p>Nástroj hledání vám pomůže najít konkrétní úsek textu v rámci textu vašeho souboru.</p>
+
+    <steps>
+      <title>Vyhledání textu</title>
+      <item>
+        <p>Otevřete <gui>okno hledání</gui> kliknutím na <guiseq><gui style="menu">Hledat</gui> <gui style="menuitem">Hledat</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key><key>F</key></keyseq>. Kurzor se přemístí na začátek pole v <gui>okně hledání</gui>.</p>
+      </item>
+      <item>
+        <p>Napište do <gui>okna hledání</gui> text, který si přejete najít.</p>
+      </item>
+      <item>
+        <p><app>gedit</app> bude průběžně během psaní zvýrazňovat části textu, které odpovídají tomu zadanému.</p>
+      </item>
+    </steps>
+    
+    <p>Pro pohyb ve výsledcích hledání použijte něco z následujícího:</p>
+    <list>
+      <item>
+        <p>Klikněte na tlačítka <gui style="button">nahoru</gui> nebo <gui style="button">dolů</gui> v podobě šipek vedle <gui>vyhledávacího pole</gui>.</p>
+      </item>
+      <item>
+        <p>Zmáčkněte na klávesnici klávesu <key>↑</key> nebo <key>↓</key>.</p>
+      </item>
+      <item>
+        <p>Zmáčkněte <keyseq><key>Ctrl</key> <key>G</key></keyseq> nebo <keyseq><key>Ctrl</key> <key>Shift</key> <key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Zmáčkněte <key>Ctrl</key> a použijte funkci <key>posuvu</key> (rolovací kolečko) na myši nebo touchpadu pro pohyb nahoru nebo dolů.</p>
+      </item>
+    </list>
+
+  <p><gui>Okno hledání</gui> můžete zavřít zmáčknutím <key>Esc</key> nebo <key>Enter</key>. Zmáčknutí <key>Esc</key> vrátí kurzor na místo, kde byl před započetím hledání. Zmáčknutí <key>Enter</key> vrátí kurzor na místo nalezeného výsledku.</p>
+
+  <list>
+    <title>Rady k vyhledávání</title>
+    <item>
+      <p>Pokud část textu zvýrazníte myší a zmáčknete <keyseq><key>Ctrl</key> <key>F</key></keyseq>, zvýrazněný text se objeví předepsaný v okně hledání.</p>
+    </item>
+    <item>
+      <p>Kliknutím na ikonu <gui style="button">lupy</gui> v okně hledání nebo kliknutím pravým tlačítkem kdekoliv v okně hledání se dostanete k dalším volbám. Vybrat si můžete z jedné nebo více následujících voleb hledání:</p>
+      <list>
+        <item>
+          <p>Vyberte <gui>Rozlišovat velikost písmen</gui>, aby se při hledání bral ohled na velikost písmen.</p>
+        </item>
+        <item>
+          <p>Vyberte <gui>Hledat pouze celá slova</gui>, aby se hledala je úplná slova.</p>
+        </item>
+        <item>
+          <p>Vyberte <gui>Přecházet přes okraj</gui>, aby se v hledání pokračovalo znovu od začátku dokumentu, až se narazí na jeho konec.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Text, který jste vyhledali, zůstane zvýrazněný, i po dokončení hledání. Pokud budete chtít zvýraznění odstranit, klikněte na <guiseq><gui>Hledat</gui> <gui>Zrušit zvýrazňování</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key> <key>Shift</key> <key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

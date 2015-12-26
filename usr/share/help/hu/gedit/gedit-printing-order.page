@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Másolatok nyomtatása a megfelelő sorrendben</title>
+
+  <section id="printing-reverse">
+    <title>Fordított</title>
+
+    <p>A nyomtatók általában először az első, utoljára pedig az utolsó oldalt nyomtatják ki, így az oldalakat fordított sorrendben kapja meg. A sorrend megfordításához:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Fájl</gui> <gui style="menuitem">Nyomtatás</gui></guiseq> lehetőséget.</p>
+      </item>
+      <item>
+        <p>A Nyomtatás ablak <gui style="tab">Általános</gui> lapján a <gui style="group">Másolatok</gui> szakaszban jelölje be a <gui style="checkbox">Fordított</gui> négyzetet.</p>
+      </item>
+    </steps>
+
+    <p>Ekkor az utolsó oldal kerül elsőként kinyomtatásra.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Szétválogatás</title>
+    
+    <p>Ha a dokumentumból több példányt nyomtat, a nyomatok alapbeállítás szerint oldalszám szerint lesznek csoportosítva (azaz az első oldal másolatai készülnek el, majd a második oldal másolatai stb.). A szétválogatás hatására az egyes másolatok oldalai csoportosítva készülnek el.</p>
+
+    <p>A szétválogatáshoz:</p>
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">Fájl</gui> <gui>Nyomtatás</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+        <p>A Nyomtatás ablak <gui style="tab">Általános</gui> lapján a <gui style="group">Másolatok</gui> szakaszban jelölje be a <gui style="checkbox">Szétválogatás</gui> négyzetet.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

@@ -1,0 +1,3 @@
+#!/bin/sh
+#save logs from ramdisk to harddrive:
+/etc/init.d/ramlog restart

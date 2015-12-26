@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libdca.so.0.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libdca0
+/usr/share/doc/libdca0/changelog.gz
+/usr/share/doc/libdca0/libdca.txt.gz
+/usr/share/doc/libdca0/changelog.Debian.gz
+/usr/share/doc/libdca0/copyright
+/usr/lib/arm-linux-gnueabihf/libdca.so.0

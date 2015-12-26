@@ -1,0 +1,53 @@
+---[ Mounting devices
+
+Rhythmbox does not see devices, be it audio CDs or iPods, unless they 
+are mounted by gvfs.  If you are not running nautilus, you need to mount 
+them with gvfs-mount.
+
+
+---[ Configuring the output sink
+
+You can choose your preferred output sink by using gnome-sound-properties (in
+the gnome-control-center package), or by editing the GConf key:
+    /system/gstreamer/0.10/default/musicaudiosink
+
+The default is to detect your output sink automagically.
+
+
+---[ Music sharing
+
+The avahi-daemon dependency is not absolute, but is necessary for music
+sharing.  Please install avahi-daemon to share music.
+
+To be useful, avahi-daemon listens on the network by default.  This introduces
+a security risk, you might want to configure avahi-daemon or stop it to avoid
+listening in exposed areas.
+
+
+--[ mms:// web radios
+
+To read mms:// based web radios, you need gstreamer0.10-plugins-bad.
+
+
+---[ Before reporting a bug
+
+If you happen to have problems with sound output or decoding, such as a file
+that can not be played, or a crappy sound, please check whether you can
+reproduce the problem with GStreamer.  The following command reproduces the
+behavior of Rhythmbox calling GStreamer:
+    gst-launch playbin uri=file:///path/to/my/musicfile.ogg
+
+The upstream BTS is at <http://bugzilla.gnome.org/>, and there's no
+synchronization mechanism between the Debian and the GNOME BTS, so you can
+expect more information on a particular bug not related to Debian in the
+upstream BTS.  It is always ok to report a bug in the Debian BTS, this
+will help other Debian users, but the upstream BTS might give you clues
+on a particular bug you're experiencing, a quick workaround, or even tell you
+it's fixed!  ;)
+
+
+Please submit a bug report on the Debian package rhythmbox if this text is
+outdated.
+
+$Id: README.Debian 20314 2009-06-10 19:28:54Z joss $
+

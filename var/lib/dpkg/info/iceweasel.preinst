@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+if [ "$1" = "upgrade" ] || [ "$1" = "install" ] ; then
+    dpkg-divert --package iceweasel --divert /usr/bin/firefox.real --rename /usr/bin/firefox
+fi
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/iceweasel/searchplugins/common/duckduckgo.xml -- "$@"
+# End automatically added section
+

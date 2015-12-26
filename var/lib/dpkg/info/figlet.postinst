@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = configure ]; then
+  # Add alternatives for figlet
+  update-alternatives --install /usr/bin/figlet figlet \
+        /usr/bin/figlet-figlet 30 --slave /usr/share/man/man6/figlet.6.gz \
+	figlet.6.gz /usr/share/man/man6/figlet-figlet.6.gz
+fi
+
+

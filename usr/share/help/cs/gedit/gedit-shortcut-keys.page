@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Klávesové zkratky</title>
+
+  <p>Používejte <gui>klávesové zkratky</gui> k provádění běžných úkonů rychleji, než kdybyste pracovali s myší a nabídkami. Následující tabulky uvádějí klávesové zkratky aplikace <app>gedit</app>.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Klávesové zkratky vztahující se ke kartám</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Přepnout na následující kartu vlevo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přepnout na následující kartu vpravo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zavřít kartu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Uložit všechny karty</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zavřít všechny karty</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Znovu otevřít nedávno zavřenou kartu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přepnout na <var>n</var>-tou kartu</p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Nová skupina karet</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Předchozí skupina karet</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Následující skupina karet</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Klávesové zkratky pro práci se soubory</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Vytvořit nový dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Otevřít dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Uložit aktuální dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Uložit aktuální dokument pod novým názvem</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vytisknout aktuální dokument</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Náhled tisku</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zavřít aktuální dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Ukončit gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Klávesové zkratky pro úpravu souborů</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Přesunout se na začátek aktuálního řádku</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout se na konec aktuálního řádku</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout se na začátek dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout se na konec dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout vybrané slovo o slovo doprava</p></td>
+          <td><p><keyseq><key>Alt</key><key>→</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout vybrané slovo o slovo doleva</p></td>
+          <td><p><keyseq><key>Alt</key><key>←</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vrátit zpět poslední provedený úkon</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Znovu provést naposledy zpět vrácený úkon</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vyjmout vybraný text nebo oblast a vložit ji do schránky</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zkopírovat vybraný text nebo oblast do schránky</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vložit obsah ze schránky</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vybrat všechen text v souboru</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Odstranit aktuální řádek</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout vybraný řádek o řádek nahoru</p></td>
+          <td><p><keyseq><key>Alt</key><key>Up Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přesunout vybraný řádek o řádek dolů</p></td>
+          <td><p><keyseq><key>Alt</key><key>Down Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přidat tabulační zarážku</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Odstranit tabulační zarážku</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Převést vybraný text na velká písmena</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Převést vybraný text na malá písmena</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přepnout velikost písmen ve vybraném textu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Klávesové zkratky pro zobrazování a skrývání panelů</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Zobrazit/skrýt postranní panel</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Zobrazit/skrýt spodní panel</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Klávesové zkratky pro hledávání</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Hledat řetězec</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Hledat následující výskyt téhož řetězce</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Hledat předchozí výskyt téhož řetězce</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vyhledat a nahradit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zrušit zvýrazňování</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Přejít na řádek</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Klávesové zkratky pro nástroje</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Zkontrolovat pravopis</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Odstranit koncové mezery (se zásuvným modulem)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Spustit „make“ v aktuální složce (se zásuvným modulem)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Výpis složky (se zásuvným modulem)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Klávesové zkratky pro nápovědu</title>
+      <thead>
+        <tr>
+          <td><p>aby se provedlo toto</p></td>
+          <td><p>zmáčkněte toto</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Otevřít uživatelskou příručku k aplikaci gedit</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

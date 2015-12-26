@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-plugins-file-browser" xml:lang="pt-BR">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2011-08-17" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email its:translate="no">dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email its:translate="no">jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Use o painel lateral para navegar e abrir arquivos</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Painel de navegação de arquivos</title>
+
+  <p>Dependendo em como usa o <app>gedit</app>, você pode achar útil usar o plug-in <app>Painel de navegação de arquivos</app>. Este plug-in incorpora um <app> navegador de arquivos</app> no painel lateral, dando-lhe fácil acesso arquivos frequentemente usados.</p>
+  
+  <p>Você pode habilitar o <gui>Painel lateral</gui> selecionando <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferências</gui><gui>Plug-ins</gui><gui>Painel de navegação de arquivos</gui></guiseq>.</p>
+
+  <section id="sidepane-open">
+    <title>Abrindo arquivos do painel lateral</title>
+    <p>Para ativar e usar o <gui>painel lateral</gui>, selecione <guiseq><gui>Ver</gui><gui>Painel lateral</gui></guiseq>(ou apenas pressione <key>F9</key>), e então clique no ícone do <gui>navegador de arquivos</gui> no canto inferior do painel.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Isso irá ativar o modo <em>Navegador de arquivos</em> do <app>Painel lateral</app>. Você pode usar os botões de navegação no topo do painel para localizar e abrir seus arquivos desejados.</p>
+  </section>
+
+</page>

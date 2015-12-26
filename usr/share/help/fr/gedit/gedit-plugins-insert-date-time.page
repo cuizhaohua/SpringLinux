@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-insert-date-time" xml:lang="fr">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Insérer la date et l'heure à la position du curseur</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Insertion de la date/heure</title>
+
+  <p>Comme son nom l'indique, le greffon <gui>Insérer la date et l'heure</gui> vous permet d'insérer la date et/ou l'heure à l'emplacement actuel du curseur. Pour activer ce greffon, choisissez <guiseq><gui>gedit</gui><gui>Préférences</gui><gui>Greffons</gui><gui>Insérer la date et l'heure</gui></guiseq>. Pour utiliser le greffon, cliquez sur <guiseq><gui>Édition</gui><gui>Insérer la date et l'heure</gui></guiseq>.</p>
+
+  <p>Par défaut, le greffon <gui>Insérer la date et l'heure</gui> vous demande de choisir votre format de date/heure préféré à chaque fois que vous utilisez le greffon. Cependant vous pouvez choisir votre propre format de date et d'heure par défaut en sélectionnant <guiseq><gui>gedit</gui><gui>Préférences</gui><gui>Greffons</gui><gui>Insérer la date et l'heure</gui><gui>Configurer le greffon</gui></guiseq>.</p>
+
+</page>

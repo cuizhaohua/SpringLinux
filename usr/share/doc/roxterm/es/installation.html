@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-US" lang="es-ES" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Adrian Sampson" />
+	<meta name="description" content="ROXTerm, a full-featured VTE terminal emulator" />
+	<title>ROXTerm</title>
+	<link rel="stylesheet" type="text/css" href="../lib/roxterm.css" />
+	
+	<!--[if lte IE 7]>
+
+	<link rel="stylesheet" type="text/css" href="../lib/roxterm_ie.css" />
+	<![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../lib/favicon.ico" />
+</head>
+<body>
+	<div id="Container">
+		<div id="Header">
+			<div>
+				<a id="Logo" href="index.html">
+					<img src="../lib/logo_text.png" alt="ROXTerm" />
+				</a>
+
+				<ul>
+					<li><a id="MainNav_Home" href="index.html">Inicio</a></li>
+					<li><a id="MainNav_News" href="news.html">Noticias</a></li>
+					<li><a id="MainNav_Installation" class="active" href="#">Instalación</a></li>
+					<li><a id="MainNav_UserGuide" href="guide.html">Guía de usuario</a></li>
+					<li><a id="MainNav_Forums"
+href="https://sourceforge.net/projects/roxterm/forums">Foros</a></li>
+				</ul>
+			</div>
+			
+		<!-- PHP PLACEHOLDER -->
+</div>
+
+		<div id="Middle" class="clear">
+			<ol id="SubNav">
+				<li><a href="#Download">Descarga</a></li>
+				<li><a href="#Requirements">Requisitos</a></li>
+				<li><a href="#Installing">Instalando</a></li>
+			</ol>
+
+			<div id="Content" class="partialWidth">
+				<h1>Instalación</h1>
+
+
+				<h2>Descarga <a class="pageAnchor" name="Download">:</a></h2>
+
+				<p>Visite la <a href="http://sourceforge.net/projects/roxterm">Página del
+proyecto en Source Forge</a> para descargar los archivos publicados o usar
+otras herramientas de Sourceforge. Si quiere obtener las versiones en
+desarrollo antes de ser publicadas, utilice git. Para versiones anteriores a
+la 1.19.0 utilice svn (subversion). El siguiente comando le permite obtener
+la última versión:</p>
+
+				<p class="snippet">
+					<span>git clone git://git.code.sf.net/p/roxterm/code roxterm</span>
+				</p>
+
+				<h2>Requisitos <a class="pageAnchor" name="Requirements">:</a></h2>
+
+				<p>Necesita las librerías GTK+2 que son un estándar en todos los derivados Unix
+actuales, y/o GTK+3.  Las versiones mínimas necesarias son 2.16 para glib y
+2.18 para GTK+. También necesitará vte/libvte (al menos la versión 0.20),
+que es un componente de Gnome; la mayoría de las distribuciones empaquetan
+la versiones de GTK+2 y GTK+3 de forma separada.  También se requiere D-BUS
+(ver más abajo).</p>
+
+				<p>Para compilar ROXTerm necesitará los archivos de cabeceras de las librerías
+anteriores. En los sistemas de paquetes se incluyen habitualmente dentro de
+paquetes cuyos nombres terminan en «-dev» o «-devel».</p>
+
+				<p>ROXTerm utiliza un nuevo sistema de compilado, hecho a medida llamado
+maitch. Éste requiere python y el módulo «lockfile» de python.</p>
+
+                <h3>D-Bus</h3>
+
+				<p>D-Bus es un sistema de mensajes que ROXTerm utiliza para conectar terminales
+con su herramienta de configuración. ROXTerm usa el bus «session», que debe
+ser reiniciado junto con la sesión de escritorio. Todas las versiones
+actuales de los gestores de sesión de ROX, GNOME y KDE inician D-Bus. Si
+utiliza algún otro gestor de sesión/escritorio/ventanas que no inicia D-Bus
+puede arrancarlo insertando algo como esto cerca del inicio de su archivo
+.xinitrc o .xsession:</p>
+
+				<p class="snippet">
+					<span>if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then</span> <span
+class="indented">eval `dbus-launch --sh-syntax --exit-with-session`</span>
+<span class="indented">export DBUS_SESSION_BUS_ADDRESS</span>
+<span>fi</span>
+				</p>
+
+				<p>El motivo de utilizar un sistema de mensajes de configuración hecho a medida
+sobre D-Bus en lugar de gconf es porque gconf no proporciona una forma de
+almacenar un número arbitrario de perfiles cada uno con su archivo de
+configuración.</p>
+
+				<h2>Instalando <a class="pageAnchor" name="Installing">:</a></h2>
+
+				<p>Para instalar ROXTerm para ROX todo lo que tiene que hacer es desempaquetar
+el archivo tar en su directorio Apps y ejecutarlo desde allí, pero
+probablemente quiera renombrar la carpeta a ROXTerm. En otros sistemas
+ROXTerm se puede instalar como un archivo de fuentes basado en autoconf,
+pero utilizando los equivalentes de maitch:</p>
+
+				<p class="snippet">
+					<span>python ./mscript.py configure</span> <span>python ./mscript.py
+build</span> <span>python ./mscript.py install</span>
+				</p>
+
+				<p>Hay varias opciones disponibles, ejecute
+				<p class="snippet">
+					<span>python ./mscript.py help</span>
+				</p>
+				para más detalles.</p>
+
+				<p>Ya no se soporta el compilado mediante autoconf.</p>
+
+				<h3>Debian y Ubuntu</h3>
+
+				<p>Ahora hay paquetes oficiales de Debian actualizados. Vea <a
+href="http://packages.debian.org/roxterm">http://packages.debian.org/roxterm</a>.</p>
+
+				<p>Ubuntu también tiene paquetes oficiales de roxterm, pero debido al ciclo de
+publicaciones de Ubuntu pueden quedar por detrás de las versiones más
+actuales. Por eso he configurado un <a
+href="https://launchpad.net/~h-realh/+archive/roxterm">PPA</a> que contiene
+las últimas versiones de ROXTerm para la versión actual de Ubuntu cuando
+convenga.</p>
+
+				<p>Para aquellos que quieren crear sus propios paquetes de debian, los archivos
+de empaquetado ya no se incluyen en los archivos tar publicados, pero están
+incluidos en la rama principal de git.  <a href="Download">Más arriba</a>
+puede ver como conseguir roxterm desde git.</p>
+
+				<p>Si quiere compilar una versión concreta:</p>
+				<p><code>git checkout</code> <i>versión</i></p>
+
+				<p>Para distribuciones más antiguas que no incluyen paquetes de GTK3 etc:</p>
+				<p><code>git fetch origin lucid:lucid<br/>
+				git checkout lucid</code></p>
+
+				<p>Puede utilizar <code>sudo apt-get build-dep</code> en este punto, pero
+dependiendo de la versión de su distribución el conjunto de paquetes puede
+estar desactualizado, así que esté preparado para errores de dependencias
+más tarde e instale los paquetes necesarios en este punto. Debería instalar
+imagemagick y librsvg2-bin ahora, pero estos tienen errores en Ubuntu Lucid
+(¿y anteriores?), así que antes de compilar tendrá que copiar estos archivos
+desde <code>Help/lib</code> en un archivo tar: <code>roxterm_logo.png
+favicon.ico logo_text.png</code>.</p>
+
+			    <p>Si no está utilizando una versión publicada es una buena idea utilizar
+<code>dch</code> para asegurar que el número de última versión en
+<code>debian/changelog</code> tiene un número de versión adecuado como el
+que <code>./mscript.py configure</code> genera en el archivo
+<code>version</code>, basado en la salida de <code>git
+describe</code>. Ahora puede compilar los paquetes por ejemplo con
+<code>debuild -b -uc -us</code>. Fíjese en <code>-b</code>:- solo se pueden
+crear paquetes binarios en ausencia del archivo tar original.</p>
+
+            </div>
+        </div>
+
+		<div id="Footer">
+			<div id="FooterButtons">
+				<a id="SourceforgeLink" href="http://sourceforge.net/projects/roxterm"
+title="RoxTerm Sourceforge"> roxterm @ sourceforge </a>
+
+				<br />
+
+				<a id="DonationLink" class="spriteLink"
+href="http://sourceforge.net/donate/index.php?group_id=124080">Donar</a> <a
+id="ValidMarkupLink" class="spriteLink"
+href="http://validator.w3.org/check?uri=referer">XHTML Válido</a>
+			</div>
+
+			<p>ROXTerm se publica bajo la licencia <a
+href="http://www.gnu.org/licenses/gpl-3.0-standalone.html">GPL</a> | Diseño
+de la página web por Adrian Sampson | Traducción al español por F&eacute;lix
+Medrano</p>
+		</div>
+	</div>
+</body>
+</html>

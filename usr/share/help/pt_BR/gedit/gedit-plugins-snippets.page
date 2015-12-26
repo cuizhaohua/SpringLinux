@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Use trechos para inserir rapidamente partes do texto geralmente usadas</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Trechos</title>
+
+  <p>O <app>Trechos</app> fornecem uma maneira conveniente de inserir porções repetitivas de código em seus arquivos. Por exemplo, um trecho de HTML para a marca <code> &lt;img&gt; </code> iria inserir as porções de abertura e encerramento da marcação, bem como locais fixos onde você pode inserir os atributos da imagem. Isso pode tornar a escrita do código mais fácil e mais rápida.</p>
+
+  <section id="enable-snippets">
+    <title>Habilitando o plug-in de Trechos</title>
+
+    <p>Para habilitar o plug-in <gui>Trechos</gui>:</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferências</gui> <gui style="tab">Plug-ins</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Selecione <gui style="menuitem">Trechos</gui> para habilitar o plug-in.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Navegar por trechos</title>
+
+    <p>Para navegar pelos trechos disponíveis:</p>
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Ferramentas</gui><gui style="menuitem">Gerenciar trechos</gui></guiseq>.</p>
+        <note style="important">
+          <p>Certifique-se de que a sintaxe está definida apropriadamente. A barra de status no canto inferior da janela do <app>gedit</app> mostrará a configuração da linguagem atual. A configuração da linguagem é o que permite o gedit de inserir os trechos apropriados. O <app>gedit</app> detectará normalmente a linguagem ou sintaxe do arquivo que está usando, mas algumas vezes você pode precisar defini-la.</p>
+          <figure>
+            <desc>Neste exemplo, a linguagem é definida para HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Navegue nos trechos que estão disponíveis para sua linguagem ou sintaxe.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Usando trechos</title>
+
+    <p>Para inserir um trecho no seu documento atual:</p>
+
+    <steps>
+      <item>
+        <p>Digite o nome do trecho desejado em qualquer lugar no seu documento.</p>
+      </item>
+      <item>
+        <p>Pressione <key>Tab</key> para inserir o trecho associado com o termo digitado.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Exemplo de uso de trechos</title>
+
+    <p>Por exemplo, se você definir a sintaxe como <em>HTML</em>, digite <code>head</code>, e pressione a tecla <key>Tab</key>, você deve ver algo similar a isso:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Título da Página&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Adicionando trechos</title>
+
+    <p>Você pode adicionar novos trechos que funcionam tanto globalmente (isto é, que servem para qualquer linguagem) ou apenas em uma sintaxe particular.</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq style="menu"><gui style="menuitem">Ferramentas</gui> <gui style="menuitem">Gerenciar trechos</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Na barra lateral <gui>Gerenciar trechos</gui>, selecione a sintaxe desejada e clique no botão "+" para listar os trechos existentes para a sintaxe selecionada.</p>
+        <note style="tip">
+          <p>Para adicionar um trecho que funcione globalmente (isto, é, quando nenhuma sintaxe ou linguagem específica tenha sido definida para o documento), selecione <gui>Global</gui> na barra lateral <gui>Gerenciar trechos</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Para adicionar um novo trecho, clique no ícone de "mais" na barra lateral de <gui>Gerenciar trechos</gui>.</p>
+      </item>
+      <item>
+        <p>Digite um nome para o novo trecho. O nome do trecho pode ser diferente do trecho que você queira adicionar.</p>
+      </item>
+      <item>
+        <p>Na seção <gui style="group">Ativação</gui>, você deve digitar o termo para o área de texto <gui style="input">Disparador:</gui> . Você usará este termo para inserir seu trecho.</p>
+        <note style="tip">
+          <p>Se você gostaria de inserir um trecho com um atalho de teclado, então clique com ponteiro do seu mouse na área de texto <gui style="input">Tecla de atalho:</gui> e pressione a combinação de teclas desejada. Assim que você tiver pressionado e liberado as teclas, o atalho de teclado estará definido.</p>
+        </note>
+      </item>
+      <item>
+        <p>Sob a área de texto em <gui style="input">Editar:</gui>, digite o texto desejado do trecho. Você pode usar <code>${n}</code> para indicar variáveis, sendo <em>n</em> substituído com um número que representa a ordem numérica de variáveis incluídas.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Exemplo de novo trecho</title>
+
+    <p>Considere que você criou um trecho com o termo <var>saudações</var> no <gui style="input">Disparador:</gui>. A área de texto <gui style="input">Editar:</gui> contém:</p>
+
+    <code>
+      &lt;greetings&gt;Olá, mundo ${1:maravilhoso}${2:fantástico}!
+      &lt;/greetings&gt;
+    </code>
+
+    <p>Você pode inserir este trecho digitando <var>saudações</var> no documento e pressionando a tecla <key>Tab</key>. O seguinte texto de trecho será inserido:</p>
+
+    <code>
+      &lt;greetings&gt;Olá, mundo maravilhosofantástico!&lt;/greetings&gt;
+    </code>
+
+    <p>As palavras "maravilhoso" e "fantástico" podem ser mantidos ou excluídos dependendo de sua escolha de uso. Para fazer isso, pressione <key>Tab</key> para escolher entre "maravilhoso" e "fantástico" e pressione <key>Del</key> para excluir a opção que seja menos interessante.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-printing-select" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Impression de pages spécifiques</title>
+
+  <p>Vous pouvez imprimer uniquement certaines pages du document. Par exemple, si vous indiquez les numéros de pages « 1,3,5-7,9 », seules les pages 1, 3, 5, 6, 7 et 9 seront imprimées. Pour imprimer les pages de votre choix :</p>
+
+  <steps>
+   <item>
+    <p>Choisissez <guiseq><gui style="menu">Fichier</gui><gui style="menuitem">Imprimer…</gui></guiseq>.</p>
+   </item>
+   <item>
+    <p>Dans l'onglet <gui>Général</gui> de la fenêtre <gui>Imprimer</gui>, choisissez <gui style="radiobutton">Pages</gui> dans la colonne <gui style="group">Plage</gui>.</p></item>
+   <item>
+    <p>Saisissez dans le champ de texte les numéros des pages que vous souhaitez imprimer en les séparant par une virgule. Mettez un tiret pour définir une plage de numéros.</p>
+   </item>
+  </steps>
+
+  <!--TODO: Fix this <media type="image" src="print-select.png"/> -->
+</page>

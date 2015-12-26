@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="gl">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cambiar o tipo de letra predeterminado</title>
+
+  <p><app>gedit</app> usará de maneira predeterminada en sistema de tipo de letra de ancho fixo, pero pode cambiar o tipo de letra predeterminado de <app>gedit</app> para que se axuste ás suas necesidades.</p>
+  
+  <steps>
+    <title>Para cambiar o tipo de letra predeterminada en <app>gedit</app>:</title>
+      <item><p>Seleccione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferenzas</gui> <gui>Tipo de letra e cor</gui></guiseq>.</p></item>
+      <item><p>Desmarque a casilla xunto á frase «Usar o tipo de letra de ancho fixo do sistema.»</p></item>
+      <item><p>Prema no nome do tipo de letra actual. <app>gedit</app> abrira a xanela de selección de tipo de letra, que lle permitirá ver os tipos de letra dispoñíbeis e seleccionar a que prefira.</p></item>
+      <item><p>Despois de seleccionar o novo tipo de letra, use o <gui>deslizador</gui> para estabelecer o tamaño predeterminado do tipo de letra.</p></item>
+      <item><p>Pulse <gui>Seleccionar</gui>, e logo prema <gui>Guardar</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

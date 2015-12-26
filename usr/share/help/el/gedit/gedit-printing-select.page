@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-printing-select" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εκτύπωση συγκεκριμένων σελίδων</title>
+
+  <p>Μπορείτε επιλεκτικά να εκτυπώσετε μόνο συγκεκριμένες σελίδες από το έγγραφο. Για παράδειγμα, αν θέλετε να εισάγετε τους αριθμούς σελίδων "1,3,5-7,9", τότε μόνο οι σελίδες 1, 3, 5, 6, 7 και 9 θα τυπωθούν. Για εκτύπωση σελίδων κατ' επιλογή:</p>
+
+  <steps>
+   <item>
+    <p>Επιλέξτε <guiseq><gui style="menu">Αρχείο</gui> <gui style="menuitem">Εκτύπωση…</gui></guiseq>.</p>
+   </item>
+   <item>
+    <p>Στην καρτέλα <gui style="tab">Γενικά</gui> στον διάλογο εκτύπωσης επιλέξτε <gui style="radiobutton">Σελίδες</gui> από την ενότητα <gui style="group">Περιοχή</gui>.</p></item>
+   <item>
+    <p>Πληκτρολογήστε τους αριθμούς των σελίδων που θέλετε να εκτυπώσετε από το έγγραφο, διαχωρισμένους με κόμματα. Χρησιμοποιήστε μια παύλα για να δηλώσετε περιοχή σελίδων.</p>
+   </item>
+  </steps>
+
+  <!--TODO: Fix this <media type="image" src="print-select.png"/> -->
+</page>

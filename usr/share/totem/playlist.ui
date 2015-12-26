@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
+  <object class="GtkListStore" id="playlist_list_store">
+    <columns>
+      <!-- column-name playing -->
+      <column type="gint"/>
+      <!-- column-name filename -->
+      <column type="gchararray"/>
+      <!-- column-name filename-escaped -->
+      <column type="gchararray"/>
+      <!-- column-name uri -->
+      <column type="gchararray"/>
+      <!-- column-name title-custom -->
+      <column type="gboolean"/>
+      <!-- column-name subtitle-uri -->
+      <column type="gchararray"/>
+      <!-- column-name file-monitor -->
+      <column type="GObject"/>
+      <!-- column-name mount -->
+      <column type="GObject"/>
+      <!-- column-name mime-type -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkVBox" id="vbox4">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="spacing">0</property>
+    <child>
+      <object class="GtkScrolledWindow" id="scrolledwindow1">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="shadow_type">in</property>
+        <child>
+          <object class="GtkTreeView" id="treeview1">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="model">playlist_list_store</property>
+            <property name="headers_visible">True</property>
+            <property name="rules_hint">True</property>
+            <child internal-child="selection">
+              <object class="GtkTreeSelection" id="treeview-selection1"/>
+            </child>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">True</property>
+        <property name="fill">True</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkToolbar" id="toolbar1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="icon_size">1</property>
+        <property name="toolbar-style">icons</property>
+        <style>
+          <class name="inline-toolbar"/>
+        </style>
+        <child>
+          <object class="GtkToolButton" id="add_button">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_underline">True</property>
+	    <property name="icon_name">list-add-symbolic</property>
+	    <signal name="clicked" handler="totem_playlist_add_files"/>
+	    <property name="tooltip-text" translatable="no">Add...</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="remove_button">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_underline">True</property>
+	    <property name="icon_name">list-remove-symbolic</property>
+	    <signal name="clicked" handler="playlist_remove_button_clicked"/>
+	    <property name="tooltip-text" translatable="no">Remove</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="copy_location_button">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_underline">True</property>
+	    <property name="icon_name">edit-copy-symbolic</property>
+	    <signal name="clicked" handler="playlist_copy_location_action_callback"/>
+	    <property name="tooltip-text" translatable="no">Copy Location</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkToolButton" id="select_subtitle_button">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="use_action_appearance">False</property>
+            <property name="use_underline">True</property>
+	    <property name="icon_name">media-view-subtitles-symbolic</property>
+	    <signal name="clicked" handler="playlist_select_subtitle_action_callback"/>
+	    <property name="tooltip-text" translatable="no">Select Text Subtitles...</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="homogeneous">True</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+  </object>
+</interface>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-files-basic" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="first"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Grundlagen zu Dateien: Öffnen, Schließen und Speichern</title>
+
+  <p>Falls Sie noch nicht mit <app>gedit</app> vertraut sind, helfen Ihnen diese Themen beim Erstellen, Speichern, Öffnen und Schließen von Dateien.</p>
+  <links type="topic" groups="first second third fourth fifth sixth" style="2column"/>
+</page>

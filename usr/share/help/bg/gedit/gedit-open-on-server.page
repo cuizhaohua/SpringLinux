@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Отваряне на файл, който се намира на сървър</title>
+
+  <p>За да отворите файл в <app>gedit</app>, който се намира на сървър, трябва да знаете някои технически данни за сървъра. Например трябва да знаете IP адреса или уеб адреса на сървъра и да знаете неговия вид (т.е., HTTP, FTP и т.н.).</p>
+
+  <p>Някои сървъри имат ограничения за това какво можете да правите с файловете, които се намират на тях. Например можете да отворите файл от сървър, но да е нужно да запазите направените промени във файл на вашия компютър.</p>
+
+  <p>Като имате това предвид, извършете следните стъпки, за да отворите файл с <app>gedit</app> от сървър:</p>
+
+    <steps>
+      <item><p>Изберете <guiseq><gui>Файл</gui><gui>Отваряне</gui></guiseq>, за да се покаже прозорецът <gui>Отваряне на файлове</gui>.</p></item>
+      <item><p>Натиснете иконата с <gui>молив</gui> в горната част на прозореца <gui>Отваряне на файлове</gui>.</p></item>
+      <item><p>Въведете IP адреса или уеб адреса на сървъра.</p></item>
+      <item><p>Намерете и изберете файла, който искате да отворите.</p></item>
+      <item><p>Използвайте падащото меню <guilabel>Кодиране на знаците</guilabel>, за да изберете подходящата кодова таблица.</p></item>
+      <item><p>Натиснете <gui>Отваряне</gui>.</p></item>
+    </steps>
+
+  <p>Валидните типове включват http:, ftp:, file: и всички други поддържани от <app>gvfs</app>.</p>
+
+  <note>
+    <p>Файловете от някои типове сървъри се отварят в режим „само за четене“ и всички направени промени трябва да се съхранят на друго място. Например HTTP позволява файловете само да се четат. Файловете отворени от FTP са само за четене, защото някои сървъри имат проблем със запазването на отдалечени файлове.</p>
+  </note>
+
+</page>

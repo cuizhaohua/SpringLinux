@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="A kulcstartó, amelyre a jelszavak mentve lesznek">
+						<longdesc>A gksu által használandó kulcstartó neve. A szokásos értékek a  &quot;session&quot; (munkamenet), amely a jelszót a munkamenet számára menti, és a  &quot;default&quot; (alapértelmezett), amely a jelszót időkorlát nélkül menti.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Jelszó mentése a Gnome kulcstartóra">
+						<longdesc>A gksu képes elmenteni a beírt jelszót a Gnome kulcstartóra, így nem kérdez rá minden alkalommal</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Információs üzenet megjelenítése, ha nincs szükség jelszóra">
+						<longdesc>Ez a kapcsoló megadja, hogy szükséges-e a felhasználót egy párbeszédablak megjelenítésével értesíteni arról, hogy a program valamilyen okból a jelszó megadásának szükségessége nélkül fut.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Rákérdezés a zárolásra">
+						<longdesc>Ezen kapcsoló hatására a gksu megkérdezi a felhasználót, hogy akarja-e a képernyő zárolását a jelszó megadása előtt. Ne feledje, hogy ez csak akkor hatásos, ha a force-grab kapcsoló le van tiltva.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Sudo mód">
+						<longdesc>A sudo legyen-e az alapértelmezett háttér eljárás. Egyébként ez az eljárás a -S kapcsolóval érhető el, vagy a gksudo futtatásával a gksu helyett.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Billentyűzet és egér zárolásának kikényszerítése">
+						<longdesc>A billentyűzet és egér megragadása, még ha a -g paraméter meg is lett adva.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Billentyűzet és egér zárolásának letiltása">
+						<longdesc>A billentyűzet és egér zárolása ki legyen-e kapcsolva. Ez lehetővé teszi már X alkalmazások számára, hogy figyeljék a billentyűzet bemeneti eseményeket és nem teszi lehetővé, hogy az esetlegesen futó rosszindulatú alkalmazásokkal szemben védelmet biztosítson.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

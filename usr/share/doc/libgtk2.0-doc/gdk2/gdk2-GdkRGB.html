@@ -1,0 +1,1435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GDK 2 Reference Manual: GdkRGB</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GDK 2 Reference Manual">
+<link rel="up" href="reference.html" title="API Reference">
+<link rel="prev" href="gdk2-Bitmaps-and-Pixmaps.html" title="Bitmaps and Pixmaps">
+<link rel="next" href="gdk2-Images.html" title="Images">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gdk2-GdkRGB.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="reference.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gdk2-Bitmaps-and-Pixmaps.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gdk2-Images.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gdk2-GdkRGB"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gdk2-GdkRGB.top_of_page"></a>GdkRGB</span></h2>
+<p>GdkRGB — Renders RGB, grayscale, or indexed image data to a GdkDrawable</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-init" title="gdk_rgb_init ()">gdk_rgb_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-image" title="gdk_draw_rgb_image ()">gdk_draw_rgb_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-image-dithalign" title="gdk_draw_rgb_image_dithalign ()">gdk_draw_rgb_image_dithalign</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-draw-indexed-image" title="gdk_draw_indexed_image ()">gdk_draw_indexed_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-draw-gray-image" title="gdk_draw_gray_image ()">gdk_draw_gray_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-32-image" title="gdk_draw_rgb_32_image ()">gdk_draw_rgb_32_image</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-32-image-dithalign" title="gdk_draw_rgb_32_image_dithalign ()">gdk_draw_rgb_32_image_dithalign</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="returnvalue">GdkRgbCmap</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-cmap-new" title="gdk_rgb_cmap_new ()">gdk_rgb_cmap_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-cmap-free" title="gdk_rgb_cmap_free ()">gdk_rgb_cmap_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-gc-set-foreground" title="gdk_rgb_gc_set_foreground ()">gdk_rgb_gc_set_foreground</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-gc-set-background" title="gdk_rgb_gc_set_background ()">gdk_rgb_gc_set_background</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-xpixel-from-rgb" title="gdk_rgb_xpixel_from_rgb ()">gdk_rgb_xpixel_from_rgb</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-find-color" title="gdk_rgb_find_color ()">gdk_rgb_find_color</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-set-install" title="gdk_rgb_set_install ()">gdk_rgb_set_install</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-set-min-colors" title="gdk_rgb_set_min_colors ()">gdk_rgb_set_min_colors</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="returnvalue">GdkVisual</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-get-visual" title="gdk_rgb_get_visual ()">gdk_rgb_get_visual</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="returnvalue">GdkColormap</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-get-colormap" title="gdk_rgb_get_colormap ()">gdk_rgb_get_colormap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-ditherable" title="gdk_rgb_ditherable ()">gdk_rgb_ditherable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-colormap-ditherable" title="gdk_rgb_colormap_ditherable ()">gdk_rgb_colormap_ditherable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-set-verbose" title="gdk_rgb_set_verbose ()">gdk_rgb_set_verbose</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither">GdkRgbDither</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap">GdkRgbCmap</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="gdk2-GdkRGB.html#gdk-rgb-get-cmap" title="gdk_rgb_get_cmap">gdk_rgb_get_cmap</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gdk/gdk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.description"></a><h2>Description</h2>
+<p>
+GdkRGB is a low-level module which renders RGB, grayscale, and indexed
+colormap images to a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a>. It does this as efficiently as
+possible, handling issues such as colormaps, visuals, dithering,
+temporary buffers, and so on. Most code should use the higher-level
+<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> features in place of this module; for example,
+<a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-pixbuf" title="gdk_draw_pixbuf ()"><code class="function">gdk_draw_pixbuf()</code></a> uses GdkRGB in its implementation.
+</p>
+<p>
+GdkRGB allocates a color cube to use when rendering images.  You can
+set the threshold for installing colormaps with
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-set-min-colors" title="gdk_rgb_set_min_colors ()"><code class="function">gdk_rgb_set_min_colors()</code></a>. The default is 5x5x5 (125). If a colorcube
+of this size or larger can be allocated in the default colormap, then
+that's done. Otherwise, GdkRGB creates its own private colormap.
+Setting it to 0 means that it always tries to use the default
+colormap, and setting it to 216 means that it always creates a private
+one if it cannot allocate the 6x6x6 colormap in the default. If you
+always want a private colormap (to avoid consuming too many colormap
+entries for other apps, say), you can use
+<code class="literal">gdk_rgb_set_install(TRUE)</code>.
+Setting the value greater than 216 exercises a bug in older versions
+of GdkRGB. Note, however, that setting it to 0 doesn't let you get
+away with ignoring the colormap and visual - a colormap is always
+created in grayscale and direct color modes, and the visual is changed
+in cases where a "better" visual than the default is available.
+</p>
+<p>
+If GDK is built with the Sun mediaLib library, the GdkRGB functions are
+accelerated using mediaLib, which provides hardware acceleration on Intel,
+AMD, and Sparc chipsets.  If desired, mediaLib support can be turned off
+by setting the GDK_DISABLE_MEDIALIB environment variable.
+</p>
+<div class="example">
+<a name="id-1.2.11.6.5"></a><p class="title"><b>Example 4. A simple example program using GdkRGB</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="preproc">#include</span><span class="normal"> </span><span class="string">&lt;gtk/gtk.h&gt;</span>
+<span class="preproc">#define</span><span class="normal"> IMAGE_WIDTH </span><span class="number">256</span>
+<span class="preproc">#define</span><span class="normal"> IMAGE_HEIGHT    </span><span class="number">256</span>
+<span class="usertype">guchar</span><span class="normal"> rgbbuf</span><span class="symbol">[</span><span class="normal">IMAGE_WIDTH </span><span class="symbol">*</span><span class="normal"> IMAGE_HEIGHT </span><span class="symbol">*</span><span class="normal"> </span><span class="number">3</span><span class="symbol">];</span>
+<span class="usertype">gboolean</span><span class="normal"> </span><span class="function">on_darea_expose</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">widget</span><span class="symbol">,</span>
+<span class="normal">              </span><span class="usertype">GdkEventExpose</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">,</span>
+<span class="normal">              </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">);</span>
+<span class="type">int</span>
+<span class="function">main</span><span class="normal"> </span><span class="symbol">(</span><span class="type">int</span><span class="normal"> argc</span><span class="symbol">,</span><span class="normal"> </span><span class="type">char</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">argv</span><span class="symbol">[])</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">darea</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">gint</span><span class="normal"> x</span><span class="symbol">,</span><span class="normal"> y</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="usertype">guchar</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">pos</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-init">gtk_init</a></span><span class="normal"> </span><span class="symbol">(&amp;</span><span class="normal">argc</span><span class="symbol">,</span><span class="normal"> </span><span class="symbol">&amp;</span><span class="normal">argv</span><span class="symbol">);</span>
+<span class="normal">  window </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWindow.html#gtk-window-new">gtk_window_new</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">GTK_WINDOW_TOPLEVEL</span><span class="symbol">);</span>
+<span class="normal">  darea </span><span class="symbol">=</span><span class="normal"> </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkDrawingArea.html#gtk-drawing-area-new">gtk_drawing_area_new</a></span><span class="normal"> </span><span class="symbol">();</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-set-size-request">gtk_widget_set_size_request</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">darea</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH</span><span class="symbol">,</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkContainer.html#gtk-container-add">gtk_container_add</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_CONTAINER</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">),</span><span class="normal"> darea</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://library.gnome.org/devel/gtk3/gtk2-Signals.html#gtk-signal-connect">gtk_signal_connect</a></span><span class="normal"> </span><span class="symbol">(</span><span class="function">GTK_OBJECT</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">darea</span><span class="symbol">),</span><span class="normal"> </span><span class="string">"expose-event"</span><span class="symbol">,</span>
+<span class="normal">                      </span><span class="function"><a href="http://library.gnome.org/devel/gtk3/gtk2-Types.html#GTK-SIGNAL-FUNC:CAPS">GTK_SIGNAL_FUNC</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">on_darea_expose</span><span class="symbol">),</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS">NULL</a></span><span class="symbol">);</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-show-all">gtk_widget_show_all</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">window</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="comment">/* Set up the RGB buffer. */</span>
+<span class="normal">  pos </span><span class="symbol">=</span><span class="normal"> rgbbuf</span><span class="symbol">;</span>
+<span class="normal">  </span><span class="keyword">for</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">y </span><span class="symbol">=</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span><span class="normal"> y </span><span class="symbol">&lt;</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">;</span><span class="normal"> y</span><span class="symbol">++)</span>
+<span class="normal">    </span><span class="cbracket">{</span>
+<span class="normal">      </span><span class="keyword">for</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">x </span><span class="symbol">=</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span><span class="normal"> x </span><span class="symbol">&lt;</span><span class="normal"> IMAGE_WIDTH</span><span class="symbol">;</span><span class="normal"> x</span><span class="symbol">++)</span>
+<span class="normal">    </span><span class="cbracket">{</span>
+<span class="normal">      </span><span class="symbol">*</span><span class="normal">pos</span><span class="symbol">++</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> x </span><span class="symbol">-</span><span class="normal"> x </span><span class="symbol">%</span><span class="normal"> </span><span class="number">32</span><span class="symbol">;</span><span class="normal">          </span><span class="comment">/* Red. */</span>
+<span class="normal">      </span><span class="symbol">*</span><span class="normal">pos</span><span class="symbol">++</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> </span><span class="symbol">(</span><span class="normal">x </span><span class="symbol">/</span><span class="normal"> </span><span class="number">32</span><span class="symbol">)</span><span class="normal"> </span><span class="symbol">*</span><span class="normal"> </span><span class="number">4</span><span class="normal"> </span><span class="symbol">+</span><span class="normal"> y </span><span class="symbol">-</span><span class="normal"> y </span><span class="symbol">%</span><span class="normal"> </span><span class="number">32</span><span class="symbol">;</span><span class="normal">   </span><span class="comment">/* Green. */</span>
+<span class="normal">      </span><span class="symbol">*</span><span class="normal">pos</span><span class="symbol">++</span><span class="normal"> </span><span class="symbol">=</span><span class="normal"> y </span><span class="symbol">-</span><span class="normal"> y </span><span class="symbol">%</span><span class="normal"> </span><span class="number">32</span><span class="symbol">;</span><span class="normal">          </span><span class="comment">/* Blue. */</span>
+<span class="normal">    </span><span class="cbracket">}</span>
+<span class="normal">    </span><span class="cbracket">}</span>
+<span class="normal">  </span><span class="function"><a href="http://developer.gnome.org/gtk2/gtk3-General.html#gtk-main">gtk_main</a></span><span class="normal"> </span><span class="symbol">();</span>
+<span class="normal">  </span><span class="keyword">return</span><span class="normal"> </span><span class="number">0</span><span class="symbol">;</span>
+<span class="cbracket">}</span>
+<span class="normal"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean">gboolean</a></span>
+<span class="function">on_darea_expose</span><span class="normal"> </span><span class="symbol">(</span><span class="usertype">GtkWidget</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">widget</span><span class="symbol">,</span>
+<span class="normal">         </span><span class="usertype">GdkEventExpose</span><span class="normal"> </span><span class="symbol">*</span><span class="normal">event</span><span class="symbol">,</span>
+<span class="normal">         </span><span class="usertype">gpointer</span><span class="normal"> user_data</span><span class="symbol">)</span>
+<span class="cbracket">{</span>
+<span class="normal">  </span><span class="function"><a href="gdk2-GdkRGB.html#gdk-draw-rgb-image">gdk_draw_rgb_image</a></span><span class="normal"> </span><span class="symbol">(</span><span class="normal">widget</span><span class="symbol">-&gt;</span><span class="normal">window</span><span class="symbol">,</span><span class="normal"> widget</span><span class="symbol">-&gt;</span><span class="normal">style</span><span class="symbol">-&gt;</span><span class="normal">fg_gc</span><span class="symbol">[</span><span class="normal">GTK_STATE_NORMAL</span><span class="symbol">],</span>
+<span class="normal">              </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> </span><span class="number">0</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH</span><span class="symbol">,</span><span class="normal"> IMAGE_HEIGHT</span><span class="symbol">,</span>
+<span class="normal">              GDK_RGB_DITHER_MAX</span><span class="symbol">,</span><span class="normal"> rgbbuf</span><span class="symbol">,</span><span class="normal"> IMAGE_WIDTH </span><span class="symbol">*</span><span class="normal"> </span><span class="number">3</span><span class="symbol">);</span>
+<span class="normal">  </span><span class="keyword">return</span><span class="normal"> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS">TRUE</a></span><span class="symbol">;</span>
+<span class="cbracket">}</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break">
+</div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gdk-rgb-init"></a><h3>gdk_rgb_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_init</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This function no longer does anything at all. It's completely useless
+(and harmless).
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-draw-rgb-image"></a><h3>gdk_draw_rgb_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_draw_rgb_image (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                    <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                    <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> dith</code></em>,
+                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *rgb_buf</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_draw_rgb_image</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Draws an RGB image in the drawable. This is the core GdkRGB
+function, and likely the only one you will need to use.
+</p>
+<p>
+The <em class="parameter"><code>rowstride</code></em> parameter allows for lines to be aligned more flexibly.
+For example, lines may be allocated to begin on 32-bit boundaries,
+even if the width of the rectangle is odd. Rowstride is also useful
+when drawing a subrectangle of a larger image in memory. Finally, to
+replicate the same line a number of times, the trick of setting
+<em class="parameter"><code>rowstride</code></em> to 0 is allowed.
+</p>
+<p>
+In general, for 0 &lt;= i &lt; <em class="parameter"><code>width</code></em> and 0 &lt;= j &lt; height,
+the pixel (x + i, y + j) is colored with red value <em class="parameter"><code>rgb_buf</code></em>[<em class="parameter"><code>j</code></em> *
+<em class="parameter"><code>rowstride</code></em> + <em class="parameter"><code>i</code></em> * 3], green value <em class="parameter"><code>rgb_buf</code></em>[<em class="parameter"><code>j</code></em> * <em class="parameter"><code>rowstride</code></em> + <em class="parameter"><code>i</code></em> * 3 +
+1], and blue value <em class="parameter"><code>rgb_buf</code></em>[<em class="parameter"><code>j</code></em> * <em class="parameter"><code>rowstride</code></em> + <em class="parameter"><code>i</code></em> * 3 + 2].
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.3.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> to draw in (usually a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The graphics context (all GDK drawing operations require one; its
+contents are ignored).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dith</p></td>
+<td class="parameter_description"><p>A <a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> value, selecting the desired dither mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgb_buf</p></td>
+<td class="parameter_description"><p>The pixel data, represented as packed 24-bit data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rowstride</p></td>
+<td class="parameter_description"><p>The number of bytes from the start of one row in <em class="parameter"><code>rgb_buf</code></em>
+to the
+start of the next.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-draw-rgb-image-dithalign"></a><h3>gdk_draw_rgb_image_dithalign ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_draw_rgb_image_dithalign (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                              <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                              <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> dith</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *rgb_buf</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xdith</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ydith</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_draw_rgb_image_dithalign</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Draws an RGB image in the drawable, with an adjustment for dither alignment.
+</p>
+<p>
+This function is useful when drawing dithered images into a window
+that may be scrolled. Pixel (x, y) will be drawn dithered as if its
+actual location is (x + <em class="parameter"><code>xdith</code></em>, y + <em class="parameter"><code>ydith</code></em>). Thus, if you draw an
+image into a window using zero dither alignment, then scroll up one
+pixel, subsequent draws to the window should have <em class="parameter"><code>ydith</code></em> = 1.
+</p>
+<p>
+Setting the dither alignment correctly allows updating of small parts
+of the screen while avoiding visible "seams" between the different
+dither textures.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.4.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> to draw in (usually a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The graphics context.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dith</p></td>
+<td class="parameter_description"><p>A <a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> value, selecting the desired dither mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgb_buf</p></td>
+<td class="parameter_description"><p>The pixel data, represented as packed 24-bit data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rowstride</p></td>
+<td class="parameter_description"><p>The number of bytes from the start of one row in <em class="parameter"><code>rgb_buf</code></em>
+to the
+start of the next.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xdith</p></td>
+<td class="parameter_description"><p>An x offset for dither alignment.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ydith</p></td>
+<td class="parameter_description"><p>A y offset for dither alignment.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-draw-indexed-image"></a><h3>gdk_draw_indexed_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_draw_indexed_image (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                        <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                        <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> dith</code></em>,
+                        <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>,
+                        <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> *cmap</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_draw_indexed_image</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Draws an indexed image in the drawable, using a <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> to assign
+actual colors to the color indices.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> to draw in (usually a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The graphics context.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dith</p></td>
+<td class="parameter_description"><p>A <a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> value, selecting the desired dither mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>The pixel data, represented as 8-bit color indices.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rowstride</p></td>
+<td class="parameter_description"><p>The number of bytes from the start of one row in <em class="parameter"><code>buf</code></em>
+to the
+start of the next.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cmap</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> used to assign colors to the color indices.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-draw-gray-image"></a><h3>gdk_draw_gray_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_draw_gray_image (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                     <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                     <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> dith</code></em>,
+                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_draw_gray_image</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Draws a grayscale image in the drawable.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> to draw in (usually a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The graphics context.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dith</p></td>
+<td class="parameter_description"><p>A <a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> value, selecting the desired dither mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>The pixel data, represented as 8-bit gray values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rowstride</p></td>
+<td class="parameter_description"><p>The number of bytes from the start of one row in <em class="parameter"><code>buf</code></em>
+to the
+start of the next.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-draw-rgb-32-image"></a><h3>gdk_draw_rgb_32_image ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_draw_rgb_32_image (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                       <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                       <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> dith</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_draw_rgb_32_image</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Draws a padded RGB image in the drawable. The image is stored as one
+pixel per 32-bit word. It is laid out as a red byte, a green byte, a
+blue byte, and a padding byte.
+</p>
+<p>
+It's unlikely that this function will give significant performance
+gains in practice. In my experience, the performance gain from having
+pixels aligned to 32-bit boundaries is cancelled out by the increased
+memory bandwidth.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.7.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> to draw in (usually a <a class="link" href="gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a>).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The graphics context.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>The x coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>The y coordinate of the top-left corner in the drawable.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>The width of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>The height of the rectangle to be drawn.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dith</p></td>
+<td class="parameter_description"><p>A <a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> value, selecting the desired dither mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>The pixel data, represented as padded 32-bit data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rowstride</p></td>
+<td class="parameter_description"><p>The number of bytes from the start of one row in <em class="parameter"><code>buf</code></em>
+to the
+start of the next.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-draw-rgb-32-image-dithalign"></a><h3>gdk_draw_rgb_32_image_dithalign ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_draw_rgb_32_image_dithalign (<em class="parameter"><code><a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a> *drawable</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>,
+                                 <em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbDither" title="enum GdkRgbDither"><span class="type">GdkRgbDither</span></a> dith</code></em>,
+                                 <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *buf</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> rowstride</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> xdith</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> ydith</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gdk_draw_rgb_32_image_dithalign</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
+<p>Cairo handles colors automatically.</p>
+</div>
+<p>Like <a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-32-image" title="gdk_draw_rgb_32_image ()"><code class="function">gdk_draw_rgb_32_image()</code></a>, but allows you to specify the dither
+offsets. See <a class="link" href="gdk2-GdkRGB.html#gdk-draw-rgb-image-dithalign" title="gdk_draw_rgb_image_dithalign ()"><code class="function">gdk_draw_rgb_image_dithalign()</code></a> for more details.</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>drawable</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gdk2-Drawing-Primitives.html#GdkDrawable"><span class="type">GdkDrawable</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>X coordinate on <em class="parameter"><code>drawable</code></em>
+where image should go</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>Y coordinate on <em class="parameter"><code>drawable</code></em>
+where image should go</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>width of area of image to draw</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>height of area of image to draw</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dith</p></td>
+<td class="parameter_description"><p>dithering mode</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buf</p></td>
+<td class="parameter_description"><p>RGB image data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rowstride</p></td>
+<td class="parameter_description"><p>rowstride of RGB image data</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>xdith</p></td>
+<td class="parameter_description"><p>X dither offset</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ydith</p></td>
+<td class="parameter_description"><p>Y dither offset</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-cmap-new"></a><h3>gdk_rgb_cmap_new ()</h3>
+<pre class="programlisting"><a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="returnvalue">GdkRgbCmap</span></a> *
+gdk_rgb_cmap_new (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *colors</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> n_colors</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_cmap_new</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Creates a new <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> structure. The cmap maps color indexes to
+RGB colors. If <em class="parameter"><code>n_colors</code></em> is less than 256, then images containing
+color values greater than or equal to <em class="parameter"><code>n_colors</code></em> will produce undefined
+results, including possibly segfaults.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>colors</p></td>
+<td class="parameter_description"><p>The colors, represented as 0xRRGGBB integer values.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>n_colors</p></td>
+<td class="parameter_description"><p>The number of colors in the cmap.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.11.7.9.7"></a><h4>Returns</h4>
+<p>The newly created <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-cmap-free"></a><h3>gdk_rgb_cmap_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_cmap_free (<em class="parameter"><code><a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> *cmap</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_cmap_free</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Frees the memory associated with a <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> created by <a class="link" href="gdk2-GdkRGB.html#gdk-rgb-cmap-new" title="gdk_rgb_cmap_new ()"><code class="function">gdk_rgb_cmap_new()</code></a>.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>cmap</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-GdkRGB.html#GdkRgbCmap" title="struct GdkRgbCmap"><span class="type">GdkRgbCmap</span></a> to free.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-gc-set-foreground"></a><h3>gdk_rgb_gc_set_foreground ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_gc_set_foreground (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> rgb</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_gc_set_foreground</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Sets the foreground color in <em class="parameter"><code>gc</code></em> to the specified color (or the
+closest approximation, in the case of limited visuals).
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgb</p></td>
+<td class="parameter_description"><p>The color, represented as a 0xRRGGBB integer value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-gc-set-background"></a><h3>gdk_rgb_gc_set_background ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_gc_set_background (<em class="parameter"><code><a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> rgb</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_gc_set_background</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Sets the background color in <em class="parameter"><code>gc</code></em> to the specified color (or the
+closest approximation, in the case of limited visuals).
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The <a class="link" href="gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> to modify.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rgb</p></td>
+<td class="parameter_description"><p>The color, represented as a 0xRRGGBB integer value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-xpixel-from-rgb"></a><h3>gdk_rgb_xpixel_from_rgb ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gulong"><span class="returnvalue">gulong</span></a>
+gdk_rgb_xpixel_from_rgb (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> rgb</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_xpixel_from_rgb</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Finds the X pixel closest in color to the <em class="parameter"><code>rgb</code></em> color specified. This
+value may be used to set the <em class="structfield"><code>pixel</code></em> field of
+a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> struct.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>rgb</p></td>
+<td class="parameter_description"><p>The color, represented as a 0xRRGGBB integer value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.11.7.13.7"></a><h4>Returns</h4>
+<p>The X pixel value.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-find-color"></a><h3>gdk_rgb_find_color ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_find_color (<em class="parameter"><code><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
+                    <em class="parameter"><code><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a> *color</code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gdk_rgb_find_color</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
+<p>Cairo handles colors automatically.</p>
+</div>
+<p><em class="parameter"><code>colormap</code></em>
+ should be the colormap for the graphics context and
+drawable you're using to draw. If you're drawing to a <a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a>,
+call <a href="http://library.gnome.org/devel/gtk3/GtkWidget.html#gtk-widget-get-colormap"><code class="function">gtk_widget_get_colormap()</code></a>.</p>
+<p><em class="parameter"><code>color</code></em>
+ should have its <code class="literal">red</code>, <code class="literal">green</code>, and <code class="literal">blue</code> fields initialized;
+<a class="link" href="gdk2-GdkRGB.html#gdk-rgb-find-color" title="gdk_rgb_find_color ()"><code class="function">gdk_rgb_find_color()</code></a> will fill in the <code class="literal">pixel</code> field with the best
+matching pixel from a color cube. The color is then ready to be
+used for drawing, e.g. you can call <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-foreground" title="gdk_gc_set_foreground ()"><code class="function">gdk_gc_set_foreground()</code></a> which
+expects <code class="literal">pixel</code> to be initialized.</p>
+<p>In many cases, you can avoid this whole issue by calling
+<a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-rgb-fg-color" title="gdk_gc_set_rgb_fg_color ()"><code class="function">gdk_gc_set_rgb_fg_color()</code></a> or <a class="link" href="gdk2-Graphics-Contexts.html#gdk-gc-set-rgb-bg-color" title="gdk_gc_set_rgb_bg_color ()"><code class="function">gdk_gc_set_rgb_bg_color()</code></a>, which
+do not expect <code class="literal">pixel</code> to be initialized in advance. If you use those
+functions, there's no need for <a class="link" href="gdk2-GdkRGB.html#gdk-rgb-find-color" title="gdk_rgb_find_color ()"><code class="function">gdk_rgb_find_color()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.14.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>colormap</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>color</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-set-install"></a><h3>gdk_rgb_set_install ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_set_install (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> install</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_set_install</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+If <em class="parameter"><code>install</code></em> is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, directs GdkRGB to always install a new "private"
+colormap rather than trying to find a best fit with the colors already
+allocated. Ordinarily, GdkRGB will install a colormap only if a
+sufficient cube cannot be allocated.
+</p>
+<p>
+A private colormap has more colors, leading to better quality display,
+but also leads to the dreaded "colormap flashing" effect.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.15.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>install</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to set install mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-set-min-colors"></a><h3>gdk_rgb_set_min_colors ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_set_min_colors (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> min_colors</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_set_min_colors</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Sets the minimum number of colors for the color cube. Generally,
+GdkRGB tries to allocate the largest color cube it can. If it can't
+allocate a color cube at least as large as <em class="parameter"><code>min_colors</code></em>, it installs a
+private colormap.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.16.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>min_colors</p></td>
+<td class="parameter_description"><p>The minimum number of colors accepted.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-get-visual"></a><h3>gdk_rgb_get_visual ()</h3>
+<pre class="programlisting"><a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="returnvalue">GdkVisual</span></a> *
+gdk_rgb_get_visual (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gdk_rgb_get_visual</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
+<p>Use gdk_visual_get_system_visual (<a class="link" href="GdkScreen.html#gdk-screen-get-default" title="gdk_screen_get_default ()"><code class="function">gdk_screen_get_default()</code></a>) instead.</p>
+</div>
+<p>Gets a "preferred visual" chosen by GdkRGB for rendering image data
+on the default screen. In previous versions of GDK, this was the
+only visual GdkRGB could use for rendering. In current versions,
+it's simply the visual GdkRGB would have chosen as the optimal one
+in those previous versions. GdkRGB can now render to drawables with
+any visual.</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.17.6"></a><h4>Returns</h4>
+<p> The <a class="link" href="gdk2-Visuals.html#GdkVisual" title="GdkVisual"><span class="type">GdkVisual</span></a> chosen by GdkRGB. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-get-colormap"></a><h3>gdk_rgb_get_colormap ()</h3>
+<pre class="programlisting"><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="returnvalue">GdkColormap</span></a> *
+gdk_rgb_get_colormap (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning">
+<p><code class="literal">gdk_rgb_get_colormap</code> has been deprecated since version 2.22 and should not be used in newly-written code.</p>
+<p>Use gdk_screen_get_system_colormap (<a class="link" href="GdkScreen.html#gdk-screen-get-default" title="gdk_screen_get_default ()"><code class="function">gdk_screen_get_default()</code></a>) instead.</p>
+</div>
+<p>Get the preferred colormap for rendering image data.  Not a
+very useful function; historically, GDK could only render RGB image
+data to one colormap and visual, but in the current version it can
+render to any colormap and visual. So there's no need to call this
+function.</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.18.6"></a><h4>Returns</h4>
+<p> the preferred colormap. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-ditherable"></a><h3>gdk_rgb_ditherable ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdk_rgb_ditherable (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_ditherable</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Determines whether the preferred visual is ditherable. This function may be
+useful for presenting a user interface choice to the user about which
+dither mode is desired; if the display is not ditherable, it may make
+sense to gray out or hide the corresponding UI widget.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.19.6"></a><h4>Returns</h4>
+<p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the preferred visual is ditherable.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-colormap-ditherable"></a><h3>gdk_rgb_colormap_ditherable ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gdk_rgb_colormap_ditherable (<em class="parameter"><code><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> *cmap</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_colormap_ditherable</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Determines whether the visual associated with <em class="parameter"><code>cmap</code></em> is ditherable. This
+function may be useful for presenting a user interface choice to the user
+about which dither mode is desired; if the display is not ditherable, it may
+make sense to gray out or hide the corresponding UI widget.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.20.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>cmap</p></td>
+<td class="parameter_description"><p>a <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.11.7.20.7"></a><h4>Returns</h4>
+<p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the visual associated with <em class="parameter"><code>cmap</code></em>
+is ditherable.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-set-verbose"></a><h3>gdk_rgb_set_verbose ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gdk_rgb_set_verbose (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> verbose</code></em>);</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_set_verbose</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Sets the "verbose" flag. This is generally only useful for debugging.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.7.21.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>verbose</p></td>
+<td class="parameter_description"><p><a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if verbose messages are desired.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GdkRgbDither"></a><h3>enum GdkRgbDither</h3>
+<p>
+Selects whether or not GdkRGB applies dithering
+to the image on display.
+</p>
+<p>
+Since GdkRGB currently only handles images with 8 bits per component,
+dithering on 24 bit per pixel displays is a moot point.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.2.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GDK-RGB-DITHER-NONE:CAPS"></a>GDK_RGB_DITHER_NONE</p></td>
+<td class="enum_member_description">
+<p>Never use dithering.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GDK-RGB-DITHER-NORMAL:CAPS"></a>GDK_RGB_DITHER_NORMAL</p></td>
+<td class="enum_member_description">
+<p>Use dithering in 8 bits per pixel (and below)
+only.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GDK-RGB-DITHER-MAX:CAPS"></a>GDK_RGB_DITHER_MAX</p></td>
+<td class="enum_member_description">
+<p>Use dithering in 16 bits per pixel and below.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GdkRgbCmap"></a><h3>struct GdkRgbCmap</h3>
+<pre class="programlisting">struct GdkRgbCmap {
+  guint32 colors[256];
+  gint n_colors;
+};
+</pre>
+<div class="warning"><p><code class="literal">GdkRgbCmap</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+A private data structure which maps color indices to actual RGB
+colors. This is used only for <a class="link" href="gdk2-GdkRGB.html#gdk-draw-indexed-image" title="gdk_draw_indexed_image ()"><code class="function">gdk_draw_indexed_image()</code></a>.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.3.6"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> <em class="structfield"><code><a name="GdkRgbCmap.colors"></a>colors</code></em>[256];</p></td>
+<td class="struct_member_description"><p>The colors, represented as 0xRRGGBB integer values.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="GdkRgbCmap.n-colors"></a>n_colors</code></em>;</p></td>
+<td class="struct_member_description"><p>The number of colors in the cmap.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gdk-rgb-get-cmap"></a><h3>gdk_rgb_get_cmap</h3>
+<pre class="programlisting">#define gdk_rgb_get_cmap               gdk_rgb_get_colormap
+</pre>
+<div class="warning"><p><code class="literal">gdk_rgb_get_cmap</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Gets the colormap set by GdkRGB. This colormap and the corresponding
+visual should be used when creating windows that will be drawn in by GdkRGB.
+</p>
+<div class="refsect3">
+<a name="id-1.2.11.8.4.6"></a><h4>Returns</h4>
+<p>The <a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColormap" title="GdkColormap"><span class="type">GdkColormap</span></a> set by GdkRGB.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gdk2-GdkRGB.see-also"></a><h2>See Also</h2>
+<p>
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a class="link" href="gdk2-Colormaps-and-Colors.html#GdkColor" title="GdkColor"><span class="type">GdkColor</span></a></span></p></td>
+<td><p>The underlying GDK mechanism for allocating
+colors.</p></td>
+</tr>
+<tr>
+<td><p><span class="term"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> and <a class="link" href="gdk2-Drawing-Primitives.html#gdk-draw-pixbuf" title="gdk_draw_pixbuf ()"><code class="function">gdk_draw_pixbuf()</code></a></span></p></td>
+<td><p>Higher-level image handling.</p></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+#!/usr/bin/install-menu
+#I need menu-1!
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/bin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/share/doc/menu/html.
+#
+#The output of this script still isn't quite right, but it starts
+#to be acceptable.
+#
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+
+supported;
+  dwww =      "<li><a href=\"/cgi-bin/dwww?type=" 
+               ifelse($dwwwtype,$dwwwtype,"file")
+	       "&location="
+                $command "\">"
+	      ifelse($longtitle,$longtitle,$title) "</a>"
+	      ifnempty($description,"<br><font size=-1>"$description "</font>")
+	      "\n";
+endsupported;
+startmenu=    "<P><font size=+2><b><a name=\""   $section "\">"
+               $title
+	      "</a></b></font><p><ul type=disc>"
+	      ifnempty($description,"<br><font size=-1>" $description "</font>")
+	      "\n";
+endmenu=      "</ul>\n\n";
+submenutitle="<li><font size=2><a href=\"#" $section "\">"
+              ifelse($longtitle,$longtitle,$title) "</font></a>"
+	      ifnempty($description,"<br><font size=-1>"$description "</font>")	
+	      "\n";
+genmenu=      "/var/lib/dwww/html/menudefs.hook";
+#the rc copy stuff doesn't work yet, sorry.
+rcfile=       "/var/lib/dwww/html/menu.html";
+examplercfile="/usr/lib/dwww/menu.html-menu";
+rootprefix=   "/";
+userprefix=   ".dwww/";
+treewalk="(mc)";
+mainmenutitle="Debian information";
+preoutput="<! automatically generated file. Do not edit (see /usr/share/doc/menu/html)>\n\n";

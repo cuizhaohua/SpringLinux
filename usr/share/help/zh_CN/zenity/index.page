@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="index" xml:lang="zh-CN">
+<info>
+  <credit type="author">
+    <name>Sun Java 桌面系统文档小组</name>
+  </credit>
+  <credit type="author">
+    <name>Glynn Foster</name>
+  </credit>
+  <credit type="editor">
+    <name>Nicholas Curran</name>
+    <email/>
+  </credit>
+  <credit type="editor">
+    <name>Yasumichi Akahoshi</name>
+    <email>yasumichi@vinelinux.org</email>
+  </credit>
+  <license>
+   <p>GNU 自由文档许可证(GFDL)</p>
+  </license>
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+<title>Zenity 手册</title>
+<!--links type="topic" groups="dialogs" /-->
+<section id="dialogs" style="2column">
+  <title>对话框</title>
+</section>
+</page>

@@ -1,0 +1,30 @@
+libiptcdata
+===========
+
+    David Moore <dcm@acm.org>
+
+
+DESCRIPTION
+-----------
+
+libiptcdata is a library for manipulating the International Press
+Telecommunications Council (IPTC) metadata stored within multimedia
+files such as images.  The library provides routines for parsing,
+viewing, modifying, and saving this metadata.  The library is licensed
+under the GNU Library General Public License (GNU LGPL).
+
+The library implements the standard described at http://www.iptc.org/IIM
+
+The code itself was inspired by the libexif library:
+http://sourceforge.net/projects/libexif, written by Lutz Müller.
+Together, libexif and libiptcdata provide a complete metadata
+solution for image files.
+
+LIMITATIONS
+-----------
+
+The current implementation of libiptcdata only supports extracting IPTC
+data from JPEG files (although it can decode raw IPTC data from any
+source as long as your application provides the data directly).  The
+format for storing IPTC in JPEG files is a de-facto standard developed
+by Adobe.

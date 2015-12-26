@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dateien in gruppierten Reitern organisieren</title>
+
+  <p>Wenn Sie mit mehreren Reitern in <app>gedit</app> arbeiten, können Sie diese gruppieren, um es einfacher zu machen, Ihre geöffneten Datein zu organisieren. Das Hinzufügen einer neuen Reitergruppe teilt das <app>gedit</app>-Fenster in zwei Bereiche, öffnet ein neues »Unbenanntes Dokument« im neuen Bereich und aktiviert es. Sie können Dateien in dieser Reitergruppe öffnen und Reiter von einer Gruppe in die andere verschieben.</p>
+
+<section id="open-new-tab-group">
+  <title>Eine neue Reitergruppe im gedit-Fenster öffnen</title>
+
+  <p>So öffnen Sie eine neue Reitergruppe:</p>
+
+  <list>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Dokumente</gui><gui>Neue Reitergruppe</gui></guiseq> im Hauptmenü.</p>
+    </item>
+    <item>
+      <p>Verwenden Sie die Tastenkombination <keyseq><key>Strg</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Diese Aktion teilt das <app>gedit</app>-Fenster in zwei Bereiche, wobei die neue Reitergruppe rechts des aktuellen Reiters platziert wird. Sie können den Ziehpunkt rechts oder links ziehen, um mehr oder weniger Platz des <app>gedit</app>-Fensters entsprechend Ihrer Bedürfnisse den Bereichen zuzuweisen.</p>
+
+  <p>Sie können so viele Reitergruppen im <app>gedit</app>-Fenster öffnen, wie Ihr Bildschirm es zulässt. Jedoch müssen Sie die Ziehpunkte verschieben, um die Gruppen korrekt anzuzeigen.</p>
+
+  <p>Um eine Reitergruppe zu schließen, schließen Sie einfach alle Reiter, die in dieser Gruppe geöffnet sind.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Zwischen Reitergruppen wechseln</title>
+
+  <p>So wechseln Sie vorwärts (zur nächsten) Reitergruppe:</p>
+
+  <list>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Dokumente</gui><gui>Nächste Reitergruppe</gui></guiseq> im Hauptmenü.</p>
+    </item>
+    <item>
+      <p>Verwenden Sie die Tastenkombination <keyseq><key>Strg</key><key>Umschalt</key><key>Alt</key><key>Bild↓</key></keyseq></p>
+    </item>
+  </list>
+
+  <p>So wechseln Sie rückwärts (zur vorherigen) Reitergruppe:</p>
+
+  <list>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Dokumente</gui><gui>Vorherige Reitergruppe</gui></guiseq> im Hauptmenü.</p>
+    </item>
+    <item>
+      <p>Verwenden Sie die Tastenkombination <keyseq><key>Strg</key><key>Umschalt</key><key>Alt</key><key>Bild↑</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Einen Reiter in eine andere Reitergruppe verschieben</title>
+
+  <p>So verschieben Sie einen Reiter von einer Reitergruppe in eine andere Reitergruppe:</p>
+
+  <steps>
+    <item>
+      <p>Klicken Sie mit der Maustaste auf den Reiter und halten Sie sie gedrückt.</p>
+    </item>
+    <item>
+      <p>Ziehen Sie den Reiter in eine andere Leiste einer Reitergruppe.</p>
+    </item>
+    <item>
+      <p>Setzen Sie ihn neben andere Reiter in der Reitergruppe.</p>
+    </item>
+    <item>
+      <p>Lassen Sie die Maustaste los.</p>
+    </item>
+  </steps>
+
+  <p>Schauen Sie auch die Tabelle der <link xref="gedit-shortcut-keys">Tastenkombinationen für Reiter</link> an, welche die Verwaltung Ihrer Reitergruppen erleichtern.</p>
+
+</section>
+
+</page>

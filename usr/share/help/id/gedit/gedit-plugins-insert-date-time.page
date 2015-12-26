@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-insert-date-time" xml:lang="id">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Sisipkan tanggal/waktu saat ini pada posisi kursor sekarang</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Menyisipkan tanggal/waktu</title>
+
+  <p>Seperti yang disarankan oleh nama plugin ini, plugin <gui>Masukkan Tanggal/Jam</gui> memungkinkan Anda untuk menyisipkan tanggal dan/atau jam pada posisi kursor saat ini. Untuk memfungsikan plugin ini, pilih <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferensi</gui><gui>Plugin</gui> <gui>Masukkan Tanggal/Jam</gui></guiseq>. Untuk memakai plugin, tekan <guiseq> <gui style="menu">Sunting</gui><gui>Masukkan Tanggal dan Jam</gui></guiseq>.</p>
+
+  <p>Secara baku, plugin <gui>Masukkan Tanggal/Jam</gui> akan meminta Anda memilih format tanggal/jam yang Anda sukai setiap kali Anda memakai plugin tersebut. Namun, Anda dapat memilih format tanggal dan jam baku Anda sendiri dengan memilih <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferensi</gui> <gui>Plugin</gui><gui>Masukkan Tanggal/Jam</gui><gui>Konfigurasi</gui></guiseq>.</p>
+
+</page>

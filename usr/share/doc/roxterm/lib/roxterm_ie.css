@@ -1,0 +1,58 @@
+/* IE6/IE7 fixes */
+h1, h2, h3, h4, .newsItemHeader, a {
+	color:#4284C9;
+}
+
+a {
+	font-weight:bold;
+}
+
+#Header ul li {
+	display:inline;
+}
+
+#Header ul li a {
+	border-color:#222;
+	display:block;
+}
+
+* html #Middle,
+* html #Content,
+* html #SubNav {
+	padding-top:0;
+}
+
+#Middle {
+	min-width:60em;
+	width:auto;
+}
+
+* html #Middle {
+	margin-top:2em;
+}
+
+#SubNav {
+	min-width:25%;
+	width:auto;
+}
+
+* html #SubNav {
+	padding-left:1em;
+	float:left;
+	position:static;
+}
+
+* html #Content.partialWidth {
+	padding:0 0 15em;
+	margin:0 !important;
+	float:left;
+}
+
+h2, h2 a.pageAnchor {
+	position:static;
+	top:0;
+}
+
+* html h2 a.pageAnchor {
+	display:inline;
+}

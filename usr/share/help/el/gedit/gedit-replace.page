@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αντικατάσταση κειμένου</title>
+
+  <p>Η επεξεργασία κειμένου μπορεί να είναι χρονοβόρα. Για να γλυτώσετε χρόνο, το <app>gedit</app> περιλαμβάνει την λειτουργία <app>Αντικατάσταση</app> που σας βοηθάει να βρείτε και να αντικαταστήσετε τμήματα του κειμένου.</p>
+
+  <steps>
+    <title>Αντικατάσταση κειμένου στο <app>gedit</app></title>
+    <item>
+      <p>Ανοίξτε το εργαλείο <gui>Αντικατάσταση</gui> πατώντας <guiseq><gui style="menu">Αναζήτηση</gui> <gui style="menuitem">Αντικατάσταση…</gui></guiseq> ή πατώντας <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Εισάγετε το κείμενο που θέλετε να αντικαταστήσετε στο πεδίο <gui>Αναζήτηση για:</gui>.</p>
+    </item>
+    <item>
+      <p>Τοποθετήστε το νέο, κείμενο αντικατάστασης στο πεδίο <gui>Αντικατάσταση με:</gui>.</p>
+    </item>
+    <item>
+      <p>Αφού έχετε εισάγει το αρχικό και το κείμενο αντικατάστασης, μπορείτε να προσθέσετε πρόσθετες παραμέτρους στην αναζήτηση. Μπορείτε επίσης να επιλέξετε τι θέλετε να αντικαταστήσετε:</p>
+      <list>
+        <item>
+          <p>Για να αντικαταστήσετε <em>μόνο</em> την επόμενη συμφωνία, πατήστε στο <gui>Αντικατάσταση</gui>.</p>
+        </item>
+        <item>
+          <p>Για να αντικαταστήσετε <em>όλες τις περιπτώσεις</em> του έυρεση-για κειμένου, πατήστε στην <gui>Αντικατάσταση όλων</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Χρησιμοποιήστε την λειτουργία <gui>Αντικατάσταση όλων</gui> με προσοχή. Η <gui>Αντικατάσταση όλων</gui> δουλεύει στο σύνολο του αρχείου, και δεν σας επιτρέπει να επισημάνετε τμήματα του κειμένου που η λειτουργία αντικατάστασης θα ενεργήσει.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Περισσότερες επιλογές</title>
+
+  <p>Αν θέλετε, μπορείτε να προσθέσετε μερικές πρόσθετες παραμέτρους στην αναζήτησή σας:</p>
+
+  <terms>
+    <item>
+      <title>Διάκριση πεζών-κεφαλαίων</title>
+      <p>Η επιλογή <em>Ταίριασμα πεζών-κεφαλαίων</em> σας επιτρέπει να προσδιορίσετε εάν θέλετε η αναζήτηση σας να έχει διάκριση πεζών-κεφαλαίων. Αν επιλεγεί, οι αναζητήσεις θα έχουν διάκριση πεζών-κεφαλαίων. Αν όχι, οι αναζητήσεις δεν θα έχουν διάκριση πεζών-κεφαλαίων.</p>
+    </item>
+    <item>
+      <title>Ταίριασμα μόνο ολόκληρης λέξης</title>
+      <p>Χρησιμοποιήστε αυτή την επιλογή για να αναζητήσετε μια συγκεκριμένη λέξη χωρίς να συμπεριλαμβάνονται κομμάτια άλλων λέξεων. Για παράδειγμα, αν αναζητήσατε την λέξη 'και' με αυτήν την επιλογή ενεργοποιημένη, η λέξη 'και' θα ταιριάξει, αλλά οι λέξεις '<em>και</em>νούριο' και 'πρός<em>και</em>ρος' όχι.</p>
+    </item>
+    <item>
+      <title>Αναζήτηση προς τα πίσω</title>
+      <p>Αυτή η εντολή συμπεριφέρεται παρόμοια με την εντολή Εύρεση προηγούμενου. Αν θέλετε να μεταβείτε στα αποτελέσματα αναζήτησης από το τέλος στην αρχή, επιλέξτε αυτή την επιλογή.</p>
+    </item>
+    <item>
+      <title>Αναδίπλωση γύρω</title>
+      <p>Με την επιλογή <app>περιτύλιξης</app> ενεργοποιημένη, το <app>gedit</app> θα επαναλάβει την ενέργεια αναζήτηση/αντικατάσταση στην αρχή του αρχείου αφού φτάσει στο τέλος του αρχείου. Αυτό διασφαλίζει ότι η ενέργεια αναζήτησης/αντικατάστασης σας έχει γίνει σε όλο το αρχείο.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Χρήση ακολουθιών διαφυγής</title>
+
+  <p>Μπορείτε να χρησιμοποιήσετε <em>ακολουθίες διαφυγής</em> για αναζήτηση αλλαγών γραμμών και στηλοθετών.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Νέα γραμμή</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Στηλοθέτης</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Επαναφορά κεφαλής</p>
+    </item>
+  </terms>
+
+  <p>Αν θέλετε στην πραγματικότητα να αναζητήσετε για μια <output>\</output> (ανάποδη πλαγιοκάθετο) ή μία από τις ακολουθίες διαφυγής στο κείμενο, χρειάζεστε να διαφύγετε την ανάποδη πλαγιοκάθετο με μια πρόσθετη πλαγιοκάθετο. Για παράδειγμα, για να αναζητήσετε <input>\</input>, θα χρειαστείτε να εισάγετε <input>\\</input> στην αναζήτηση ή να αντικαταστήσετε το πεδίο. Μπορείτε να αναζητήσετε ακολουθίες διαφυγής με τον ίδιο τρόπο: για να αναζητήσετε ή να αντικαταστήσετε μια <input>\n</input>, χρησιμοποιήστε τον όρο <input>\\n</input>.</p>
+
+</section>
+
+</page>

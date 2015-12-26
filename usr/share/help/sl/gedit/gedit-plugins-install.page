@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="sl">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Kako namestiti vstavke tretjih oseb</desc>
+  </info>
+
+  <title>Dodatni vstavki gedit</title>
+
+  <p>Installing third-party plugins gives you extra functionality that isn't 
+  available in default <app>gedit</app> plugins, or even the extra plugins that 
+  are part of the <app>gedit-plugins</app> package. An online list of 
+  third-party plugins is 
+  <link href="https://wiki.gnome.org/Apps/Gedit">kept here</link>.
+  </p>
+  
+  <p>Namestitev vstavkov tretjih oseb vključuje prejem vstavka, postavitev vstavka v pravo mapo in njegovo omogočitev.</p>
+  
+  <steps>
+    <item><p>Običajno lahko vstavek prejmete s spletišča vstavka. Včasih boste za kopiranje skladišča vstavka z interneta morda potrebovali program za nadzor predelav kot je <app>git</app>, <app> bazaar</app>, ali <app>subversion</app>. Za več podrobnosti o tem kako dobiti vstavek si oglejte dokumentacijo vstavka.</p></item>
+    <item><p>Datoteke vstavkov kopirajte v mapo <file>/home/<var>username</var>/.local/share/gedit/plugins</file>.</p>
+    <p>Besedo <var>uporabniško ime</var> zamenjajte s svojim uporabniškim imenom.</p></item>
+    <item><p>After you have placed the plugin files into the correct directory, 
+    the plugin will appear in the Preferences menu. Select <guiseq><gui>Edit
+    </gui><gui style="menuitem">Preferences</gui><gui>Plugins</gui>
+    <gui>[Name of Plugin]</gui></guiseq> to enable the plugin.</p></item>
+    <item><p>Kliknite <gui>Zapri</gui>.</p></item>
+  </steps>
+  
+  <p>Po namestitvi vstavka, bo na voljo za uporabo.</p>
+  
+  <note style="tip">
+    <p>Mapa <file>.local</file> je privzeto skrita. Za prikaz skritih datotek kliknite <guiseq><gui>Pogled</gui><gui>Pokaži skrite datoteke</gui></guiseq> ali pritisnite <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>V primeru da mapa <file>.local/share/gedit/plugins/</file> na vašem sistemu ni prisotna, jo boste morali ustvariti.</p>
+  </note>
+  
+</page>

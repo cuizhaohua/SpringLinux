@@ -1,0 +1,2631 @@
+Package: album
+Description-md5: 3eaaefa453087570fb45ac51eeccbe7c
+Description-en: HTML photo album generator with theme support
+ Album is a perl script that can create HTML photo albums for your
+ directories of images. It supports themes that determine the visual
+ appearance of the albums. Album creates thumbnails if necessary, and
+ 'medium sized' versions of images for web viewing to avoid large
+ downloads of original images. You can also customize your photo
+ albums in many other ways.
+ .
+ This program doesn't require a web server to work. Once the HTML is
+ generated, you can put it in your "www" directory.
+
+Package: amd64-microcode
+Description-md5: 093f190e183c7cfeca05b52ecd2116e3
+Description-en: Processor microcode firmware for AMD CPUs
+ This package contains microcode patches for all AMD AMD64
+ processors.  AMD releases microcode patches to correct
+ processor behavior as documented in the respective processor
+ revision guides.
+ .
+ For Intel processors, please refer to the intel-microcode package.
+
+Package: astromenace-data-src
+Description-md5: ac44bb0bf3081113c06c0d9b3b58722c
+Description-en: data files for AstroMenace game
+ AstroMenace is an astonishing hardcore scroll-shooter where brave space
+ warriors may find a great opportunity to hone their combat skills.
+ Gather money during the battle to spend them on turning your spaceship
+ into an ultimate weapon of mass destruction and give hell to swarms of
+ adversaries. Enjoy the wonderfully crafted 3d graphics and high-quality
+ special effects along with a detailed difficulty adjustment and a handy
+ interface of AstroMenace.
+ .
+ This package provides data files for the game.
+
+Package: dynamips
+Description-md5: f1dd8e0f097ba22bb9d015f5d1453195
+Description-en: Cisco 7200/3600/3725/3745/2600/1700 Router Emulator
+ Dynamips emulates Cisco 7200/3600/3725/3745/2600/1700 Routers on a traditional
+ PC.  You can use dynamips to create labs. It uses IOS Images (which are not
+ part of this package). Of course, this emulator cannot replace a real router.
+ .
+ It is simply a complementary tool to real labs for administrators of Cisco
+ networks or people wanting to pass their CCNA/CCNP/CCIE exams. For a Command
+ Line Interface for dynamips see dynagen or gns3 package.
+
+Package: elmer-doc
+Description-md5: c366ede5a3aa81772c367ab5ab9b0d37
+Description-en: Elmer multiphysics FEA package documentation
+ The Elmer open source mutiphysics simulation package includes physical models
+ of fluid dynamics, structural mechanics, electromagnetics, heat transfer and
+ acoustics, among others. These are described by partial differential equations
+ which Elmer solves by the Finite Element Method (FEM).
+ .
+ This package contains the non-free Elmer PDF documentation files.
+
+Package: fex
+Description-md5: df618fdd29cce7704c27a17b6bf059a9
+Description-en: web service for transferring very large files
+ F*EX (Frams's Fast File EXchange) is a service that can be used to allow
+ users anywhere on the Internet to exchange very large files quickly and
+ conveniently.
+ .
+ The sender uploads the file to the F*EX-server and the recipient
+ automatically gets a notification e-mail with a download-URL.
+ .
+ Main features of F*EX:
+ .
+  * file transfer of virtually unlimited file size
+  * sender and recipient only need an e-mail program and a web browser
+    (of any kind; they do not have to install any software)
+  * RESEND and REGET for resuming after link failures at last sent byte
+  * auto-notification of recipient
+  * auto-deletion after download
+  * auto-deletion after expiration date (default: 5 days)
+  * full-users can create one time upload URLs for foreign users
+  * full-users can create sub-users, who can send only to this full-user
+  * full-users can create groups, an analogy to mailing lists, but for files
+  * admin can allow (internal or external) user self-registration
+  * admin can allow upload to public recipients without authentication
+  * admin can allow upload for LAN users without registration (anonymous upload)
+  * maintenance-free: no administration necessary beyond creating new
+    F*EX accounts
+  * multiple recipients only require one stored copy
+  * F*EX uses HTTP and needs no firewall tunnels
+  * support for streams, too (SEX: Stream EXchange)
+  * shell clients provided for commandline users: fexsend and fexget.
+    (fex-utils package)
+
+Package: fex-utils
+Description-md5: 63aecbd44f11e0377005be5835cd3fac
+Description-en: web service for transferring very large files (utils)
+ F*EX (Frams's Fast File EXchange) is a service that can be used to allow
+ users anywhere on the Internet to exchange very large files quickly and
+ conveniently.
+ .
+ The sender uploads the file to the F*EX-server and the recipient
+ automatically gets a notification e-mail with a download-URL.
+ .
+ This package includes:
+ .
+   fexsend
+   fexget
+   sexsend, sexget, sexxx
+   afex, asex
+   xx
+   zz & ezz
+
+Package: amd-clinfo
+Description-md5: 1eb5b3534910dbf997c1378c0f6b96a7
+Description-en: AMD OpenCL info utility
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package contains the clinfo utility provided by AMD. It reports status
+ information for all ICDs (installable client drivers) that are installed in
+ the system.
+
+Package: amd-libopencl1
+Description-md5: 76fc22cd268c258a78b0df2cbca31ac7
+Description-en: AMD OpenCL ICD Loader library
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ The OpenCL installable client driver loader (ICD Loader) acts as a dispatcher
+ between an OpenCL application and one (or more) installable client drivers
+ (ICD) that can be from any vendor. At least one ICD (and the corresponding
+ hardware) is required to run OpenCL applications.
+ .
+ This package contains the ICD Loader library provided by AMD.
+
+Package: amd-opencl-dev
+Description-md5: e875f4704f8e612e78d7f56aebe84d67
+Description-en: AMD OpenCL development files
+ OpenCL (Open Computing Language) is a multi-vendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This metapackage provides the development files: headers and libraries.
+
+Package: amd-opencl-icd
+Description-md5: 54bfa3793347c97821203eb0a2055ee8
+Description-en: non-free AMD OpenCL ICD Loaders
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ This package provides the AMD installable client driver (ICD) for OpenCL
+ which supports AMD GPUs (requires the fglrx driver) as well as CPUs (from
+ any vendor, no driver required).
+ .
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+
+Package: fglrx-atieventsd
+Description-md5: d7c67fe7fd7163a9f066eff1331cd5ec
+Description-en: events daemon for the non-free ATI/AMD RadeonHD display driver
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ The ATI External Events Daemon atieventsd is a user-level application
+ that monitors various system events such as ACPI or hotplug, then
+ notifies the driver via the X extensions interface that the event has
+ occured.
+ .
+ This package provides the atieventsd daemon.
+
+Package: fglrx-control
+Description-md5: 5e26bb9893eac44c08a371c072ac8ab3
+Description-en: control panel for the non-free ATI/AMD RadeonHD display driver
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ Control panel for the ATI/AMD RadeonHD and FireGL graphics cards.
+ .
+ The control panel shows detailed information on your display adapter
+ and allows you to set dual screen options, adjust gamma correction
+ and set TV out options.
+
+Package: fglrx-driver
+Description-md5: 32e00a2115fc2f18f2deb181b04899ae
+Description-en: non-free ATI/AMD RadeonHD display driver
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ This package provides display drivers and hardware accelerated OpenGL for
+ X.Org. For 3D acceleration to work, you will need to compile the fglrx kernel
+ module for your kernel: see the fglrx-modules-dkms
+ package. Note that the driver will work without the kernel module, but 3D
+ acceleration will be disabled.
+ .
+ The driver can work with plain MESA libGL, but some applications may require
+ the proprietary libGL. This library is shipped in the
+ libgl1-fglrx-glx package.
+
+Package: fglrx-modules-dkms
+Description-md5: f12683d1e152e00dee83093086eec142
+Description-en: dkms module source for the non-free ATI/AMD RadeonHD display driver
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ This package provides the kernel build environment and the fglrx modules,
+ which are necessary to have accelerated 3D support within the ATI/AMD
+ proprietary display driver.
+ .
+ This package contains the source for the fglrx kernel module, packaged with
+ appropriate configuration for DKMS to build new modules dynamically.
+
+Package: fglrx-source
+Description-md5: 6792e4bac95a5fca06f107c04f1f8b7b
+Description-en: kernel module source for the non-free ATI/AMD RadeonHD display driver
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ This package provides the kernel build environment and the fglrx modules,
+ which are necessary to have accelerated 3D support within the ATI/AMD
+ proprietary display driver.
+ .
+ This package contains the source for the fglrx kernel module for use with
+ module-assistant or make-kpkg or other manual build methods.
+
+Package: libfglrx
+Description-md5: 6d52bc71e4cfa8c3f049f3e3e66d4dbe
+Description-en: non-free ATI/AMD RadeonHD display driver (runtime libraries)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ This package contains the runtime libraries.
+ The proprietary libGL library is shipped in the
+ libgl1-fglrx-glx package.
+
+Package: libfglrx-amdxvba1
+Description-md5: 0d977b9645b757da82dc6733716a9fdd
+Description-en: AMD XvBA (X-Video Bitstream Acceleration) runtime libraries
+ X-Video Bitstream Acceleration (XvBA), designed by AMD for its (ATI) Radeon GPU
+ and Fusion APU, is an arbitrary extension of the X video extension (Xv) for the
+ X Window System on Linux operating-systems. XvBA API allows video programs to
+ offload portions of the video decoding process to the GPU video-hardware.
+ Currently, the portions designed to be offloaded by XvBA onto the GPU are
+ motion compensation (MC) and inverse discrete cosine transform (IDCT), and
+ variable-length decoding (VLD) for MPEG-2, MPEG-4 AVC (H.264) and VC-1 encoded
+ video.
+ This package contains the runtime libraries.
+
+Package: libgl1-fglrx-glx
+Description-md5: 67e5ad5e670e9c786e3966bc94836cd9
+Description-en: proprietary libGL for the non-free ATI/AMD RadeonHD display driver
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ This driver release supports the following graphics adapter families:
+ AMD Radeon R9 Series, AMD Radeon R7 Series, AMD Radeon HD 8000,
+ AMD Radeon HD 7000, AMD Radeon HD 6000, and AMD Radeon HD 5000.
+ .
+ For older models try the fglrx-legacy-driver package.
+ .
+ This package provides the proprietary libGL shipped by ATI/AMD.
+
+Package: libgl1-fglrx-glx-i386
+Description-md5: 60e1aaad599cb62c900322ef536a391e
+Description-en: ATI/AMD binary OpenGL 32-bit libraries
+ This metapackage helps the automatic installation of the 32-bit ATI/AMD
+ OpenGL libraries when installing libgl1-fglrx-glx
+ on amd64 with foreign architecture i386 enabled.
+
+Package: libxvbaw-dev
+Description-md5: cd587b1edcc6db6ccc98357004da22b6
+Description-en: AMD XvBA (X-Video Bitstream Acceleration) development files
+ X-Video Bitstream Acceleration (XvBA), designed by AMD for its (ATI) Radeon GPU
+ and Fusion APU, is an arbitrary extension of the X video extension (Xv) for the
+ X Window System on Linux operating-systems. XvBA API allows video programs to
+ offload portions of the video decoding process to the GPU video-hardware.
+ Currently, the portions designed to be offloaded by XvBA onto the GPU are
+ motion compensation (MC) and inverse discrete cosine transform (IDCT), and
+ variable-length decoding (VLD) for MPEG-2, MPEG-4 AVC (H.264) and VC-1 encoded
+ video.
+ This package contains the development files.
+
+Package: amd-opencl-icd-legacy
+Description-md5: 4e2eddf2b383e77b018d87508abb284f
+Description-en: AMD OpenCL ICD (legacy)
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the AMD installable client driver (ICD) for OpenCL
+ which supports AMD GPUs (requires the fglrx driver) as well as CPUs (from
+ any vendor, no driver required).
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+
+Package: fglrx-legacy-atieventsd
+Description-md5: b699e9b2a7bef5002076b9e85f1d9d52
+Description-en: events daemon for the non-free ATI/AMD RadeonHD display driver (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ The ATI External Events Daemon atieventsd is a user-level application
+ that monitors various system events such as ACPI or hotplug, then
+ notifies the driver via the X extensions interface that the event has
+ occured.
+ .
+ This package provides the atieventsd daemon.
+
+Package: fglrx-legacy-control
+Description-md5: 618021954c9d370836cac07dbd1e8c6d
+Description-en: control panel for the non-free ATI/AMD RadeonHD display driver (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ Control panel for the ATI/AMD RadeonHD and FireGL graphics cards.
+ .
+ The control panel shows detailed information on your display adapter
+ and allows you to set dual screen options, adjust gamma correction
+ and set TV out options.
+
+Package: fglrx-legacy-driver
+Description-md5: 97294a05924746855bbd6ec0455438c2
+Description-en: non-free ATI/AMD RadeonHD display driver (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ This package provides display drivers and hardware accelerated OpenGL for
+ X.Org. For 3D acceleration to work, you will need to compile the fglrx kernel
+ module for your kernel: see the fglrx-legacy-modules-dkms
+ package. Note that the driver will work without the kernel module, but 3D
+ acceleration will be disabled.
+ .
+ The driver can work with plain MESA libGL, but some applications may require
+ the proprietary libGL. This library is shipped in the
+ libgl1-fglrx-legacy-glx package.
+
+Package: fglrx-legacy-modules-dkms
+Description-md5: 7e550b8b79546ea175058d64b2977536
+Description-en: dkms module source for the non-free ATI/AMD RadeonHD display driver (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ This package provides the kernel build environment and the fglrx modules,
+ which are necessary to have accelerated 3D support within the ATI/AMD
+ proprietary display driver.
+ .
+ This package contains the source for the fglrx kernel module, packaged with
+ appropriate configuration for DKMS to build new modules dynamically.
+
+Package: fglrx-legacy-source
+Description-md5: e326462c0c9513ff4ed16738a1b57ead
+Description-en: kernel module source for the non-free ATI/AMD RadeonHD display driver (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ This package provides the kernel build environment and the fglrx modules,
+ which are necessary to have accelerated 3D support within the ATI/AMD
+ proprietary display driver.
+ .
+ This package contains the source for the fglrx kernel module for use with
+ module-assistant or make-kpkg or other manual build methods.
+
+Package: libfglrx-legacy
+Description-md5: 204191f29b9b7dac2450d2c2a41e2380
+Description-en: non-free ATI/AMD RadeonHD display driver (runtime libraries) (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ This package contains the runtime libraries.
+ The proprietary libGL library is shipped in the
+ libgl1-fglrx-legacy-glx package.
+
+Package: libfglrx-legacy-amdxvba1
+Description-md5: 4afed6473ddcfa78c1f8e0ac8e839dc0
+Description-en: AMD XvBA (X-Video Bitstream Acceleration) runtime libraries (legacy)
+ X-Video Bitstream Acceleration (XvBA), designed by AMD for its (ATI) Radeon GPU
+ and Fusion APU, is an arbitrary extension of the X video extension (Xv) for the
+ X Window System on Linux operating-systems. XvBA API allows video programs to
+ offload portions of the video decoding process to the GPU video-hardware.
+ Currently, the portions designed to be offloaded by XvBA onto the GPU are
+ motion compensation (MC) and inverse discrete cosine transform (IDCT), and
+ variable-length decoding (VLD) for MPEG-2, MPEG-4 AVC (H.264) and VC-1 encoded
+ video.
+ This package contains the runtime libraries.
+
+Package: libgl1-fglrx-legacy-glx
+Description-md5: f9d5eb2bbb26720b8965e17f13116448
+Description-en: proprietary libGL for the non-free ATI/AMD RadeonHD display driver (legacy)
+ FGLRX / AMD Catalyst is the non-free proprietary display driver for the
+ ATI/AMD RadeonHD and FireGL graphics cards. As an alternative, you may try
+ the newest free driver xserver-xorg-video-radeon.
+ .
+ This legacy driver release supports the following graphics adapter families:
+ AMD Radeon HD 4000, AMD Radeon HD 3000, and AMD Radeon HD 2000.
+ .
+ This package provides the proprietary libGL shipped by ATI/AMD.
+
+Package: firmware-adi
+Description-md5: ff691a1409615371c6deb3b9f2f7aca2
+Description-en: Binary firmware for Analog Devices Inc. DSL modem chips
+ This package contains the binary firmware for USB DSL modems with the
+ Analog Devices Inc.  Eagle IV chip, supported by the ueagle-atm driver.
+ .
+ Contents:
+  * Eagle IV ADSL configuration, generic (ueagle-atm/CMV4p.bin.v2)
+  * Eagle IV ADSL DSP firmware (ueagle-atm/DSP4p.bin)
+  * Eagle IV firmware (ueagle-atm/eagleIV.fw)
+
+Package: firmware-atheros
+Description-md5: ac55463d5e5831a2d00ad451f10de47e
+Description-en: Binary firmware for Atheros wireless cards
+ This package contains the binary firmware for USB wireless network and
+ Bluetooth cards supported by the ar5523, ar9170, ath3k, ath6kl_sdio,
+ ath6kl_usb or ath9k_htc drivers.
+ .
+ Contents:
+  * Atheros AR3012 rev 01020001 patch (ar3k/AthrBT_0x01020001.dfu)
+  * Atheros AR3012 rev 01020200 patch (ar3k/AthrBT_0x01020200.dfu)
+  * Atheros AR3012 rev 01020201 patch (ar3k/AthrBT_0x01020201.dfu)
+  * Atheros AR3012 rev 11020000 patch (ar3k/AthrBT_0x11020000.dfu)
+  * Atheros AR3012 rev 31010000 patch (ar3k/AthrBT_0x31010000.dfu)
+  * Atheros AR3012 rev 41020000 patch (ar3k/AthrBT_0x41020000.dfu)
+  * Atheros AR3012 rev 01020001 config (ar3k/ramps_0x01020001_26.dfu)
+  * Atheros AR3012 rev 01020200 26 MHz config
+    (ar3k/ramps_0x01020200_26.dfu)
+  * Atheros AR3012 rev 01020200 40 MHz config
+    (ar3k/ramps_0x01020200_40.dfu)
+  * Atheros AR3012 rev 01020201 26 MHz config
+    (ar3k/ramps_0x01020201_26.dfu)
+  * Atheros AR3012 rev 01020201 40 MHz config
+    (ar3k/ramps_0x01020201_40.dfu)
+  * Atheros AR3012 rev 11020000 config (ar3k/ramps_0x11020000_40.dfu)
+  * Atheros AR3012 rev 31010000 config (ar3k/ramps_0x31010000_40.dfu)
+  * Atheros AR3012 rev 41020000 config (ar3k/ramps_0x41020000_40.dfu)
+  * Atheros AR5523 firmware (ar5523.bin)
+  * Atheros AR7010 rev 1.0 firmware (ar7010.fw)
+  * Atheros AR7010 rev 1.1 firmware (ar7010_1_1.fw)
+  * Atheros AR9170 firmware (ar9170.fw)
+  * Atheros AR9271 firmware (ar9271.fw)
+  * Atheros AR3011 firmware (ath3k-1.fw)
+  * ath6k/AR6003.1/hw2.1.1/athwlan.bin
+  * ath6k/AR6003.1/hw2.1.1/bdata.SD31.bin
+  * ath6k/AR6003.1/hw2.1.1/bdata.SD32.bin
+  * ath6k/AR6003.1/hw2.1.1/bdata.WB31.bin
+  * ath6k/AR6003.1/hw2.1.1/data.patch.bin
+  * ath6k/AR6003.1/hw2.1.1/endpointping.bin
+  * ath6k/AR6003.1/hw2.1.1/otp.bin
+  * ath6k/AR6003/hw1.0/athwlan.bin.z77
+  * ath6k/AR6003/hw1.0/bdata.SD31.bin
+  * ath6k/AR6003/hw1.0/bdata.SD32.bin
+  * ath6k/AR6003/hw1.0/bdata.WB31.bin
+  * ath6k/AR6003/hw1.0/data.patch.bin
+  * ath6k/AR6003/hw1.0/otp.bin.z77
+  * ath6k/AR6003/hw2.0/athwlan.bin.z77
+  * ath6k/AR6003/hw2.0/bdata.SD31.bin
+  * ath6k/AR6003/hw2.0/bdata.SD32.bin
+  * ath6k/AR6003/hw2.0/bdata.WB31.bin
+  * ath6k/AR6003/hw2.0/data.patch.bin
+  * ath6k/AR6003/hw2.0/otp.bin.z77
+  * ath6k/AR6003/hw2.1.1/athwlan.bin
+  * ath6k/AR6003/hw2.1.1/bdata.SD31.bin
+  * ath6k/AR6003/hw2.1.1/bdata.SD32.bin
+  * ath6k/AR6003/hw2.1.1/bdata.WB31.bin
+  * ath6k/AR6003/hw2.1.1/data.patch.bin
+  * ath6k/AR6003/hw2.1.1/endpointping.bin
+  * ath6k/AR6003/hw2.1.1/fw-2.bin
+  * ath6k/AR6003/hw2.1.1/fw-3.bin
+  * ath6k/AR6003/hw2.1.1/otp.bin
+  * ath6k/AR6004/hw1.2/bdata.bin
+  * ath6k/AR6004/hw1.2/fw-2.bin
+  * ath6k/AR6004/hw1.3/bdata.bin
+  * ath6k/AR6004/hw1.3/fw-3.bin
+  * Atheros AR7010 firmware, version 1.3 (htc_7010.fw)
+  * Atheros AR9271 firmware, version 1.3 (htc_9271.fw)
+
+Package: firmware-bnx2
+Description-md5: 272567050d6d219f783fcb934a4e035e
+Description-en: Binary firmware for Broadcom NetXtremeII
+ This package contains the binary firmware for Broadcom NetXtremeII network
+ adapters supported by the bnx2 driver.
+ .
+ Contents:
+  * Broadcom NetXtremeII 5706/5708 firmware (mips), version Linux 2.6.32
+    (bnx2/bnx2-mips-06-5.0.0.j3.fw)
+  * Broadcom NetXtremeII 5706/5708 firmware (rv2p), version Linux 2.6.32
+    (bnx2/bnx2-rv2p-06-5.0.0.j3.fw)
+  * Broadcom NetXtremeII 5709/5716 firmware (mips), version Linux 2.6.32
+    (bnx2/bnx2-mips-09-5.0.0.j3.fw)
+  * Broadcom NetXtremeII 5709/5716 firmware (rv2p), version Linux 2.6.32
+    (bnx2/bnx2-rv2p-09-5.0.0.j3.fw)
+  * Broadcom NetXtremeII 5709 A0/A1 firmware (rv2p), version Linux
+    2.6.32 (bnx2/bnx2-rv2p-09ax-5.0.0.j3.fw)
+  * bnx2/bnx2-rv2p-06-6.0.15.fw
+  * Broadcom NetXtremeII 5709/5716 firmware (rv2p), version Linux 2.6.37
+    (bnx2/bnx2-rv2p-09-6.0.17.fw)
+  * Broadcom NetXtremeII 5709 A0/A1 firmware (rv2p), version Linux
+    2.6.37 (bnx2/bnx2-rv2p-09ax-6.0.17.fw)
+  * Broadcom NetXtremeII 5706/5708 firmware (mips), version Linux 2.6.38
+    (bnx2/bnx2-mips-06-6.2.1.fw)
+  * Broadcom NetXtremeII 5706/5708 firmware (mips), version Linux 3.3
+    (bnx2/bnx2-mips-06-6.2.3.fw)
+  * Broadcom NetXtremeII 5709/5716 firmware (mips), version Linux 2.6.39
+    (bnx2/bnx2-mips-09-6.2.1a.fw)
+  * Broadcom NetXtremeII 5709/5716 firmware (mips), version Linux 3.3
+    (bnx2/bnx2-mips-09-6.2.1b.fw)
+
+Package: firmware-bnx2x
+Description-md5: ba4d4855360ac40d02a16e92031e8ab1
+Description-en: Binary firmware for Broadcom NetXtreme II 10Gb
+ This package contains the binary firmware for Broadcom NetXtreme II 10Gb
+ network adapters supported by the bnx2x driver.
+ .
+ Contents:
+  * Broadcom NetXtreme II 10Gb 57710, version 5.0.21.0
+    (bnx2x-e1-5.0.21.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 5.0.21.0
+    (bnx2x-e1h-5.0.21.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.0.29.0
+    (bnx2x/bnx2x-e1-7.0.29.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.0.29.0
+    (bnx2x/bnx2x-e2-7.0.29.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.0.29.0
+    (bnx2x/bnx2x-e1h-7.0.29.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.8.17.0
+    (bnx2x/bnx2x-e1-7.8.17.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.8.17.0
+    (bnx2x/bnx2x-e2-7.8.17.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.8.17.0
+    (bnx2x/bnx2x-e1h-7.8.17.0.fw)
+  * Broadcom NetXtreme II 10Gb 57710, version 7.8.19.0
+    (bnx2x/bnx2x-e1-7.8.19.0.fw)
+  * Broadcom NetXtreme II 10Gb 57711, version 7.8.19.0
+    (bnx2x/bnx2x-e2-7.8.19.0.fw)
+  * Broadcom NetXtreme II 10Gb 57712, version 7.8.19.0
+    (bnx2x/bnx2x-e1h-7.8.19.0.fw)
+
+Package: firmware-brcm80211
+Description-md5: 118d1ba7b8f46ec1c9c7a74cbc9e24e7
+Description-en: Binary firmware for Broadcom 802.11 wireless cards
+ This package contains the binary firmware for wireless network cards with
+ the Broadcom BCM4313, BCM43224, BCM43225, BCM43241, BCM4329, BCM4330,
+ BCM4334 or BCM4335 chips, supported by the brcmsmac or brcmfmac driver.
+ .
+ Contents:
+  * Broadcom 802.11 firmware, version 610.812 (brcm/bcm43xx-0.fw)
+  * Broadcom 802.11 firmware header, version 610.812
+    (brcm/bcm43xx_hdr-0.fw)
+  * Broadcom BCM43143 firmware (brcm/brcmfmac43143-sdio.bin)
+  * Broadcom BCM43241 rev 0-3 firmware (brcm/brcmfmac43241b0-sdio.bin)
+  * Broadcom BCM43241 rev 4+ firmware (brcm/brcmfmac43241b4-sdio.bin)
+  * Broadcom BCM4329 firmware (brcm/brcmfmac4329-sdio.bin)
+  * Broadcom BCM4330 firmware (brcm/brcmfmac4330-sdio.bin)
+  * Broadcom BCM4334 firmware (brcm/brcmfmac4334-sdio.bin)
+  * Broadcom BCM4335 firmware (brcm/brcmfmac4335-sdio.bin)
+  * Broadcom BCM43362 firmware (brcm/brcmfmac43362-sdio.bin)
+  * Broadcom BCM4354 firmware (brcm/brcmfmac4354-sdio.bin)
+
+Package: firmware-intelwimax
+Description-md5: d29bb7f1db1004f28ccb7e5d46579859
+Description-en: Binary firmware for Intel WiMAX Connection
+ This package contains the binary firmware for Intel WiMAX Connection
+ devices supported by the i2400m-usb driver.
+ .
+ Contents:
+  * Intel WiMAX Connection 2400 USB firmware, version 1.4
+    (i2400m-fw-usb-1.4.sbcf)
+  * Intel WiMAX Connection 2400 USB firmware, version 1.5
+    (i2400m-fw-usb-1.5.sbcf)
+  * Intel WiMAX/WiFi Link 6050 USB firmware, version 1.5
+    (i6050-fw-usb-1.5.sbcf)
+
+Package: firmware-ipw2x00
+Description-md5: 5449257b292d189e161ac03d7c964ead
+Description-en: Binary firmware for Intel Pro Wireless 2100, 2200 and 2915
+ This package contains the binary firmware for Intel Pro Wireless 2100,
+ 2200 and 2915 cards supported by the ipw2100 and ipw2200 drivers.
+ .
+ Contents:
+  * Intel Pro Wireless 2100 firmware (bootstrap), version 1.3
+    (ipw2100-1.3.fw)
+  * Intel Pro Wireless 2100 firmware (ibss mode), version 1.3
+    (ipw2100-1.3-i.fw)
+  * Intel Pro Wireless 2100 firmware (monitor mode), version 1.3
+    (ipw2100-1.3-p.fw)
+  * Intel Pro Wireless 2200/2915 firmware (bss), version 3.1
+    (ipw2200-bss.fw)
+  * Intel Pro Wireless 2200/2915 firmware (ibss), version 3.1
+    (ipw2200-ibss.fw)
+  * Intel Pro Wireless 2200/2915 firmware (snf), version 3.1
+    (ipw2200-sniffer.fw)
+ .
+ This firmware is covered by the Intel Pro Wireless 2100 and 2200/2915
+ License.  You must agree to the terms of this license before it is
+ installed.
+
+Package: firmware-ivtv
+Description-md5: e2035ca4f8f0e5d16f74a11516a7da88
+Description-en: Binary firmware for iTVC15-family MPEG codecs (ivtv and pvrusb2 drivers)
+ This package contains the binary firmware for TV cards with Conexant
+ iTVC15-family MPEG codecs, supported by the ivtv and pvrusb2 drivers.
+ .
+ Contents:
+  * Conexant CX23415/CX23416 MPEG codec (decoder) (v4l-cx2341x-dec.fw)
+  * Conexant CX23415/CX23416 MPEG codec (encoder) (v4l-cx2341x-enc.fw)
+  * Conexant CX23415/CX23416 MPEG codec (initialization)
+    (v4l-cx2341x-init.mpg)
+  * Hauppauge PVR USB2 24xxx models (v4l-pvrusb2-24xxx-01.fw)
+  * Hauppauge PVR USB2 29xxx models (v4l-pvrusb2-29xxx-01.fw)
+ .
+ This firmware is covered by the Hauppauge End-User Firmware License
+ Agreement.  You must agree to the terms of this license before it is
+ installed.
+
+Package: firmware-iwlwifi
+Description-md5: 50cc67c5e022129c4ea9ac0ab685eb77
+Description-en: Binary firmware for Intel Wireless cards
+ This package contains the binary firmware for Intel Wireless cards
+ supported by the iwlegacy/iwl3945 and iwlwifi/iwlagn drivers.
+ .
+ Contents:
+  * Intel Wireless 3160 rev 10 Bluetooth firmware patch
+    (intel/ibt-hw-37.7.10-fw-1.0.2.3.d.bseq)
+  * Intel Wireless 7260 rev 10 WP2 B5 Bluetooth firmware path
+    (intel/ibt-hw-37.7.10-fw-1.80.1.2d.d.bseq)
+  * Intel Wireless 7260 rev 10 Bluetooth firmware patch
+    (intel/ibt-hw-37.7.10-fw-1.80.2.3.d.bseq)
+  * Intel Wireless 7260 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.7.bseq)
+  * Intel Wireless 7265 rev 10 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.8.10-fw-1.10.2.27.d.bseq)
+  * Intel Wireless 7265 Bluetooth firmware generic patch
+    (intel/ibt-hw-37.8.bseq)
+  * Intel Wireless 100 firmware, version 39.31.5.1 (iwlwifi-100-5.ucode)
+  * Intel Wireless 105 firmware, version 18.168.6.1
+    (iwlwifi-105-6.ucode)
+  * Intel Wireless 135 firmware, version 18.168.6.1
+    (iwlwifi-135-6.ucode)
+  * Intel Wireless 1000 firmware, version 39.31.5.1
+    (iwlwifi-1000-5.ucode)
+  * Intel Wireless 2200 firmware, version 18.168.6.1
+    (iwlwifi-2000-6.ucode)
+  * Intel Wireless 2230 firmware, version 18.168.6.1
+    (iwlwifi-2030-6.ucode)
+  * Intel Wireless 3160 firmware, version 22.1.7.0
+    (iwlwifi-3160-7.ucode)
+  * Intel Wireless 3160 firmware, version 22.24.8.0
+    (iwlwifi-3160-8.ucode)
+  * Intel Wireless 3160 firmware, version 23.214.9.0
+    (iwlwifi-3160-9.ucode)
+  * Intel Wireless 3945 firmware, version 15.32.2.9
+    (iwlwifi-3945-2.ucode)
+  * Intel Wireless 4965 firmware, version 228.61.2.24
+    (iwlwifi-4965-2.ucode)
+  * Intel Wireless 5100, 5300 and 5350 firmware, version 8.24.2.12
+    (iwlwifi-5000-2.ucode)
+  * Intel Wireless 5100, 5300 and 5350 firmware, version 8.83.5.1
+    (iwlwifi-5000-5.ucode)
+  * Intel Wireless 5150 firmware, version 8.24.2.2
+    (iwlwifi-5150-2.ucode)
+  * Intel Wireless 6000 firmware, version 9.221.4.1
+    (iwlwifi-6000-4.ucode)
+  * Intel Wireless 6005/6205 firmware, version 17.168.5.3
+    (iwlwifi-6000g2a-5.ucode)
+  * Intel Wireless 6005/6205 firmware, version 18.168.6.1
+    (iwlwifi-6000g2a-6.ucode)
+  * Intel Wireless 6030 firmware, version 18.168.6.1
+    (iwlwifi-6000g2b-6.ucode)
+  * Intel Wireless 6250 firmware, version 9.201.4.1
+    (iwlwifi-6050-4.ucode)
+  * Intel Wireless 6250 firmware, version 41.28.5.1
+    (iwlwifi-6050-5.ucode)
+  * Intel Wireless 7260 firmware, version 22.1.7.0
+    (iwlwifi-7260-7.ucode)
+  * Intel Wireless 7260 firmware, version 22.24.8.0
+    (iwlwifi-7260-8.ucode)
+  * Intel Wireless 7260 firmware, version 23.214.9.0
+    (iwlwifi-7260-9.ucode)
+  * Intel Wireless 7265 firmware, version 22.24.8.0
+    (iwlwifi-7265-8.ucode)
+  * Intel Wireless 7265 firmware, version 23.214.9.0
+    (iwlwifi-7265-9.ucode)
+
+Package: firmware-libertas
+Description-md5: 10f127b5a7f7a2a53b1a5868dc6d4831
+Description-en: Binary firmware for Marvell Libertas 8xxx wireless cards
+ This package contains the binary firmware for wireless network cards with
+ Marvell Libertas 8xxx chips supported by the libertas_cs, libertas_sdio,
+ libertas_spi, libertas_tf_usb, mwifiex_sdio, mwifiex_usb, mwl8k and
+ usb8xxx drivers.
+ .
+ Contents:
+  * USB8388 'Thinfirm' firmware (lbtf_usb.bin)
+  * CF8381 main code (libertas/cf8381.bin)
+  * CF8381 boot code (libertas/cf8381_helper.bin)
+  * CF8385 main code (libertas/cf8385.bin, libertas_cs.fw)
+  * CF8385 boot code (libertas/cf8385_helper.bin, libertas_cs_helper.fw)
+  * GSPI8686 main code, version 9.x (libertas/gspi8686_v9.bin,
+    libertas/gspi8686.bin)
+  * GSPI8686 boot code, version 9.x (libertas/gspi8686_v9_helper.bin,
+    libertas/gspi8686_hlp.bin)
+  * GSPI8688 main code (libertas/gspi8688.bin)
+  * GSPI8688 boot code (libertas/gspi8688_helper.bin)
+  * SD8385 main code (libertas/sd8385.bin, sd8385.bin)
+  * SD8385 boot code (libertas/sd8385_helper.bin, sd8385_helper.bin)
+  * SD8686 main code, version 8.x (libertas/sd8686_v8.bin, sd8686.bin)
+  * SD8686 boot code, version 8.x (libertas/sd8686_v8_helper.bin,
+    sd8686_helper.bin)
+  * SD8686 main code, version 9.x (libertas/sd8686_v9.bin)
+  * SD8686 boot code, version 9.x (libertas/sd8686_v9_helper.bin)
+  * USB8388 OLPC firmware, version 5.110.22.p23
+    (libertas/usb8388_olpc.bin)
+  * USB8388 firmware, version 5.x (libertas/usb8388_v5.bin, usb8388.bin)
+  * USB8388 firmware, version 9.x (libertas/usb8388_v9.bin)
+  * USB8682 firmware (libertas/usb8682.bin)
+  * PCIE8897 firmware, version 15.69.2.p11 (WLAN) / 15.28.2.p11 (BT)
+    (mrvl/pcie8897_uapsta.bin)
+  * SD8688 main code (mrvl/sd8688.bin, sd8688.bin, libertas/sd8688.bin)
+  * SD8688 boot code (mrvl/sd8688_helper.bin, sd8688_helper.bin,
+    libertas/sd8688_helper.bin)
+  * SD8787 firmware, version 14.66.9.p96 (mrvl/sd8787_uapsta.bin)
+  * SD8797 firmware, version 14.66.11.p151 (mrvl/sd8797_uapsta.bin)
+  * SD8897 firmware, version 15.69.2.p11 (WLAN) / 15.28.2.p11 (BT)
+    (mrvl/sd8897_uapsta.bin)
+  * USB8797 firmware, version 14.69.11.p179 (mrvl/usb8797_uapsta.bin)
+  * MWL8366 main code (mwl8k/fmimage_8366.fw)
+  * MWL8366 AP-mode main code (mwl8k/fmimage_8366_ap-2.fw)
+  * MWL8366 AP-mode main code, version 5.2.8.16
+    (mwl8k/fmimage_8366_ap-3.fw)
+  * MWL8687 main code (mwl8k/fmimage_8687.fw)
+  * MWL8764 AP-mode firmware, version 7.4.0.9
+    (mwl8k/fmimage_8764_ap-1.fw)
+  * MWL8366 boot code (mwl8k/helper_8366.fw)
+  * MWL8687 boot code (mwl8k/helper_8687.fw)
+
+Package: firmware-linux
+Description-md5: 687a23216812db9607283805e03cdaa8
+Description-en: Binary firmware for various drivers in the Linux kernel (meta-package)
+ This package depends on both free and non-free firmware which may be used
+ with drivers in the Linux kernel.
+
+Package: firmware-linux-nonfree
+Description-md5: 5ce6b4fafb204f08314b22692a4ac594
+Description-en: Binary firmware for various drivers in the Linux kernel
+ This package contains the binary firmware for  various drivers in the
+ Linux kernel.  This is a collection of firmware blobs which are not
+ individually large enough to warrant a standalone package.
+ .
+ Contents:
+  * 3Com Typhoon firmware, version 03.001.008 (3com/typhoon.bin)
+  * AdvanSys ASC-3550 firmware (advansys/3550.bin)
+  * AdvanSys ASC-38C0800 firmware (advansys/38C0800.bin)
+  * AdvanSys ASC-38C1600 firmware (advansys/38C1600.bin)
+  * AdvanSys SCSI controller microcode (advansys/mcode.bin)
+  * Agere/Prism/Symbol Orinoco firmware (AP mode), version 9.48 Hermes I
+    (agere_ap_fw.bin)
+  * Agere/Prism/Symbol Orinoco firmware (STA mode), version 9.48 Hermes
+    I (agere_sta_fw.bin)
+  * Chelsio T3 optical EDC firmware (AEL2005 PHY)
+    (cxgb3/ael2005_opt_edc.bin)
+  * Chelsio T3 twinax EDC firmware (AEL2005 PHY)
+    (cxgb3/ael2005_twx_edc.bin)
+  * Chelsio T3 twinax EDC firmware (AEL2020 PHY)
+    (cxgb3/ael2020_twx_edc.bin)
+  * Chelsio T3B protocol engine firmware, version 1.1.0
+    (cxgb3/t3b_psram-1.1.0.bin)
+  * Chelsio T3C protocol engine firmware, version 1.1.0
+    (cxgb3/t3c_psram-1.1.0.bin)
+  * Chelsio T3 main firmware, version 7.4.0 (cxgb3/t3fw-7.4.0.bin)
+  * Chelsio T3 main firmware, version 7.10.0 (cxgb3/t3fw-7.10.0.bin)
+  * Chelsio T3 main firmware, version 7.12.0 (cxgb3/t3fw-7.12.0.bin)
+  * Chelsio T4 firmware, version 1.9.23.0 (cxgb4/t4fw-1.9.23.0.bin,
+    cxgb4/t4fw.bin)
+  * Chelsio T5 firmware, version 1.9.23.0 (cxgb4/t5fw-1.9.23.0.bin,
+    cxgb4/t5fw.bin)
+  * DAB-USB FPGA bitfile (dabusb/bitstream.bin)
+  * DAB-USB firmware (dabusb/firmware.fw)
+  * Xceive 5000 tuner firmware, version 1.6.114
+    (dvb-fe-xc5000-1.6.114.fw)
+  * DiBcom dib0700 USB DVB bridge firmware, version 1.20
+    (dvb-usb-dib0700-1.20.fw)
+  * Intel 82559 D101M microcode (e100/d101m_ucode.bin)
+  * Intel 82559 D101S microcode (e100/d101s_ucode.bin)
+  * Intel 82551-F and 82551-10 microcode (e100/d102e_ucode.bin)
+  * ENE UB6250 MS Pro read/write firmware (ene-ub6250/msp_rdwr.bin)
+  * ENE UB6250 MS init firmware (ene-ub6250/ms_init.bin)
+  * ENE UB6250 MS read/write firmware (ene-ub6250/ms_rdwr.bin)
+  * ENE UB6250 SD init stage 1 firmware (ene-ub6250/sd_init1.bin)
+  * ENE UB6250 SD init stage 2 firmware (ene-ub6250/sd_init2.bin)
+  * ENE UB6250 SD read/write firmware (ene-ub6250/sd_rdwr.bin)
+  * kaweth/new_code.bin
+  * kaweth/new_code_fix.bin
+  * kaweth/trigger_code.bin
+  * kaweth/trigger_code_fix.bin
+  * Matrox G200 WARP engine microcode (matrox/g200_warp.fw)
+  * Matrox G400/G550 WARP engine microcode (matrox/g400_warp.fw)
+  * Multi-Tech USB CDMA modem firmware (mts_cdma.fw)
+  * Multi-Tech USB EDGE modem firmware (mts_edge.fw)
+  * Multi-Tech USB GPRS modem firmware (mts_gsm.fw)
+  * Rage 128 CCE microcode (r128/r128_cce.bin)
+  * Radeon HD IGP 7500/7600 series ME microcode (radeon/ARUBA_me.bin)
+  * Radeon HD IGP 7500/7600 series PFP microcode (radeon/ARUBA_pfp.bin)
+  * Radeon HD IGP 7500/7600 series RLC microcode (radeon/ARUBA_rlc.bin)
+  * Radeon HD 6800 series MC microcode (radeon/BARTS_mc.bin)
+  * Radeon HD 6800 series ME microcode (radeon/BARTS_me.bin)
+  * Radeon HD 6800 series PFP microcode (radeon/BARTS_pfp.bin)
+  * Radeon HD 6800 series SMC microcode (radeon/BARTS_smc.bin)
+  * Radeon HD 7790/8770/8950 CE microcode (radeon/BONAIRE_ce.bin)
+  * Radeon HD 7790/8770/8950 MC microcode, version 1
+    (radeon/BONAIRE_mc.bin)
+  * Radeon HD 7790/8770/8950 MC microcode, version 2
+    (radeon/BONAIRE_mc2.bin)
+  * Radeon HD 7790/8770/8950 ME microcode (radeon/BONAIRE_me.bin)
+  * Radeon HD 7790/8770/8950 MEC microcode (radeon/BONAIRE_mec.bin)
+  * Radeon HD 7790/8770/8950 PFP microcode (radeon/BONAIRE_pfp.bin)
+  * Radeon HD 7790/8770/8950 RLC microcode (radeon/BONAIRE_rlc.bin)
+  * Radeon HD 7790/8770/8950 SDMA microcode (radeon/BONAIRE_sdma.bin)
+  * Radeon HD 7790/8770/8950 series SMC microcode
+    (radeon/BONAIRE_smc.bin)
+  * Radeon HD 7790/8770/8950, 8100/8200/8300/8400 series, and
+    "Mullins"/"Beema" IGP UVD microcode (radeon/BONAIRE_uvd.bin)
+  * Radeon HD VCE microcode (radeon/BONAIRE_vce.bin)
+  * Radeon HD 6300/6500/6800 series RLC microcode (radeon/BTC_rlc.bin)
+  * Radeon HD 6300 series MC microcode (radeon/CAICOS_mc.bin)
+  * Radeon HD 6300 series ME microcode (radeon/CAICOS_me.bin)
+  * Radeon HD 6300 series PFP microcode (radeon/CAICOS_pfp.bin)
+  * Radeon HD 6300 series SMC microcode (radeon/CAICOS_smc.bin)
+  * Radeon HD 6900 series MC microcode (radeon/CAYMAN_mc.bin)
+  * Radeon HD 6900 series ME microcode (radeon/CAYMAN_me.bin)
+  * Radeon HD 6900 series PFP microcode (radeon/CAYMAN_pfp.bin)
+  * Radeon HD 6900 series RLC microcode (radeon/CAYMAN_rlc.bin)
+  * Radeon HD 6900 series SMC microcode (radeon/CAYMAN_smc.bin)
+  * Radeon HD 5400 series ME microcode (radeon/CEDAR_me.bin)
+  * Radeon HD 5400 series PFP microcode (radeon/CEDAR_pfp.bin)
+  * Radeon HD 5400 series RLC microcode (radeon/CEDAR_rlc.bin)
+  * Radeon HD 5400 series SMC microcode (radeon/CEDAR_smc.bin)
+  * Radeon HD 5800/5900 series ME microcode (radeon/CYPRESS_me.bin)
+  * Radeon HD 5800/5900 series PFP microcode (radeon/CYPRESS_pfp.bin)
+  * Radeon HD 5800/5900 series RLC microcode (radeon/CYPRESS_rlc.bin)
+  * Radeon HD 5800/5900 series SMC microcode (radeon/CYPRESS_smc.bin)
+  * Radeon HD 5x00 series UVD microcode (radeon/CYPRESS_uvd.bin)
+  * Radeon HD 8500M series and R5 M200 CE microcode
+    (radeon/HAINAN_ce.bin)
+  * Radeon HD 8500M series and R5 M200 MC microcode, version 1
+    (radeon/HAINAN_mc.bin)
+  * Radeon HD 8500M series and R5 M200 MC microcode, version 2
+    (radeon/HAINAN_mc2.bin)
+  * Radeon HD 8500M series and R5 M200 ME microcode
+    (radeon/HAINAN_me.bin)
+  * Radeon HD 8500M series and R5 M200 PFP microcode
+    (radeon/HAINAN_pfp.bin)
+  * Radeon HD 8500M series and R5 M200 RLC microcode
+    (radeon/HAINAN_rlc.bin)
+  * Radeon HD 8500M series and R5 M200 SMC microcode
+    (radeon/HAINAN_smc.bin)
+  * Radeon R9 290 series CE microcode (radeon/HAWAII_ce.bin)
+  * Radeon R9 290 series MC microcode, version 1 (radeon/HAWAII_mc.bin)
+  * Radeon R9 290 series MC microcode, version 2 (radeon/HAWAII_mc2.bin)
+  * Radeon R9 290 series ME microcode (radeon/HAWAII_me.bin)
+  * Radeon R9 290 series MEC microcode (radeon/HAWAII_mec.bin)
+  * Radeon R9 290 series PFP microcode (radeon/HAWAII_pfp.bin)
+  * Radeon R9 290 series RLC microcode (radeon/HAWAII_rlc.bin)
+  * Radeon R9 290 series SDMA microcode (radeon/HAWAII_sdma.bin)
+  * Radeon R9 290 series SMC microcode (radeon/HAWAII_smc.bin)
+  * Radeon HD 5700 series ME microcode (radeon/JUNIPER_me.bin)
+  * Radeon HD 5700 series PFP microcode (radeon/JUNIPER_pfp.bin)
+  * Radeon HD 5700 series RLC microcode (radeon/JUNIPER_rlc.bin)
+  * Radeon HD 5700 series SMC microcode (radeon/JUNIPER_smc.bin)
+  * Radeon HD 8100/8200/8300/8400 series CE microcode
+    (radeon/KABINI_ce.bin)
+  * Radeon HD 8100/8200/8300/8400 series ME microcode
+    (radeon/KABINI_me.bin)
+  * Radeon HD 8100/8200/8300/8400 series MEC microcode
+    (radeon/KABINI_mec.bin)
+  * Radeon HD 8100/8200/8300/8400 series PFP microcode
+    (radeon/KABINI_pfp.bin)
+  * Radeon HD 8100/8200/8300/8400 series RLC microcode
+    (radeon/KABINI_rlc.bin)
+  * Radeon HD 8100/8200/8300/8400 series SDMA microcode
+    (radeon/KABINI_sdma.bin)
+  * Radeon R5/R7 IGP 200 series CE microcode (radeon/KAVERI_ce.bin)
+  * Radeon R5/R7 IGP 200 series ME microcode (radeon/KAVERI_me.bin)
+  * Radeon R5/R7 IGP 200 series MEC microcode (radeon/KAVERI_mec.bin)
+  * Radeon R5/R7 IGP 200 series PFP microcode (radeon/KAVERI_pfp.bin)
+  * Radeon R5/R7 IGP 200 series RLC microcode (radeon/KAVERI_rlc.bin)
+  * Radeon R5/R7 IGP 200 series SDMA microcode (radeon/KAVERI_sdma.bin)
+  * Radeon "Mullins"/"Beema" IGP CE microcode (radeon/MULLINS_ce.bin)
+  * Radeon "Mullins"/"Beema" IGP ME microcode (radeon/MULLINS_me.bin)
+  * Radeon "Mullins"/"Beema" IGP MEC microcode (radeon/MULLINS_mec.bin)
+  * Radeon "Mullins"/"Beema" IGP PFP microcode (radeon/MULLINS_pfp.bin)
+  * Radeon "Mullins"/"Beema" IGP RLC microcode (radeon/MULLINS_rlc.bin)
+  * Radeon "Mullins"/"Beema" IGP SDMA microcode
+    (radeon/MULLINS_sdma.bin)
+  * Radeon HD 8500/8600/8700 series CE microcode (radeon/OLAND_ce.bin)
+  * Radeon HD 8500/8600/8700 series MC microcode, version 1
+    (radeon/OLAND_mc.bin)
+  * Radeon HD 8500/8600/8700 series MC microcode, version 2
+    (radeon/OLAND_mc2.bin)
+  * Radeon HD 8500/8600/8700 series ME microcode (radeon/OLAND_me.bin)
+  * Radeon HD 8500/8600/8700 series PFP microcode (radeon/OLAND_pfp.bin)
+  * Radeon HD 8500/8600/8700 series RLC microcode (radeon/OLAND_rlc.bin)
+  * Radeon HD 8500/8600/8700 series SMC microcode (radeon/OLAND_smc.bin)
+  * Radeon HD IGP 6200/6300/7300 series ME microcode
+    (radeon/PALM_me.bin)
+  * Radeon HD IGP 6200/6300/7300 series PFP microcode
+    (radeon/PALM_pfp.bin)
+  * Radeon HD 7800 series CE microcode (radeon/PITCAIRN_ce.bin)
+  * Radeon HD 7800 series MC microcode, version 1
+    (radeon/PITCAIRN_mc.bin)
+  * Radeon HD 7800 series MC microcode, version 2
+    (radeon/PITCAIRN_mc2.bin)
+  * Radeon HD 7800 series ME microcode (radeon/PITCAIRN_me.bin)
+  * Radeon HD 7800 series PFP microcode (radeon/PITCAIRN_pfp.bin)
+  * Radeon HD 7800 series RLC microcode (radeon/PITCAIRN_rlc.bin)
+  * Radeon HD 7800 series SMC microcode (radeon/PITCAIRN_smc.bin)
+  * Radeon R100-family CP microcode (radeon/R100_cp.bin)
+  * Radeon R200-family CP microcode (radeon/R200_cp.bin)
+  * Radeon R300-family CP microcode (radeon/R300_cp.bin)
+  * Radeon R400-family CP microcode (radeon/R420_cp.bin)
+  * Radeon R500-family CP microcode (radeon/R520_cp.bin)
+  * Radeon R600 ME microcode (radeon/R600_me.bin)
+  * Radeon R600 PFP microcode (radeon/R600_pfp.bin)
+  * Radeon R600-family RLC microcode (radeon/R600_rlc.bin)
+  * Radeon R700-family RLC microcode (radeon/R700_rlc.bin)
+  * Radeon HD 5500/5600 series ME microcode (radeon/REDWOOD_me.bin)
+  * Radeon HD 5500/5600 series PFP microcode (radeon/REDWOOD_pfp.bin)
+  * Radeon HD 5500/5600 series RLC microcode (radeon/REDWOOD_rlc.bin)
+  * Radeon HD 5500/5600 series SMC microcode (radeon/REDWOOD_smc.bin)
+  * Radeon RS600 CP microcode (radeon/RS600_cp.bin)
+  * Radeon RS690 CP microcode (radeon/RS690_cp.bin)
+  * Radeon RS780 ME microcode (radeon/RS780_me.bin)
+  * Radeon RS780 PFP microcode (radeon/RS780_pfp.bin)
+  * Radeon RV610 ME microcode (radeon/RV610_me.bin)
+  * Radeon RV610 PFP microcode (radeon/RV610_pfp.bin)
+  * Radeon RV620 ME microcode (radeon/RV620_me.bin)
+  * Radeon RV620 PFP microcode (radeon/RV620_pfp.bin)
+  * Radeon RV630 ME microcode (radeon/RV630_me.bin)
+  * Radeon RV630 PFP microcode (radeon/RV630_pfp.bin)
+  * Radeon RV635 ME microcode (radeon/RV635_me.bin)
+  * Radeon RV635 PFP microcode (radeon/RV635_pfp.bin)
+  * Radeon RV670 ME microcode (radeon/RV670_me.bin)
+  * Radeon RV670 PFP microcode (radeon/RV670_pfp.bin)
+  * Radeon RV710 ME microcode (radeon/RV710_me.bin)
+  * Radeon RV710 PFP microcode (radeon/RV710_pfp.bin)
+  * Radeon RV710 SMC microcode (radeon/RV710_smc.bin)
+  * Radeon RV710/RV730/RV740 UVD microcode (radeon/RV710_uvd.bin)
+  * Radeon RV730/RV740 ME microcode (radeon/RV730_me.bin)
+  * Radeon RV730/RV740 PFP microcode (radeon/RV730_pfp.bin)
+  * Radeon RV730 SMC microcode (radeon/RV730_smc.bin)
+  * Radeon RV740 SMC microcode (radeon/RV740_smc.bin)
+  * Radeon RV770 ME microcode (radeon/RV770_me.bin)
+  * Radeon RV770 PFP microcode (radeon/RV770_pfp.bin)
+  * Radeon RV770 SMC microcode (radeon/RV770_smc.bin)
+  * Radeon HD IGP 6400/6500/6600 series ME microcode
+    (radeon/SUMO_me.bin)
+  * Radeon HD IGP 6400/6500/6600 series PFP microcode
+    (radeon/SUMO_pfp.bin)
+  * Radeon HD IGP 6200/6300/6400/6500/6600/7300 series RLC microcode
+    (radeon/SUMO_rlc.bin)
+  * Radeon HD 6x00/7500 series and IGP 6x00/7300 series UVD microcode
+    (radeon/SUMO_uvd.bin)
+  * Radeon HD 6370D/6380G/6410D ME microcode (radeon/SUMO2_me.bin)
+  * Radeon HD 6370D/6380G/6410D PFP microcode (radeon/SUMO2_pfp.bin)
+  * Radeon HD 7900 series CE microcode (radeon/TAHITI_ce.bin)
+  * Radeon HD 7900 series MC microcode, version 1 (radeon/TAHITI_mc.bin)
+  * Radeon HD 7900 series MC microcode, version 2
+    (radeon/TAHITI_mc2.bin)
+  * Radeon HD 7900 series ME microcode (radeon/TAHITI_me.bin)
+  * Radeon HD 7900 series PFP microcode (radeon/TAHITI_pfp.bin)
+  * Radeon HD 7900 series RLC microcode (radeon/TAHITI_rlc.bin)
+  * Radeon HD 7900 series SMC microcode (radeon/TAHITI_smc.bin)
+  * Radeon HD 7900 series UVD microcode (radeon/TAHITI_uvd.bin)
+  * Radeon HD 6500/6600/7500 series MC microcode (radeon/TURKS_mc.bin)
+  * Radeon HD 6500/6600/7500 series ME microcode (radeon/TURKS_me.bin)
+  * Radeon HD 6500/6600/7500 series PFP microcode (radeon/TURKS_pfp.bin)
+  * Radeon HD 6500/6600/7500 series SMC microcode (radeon/TURKS_smc.bin)
+  * Radeon HD 7700 series CE microcode (radeon/VERDE_ce.bin)
+  * Radeon HD 7700 series MC microcode, version 1 (radeon/VERDE_mc.bin)
+  * Radeon HD 7700 series MC microcode, version 2 (radeon/VERDE_mc2.bin)
+  * Radeon HD 7700 series ME microcode (radeon/VERDE_me.bin)
+  * Radeon HD 7700 series PFP microcode (radeon/VERDE_pfp.bin)
+  * Radeon HD 7700 series RLC microcode (radeon/VERDE_rlc.bin)
+  * Radeon HD 7700 series SMC microcode (radeon/VERDE_smc.bin)
+  * Tehuti network card firmware (tehuti/bdx.bin)
+  * Broadcom BCM5703/BCM5704 TSO firmware (tigon/tg3_tso.bin)
+  * Broadcom BCM5701A0 firmware (tigon/tg3.bin)
+  * Broadcom BCM5705 TSO firmware (tigon/tg3_tso5.bin)
+  * Broadcom BCM57766 firmware (tigon/tg357766.bin)
+  * Conexant CX231xx core firmware (v4l-cx231xx-avcore-01.fw)
+  * Conexant CX23418 APU firmware (v4l-cx23418-apu.fw)
+  * Conexant CX23418 CPU firmware (v4l-cx23418-cpu.fw)
+  * Conexant CX23418 ADEC firmware (v4l-cx23418-dig.fw)
+  * Conexant CX25840 firmware (v4l-cx25840.fw)
+  * Conexant CX23885 core firmware (v4l-cx23885-avcore-01.fw)
+  * VIA VT6656 firmware (vntwusb.fw)
+
+Package: firmware-myricom
+Description-md5: 60437f0c46ede379becd0d0b08b903c1
+Description-en: Binary firmware for Myri-10G Ethernet adapters
+ This package contains the binary firmware for Myricom Myri-10G Ethernet
+ adapters supported by the myri10ge driver.
+ .
+ Contents:
+  * Myri-10G firmware (unaligned), version 1.4.57
+    (myri10ge_ethp_z8e.dat)
+  * Myri-10G firmware (aligned), version 1.4.57 (myri10ge_eth_z8e.dat)
+  * Myri-10G firmware (unaligned, RSS), version 1.4.57
+    (myri10ge_rss_ethp_z8e.dat)
+  * Myri-10G firmware (aligned, RSS), version 1.4.57
+    (myri10ge_rss_eth_z8e.dat)
+
+Package: firmware-netxen
+Description-md5: 250ae378ac20125efbe9514583659d9f
+Description-en: Binary firmware for QLogic Intelligent Ethernet (3000 and 3100 Series)
+ This package contains the binary firmware for QLogic (formerly NetXen)
+ Intelligent network adapters supported by the netxen_nic and qlcnic
+ drivers.
+ .
+ Contents:
+  * phanfw.bin
+
+Package: firmware-qlogic
+Description-md5: 4e675a03f0fd0d976373d7a18a48c74a
+Description-en: Binary firmware for QLogic IBA7220, QLA1xxx, ISP2xxx and SP2x2
+ This package contains the binary firmware for QLogic IBA7220 (Infiniband),
+ QLA1xxx (SCSI), ISP2xxx- and SP2x2-based (Fibre Channel/FCoE) host
+ adapters supported by the ip_iband, qla1280 and qla2xxx drivers.
+ .
+ Contents:
+  * QLogic QLA1040 firmware, version 7.65.06 (qlogic/1040.bin)
+  * QLogic QLA1080, 1240, 1280 firmware, version 8.15.11
+    (qlogic/1280.bin)
+  * QLogic QLA10160, 12160 firmware, version 10.04.42 (qlogic/12160.bin)
+  * QLogic IBA7220 serdes firmware (qlogic/sd7220.fw)
+  * QLogic QLA2100 firmware, version 1.19.38 (ql2100_fw.bin)
+  * QLogic QLA2200 firmware, version 2.02.08 (ql2200_fw.bin)
+  * QLogic QLA2300, ISP2312, SP202 firmware, version 3.03.28
+    (ql2300_fw.bin)
+  * QLogic ISP2322, SP212 firmware, version 3.03.28 (ql2322_fw.bin)
+  * QLogic ISP2422, ISP2432[M], SP222, SP232 firmware, version 7.01.00
+    (ql2400_fw.bin)
+  * QLogic ISP2532 firmware, version 7.01.00 (ql2500_fw.bin)
+
+Package: firmware-ralink
+Description-md5: a14fd54184a61cb9cfdf032bc7b19df3
+Description-en: Binary firmware for Ralink wireless cards
+ This package contains the binary firmware for wireless network cards with
+ the Ralink RT2501 [Turbo], RT2600, RT5201 [Turbo], RT5600, RT5201USB,
+ RT2800P[D], RT2700P[D], RT2700E[D], RT2800E[D], RT2800U[D] or RT3000E[D]
+ chipsets or RT3070/RT3071/RT3072 chips, supported by the rt61/rt61pci,
+ rt73/rt73usb, rt2860sta, rt2870sta/rt2870, rt3070sta or rt3090sta drivers.
+ .
+ Contents:
+  * Ralink RT2561 (RT2501/RT5201 chipset) firmware, version 1.2
+    (rt2561.bin)
+  * Ralink RT2561S (RT2501 Turbo/RT5201 Turbo chipset) firmware, version
+    1.2 (rt2561s.bin)
+  * Ralink RT2661 (RT2600/RT5600 chipset) firmware, version 1.2
+    (rt2661.bin)
+  * Ralink RT2760/RT2790/RT2860/RT2890/RT3090
+    (RT2700P[D]/RT2700E[D]/RT2800P[D]/RT2800E[D]/RT3000E[D] chipset)
+    firmware, version 34 (rt2860.bin, rt3090.bin)
+  * Ralink RT2870/RT3070/RT3071/RT3072 (RT2800U[D] chipset) firmware,
+    version 29 (rt2870.bin, rt3070.bin)
+  * Ralink RT3071/RT3072 firmware, version 29 (rt3071.bin)
+  * Ralink RT3290 firmware, version 1 (rt3290.bin)
+  * Ralink RT2571W/RT2671 (RT2501USB/RT5201USB chipset) firmware,
+    version 1.8 (rt73.bin)
+
+Package: firmware-realtek
+Description-md5: f92f347059276837a79a85cdc980e04b
+Description-en: Binary firmware for Realtek wired and wireless network adapters
+ This package contains the binary firmware for some Ethernet adapters with
+ the RTL8111/RTL8168 chips supported by the r8169 driver; and wireless
+ network cards with the RTL8188, RTL8192, RTL8712, RTL8723 and RTL8821
+ chips supported by the r8192_pci, r8192s_usb, r8712u, rtl8188eu,
+ rtl8192ce, rtl8192cu, rtl8192de, rtl8192se, rtl8723ae, rtl8723au,
+ rtl8723be and rtl8821ae drivers.
+ .
+ Contents:
+  * Realtek RTL8192E boot code (RTL8192E/boot.img)
+  * Realtek RTL8192E init data (RTL8192E/data.img)
+  * Realtek RTL8192E main code (RTL8192E/main.img)
+  * Realtek RTL8192SU firmware, version 902B (RTL8192SU/rtl8192sfw.bin)
+  * Realtek RTL8105E-1 firmware (rtl_nic/rtl8105e-1.fw)
+  * Realtek RTL8106E-1 firmware, version 0.0.1 (rtl_nic/rtl8106e-1.fw)
+  * Realtek RTL8106E-2 firmware, version 0.0.1 (rtl_nic/rtl8106e-2.fw)
+  * Realtek RTL8111D-1/RTL8168D-1 firmware (rtl_nic/rtl8168d-1.fw)
+  * Realtek RTL8111D-2/RTL8168D-2 firmware (rtl_nic/rtl8168d-2.fw)
+  * Realtek RTL8168E-1 firmware (rtl_nic/rtl8168e-1.fw)
+  * Realtek RTL8168E-2 firmware (rtl_nic/rtl8168e-2.fw)
+  * Realtek RTL8168E-3 firmware, version 0.0.4 (rtl_nic/rtl8168e-3.fw)
+  * Realtek RTL8168F-1 firmware, version 0.0.5 (rtl_nic/rtl8168f-1.fw)
+  * Realtek RTL8168F-2 firmware, version 0.0.4 (rtl_nic/rtl8168f-2.fw)
+  * Realtek RTL8168G-1 firmware, version 0.0.3 (rtl_nic/rtl8168g-1.fw)
+  * Realtek RTL8168G-2 firmware, version 0.0.1 (rtl_nic/rtl8168g-2.fw)
+  * Realtek RTL8168G-3 firmware, version 0.0.1 (rtl_nic/rtl8168g-3.fw)
+  * Realtek RTL8402-1 firmware, version 0.0.1 (rtl_nic/rtl8402-1.fw)
+  * Realtek RTL8411-1 firmware, version 0.0.3 (rtl_nic/rtl8411-1.fw)
+  * Realtek RTL8411-2 firmware, version 0.0.1 (rtl_nic/rtl8411-2.fw)
+  * Realtek RTL8188EE firmware (rtlwifi/rtl8188efw.bin)
+  * Realtek RTL8188EU firmware (rtlwifi/rtl8188eufw.bin)
+  * Realtek RTL8192CE/RTL8188CE firmware, version 4.816.2011
+    (rtlwifi/rtl8192cfw.bin)
+  * Realtek RTL8192CE/RTL8188CE B-cut firmware, version 4.816.2011
+    (rtlwifi/rtl8192cfwU_B.bin)
+  * Realtek RTL8188CE A-cut firmware, version 4.816.2011
+    (rtlwifi/rtl8192cfwU.bin)
+  * Realtek RTL8192CU/RTL8188CU UMC A-cut firmware
+    (rtlwifi/rtl8192cufw_A.bin)
+  * Realtek RTL8192CU/RTL8188CU UMC B-cut firmware
+    (rtlwifi/rtl8192cufw_B.bin)
+  * Realtek RTL8192CU/RTL8188CU TMSC firmware
+    (rtlwifi/rtl8192cufw_TMSC.bin)
+  * Realtek RTL8192CU/RTL8188CU fallback firmware
+    (rtlwifi/rtl8192cufw.bin)
+  * Realtek RTL8192DE firmware, version 4.816.2011
+    (rtlwifi/rtl8192defw.bin)
+  * Realtek RTL8192SE/RTL8191SE firmware, version 4.816.2011
+    (rtlwifi/rtl8192sefw.bin)
+  * Realtek RTL8192SU/RTL8712U firmware (rtlwifi/rtl8712u.bin)
+  * Realtek RTL8723AU rev B with-Bluetooth firmware
+    (rtlwifi/rtl8723aufw_B.bin)
+  * Realtek RTL8723AU rev B no-Bluetooth firmware
+    (rtlwifi/rtl8723aufw_B_NoBT.bin)
+  * Realtek RTL8723BE firmware (rtlwifi/rtl8723befw.bin)
+  * Realtek RTL8723AE rev B firmware (rtlwifi/rtl8723fw_B.bin)
+  * Realtek RTL8723AE rev A firmware (rtlwifi/rtl8723fw.bin)
+  * Realtek RTL8821AE firmware (rtlwifi/rtl8821aefw.bin)
+
+Package: firmware-samsung
+Description-md5: d4a262eae47dafb2d5673546b66ce855
+Description-en: Binary firmware for Samsung MFC video codecs
+ This package contains the binary firmware for Samsung MFC video codecs
+ used in Exynos SoCs and supported by the s5p-mfc driver.
+ .
+ Contents:
+  * MFCv5 firmware (s5p-mfc.fw)
+  * MFCv6 firmware, version 1 (s5p-mfc-v6.fw)
+  * MFCv6 firmware, version 2 (s5p-mfc-v6-v2.fw)
+  * MFCv7 firmware (s5p-mfc-v7.fw)
+  * MFCv8 firmware (s5p-mfc-v8.fw)
+
+Package: firmware-ti-connectivity
+Description-md5: 96a78639ecc3aef4a4a149d3972df1f0
+Description-en: Binary firmware for TI Connectivity wireless network adapters
+ This package contains the binary firmware for Texas Instruments WL1251,
+ WL127x, WL128x and WL18xx wireless network chips supported by the wl1251,
+ wl12xx and wl18xx drivers.
+ .
+ Contents:
+  * TI WL1251 firmware (ti-connectivity/wl1251-fw.bin)
+  * TI WL1251 reference NVS (ti-connectivity/wl1251-nvs.bin)
+  * TI WL127x multi-role firmware (ti-connectivity/wl127x-fw-5-mr.bin)
+  * TI WL127x PLT (calibration) firmware
+    (ti-connectivity/wl127x-fw-5-plt.bin)
+  * TI WL127x single-role firmware (ti-connectivity/wl127x-fw-5-sr.bin)
+  * TI WL127x reference NVS (ti-connectivity/wl127x-nvs.bin,
+    ti-connectivity/wl1271-nvs.bin, ti-connectivity/wl12xx-nvs.bin)
+  * TI WL128x multi-role firmware (ti-connectivity/wl128x-fw-5-mr.bin)
+  * TI WL128x PLT (calibration) firmware
+    (ti-connectivity/wl128x-fw-5-plt.bin)
+  * TI WL128x single-role firmware (ti-connectivity/wl128x-fw-5-sr.bin)
+  * TI WL128x reference NVS (ti-connectivity/wl128x-nvs.bin)
+  * TI WL18xx default configuration (ti-connectivity/wl18xx-conf.bin)
+  * TI WL18xx firmware, ABI 2 (ti-connectivity/wl18xx-fw-2.bin)
+  * TI WL18xx firmware, ABI 3 (ti-connectivity/wl18xx-fw-3.bin)
+
+Package: intel-microcode
+Description-md5: 3edb9824276886579313f0e847f6bb14
+Description-en: Processor microcode firmware for Intel CPUs
+ This package contains updated system processor microcode for
+ Intel i686 and Intel X86-64 processors.  Intel releases microcode
+ updates to correct processor behavior as documented in the
+ respective processor specification updates.
+ .
+ For AMD processors, please refer to the amd64-microcode package.
+
+Package: libcublas5.5
+Description-md5: 45db8a0178cd23e2bd983749760ce542
+Description-en: NVIDIA CUDA BLAS runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA BLAS runtime library.
+
+Package: libcudart5.5
+Description-md5: 04039fe955d79d6a7643053c7aaffe45
+Description-en: NVIDIA CUDA runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime library.
+
+Package: libcufft5.5
+Description-md5: 4eef387b908002cd6cf9fa8d945590f0
+Description-en: NVIDIA CUDA FFT runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA FFT runtime library.
+
+Package: libcufftw5.5
+Description-md5: 80c5eba6798073d0dfef5df256c89d60
+Description-en: NVIDIA CUDA FFTW runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA FFTW runtime library.
+
+Package: libcuinj32-5.5
+Description-md5: d2f6c39f8473ab4b101600eb97e67808
+Description-en: NVIDIA CUDA INJ runtime library (32-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the 32-bit CUDA INJ runtime library.
+
+Package: libcuinj64-5.5
+Description-md5: 606039245c071199407d85bcb9866765
+Description-en: NVIDIA CUDA INJ runtime library (64-bit)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the 64-bit CUDA INJ runtime library.
+
+Package: libcupti-dev
+Description-md5: 49cdc8386d120bdf14c58bebe2b3388d
+Description-en: NVIDIA CUDA Profiler Tools Interface development files
+ The CUDA Profiler Tools Interface (CUPTI) enables the creation of
+ profiling and tracing tools that target CUDA applications.  CUPTI
+ provides a set of APIs targeted at ISVs creating profilers and other
+ performance optimization tools. The CUPTI APIs are not intended to be
+ used by developers in their CUDA applications.
+ .
+ This package contains the development files: headers and libraries.
+
+Package: libcupti-doc
+Description-md5: 0c6d9f272f89c82663423610515dd3eb
+Description-en: NVIDIA CUDA Profiler Tools Interface documentation
+ The CUDA Profiler Tools Interface (CUPTI) enables the creation of
+ profiling and tracing tools that target CUDA applications.  CUPTI
+ provides a set of APIs targeted at ISVs creating profilers and other
+ performance optimization tools. The CUPTI APIs are not intended to be
+ used by developers in their CUDA applications.
+ .
+ This package contains the documentation and examples.
+
+Package: libcupti5.5
+Description-md5: 65f2f1bea81316b239224ffd680c5064
+Description-en: NVIDIA CUDA Profiler Tools Interface runtime library
+ The CUDA Profiler Tools Interface (CUPTI) enables the creation of
+ profiling and tracing tools that target CUDA applications.  CUPTI
+ provides a set of APIs targeted at ISVs creating profilers and other
+ performance optimization tools. The CUPTI APIs are not intended to be
+ used by developers in their CUDA applications.
+ .
+ This package contains the runtime library.
+
+Package: libcurand5.5
+Description-md5: 65096ad6fa0522e6e5e89fc21e3c9b47
+Description-en: NVIDIA CUDA Random Numbers Generation runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Random Numbers Generation runtime library.
+
+Package: libcusparse5.5
+Description-md5: 8b5c0bc101130280c852b365067b7927
+Description-en: NVIDIA CUDA Sparse Matrix runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the CUDA Sparse Matrix runtime library.
+
+Package: libnppc5.5
+Description-md5: 371330c0e4596d14c1ae0b854eecfa9c
+Description-en: NVIDIA Performance Primitives core runtime library
+ NVIDIA NPP is a library of functions for performing CUDA accelerated
+ processing.  The initial set offunctionality in the library focuses on imaging
+ and video processing and is widely applicable for developers in these areas.
+ NPP will evolve over time to encompass more of the compute heavy tasks in a
+ variety of problem domains.  The NPP library is written to maximize
+ flexibility, while maintaining high performance.
+ .
+ This package contains the NVIDIA Performance Primitives core runtime library.
+
+Package: libnppi5.5
+Description-md5: 15c92e62773876d7bc757fd0992f2491
+Description-en: NVIDIA Performance Primitives for image processing runtime library
+ NVIDIA NPP is a library of functions for performing CUDA accelerated
+ processing.  The initial set offunctionality in the library focuses on imaging
+ and video processing and is widely applicable for developers in these areas.
+ NPP will evolve over time to encompass more of the compute heavy tasks in a
+ variety of problem domains.  The NPP library is written to maximize
+ flexibility, while maintaining high performance.
+ .
+ This package contains the NVIDIA Performance Primitives runtime library for
+ image processing.
+
+Package: libnpps5.5
+Description-md5: 24aac8a47c80e58916c189d81d7a7714
+Description-en: NVIDIA Performance Primitives for signal processing runtime library
+ NVIDIA NPP is a library of functions for performing CUDA accelerated
+ processing.  The initial set offunctionality in the library focuses on imaging
+ and video processing and is widely applicable for developers in these areas.
+ NPP will evolve over time to encompass more of the compute heavy tasks in a
+ variety of problem domains.  The NPP library is written to maximize
+ flexibility, while maintaining high performance.
+ .
+ This package contains the NVIDIA Performance Primitives runtime library for
+ signal processing.
+
+Package: libnvtoolsext1
+Description-md5: 7f4d83cde9608d45d938f97baf444f63
+Description-en: NVIDIA Tools Extension
+ The NVIDIA Tools Extension SDK (NVTX) is a C-based API for marking events and
+ ranges in your applications. Applications which integrate NVTX can use Nsight
+ to capture and visualize these events and ranges.
+ .
+ This package contains the NVIDIA Tools Extension runtime library.
+
+Package: libnvvm2
+Description-md5: e8ae99e5a0b9063c0698605a30d22c61
+Description-en: NVIDIA CUDA Compiler NVVM runtime library
+ NVIDIA's CUDA Compiler (NVCC) is based on the widely used LLVM open source
+ compiler infrastructure.
+ .
+ This package contains the NVIDIA CUDA Compiler NVVM runtime library.
+
+Package: nvidia-cuda-dev
+Description-md5: 23a17262479fe7daf1cae67727e949c7
+Description-en: NVIDIA CUDA development files
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the development files: headers and libraries.
+
+Package: nvidia-cuda-doc
+Description-md5: 1ade4ee74357654b5ef0998d191b1349
+Description-en: NVIDIA CUDA and OpenCL documentation
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ OpenCL (Open Computing Language) is a multi-vendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package contains the developer documentation.
+
+Package: nvidia-cuda-gdb
+Description-md5: 03d8613224997399b5d081ffb05a91f3
+Description-en: NVIDIA CUDA Debugger (GDB)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the cuda-gdb debugger.
+
+Package: nvidia-cuda-toolkit
+Description-md5: f74240cd6608b18cf34feefe7924f57a
+Description-en: NVIDIA CUDA development toolkit
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the nvcc compiler etc.
+
+Package: nvidia-nsight
+Description-md5: 24446f0932ce59989387b2d2e4309eaa
+Description-en: NVIDIA Nsight Eclipse Edition
+ NVIDIA Nsight Eclipse Edition is a full-featured IDE powered by the Eclipse
+ platform that provides an all-in-one integrated environment to edit, build,
+ debug and profile CUDA-C applications.
+ Nsight Eclipse Edition supports a rich set of commercial and free plugins.
+
+Package: nvidia-opencl-dev
+Description-md5: 5404c4fac54bb1c7a833b77f92a02e84
+Description-en: NVIDIA OpenCL development files
+ OpenCL (Open Computing Language) is a multi-vendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This metapackage provides the development files: headers and libraries.
+
+Package: nvidia-profiler
+Description-md5: 83d361c54427ed94d5493552d5ade11b
+Description-en: NVIDIA Profiler for CUDA and OpenCL
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ OpenCL (Open Computing Language) is a multi-vendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package contains the nvprof profiler.
+
+Package: nvidia-visual-profiler
+Description-md5: c762f649b112cccddd5b9e96863b94c7
+Description-en: NVIDIA Visual Profiler for CUDA and OpenCL
+ The NVIDIA Visual Profiler is a cross-platform performance profiling tool
+ that delivers developers vital feedback for optimizing CUDA C/C++ and OpenCL
+ applications.
+
+Package: libcuda1
+Description-md5: 5bf9faa15ee94462e604435a9b4c0194
+Description-en: NVIDIA CUDA Driver Library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ This package contains the CUDA Driver API library for low-level CUDA
+ programming.
+ .
+ Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
+ series, as well as the Tesla computing processors.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-340.93.
+
+Package: libcuda1-i386
+Description-md5: 38f2006028d83229e9f25c808d5ceff3
+Description-en: NVIDIA CUDA 32-bit runtime library
+ This metapackage helps the automatic installation of the 32-bit NVIDIA CUDA
+ library when installing libcuda1 on amd64 with foreign
+ architecture i386 enabled.
+
+Package: libegl1-nvidia
+Description-md5: 7111ead9a257bad43ce205a1e4d06bb2
+Description-en: NVIDIA binary EGL libraries
+ This package contains the EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES and OpenVG.
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-glx
+Description-md5: a9e287173be89ba71623cba7837d27ae
+Description-en: NVIDIA binary OpenGL libraries
+ These binary libraries provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-glx-i386
+Description-md5: 5d8fde9dc58568b0682c9325a2a6a903
+Description-en: NVIDIA binary OpenGL 32-bit libraries
+ This metapackage helps the automatic installation of the 32-bit NVIDIA
+ OpenGL libraries when installing libgl1-nvidia-glx
+ on amd64 with foreign architecture i386 enabled.
+
+Package: libgles1-nvidia
+Description-md5: 0cf935696386f573f46693effe95e184
+Description-en: NVIDIA binary OpenGL|ES 1.x libraries
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgles2-nvidia
+Description-md5: 2c1a544600ef9365370b441c7bc903e6
+Description-en: NVIDIA binary OpenGL|ES 2.x libraries
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ See the description of the nvidia-driver package
+ or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libnvcuvid1
+Description-md5: d9966c2df4b73cef90a50ffc930d1c5c
+Description-en: NVIDIA CUDA Video Decoder runtime library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ The NVIDIA CUDA Video Decoder (NVCUVID) library provides an interface to
+ hardware video decoding capabilities on NVIDIA GPUs with CUDA.
+ .
+ This package contains the nvcuvid runtime library.
+
+Package: libnvidia-compiler
+Description-md5: e3bbac6ba5c7d6fa67ed3c17cc15718a
+Description-en: NVIDIA runtime compiler library
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ This package contains the runtime compiler library.
+
+Package: libnvidia-eglcore
+Description-md5: 3d6bb5e02b00bd2f9e9eb289f4dee563
+Description-en: NVIDIA binary EGL core libraries
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES and OpenVG.
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ This package contains the private core libraries used by the NVIDIA
+ implementation of EGL and OpenGL|ES.
+
+Package: libnvidia-encode1
+Description-md5: 21b4191ea88e49a7e948a2b89cfed901
+Description-en: NVENC Video Encoding runtime library
+ The NVENC Video Encoding library provides an interface to video encoder
+ hardware on supported NVIDIA GPUs.
+ .
+ This package contains the nvidia-encode runtime library.
+
+Package: libnvidia-fbc1
+Description-md5: 19123a53d351a2e540ca869d1e74f9d2
+Description-en: NVIDIA OpenGL-based Framebuffer Capture runtime library
+ The NVIDIA OpenGL-based Framebuffer Capture (NvFBCOpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvFBCOpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvFBCOpenGL runtime library.
+
+Package: libnvidia-ifr1
+Description-md5: ed00f275619e715136fe0176e6f7fd69
+Description-en: NVIDIA OpenGL-based Inband Frame Readback runtime library
+ The NVIDIA OpenGL-based Inband Frame Readback (NvIFROpenGL) library provides
+ a high performance, low latency interface to capture and optionally encode an
+ OpenGL framebuffer. NvIFROpenGL is a private API that is only available to
+ approved partners for use in remote graphics scenarios.
+ .
+ This package contains the NvIFROpenGL runtime library.
+
+Package: libnvidia-ml1
+Description-md5: eab021537b152fcedb35b51d1a3ddb34
+Description-en: NVIDIA Management Library (NVML) runtime library
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ It provides a direct access to the queries and commands exposed via nvidia-smi.
+ .
+ This package contains the nvidia-ml runtime library.
+
+Package: nvidia-alternative
+Description-md5: e93dfe1e29e4ac8687f98eb6d0e73359
+Description-en: allows the selection of NVIDIA as GLX provider
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ Use 'update-alternatives --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-driver package instead.
+
+Package: nvidia-cuda-mps
+Description-md5: c5434f0c594dc7047cdf712a673ccf7c
+Description-en: NVIDIA CUDA Multi Process Service (MPS)
+ The Compute Unified Device Architecture (CUDA) enables NVIDIA
+ graphics processing units (GPUs) to be used for massively parallel
+ general purpose computation.
+ .
+ CUDA MPS is a feature that allows multiple CUDA processes to share a single
+ GPU context. CUDA MPS should be transparent to CUDA programs.
+ .
+ CUDA MPS requires a device that supports Unified Virtual Address (UVA) and
+ has compute capability SM 3.5 or higher.
+ Pre-CUDA 4.0 APIs are not supported under CUDA MPS.
+
+Package: nvidia-detect
+Description-md5: 56b1a5c2576aab0643fbe975fa3660c1
+Description-en: NVIDIA GPU detection utility
+ The 'nvidia-detect' script in this package checks for an NVIDIA GPU in the
+ system and recommends one of the non-free accelerated driver meta-packages
+ (nvidia-driver, nvidia-legacy-173xx-driver or nvidia-legacy-96xx-driver) for
+ installation.
+
+Package: nvidia-driver
+Description-md5: ce7008a61362c5404c72a75ee52509a8
+Description-en: NVIDIA metapackage
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-340.93.
+ .
+ This version only supports GeForce 8xxx and higher of the Geforce GPUs
+ plus corresponding Quadros and nforce.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.2.
+
+Package: nvidia-driver-bin
+Description-md5: accffefd0e57a740226b25160bfa0d2a
+Description-en: NVIDIA driver support binaries
+ The NVIDIA binary driver provides optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ This package contains supporting binaries for the driver.
+
+Package: nvidia-glx
+Description-md5: 07ba68ca71a1a302f074aafea0363c24
+Description-en: transition to nvidia-driver
+ This is a dummy transitional package to aid switching to
+ nvidia-driver.
+
+Package: nvidia-kernel-dkms
+Description-md5: 8ad023579fd6efa3fdd7751464fd08cb
+Description-en: NVIDIA binary kernel module DKMS source
+ This package builds the NVIDIA Xorg binary kernel module needed by
+ nvidia-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ This version only supports GeForce 8xxx and higher of the Geforce GPUs
+ plus corresponding Quadros and nforce.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.2.
+
+Package: nvidia-kernel-source
+Description-md5: 1f116ebcef72b5c16c5dbd3240019794
+Description-en: NVIDIA binary kernel module source
+ This package provides the source for the NVIDIA Xorg binary kernel module
+ needed by nvidia-driver in a form suitable
+ for use by module-assistant or kernel-package.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ PLEASE read /usr/share/doc/nvidia-kernel-source/README.Debian.gz
+ for building information.  If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-kernel-dkms instead.
+ .
+ This version only supports GeForce 8xxx and higher of the Geforce GPUs
+ plus corresponding Quadros and nforce.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.2.
+
+Package: nvidia-libopencl1
+Description-md5: 22d626a7cdb371c5663e1a2298e13437
+Description-en: NVIDIA OpenCL ICD Loader library
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ The OpenCL installable client driver loader (ICD Loader) acts as a dispatcher
+ between an OpenCL application and one (or more) installable client drivers
+ (ICD) that can be from any vendor. At least one ICD (and the corresponding
+ hardware) is required to run OpenCL applications.
+ .
+ This package contains the ICD Loader library provided by NVIDIA. This library
+ supports OpenCL 1.1 only.
+
+Package: nvidia-opencl-common
+Description-md5: e92f1e2520950649b21c01f4c6b66265
+Description-en: NVIDIA OpenCL driver
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ .
+ This package provides the common files for the NVIDIA installable client
+ driver (ICD) for OpenCL.
+
+Package: nvidia-opencl-icd
+Description-md5: a38bdd8c32918309764eb0e6e050b781
+Description-en: NVIDIA OpenCL installable client driver (ICD)
+ OpenCL (Open Computing Language) is a multivendor open standard for
+ general-purpose parallel programming of heterogeneous systems that include
+ CPUs, GPUs and other processors.
+ This package provides the NVIDIA installable client driver (ICD) for OpenCL
+ which supports NVIDIA GPUs.
+ .
+ The libcuda1 package may be required additionally to get a working OpenCL
+ setup for NVIDIA GPUs.
+
+Package: nvidia-smi
+Description-md5: b173d400cbd92c511f6abb1c18284f04
+Description-en: NVIDIA System Management Interface
+ The NVIDIA Management Library (NVML) provides a monitoring and management API.
+ The application "nvidia-smi" is the NVIDIA System Management Interface (NVSMI)
+ and provides a command line interface to this functionality.
+ .
+ See the output from the --help command line option for supported models and
+ further information.
+
+Package: nvidia-vdpau-driver
+Description-md5: 8f672eb7c8402865a397f160654deb51
+Description-en: Video Decode and Presentation API for Unix - NVIDIA driver
+ These libraries provide the Video Decode and Presentation API for Unix.
+ They provide accelerated video playback (incl. H.264) for the supported
+ graphics cards.
+ This package contains the NVIDIA VDPAU driver.
+ .
+ See /usr/share/doc/nvidia-vdpau-driver/README.txt.gz
+ for more information.
+ .
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-340.93.
+
+Package: xserver-xorg-video-nvidia
+Description-md5: feb86db35916e293f3c6bcb5b3eb86b8
+Description-en: NVIDIA binary Xorg driver
+ These binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-kernel-dkms or
+ nvidia-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-kernel-340.93.
+ .
+ This version only supports GeForce 8xxx and higher of the Geforce GPUs
+ plus corresponding Quadros and nforce.  Look at the legacy packages
+ for older cards.
+ .
+ See /usr/share/doc/nvidia-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-legacy-173xx-glx
+Description-md5: 94bc505c398135f94003ffc8df58dcb5
+Description-en: NVIDIA binary OpenGL libraries (173xx legacy version)
+ These binary libraries provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ See the description of the nvidia-legacy-173xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-173xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-legacy-173xx-glx-i386
+Description-md5: 6f60d20550cb1ca8de39f8096b0a0a1e
+Description-en: NVIDIA binary OpenGL 32-bit libraries (173xx legacy version)
+ This metapackage helps the automatic installation of the 32-bit NVIDIA
+ OpenGL libraries when installing libgl1-nvidia-legacy-173xx-glx
+ on amd64 with foreign architecture i386 enabled.
+
+Package: nvidia-alternative-legacy-173xx
+Description-md5: 2b73d554b4798fa917ca9a1387d7616f
+Description-en: allows the selection of NVIDIA as GLX provider
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ Use 'update-alternatives --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-legacy-173xx-driver package instead.
+
+Package: nvidia-glx-legacy-173xx
+Description-md5: d4355b975f5291ea2abf135290887fd0
+Description-en: transition to nvidia-legacy-173xx-driver
+ This is a dummy transitional package to aid switching to
+ nvidia-legacy-173xx-driver.
+
+Package: nvidia-kernel-legacy-173xx-dkms
+Description-md5: 851ce52ec3f719cd891f69942c287d72
+Description-en: transition to nvidia-legacy-173xx-kernel-dkms
+ This is a dummy transitional package to aid switching to
+ nvidia-legacy-173xx-kernel-dkms.
+
+Package: nvidia-kernel-legacy-173xx-source
+Description-md5: 7fb186a293280e04198fbb603c38fe4a
+Description-en: transition to nvidia-legacy-173xx-kernel-source
+ This is a dummy transitional package to aid switching to
+ nvidia-legacy-173xx-kernel-source.
+
+Package: nvidia-legacy-173xx-driver
+Description-md5: c9ffafeeaf11bc698733774d8c77b85a
+Description-en: NVIDIA metapackage (173xx legacy version)
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-legacy-173xx-kernel-dkms or
+ nvidia-legacy-173xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-173xx-kernel-173.14.39.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce FX 5100 [NV34], GeForce FX 5200 [NV34], GeForce FX 5200 Ultra [NV34],
+ GeForce FX 5200LE [NV34], GeForce FX 5500 [NV34], GeForce FX 5600 [NV31],
+ GeForce FX 5600 Ultra [NV31], GeForce FX 5600XT [NV31],
+ GeForce FX 5700 [NV36.2], GeForce FX 5700 Ultra [NV36.1],
+ GeForce FX 5700LE [NV36], GeForce FX 5700VE [NV36.4], GeForce FX 5800 [NV30],
+ GeForce FX 5800 Ultra [NV30], GeForce FX 5900 [NV35],
+ GeForce FX 5900 Ultra [NV35], GeForce FX 5900XT [NV35],
+ GeForce FX 5900ZT [NV35], GeForce FX 5950 Ultra [NV38],
+ GeForce FX Go5100 [NV34], GeForce FX Go5200 [NV34M],
+ GeForce FX Go5200 32M/64M [NV34M], GeForce FX Go5200 64M [NV34M],
+ GeForce FX Go5250 [NV34M], GeForce FX Go5300 [NV34GLM],
+ GeForce FX Go5600 [NV31M], GeForce FX Go5650 [NV31M],
+ GeForce FX Go5700 [NV36], GeForce PCX 4300 [NV18], GeForce PCX 5300 [NV37GL],
+ GeForce PCX 5750 [NV36], GeForce PCX 5900 [NV35],
+ GeForce 6800 Ultra [NV40] (only PCI ID 10DE:00F0), Quadro FX 330 [NV37GL],
+ Quadro FX 500/600 PCI [NV34GL], Quadro FX 700 [NV35GL],
+ Quadro FX 1000 [NV30GL], Quadro FX 1100 [NV36GL], Quadro FX 1300 [NV38GL],
+ Quadro FX 2000 [NV30GL], Quadro FX 3000 [NV35GL], Quadro FX Go700 [NV31],
+ Quadro FX Go1000 [NV36], Quadro NVS 280 PCI [NV34GL],
+ Quadro NVS 280 PCI-E [NV37GL], NV31, NV31M, NV31M Pro, NV31GLM, NV31GLM Pro,
+ NV34GL, NV36.5, NV36M Pro, NV36MAP, NV36GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-173xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: nvidia-legacy-173xx-kernel-dkms
+Description-md5: 70c56f5ecdca388d969245230487d1f6
+Description-en: NVIDIA binary kernel module DKMS source (173xx legacy version)
+ This package builds the NVIDIA Xorg binary kernel module needed by
+ nvidia-legacy-173xx-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce FX 5100 [NV34], GeForce FX 5200 [NV34], GeForce FX 5200 Ultra [NV34],
+ GeForce FX 5200LE [NV34], GeForce FX 5500 [NV34], GeForce FX 5600 [NV31],
+ GeForce FX 5600 Ultra [NV31], GeForce FX 5600XT [NV31],
+ GeForce FX 5700 [NV36.2], GeForce FX 5700 Ultra [NV36.1],
+ GeForce FX 5700LE [NV36], GeForce FX 5700VE [NV36.4], GeForce FX 5800 [NV30],
+ GeForce FX 5800 Ultra [NV30], GeForce FX 5900 [NV35],
+ GeForce FX 5900 Ultra [NV35], GeForce FX 5900XT [NV35],
+ GeForce FX 5900ZT [NV35], GeForce FX 5950 Ultra [NV38],
+ GeForce FX Go5100 [NV34], GeForce FX Go5200 [NV34M],
+ GeForce FX Go5200 32M/64M [NV34M], GeForce FX Go5200 64M [NV34M],
+ GeForce FX Go5250 [NV34M], GeForce FX Go5300 [NV34GLM],
+ GeForce FX Go5600 [NV31M], GeForce FX Go5650 [NV31M],
+ GeForce FX Go5700 [NV36], GeForce PCX 4300 [NV18], GeForce PCX 5300 [NV37GL],
+ GeForce PCX 5750 [NV36], GeForce PCX 5900 [NV35],
+ GeForce 6800 Ultra [NV40] (only PCI ID 10DE:00F0), Quadro FX 330 [NV37GL],
+ Quadro FX 500/600 PCI [NV34GL], Quadro FX 700 [NV35GL],
+ Quadro FX 1000 [NV30GL], Quadro FX 1100 [NV36GL], Quadro FX 1300 [NV38GL],
+ Quadro FX 2000 [NV30GL], Quadro FX 3000 [NV35GL], Quadro FX Go700 [NV31],
+ Quadro FX Go1000 [NV36], Quadro NVS 280 PCI [NV34GL],
+ Quadro NVS 280 PCI-E [NV37GL], NV31, NV31M, NV31M Pro, NV31GLM, NV31GLM Pro,
+ NV34GL, NV36.5, NV36M Pro, NV36MAP, NV36GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-173xx-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: nvidia-legacy-173xx-kernel-source
+Description-md5: b78021b2e8baa387d7da750255cc2618
+Description-en: NVIDIA binary kernel module source (173xx legacy version)
+ This package provides the source for the NVIDIA Xorg binary kernel module
+ needed by nvidia-legacy-173xx-driver in a form suitable
+ for use by module-assistant or kernel-package.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ PLEASE read /usr/share/doc/nvidia-legacy-173xx-kernel-source/README.Debian.gz
+ for building information.  If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-legacy-173xx-kernel-dkms instead.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce FX 5100 [NV34], GeForce FX 5200 [NV34], GeForce FX 5200 Ultra [NV34],
+ GeForce FX 5200LE [NV34], GeForce FX 5500 [NV34], GeForce FX 5600 [NV31],
+ GeForce FX 5600 Ultra [NV31], GeForce FX 5600XT [NV31],
+ GeForce FX 5700 [NV36.2], GeForce FX 5700 Ultra [NV36.1],
+ GeForce FX 5700LE [NV36], GeForce FX 5700VE [NV36.4], GeForce FX 5800 [NV30],
+ GeForce FX 5800 Ultra [NV30], GeForce FX 5900 [NV35],
+ GeForce FX 5900 Ultra [NV35], GeForce FX 5900XT [NV35],
+ GeForce FX 5900ZT [NV35], GeForce FX 5950 Ultra [NV38],
+ GeForce FX Go5100 [NV34], GeForce FX Go5200 [NV34M],
+ GeForce FX Go5200 32M/64M [NV34M], GeForce FX Go5200 64M [NV34M],
+ GeForce FX Go5250 [NV34M], GeForce FX Go5300 [NV34GLM],
+ GeForce FX Go5600 [NV31M], GeForce FX Go5650 [NV31M],
+ GeForce FX Go5700 [NV36], GeForce PCX 4300 [NV18], GeForce PCX 5300 [NV37GL],
+ GeForce PCX 5750 [NV36], GeForce PCX 5900 [NV35],
+ GeForce 6800 Ultra [NV40] (only PCI ID 10DE:00F0), Quadro FX 330 [NV37GL],
+ Quadro FX 500/600 PCI [NV34GL], Quadro FX 700 [NV35GL],
+ Quadro FX 1000 [NV30GL], Quadro FX 1100 [NV36GL], Quadro FX 1300 [NV38GL],
+ Quadro FX 2000 [NV30GL], Quadro FX 3000 [NV35GL], Quadro FX Go700 [NV31],
+ Quadro FX Go1000 [NV36], Quadro NVS 280 PCI [NV34GL],
+ Quadro NVS 280 PCI-E [NV37GL], NV31, NV31M, NV31M Pro, NV31GLM, NV31GLM Pro,
+ NV34GL, NV36.5, NV36M Pro, NV36MAP, NV36GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-173xx-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: xserver-xorg-video-nvidia-legacy-173xx
+Description-md5: 4ef8cd37fca9d30bbc06b81ecd7bef2e
+Description-en: NVIDIA binary Xorg driver (173xx legacy version)
+ These binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-legacy-173xx-kernel-dkms or
+ nvidia-legacy-173xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-173xx-kernel-173.14.39.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce FX 5100 [NV34], GeForce FX 5200 [NV34], GeForce FX 5200 Ultra [NV34],
+ GeForce FX 5200LE [NV34], GeForce FX 5500 [NV34], GeForce FX 5600 [NV31],
+ GeForce FX 5600 Ultra [NV31], GeForce FX 5600XT [NV31],
+ GeForce FX 5700 [NV36.2], GeForce FX 5700 Ultra [NV36.1],
+ GeForce FX 5700LE [NV36], GeForce FX 5700VE [NV36.4], GeForce FX 5800 [NV30],
+ GeForce FX 5800 Ultra [NV30], GeForce FX 5900 [NV35],
+ GeForce FX 5900 Ultra [NV35], GeForce FX 5900XT [NV35],
+ GeForce FX 5900ZT [NV35], GeForce FX 5950 Ultra [NV38],
+ GeForce FX Go5100 [NV34], GeForce FX Go5200 [NV34M],
+ GeForce FX Go5200 32M/64M [NV34M], GeForce FX Go5200 64M [NV34M],
+ GeForce FX Go5250 [NV34M], GeForce FX Go5300 [NV34GLM],
+ GeForce FX Go5600 [NV31M], GeForce FX Go5650 [NV31M],
+ GeForce FX Go5700 [NV36], GeForce PCX 4300 [NV18], GeForce PCX 5300 [NV37GL],
+ GeForce PCX 5750 [NV36], GeForce PCX 5900 [NV35],
+ GeForce 6800 Ultra [NV40] (only PCI ID 10DE:00F0), Quadro FX 330 [NV37GL],
+ Quadro FX 500/600 PCI [NV34GL], Quadro FX 700 [NV35GL],
+ Quadro FX 1000 [NV30GL], Quadro FX 1100 [NV36GL], Quadro FX 1300 [NV38GL],
+ Quadro FX 2000 [NV30GL], Quadro FX 3000 [NV35GL], Quadro FX Go700 [NV31],
+ Quadro FX Go1000 [NV36], Quadro NVS 280 PCI [NV34GL],
+ Quadro NVS 280 PCI-E [NV37GL], NV31, NV31M, NV31M Pro, NV31GLM, NV31GLM Pro,
+ NV34GL, NV36.5, NV36M Pro, NV36MAP, NV36GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-173xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-legacy-304xx-glx
+Description-md5: 69931d3af6f68b514487dd31198e1d62
+Description-en: NVIDIA binary OpenGL libraries (304xx legacy version)
+ These binary libraries provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ See the description of the nvidia-legacy-304xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-304xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-legacy-304xx-glx-i386
+Description-md5: 9bcfd4c39a420e5866b7b29f7b5d89fc
+Description-en: NVIDIA binary OpenGL 32-bit libraries (304xx legacy version)
+ This metapackage helps the automatic installation of the 32-bit NVIDIA
+ OpenGL libraries when installing libgl1-nvidia-legacy-304xx-glx
+ on amd64 with foreign architecture i386 enabled.
+
+Package: nvidia-legacy-304xx-alternative
+Description-md5: 902ec4251ab5f489c24871bd2fe241ae
+Description-en: allows the selection of NVIDIA as GLX provider
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ Use 'update-alternatives --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-legacy-304xx-driver package instead.
+
+Package: nvidia-legacy-304xx-driver
+Description-md5: 90a73e4ec0d2ee6dbebba1474ec58b55
+Description-en: NVIDIA metapackage (304xx legacy version)
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-legacy-304xx-kernel-dkms or
+ nvidia-legacy-304xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-304xx-kernel-304.128.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 6100 [C51G], GeForce 6100 [C61], GeForce 6150 [C51PV],
+ GeForce 6150 LE [C51], GeForce 6150 SE [C61], GeForce 6200 A-LE [NV44],
+ GeForce 6200 LE [NV44], GeForce 6200 TurboCache [NV44],
+ GeForce 6200 SE TurboCache [NV44], GeForce 6200 [NV43], GeForce 6200 [NV44A],
+ GeForce 6250 [NV44], GeForce 6500 [NV44], GeForce 6600 [NV43],
+ GeForce 6600 GT [NV43], GeForce 6600 LE [NV43], GeForce 6600 VE [NV43],
+ GeForce 6610 XL [NV43], GeForce 6700 XL [NV43], GeForce 6800 [NV40],
+ GeForce 6800 [NV41], GeForce 6800 GS [NV40], GeForce 6800 GS [NV41],
+ GeForce 6800 GS [NV43], GeForce 6800 GT, GeForce 6800 GT [NV40],
+ GeForce 6800 GTO [NV40], GeForce 6800 LE [NV40], GeForce 6800 LE [NV41],
+ GeForce 6800 Ultra [NV40], GeForce 6800 XE [NV40], GeForce 6800 XT [NV40],
+ GeForce 6800 XT [NV41], GeForce 6800 XT [NV43], GeForce 7000M [C67],
+ GeForce 7025 [C61], GeForce 7025 [C68], GeForce 7050 [C73],
+ GeForce 7050 PV [C68], GeForce 7100 [C73], GeForce 7100 GS [NV44],
+ GeForce 7150 [C73], GeForce 7150M [C67], GeForce 7200 GS [G72],
+ GeForce 7300 GS [G72], GeForce 7300 GT [G73], GeForce 7300 LE [G72],
+ GeForce 7300 SE [G72], GeForce 7350 LE [G72], GeForce 7500 LE [G72],
+ GeForce 7550 LE [G72], GeForce 7600 GS [G73], GeForce 7600 GT [G73],
+ GeForce 7600 LE [G73], GeForce 7650 GS [G73], GeForce 7800 GS [G70],
+ GeForce 7800 GS [G71], GeForce 7800 GT [G70], GeForce 7800 GTX [G70],
+ GeForce 7800 SLI [G70], GeForce 7900 GS [G71], GeForce 7900 GT [G71],
+ GeForce 7900 GTO [G71], GeForce 7900 GTX [G71], GeForce 7900 GX2 [G71],
+ GeForce 7950 GT [G71], GeForce 7950 GX2 [G71], GeForce Go 6100 [C51],
+ GeForce Go 6150 [C51], GeForce Go 6200 [NV44M], GeForce Go 6200 TE [NV43M],
+ GeForce Go 6400 [NV44M], GeForce Go 6600 [NV43M], GeForce Go 6600 GT [NV43M],
+ GeForce Go 6600 TE [NV43M], GeForce Go 6800 [NV41M],
+ GeForce Go 6800 Ultra [NV41M], GeForce Go 7200 [G72M],
+ GeForce Go 7300 [G72M], GeForce Go 7400 [G72M], GeForce Go 7600 [G73M],
+ GeForce Go 7600 GT [G73M], GeForce Go 7700 [G73M], GeForce Go 7800 [G70M],
+ GeForce Go 7800 GTX [G70M], GeForce Go 7900 GS [G71M],
+ GeForce Go 7900 GTX [G71M], GeForce Go 7950 GTX [G71M],
+ Quadro FX 350 [G72GL], Quadro FX 350M [G72GLM], Quadro FX 540 [NV43GL],
+ Quadro FX 540M, Quadro FX 550 [NV43GL], Quadro FX 560 [G73GL],
+ Quadro FX 560M [G73GLM], Quadro FX 1400 [NV41GL], Quadro FX Go1400 [NV41GLM],
+ Quadro FX 1500 [G71GL], Quadro FX 1500M [G71GLM], Quadro FX 2500M [G71GLM],
+ Quadro FX 3400 [NV40GL], Quadro FX 3450 [NV41GL], Quadro FX 3500 [G71GL],
+ Quadro FX 4000 [NV40GL], Quadro FX 4000 SDI [NV41GL],
+ Quadro FX 4500 X2 [G71GL], Quadro FX 4500 [G70GL], Quadro FX 5500 [G71GL],
+ Quadro NVS 110M [G72M], Quadro NVS 120M [G72M], Quadro NVS 210S [C51],
+ Quadro NVS 285 [NV44], Quadro NVS 440 [NV43], nForce 400 [C61],
+ nForce 405 [C61], nForce 420 [C61], nForce 430 [C61], nForce 610M [C67],
+ nForce 610i [C73], nForce 620i [C73], nForce 630i [C73], nForce 630a [C61],
+ nForce 630a [C68], nForce 630i [C73], nForce 630M [C67].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-304xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.2.
+
+Package: nvidia-legacy-304xx-kernel-dkms
+Description-md5: bcd50bf2eaa458eea3870ac8e8310927
+Description-en: NVIDIA binary kernel module DKMS source (304xx legacy version)
+ This package builds the NVIDIA Xorg binary kernel module needed by
+ nvidia-legacy-304xx-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 6100 [C51G], GeForce 6100 [C61], GeForce 6150 [C51PV],
+ GeForce 6150 LE [C51], GeForce 6150 SE [C61], GeForce 6200 A-LE [NV44],
+ GeForce 6200 LE [NV44], GeForce 6200 TurboCache [NV44],
+ GeForce 6200 SE TurboCache [NV44], GeForce 6200 [NV43], GeForce 6200 [NV44A],
+ GeForce 6250 [NV44], GeForce 6500 [NV44], GeForce 6600 [NV43],
+ GeForce 6600 GT [NV43], GeForce 6600 LE [NV43], GeForce 6600 VE [NV43],
+ GeForce 6610 XL [NV43], GeForce 6700 XL [NV43], GeForce 6800 [NV40],
+ GeForce 6800 [NV41], GeForce 6800 GS [NV40], GeForce 6800 GS [NV41],
+ GeForce 6800 GS [NV43], GeForce 6800 GT, GeForce 6800 GT [NV40],
+ GeForce 6800 GTO [NV40], GeForce 6800 LE [NV40], GeForce 6800 LE [NV41],
+ GeForce 6800 Ultra [NV40], GeForce 6800 XE [NV40], GeForce 6800 XT [NV40],
+ GeForce 6800 XT [NV41], GeForce 6800 XT [NV43], GeForce 7000M [C67],
+ GeForce 7025 [C61], GeForce 7025 [C68], GeForce 7050 [C73],
+ GeForce 7050 PV [C68], GeForce 7100 [C73], GeForce 7100 GS [NV44],
+ GeForce 7150 [C73], GeForce 7150M [C67], GeForce 7200 GS [G72],
+ GeForce 7300 GS [G72], GeForce 7300 GT [G73], GeForce 7300 LE [G72],
+ GeForce 7300 SE [G72], GeForce 7350 LE [G72], GeForce 7500 LE [G72],
+ GeForce 7550 LE [G72], GeForce 7600 GS [G73], GeForce 7600 GT [G73],
+ GeForce 7600 LE [G73], GeForce 7650 GS [G73], GeForce 7800 GS [G70],
+ GeForce 7800 GS [G71], GeForce 7800 GT [G70], GeForce 7800 GTX [G70],
+ GeForce 7800 SLI [G70], GeForce 7900 GS [G71], GeForce 7900 GT [G71],
+ GeForce 7900 GTO [G71], GeForce 7900 GTX [G71], GeForce 7900 GX2 [G71],
+ GeForce 7950 GT [G71], GeForce 7950 GX2 [G71], GeForce Go 6100 [C51],
+ GeForce Go 6150 [C51], GeForce Go 6200 [NV44M], GeForce Go 6200 TE [NV43M],
+ GeForce Go 6400 [NV44M], GeForce Go 6600 [NV43M], GeForce Go 6600 GT [NV43M],
+ GeForce Go 6600 TE [NV43M], GeForce Go 6800 [NV41M],
+ GeForce Go 6800 Ultra [NV41M], GeForce Go 7200 [G72M],
+ GeForce Go 7300 [G72M], GeForce Go 7400 [G72M], GeForce Go 7600 [G73M],
+ GeForce Go 7600 GT [G73M], GeForce Go 7700 [G73M], GeForce Go 7800 [G70M],
+ GeForce Go 7800 GTX [G70M], GeForce Go 7900 GS [G71M],
+ GeForce Go 7900 GTX [G71M], GeForce Go 7950 GTX [G71M],
+ Quadro FX 350 [G72GL], Quadro FX 350M [G72GLM], Quadro FX 540 [NV43GL],
+ Quadro FX 540M, Quadro FX 550 [NV43GL], Quadro FX 560 [G73GL],
+ Quadro FX 560M [G73GLM], Quadro FX 1400 [NV41GL], Quadro FX Go1400 [NV41GLM],
+ Quadro FX 1500 [G71GL], Quadro FX 1500M [G71GLM], Quadro FX 2500M [G71GLM],
+ Quadro FX 3400 [NV40GL], Quadro FX 3450 [NV41GL], Quadro FX 3500 [G71GL],
+ Quadro FX 4000 [NV40GL], Quadro FX 4000 SDI [NV41GL],
+ Quadro FX 4500 X2 [G71GL], Quadro FX 4500 [G70GL], Quadro FX 5500 [G71GL],
+ Quadro NVS 110M [G72M], Quadro NVS 120M [G72M], Quadro NVS 210S [C51],
+ Quadro NVS 285 [NV44], Quadro NVS 440 [NV43], nForce 400 [C61],
+ nForce 405 [C61], nForce 420 [C61], nForce 430 [C61], nForce 610M [C67],
+ nForce 610i [C73], nForce 620i [C73], nForce 630i [C73], nForce 630a [C61],
+ nForce 630a [C68], nForce 630i [C73], nForce 630M [C67].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-304xx-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.2.
+
+Package: nvidia-legacy-304xx-kernel-source
+Description-md5: 02facfd2f2e61e3419bcdea5c4f2c36b
+Description-en: NVIDIA binary kernel module source (304xx legacy version)
+ This package provides the source for the NVIDIA Xorg binary kernel module
+ needed by nvidia-legacy-304xx-driver in a form suitable
+ for use by module-assistant or kernel-package.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ PLEASE read /usr/share/doc/nvidia-legacy-304xx-kernel-source/README.Debian.gz
+ for building information.  If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-legacy-304xx-kernel-dkms instead.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 6100 [C51G], GeForce 6100 [C61], GeForce 6150 [C51PV],
+ GeForce 6150 LE [C51], GeForce 6150 SE [C61], GeForce 6200 A-LE [NV44],
+ GeForce 6200 LE [NV44], GeForce 6200 TurboCache [NV44],
+ GeForce 6200 SE TurboCache [NV44], GeForce 6200 [NV43], GeForce 6200 [NV44A],
+ GeForce 6250 [NV44], GeForce 6500 [NV44], GeForce 6600 [NV43],
+ GeForce 6600 GT [NV43], GeForce 6600 LE [NV43], GeForce 6600 VE [NV43],
+ GeForce 6610 XL [NV43], GeForce 6700 XL [NV43], GeForce 6800 [NV40],
+ GeForce 6800 [NV41], GeForce 6800 GS [NV40], GeForce 6800 GS [NV41],
+ GeForce 6800 GS [NV43], GeForce 6800 GT, GeForce 6800 GT [NV40],
+ GeForce 6800 GTO [NV40], GeForce 6800 LE [NV40], GeForce 6800 LE [NV41],
+ GeForce 6800 Ultra [NV40], GeForce 6800 XE [NV40], GeForce 6800 XT [NV40],
+ GeForce 6800 XT [NV41], GeForce 6800 XT [NV43], GeForce 7000M [C67],
+ GeForce 7025 [C61], GeForce 7025 [C68], GeForce 7050 [C73],
+ GeForce 7050 PV [C68], GeForce 7100 [C73], GeForce 7100 GS [NV44],
+ GeForce 7150 [C73], GeForce 7150M [C67], GeForce 7200 GS [G72],
+ GeForce 7300 GS [G72], GeForce 7300 GT [G73], GeForce 7300 LE [G72],
+ GeForce 7300 SE [G72], GeForce 7350 LE [G72], GeForce 7500 LE [G72],
+ GeForce 7550 LE [G72], GeForce 7600 GS [G73], GeForce 7600 GT [G73],
+ GeForce 7600 LE [G73], GeForce 7650 GS [G73], GeForce 7800 GS [G70],
+ GeForce 7800 GS [G71], GeForce 7800 GT [G70], GeForce 7800 GTX [G70],
+ GeForce 7800 SLI [G70], GeForce 7900 GS [G71], GeForce 7900 GT [G71],
+ GeForce 7900 GTO [G71], GeForce 7900 GTX [G71], GeForce 7900 GX2 [G71],
+ GeForce 7950 GT [G71], GeForce 7950 GX2 [G71], GeForce Go 6100 [C51],
+ GeForce Go 6150 [C51], GeForce Go 6200 [NV44M], GeForce Go 6200 TE [NV43M],
+ GeForce Go 6400 [NV44M], GeForce Go 6600 [NV43M], GeForce Go 6600 GT [NV43M],
+ GeForce Go 6600 TE [NV43M], GeForce Go 6800 [NV41M],
+ GeForce Go 6800 Ultra [NV41M], GeForce Go 7200 [G72M],
+ GeForce Go 7300 [G72M], GeForce Go 7400 [G72M], GeForce Go 7600 [G73M],
+ GeForce Go 7600 GT [G73M], GeForce Go 7700 [G73M], GeForce Go 7800 [G70M],
+ GeForce Go 7800 GTX [G70M], GeForce Go 7900 GS [G71M],
+ GeForce Go 7900 GTX [G71M], GeForce Go 7950 GTX [G71M],
+ Quadro FX 350 [G72GL], Quadro FX 350M [G72GLM], Quadro FX 540 [NV43GL],
+ Quadro FX 540M, Quadro FX 550 [NV43GL], Quadro FX 560 [G73GL],
+ Quadro FX 560M [G73GLM], Quadro FX 1400 [NV41GL], Quadro FX Go1400 [NV41GLM],
+ Quadro FX 1500 [G71GL], Quadro FX 1500M [G71GLM], Quadro FX 2500M [G71GLM],
+ Quadro FX 3400 [NV40GL], Quadro FX 3450 [NV41GL], Quadro FX 3500 [G71GL],
+ Quadro FX 4000 [NV40GL], Quadro FX 4000 SDI [NV41GL],
+ Quadro FX 4500 X2 [G71GL], Quadro FX 4500 [G70GL], Quadro FX 5500 [G71GL],
+ Quadro NVS 110M [G72M], Quadro NVS 120M [G72M], Quadro NVS 210S [C51],
+ Quadro NVS 285 [NV44], Quadro NVS 440 [NV43], nForce 400 [C61],
+ nForce 405 [C61], nForce 420 [C61], nForce 430 [C61], nForce 610M [C67],
+ nForce 610i [C73], nForce 620i [C73], nForce 630i [C73], nForce 630a [C61],
+ nForce 630a [C68], nForce 630i [C73], nForce 630M [C67].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-304xx-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+ .
+ Building the kernel module has been tested up to Linux 4.2.
+
+Package: xserver-xorg-video-nvidia-legacy-304xx
+Description-md5: ef72afe378eb89a1c9b4923010c05b3c
+Description-en: NVIDIA binary Xorg driver (304xx legacy version)
+ These binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-legacy-304xx-kernel-dkms or
+ nvidia-legacy-304xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-304xx-kernel-304.128.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce 6100 [C51G], GeForce 6100 [C61], GeForce 6150 [C51PV],
+ GeForce 6150 LE [C51], GeForce 6150 SE [C61], GeForce 6200 A-LE [NV44],
+ GeForce 6200 LE [NV44], GeForce 6200 TurboCache [NV44],
+ GeForce 6200 SE TurboCache [NV44], GeForce 6200 [NV43], GeForce 6200 [NV44A],
+ GeForce 6250 [NV44], GeForce 6500 [NV44], GeForce 6600 [NV43],
+ GeForce 6600 GT [NV43], GeForce 6600 LE [NV43], GeForce 6600 VE [NV43],
+ GeForce 6610 XL [NV43], GeForce 6700 XL [NV43], GeForce 6800 [NV40],
+ GeForce 6800 [NV41], GeForce 6800 GS [NV40], GeForce 6800 GS [NV41],
+ GeForce 6800 GS [NV43], GeForce 6800 GT, GeForce 6800 GT [NV40],
+ GeForce 6800 GTO [NV40], GeForce 6800 LE [NV40], GeForce 6800 LE [NV41],
+ GeForce 6800 Ultra [NV40], GeForce 6800 XE [NV40], GeForce 6800 XT [NV40],
+ GeForce 6800 XT [NV41], GeForce 6800 XT [NV43], GeForce 7000M [C67],
+ GeForce 7025 [C61], GeForce 7025 [C68], GeForce 7050 [C73],
+ GeForce 7050 PV [C68], GeForce 7100 [C73], GeForce 7100 GS [NV44],
+ GeForce 7150 [C73], GeForce 7150M [C67], GeForce 7200 GS [G72],
+ GeForce 7300 GS [G72], GeForce 7300 GT [G73], GeForce 7300 LE [G72],
+ GeForce 7300 SE [G72], GeForce 7350 LE [G72], GeForce 7500 LE [G72],
+ GeForce 7550 LE [G72], GeForce 7600 GS [G73], GeForce 7600 GT [G73],
+ GeForce 7600 LE [G73], GeForce 7650 GS [G73], GeForce 7800 GS [G70],
+ GeForce 7800 GS [G71], GeForce 7800 GT [G70], GeForce 7800 GTX [G70],
+ GeForce 7800 SLI [G70], GeForce 7900 GS [G71], GeForce 7900 GT [G71],
+ GeForce 7900 GTO [G71], GeForce 7900 GTX [G71], GeForce 7900 GX2 [G71],
+ GeForce 7950 GT [G71], GeForce 7950 GX2 [G71], GeForce Go 6100 [C51],
+ GeForce Go 6150 [C51], GeForce Go 6200 [NV44M], GeForce Go 6200 TE [NV43M],
+ GeForce Go 6400 [NV44M], GeForce Go 6600 [NV43M], GeForce Go 6600 GT [NV43M],
+ GeForce Go 6600 TE [NV43M], GeForce Go 6800 [NV41M],
+ GeForce Go 6800 Ultra [NV41M], GeForce Go 7200 [G72M],
+ GeForce Go 7300 [G72M], GeForce Go 7400 [G72M], GeForce Go 7600 [G73M],
+ GeForce Go 7600 GT [G73M], GeForce Go 7700 [G73M], GeForce Go 7800 [G70M],
+ GeForce Go 7800 GTX [G70M], GeForce Go 7900 GS [G71M],
+ GeForce Go 7900 GTX [G71M], GeForce Go 7950 GTX [G71M],
+ Quadro FX 350 [G72GL], Quadro FX 350M [G72GLM], Quadro FX 540 [NV43GL],
+ Quadro FX 540M, Quadro FX 550 [NV43GL], Quadro FX 560 [G73GL],
+ Quadro FX 560M [G73GLM], Quadro FX 1400 [NV41GL], Quadro FX Go1400 [NV41GLM],
+ Quadro FX 1500 [G71GL], Quadro FX 1500M [G71GLM], Quadro FX 2500M [G71GLM],
+ Quadro FX 3400 [NV40GL], Quadro FX 3450 [NV41GL], Quadro FX 3500 [G71GL],
+ Quadro FX 4000 [NV40GL], Quadro FX 4000 SDI [NV41GL],
+ Quadro FX 4500 X2 [G71GL], Quadro FX 4500 [G70GL], Quadro FX 5500 [G71GL],
+ Quadro NVS 110M [G72M], Quadro NVS 120M [G72M], Quadro NVS 210S [C51],
+ Quadro NVS 285 [NV44], Quadro NVS 440 [NV43], nForce 400 [C61],
+ nForce 405 [C61], nForce 420 [C61], nForce 430 [C61], nForce 610M [C67],
+ nForce 610i [C73], nForce 620i [C73], nForce 630i [C73], nForce 630a [C61],
+ nForce 630a [C68], nForce 630i [C73], nForce 630M [C67].
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ Look at the other legacy packages for older cards.
+ .
+ See /usr/share/doc/nvidia-legacy-304xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: libgl1-nvidia-legacy-96xx-glx
+Description-md5: 9b6872831a59a8c724faed91e69cf5ea
+Description-en: NVIDIA binary OpenGL libraries (96xx legacy version)
+ These binary libraries provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ See the description of the nvidia-legacy-96xx-driver package
+ or /usr/share/doc/libgl1-nvidia-legacy-96xx-glx/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: nvidia-alternative-legacy-96xx
+Description-md5: 91c35d2413c90d20953cd4a204d643a7
+Description-en: allows the selection of NVIDIA as GLX provider
+ In setups with several NVIDIA driver versions installed (e.g. current and
+ legacy) this metapackage registers an alternative to allow easy switching
+ between the different versions.
+ Use 'update-alternatives --config nvidia' to select a version.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-legacy-96xx-driver package instead.
+
+Package: nvidia-glx-legacy-96xx
+Description-md5: 764992ef7190349b96df1ade54635331
+Description-en: transition to nvidia-legacy-96xx-driver
+ This is a dummy transitional package to aid switching to
+ nvidia-legacy-96xx-driver.
+
+Package: nvidia-kernel-legacy-96xx-dkms
+Description-md5: a4e75fd58767e3c94220abe5b0f69d16
+Description-en: transition to nvidia-legacy-96xx-kernel-dkms
+ This is a dummy transitional package to aid switching to
+ nvidia-legacy-96xx-kernel-dkms.
+
+Package: nvidia-kernel-legacy-96xx-source
+Description-md5: 6016d6fd04ece24100811b1b6e4416b7
+Description-en: transition to nvidia-legacy-96xx-kernel-source
+ This is a dummy transitional package to aid switching to
+ nvidia-legacy-96xx-kernel-source.
+
+Package: nvidia-legacy-96xx-driver
+Description-md5: 5379367846169897350e82172c27185b
+Description-en: NVIDIA metapackage (96xx legacy version)
+ This metapackage depends on the NVIDIA binary driver and libraries
+ that provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-legacy-96xx-kernel-dkms or
+ nvidia-legacy-96xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-96xx-kernel-96.43.23.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce2 Go [NV11], GeForce2 MX Integrated Graphics [NVCrush11],
+ GeForce2 MX/MX 400 [NV11], GeForce2 MX200 [NV11DDR], GeForce3 [NV20],
+ GeForce3 Ti 200 [NV20], GeForce3 Ti 500 [NV20], GeForce4 410 Go 16M [NV17],
+ GeForce4 420 Go [NV17], GeForce4 420 Go 32M [NV17], GeForce4 440 Go [NV17],
+ GeForce4 440 Go 64M [NV17], GeForce4 448 Go [NV18M], GeForce4 460 Go [NV17],
+ GeForce4 488 Go [NV18M], GeForce4 MX 420 [NV17],
+ GeForce4 MX 420 AGP 8x [NV18], GeForce4 MX 440 [NV17],
+ GeForce4 MX 440 AGP 8x [NV18], GeForce4 MX 440SE [NV17],
+ GeForce4 MX 440SE AGP 8x [NV18], GeForce4 MX 460 [NV17],
+ GeForce4 MX 4000 [NV18], GeForce4 MX - nForce GPU [NV18], GeForce4 Ti [NV25],
+ GeForce4 Ti 4200 [NV25], GeForce4 Ti 4200 AGP 8x [NV28],
+ GeForce4 Ti 4200 Go AGP 8x [NV28], GeForce4 Ti 4400 [NV25],
+ GeForce4 Ti 4600 [NV25], GeForce4 Ti 4800 [NV28], GeForce4 Ti 4800 SE [NV28],
+ Quadro DCC [NV20DCC], Quadro NVS [NV17GL], Quadro NVS 50 PCI [NV18GL],
+ Quadro NVS 280 SD AGP 8x [NV18GL], Quadro2 MXR/EX/Go [NV11GL],
+ Quadro4 380 XGL [NV18GL], Quadro4 500 GoGL [NV17GL],
+ Quadro4 550 XGL [NV17GL], Quadro4 580 XGL [NV18GL], Quadro4 700 XGL [NV25GL],
+ Quadro4 750 XGL [NV25GL], Quadro4 780 XGL [NV28GL], Quadro4 900 XGL [NV25GL],
+ Quadro4 980 XGL [NV28GL], Quadro4 Go700 [NV28GLM], NV40GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ .
+ See /usr/share/doc/nvidia-legacy-96xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: nvidia-legacy-96xx-kernel-dkms
+Description-md5: 21712e17c248839148367308e5166338
+Description-en: NVIDIA binary kernel module DKMS source (96xx legacy version)
+ This package builds the NVIDIA Xorg binary kernel module needed by
+ nvidia-legacy-96xx-driver, using DKMS.
+ Provided that you have the kernel header packages installed, the kernel
+ module will be built for your running kernel and automatically rebuilt for
+ any new kernel headers that are installed.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce2 Go [NV11], GeForce2 MX Integrated Graphics [NVCrush11],
+ GeForce2 MX/MX 400 [NV11], GeForce2 MX200 [NV11DDR], GeForce3 [NV20],
+ GeForce3 Ti 200 [NV20], GeForce3 Ti 500 [NV20], GeForce4 410 Go 16M [NV17],
+ GeForce4 420 Go [NV17], GeForce4 420 Go 32M [NV17], GeForce4 440 Go [NV17],
+ GeForce4 440 Go 64M [NV17], GeForce4 448 Go [NV18M], GeForce4 460 Go [NV17],
+ GeForce4 488 Go [NV18M], GeForce4 MX 420 [NV17],
+ GeForce4 MX 420 AGP 8x [NV18], GeForce4 MX 440 [NV17],
+ GeForce4 MX 440 AGP 8x [NV18], GeForce4 MX 440SE [NV17],
+ GeForce4 MX 440SE AGP 8x [NV18], GeForce4 MX 460 [NV17],
+ GeForce4 MX 4000 [NV18], GeForce4 MX - nForce GPU [NV18], GeForce4 Ti [NV25],
+ GeForce4 Ti 4200 [NV25], GeForce4 Ti 4200 AGP 8x [NV28],
+ GeForce4 Ti 4200 Go AGP 8x [NV28], GeForce4 Ti 4400 [NV25],
+ GeForce4 Ti 4600 [NV25], GeForce4 Ti 4800 [NV28], GeForce4 Ti 4800 SE [NV28],
+ Quadro DCC [NV20DCC], Quadro NVS [NV17GL], Quadro NVS 50 PCI [NV18GL],
+ Quadro NVS 280 SD AGP 8x [NV18GL], Quadro2 MXR/EX/Go [NV11GL],
+ Quadro4 380 XGL [NV18GL], Quadro4 500 GoGL [NV17GL],
+ Quadro4 550 XGL [NV17GL], Quadro4 580 XGL [NV18GL], Quadro4 700 XGL [NV25GL],
+ Quadro4 750 XGL [NV25GL], Quadro4 780 XGL [NV28GL], Quadro4 900 XGL [NV25GL],
+ Quadro4 980 XGL [NV28GL], Quadro4 Go700 [NV28GLM], NV40GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ .
+ See /usr/share/doc/nvidia-legacy-96xx-kernel-dkms/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: nvidia-legacy-96xx-kernel-source
+Description-md5: 1a14dbcc178ad8634447c6268765790d
+Description-en: NVIDIA binary kernel module source (96xx legacy version)
+ This package provides the source for the NVIDIA Xorg binary kernel module
+ needed by nvidia-legacy-96xx-driver in a form suitable
+ for use by module-assistant or kernel-package.
+ The NVIDIA binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server for graphics cards
+ using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
+ are also supported.
+ .
+ PLEASE read /usr/share/doc/nvidia-legacy-96xx-kernel-source/README.Debian.gz
+ for building information.  If you want the kernel module to be automatically
+ installed via DKMS, install nvidia-legacy-96xx-kernel-dkms instead.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce2 Go [NV11], GeForce2 MX Integrated Graphics [NVCrush11],
+ GeForce2 MX/MX 400 [NV11], GeForce2 MX200 [NV11DDR], GeForce3 [NV20],
+ GeForce3 Ti 200 [NV20], GeForce3 Ti 500 [NV20], GeForce4 410 Go 16M [NV17],
+ GeForce4 420 Go [NV17], GeForce4 420 Go 32M [NV17], GeForce4 440 Go [NV17],
+ GeForce4 440 Go 64M [NV17], GeForce4 448 Go [NV18M], GeForce4 460 Go [NV17],
+ GeForce4 488 Go [NV18M], GeForce4 MX 420 [NV17],
+ GeForce4 MX 420 AGP 8x [NV18], GeForce4 MX 440 [NV17],
+ GeForce4 MX 440 AGP 8x [NV18], GeForce4 MX 440SE [NV17],
+ GeForce4 MX 440SE AGP 8x [NV18], GeForce4 MX 460 [NV17],
+ GeForce4 MX 4000 [NV18], GeForce4 MX - nForce GPU [NV18], GeForce4 Ti [NV25],
+ GeForce4 Ti 4200 [NV25], GeForce4 Ti 4200 AGP 8x [NV28],
+ GeForce4 Ti 4200 Go AGP 8x [NV28], GeForce4 Ti 4400 [NV25],
+ GeForce4 Ti 4600 [NV25], GeForce4 Ti 4800 [NV28], GeForce4 Ti 4800 SE [NV28],
+ Quadro DCC [NV20DCC], Quadro NVS [NV17GL], Quadro NVS 50 PCI [NV18GL],
+ Quadro NVS 280 SD AGP 8x [NV18GL], Quadro2 MXR/EX/Go [NV11GL],
+ Quadro4 380 XGL [NV18GL], Quadro4 500 GoGL [NV17GL],
+ Quadro4 550 XGL [NV17GL], Quadro4 580 XGL [NV18GL], Quadro4 700 XGL [NV25GL],
+ Quadro4 750 XGL [NV25GL], Quadro4 780 XGL [NV28GL], Quadro4 900 XGL [NV25GL],
+ Quadro4 980 XGL [NV28GL], Quadro4 Go700 [NV28GLM], NV40GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ .
+ See /usr/share/doc/nvidia-legacy-96xx-kernel-source/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: xserver-xorg-video-nvidia-legacy-96xx
+Description-md5: 5a68ee1c840adefeca138bf4db98bebf
+Description-en: NVIDIA binary Xorg driver (96xx legacy version)
+ These binary drivers provide optimized hardware acceleration of
+ OpenGL applications via a direct-rendering X Server.
+ AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ Please see the nvidia-legacy-96xx-kernel-dkms or
+ nvidia-legacy-96xx-kernel-source packages
+ for building the kernel module required by this package.
+ This will provide nvidia-legacy-96xx-kernel-96.43.23.
+ .
+ This legacy version is the last release that supports the following GPUs:
+ GeForce2 Go [NV11], GeForce2 MX Integrated Graphics [NVCrush11],
+ GeForce2 MX/MX 400 [NV11], GeForce2 MX200 [NV11DDR], GeForce3 [NV20],
+ GeForce3 Ti 200 [NV20], GeForce3 Ti 500 [NV20], GeForce4 410 Go 16M [NV17],
+ GeForce4 420 Go [NV17], GeForce4 420 Go 32M [NV17], GeForce4 440 Go [NV17],
+ GeForce4 440 Go 64M [NV17], GeForce4 448 Go [NV18M], GeForce4 460 Go [NV17],
+ GeForce4 488 Go [NV18M], GeForce4 MX 420 [NV17],
+ GeForce4 MX 420 AGP 8x [NV18], GeForce4 MX 440 [NV17],
+ GeForce4 MX 440 AGP 8x [NV18], GeForce4 MX 440SE [NV17],
+ GeForce4 MX 440SE AGP 8x [NV18], GeForce4 MX 460 [NV17],
+ GeForce4 MX 4000 [NV18], GeForce4 MX - nForce GPU [NV18], GeForce4 Ti [NV25],
+ GeForce4 Ti 4200 [NV25], GeForce4 Ti 4200 AGP 8x [NV28],
+ GeForce4 Ti 4200 Go AGP 8x [NV28], GeForce4 Ti 4400 [NV25],
+ GeForce4 Ti 4600 [NV25], GeForce4 Ti 4800 [NV28], GeForce4 Ti 4800 SE [NV28],
+ Quadro DCC [NV20DCC], Quadro NVS [NV17GL], Quadro NVS 50 PCI [NV18GL],
+ Quadro NVS 280 SD AGP 8x [NV18GL], Quadro2 MXR/EX/Go [NV11GL],
+ Quadro4 380 XGL [NV18GL], Quadro4 500 GoGL [NV17GL],
+ Quadro4 550 XGL [NV17GL], Quadro4 580 XGL [NV18GL], Quadro4 700 XGL [NV25GL],
+ Quadro4 750 XGL [NV25GL], Quadro4 780 XGL [NV28GL], Quadro4 900 XGL [NV25GL],
+ Quadro4 980 XGL [NV28GL], Quadro4 Go700 [NV28GLM], NV40GL.
+ .
+ There are several "more modern" GPUs supported by this package, too, but the
+ updated drivers in the newer legacy packages or the current nvidia-driver
+ package usually provide more features and better support.
+ .
+ See /usr/share/doc/nvidia-legacy-96xx-driver/README.txt.gz
+ for a complete list of supported GPUs and PCI IDs.
+
+Package: nvidia-kernel-3.16.0-0.bpo.4-586
+Description-md5: 9ffd438a29272ef4e01ccd8d7d343731
+Description-en: NVIDIA binary kernel module for Linux 3.16.0-0.bpo.4-586
+ This package provides the non-free NVIDIA binary kernel module built for
+ the Debian Linux kernel package.  This kernel module is required by the
+ nvidia-glx X video driver, the non-free binary video driver for NVIDIA
+ graphics chipsets.  This is the main NVIDIA driver release, which
+ supports the latest chipsets; for older chipsets, see the NVIDIA legacy
+ packages.
+ .
+ This package is built for linux-image-3.16.0-0.bpo.4-586.
+
+Package: nvidia-kernel-3.16.0-0.bpo.4-686-pae
+Description-md5: 06504b415205fd588f7d6bbfa05e9234
+Description-en: NVIDIA binary kernel module for Linux 3.16.0-0.bpo.4-686-pae
+ This package provides the non-free NVIDIA binary kernel module built for
+ the Debian Linux kernel package.  This kernel module is required by the
+ nvidia-glx X video driver, the non-free binary video driver for NVIDIA
+ graphics chipsets.  This is the main NVIDIA driver release, which
+ supports the latest chipsets; for older chipsets, see the NVIDIA legacy
+ packages.
+ .
+ This package is built for linux-image-3.16.0-0.bpo.4-686-pae.
+
+Package: nvidia-kernel-3.16.0-0.bpo.4-amd64
+Description-md5: 25700b334f1a443c141ed9656009e915
+Description-en: NVIDIA binary kernel module for Linux 3.16.0-0.bpo.4-amd64
+ This package provides the non-free NVIDIA binary kernel module built for
+ the Debian Linux kernel package.  This kernel module is required by the
+ nvidia-glx X video driver, the non-free binary video driver for NVIDIA
+ graphics chipsets.  This is the main NVIDIA driver release, which
+ supports the latest chipsets; for older chipsets, see the NVIDIA legacy
+ packages.
+ .
+ This package is built for linux-image-3.16.0-0.bpo.4-amd64.
+
+Package: nvidia-kernel-486
+Description-md5: e7c9859cde613c4083f65914423d0b32
+Description-en: NVIDIA kernel module for Linux (dummy package)
+ This is a dummy transitional package.  It can be safely removed.
+
+Package: nvidia-kernel-586
+Description-md5: 739ac70e61c6771646baec7aff58d50b
+Description-en: NVIDIA kernel module for Linux (586 flavor)
+ This is a metapackage that will depend on the latest version of the
+ NVIDIA kernel module for the Linux kernel series (586 flavor).
+ Install this package to automatically install the latest NVIDIA module
+ when new versions of the kernel are released.
+
+Package: nvidia-kernel-686-pae
+Description-md5: 651daae70436ec5c4ce8528807c33a87
+Description-en: NVIDIA kernel module for Linux (686-pae flavor)
+ This is a metapackage that will depend on the latest version of the
+ NVIDIA kernel module for the Linux kernel series (686-pae flavor).
+ Install this package to automatically install the latest NVIDIA module
+ when new versions of the kernel are released.
+
+Package: nvidia-kernel-amd64
+Description-md5: ff6da8de09299444ef3c8a839b8b0e05
+Description-en: NVIDIA kernel module for Linux (amd64 flavor)
+ This is a metapackage that will depend on the latest version of the
+ NVIDIA kernel module for the Linux kernel series (amd64 flavor).
+ Install this package to automatically install the latest NVIDIA module
+ when new versions of the kernel are released.
+
+Package: nvidia-kernel-dummy
+Description-md5: 18355cb9b6b32ad39266eb2246695714
+Description-en: NVIDIA kernel module for Linux (dummy package)
+ This dummy package exists solely to ensure that the prebuilt modules do not
+ migrate to testing before the corresponding driver is available. Nothing is
+ done to prevent the other way around, i.e. an updated driver without prebuilt
+ modules available is allowed to enter testing.
+ .
+ It is not needed to install this package on any machine.
+
+Package: redeclipse-data
+Description-md5: caa768fd43b5f3008c12364205a75427
+Description-en: data for the Red Eclipse FPS game
+ This package contains the data content, e.g. maps, models, textures, sounds,
+ etc. for the Red Eclipse FPS game.
+
+Package: virtualbox-guest-additions-iso
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+Description-en: guest additions iso image for VirtualBox
+ VirtualBox is a free x86 virtualization solution allowing a wide range of
+ x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides an iso image which contains the guest additions
+ for Linux, Solaris and Windows to be installed on the host system. The guest
+ systems then can mount the iso and install the guest additions from there.
+

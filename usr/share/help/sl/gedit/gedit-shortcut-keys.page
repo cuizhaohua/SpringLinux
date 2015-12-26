@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Tipkovne bližnjice</title>
+
+  <p>Uporabite <gui>tipkovne bližnjice</gui> za izvajanje pogostih opravil hitreje kot z miško in meniji. Naslednja preglednica vsebuje seznam vseh tipkovnih bližnjic <app>gedit</app>.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Z zavihki povezane tipkovne bližnjice</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Premakni trenutni zavihek na levo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key>
+          <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Premakni trenutni zavihek na desno</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key>
+          <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zapri zavihek</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Shrani vse zavihke</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zapri vse zavihke</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reopen the most recently closed tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Skoči na <var>n</var>-ti  zavihek</p></td>
+          <td><p><keyseq><key>Alt</key><key>
+          <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>New tab group</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Previous tab group</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Next tab group</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tipkovne bližnjice za delo z datotekami</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Ustvari nov dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Odpri dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Shrani trenutni dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Shrani trenutni dokument z novim imenom datoteke</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Natisni trenutni dokument</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Predogled tiskanja</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zapri trenutni dokument</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Končaj gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tipkovne bližnjice za urejanje datotek</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Move to the beginning of the current line</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the end of the current line</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the beginning of the document</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the end of the document</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move the selected word right one word</p></td>
+          <td><p><keyseq><key>Alt</key><key>Right Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move the selected word left one word</p></td>
+          <td><p><keyseq><key>Alt</key><key>Left Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Razveljavi zadnje dejanje</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Obnovi zadnje razveljavljeno dejanje</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izreže izbrano besedilo ali področje in ga postavi na odložišče</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Kopira izbrano besedilo ali področje in ga postavi na odložišče</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Prilepi vsebino odložišča</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izbere vse besedilo v datoteki</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izbriši trenutno vrstico</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Premakni izbrano vrstico za eno vrstico navzgor</p></td>
+          <td><p><keyseq><key>Alt</key><key>Up Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Premakni izbrano vrstico za eno vrstico navzdol</p></td>
+          <td><p><keyseq><key>Alt</key><key>Down Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Add a tab stop</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Remove a tab stop</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to upper case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to lower case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Toggle case of the selected text</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tipkovne bližnjice za prikaz in skrivanje pladnjev</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Pokaži / skrij stranski pladenj</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Pokaži / skrij stranski pladenj.</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tipkovne bližnjice za iskanje</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Najdi niz</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Poišče naslednjo pojavitev niza</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Najdi predhodno pojavitev niza</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Poišči in zamenjaj</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Počisti poudarjanje</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pojdi na vrstico</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tipkovne bližnjice za orodja</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Preveri črkovanje</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Odstrani končne presledke (z vstavkom)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Požene "make" v trenutni mapi (z vstavkom)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Seznam map (z vstavkom)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tipkovne bližnjice za uporabniško pomoč</title>
+      <thead>
+        <tr>
+          <td><p>Za to opravilo</p></td>
+          <td><p>Pritisnite to</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Odpre uporabniški vodnik gedit</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

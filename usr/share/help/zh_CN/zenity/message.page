@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="message" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs" group="message"/>
+    <desc><link xref="error">错误</link>、<link xref="info">信息</link>、<link xref="question">问题</link>、<link xref="warning">警告</link></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>消息对话框</title>
+  <p>对于每一种类型，使用 <cmd>--text</cmd> 选项来指定在对话框里显示的文本。</p>
+  <links type="topic" style="2column"/>
+</page>

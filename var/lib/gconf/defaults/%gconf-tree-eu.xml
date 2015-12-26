@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Gako-sorta (pasahitzak hor gordetzeko)">
+						<longdesc>Gksu-k erabiliko duen gako-sortaren izena. Balio erabilgarriak: &quot;session&quot; (saioa), pasahitza saioan gordetzeko; &quot;default&quot; (lehenetsia), pasahitza denbora-mugarik gabe gordetzeko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Gorde pasahitza &apos;gnome-keyring&apos;-en">
+						<longdesc>&apos;gksu&apos;-k idazten duzun pasahitza &apos;gnome-keyring&apos;-en gorde dezake, aldi bakoitzean zuri ez galdetzeko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Bistaratu informazioaren mezua pasahitzik behar ez denean">
+						<longdesc>Aukera honek mezuaren elkarrizketa-koadroa bistaratuko den ala ez zehazten du. Elkarrizketa-koadro horrek programa eskatu den pasahitza behar izan gabe eta arrazoi bategatik exekutatzen ari dela jakinarazten dio erabiltzaileari.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Blokeatzeko eskaera">
+						<longdesc>Auekra honekin &apos;gksu&apos;-k erabiltzaileari galdetuko dio ea pantaila blokeatzea nahi duen pasahitza sartzean. Jakin ezazu &apos;force-grab&apos; (derrigortu blokeoa) desgaituta badago soilik eragiten duela.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="&apos;Sudo&apos; modua">
+						<longdesc>&apos;sudo&apos; metodo lehenetsia izngo den ala ez adierazten du. Metodo hau atzitzeko &apos;-S&apos; aukera erabili edo &apos;gksudo&apos; exekutatu daiteke &apos;gksu&apos; ordez.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Behartu teklatua eta sagua blokeatzea">
+						<longdesc>Blokeatu teklatua eta sagua, nahiz eta &apos;-g&apos; aukera eman komando-lerroan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Desgaitu teklatua eta sagua blokeatzea">
+						<longdesc>Teklatua eta sagua blokeatzea desaktibatu behar den ala ez adierazten du. Beste X-eko aplikazioek teklatuaren sarrerako gertaerak entzutea eragin dezake, eta ondorioz exekutatzen egon daitezkeen aplikazio maltzurretatik ez babestea.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

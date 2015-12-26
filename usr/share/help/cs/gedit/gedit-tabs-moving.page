@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Přesun a uspořádávání karet</title>
+  <p>Karty je možné v editoru <app>gedit</app> přesouvat, abyste si usnadnili práci se soubory. Můžete měnit jejich pořadí v rámci stejného okna, přesunout je mimo (vytvoří se nové okno <app>gedit</app>) a nebo je přesunout z jednoho okna do druhého.</p>
+
+  <section id="tabs-change-order">
+    <title>Změna pořadí karet v okně gedit</title>
+
+    <p>Pro změnu pořadí karet v okně:</p>
+
+    <steps>
+      <item>
+        <p>Klikněte tlačítkem myši na kartě a držte jej zmáčknuté.</p>
+      </item>
+      <item>
+        <p>Přesuňte kartu na požadované místo mezi ostatními kartami.</p>
+      </item>
+      <item>
+        <p>Uvolněte tlačítko myši.</p>
+      </item>
+    </steps>
+
+    <p>Karta se umístí na nejbližší místo, kde jste ji upustili, hned vedle ostatních otevřených karet.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Přesun karty, vytvoření nového okna</title>
+    <p>Pro vytvoření nového okna ze stávající karty:</p>
+
+    <steps>
+      <item>
+        <p>Klikněte tlačítkem myši na kartě a držte jej zmáčknuté.</p>
+      </item>
+      <item>
+        <p>Přetáhněte kartu mimo okno <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Uvolněte tlačítko myši.</p>
+      </item>
+    </steps>
+
+    <p>Nebo, když máte kartu, kterou chcete přetáhnout, otevřenou, zvolte <guiseq><gui>Dokumenty</gui> <gui>Přesunout do nového okna</gui></guiseq>.</p>
+
+    <note style="tip">
+      <p>Pokud chcete kartu přesunout, když je <app>gedit</app> maximalizovaný, přetáhněte ji na horní lištu v horní části obrazovky.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Přesun karty do jiného okna gedit</title>
+
+    <p>Když chcete přesunout kartu z jednoho okna do druhého:</p>
+
+    <steps>
+      <item>
+        <p>Klikněte tlačítkem myši na kartě a držte jej zmáčknuté.</p>
+      </item>
+      <item>
+        <p>Táhněte kartu do nového okna.</p>
+      </item>
+      <item>
+        <p>Upusťte ji mezi ostatní karty v novém okně.</p>
+      </item>
+      <item>
+        <p>Uvolněte tlačítko myši.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Někdy může být jednodušším řešením, jak přetáhnout kartu z jednoho okna do druhého, to, že ji táhnete na <gui>Činnosti</gui> v citlivém rohu <gui>GNOME Shell</gui>. Tím se ukáží všechna otevřená okna <app>gedit</app>. Pak ji můžete upustit na tom požadovaném.</p>
+    </note>
+
+    <p>Správu karet si můžete zjednodušit použitím <link xref="gedit-shortcut-keys">klávesových zkratek vztahujících se ke kartám</link>.</p>
+
+  </section>
+
+</page>

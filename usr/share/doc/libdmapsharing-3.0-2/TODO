@@ -1,0 +1,79 @@
+= Short term ===================================================================
+
+GNOME Bugs:
+	344616: support database updates
+	686220: play nicely with firewalld
+	705539: confirm two share scenario fixed (seems to be in rhythmbox 3.0.2)
+	727839: wierd startup warning
+	705949: grilo
+
+Noah: DNS-SD implementation
+	Finish browser side support.
+
+Documentation:
+	Improve content (Noah?)
+	Fix alignment of object description code
+	Fix "up" icon in second level pages
+	Add standard sidebar
+	Improve aesthetics
+
+= Mid term =====================================================================
+
+Fix callbacks so that they do not provide a gpointer (see service-added
+callback). They need to provide a proper GObject type (e.g., a new
+DMAPMdnsBrowserService type) so that Python/GObject introspection works.
+
+Noah: Comment purpose of each source file and describe interfaces, using test
+programs as examples (Note: wait on doxygen vs. gtk-doc decision.
+
+Mike: Realtime transcode: must g_input_stream_close what is returned from
+daap_record_read, unless I change API (see also dmapd.c)
+
+= Long term ====================================================================
+
+API Changes:
+	now_playing_artwork seems to return a filename, so should return a gchar *, not guchar *?
+	Stuff related to Python introspection
+
+Mike: Audit remaining GSoC patch:
+--- dmap-db.c
+--- dmap-share.c
+--- dacp-player.c
+--- dacp-player.h
+--- dacp-share.c
+--- dacp-share.h
+
+Mike: Add support for browse= on DMAPConnection side to filter results (see dmap-share.c).
+
+Mike: Functions that could be simplified:
+	compare_record_property()
+	apply_filter()/_dmap_share_build_filter() (lex/yacc?)
+
+Mike: Add support for DMAP_CC_MSUP, dmap.supportsupdate
+
+Something odd (as best as I can remember):
+	TunesRemote+ on Android emulator
+	Ryhthmbox on same machine
+	Two network interfaces (i.e., _touch-remote._tcp listed twice by avahi-browse)
+	Rhythmbox:
+		Remote listed twice
+		If "wrong" remote selected:
+			entry_insert_text_cb has service_name set to garbled value
+			mdns_remote_added has service_name set to correct value
+
+Mike: Where to handle DACP-specific stuff in dmap-mdns-browser-avahi.c?
+
+Mike: Does, e.g., handle_server_info need user_data parameter?
+
+Mike: Replace dmap-md5.[ch] with GChecksum.
+
+Mike: Ensure client test catches newly shared files?
+
+Mike: Do transcode based on client?
+
+Mike: Fix seeking.
+
+Mike: Clean up test_dmap_server.
+	Fix code that determines path of test.jpeg.
+
+Mike: See FIXME's in dmap-share.c, daap-share.c, daap-record.c and dpap-share.c.

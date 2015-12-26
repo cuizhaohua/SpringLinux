@@ -1,0 +1,983 @@
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 5 package 'dpkg':
+ missing description
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 5 package 'dpkg':
+ missing architecture
+Selecting previously unselected package base-passwd.
+(Reading database ... 0 files and directories currently installed.)
+Unpacking base-passwd (from .../base-passwd_3.5.26_armhf.deb) ...
+dpkg: base-passwd: dependency problems, but configuring anyway as you requested:
+ base-passwd depends on libc6 (>= 2.13-28); however:
+  Package libc6 is not installed.
+
+Setting up base-passwd (3.5.26) ...
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 23 package 'dpkg':
+ missing description
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 23 package 'dpkg':
+ missing architecture
+Selecting previously unselected package base-files.
+dpkg: regarding .../base-files_7.1wheezy6_armhf.deb containing base-files, pre-dependency problem:
+ base-files pre-depends on awk
+  awk is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+(Reading database ... 38 files and directories currently installed.)
+Unpacking base-files (from .../base-files_7.1wheezy6_armhf.deb) ...
+dpkg: base-files: dependency problems, but configuring anyway as you requested:
+ base-files depends on awk; however:
+  Package awk is not installed.
+
+Setting up base-files (7.1wheezy6) ...
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 50 package 'dpkg':
+ missing description
+dpkg: warning: parsing file '/var/lib/dpkg/status' near line 50 package 'dpkg':
+ missing architecture
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libbz2-1.0
+  libbz2-1.0 is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libc6 (>= 2.13-28)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on liblzma5 (>= 5.1.1alpha+20120614)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libselinux1 (>= 1.32)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on zlib1g (>= 1:1.1.4)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on tar (>= 1.23)
+
+dpkg: warning: ignoring pre-dependency problem!
+(Reading database ... 115 files and directories currently installed.)
+Preparing to replace dpkg 1.16.15 (using .../dpkg_1.16.15_armhf.deb) ...
+Unpacking replacement dpkg ...
+dpkg: dpkg: dependency problems, but configuring anyway as you requested:
+ dpkg depends on libbz2-1.0; however:
+  Package libbz2-1.0 is not installed.
+ dpkg depends on libc6 (>= 2.13-28); however:
+  Package libc6 is not installed.
+ dpkg depends on libgcc1 (>= 1:4.4.0); however:
+  Package libgcc1 is not installed.
+ dpkg depends on liblzma5 (>= 5.1.1alpha+20120614); however:
+  Package liblzma5 is not installed.
+ dpkg depends on libselinux1 (>= 1.32); however:
+  Package libselinux1 is not installed.
+ dpkg depends on zlib1g (>= 1:1.1.4); however:
+  Package zlib1g is not installed.
+ dpkg depends on tar (>= 1.23); however:
+  Package tar is not installed.
+
+Setting up dpkg (1.16.15) ...
+Selecting previously unselected package libc6:armhf.
+(Reading database ... 385 files and directories currently installed.)
+Unpacking libc6:armhf (from .../libc6_2.13-38+deb7u2_armhf.deb) ...
+dpkg: libc6:armhf: dependency problems, but configuring anyway as you requested:
+ libc6:armhf depends on libc-bin (= 2.13-38+deb7u2); however:
+  Package libc-bin is not installed.
+ libc6:armhf depends on libgcc1; however:
+  Package libgcc1 is not installed.
+
+Setting up libc6:armhf (2.13-38+deb7u2) ...
+Selecting previously unselected package perl-base.
+dpkg: regarding .../perl-base_5.14.2-21+deb7u1_armhf.deb containing perl-base, pre-dependency problem:
+ perl-base pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+(Reading database ... 696 files and directories currently installed.)
+Unpacking perl-base (from .../perl-base_5.14.2-21+deb7u1_armhf.deb) ...
+dpkg: perl-base: dependency problems, but configuring anyway as you requested:
+ perl-base depends on libgcc1 (>= 1:4.4.0); however:
+  Package libgcc1 is not installed.
+
+Setting up perl-base (5.14.2-21+deb7u1) ...
+Selecting previously unselected package mawk.
+(Reading database ... 1766 files and directories currently installed.)
+Unpacking mawk (from .../mawk_1.3.3-17_armhf.deb) ...
+Setting up mawk (1.3.3-17) ...
+Selecting previously unselected package debconf.
+(Reading database ... 1785 files and directories currently installed.)
+Unpacking debconf (from .../debconf_1.5.49_all.deb) ...
+Setting up debconf (1.5.49) ...
+Selecting previously unselected package libacl1:armhf.
+dpkg: regarding .../libacl1_2.2.51-8_armhf.deb containing libacl1:armhf, pre-dependency problem:
+ libacl1 pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+(Reading database ... 1968 files and directories currently installed.)
+Unpacking libacl1:armhf (from .../libacl1_2.2.51-8_armhf.deb) ...
+Selecting previously unselected package libattr1:armhf.
+dpkg: regarding .../libattr1_1%3a2.4.46-8_armhf.deb containing libattr1:armhf, pre-dependency problem:
+ libattr1 pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libattr1:armhf (from .../libattr1_1%3a2.4.46-8_armhf.deb) ...
+Preparing to replace base-files 7.1wheezy6 (using .../base-files_7.1wheezy6_armhf.deb) ...
+Unpacking replacement base-files ...
+Preparing to replace base-passwd 3.5.26 (using .../base-passwd_3.5.26_armhf.deb) ...
+Unpacking replacement base-passwd ...
+Selecting previously unselected package bash.
+dpkg: regarding .../bash_4.2+dfsg-0.1_armhf.deb containing bash, pre-dependency problem:
+ bash pre-depends on dash (>= 0.5.5.1-2.2)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../bash_4.2+dfsg-0.1_armhf.deb containing bash, pre-dependency problem:
+ bash pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../bash_4.2+dfsg-0.1_armhf.deb containing bash, pre-dependency problem:
+ bash pre-depends on libtinfo5
+  libtinfo5 is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking bash (from .../bash_4.2+dfsg-0.1_armhf.deb) ...
+Selecting previously unselected package libbz2-1.0:armhf.
+dpkg: regarding .../libbz2-1.0_1.0.6-4_armhf.deb containing libbz2-1.0:armhf, pre-dependency problem:
+ libbz2-1.0 pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libbz2-1.0:armhf (from .../libbz2-1.0_1.0.6-4_armhf.deb) ...
+Selecting previously unselected package coreutils.
+dpkg: regarding .../coreutils_8.13-3.5_armhf.deb containing coreutils, pre-dependency problem:
+ coreutils pre-depends on libacl1 (>= 2.2.51-8)
+  libacl1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../coreutils_8.13-3.5_armhf.deb containing coreutils, pre-dependency problem:
+ coreutils pre-depends on libattr1 (>= 1:2.4.46-8)
+  libattr1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../coreutils_8.13-3.5_armhf.deb containing coreutils, pre-dependency problem:
+ coreutils pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../coreutils_8.13-3.5_armhf.deb containing coreutils, pre-dependency problem:
+ coreutils pre-depends on libselinux1 (>= 1.32)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking coreutils (from .../coreutils_8.13-3.5_armhf.deb) ...
+Selecting previously unselected package dash.
+Unpacking dash (from .../dash_0.5.7-3_armhf.deb) ...
+Adding 'diversion of /bin/sh to /bin/sh.distrib by dash'
+Adding 'diversion of /usr/share/man/man1/sh.1.gz to /usr/share/man/man1/sh.distrib.1.gz by dash'
+Selecting previously unselected package libdb5.1:armhf.
+dpkg: regarding .../libdb5.1_5.1.29-5_armhf.deb containing libdb5.1:armhf, pre-dependency problem:
+ libdb5.1 pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libdb5.1:armhf (from .../libdb5.1_5.1.29-5_armhf.deb) ...
+Preparing to replace debconf 1.5.49 (using .../debconf_1.5.49_all.deb) ...
+Unpacking replacement debconf ...
+Selecting previously unselected package debconf-i18n.
+Unpacking debconf-i18n (from .../debconf-i18n_1.5.49_all.deb) ...
+Selecting previously unselected package debianutils.
+Unpacking debianutils (from .../debianutils_4.3.2_armhf.deb) ...
+Selecting previously unselected package diffutils.
+dpkg: regarding .../diffutils_1%3a3.2-6_armhf.deb containing diffutils, pre-dependency problem:
+ diffutils pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking diffutils (from .../diffutils_1%3a3.2-6_armhf.deb) ...
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libbz2-1.0
+  libbz2-1.0:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on liblzma5 (>= 5.1.1alpha+20120614)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on libselinux1 (>= 1.32)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on zlib1g (>= 1:1.1.4)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../dpkg_1.16.15_armhf.deb containing dpkg, pre-dependency problem:
+ dpkg pre-depends on tar (>= 1.23)
+
+dpkg: warning: ignoring pre-dependency problem!
+Preparing to replace dpkg 1.16.15 (using .../dpkg_1.16.15_armhf.deb) ...
+Unpacking replacement dpkg ...
+Selecting previously unselected package e2fslibs:armhf.
+dpkg: regarding .../e2fslibs_1.42.5-1.1_armhf.deb containing e2fslibs:armhf, pre-dependency problem:
+ e2fslibs pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking e2fslibs:armhf (from .../e2fslibs_1.42.5-1.1_armhf.deb) ...
+Selecting previously unselected package e2fsprogs.
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on e2fslibs (= 1.42.5-1.1)
+  e2fslibs:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on libblkid1 (>= 2.17.2)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on libcomerr2 (>= 1.42~WIP-2011-10-05-1)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on libss2 (>= 1.34-1)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on libuuid1 (>= 2.16)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../e2fsprogs_1.42.5-1.1_armhf.deb containing e2fsprogs, pre-dependency problem:
+ e2fsprogs pre-depends on util-linux (>= 2.15~rc1-1)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking e2fsprogs (from .../e2fsprogs_1.42.5-1.1_armhf.deb) ...
+Selecting previously unselected package libcomerr2:armhf.
+dpkg: regarding .../libcomerr2_1.42.5-1.1_armhf.deb containing libcomerr2:armhf, pre-dependency problem:
+ libcomerr2 pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libcomerr2:armhf (from .../libcomerr2_1.42.5-1.1_armhf.deb) ...
+Selecting previously unselected package libss2:armhf.
+dpkg: regarding .../libss2_1.42.5-1.1_armhf.deb containing libss2:armhf, pre-dependency problem:
+ libss2 pre-depends on multiarch-support
+  multiarch-support is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libss2:armhf (from .../libss2_1.42.5-1.1_armhf.deb) ...
+Selecting previously unselected package libc-bin.
+Unpacking libc-bin (from .../libc-bin_2.13-38+deb7u2_armhf.deb) ...
+Preparing to replace libc6:armhf 2.13-38+deb7u2 (using .../libc6_2.13-38+deb7u2_armhf.deb) ...
+Unpacking replacement libc6:armhf ...
+Selecting previously unselected package multiarch-support.
+Unpacking multiarch-support (from .../multiarch-support_2.13-38+deb7u2_armhf.deb) ...
+Selecting previously unselected package findutils.
+dpkg: regarding .../findutils_4.4.2-4_armhf.deb containing findutils, pre-dependency problem:
+ findutils pre-depends on libgcc1 (>= 1:4.4.0)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking findutils (from .../findutils_4.4.2-4_armhf.deb) ...
+Selecting previously unselected package gcc-4.7-base:armhf.
+Unpacking gcc-4.7-base:armhf (from .../gcc-4.7-base_4.7.2-5_armhf.deb) ...
+Selecting previously unselected package libgcc1:armhf.
+dpkg: regarding .../libgcc1_1%3a4.7.2-5_armhf.deb containing libgcc1:armhf, pre-dependency problem:
+ libgcc1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libgcc1:armhf (from .../libgcc1_1%3a4.7.2-5_armhf.deb) ...
+Selecting previously unselected package grep.
+dpkg: regarding .../archives/grep_2.12-2_armhf.deb containing grep, pre-dependency problem:
+ grep pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking grep (from .../archives/grep_2.12-2_armhf.deb) ...
+Selecting previously unselected package gzip.
+dpkg: regarding .../gzip_1.5-1.1_armhf.deb containing gzip, pre-dependency problem:
+ gzip pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking gzip (from .../gzip_1.5-1.1_armhf.deb) ...
+Selecting previously unselected package hostname.
+Unpacking hostname (from .../hostname_3.11_armhf.deb) ...
+Selecting previously unselected package insserv.
+Unpacking insserv (from .../insserv_1.14.0-5_armhf.deb) ...
+Selecting previously unselected package liblocale-gettext-perl.
+Unpacking liblocale-gettext-perl (from .../liblocale-gettext-perl_1.05-7+b3_armhf.deb) ...
+Selecting previously unselected package libselinux1:armhf.
+dpkg: regarding .../libselinux1_2.1.9-5_armhf.deb containing libselinux1:armhf, pre-dependency problem:
+ libselinux1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libselinux1:armhf (from .../libselinux1_2.1.9-5_armhf.deb) ...
+Selecting previously unselected package libsemanage-common.
+Unpacking libsemanage-common (from .../libsemanage-common_2.1.6-6_all.deb) ...
+Selecting previously unselected package libsemanage1:armhf.
+dpkg: regarding .../libsemanage1_2.1.6-6_armhf.deb containing libsemanage1:armhf, pre-dependency problem:
+ libsemanage1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libsemanage1:armhf (from .../libsemanage1_2.1.6-6_armhf.deb) ...
+Selecting previously unselected package libsepol1:armhf.
+dpkg: regarding .../libsepol1_2.1.4-3_armhf.deb containing libsepol1:armhf, pre-dependency problem:
+ libsepol1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libsepol1:armhf (from .../libsepol1_2.1.4-3_armhf.deb) ...
+Selecting previously unselected package libtext-charwidth-perl.
+Unpacking libtext-charwidth-perl (from .../libtext-charwidth-perl_0.04-7+b2_armhf.deb) ...
+Selecting previously unselected package libtext-iconv-perl.
+Unpacking libtext-iconv-perl (from .../libtext-iconv-perl_1.7-5_armhf.deb) ...
+Selecting previously unselected package libtext-wrapi18n-perl.
+Unpacking libtext-wrapi18n-perl (from .../libtext-wrapi18n-perl_0.06-7_all.deb) ...
+Selecting previously unselected package lsb-base.
+Unpacking lsb-base (from .../lsb-base_4.1+Debian8+deb7u1_all.deb) ...
+Preparing to replace mawk 1.3.3-17 (using .../mawk_1.3.3-17_armhf.deb) ...
+Unpacking replacement mawk ...
+Selecting previously unselected package libncurses5:armhf.
+dpkg: regarding .../libncurses5_5.9-10_armhf.deb containing libncurses5:armhf, pre-dependency problem:
+ libncurses5 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../libncurses5_5.9-10_armhf.deb containing libncurses5:armhf, pre-dependency problem:
+ libncurses5 pre-depends on libtinfo5 (>= 5.9-3)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libncurses5:armhf (from .../libncurses5_5.9-10_armhf.deb) ...
+Selecting previously unselected package libtinfo5:armhf.
+dpkg: regarding .../libtinfo5_5.9-10_armhf.deb containing libtinfo5:armhf, pre-dependency problem:
+ libtinfo5 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libtinfo5:armhf (from .../libtinfo5_5.9-10_armhf.deb) ...
+Selecting previously unselected package ncurses-base.
+Unpacking ncurses-base (from .../ncurses-base_5.9-10_all.deb) ...
+Selecting previously unselected package ncurses-bin.
+dpkg: regarding .../ncurses-bin_5.9-10_armhf.deb containing ncurses-bin, pre-dependency problem:
+ ncurses-bin pre-depends on libtinfo5 (>= 5.9-3~)
+  libtinfo5:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking ncurses-bin (from .../ncurses-bin_5.9-10_armhf.deb) ...
+Selecting previously unselected package libpam-modules:armhf.
+dpkg: regarding .../libpam-modules_1.1.3-7.1_armhf.deb containing libpam-modules:armhf, pre-dependency problem:
+ libpam-modules pre-depends on libdb5.1
+  libdb5.1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../libpam-modules_1.1.3-7.1_armhf.deb containing libpam-modules:armhf, pre-dependency problem:
+ libpam-modules pre-depends on libpam0g (>= 1.1.3-2)
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../libpam-modules_1.1.3-7.1_armhf.deb containing libpam-modules:armhf, pre-dependency problem:
+ libpam-modules pre-depends on libselinux1 (>= 2.0.85)
+  libselinux1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../libpam-modules_1.1.3-7.1_armhf.deb containing libpam-modules:armhf, pre-dependency problem:
+ libpam-modules pre-depends on libpam-modules-bin (= 1.1.3-7.1)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libpam-modules:armhf (from .../libpam-modules_1.1.3-7.1_armhf.deb) ...
+Selecting previously unselected package libpam-modules-bin.
+Unpacking libpam-modules-bin (from .../libpam-modules-bin_1.1.3-7.1_armhf.deb) ...
+Selecting previously unselected package libpam-runtime.
+Unpacking libpam-runtime (from .../libpam-runtime_1.1.3-7.1_all.deb) ...
+Selecting previously unselected package libpam0g:armhf.
+dpkg: regarding .../libpam0g_1.1.3-7.1_armhf.deb containing libpam0g:armhf, pre-dependency problem:
+ libpam0g pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libpam0g:armhf (from .../libpam0g_1.1.3-7.1_armhf.deb) ...
+dpkg: regarding .../perl-base_5.14.2-21+deb7u1_armhf.deb containing perl-base, pre-dependency problem:
+ perl-base pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Preparing to replace perl-base 5.14.2-21+deb7u1 (using .../perl-base_5.14.2-21+deb7u1_armhf.deb) ...
+Unpacking replacement perl-base ...
+Selecting previously unselected package sed.
+dpkg: regarding .../sed_4.2.1-10_armhf.deb containing sed, pre-dependency problem:
+ sed pre-depends on libselinux1 (>= 1.32)
+  libselinux1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking sed (from .../sed_4.2.1-10_armhf.deb) ...
+Selecting previously unselected package sensible-utils.
+Unpacking sensible-utils (from .../sensible-utils_0.0.7_all.deb) ...
+Selecting previously unselected package login.
+dpkg: regarding .../login_1%3a4.1.5.1-1_armhf.deb containing login, pre-dependency problem:
+ login pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../login_1%3a4.1.5.1-1_armhf.deb containing login, pre-dependency problem:
+ login pre-depends on libpam0g (>= 0.99.7.1)
+  libpam0g:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../login_1%3a4.1.5.1-1_armhf.deb containing login, pre-dependency problem:
+ login pre-depends on libpam-runtime
+  libpam-runtime is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../login_1%3a4.1.5.1-1_armhf.deb containing login, pre-dependency problem:
+ login pre-depends on libpam-modules
+  libpam-modules:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking login (from .../login_1%3a4.1.5.1-1_armhf.deb) ...
+Selecting previously unselected package passwd.
+Unpacking passwd (from .../passwd_1%3a4.1.5.1-1_armhf.deb) ...
+Selecting previously unselected package libslang2:armhf.
+dpkg: regarding .../libslang2_2.2.4-15_armhf.deb containing libslang2:armhf, pre-dependency problem:
+ libslang2 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libslang2:armhf (from .../libslang2_2.2.4-15_armhf.deb) ...
+Selecting previously unselected package initscripts.
+Unpacking initscripts (from .../initscripts_2.88dsf-41+deb7u1_armhf.deb) ...
+Selecting previously unselected package sysv-rc.
+Unpacking sysv-rc (from .../sysv-rc_2.88dsf-41+deb7u1_all.deb) ...
+Selecting previously unselected package sysvinit.
+dpkg: regarding .../sysvinit_2.88dsf-41+deb7u1_armhf.deb containing sysvinit, pre-dependency problem:
+ sysvinit pre-depends on initscripts (>= 2.88dsf-13.3)
+  initscripts is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../sysvinit_2.88dsf-41+deb7u1_armhf.deb containing sysvinit, pre-dependency problem:
+ sysvinit pre-depends on sysv-rc | file-rc
+  sysv-rc is unpacked, but has never been configured.
+  file-rc is not installed.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../sysvinit_2.88dsf-41+deb7u1_armhf.deb containing sysvinit, pre-dependency problem:
+ sysvinit pre-depends on sysvinit-utils (>= 2.86.ds1-66)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking sysvinit (from .../sysvinit_2.88dsf-41+deb7u1_armhf.deb) ...
+Selecting previously unselected package sysvinit-utils.
+Unpacking sysvinit-utils (from .../sysvinit-utils_2.88dsf-41+deb7u1_armhf.deb) ...
+Selecting previously unselected package tar.
+dpkg: regarding .../tar_1.26+dfsg-0.1_armhf.deb containing tar, pre-dependency problem:
+ tar pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking tar (from .../tar_1.26+dfsg-0.1_armhf.deb) ...
+Selecting previously unselected package tzdata.
+Unpacking tzdata (from .../tzdata_2014e-0wheezy1_all.deb) ...
+Selecting previously unselected package libustr-1.0-1:armhf.
+dpkg: regarding .../libustr-1.0-1_1.0.4-3_armhf.deb containing libustr-1.0-1:armhf, pre-dependency problem:
+ libustr-1.0-1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libustr-1.0-1:armhf (from .../libustr-1.0-1_1.0.4-3_armhf.deb) ...
+Selecting previously unselected package bsdutils.
+Unpacking bsdutils (from .../bsdutils_1%3a2.20.1-5.3_armhf.deb) ...
+Selecting previously unselected package libblkid1:armhf.
+dpkg: regarding .../libblkid1_2.20.1-5.3_armhf.deb containing libblkid1:armhf, pre-dependency problem:
+ libblkid1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libblkid1:armhf (from .../libblkid1_2.20.1-5.3_armhf.deb) ...
+Selecting previously unselected package libmount1.
+dpkg: regarding .../libmount1_2.20.1-5.3_armhf.deb containing libmount1, pre-dependency problem:
+ libmount1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libmount1 (from .../libmount1_2.20.1-5.3_armhf.deb) ...
+Selecting previously unselected package libuuid1:armhf.
+dpkg: regarding .../libuuid1_2.20.1-5.3_armhf.deb containing libuuid1:armhf, pre-dependency problem:
+ libuuid1 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking libuuid1:armhf (from .../libuuid1_2.20.1-5.3_armhf.deb) ...
+Selecting previously unselected package mount.
+dpkg: regarding .../mount_2.20.1-5.3_armhf.deb containing mount, pre-dependency problem:
+ mount pre-depends on libblkid1 (>= 2.20.1)
+  libblkid1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../mount_2.20.1-5.3_armhf.deb containing mount, pre-dependency problem:
+ mount pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../mount_2.20.1-5.3_armhf.deb containing mount, pre-dependency problem:
+ mount pre-depends on libmount1 (>= 2.20.1)
+  libmount1 is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../mount_2.20.1-5.3_armhf.deb containing mount, pre-dependency problem:
+ mount pre-depends on libselinux1 (>= 2.0.15)
+  libselinux1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../mount_2.20.1-5.3_armhf.deb containing mount, pre-dependency problem:
+ mount pre-depends on libsepol1 (>= 1.14)
+  libsepol1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking mount (from .../mount_2.20.1-5.3_armhf.deb) ...
+Selecting previously unselected package util-linux.
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libblkid1 (>= 2.20.1)
+  libblkid1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libgcc1 (>= 1:4.4.0)
+  libgcc1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libncurses5 (>= 5.5-5~)
+  libncurses5:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libselinux1 (>= 1.32)
+  libselinux1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libslang2 (>= 2.2.4)
+  libslang2:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libtinfo5
+  libtinfo5:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on libuuid1 (>= 2.16)
+  libuuid1:armhf is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+dpkg: regarding .../util-linux_2.20.1-5.3_armhf.deb containing util-linux, pre-dependency problem:
+ util-linux pre-depends on zlib1g (>= 1:1.1.4)
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking util-linux (from .../util-linux_2.20.1-5.3_armhf.deb) ...
+Selecting previously unselected package liblzma5:armhf.
+dpkg: regarding .../liblzma5_5.1.1alpha+20120614-2_armhf.deb containing liblzma5:armhf, pre-dependency problem:
+ liblzma5 pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking liblzma5:armhf (from .../liblzma5_5.1.1alpha+20120614-2_armhf.deb) ...
+Selecting previously unselected package xz-utils.
+Unpacking xz-utils (from .../xz-utils_5.1.1alpha+20120614-2_armhf.deb) ...
+Selecting previously unselected package zlib1g:armhf.
+dpkg: regarding .../zlib1g_1%3a1.2.7.dfsg-13_armhf.deb containing zlib1g:armhf, pre-dependency problem:
+ zlib1g pre-depends on multiarch-support
+  multiarch-support is unpacked, but has never been configured.
+
+dpkg: warning: ignoring pre-dependency problem!
+Unpacking zlib1g:armhf (from .../zlib1g_1%3a1.2.7.dfsg-13_armhf.deb) ...
+Setting up lsb-base (4.1+Debian8+deb7u1) ...
+Setting up ncurses-base (5.9-10) ...
+Setting up sensible-utils (0.0.7) ...
+Setting up libsemanage-common (2.1.6-6) ...
+Setting up gcc-4.7-base:armhf (4.7.2-5) ...
+Setting up libc-bin (2.13-38+deb7u2) ...
+Setting up libc6:armhf (2.13-38+deb7u2) ...
+Setting up debianutils (4.3.2) ...
+Setting up base-passwd (3.5.26) ...
+Setting up mawk (1.3.3-17) ...
+Setting up hostname (3.11) ...
+Setting up insserv (1.14.0-5) ...
+Setting up multiarch-support (2.13-38+deb7u2) ...
+Setting up libselinux1:armhf (2.1.9-5) ...
+Setting up libsepol1:armhf (2.1.4-3) ...
+Setting up libgcc1:armhf (1:4.7.2-5) ...
+Setting up base-files (7.1wheezy6) ...
+Setting up libattr1:armhf (1:2.4.46-8) ...
+Setting up e2fslibs:armhf (1.42.5-1.1) ...
+Setting up libcomerr2:armhf (1.42.5-1.1) ...
+Setting up libacl1:armhf (2.2.51-8) ...
+Setting up libslang2:armhf (2.2.4-15) ...
+Setting up libss2:armhf (1.42.5-1.1) ...
+Setting up liblzma5:armhf (5.1.1alpha+20120614-2) ...
+Setting up libdb5.1:armhf (5.1.29-5) ...
+Setting up libbz2-1.0:armhf (1.0.6-4) ...
+Setting up libtinfo5:armhf (5.9-10) ...
+Setting up sysvinit-utils (2.88dsf-41+deb7u1) ...
+Setting up libustr-1.0-1:armhf (1.0.4-3) ...
+Setting up bsdutils (1:2.20.1-5.3) ...
+Setting up ncurses-bin (5.9-10) ...
+Setting up libsemanage1:armhf (2.1.6-6) ...
+Setting up tar (1.26+dfsg-0.1) ...
+update-alternatives: using /usr/sbin/rmt-tar to provide /usr/sbin/rmt (rmt) in auto mode
+Setting up zlib1g:armhf (1:1.2.7.dfsg-13) ...
+Setting up libncurses5:armhf (5.9-10) ...
+Setting up xz-utils (5.1.1alpha+20120614-2) ...
+update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+Setting up dpkg (1.16.15) ...
+Setting up dash (0.5.7-3) ...
+Setting up coreutils (8.13-3.5) ...
+Setting up perl-base (5.14.2-21+deb7u1) ...
+Setting up diffutils (1:3.2-6) ...
+Setting up libtext-iconv-perl (1.7-5) ...
+Setting up sed (4.2.1-10) ...
+Setting up grep (2.12-2) ...
+Setting up findutils (4.4.2-4) ...
+Setting up gzip (1.5-1.1) ...
+Setting up liblocale-gettext-perl (1.05-7+b3) ...
+Setting up bash (4.2+dfsg-0.1) ...
+update-alternatives: using /usr/share/man/man7/bash-builtins.7.gz to provide /usr/share/man/man7/builtins.7.gz (builtins.7.gz) in auto mode
+Setting up libtext-charwidth-perl (0.04-7+b2) ...
+Setting up libtext-wrapi18n-perl (0.06-7) ...
+Setting up debconf (1.5.49) ...
+Setting up libpam0g:armhf (1.1.3-7.1) ...
+Setting up sysv-rc (2.88dsf-41+deb7u1) ...
+Setting up tzdata (2014e-0wheezy1) ...
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Fri Aug  1 20:16:03 UTC 2014.
+Universal Time is now:  Fri Aug  1 20:16:03 UTC 2014.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up debconf-i18n (1.5.49) ...
+Setting up initscripts (2.88dsf-41+deb7u1) ...
+guest environment detected: Linking /dev/shm to /run/shm
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libpam-modules-bin (1.1.3-7.1) ...
+Setting up libpam-modules:armhf (1.1.3-7.1) ...
+Setting up passwd (1:4.1.5.1-1) ...
+Shadow passwords are now on.
+Setting up libpam-runtime (1.1.3-7.1) ...
+Setting up sysvinit (2.88dsf-41+deb7u1) ...
+Not restarting sysvinit
+Setting up login (1:4.1.5.1-1) ...
+Setting up libuuid1:armhf (2.20.1-5.3) ...
+Setting up libblkid1:armhf (2.20.1-5.3) ...
+Setting up util-linux (2.20.1-5.3) ...
+update-alternatives: using /bin/more to provide /usr/bin/pager (pager) in auto mode
+Setting up libmount1 (2.20.1-5.3) ...
+Setting up mount (2.20.1-5.3) ...
+Setting up e2fsprogs (1.42.5-1.1) ...
+dpkg: warning: package not in database at line 69: adduser
+dpkg: warning: package not in database at line 69: apt
+dpkg: warning: package not in database at line 69: apt-utils
+dpkg: warning: package not in database at line 69: aptitude
+dpkg: warning: package not in database at line 69: aptitude-common
+dpkg: warning: package not in database at line 69: bsdmainutils
+dpkg: warning: package not in database at line 69: cpio
+dpkg: warning: package not in database at line 69: cron
+dpkg: warning: package not in database at line 69: debian-archive-keyring
+dpkg: warning: package not in database at line 69: gnupg
+dpkg: warning: package not in database at line 69: gpgv
+dpkg: warning: package not in database at line 69: groff-base
+dpkg: warning: package not in database at line 69: ifupdown
+dpkg: warning: package not in database at line 69: info
+dpkg: warning: package not in database at line 69: install-info
+dpkg: warning: package not in database at line 69: iproute
+dpkg: warning: package not in database at line 69: iptables
+dpkg: warning: package not in database at line 69: iputils-ping
+dpkg: warning: package not in database at line 69: isc-dhcp-client
+dpkg: warning: package not in database at line 69: isc-dhcp-common
+dpkg: warning: package not in database at line 69: kmod
+dpkg: warning: package not in database at line 69: libapt-inst1.5
+dpkg: warning: package not in database at line 69: libapt-pkg4.12
+dpkg: warning: package not in database at line 69: libboost-iostreams1.49.0
+dpkg: warning: package not in database at line 69: libcwidget3
+dpkg: warning: package not in database at line 69: libept1.4.12
+dpkg: warning: package not in database at line 69: libgcrypt11
+dpkg: warning: package not in database at line 69: libgdbm3
+dpkg: warning: package not in database at line 69: libgnutls26
+dpkg: warning: package not in database at line 69: libgpg-error0
+dpkg: warning: package not in database at line 69: libidn11
+dpkg: warning: package not in database at line 69: libkmod2
+dpkg: warning: package not in database at line 69: libncursesw5
+dpkg: warning: package not in database at line 69: libnewt0.52
+dpkg: warning: package not in database at line 69: libnfnetlink0
+dpkg: warning: package not in database at line 69: libp11-kit0
+dpkg: warning: package not in database at line 69: libpipeline1
+dpkg: warning: package not in database at line 69: libpopt0
+dpkg: warning: package not in database at line 69: libprocps0
+dpkg: warning: package not in database at line 69: libreadline6
+dpkg: warning: package not in database at line 69: libsigc++-2.0-0c2a
+dpkg: warning: package not in database at line 69: libsqlite3-0
+dpkg: warning: package not in database at line 69: libssl1.0.0
+dpkg: warning: package not in database at line 69: libstdc++6
+dpkg: warning: package not in database at line 69: libtasn1-3
+dpkg: warning: package not in database at line 69: libudev0
+dpkg: warning: package not in database at line 69: libusb-0.1-4
+dpkg: warning: package not in database at line 69: libxapian22
+dpkg: warning: package not in database at line 69: logrotate
+dpkg: warning: package not in database at line 69: man-db
+dpkg: warning: package not in database at line 69: manpages
+dpkg: warning: package not in database at line 69: nano
+dpkg: warning: package not in database at line 69: net-tools
+dpkg: warning: package not in database at line 69: netbase
+dpkg: warning: package not in database at line 69: netcat-traditional
+dpkg: warning: package not in database at line 69: procps
+dpkg: warning: package not in database at line 69: readline-common
+dpkg: warning: package not in database at line 69: rsyslog
+dpkg: warning: package not in database at line 69: tasksel
+dpkg: warning: package not in database at line 69: tasksel-data
+dpkg: warning: package not in database at line 69: traceroute
+dpkg: warning: package not in database at line 69: udev
+dpkg: warning: package not in database at line 69: vim-common
+dpkg: warning: package not in database at line 69: vim-tiny
+dpkg: warning: package not in database at line 69: wget
+dpkg: warning: package not in database at line 69: whiptail
+dpkg: warning: found unknown packages; this might mean the available database
+is outdated, and needs to be updated through a frontend method
+Selecting previously unselected package adduser.
+(Reading database ... 6259 files and directories currently installed.)
+Unpacking adduser (from .../adduser_3.113+nmu3_all.deb) ...
+Selecting previously unselected package apt.
+Unpacking apt (from .../apt_0.9.7.9+deb7u2_armhf.deb) ...
+Selecting previously unselected package apt-utils.
+Unpacking apt-utils (from .../apt-utils_0.9.7.9+deb7u2_armhf.deb) ...
+Selecting previously unselected package libapt-inst1.5:armhf.
+Unpacking libapt-inst1.5:armhf (from .../libapt-inst1.5_0.9.7.9+deb7u2_armhf.deb) ...
+Selecting previously unselected package libapt-pkg4.12:armhf.
+Unpacking libapt-pkg4.12:armhf (from .../libapt-pkg4.12_0.9.7.9+deb7u2_armhf.deb) ...
+Selecting previously unselected package aptitude.
+Unpacking aptitude (from .../aptitude_0.6.8.2-1_armhf.deb) ...
+Selecting previously unselected package aptitude-common.
+Unpacking aptitude-common (from .../aptitude-common_0.6.8.2-1_all.deb) ...
+Selecting previously unselected package libboost-iostreams1.49.0.
+Unpacking libboost-iostreams1.49.0 (from .../libboost-iostreams1.49.0_1.49.0-3.2_armhf.deb) ...
+Selecting previously unselected package bsdmainutils.
+Unpacking bsdmainutils (from .../bsdmainutils_9.0.3_armhf.deb) ...
+Selecting previously unselected package cpio.
+Unpacking cpio (from .../cpio_2.11+dfsg-0.1_armhf.deb) ...
+Selecting previously unselected package cron.
+Unpacking cron (from .../cron_3.0pl1-124_armhf.deb) ...
+Selecting previously unselected package libcwidget3.
+Unpacking libcwidget3 (from .../libcwidget3_0.5.16-3.4_armhf.deb) ...
+Selecting previously unselected package debian-archive-keyring.
+Unpacking debian-archive-keyring (from .../debian-archive-keyring_2012.4_all.deb) ...
+Selecting previously unselected package libstdc++6:armhf.
+Unpacking libstdc++6:armhf (from .../libstdc++6_4.7.2-5_armhf.deb) ...
+Selecting previously unselected package libgdbm3:armhf.
+Unpacking libgdbm3:armhf (from .../libgdbm3_1.8.3-11_armhf.deb) ...
+Selecting previously unselected package gnupg.
+Unpacking gnupg (from .../gnupg_1.4.12-7+deb7u4_armhf.deb) ...
+Selecting previously unselected package gpgv.
+Unpacking gpgv (from .../gpgv_1.4.12-7+deb7u4_armhf.deb) ...
+Selecting previously unselected package libgnutls26:armhf.
+Unpacking libgnutls26:armhf (from .../libgnutls26_2.12.20-8+deb7u2_armhf.deb) ...
+Selecting previously unselected package groff-base.
+Unpacking groff-base (from .../groff-base_1.21-9_armhf.deb) ...
+Selecting previously unselected package ifupdown.
+Unpacking ifupdown (from .../ifupdown_0.7.8_armhf.deb) ...
+Selecting previously unselected package iproute.
+Unpacking iproute (from .../iproute_20120521-3+b3_armhf.deb) ...
+Selecting previously unselected package iptables.
+Unpacking iptables (from .../iptables_1.4.14-3.1_armhf.deb) ...
+Selecting previously unselected package iputils-ping.
+Unpacking iputils-ping (from .../iputils-ping_3%3a20101006-1+b2_armhf.deb) ...
+Selecting previously unselected package isc-dhcp-client.
+Unpacking isc-dhcp-client (from .../isc-dhcp-client_4.2.2.dfsg.1-5+deb70u6_armhf.deb) ...
+Selecting previously unselected package isc-dhcp-common.
+Unpacking isc-dhcp-common (from .../isc-dhcp-common_4.2.2.dfsg.1-5+deb70u6_armhf.deb) ...
+Selecting previously unselected package kmod.
+Unpacking kmod (from .../archives/kmod_9-3_armhf.deb) ...
+Selecting previously unselected package libkmod2:armhf.
+Unpacking libkmod2:armhf (from .../libkmod2_9-3_armhf.deb) ...
+Selecting previously unselected package libept1.4.12.
+Unpacking libept1.4.12 (from .../libept1.4.12_1.0.9_armhf.deb) ...
+Selecting previously unselected package libgcrypt11:armhf.
+Unpacking libgcrypt11:armhf (from .../libgcrypt11_1.5.0-5+deb7u1_armhf.deb) ...
+Selecting previously unselected package libgpg-error0:armhf.
+Unpacking libgpg-error0:armhf (from .../libgpg-error0_1.10-3.1_armhf.deb) ...
+Selecting previously unselected package libidn11:armhf.
+Unpacking libidn11:armhf (from .../libidn11_1.25-2_armhf.deb) ...
+Selecting previously unselected package libnfnetlink0.
+Unpacking libnfnetlink0 (from .../libnfnetlink0_1.0.0-1.1_armhf.deb) ...
+Selecting previously unselected package libpipeline1:armhf.
+Unpacking libpipeline1:armhf (from .../libpipeline1_1.2.1-1_armhf.deb) ...
+Selecting previously unselected package libsigc++-2.0-0c2a:armhf.
+Unpacking libsigc++-2.0-0c2a:armhf (from .../libsigc++-2.0-0c2a_2.2.10-0.2_armhf.deb) ...
+Selecting previously unselected package libtasn1-3:armhf.
+Unpacking libtasn1-3:armhf (from .../libtasn1-3_2.13-2_armhf.deb) ...
+Selecting previously unselected package libusb-0.1-4:armhf.
+Unpacking libusb-0.1-4:armhf (from .../libusb-0.1-4_2%3a0.1.12-20+nmu1_armhf.deb) ...
+Selecting previously unselected package logrotate.
+Unpacking logrotate (from .../logrotate_3.8.1-4_armhf.deb) ...
+Selecting previously unselected package man-db.
+Unpacking man-db (from .../man-db_2.6.2-1_armhf.deb) ...
+Selecting previously unselected package manpages.
+Unpacking manpages (from .../manpages_3.44-1_all.deb) ...
+Selecting previously unselected package nano.
+Unpacking nano (from .../nano_2.2.6-1+b2_armhf.deb) ...
+Selecting previously unselected package libncursesw5:armhf.
+Unpacking libncursesw5:armhf (from .../libncursesw5_5.9-10_armhf.deb) ...
+Selecting previously unselected package net-tools.
+Unpacking net-tools (from .../net-tools_1.60-24.2_armhf.deb) ...
+Selecting previously unselected package netbase.
+Unpacking netbase (from .../archives/netbase_5.0_all.deb) ...
+Selecting previously unselected package netcat-traditional.
+Unpacking netcat-traditional (from .../netcat-traditional_1.10-40_armhf.deb) ...
+Selecting previously unselected package libnewt0.52.
+Unpacking libnewt0.52 (from .../libnewt0.52_0.52.14-11.1_armhf.deb) ...
+Selecting previously unselected package whiptail.
+Unpacking whiptail (from .../whiptail_0.52.14-11.1_armhf.deb) ...
+Selecting previously unselected package libssl1.0.0:armhf.
+Unpacking libssl1.0.0:armhf (from .../libssl1.0.0_1.0.1e-2+deb7u11_armhf.deb) ...
+Selecting previously unselected package libp11-kit0:armhf.
+Unpacking libp11-kit0:armhf (from .../libp11-kit0_0.12-3_armhf.deb) ...
+Selecting previously unselected package libpopt0:armhf.
+Unpacking libpopt0:armhf (from .../libpopt0_1.16-7_armhf.deb) ...
+Selecting previously unselected package libprocps0:armhf.
+Unpacking libprocps0:armhf (from .../libprocps0_1%3a3.3.3-3_armhf.deb) ...
+Selecting previously unselected package procps.
+Unpacking procps (from .../procps_1%3a3.3.3-3_armhf.deb) ...
+Selecting previously unselected package libreadline6:armhf.
+Unpacking libreadline6:armhf (from .../libreadline6_6.2+dfsg-0.1_armhf.deb) ...
+Selecting previously unselected package readline-common.
+Unpacking readline-common (from .../readline-common_6.2+dfsg-0.1_all.deb) ...
+Selecting previously unselected package rsyslog.
+Unpacking rsyslog (from .../rsyslog_5.8.11-3_armhf.deb) ...
+Selecting previously unselected package libsqlite3-0:armhf.
+Unpacking libsqlite3-0:armhf (from .../libsqlite3-0_3.7.13-1+deb7u1_armhf.deb) ...
+Selecting previously unselected package tasksel.
+Unpacking tasksel (from .../tasksel_3.14.1_all.deb) ...
+Selecting previously unselected package tasksel-data.
+Unpacking tasksel-data (from .../tasksel-data_3.14.1_all.deb) ...
+Selecting previously unselected package info.
+Unpacking info (from .../info_4.13a.dfsg.1-10_armhf.deb) ...
+Selecting previously unselected package install-info.
+Unpacking install-info (from .../install-info_4.13a.dfsg.1-10_armhf.deb) ...
+Selecting previously unselected package traceroute.
+Unpacking traceroute (from .../traceroute_1%3a2.0.18-3_armhf.deb) ...
+Selecting previously unselected package libudev0:armhf.
+Unpacking libudev0:armhf (from .../libudev0_175-7.2_armhf.deb) ...
+Selecting previously unselected package udev.
+Unpacking udev (from .../udev_175-7.2_armhf.deb) ...
+Selecting previously unselected package vim-common.
+Unpacking vim-common (from .../vim-common_2%3a7.3.547-7_armhf.deb) ...
+Selecting previously unselected package vim-tiny.
+Unpacking vim-tiny (from .../vim-tiny_2%3a7.3.547-7_armhf.deb) ...
+Selecting previously unselected package wget.
+Unpacking wget (from .../wget_1.13.4-3+deb7u1_armhf.deb) ...
+Selecting previously unselected package libxapian22.
+Unpacking libxapian22 (from .../libxapian22_1.2.12-2_armhf.deb) ...
+Setting up gpgv (1.4.12-7+deb7u4) ...
+Setting up libssl1.0.0:armhf (1.0.1e-2+deb7u11) ...
+Setting up libgdbm3:armhf (1.8.3-11) ...
+Setting up isc-dhcp-common (4.2.2.dfsg.1-5+deb70u6) ...
+Setting up libtasn1-3:armhf (2.13-2) ...
+Setting up libpopt0:armhf (1.16-7) ...
+Setting up libusb-0.1-4:armhf (2:0.1.12-20+nmu1) ...
+Setting up libgpg-error0:armhf (1.10-3.1) ...
+Setting up install-info (4.13a.dfsg.1-10) ...
+Setting up vim-common (2:7.3.547-7) ...
+Setting up libprocps0:armhf (1:3.3.3-3) ...
+Setting up netbase (5.0) ...
+Setting up libudev0:armhf (175-7.2) ...
+Setting up libkmod2:armhf (9-3) ...
+Setting up adduser (3.113+nmu3) ...
+Setting up traceroute (1:2.0.18-3) ...
+update-alternatives: using /usr/bin/traceroute.db to provide /usr/bin/traceroute (traceroute) in auto mode
+update-alternatives: using /usr/bin/traceroute6.db to provide /usr/bin/traceroute6 (traceroute6) in auto mode
+update-alternatives: using /usr/bin/lft.db to provide /usr/bin/lft (lft) in auto mode
+update-alternatives: using /usr/bin/traceproto.db to provide /usr/bin/traceproto (traceproto) in auto mode
+update-alternatives: using /usr/sbin/tcptraceroute.db to provide /usr/sbin/tcptraceroute (tcptraceroute) in auto mode
+Setting up manpages (3.44-1) ...
+Setting up libsqlite3-0:armhf (3.7.13-1+deb7u1) ...
+Setting up iproute (20120521-3+b3) ...
+Setting up libidn11:armhf (1.25-2) ...
+Setting up libnewt0.52 (0.52.14-11.1) ...
+Setting up net-tools (1.60-24.2) ...
+Setting up libpipeline1:armhf (1.2.1-1) ...
+Setting up bsdmainutils (9.0.3) ...
+update-alternatives: using /usr/bin/bsd-write to provide /usr/bin/write (write) in auto mode
+update-alternatives: using /usr/bin/bsd-from to provide /usr/bin/from (from) in auto mode
+Setting up netcat-traditional (1.10-40) ...
+update-alternatives: using /bin/nc.traditional to provide /bin/nc (nc) in auto mode
+Setting up debian-archive-keyring (2012.4) ...
+Setting up libncursesw5:armhf (5.9-10) ...
+Setting up info (4.13a.dfsg.1-10) ...
+update-alternatives: using /usr/bin/info to provide /usr/bin/infobrowser (infobrowser) in auto mode
+Setting up iputils-ping (3:20101006-1+b2) ...
+Setting up aptitude-common (0.6.8.2-1) ...
+Setting up cron (3.0pl1-124) ...
+Adding group `crontab' (GID 102) ...
+Done.
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up nano (2.2.6-1+b2) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+Setting up libp11-kit0:armhf (0.12-3) ...
+Setting up rsyslog (5.8.11-3) ...
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up cpio (2.11+dfsg-0.1) ...
+update-alternatives: using /bin/mt-gnu to provide /bin/mt (mt) in auto mode
+Setting up libstdc++6:armhf (4.7.2-5) ...
+Setting up isc-dhcp-client (4.2.2.dfsg.1-5+deb70u6) ...
+Setting up vim-tiny (2:7.3.547-7) ...
+update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/rview (rview) in auto mode
+update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/vi (vi) in auto mode
+update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/view (view) in auto mode
+update-alternatives: using /usr/bin/vim.tiny to provide /usr/bin/ex (ex) in auto mode
+Setting up readline-common (6.2+dfsg-0.1) ...
+Setting up libnfnetlink0 (1.0.0-1.1) ...
+Setting up libgcrypt11:armhf (1.5.0-5+deb7u1) ...
+Setting up procps (1:3.3.3-3) ...
+update-alternatives: using /usr/bin/w.procps to provide /usr/bin/w (w) in auto mode
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up libxapian22 (1.2.12-2) ...
+Setting up whiptail (0.52.14-11.1) ...
+Setting up ifupdown (0.7.8) ...
+Creating /etc/network/interfaces.
+Setting up kmod (9-3) ...
+Setting up libapt-pkg4.12:armhf (0.9.7.9+deb7u2) ...
+Setting up libept1.4.12 (1.0.9) ...
+Setting up libapt-inst1.5:armhf (0.9.7.9+deb7u2) ...
+Setting up libreadline6:armhf (6.2+dfsg-0.1) ...
+Setting up logrotate (3.8.1-4) ...
+Setting up libboost-iostreams1.49.0 (1.49.0-3.2) ...
+Setting up groff-base (1.21-9) ...
+Setting up gnupg (1.4.12-7+deb7u4) ...
+Setting up libsigc++-2.0-0c2a:armhf (2.2.10-0.2) ...
+Setting up libgnutls26:armhf (2.12.20-8+deb7u2) ...
+Setting up apt-utils (0.9.7.9+deb7u2) ...
+Setting up udev (175-7.2) ...
+A chroot environment has been detected, udev not started.
+Setting up iptables (1.4.14-3.1) ...
+Setting up man-db (2.6.2-1) ...
+Building database of manual pages ...
+Setting up apt (0.9.7.9+deb7u2) ...
+gpg: keyring `/etc/apt/trusted.gpg' created
+gpg: key B98321F9: "Squeeze Stable Release Key <debian-release@lists.debian.org>" not changed
+gpg: key 473041FA: "Debian Archive Automatic Signing Key (6.0/squeeze) <ftpmaster@debian.org>" not changed
+gpg: key 65FFB764: "Wheezy Stable Release Key <debian-release@lists.debian.org>" not changed
+gpg: key 46925553: "Debian Archive Automatic Signing Key (7.0/wheezy) <ftpmaster@debian.org>" not changed
+gpg: Total number processed: 4
+gpg:              unchanged: 4
+gpg: /etc/apt//trustdb.gpg: trustdb created
+Setting up wget (1.13.4-3+deb7u1) ...
+Setting up libcwidget3 (0.5.16-3.4) ...
+Setting up aptitude (0.6.8.2-1) ...
+update-alternatives: using /usr/bin/aptitude-curses to provide /usr/bin/aptitude (aptitude) in auto mode
+Setting up tasksel (3.14.1) ...
+Setting up tasksel-data (3.14.1) ...

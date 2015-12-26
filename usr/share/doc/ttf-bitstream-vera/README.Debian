@@ -1,0 +1,43 @@
+ttf-bitstream-vera for Debian
+-----------------------------
+
+The Bitstream Vera family of TrueType fonts has been designed by Jim Lyles of
+Bitstream, Inc. and released under a DFSG-free license. They are distributed by
+the GNOME project. Please see the copyright file for licensing details.
+
+There are ten font faces: four each sans serif and monospace (normal, oblique,
+bold and bold oblique) and two serif (only normal and bold). They cover all of
+ISO-8859-1, ISO-8859-9 and ISO-8859-15. Covarage of other charsets is currently
+very limited and non-latin scripts are not covered at all. If you are looking
+for fonts with a wider Unicode coverage please have a look at the ttf-freefont
+package.
+
+Note that these fonts have been designed for anti-aliased display (preferably
+through Xft2) and may not look good when rendered without anti-aliasing. This is
+very unlikely to change, so please do not file bugs about it.
+
+The fonts are automatically available through fontconfig (if it is installed) to
+all fontconfig aware applications (e.g. GNOME 2.2, KDE 3.1, Mozilla when using
+the mozilla-xft package). If you wish to use the fonts in generic X11
+applications you will have to install x-ttcidfont-conf and follow the
+instructions given there.
+
+When reporting bugs in the fonts themselves (i.e. not just in the packaging),
+please be sure to include the following information as far as applicable:
+
+  * the versions of your libfreetype6, libxft2 and fontconfig packages,
+  * all relevant configuration (especially anti-aliasing and hinting),
+  * the application being used,
+  * the affected unicode code points.
+
+It may also be helpful if you can provide a screen shot demonstrating the
+problem, however please don't attach it to the initial bug report (especially
+not if it is large). Please also try to make sure that it is actually a bug in
+the fonts and not e.g. in freetype (if a problem appears after a freetype update
+or if other fonts exhibit similar problems it is a sure sign that the problem is
+in freetype).
+
+Further details can also be found on the Bitstream Vera Fonts homepage at:
+<http://gnome.org/fonts/>
+
+ -- Michael Fedrowitz <michaelf@debian.org>  Thu, 17 Apr 2003 18:15:22 +0200

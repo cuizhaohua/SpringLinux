@@ -1,0 +1,34 @@
+#!/usr/bin/install-menu
+#   -*- mode: shell-script; -*-
+#I need menu-1!
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/bin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/share/doc/menu/html.
+#
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+
+function f($com)="  \"" title() "\"    f.exec  \""$com " &\"\n";
+
+#This doens't seem to be possible with twm:  wm="f.restart \"${title}\"\\n"
+supported;
+  x11= f($command);
+  text=f(esc(term(),"\""));
+#  x11 = "  \"" $title "\"    f.exec  \""$command " &\"\n";
+#  text= "  \"" $title "\"    f.exec  \"xterm -title \\\""
+#               $title "\\\" -e " esc($command,"\"") " &\"\n";
+endsupported;
+startmenu=   "menu \"" $section "\"\n{\n";
+endmenu=     "}\n";
+submenutitle="  \"" title() "\" f.menu \"" $section "\"\n";
+genmenu=      "menudefs.hook";
+rcfile=       "system.twmrc";
+examplercfile="system.twmrc-menu";
+rootprefix=   "/etc/X11/twm/";
+userprefix=   "/.twm/";

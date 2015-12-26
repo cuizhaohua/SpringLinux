@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-quickstart" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <link type="seealso" xref="gedit-open-files"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Първи стъпки в gedit</title>
+  <p><app>gedit</app> е напълно функционален текстов редактор за графичната среда GNOME. С него можете да подготвите прости бележки или документи, или може да използвате някои от усъвършенстваните му функции и да го направите ваша среда за разработка.</p>
+
+  <media type="image" mime="image/png" src="figures/gedit3-screenshot.png"/>
+
+  <p>Once <app>gedit</app> launches, you can start writing right away. To save
+  your text, just click the <gui>Save</gui> icon in the <app>gedit</app>
+  toolbar.</p>
+
+  <p>За да научите повече относно допълнителните функции на <app>gedit</app> и да започнете да извършвате по-сложни задачи, разгледайте <link xref="index">другата информация</link> за <app>gedit</app>.</p>
+
+</page>

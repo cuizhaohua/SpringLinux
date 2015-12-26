@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Даниел Нийл</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Замяна на текст</title>
+
+  <p>Обработката на текст може да отнеме много време. За да спестите време, <app>gedit</app> има функция за <gui>Замяна</gui>, която ви помага да намерите и замените откъси текст.</p>
+
+  <steps>
+    <title>Замяна на текст в <app>gedit</app></title>
+    <item>
+      <p>Open the <gui>Replace</gui> tool by clicking
+      <guiseq><gui style="menu">Search</gui><gui style="menuitem">Replace…</gui></guiseq>
+      or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Enter the text that you wish to replace into the <gui>Search
+      for:</gui> field.</p>
+    </item>
+    <item>
+      <p>Enter the new, replacement text into the <gui>Replace with:</gui>
+      field.</p>
+    </item>
+    <item>
+      <p>Once you have entered the original and replacement text, you can add
+      extra parameters to the search. You can also choose what you want to
+      replace:</p>
+      <list>
+        <item>
+          <p>To replace <em>only</em> the next match, click
+          <gui>Replace</gui>.</p>
+        </item>
+        <item>
+          <p>За да се заменят <em>всички появи</em> на текста, натиснете <gui>Замяна на всички</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Използвайте функцията <gui>Замяна на всички</gui> внимателно. Тя работи с целия файл и не оцветява части от текста, в които ще се извърши замяната.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Още опции</title>
+
+  <p>If you wish, you can add some extra parameters to your search:</p>
+
+  <terms>
+    <item>
+      <title>Зачитане на главни/малки</title>
+      <p>Опцията <em>Зачитане на главни/малки</em> позволява да изберете дали вашето търсене да е чувствително към регистъра на знаците (главни или малки букви). Ако тази опция е включена, търсенето ще е чувствително към регистъра. В противен случай регистърът на знаците няма да е от значение.</p>
+    </item>
+    <item>
+      <title>Ако съвпада само с цяла дума</title>
+      <p>Използвайте тази опция за търсене на конкретна дума, която не е част от други думи. Например, ако сте търсили за думата „шок“ с тази опция включена, думата „шок“ ще съвпадне, но думите „<em>шок</em>олад“ и „арти<em>шок</em>“ няма да съвпаднат.</p>
+    </item>
+    <item>
+      <title>Търсене назад</title>
+      <p>Тази команда работи точно като командата „Предишна поява“. Ако искате да разгледате резултатите от края към началото, изберете тази опция.</p>
+    </item>
+    <item>
+      <title>След края — от началото</title>
+      <p>Ако опцията <app>След края — от началото</app> е включена, <app>gedit</app> ще започне търсенето/замяната от началото на файла, когато достигне края на файла. Така се гарантира, че търсенето/замяната са извършени в целия файл.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Using escape sequences</title>
+
+  <p>You can use <em>escape sequences</em> to search for line breaks and
+  tabs.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Newline</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tab</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Carriage return</p>
+    </item>
+  </terms>
+
+  <p>If you actually want to search for a <output>\</output> (backslash) or one
+  of the escape sequences in the text, you need to escape the backslash with an
+  extra backslash. For example, to search for <input>\</input>, you need to
+  enter <input>\\</input> into the search or replace field. You can search for
+  escape sequences in the same way: to search for or replace with a
+  <input>\n</input>, use the <input>\\n</input> term.</p>
+
+</section>
+
+</page>

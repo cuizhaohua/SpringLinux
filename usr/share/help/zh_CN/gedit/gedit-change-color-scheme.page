@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>更改配色方案</title>
+
+  <p><app>gedit</app> 包含多种不同配色方案，允许您更改主文本窗口的外观。</p>
+
+  <p>要更改配色方案，请执行以下步骤：</p>
+  <steps>
+    <item><p>选择 <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">首选项</gui> <gui>字体和颜色</gui></guiseq>。</p></item>
+    <item><p>选择您想使用的配色方案。</p></item>
+  </steps>
+
+  <p>新的配色方案会立即生效。</p>
+
+  <section id="custom-color-scheme">
+    <title>使用自定义的颜色方案</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>您也可以使用其他人创建的配色方案，或者使用自己的颜色方案。</p>
+    <p>关于如何安装自定义配色方案的说明，以及您可以下载并使用的配色方案，可以在 <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">gedit wiki</link> 上找到。</p>
+  </section>
+
+</page>

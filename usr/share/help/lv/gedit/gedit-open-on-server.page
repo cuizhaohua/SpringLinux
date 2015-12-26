@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Atvērt datni, kas atrodas uz servera</title>
+
+  <p>Lai atvērtu datni uz servera ar <app>gedit</app>, vajadzīgi daži tehniski fakti par attiecīgo serveri. Piemēram, jāzina servera IP adrese vai URL, kā arī servera tips (piemēram, HTTP, FTP u.tml.).</p>
+
+  <p>Turklāt daži serveri ierobežo ar to datnēm veicamās darbības. Piemēram, jums var būt iespēja atvērt datni, kas atrodas uz servera, bet datni ar veiktajām izmaiņām nāksies saglabāt uz sava datora.</p>
+
+  <p>Ņemot vērā šos brīdinājumus, datni no servera atvērt ar <app>gedit</app> var šādi:</p>
+
+    <steps>
+      <item><p>Izvēlieties <guiseq><gui>Datne</gui><gui>Atvērt</gui></guiseq>, lai parādītu dialoglodziņu<gui>Atvērt datnes</gui>.</p></item>
+      <item><p>Izvēlieties <gui>zīmuļa</gui> ikonu dialoglodziņa <gui>Atvērt datnes</gui> augšā.</p></item>
+      <item><p>Ievadiet attiecīgā servera IP adresi vai URL.</p></item>
+      <item><p>Atrodiet un izvēlieties datni, ko vēlaties atvērt.</p></item>
+      <item><p>Izvēlieties atbilstošo rakstzīmju kodējumu no izkrītošās izvēlnes.</p></item>
+      <item><p>Spiediet pogu <gui>Atvērt</gui>.</p></item>
+    </steps>
+
+  <p>Derīgi URI tipi ir http:, ftp:, file:, un visas metodes, ko atbalsta <app>gvfs</app>.</p>
+
+  <note>
+    <p>Datnes no dažiem URI tipiem tiek atvērti tikai lasīšanas režīmā, un izmaiņas jāsaglabā citviet. Piemēram, HTTP atļauj tikai datņu lasīšanu. Datnes, ko atver no FTP, ir tikai lasāmas, jo ne visi FTP serveri atbalsta attālināto datņu saglabāšanu.</p>
+  </note>
+
+</page>

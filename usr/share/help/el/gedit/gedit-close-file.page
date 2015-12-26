@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Κλείσιμο αρχείου</title>
+
+  <p>Για να κλείσετε ένα αρχείο στο <app>gedit</app>, επιλέξτε <guiseq><gui>Αρχείο</gui> <gui>Κλείσιμο</gui></guiseq>. Εναλλακτικά, μπορείτε να πατήσετε στο μικρό "X" που εμφανίζεται στη δεξιά πλευρά της καρτέλας του αρχείου, ή πατώντας <keyseq><key>Ctrl</key> <key>W</key></keyseq>.</p>
+  <p>Οποιαδήποτε από αυτές τις ενέργειες θα κλείσει ένα αρχείο στο <app>gedit</app>. Αν το αρχείο σας περιέχει αλλαγές που δεν έχουν αποθηκευτεί, το <app>gedit</app> θα σας ειδοποιήσει να τις αποθηκεύσετε πριν κλείσετε το αρχείο.</p>
+
+</page>

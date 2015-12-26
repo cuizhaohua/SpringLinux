@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="zh-CN">
+
+  <info>
+    <title type="link">gedit 文本编辑器</title>
+    <title type="text">gedit 文本编辑器</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title><media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/> gedit 文本编辑器</title>
+  <p>欢迎阅读 <app>gedit</app> 帮助指导。要查看 <app>gedit</app> 基本功能的简要介绍，请转到“<link xref="gedit-quickstart">开始使用 gedit</link>”页面；如果想对一些高效的快捷键有所了解，请转到“<link xref="gedit-shortcut-keys">快捷键</link>”页面。</p>
+
+  <p>本页上还分组列出了其他帮助主题。祝您愉快地使用 <app>gedit</app>！</p>
+
+  <section id="gedit-working-with-files">
+    <title>文件操作</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>配置 gedit</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>gedit 插件</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>使用 gedit 打印</title>
+  </section>
+
+</page>

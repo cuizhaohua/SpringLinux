@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<!--*- mode: xml -*--><!DOCTYPE glade-interface
+  SYSTEM 'http://glade.gnome.org/glade-2.0.dtd'>
+<interface>
+<requires lib="gtk+" version="3.11"/>
+
+<menu id="appmenu">
+	<section>
+		<item>
+			<attribute name="label" translatable="yes">Prefere_nces</attribute>
+			<attribute name="action">app.preferences</attribute>
+		</item>
+	</section>
+	<section id="python-console-placeholder"/>
+	<section>
+		<item>
+			<attribute name="label" translatable="yes">_Help</attribute>
+			<attribute name="action">app.help</attribute>
+			<attribute name="accel">F1</attribute>
+		</item>
+		<item>
+			<attribute name="label" translatable="yes">_Quit</attribute>
+			<attribute name="action">app.quit</attribute>
+			<attribute name="accel">&lt;Ctrl&gt;Q</attribute>
+		</item>
+	</section>
+</menu>
+
+<menu id="addmenu">
+	<section>
+		<item>
+			<attribute name="label" translatable="yes">Add _Local Video…</attribute>
+			<attribute name="action">app.open</attribute>
+			<attribute name="accel">&lt;Ctrl&gt;O</attribute>
+		</item>
+		<item>
+			<attribute name="label" translatable="yes">Add _Web Video…</attribute>
+			<attribute name="action">app.open-location</attribute>
+			<attribute name="accel">&lt;Ctrl&gt;L</attribute>
+		</item>
+	</section>
+</menu>
+
+<menu id="playermenu">
+	<section>
+		<section id="save-placeholder"/>
+		<section id="burn-placeholder"/>
+	</section>
+	<section>
+		<section id="screenshot-placeholder"/>
+	</section>
+	<section>
+		<submenu>
+			<attribute name="label" translatable="yes">_Aspect Ratio</attribute>
+			<section>
+				<item>
+					<attribute name="label" translatable="yes" comments="Translators: an entry in the 'Aspect Ratio' menu, used to choose the displayed aspect ratio of a video" context="Aspect ratio">Auto</attribute>
+					<attribute name="action">app.aspect-ratio</attribute>
+					<attribute name="target" type="i">0</attribute>
+				</item>
+				<item>
+					<attribute name="label" translatable="yes" comments="Translators: an entry in the 'Aspect Ratio' menu, used to choose the displayed aspect ratio of a video" context="Aspect ratio">Square</attribute>
+					<attribute name="action">app.aspect-ratio</attribute>
+					<attribute name="target" type="i">1</attribute>
+				</item>
+				<item>
+					<attribute name="label" translatable="yes" comments="Translators: an entry in the 'Aspect Ratio' menu, used to choose the displayed aspect ratio of a video" context="Aspect ratio">4∶3 (TV)</attribute>
+					<attribute name="action">app.aspect-ratio</attribute>
+					<attribute name="target" type="i">2</attribute>
+				</item>
+				<item>
+					<attribute name="label" translatable="yes" comments="Translators: an entry in the 'Aspect Ratio' menu, used to choose the displayed aspect ratio of a video" context="Aspect ratio">16∶9 (Widescreen)</attribute>
+					<attribute name="action">app.aspect-ratio</attribute>
+					<attribute name="target" type="i">3</attribute>
+				</item>
+				<item>
+					<attribute name="label" translatable="yes" comments="Translators: an entry in the 'Aspect Ratio' menu, used to choose the displayed aspect ratio of a video" context="Aspect ratio">2.11∶1 (DVB)</attribute>
+					<attribute name="action">app.aspect-ratio</attribute>
+					<attribute name="target" type="i">4</attribute>
+				</item>
+			</section>
+		</submenu>
+		<item>
+			<attribute name="label" translatable="yes">Zoom In</attribute>
+			<attribute name="action">app.zoom</attribute>
+		</item>
+		<section id="rotation-placeholder"/>
+		<item>
+			<attribute name="label" translatable="yes">Switch An_gles</attribute>
+			<attribute name="action">app.next-angle</attribute>
+			<attribute name="accel">&lt;Ctrl&gt;G</attribute>
+		</item>
+	</section>
+	<section>
+		<submenu>
+			<attribute name="label" translatable="yes">_Languages</attribute>
+			<section id="languages-placeholder"/>
+		</submenu>
+		<submenu>
+			<attribute name="label" translatable="yes">S_ubtitles</attribute>
+			<section>
+				<item>
+					<attribute name="label" translatable="yes">_Select Text Subtitles…</attribute>
+					<attribute name="action">app.select-subtitle</attribute>
+				</item>
+				<section id="subtitle-download-placeholder"/>
+				<section id="subtitles-placeholder"/>
+			</section>
+		</submenu>
+	</section>
+	<section>
+		<section id="properties-placeholder"/>
+	</section>
+	<section>
+		<item>
+			<attribute name="label" translatable="yes">_Eject</attribute>
+			<attribute name="action">app.eject</attribute>
+			<attribute name="accel">&lt;Ctrl&gt;E</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+	</section>
+</menu>
+
+<menu id="gomenu">
+	<section>
+		<item>
+			<attribute name="label" translatable="yes">_Repeat</attribute>
+			<attribute name="action">app.repeat</attribute>
+		</item>
+	</section>
+	<section>
+		<item>
+			<attribute name="label" translatable="yes">_DVD Menu</attribute>
+			<attribute name="action">app.dvd-root-menu</attribute>
+			<attribute name="accel">&lt;Ctrl&gt;M</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+		<item>
+			<attribute name="label" translatable="yes">_Title Menu</attribute>
+			<attribute name="action">app.dvd-title-menu</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+		<item>
+			<attribute name="label" translatable="yes">A_udio Menu</attribute>
+			<attribute name="action">app.dvd-audio-menu</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+		<item>
+			<attribute name="label" translatable="yes">_Angle Menu</attribute>
+			<attribute name="action">app.dvd-angle-menu</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+		<item>
+			<attribute name="label" translatable="yes">_Chapter Menu</attribute>
+			<attribute name="action">app.dvd-chapter-menu</attribute>
+			<attribute name="hidden-when">action-disabled</attribute>
+		</item>
+	</section>
+	<section>
+		<section id="skipto-placeholder"/>
+	</section>
+</menu>
+
+<object class="GtkAdjustment" id="tmw_seek_adjustment">
+  <property name="lower">0</property>
+  <property name="upper">0</property>
+  <property name="step-increment">1</property>
+  <property name="page-increment">10</property>
+  <property name="page-size">0</property>
+  <property name="value">0</property>
+  <signal name="value-changed" handler="seek_slider_changed_cb"/>
+</object>
+  <object class="GtkApplicationWindow" id="totem_main_window">
+    <property name="can_focus">False</property>
+    <signal name="window-state-event" handler="window_state_event_cb" swapped="no"/>
+    <signal name="key-release-event" handler="window_key_press_event_cb" swapped="no"/>
+    <signal name="key-press-event" handler="window_key_press_event_cb" swapped="no"/>
+    <signal name="delete-event" handler="main_window_destroy_cb" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="totem_main_vbox">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkStack" id="tmw_main_stack">
+                <property name="visible">True</property>
+                <property name="homogeneous">True</property>
+                <child>
+                  <object class="GtkVBox" id="tmw_main_vbox">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkOverlay" id="tmw_bvw_box">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="name">player</property>
+                  </packing>
+                </child>
+              </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

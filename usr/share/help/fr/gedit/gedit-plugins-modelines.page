@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="fr">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Prendre en charge les modificateurs Emacs, Kate et Vim dans gedit</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Modificateurs</title>
+
+  <p>Le greffon <app>Modificateurs</app> permet à <app>gedit</app> d'analyser les lignes de texte au début et à la fin d'un fichier, puis d'appliquer un ensemble de préférences au fichier. Le greffon <app>Modificateurs</app> prend en charge un sous-ensemble des options utilisées par les éditeurs de texte <app>Emacs</app>, <app>Kate</app> et <app>Vim</app>.</p>
+
+  <p>Pour activer le greffon <app>Modificateurs</app>, choisissez <guiseq><gui>gedit</gui><gui>Préférences</gui><gui>Greffons</gui><gui>Modificateurs</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Options générales des modificateurs</title>
+  <p>Les options suivantes peuvent être définies en utilisant les modificateurs de <application>gedit</application> :</p>
+  <list>
+    <item><p>Largeur des tabulations</p></item>
+    <item><p>Largeur d'indentation</p></item>
+    <item><p>Insertion d'espaces au lieu de tabulations</p></item>
+    <item><p>Renvoi automatique à la ligne</p></item>
+    <item><p>Marge de droite à la colonne</p></item>
+  </list>
+
+  <note>
+    <p>Les préférences définies avec les modificateurs ont la priorité sur celles définies dans la boîte de dialogue des préférences.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Modificateurs d'Emacs</title>
+
+  <p>Les deux premières lignes d'un document sont analysées pour trouver les modificateurs d'<app>Emacs</app>. <app>gedit</app> prend en charge les options des modificateurs d'<app>Emacs</app> suivantes :</p>
+  <list>
+    <item><p>Tab-width</p></item>
+    <item><p>Indent-offset</p></item>
+    <item><p>Indent-tabs-mode</p></item>
+    <item><p>Text auto-wrap</p></item>
+  </list>
+  <p>Pour plus d'informations sur les modificateurs d'<app>Emacs</app>, consultez le <link href="http://www.gnu.org/software/emacs/manual/emacs.html">manuel de GNU Emacs</link>.</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Modificateurs de Kate</title>
+
+  <p>Les modificateurs de <app>Kate</app> sont recherchés dans la première et les dix dernières lignes du document. <app>gedit</app> prend en charge les options des modificateurs de <app>Kate</app> suivantes :</p>
+
+  <list>
+    <item><p>tab-width</p></item>
+    <item><p>indent-width</p></item>
+    <item><p>space-indent</p></item>
+    <item><p>word-wrap</p></item>
+    <item><p>word-wrap-column</p></item>
+  </list>
+
+  <p>Pour plus d'informations sur les modificateurs de <app>Kate</app>, consultez le <link href="http://kate-editor.org/">site Web de Kate</link>.</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Modificateurs de Vim</title>
+  <p>Les modificateurs de <app>Vim</app> sont recherchés dans la première et les trois dernières lignes du document. <app>gedit</app> prend en charge les options des modificateurs de <app>Vim</app> suivantes :</p>
+
+  <list>
+    <item><p>et (expandtab)</p></item>
+    <item><p>ts (tabstop)</p></item>
+    <item><p>sw (shiftwidth)</p></item>
+    <item><p>wrap</p></item>
+    <item><p>textwidth</p></item>
+  </list>
+
+  <p>Pour plus d'informations sur les modificateurs de <app>Vim</app>, consultez le <link href="http://www.vim.org/">site Web de Vim</link>.</p>
+</section>
+</page>

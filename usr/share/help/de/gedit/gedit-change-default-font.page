@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ändern der vorgegebenen Schriftgröße</title>
+
+  <p><app>gedit</app> verwendet standardmäßig die dicktengleiche Schrift des Systems, aber Sie können die Standardschrift nach Ihren Wünschen ändern.</p>
+  
+  <steps>
+    <title>So ändern Sie die vorgegebene Schriftgröße in <app>gedit</app>:</title>
+      <item><p>Wählen Sie <guiseq><gui style="menu">Bearbeiten</gui><gui style="menuitem">Einstellungen</gui><gui>Schrift und Farben</gui></guiseq>.</p></item>
+      <item><p>Deaktivieren Sie das Ankreuzfeld <gui>Dicktengleiche Schrift des Systems benutzen</gui>.</p></item>
+      <item><p>Klicken Sie auf den aktuellen Schriftnamen. <app>gedit</app> öffnet ein Schriftwähler-Fenster, in welchem die verfügbaren Schriften angezeigt werden und Sie die gewünschte Schrift auswählen können.</p></item>
+      <item><p>Nachdem Sie die gewünschte Schrift ausgewählt haben, verwenden Sie den <gui>Schieberegler</gui> unter der Schriftenliste, um die Schriftgröße einzustellen.</p></item>
+      <item><p>Klicken Sie auf <gui>Auswählen</gui> und anschließend auf <gui>Schließen</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

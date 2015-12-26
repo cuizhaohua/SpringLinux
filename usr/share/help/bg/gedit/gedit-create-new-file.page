@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-create-new-file" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="first"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Създаване на нов файл</title>
+
+  <p>The easiest way to create a new file in <app>gedit</app>, is to click the
+  <gui>Create a new document</gui> button on the left side of the toolbar,
+  or press <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+
+  <p>Всяко от тези действия ще създаде нов файл в прозореца на <app>gedit</app>. Ако имате други отворени файлове в <app>gedit</app>, новият файл ще се покаже като нов раздел от дясната страна на тези раздели.</p>
+
+</page>

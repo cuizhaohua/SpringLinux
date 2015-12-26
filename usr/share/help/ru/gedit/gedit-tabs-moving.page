@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Даниэль Нил (Daniel Neel)</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Радина Матик (Radina Matic)</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Перемещение и изменение расположения вкладок</title>
+  <p>В <app>gedit</app> можно изменять расположение вкладок, что упрощает работу с файлами. Вкладки можно перемещать между собой в одном окне, за пределы окна <app>gedit</app> (создавая новое окно <app>gedit</app>), а также из одного окна в другое.</p>
+
+  <section id="tabs-change-order">
+    <title>Изменение расположения вкладок в окне gedit</title>
+
+    <p>Чтобы изменить расположение вкладок в окне:</p>
+
+    <steps>
+      <item>
+        <p>Нажмите и удерживайте кнопку мыши на вкладке.</p>
+      </item>
+      <item>
+        <p>Переместите вкладку в нужное положение среди других вкладок.</p>
+      </item>
+      <item>
+        <p>Отпустите кнопку мыши.</p>
+      </item>
+    </steps>
+
+    <p>Вкладка будет помещена ближе всего к тому месту, где вы её отпустите, непосредственно рядом c другими открытыми вкладками.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Перемещение вкладки с созданием нового окна gedit</title>
+    <p>Чтобы создать новое окно из существующей вкладки:</p>
+
+    <steps>
+      <item>
+        <p>Нажмите и удерживайте кнопку мыши на вкладке.</p>
+      </item>
+      <item>
+        <p>Переместите вкладку за пределы окна <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Отпустите кнопку мыши.</p>
+      </item>
+    </steps>
+
+    <p>или, когда открыта вкладка, которую нужно переместить, выберите <guiseq><gui>Документы</gui><gui>Переместить в новое окно</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Чтобы переместить вкладку в новое окно, когда окно <app>gedit</app> развернуто на весь экран, переместите вкладку на заголовок окна в верхней части экрана.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Перемещение вкладки в другое окно gedit</title>
+
+    <p>Чтобы переместить вкладку из одного окна в другое:</p>
+
+    <steps>
+      <item>
+        <p>Нажмите и удерживайте кнопку мыши на вкладке.</p>
+      </item>
+      <item>
+        <p>Переместите вкладку в другое окно.</p>
+      </item>
+      <item>
+        <p>Поместите её рядом с другими вкладками в другом окне.</p>
+      </item>
+      <item>
+        <p>Отпустите кнопку мыши.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Возможно, вам будет проще перемещать вкладки из одного окна в другое путем перемещения вкладки в левый верхний угол в меню <gui>Обзор</gui>. Там будут отображены все открытые окна <app>gedit</app>. Поднесите вкладку к нужному окну <app>gedit</app> и отпустите.</p>
+    </note>
+
+    <p>Посетите страницу <link xref="gedit-shortcut-keys">Комбинации клавиш</link>, чтобы узнать комбинации клавиш для быстрого управления вкладками.</p>
+
+  </section>
+
+</page>

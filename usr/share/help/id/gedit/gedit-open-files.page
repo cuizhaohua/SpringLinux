@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Buka suatu berkas atau suatu set berkas</title>
+
+  <p>Untuk membuka berkas dalam <app>gedit</app> klik tombol <gui>Buka</gui>, atau tekan <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>Ini akan menyebabkan dialog <gui>Buka</gui> muncul. Gunakan tetikus atau papan tik Anda untuk memilih berkas yang ingin Anda buka, lalu klik <gui>Open</gui>. Berkas yang telah Anda pilih akan dibuka dalam suatu tab baru.</p>
+  <p>Untuk menutup dialog <gui>Buka</gui> tanpa membuka suatu berkas, klik <gui>Batal</gui>.</p>
+
+  <note style="tip"><p>Anda dapat memakai tombol <key>Ctrl</key> dan <key>Shift</key> untuk membuka lebih dari satu berkas pada saat yang sama. Bila Anda menahan tombol <key>Ctrl</key> ketika Anda memilih berkas bergada, mengklik <gui>Open</gui> akan membuka masing-masing berkas yang telah Anda pilih.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Menahan <key>Shift</key> ketika Anda memilih berkas berganda akan membuka berkas pertama yang Anda pilih, berkas terakhir yang Anda pilih, dan semua berkas diantaranya.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

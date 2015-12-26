@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Äskettäin käytetyn tiedoston avaaminen</title>
+
+  <p>Oletuksena <app>gedit</app> tarjoaa nopean pääsyn viiteen viimeisimpään tiedostoon. Äskettäin käytetyn tiedoston avaaminen onnistuu seuraavasti:</p>
+  <list type="numbered">
+    <item><p>Napsauta alaspäin osoittavaa nuolta <gui>Avaa</gui>-painikkeen oikealla puolella.</p></item>
+    <item><p><app>gedit</app> näyttää viiden tuoreimman tiedoston listan.</p></item>
+    <item><p>Valitse haluamasi tiedosto, ja se avautuu uuteen välilehteen</p></item>
+  </list>
+
+  <note style="advanced"><p>To adjust the number of recently-used files that
+  gedit displays, you will need to use the <app>dconf-editor</app>
+  application.</p>
+    <list>
+      <item><p>Launch <app>dconf-editor</app> and select <guiseq><gui>org</gui>
+      <gui>gnome</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui>
+      <gui>max-recents</gui></guiseq>.</p></item>
+      <item><p>Double-click on the number next to <gui>max-recents</gui> and
+      change the number to your desired value.</p></item>
+    </list>
+  </note>
+
+</page>

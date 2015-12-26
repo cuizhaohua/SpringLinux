@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-save-file" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="third"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.12" date="2014-02-13" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>保存文件</title>
+
+  <p>To save a file in <app>gedit</app>, click on the
+  <gui style="button">Save the current file</gui> button with the disk-drive
+  icon on the right side of the toolbar or just press
+  <keyseq><key>Ctrl</key><key>S</key></keyseq>.</p> <p>If you are saving a
+  new file, the <gui>Save As</gui> dialog will appear, and you can select a
+  name for the file, as well as the directory where you would like the file
+  to be saved.</p>
+
+</page>

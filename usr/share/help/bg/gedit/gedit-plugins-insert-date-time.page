@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-insert-date-time" xml:lang="bg">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Даниел Нийл</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Джим Къмпбел</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Вмъкване на текущата дата/време на позицията на курсора</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Вмъкване на дата/време</title>
+
+  <p>As this name of this plugin suggests, the <gui>Insert Date/Time</gui>
+  plugin allows you to insert the date and/or time at the current cursor
+  position. To enable this plugin, select <guiseq><gui style="menu">gedit</gui>
+  <gui style="menuitem">Preferences</gui><gui>Plugins</gui>
+  <gui>Insert Date/Time</gui></guiseq>. To use the plugin, press <guiseq>
+  <gui style="menu">Edit</gui><gui>Insert Date and Time</gui></guiseq>.</p>
+
+  <p>By default, the <gui>Insert Date/Time</gui> plugin will prompt you to
+  choose your preferred date/time format each time that you use the plugin.
+  However, you can choose your own default date and time format by selecting
+  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferences</gui>
+  <gui>Plugins</gui><gui>Insert Date/Time</gui><gui>Configure</gui></guiseq>.
+  </p>
+
+</page>

@@ -1,0 +1,8 @@
+18386d984178b28e6cab0c915b1e8247  usr/lib/arm-linux-gnueabihf/libpyzy-1.0.so.0.100.0
+e2b341a4b7b3670dab54a0d8157b0965  usr/share/doc/libpyzy-1.0-0/changelog.Debian.gz
+7b902d743cb33e8ca954c9cc3027326d  usr/share/doc/libpyzy-1.0-0/copyright
+3903eebb0453cfe814a5956f508d6adf  usr/share/lintian/overrides/libpyzy-1.0-0
+9e881f77e96b244cfd07e9a13e5eb70b  usr/share/pyzy/db/android.db
+70bdd8c22511684baad0d5a35c103b58  usr/share/pyzy/db/create_index.sql
+d49571f1b325945a268c66f80808803f  usr/share/pyzy/db/open-phrase.db
+89bae7843b4118a77e84e5bfcfac40f9  usr/share/pyzy/phrases.txt

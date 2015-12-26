@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="cs">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Podpora řádků s režimem ve stylu Emacs, Kate a Vim pro editor gedit</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Řádky s režimem</title>
+
+  <p>Zásuvný modul <app>Řádky s režimem</app> umožňuje editoru <app>gedit</app> analyzovat řádky textu na začátku a na konci souboru a použít u tohoto souboru sadu předvoleb. Zásuvný modul <app>Řádky s režimem</app> podporuje podmnožinu voleb používaných v textových editorech <app>Emacs</app>, <app>Kate</app> a <app>Vim</app>.</p>
+
+  <p>Zásuvný modul <app>Řádky s režimem</app> povolíte pomocí <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Předvolby</gui> <gui>Zásuvné moduly</gui> <gui>Řádky s režimem</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Obecné volby Řádků s režimem</title>
+  <p>Pomocí řádků s režimem můžete v editoru <app>gedit</app> nastavit následující volby:</p>
+  <list>
+    <item><p>Šířka tabulátoru</p></item>
+    <item><p>Šířka odsazení</p></item>
+    <item><p>Vkládání mezer místo tabulátorů</p></item>
+    <item><p>Zalamování textu</p></item>
+    <item><p>Šířka pravého okraje</p></item>
+  </list>
+
+  <note>
+    <p>Volby nastavené s použitím řádků s režimem mají přednost před stejnými volbami zadanými v dialogovém okně Předvolby.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Řádky s režimem ve stylu Emacs</title>
+
+  <p>První dva řádky dokumentu se zkoumají na řádky s režimem <app>Emacs</app>. <app>gedit</app> podporuje následující volby řádků s režimem <app>Emacs</app>:</p>
+  <list>
+    <item><p>tab-width (šířka tabulátoru)</p></item>
+    <item><p>indent-offset (šířka odsazení)</p></item>
+    <item><p>indent-tabs-mode (režim odsazování tabulátory)</p></item>
+    <item><p>auto-wrap (automatické zalamování)</p></item>
+  </list>
+  <p>Ohledně dalších informací k řádkům s režimem <app>Emacs</app> navštivte <link href="http://www.gnu.org/software/emacs/manual/emacs.html">Příručku k GNU Emacs</link> (odkazovaný text je v angličtině).</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Řádky s režimem ve stylu Kate</title>
+
+  <p>Prvních pět a posledních pět řádků dokumentu se zkoumá na řádky s režimem <app>Kate</app>. <app>gedit</app> podporuje následující volby řádků s režimem <app>Kate</app>:</p>
+
+  <list>
+    <item><p>tab-width (šířka tabulátoru)</p></item>
+    <item><p>indent-width (šířka odsazení)</p></item>
+    <item><p>space-indent (odsazovat mezerami)</p></item>
+    <item><p>word-wrap (zalamovat slova)</p></item>
+    <item><p>word-wrap-column (sloupec pro zalamování slov)</p></item>
+  </list>
+
+  <p>Ohledně dalších informací k řádkům s režimem <app>Kate</app> navštivte <link href="http://kate-editor.org/">webové stránky Kate</link> (odkazovaný text je v angličtině).</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Řádky s režimem ve stylu Vim</title>
+  <p>První tři a poslední tři řádky dokumentu se zkoumají na řádky s režimem <app>Vim</app>. <app>gedit</app> podporuje následující volby řádků s režimem <app>Vim</app>:</p>
+
+  <list>
+    <item><p>et (převádět tabulátory na mezery)</p></item>
+    <item><p>ts (šířka tabulátoru)</p></item>
+    <item><p>sw (šířka odsazení)</p></item>
+    <item><p>wrap (zalamování)</p></item>
+    <item><p>textwidth (šířka textu)</p></item>
+  </list>
+
+  <p>Ohledně dalších informací k řádkům s režimem <app>Vim</app> navštivte <link href="http://www.vim.org/">webové stránky Vim</link> (odkazovaný text je v angličtině).</p>
+</section>
+</page>

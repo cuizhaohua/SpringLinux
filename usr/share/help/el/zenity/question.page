@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="question" xml:lang="el">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--question</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος ερώτησης</title>
+      <p>Χρησιμοποιήστε την επιλογή <cmd>--question</cmd> για να δημιουργήσετε έναν διάλογο ερώτησης.</p>
+
+      <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε έναν διάλογο ερώτησης:</p>
+
+<code>
+#!/bin/bash
+
+zenity --question \
+--text="Θέλετε να συνεχίσετε?"
+</code>
+
+
+      <figure id="zenity-question-screenshot">
+        <title>Παράδειγμα διαλόγου ερώτησης</title>
+	<desc>Παράδειγμα διαλόγου ερώτησης του <app>Zenity</app></desc>
+        <media type="image" mime="image/png" src="figures/zenity-question-screenshot.png"/>
+      </figure>
+</page>

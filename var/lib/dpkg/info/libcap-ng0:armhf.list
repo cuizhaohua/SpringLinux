@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcap-ng0
+/usr/share/doc/libcap-ng0/copyright
+/usr/share/doc/libcap-ng0/changelog.gz
+/usr/share/doc/libcap-ng0/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libcap-ng.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libcap-ng.so.0

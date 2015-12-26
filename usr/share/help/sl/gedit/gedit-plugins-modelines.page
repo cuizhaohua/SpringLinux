@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="sl">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Podpora za modelines v slogu programov Emacs, Kate in Vim.</desc>
+</info>
+
+<title>Modelines</title>
+
+  <p>Vstavek <app>Modelines</app> programu <app>gedit</app> omogoča analizo vrstic besedila na začetku in koncu datoteke in nato uveljavitev možnosti dokumenta na datoteko. Vstavek <app>Modelines</app> omogoča uporabo podniza možnosti, ki jih uporbaljajo urejevalniki besedila <app>Emacs</app>, <app>Kate</app> in <app>Vim</app>.</p>
+
+  <p>To enable the <app>Modelines</app> plugin, select <guiseq><gui style="menu">gedit</gui>
+  <gui style="menuitem">Preferences</gui><gui>Plugins</gui><gui>Modelines</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Splošne možnosti modeline</title>
+  <p>Z <app>gedit</app> modelines lahko nastavite naslednje možnosti:</p>
+  <list>
+    <item><p>Širina tabulatorja</p></item>
+    <item><p>Širina zamika</p></item>
+    <item><p>Vstavlajnje presledkov namesto tabulatorjev</p></item>
+    <item><p>Prelom besedila</p></item>
+    <item><p>Širina desnega odmika</p></item>
+  </list>
+
+  <note>
+    <p>Možnosti nastavljene z modelines imajo prednost pred možnostmi, nastavljenimi v pogovornem oknu možnosti.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Modelines Emacs</title>
+
+  <p>Prvi  dve vrstici dokumenta sta preiskani za modelines <app>Emacs</app>. <app>gedit</app> podpira naslednje možnosti modeline <app>Emacs</app>:</p>
+  <list>
+    <item><p>Širina tabulatorja</p></item>
+    <item><p>Odmik zamika</p></item>
+    <item><p>Način zamikanja zavihkov</p></item>
+    <item><p>Samodejno prelaml</p></item>
+  </list>
+  <p>Za več podrobnosti o modelines <app>Emacs</app> obiščite <link href="http://www.gnu.org/software/emacs/manual/emacs.html">Priročnik GNU Emacs</link>.</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Modelines Kate</title>
+
+  <p>Za modelines <app>Kate</app> je preiskanih prvih in zadnjih deset vrstic dokumenta. <app>gedit</app> podpira naslednje možnosti modeline <app>Kate</app>:</p>
+
+  <list>
+    <item><p>širina-tabulatorja</p></item>
+    <item><p>širina-zamika</p></item>
+    <item><p>presledek zamika</p></item>
+    <item><p>prelomi besede</p></item>
+    <item><p>prelomi besede v stolpcu</p></item>
+  </list>
+
+  <p>Za več podrobnosti o modelines <app>Kate</app> obiščite <link href="http://kate-editor.org/">spletišče Kate</link>.</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Modelines Vim</title>
+  <p>Za modelines <app>Vim</app> so preiskane prve in zadnje tri vrstice dokumenta. <app>gedit</app> podpira naslednje možnosti modeline <app>Vim</app>:</p>
+
+  <list>
+    <item><p>et (razširizavihek)</p></item>
+    <item><p>ts (zaustavi zavihek)</p></item>
+    <item><p>sw (širina zamika)</p></item>
+    <item><p>prelom</p></item>
+    <item><p>širina besedila</p></item>
+  </list>
+
+  <p>Za več podrobnosti o modelines <app>Vim</app> obiščite <link href="http://vim.org/">spletišče Vim</link>.</p>
+</section>
+</page>

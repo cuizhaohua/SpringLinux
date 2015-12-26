@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libonig2
+/usr/share/doc/libonig2/changelog.Debian.gz
+/usr/share/doc/libonig2/changelog.gz
+/usr/share/doc/libonig2/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libonig.so.2.0.1
+/usr/lib/arm-linux-gnueabihf/libonig.so.2

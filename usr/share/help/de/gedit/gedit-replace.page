@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ersetzen von Text</title>
+
+  <p>Die Bearbeitung von Text kann recht viel Zeit in Anspruch nehmen. Um Zeit zu sparen, bietet <app>gedit</app> eine <app>Ersetzungsfunktion</app>, die Ihnen beim Auffinden und Ersetzen von Textbestandteilen hilft.</p>
+
+  <steps>
+    <title>Text in <app>gedit</app> ersetzen</title>
+    <item>
+      <p>Öffnen Sie das Werkzeug <gui>Ersetzen</gui> über <guiseq><gui style="menu">Suchen</gui><gui style="menuitem">Ersetzen …</gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Geben Sie den zu ersetzenden Text im Feld <gui>Suchen nach:</gui> ein.</p>
+    </item>
+    <item>
+      <p>Geben Sie den neuen Ersatztext im Feld <gui>Ersetzen durch:</gui> ein.</p>
+    </item>
+    <item>
+      <p>Sobald Sie den ursprünglichen als auch den Ersetzungstext eingegeben haben, haben Sie die Möglichkeit zusätzliche Suchparameter festzulegen. Wählen Sie auch aus, was Sie ersetzen wollen:</p>
+      <list>
+        <item>
+          <p>Um <em>nur</em>  das nächste Auftreten der Zeichenkette im Dokument zu ersetzen, klicken Sie auf <gui>Ersetzen</gui>.</p>
+        </item>
+        <item>
+          <p>Um <em>jedes Auftreten</em> der Zeichenkette im Dokument zu ersetzen, klicken Sie auf <gui>Alle ersetzen</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Verwenden Sie die Funktion <gui>Alle ersetzen</gui> mit Vorsicht. <gui>Alle ersetzen</gui> wirkt sich unmittelbar auf den gesamten Text aus und ermöglicht Ihnen nicht die Hervorhebung einzelner Textbestandteile, die ersetzt werden sollen.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Weitere Optionen</title>
+
+  <p>Bei Bedarf können Sie zusätzliche Suchparameter hinzufügen:</p>
+
+  <terms>
+    <item>
+      <title>Groß-/Kleinschreibung berücksichtigen</title>
+      <p>Die Option <em>Groß-/Kleinschreibung berücksichtigen</em> ermöglicht Ihnen anzugeben, ob Sie bei der Suche Groß- und Kleinschreibung berücksichtigen wollen. Wenn diese Option aktiviert ist, wird Groß- und Kleinschreibung berücksichtigt. Falls nicht, wird beim Suchen Groß- und Kleinschreibung nicht berücksichtigt.</p>
+    </item>
+    <item>
+      <title>Nur vollständige Wörter berücksichtigen</title>
+      <p>Verwenden Sie diese Option, um nach einem bestimmten Wort zu suchen, ohne Teile anderer Worte zu berücksichtigen. Wenn Sie beispielsweise bei aktivierter Option nach dem Wort »und« suchen, wird »und« als solches gefunden, jedoch nicht die Wörter »r<em>und</em>« und »W<em>und</em>er«.</p>
+    </item>
+    <item>
+      <title>Rückwärts suchen</title>
+      <p>Dieser Befehl verhält sich ähnlich wie der Befehl <gui>Rückwärts suchen</gui>. Wenn Sie Schritt für Schritt vom Ende bis zum Anfang durch die Suchergebnisse gehen wollen, wählen Sie diese Option.</p>
+    </item>
+    <item>
+      <title>Suche beim Erreichen des Endes am Anfang fortsetzen</title>
+      <p>Wenn die Option <app>Suche beim Erreichen des Endes am Anfang fortsetzen</app> aktiviert ist, startet <app>gedit</app> die Aktion zum Suchen und Ersetzen am Anfang der Datei neu, sobald das Ende der Datei erreicht ist. Das stellt sicher, dass das Suchen und Ersetzen die gesamte Datei einbezieht.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Escape-Sequenzen verwenden</title>
+
+  <p>Sie können <em>Escape-Sequenzen</em> verwenden, um nach Zeilenumbrüchen und Tabstops zu suchen.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Neue Zeile</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tabulator</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Wagenrücklauf</p>
+    </item>
+  </terms>
+
+  <p>Wenn Sie nach einem <output>\</output> (Backslash) oder einer Escape-Sequenz im Text suchen möchten, müssen Sie einen zusätzlichen Backslash verwenden. Zum Beispiel: um nach <input>\</input> zu suchen, müssen Sie <input>\\</input> in das Suchen und Ersetzen-Feld eingeben. Sie können nach Escape-Sequenzen auf die selbe Weise suchen: um nach <input>\t</input> zu suchen, geben Sie <input>\\t</input> ein.</p>
+
+</section>
+
+</page>

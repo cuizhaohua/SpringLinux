@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-quick-open" xml:lang="hu">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision version="3.4" date="2013-02-24" status="review"/>
+    <revision version="3.8" date="2013-04-23" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <desc>Fájl vagy fájlok gyors megnyitása</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Gyors megnyitás</title>
+
+  <p>Ahogy a nevéből sejteni lehet, a <app>Gyors megnyitás</app> bővítmény a fájlok szokásosnál gyorsabb megnyitását teszi lehetővé. A bővítmény engedélyezéséhez válassza a <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Beállítások</gui><gui>Bővítmények</gui><gui>Gyors megnyitás</gui></guiseq> lehetőséget.</p>
+    
+  <p>A <app>Gyors megnyitás</app> bővítmény engedélyezése után a következőképpen veheti használatba:</p>
+
+  <steps>
+    <item><p>Nyissa meg a <app>Gyors megnyitás</app> ablakot a <keyseq><key> Ctrl</key><key>Alt</key><key>O</key></keyseq> billentyűkombináció megnyitásával, vagy a <guiseq><gui>Fájl</gui><gui>Gyors megnyitás</gui></guiseq> menüpont kiválasztásával.</p>
+    <p>Megjelenik a <gui>Gyors megnyitás</gui> fájlablak.</p></item>
+    <item><p>Az egérrel válassza ki a megnyitni kívánt fájlokat.</p>
+    <p>Több fájl kiválasztásához tartsa lenyomva a <key>Ctrl</key> billentyűt, és kattintson a megnyitni kívánt fájlokra.</p>
+    <p>Fájlcsoport kiválasztásához kattintson az első megnyitni kívánt fájlra, tartsa lenyomva a <key>Shift</key> billentyűt, és kattintson az utolsó megnyitni kívánt fájlra a listában.</p></item>
+    <item><p>Kattintson a <gui>Megnyitás</gui> gombra.</p></item>
+  </steps>
+
+  <p>A <app>Gyors megnyitás</app> a következő helyeken keres fájlokat:</p>
+
+  <list>
+    <item><p>A jelenlegi dokumentumot tartalmazó könyvtár</p></item>
+    <item><p>A <app xref="gedit-plugins-file-browser">Fájlböngésző panel</app> bővítmény gyökérkönyvtára</p></item>
+    <item><p>A legutóbbi dokumentumok, amelyek a <app>Fájlok</app> alkalmazás <file>Nemrég használt</file> mappájában is megjelennek</p></item>
+    <item><p>A <app>Fájlok</app> alkalmazásban könyvjelzőzött könyvtárak</p></item>
+    <item><p>Az <file>Asztal</file> könyvtár</p></item>
+    <item><p>A <file>saját könyvtára</file></p></item>
+  </list>
+
+  <note style="tip">
+    <p>A <app>Gyors megnyitás</app> a fenti helyek bármelyikén lévő fájlokat megjeleníti, függetlenül attól, hogy korábban megnyitotta-e már ezeket.</p>
+  </note>
+
+</page>

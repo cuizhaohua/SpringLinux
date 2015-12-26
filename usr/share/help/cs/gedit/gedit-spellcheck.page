@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="cs">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Zapněte a používejte funkci kontroly pravopisu</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Kontrola pravopisu ve vašich dokumentech</title>
+  <section id="enable-spell-check">
+    <title>Povolení kontroly pravopisu</title>
+    <p>Funkce kontroly pravopisu je v editoru <app>gedit</app> poskytována v podobě zásuvného modulu, který může být povolen podle potřeby. Povolit jej lze následovně:</p>
+
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Předvolby</gui> <gui style="tab">Zásuvné moduly</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Zaškrtnutím <gui style="menuitem">Kontrola pravopisu</gui> zásuvný modul povolíte.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Kontrola pravopisu ve vašich dokumentech</title>
+
+    <p>Jak zkontrolovat, jestli nejsou v dokumentu pravopisně nesprávná slova:</p>
+
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">Nástroje</gui> <gui style="menuitem">Zkontrolovat pravopis</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Aby <app>gedit</app> v dokumentu automaticky průběžně označoval pravopisně nesprávná slova, vyberte <guiseq><gui style="menu">Nástroje</gui> <gui style="menuitem">Zvýrazňovat pravopisné chyby</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Používání kontroly pravopisu</title>
+
+    <p>V dialogovém okně kontroly pravopisu můžete chybné slovo nechat nahradit jeho správnou alternativou. Odhalené chybné slovo je zobrazeno tučně vedle <gui>Chybné slovo:</gui>. Při opravě můžete použít následující postupy:</p>
+
+    <list>
+      <item>
+        <p>Do pole <gui style="input">Změnit na:</gui> můžete zadat nové slovo a pomocí <gui style="button">Zkontrolovat slovo</gui> ověřit, jestli jste ho zadali správně.</p>
+      </item>
+      <item>
+        <p>V seznamu <gui style="menu">Návrhy:</gui> jsou uvedeny dostupné náhrady za chybné slovo.</p>
+      </item>
+      <item>
+        <p>Pomocí <gui style="button">Ignorovat</gui> můžete přeskočit kontrolu <em>tohoto</em> výskytu aktuálního slova.</p>
+      </item>
+      <item>
+        <p>Pomocí <gui style="button">Ignorovat vše</gui> můžete přeskočit kontrolu <em>všech</em> výskytů aktuálního slova.</p>
+      </item>
+      <item>
+        <p>Pomocí <gui style="button">Změnit</gui> můžete <em>tento</em> výskyt chybného nebo nerozpoznaného slova nahradit některým slovem v seznamu <gui style="menuitem">Návrhy:</gui>.</p>
+      </item>
+      <item>
+        <p>Pomocí <gui style="button">Změnit vše</gui> můžete nahradit <em>všechny</em> výskyty chybného nebo nerozpoznaného slova některým slovem ze seznamu <gui style="button">Návrhy:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Přidat slovo</gui> umožňuje přidat aktuální slovo do <gui>Uživatelského slovníku</gui> aplikace <app>gedit</app>. Díky tomu, že slovo přidáte do <gui>Uživatelského slovníku</gui>, <app>gedit</app> jej napříště rozpozná a nebude jej označovat jako chybné.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Určení jazyka použitého při kontrolu pravopisu</title>
+    <p>Ve výchozím stavu používá <app>gedit</app> ke kontrole pravopisu v dokumentu váš aktuální jazyk. Pokud potřebujete použít jiný jazyk, zvolte <guiseq><gui style="menu">Nástroje</gui> <gui style="menuitem">Natavit jazyk…</gui></guiseq> a vyberte si požadovaný jazyk.</p>
+  </section>
+
+  <section id="dict">
+    <title>Slovníky</title>
+
+    <p><app>gedit</app> používá <link href="http://www.abisource.com/projects/enchant/">Enchant</link>, což je drobná systémová pomůcka pro kontrolu pravopisu. Enchant umí využít ke kontrole různé slovníky. Dvěma z nich jsou <em>Hunspell</em> a <em>Aspell</em>.</p>
+
+    <p>Jestliže jazyk, který chcete používat, není pro <app>gedit</app> dostupný, použijte instalátor softwaru nebo správce balíčků k instalaci potřebné podpory slovníků.</p>
+  </section>
+</page>

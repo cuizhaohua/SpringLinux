@@ -1,0 +1,48 @@
+#!/usr/bin/install-menu
+#   -*- mode: shell-script; -*-
+#I need menu-1!
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/bin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/share/doc/menu/html.
+#
+compat="menu-1"
+!include menu.h
+
+compat="menu-2"
+
+function mod($var,$com)=" " $var " \"" 
+          title() ifnempty($hotkey,"&" toupper($hotkey)) 
+          "\" exec " $com "\n";
+
+function ex($com)=mod("Exec",$com);
+
+
+supported;
+  asmodule=   mod("Module", $command);
+  fvwmmodule= mod("Exec",   $command);
+  wm=         mod("Restart",$command);
+  x11fvwm=    ex($command);
+  x11=        ex($command);
+  text=       ex(term());
+endsupported;
+
+startmenu=   "PopUp \"" $section "\"\n Title \"" title() "\"\n";
+
+endmenu=  ifempty(title(), 
+	"  Popup \"Exit\"      Quit-Verify\n" )
+        "EndPopUp\n";
+#very clever endmenu! (hadn't thought of doing it like that myself).
+
+submenutitle="  Popup \"" title() cond_surr(icon(),"%","%") "\""
+              $section "\n";
+
+genmenu=      "menudefs.hook";
+
+rootprefix="/etc/X11/afterstep/";
+userprefix=".afterstep/";
+mainmenutitle="Debian Menu";
+
+

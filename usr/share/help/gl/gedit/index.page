@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="gl">
+
+  <info>
+    <title type="link">Editor de texto gedit</title>
+    <title type="text">Editor de texto gedit</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title><media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/> Editor de texto gedit</title>
+  <p>Benvido á guía de axuda de <app>gedit</app>. Para unha introdución rápida nas características máis básicas de <app>gedit</app>, así como algúns dos atallos de teclado avanzados visite as páxinas <link xref="gedit-quickstart">Comezar con gedit</link> e <link xref="gedit-shortcut-keys">Atallos de teclado</link>.</p>
+
+  <p>Pode atopar outros puntos de axuda agrupados nas seccións de embaixo. Desfrute do uso de <app>gedit</app>!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Traballar con ficheiros</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>Configure gedit</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>Engadidos de gedit</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Imprimir con gedit</title>
+  </section>
+
+</page>

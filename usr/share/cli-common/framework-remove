@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ ! -x /usr/share/cli-common/runtimes.d/$1 ]; then
+    echo ! Cannot remove framework $1
+    exit 1
+fi
+
+echo "* Removing packages from $1's framework paths"
+
+for file in /usr/share/cli-common/packages.d/*.installcliframework
+do
+  if [ -f $file ]; then
+      /usr/share/cli-common/framework-package-remove \
+	  $(basename $file .installcliframework) \
+	  $1
+  fi
+done
+

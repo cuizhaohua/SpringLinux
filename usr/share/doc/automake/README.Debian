@@ -1,0 +1,11 @@
+automake-1.14 for Debian
+----------------------
+
+Automake 1.14 introduces several changes. It is not strictly backwards
+compatible with previous versions of automake before 1.13. It must be used in
+conjunction with autoconf 2.65 or greater. Using it with a earlier
+version will generate broken Makefiles. Also, it no longer invokes
+libtoolize. This job has fallen upon the autoconf utility
+`autoreconf'.
+
+ -- Eric Dorland <eric@debian.org>, Sun, 13 May 2012 20:44:34 -0400

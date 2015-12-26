@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Menyalakan penyorotan sintaks</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Penyorotan Sintaks</title>
+    <p><app>gedit</app> menyediakan penyorotan sintaks bagi berbagai macam markup, pemrograman, dan bahasa ilmiah. Bila <app>gedit</app> mengenali sintaks yang sedang dipakai ketika Anda membuka suatu berkas, itu akan secara otomatis menyorot teks.</p>
+
+    <p>Bila sintaks atau bahasa Anda tak disorot saat awal mula, Anda dapat memilih sintaks atau bahasa yang sesuai dengan mengklik <guiseq><gui style="menu">Tilik</gui> <gui style="menuitem">Mode Penyorotan</gui></guiseq>, lalu memilih sintaks yang diinginkan. Sebagai alternatif, Anda dapat memilih nama sintaks dari suatu daftar di bagian bawah jendela <app>gedit</app>.</p>
+  </section>
+
+</page>

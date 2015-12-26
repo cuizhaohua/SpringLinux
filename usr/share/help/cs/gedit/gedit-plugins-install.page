@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="cs">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Jak nainstalovat zásuvné moduly třetích stran</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dodatečné zásuvné moduly editoru gedit</title>
+
+  <p>Instalací zásuvných modulů třetích stran získáte další funkcionalitu, kterou neposkytují výchozí zásuvné moduly editoru <app>gedit</app> ani rozšiřující zásuvné moduly z balíčku <app>gedit-plugins</app>. Na <link href="https://wiki.gnome.org/Apps/Gedit/Plugins#third_party">této adrese</link> je udržován on-line seznam zásuvných modulů třetích stran.</p>
+  
+  <p>Instalace zásuvného modulu třetí strany sestává ze stažení zásuvného modulu, jeho umístění do správné složky a jeho aktivace.</p>
+  
+  <steps>
+    <item><p>Zásuvný modul je obvykle možné stáhnout z jeho webových stránek, v některých případech ale budete potřebovat nějaký program pro správu verzí, jako je <app>git</app>, <app>bazaar</app> nebo <app>subversion</app>, abyste z Internetu stáhli kopii repozitáře. Jak přesně zásuvný modul získat, byste měli nalézt v jeho dokumentaci.</p></item>
+    <item><p>Soubory zásuvného modulu umístěte do složky <file>/home/<var>uživatelské_jméno</var>/.local/share/gedit/plugins</file>.</p>
+    <p>Ve výše uvedené cestě samozřejmě nahraďte <var>uživatelské_jméno</var> svým skutečným uživatelským jménem.</p></item>
+    <item><p>Až máte soubory zásuvného modulu umístěny ve správné složce, objeví se dotyčný zásuvný modul v nabídce v předvolbách. Povolíte jej pomocí <guiseq><gui>Upravit</gui> <gui style="menuitem">Předvolby</gui> <gui>Zásuvné moduly</gui> <gui>[název zásuvného modulu]</gui></guiseq>.</p></item>
+    <item><p>Klikněte na <gui>Zavřít</gui>.</p></item>
+  </steps>
+  
+  <p>Jakmile máte zásuvný modul povolen, mělo by být možné jej používat.</p>
+  
+  <note style="tip">
+    <p>Složka <file>.local</file> je standardně skrytá. Abyste si ji, nebo i jiné skryté soubory, zobrazili, vyberte <guiseq><gui>Zobrazit</gui> <gui>Zobrazovat skryté soubory</gui></guiseq> nebo zmáčkněte <keyseq><key>Ctrl</key> <key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Pokud se složka <file>.local/share/gedit/plugins/</file> ve vašem systému nenachází, bude si ji potřebovat vytvořit.</p>
+  </note>
+  
+</page>

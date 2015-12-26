@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Impression de documents</title>
+
+    <note style="important">
+      <p>Pour imprimer avec <app>gedit</app>, il est nécessaire d'avoir une imprimante connectée et configurée. Si vous ne l'avez pas encore fait, consultez la <link href="help:gnome-help/printing">documentation d'assistance pour l'impression de GNOME</link>.</p>
+    </note>
+  
+  <p><app>gedit</app> permet d'imprimer soit sur papier, soit dans un fichier.</p>
+
+  <section id="print-preview">
+    <title>Aperçu avant impression</title>
+
+  <p> Avant d'imprimer votre document, vous pouvez aussi prévisualiser la façon dont le document apparaîtra en utilisant la fonctionnalité <gui>Aperçu avant impression</gui>. Pour prévisualiser le document :</p>
+
+  <steps>
+    <item>
+      <p>Cliquez sur <guiseq><gui style="menu">Fichier</gui><gui style="menuitem">Aperçu avant impression</gui></guiseq>, ou appuyez sur <keyseq><key>Maj</key><key>Ctrl</key><key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Un aperçu du document s'ouvre dans le même onglet que le fichier. Vous pouvez parcourir cet aperçu à l'aide des boutons de navigation et des outils de la barre d'outils en haut de l'onglet de l'aperçu du document. Pour fermer et retourner au document, cliquez sur le bouton <gui style="button">Fermer l'aperçu</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Impression sur papier</title>
+
+  <p>Vous pouvez imprimer le document sur papier en utilisant une imprimante locale ou distante. Pour imprimer un fichier :</p>
+
+  <steps>
+    <item>
+      <p>Choisissez <guiseq><gui style="menu">Fichier</gui><gui style="menuitem">Imprimer</gui><gui style="tab">Général</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Choisissez l'imprimante voulue dans la liste des imprimantes disponibles.</p>
+    </item>
+    <item>
+      <p>Vous pouvez pré-visualiser le fichier grâce au bouton <gui style="button">Aperçu avant impression</gui> et, lorsque vous êtes satisfait(e) du résultat de vos modifications, cliquez sur le bouton <gui style="button">Imprimer</gui> pour envoyer le fichier à l'imprimante.</p>
+    </item>
+  </steps>
+
+  <p>En outre, dans l'onglet <gui style="tab">Mise en page</gui>, vous avez le choix entre différentes options d'<gui style="group">Agencement</gui>et de <gui style="group">Papier</gui>. Comme ces réglages sont disponibles dans l'ensemble des programmes <app>GNOME</app>, reportez-vous au manuel d'utilisation du bureau à la rubrique <link href="help:gnome-help/printing#paper">Différents formats de papier et agencements</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Impression de copies multiples ou dans des plages spécifiées</title>
+
+    <p>Vous pouvez régler les options <gui style="group">Plage</gui> et <gui style="group">Copies</gui> :</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Impression dans un fichier</title>
+
+  <p>Vous pouvez aussi utiliser <app>gedit</app> pour imprimer dans un fichier. Pour imprimer le document dans un fichier d'un format différent :</p>
+
+  <steps>
+    <item>
+      <p>Choisissez <guiseq><gui style="menu">Fichier</gui><gui style="menuitem">Imprimer</gui><gui style="menuitem">Imprimer dans un fichier</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>L'impression est disponible pour les formats de fichiers suivants ; choisissez-en un :</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Pour imprimer le document dans un fichier, cliquez alors sur le bouton <gui style="button">Imprimer</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

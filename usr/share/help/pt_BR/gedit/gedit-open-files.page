@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abrindo um arquivo ou um conjunto de arquivos</title>
+
+  <p>Para abrir um arquivo no <app>gedit</app>, clique no botão <gui>Abrir</gui> ou pressione <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>Isso fará com que a janela <gui>Abrir</gui> apareça. Use seu mouse ou teclado para selecionar o arquivo que deseja abrir, e então clique em <gui>Abrir</gui>. O arquivo que você selecionou será aberto em uma nova aba.</p>
+  <p>Para fechar a janela <gui>Abrir</gui> sem abrir um arquivo, clique <gui>Cancelar</gui>.</p>
+
+  <note style="tip"><p>Você pode usar as teclas <key>Ctrl</key> e <key>Shift</key> para abrir mais de um arquivo de uma vez. Se você mantiver pressionada a tecla <key>Ctrl</key> enquanto seleciona múltiplos arquivos, ao clicar em <gui>Abrir</gui> cada um dos arquivos selecionados serão abertos.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Manter pressionada a tecla <key>Shift</key> enquanto você seleciona vários arquivos irá abrir o primeiro arquivo selecionado, o último arquivo selecionado e todos os arquivos entre estes.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

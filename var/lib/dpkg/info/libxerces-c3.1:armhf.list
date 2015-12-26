@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libxerces-c3.1
+/usr/share/doc
+/usr/share/doc/libxerces-c3.1
+/usr/share/doc/libxerces-c3.1/CREDITS
+/usr/share/doc/libxerces-c3.1/copyright
+/usr/share/doc/libxerces-c3.1/changelog.Debian.gz
+/usr/share/doc/libxerces-c3.1/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libxerces-c-3.1.so

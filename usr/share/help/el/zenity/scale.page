@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="scale" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--scale</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος κλιμάκωσης</title>
+  <p>Χρησιμοποιήστε την επιλογή <option>--error</option> για την δημιουργία διαλόγου κλιμάκωσης.</p>
+  <p>Ο διάλογος κλιμάκωσης υποστηρίζει τις παρακάτω επιλογές:</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--text</cmd>=<var>ΚΕΙΜΕΝΟ</var></title>
+      <p>Ορίστε το κειμένου του διαλόγου. (Προεπιλεγμένο: Ρυθμίστε τη τιμή κλιμάκωσης)</p>
+    </item>
+
+    <item>
+      <title><cmd>--value</cmd>=<var>ΤΙΜΗ</var></title>
+      <p>Ορίστε την αρχική τιμή. (Προεπιλεγμένη: 0) Πρέπει να καθορίσετε μια τιμή μεταξύ της ελάχιστης και της μέγιστης.</p>
+    </item>
+
+    <item>
+      <title><cmd>--min-value</cmd>=<var>ΤΙΜΗ</var></title>
+      <p>Ορίστε ελάχιστη τιμή. (Προεπιλεγμένη: 0)</p>
+    </item>
+
+    <item>
+      <title><cmd>--max-value</cmd>=<var>ΤΙΜΗ</var></title>
+      <p>Ορσίτε  μέγιστη τιμή. (Προεπιλεγμένη: 100)</p>
+    </item>
+
+    <item>
+      <title><cmd>--step</cmd>=<var>ΤΙΜΗ</var></title>
+      <p>Ορίστε το μέγεθος του βήματος. (Προεπιλεγμένη: 1)</p>
+    </item>
+
+    <item>
+      <title><cmd>--print-partial</cmd></title>
+      <p>Όταν αλλάζει μια τιμή, εκτύπωσε την στην κανονική έξοδο.</p>
+    </item>
+
+    <item>
+      <title><cmd>--hide-value</cmd></title>
+      <p>Απόκρυψη τιμής στον διάλογο.</p>
+    </item>
+
+  </terms>
+
+  <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε έναν διάλογο κλιμάκωσης:</p>
+
+<code>
+#!/bin/sh
+
+VALUE=`zenity --scale --text="Επιλέξτε διαφάνεια του παραθύρου." --value=50`
+
+case $? in
+         0)
+		echo "Επιλέξατε $VALUE%.";;
+         1)
+                echo "Δεν επιλέχθηκε τιμή.";;
+        -1)
+                echo "Προέκυψε ένα σφάλμα.";;
+esac
+</code>
+
+  <figure id="zenity-scale-screenshot">
+    <title>Παράδειγμα διαλόγου κλιμάκωσης</title>
+    <desc>Παράδειγμα διαλόγου κλιμάκωσης του <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-scale-screenshot.png"/>
+  </figure>
+
+</page>

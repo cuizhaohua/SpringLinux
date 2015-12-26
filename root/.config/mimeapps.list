@@ -1,0 +1,7 @@
+[Default Applications]
+application/vnd.rn-realmedia=smplayer_enqueue.desktop
+image/jpeg=ristretto.desktop
+
+[Added Associations]
+application/vnd.rn-realmedia=smplayer_enqueue.desktop;
+image/jpeg=ristretto.desktop;

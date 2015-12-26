@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libavahi-gobject0
+/usr/share/doc/libavahi-gobject0/NEWS.gz
+/usr/share/doc/libavahi-gobject0/changelog.Debian.gz
+/usr/share/doc/libavahi-gobject0/changelog.gz
+/usr/share/doc/libavahi-gobject0/copyright
+/usr/share/doc/libavahi-gobject0/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libavahi-gobject.so.0.0.4
+/usr/lib/arm-linux-gnueabihf/libavahi-gobject.so.0

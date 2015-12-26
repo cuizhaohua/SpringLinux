@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="id">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Bagaimana memasang plugin pihak ketiga</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Plugin tambahan gedit</title>
+
+  <p>Memasang plugin pihak ketiga memberi Anda fungsionalitas ekstra yang tak tersedia dalam plugin <app>gedit</app> baku, atau bahkan plugin ekstra yang menjadi bagian dari paket <app>gedit-plugins</app>. Suatu daftar daring dari plugin pihak ketiga <link href="https://wiki.gnome.org/Apps/Gedit/">disimpan di sini</link>.</p>
+  
+  <p>Memasang suatu plugin pihak ketika melibatkan mengunduh plugin, menempatkan berkas plugin dalam direktori yang benar, dan mengaktifkan plugin.</p>
+  
+  <steps>
+    <item><p>Anda biasanya dapat mengunduh suatu plugin dari situs web plugin, tapi mungkin perlu memakai suatu program kendali revisi seperti <app>git</app>, <app> bazaar</app>, atau <app>subversion</app> untuk menyalin suatu repositori perangkat lunak plugin dari internet. Lihatlah dokumentasi plugin untuk informasi tentang mendapatkan plugin.</p></item>
+    <item><p>Tempatkan berkas plugin ke dalam direktori <file>/home/<var>namapengguna</var>/.local/share/gedit/plugins</file>.</p>
+    <p>Tentu saja, ganti kata <var>namapengguna</var> dengan nama penggunamu sendiri.</p></item>
+    <item><p>Setelah Anda menempatkan berkas plugin ke dalam direktori yang benar, plugin akan muncul dalam menu Preferensi. Pilih <guiseq><gui>Sunting</gui><gui style="menuitem">Preferensi</gui><gui>Plugin</gui> <gui>[Nama Plugin]</gui></guiseq> untuk memfungsikan plugin.</p></item>
+    <item><p>Klik <gui>Tutup</gui>.</p></item>
+  </steps>
+  
+  <p>Setelah Anda memfungsikan plugin, itu mestinya jadi siap untuk Anda pakai.</p>
+  
+  <note style="tip">
+    <p>Direktori <file>.local</file> tersembunyi secara baku. Untuk menilik itu dan berkas tersembunyi lainnya, pilih <guiseq><gui>Tilik</gui><gui>Tampilkan Berkas Tersembunyi</gui></guiseq>, atau tekan <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Bila direktori <file>.local/share/gedit/plugins/</file> tak ada dalam sistem Anda, Anda perlu membuatnya.</p>
+  </note>
+  
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Buka suatu berkas yang terletak pada suatu server</title>
+
+  <p>Sebelum membuka suatu berkas pada server dari <app>gedit</app>, Anda perlu tahu beberapa informasi teknis tentang server. Sebagai contoh, Anda perlu tahu Alamat IP atau URL server, dan mungkin perlu tahu apa jenis server itu (mis. HTTP, FTP, dsb.).</p>
+
+  <p>Juga, beberapa tipe server menerapkan pembatasan atas apa yang dapat Anda lakukan pada berkas yang disimpan pada server. Sebagai contoh, Anda mungkin bisa membuka berkas dari suatu server, tapi mungkin perlu menyimpan sebarang perubahan ke berkas sercara lokal, pada komputer Anda.</p>
+
+  <p>Dengan memahami catatan khusus itu, lakukan langkah-langkah berikut untuk membuka berkas dari suatu server memakai <app>gedit</app>:</p>
+
+    <steps>
+      <item><p>Pilih <guiseq><gui>Berkas</gui><gui>Buka</gui></guiseq> untuk menampilkan dialog <gui>Buka Berkas</gui>.</p></item>
+      <item><p>Pilih ikon <gui>Pinsil</gui> dekat puncak dari dialog <gui>Buka Berkas</gui>.</p></item>
+      <item><p>Masukkan Alamat IP atau URL dari server yang sesuai.</p></item>
+      <item><p>Cari dan pilih berkas yang ingin Anda buka.</p></item>
+      <item><p>Gunakan daftar drop down Pengkodean karakter untuk memilih pengodean karakter yang sesuai.</p></item>
+      <item><p>Klik <gui>Buka</gui>.</p></item>
+    </steps>
+
+  <p>Ipt URI yang valid termasuk http:, ftp:, file:, dan semua metoda yang didukung oleh <app>gvfs</app>.</p>
+
+  <note>
+    <p>Berkas dari beberapa tipe URI dibuka sebagai hanya-baca, dan sebarang perubahan yang Anda buat mesti disimpan ke lokasi berbeda. Sebagai contoh, HTTP hanya mengijinkan berkas untuk dibaca. Berkas yang dibuka dari FTP hanya-baca karena tidak semua server FTP bisa bekerja dengan benar untuk menyimpan berkas jarak jauh.</p>
+  </note>
+
+</page>

@@ -1,0 +1,56 @@
+This package was debianized by Daniel Rus Morales <danirus@tol-project.org> on
+Sat, 15 Dec 2007 19:35:03 +0100
+
+It was downloaded from http://www.cise.ufl.edu/research/sparse/SuiteSparse/
+
+Copyright Holder:
+AMD                    Copyright (c) 1994-2011 by Timothy A. Davis, Patrick R. Amestoy, and
+                       Iain S. Duff.
+BTF                    Copyright (c) 2004-2007, University of Florida. Author: Timothy A. Davis.
+CCOLAMD, COLAMD        Copyright (c) 1998-2007, University of Florida. Author: Timothy A. Davis,
+                       Siva Rajamanickam, and Stefan Larimore. The COLAMD algorithm was developed
+                       in collaboration Esmond Ng and John Gilbert.
+CSparse, CXSparse      Copyright (c) 2006-2013, Timothy A. Davis.
+KLU                    Copyright (c) 2004-2012, University of Florida.
+                       Author: Timothy A. Davis. Co-author: Eka Palamadai.
+LDL                    Copyright (c) 2003-2007 by Timothy A. Davis.
+UMFPACK                Copyright (c) 1994-2012 by Timothy A. Davis, University of Florida.
+CHOLDMOD               Copyright (c) 2004-2013. Some portions are Copyright (c) Univ. of Florida.
+                       Others are Copyright (c) by their authors (T. A. Davis and W. Hager).
+                       Distributed under the GNU LGPL license; the Supernodal and Modify
+                       (update/downdate) Modules are distributed under the GNU GPL license.
+
+License: LGPL, GPL
+
+On Debian systems, the complete text of the GNU Lesser General Public
+License, version 2.1, can be found in
+`/usr/share/common-licenses/LGPL-2.1'.  On Debian systems, the
+complete text of the GNU General Public License, version 2, can be
+found in `/usr/share/common-licenses/GPL-2'.
+
+
+AMD: LGPL-2.1+
+BTF: LGPL-2.1+
+CCOLAMD: LGPL-2.1+
+COLAMD: LGPL-2.1+
+CSparse: LGPL-2.1+
+CXSparse: LGPL-2.1+
+KLU: LGPL-2.1+
+LDL: LGPL-2.1+
+UMFPACK: GPL-2+
+CHOLMOD:
+ - Check: LGPL-2.1+
+ - Cholesky: LGPL-2.1+
+ - Core: LGPL-2.1+
+ - Demo: GPL-2+
+ - MatrixOps: GPL-2+
+ - Modify: GPL-2+
+ - Partition: LGPL-2.1+
+ - Supernodal: GPL-2+
+ - Tcov: GPL-2+
+ - Valgrind: GPL-2+
+
+The Debian packaging information is Copyright © 2006-2013 Debian Science Team
+and released under the terms of the GNU General Public License, version 3 or
+later. On Debian systems, the complete text of the license, can be found in
+`/usr/share/common-licenses/GPL-3'.

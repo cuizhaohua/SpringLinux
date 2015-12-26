@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Mainīt krāsu shēmu</title>
+
+  <p><app>gedit</app> ir vairākas atšķirīgas krāsu shēmas, kas ļauj mainīt galvenā teksta loga izskatu.</p>
+
+  <p>Lai nomainītu krāsu shēmu, veiciet šādas darbības:</p>
+  <steps>
+    <item><p>Izvēlieties <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Iestatījumi</gui> <gui>Fonts un krāsas</gui></guiseq>.</p></item>
+    <item><p>Izvēlieties vēlamo krāsu shēmu.</p></item>
+  </steps>
+
+  <p>Jaunā krāsu shēma tiks pielietota tūlīt.</p>
+
+  <section id="custom-color-scheme">
+    <title>Izmantot pielāgotu krāsu shēmu</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Jūs varat izmantot arī citu lietotāju radītas krāsu shēmas, vai arī izveidot un lietot savas krāsu shēmas.</p>
+    <p>Instrukcijas pielāgotu krāsu shēmu instalēšanai, kā arī pieejamo krāsu shēmu piemēri, ir atrodami <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">gedit wiki</link>.</p>
+  </section>
+
+</page>

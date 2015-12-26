@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>关闭文件</title>
+
+  <p>要在 <app>gedit</app> 中关闭一个文件，点菜单 <guiseq><gui>文件</gui><gui>关闭</gui></guiseq>。另外，您也可以点击这个文件所在标签右侧的“X”，或者按组合键 <keyseq><key>Ctrl</key><key>W</key></keyseq>。</p>
+  <p>上述的任何一个操作都会关闭文件，如果您的文件中发生了变化而没有保存，<app>gedit</app> 会在关闭前提示您保存更改。</p>
+
+</page>

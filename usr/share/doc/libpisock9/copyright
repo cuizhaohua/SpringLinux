@@ -1,0 +1,17 @@
+This package was first debianized by Mark W. Eichin eichin@kitten.gen.ma.us on
+Tue,  1 Jul 1997 01:38:08 -0400.
+
+It was downloaded from: http://www.pilot-link.org/
+Upstream Author: The pilot-link Team
+    and in particular David A. Desrosiers <hacker@gnu-designs.com>
+
+Copyright Holder: David A. Desrosiers, 2000
+
+Copyright:
+
+The libraries in pilot-link are covered by the GNU LGPL (see 
+/usr/share/common-licenses/LGPL-2)
+
+The rest of pilot-link is covered by the GNU GPL (see
+/usr/share/common-licenses/GPL-2)
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kiszolgálón található fájl megnyitása</title>
+
+  <p>A kiszolgálón található fájlok <app>geditből</app> való megnyitása előtt szüksége lesz néhány technikai információra a kiszolgálóról. Tudnia kell például a kiszolgáló IP-címét vagy URL-címét, és szükség lehet a kiszolgáló típusának (például HTTP, FTP stb.) ismeretére is.</p>
+
+  <p>Egyes kiszolgálótípusok korlátozzák, hogy mit tehet a kiszolgálón tárolt fájlokkal. Lehetséges például, hogy meg tud nyitni egy fájlt a kiszolgálóról, de a változtatásokat elmenteni csak helyileg tudja, a saját számítógépére.</p>
+
+  <p>Ezeket a kikötéseket szem előtt tartva tegye a következőket a kiszolgálón található fájl megnyitásához a <app>gedittel</app>:</p>
+
+    <steps>
+      <item><p>Válassza a <guiseq><gui>Fájl</gui><gui>Megnyitás</gui></guiseq> menüpontot a <gui>Fájlok megnyitása</gui> ablak megjelenítéséhez.</p></item>
+      <item><p>Válassza a <gui>Toll</gui> ikont a <gui>Fájlok megnyitása</gui> ablak tetején.</p></item>
+      <item><p>Adja meg a megfelelő kiszolgáló IP-címét vagy URL-címét.</p></item>
+      <item><p>Keresse meg, és válassza ki a megnyitni kívánt fájlt.</p></item>
+      <item><p>Válassza ki a megfelelő karakterkódolást a Karakterkódolás legördülő listából.</p></item>
+      <item><p>Kattintson a <gui>Megnyitás</gui> gombra.</p></item>
+    </steps>
+
+  <p>Az érvényes URI-típusok a http:, az ftp:, a file: és minden más, a <app>gvfs</app> által támogatott elérési mód.</p>
+
+  <note>
+    <p>Bizonyos típusú URI címekről megnyitott fájlok csak olvasható módban használhatók, a változtatásokat csak más helyre lehet menteni. A HTTP-n keresztül megnyitott fájlok például csak olvashatók. Az FTP-vel megnyitottak azért nem módosíthatók, mert egyes FTP kiszolgálók hibásan kezelik a távoli fájlok mentését.</p>
+  </note>
+
+</page>

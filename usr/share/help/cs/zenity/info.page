@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="info" xml:lang="cs">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Použití přepínače <cmd>--info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s informačním hlášením</title>
+      <p>K vytvoření dialogového okna s informačním hlášením použijte přepínač <cmd>--info</cmd>.</p>
+
+      <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s informačním hlášením:</p>
+
+<code>
+#!/bin/bash
+
+zenity --info \
+--text="Sloučení dokončeno. Aktualizovány 3 z 10 souborů."
+</code>
+
+
+      <figure id="zenity-information-screenshot">
+        <title>Příklad dialogového okna s informačním hlášením</title>
+        <desc>Ukázka dialogového okna <app>Zenity</app> s informačním hlášením</desc>
+        <media type="image" mime="image/png" src="figures/zenity-information-screenshot.png"/>
+      </figure>
+</page>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Alsamixergui
+Comment=Graphical audio mixer
+Exec=/usr/bin/alsamixergui
+Icon=/usr/share/pixmaps/alsamixergui.xpm
+Terminal=false
+Type=Application
+Categories=Application;AudioVideo;

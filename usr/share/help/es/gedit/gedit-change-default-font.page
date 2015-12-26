@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="es">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cambiar la tipografía predeterminada</title>
+
+  <p><app>gedit</app> usará de manera predeterminada en sistema de tipografía de ancho fijo, pero puede cambiar la tipografía predeterminada de <app>gedit</app> para que se ajuste a sus necesidades.</p>
+  
+  <steps>
+    <title>Para cambiar la tipografía predeterminada en <app>gedit</app>:</title>
+      <item><p>Seleccione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferencias</gui> <gui>Tipografía y colores</gui></guiseq>.</p></item>
+      <item><p>Desmarque la casilla junto a la frase «Usar la tipografía de ancho fijo del sistema.»</p></item>
+      <item><p>Pulse sobre el nombre de la tipografía actual. <app>gedit</app> abrirá una ventana para elegir tipografías, que le permitirá ver las tipografías disponibles y elegir la que prefiere.</p></item>
+      <item><p>Después de elegir una tipografía nueva, use el <gui>deslizador</gui> para establecer el tamaño predeterminado de la tipografía.</p></item>
+      <item><p>Pulse <gui>Seleccionar</gui>, y luego pulse <gui>Guardar</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

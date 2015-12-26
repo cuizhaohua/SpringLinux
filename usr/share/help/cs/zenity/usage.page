@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="usage" xml:lang="cs">
+<info>
+  <link type="guide" xref="index"/>
+  <desc>Aplikaci <app>Zenity</app> můžete využít k vytváření jednoduchých dialogových oken pro komunikaci s uživatelem v grafickém prostředí.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+<title>Použití</title>
+    <p>Pokud píšete skripty, můžete využít aplikaci <app>Zenity</app> k vytváření jednoduchých dialogových oken, díky čemuž můžete graficky komunikovat s uživatelem. Využití je pro následující účely:</p>
+    <list>
+      <item>
+        <p>Můžete vytvořit dialogové okno k získání informací od uživatele. Například se můžete uživatele dotázat na datum pomocí výběru z dialogového okna s kalendářem nebo na název souboru pomocí dialogového okna pro výběr souboru.</p>
+      </item>
+      <item>
+        <p>Můžete vytvořit dialogové okno pro sdělení informace uživateli. Například můžete použít dialogové okno s ukazatelem průběhu k informování o stavu operace nebo dialogové okno s varovnou zprávou k upozornění uživatele.</p>
+      </item>
+    </list>
+    <p>Po té, co uživatel zavře dialogové okno, vypíše aplikace <app>Zenity</app> získaný text na standardní výstup.</p>
+
+    <note>
+      <p>Při zapisování příkazů <app>Zenity</app> se ujistěte, že máte všechny argumenty uzavřené do uvozovek.</p>
+      <p>Například použijte:</p>
+      <screen>zenity --calendar --title="Plán oslav"</screen>
+      <p>Nepoužívejte:</p>
+      <screen>zenity --calendar --title=Plán oslav</screen>
+      <p>Pokud uvozovky nepoužijete, můžete získat nepředvídatelné výsledky.</p>
+    </note>
+
+    <section id="zenity-usage-mnemonics">
+      <title>Horké klávesy</title>
+	<p>Horké klávesy jsou klávesy, které vám umožňují provádět činnost z klávesnice místo abyste museli použít myš k výběru z nabídky nebo dialogového okna. Každá horká klávesa je symbolizovaná podtržením příslušného písmene v položce nabídky nebo dialogového okna.</p>
+	<p>Některá dialogová okna <app>Zenity</app> podporují horké klávesy. Pokud chcete určit, že některý znak má fungovat jako horká klávesa, umístěte před něj podtržítko. Následující příklad ukazuje, jak určit jako horkou klávesu znak „Z“</p>
+	<screen><input>"_Změnit název".</input></screen>
+    </section>
+
+    <section id="zenity-usage-exitcodes">
+      <title>Návratové kódy</title>
+    <p><app>Zenity</app> vrací následující návratové kódy:</p>
+
+    <table frame="all" rules="all">
+        <thead>
+          <tr valign="top">
+            <td colname="COLSPEC0">
+              <p>Návratový kód</p></td>
+            <td colname="COLSPEC1">
+              <p>Popis</p></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr valign="top">
+            <td>
+              <p><var>0</var></p>
+            </td>
+            <td>
+              <p>Uživatel zmáčkl <gui style="button">Budiž</gui> nebo <gui style="button">Zavřít</gui>.</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <p><var>1</var></p>
+            </td>
+            <td>
+              <p>Uživatel buď zmáčkl <gui style="button">Zrušit</gui> nebo použil ovládací prvky okna k jeho zavření.</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <p><var>-1</var></p>
+            </td>
+            <td>
+              <p>Vyskytla se neznámá chyba.</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <p><var>5</var></p>
+            </td>
+            <td>
+              <p>Dialogové okno bylo zavřeno, protože vypršel časový limit.</p>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+    </section>
+
+
+  <!-- ==== General Options ====== -->
+
+  <section id="zenity-usage-general-options">
+    <title>Všeobecné přepínače</title>
+
+    <p>Všechna dialogová okna Zenity podporují následující obecné přepínače:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--title</cmd>=<var>NÁZEV</var></title>
+	<p>Určuje název do záhlaví dialogového okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--window-icon</cmd>=<var>CESTA_K_IKONĚ</var></title>
+	<p>Určuje ikonu, která se zobrazí v záhlaví dialogového okna. K dispozici jsou také 4 předdefinované ikony dostupné pomocí klíčových slov „info“ (informace), „warning“ (varování), „question“ (dotaz) a „error“ (chyba).</p>
+      </item>
+
+      <item>
+        <title><cmd>--width</cmd>=<var>ŠÍŘKA</var></title>
+	<p>Určuje šířku dialogového okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--height</cmd>=<var>VÝŠKA</var></title>
+	<p>Určuje výšku dialogového okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--timeout</cmd>=<var>ČASOVÝ_LIMIT</var></title>
+	<p>Určuje časový limit v sekundách, po kterém se dialogové okno zavře.</p>
+      </item>
+
+    </terms>
+
+  </section>
+
+<!-- ==== Miscellaneous Options ====== -->
+
+  <section id="zenity-help-options">
+    <title>Přepínače nápovědy</title>
+
+    <p><app>Zenity</app> poskytuje následující přepínače pro nápovědu:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--help</cmd></title>
+	<p>Zobrazí zkrácenou nápovědu.</p>
+      </item>
+
+      <item>
+        <title><cmd>--help-all</cmd></title>
+	<p>Zobrazí celou nápovědu pro všechny typy dialogových oken.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-general</cmd></title>
+	<p>Zobrazí nápovědu pro všeobecné přepínače dialogových oken.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-calendar</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s kalendářem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-entry</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna pro vkládání údajů.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-error</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s chybovým hlášením.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-info</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s informačním hlášením.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-file-selection</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna pro výběr souboru.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-list</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna se seznamem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-notification</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače oznamovací ikony.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-progress</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s ukazatele průběhu.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-question</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s dotazem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-warning</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s varovným hlášením.</p>
+      </item>
+ 
+      <item>
+	<title><cmd>--help-text-info</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače dialogového okna s informačním textem.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-misc</cmd></title>
+	<p>Zobrazí nápovědu pro různé přepínače.</p>
+      </item>
+ 
+      <item>
+        <title><cmd>--help-gtk</cmd></title>
+	<p>Zobrazí nápovědu pro přepínače GTK+.</p>
+      </item>
+ 
+    </terms>
+
+  </section>
+
+<!-- ==== Miscellaneous Options ====== -->
+
+  <section id="zenity-miscellaneous-options">
+    <title>Různé přepínače</title>
+
+    <p><app>Zenity</app> poskytuje také následující různorodé přepínače:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--about</cmd></title>
+	<p>Zobrazí dialogové okno <gui>O aplikaci Zenity</gui>, které obsahuje informace o verzi <app>Zenity</app>, informace o autorských právech a informace o vývojářích.</p>
+      </item>
+
+      <item>
+        <title><cmd>--version</cmd></title>
+	<p>Zobrazí číslo verze aplikace <app>Zenity</app>.</p>
+      </item>
+
+    </terms>
+
+  </section>
+
+<!-- ==== GTK+ Options ====== -->
+
+  <section id="zenity-gtk-options">
+    <title>Přepínače GTK+</title>
+
+    <p>Aplikace <app>Zenity</app> podporuje standardní přepínače GTK+. Více informací o přepínačích GTK+ získáte spuštěním příkazu <cmd>zenity --help-gtk</cmd>.</p>
+
+  </section>
+
+<!-- ==== Environment variables ==== -->
+
+  <section id="zenity-environment-variables">
+    <title>Proměnné prostředí</title>
+
+    <p>Normálně aplikace <app>Zenity</app> detekuje terminálové okno, ze kterého byla spuštěná a drží se nad tímto oknem. Toto chování lze zakázat zrušením nastavení proměnné prostředí <var>WINDOWID</var>.</p>
+
+  </section>
+</page>

@@ -1,0 +1,145 @@
+#!/usr/bin/perl
+
+#
+# Setup
+#
+
+# Directives
+use strict;
+use warnings;
+
+# Modules
+use File::Basename;
+
+# This script gets the name of the package as the first parameter.  It
+# parses the file given, figures out the black and white listing, then
+# installs them as appropriate. If there is a second parameter, this
+# is the only CLR installed.
+
+#
+# Handle the input file
+#
+
+# Get the package
+my $pkg = $ARGV[0];
+my $use_clr = $ARGV[1];
+my $full = "/usr/share/cli-common/packages.d/$pkg";
+
+# Make sure it exists
+if ( ! -f "$full.installcligac" )
+{
+    print STDERR "! $full.installcligac doesn't exist!\n";
+    exit 1;
+}
+
+# Parse the file
+unless (open INPUT, "<$full.installcligac")
+{
+    print STDERR "! Cannot open $full.installcligac ($!)\n";
+    exit 2;
+}
+
+my @dlls = ();
+my %blacklist = ();
+my %whitelist = ();
+
+while (<INPUT>)
+{
+    # Clean up the line and ignore blanks and comments
+    chomp;
+    s/^\s+//;
+    s/\s+$//;
+    next if /^\#/;
+    next if /^\s*$/;
+
+    # Split on the space
+    my @p = split(/\s+/);
+
+    # Check the DLL
+    my $dll = shift @p;
+
+    if (! -f $dll)
+    {
+	print STDERR "! Assembly $dll does not exist\n";
+	exit 3;
+    }
+
+    push @dlls, $dll;
+
+    # Go through the listing
+    while (@p)
+    {
+	# Get it
+	my $p = shift @p;
+
+	#print "D: List -> $dll: $p\n";
+
+	# Add it to the appropriate list. The dll:$dll key is used for
+	# sanity checking.
+	if ($p =~ s/^-//)
+	{
+	    $blacklist{"$p:$dll"}++;
+	    $blacklist{"dll:$dll"}++;
+	}
+	elsif ($p =~ s/^\+//)
+	{
+	    $whitelist{"$p:$dll"}++;
+	    $whitelist{"dll:$dll"}++;
+	}
+    }
+}
+
+# Do some sanity checking
+foreach my $dll (@dlls)
+{
+    if (defined($whitelist{"dll:$dll"}) && defined($blacklist{"dll:$dll"}))
+    {
+	print STDERR "! $dll has both a white- and blacklist.\n";
+	print STDERR "!   Ignoring blacklist.\n";
+    }
+}
+
+# Go through the installation targets
+foreach my $clr (glob("/usr/share/cli-common/runtimes.d/*"))
+{
+    # Ignore temporary files
+    next if $clr =~ /~$/;
+    next if $clr =~ /^\./;
+
+    # Get the "name"
+    my $name = basename($clr);
+
+    # Get the formal name
+    my $formal = `$clr name`;
+    $formal = $name if !defined $formal || $formal =~ /^\s*$/;
+    chomp($formal);
+
+    # Only use the one CLR if given
+    next if (defined $use_clr && $name ne $use_clr);
+
+    # Figure out the package list
+    my @install = ();
+
+    foreach my $dll (@dlls)
+    {
+	# Check the white list
+	if (defined $whitelist{"dll:$dll"})
+	{
+	    next if (!defined $whitelist{"$name:$dll"});
+	}
+	elsif (defined $blacklist{"dll:$dll"})
+	{
+	    next if (defined $blacklist{"$name:$dll"});
+	}
+
+	# We are going to install this one
+	push @install, $dll;
+    }
+
+    # Install it
+    my $t = scalar(@install) . " assemblies";
+    $t = "1 assembly" if (@install == 1);
+
+    print STDOUT "* Installing $t from $pkg into $formal\n";
+    system($clr, "install", $pkg, @install) == 0 or die "E: Installation of $pkg with $clr failed\n";
+}

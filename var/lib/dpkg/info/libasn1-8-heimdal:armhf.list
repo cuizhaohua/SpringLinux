@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libasn1-8-heimdal
+/usr/share/doc
+/usr/share/doc/libasn1-8-heimdal
+/usr/share/doc/libasn1-8-heimdal/copyright
+/usr/share/doc/libasn1-8-heimdal/changelog.gz
+/usr/share/doc/libasn1-8-heimdal/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libasn1.so.8.0.0
+/usr/lib/arm-linux-gnueabihf/libasn1.so.8

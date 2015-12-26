@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einrichten und Verwenden von gedit-Plugins</title>
+  <p>Sie können mit Hilfe von Plugins mehr mit <app>gedit</app> tun. Verschiedene Plugins sind bereits standardmäßig installiert, außerdem sind weitere Plugins separat erhältlich.</p>
+  
+  <note><p>Viele Linux-Distributionen fassen die verfügbaren Plugins in einem Paket namens <app>gedit-plugins</app> zusammen. Installieren Sie dieses Paket, um die Plugins für <app>gedit</app> verfügbar zu machen.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Vorgegebene gedit-Plugins</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Zusätzliche gedit-Plugins</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

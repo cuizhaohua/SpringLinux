@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mover y reordenar pestañas</title>
+  <p>Las pestañas en <app>gedit</app> se pueden mover, haciendo que sea más fácil trabajar con sus archivos. Las pestañas se pueden reordenar en la misma ventana, mover fuera de <app>gedit</app> (creando una ventana de <app>gedit</app> nueva) y moverse de una ventana a otra.</p>
+
+  <section id="tabs-change-order">
+    <title>Cambiar el orden de las pestañas en en la ventana de gedit</title>
+
+    <p>Para cambiar el orden de las pestañas en una ventana:</p>
+
+    <steps>
+      <item>
+        <p>Pulse y mantenga pulsado el botón del ratón en la pestaña.</p>
+      </item>
+      <item>
+        <p>Mueva la pestaña a la posición que quiera entre otras pestañas</p>
+      </item>
+      <item>
+        <p>Suelte el botón del ratón.</p>
+      </item>
+    </steps>
+
+    <p>La pestaña se ubicará en la posición más cercana a donde suelte la pestaña, junto a otras pestañas abiertas.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Mover una pestaña, creando una ventana nueva de gedit</title>
+    <p>Para crear una ventana nueva desde una pestaña existente:</p>
+
+    <steps>
+      <item>
+        <p>Pulse y mantenga pulsado el botón del ratón en la pestaña.</p>
+      </item>
+      <item>
+        <p>Arrastre la pestaña fuera de la ventana de <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Suelte el botón del ratón.</p>
+      </item>
+    </steps>
+
+    <p>o, mientras la pestaña se mueve seleccione <guiseq><gui>Documentos</gui><gui>Mover a la ventana nueva</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Para mover una pestaña a una ventana nueva cuando <app>gedit</app> está maximizado, arrastre la pestaña a la barra superior de la pantalla.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Mover una pestaña a otra ventana de gedit</title>
+
+    <p>Si quiere mover una pestaña de una ventana a otra:</p>
+
+    <steps>
+      <item>
+        <p>Pulse y mantenga pulsado el botón del ratón en la pestaña.</p>
+      </item>
+      <item>
+        <p>Arrastre la pestaña a la nueva ventana.</p>
+      </item>
+      <item>
+        <p>Sitúela junto a las otras pestañas, en la ventana nueva.</p>
+      </item>
+      <item>
+        <p>Suelte el botón del ratón.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Es posible que le resulte más fácil mover una pestaña de una ventana a otra arrastrando la pestaña a la esquina activa del menú de <gui>Actividades</gui> de <gui> GNOME Shell</gui>. Esto mostrará el resto de ventanas de <app>gedit</app> abiertas. Puede soltar la pestaña en la ventana de <app>gedit</app> que quiera.</p>
+    </note>
+
+    <p>Consulte los <link xref="gedit-shortcut-keys">atajos relacionados con las pestañas</link> que simplifican la gestión de sus pestañas.</p>
+
+  </section>
+
+</page>

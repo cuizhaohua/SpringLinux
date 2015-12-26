@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libffi6
+/usr/share/doc/libffi6/copyright
+/usr/share/doc/libffi6/changelog.Debian.gz
+/usr/share/doc/libffi6/changelog.Debian.armhf.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libffi.so.6.0.2
+/usr/lib/arm-linux-gnueabihf/libffi.so.6

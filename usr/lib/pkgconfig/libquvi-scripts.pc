@@ -1,0 +1,10 @@
+prefix=/usr
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+scriptsdir=${datarootdir}/libquvi-scripts
+versionfile=${scriptsdir}/version
+
+Name: libquvi-scripts
+URL: http://quvi.sourceforge.net/
+Description: Scripts for libquvi
+Version: 0.4.21

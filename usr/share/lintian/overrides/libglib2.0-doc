@@ -1,0 +1,2 @@
+# This is deliberate, it shouldn't appear in devhelp
+libglib2.0-doc: package-contains-devhelp-file-without-symlink usr/share/doc/libglib2.0-doc/gdbus-object-manager-example/gdbus-object-manager-example.devhelp2.gz

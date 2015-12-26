@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/xfdesktop
+/usr/bin/xfdesktop-settings
+/usr/share
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/xfdesktop-settings.1.gz
+/usr/share/man/man1/xfdesktop.1.gz
+/usr/share/man/man1/xfce4-popup-menu.1.gz
+/usr/share/applications
+/usr/share/applications/xfce-backdrop-settings.desktop
+/usr/share/menu
+/usr/share/menu/xfdesktop4
+/usr/share/doc
+/usr/share/doc/xfdesktop4

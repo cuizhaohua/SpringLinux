@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--progress</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος ένδειξης προόδου</title>
+    <p>Χρησιμοποιήστε την επιλογή <cmd>--progress</cmd> για να δημιουργήσετε έναν διάλογο ένδειξης προόδου.</p>
+
+    <p>Το <app>Zenity</app> διαβάζει τα δεδομένα εισόδου ανά γραμμή. Αν μία γραμμή αρχίζει με #, το κείμενο ενημερώνεται με το κείμενο της γραμμής. Αν η γραμμή περιέχει μόνο έναν αριθμό, το ποσοστό ενημερώνεται με αυτόν τον αριθμό.</p>
+	
+    <p>Ο διάλογος ένδειξης προόδου υποστηρίζει τις παρακάτω επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>κείμενο</var></title>
+	  <p>Καθορίζει το κείμενο που προβάλλεται στο διάλογο ένδειξης προόδου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>ποσοστό</var></title>
+	  <p>Καθορίζει το αρχικό ποσοστό που μπαίνει στον διάλογο ένδειξης προόδου.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Κλείνει τον διάλογο ενημέρωσης προόδου όταν επιτευχθεί το 100%.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Ορίζει ότι η μπάρα προόδου πάλλεται έως ότου διαβαστεί ένας χαρακτήρας EOF από την κανονική είσοδο.</p>
+      </item>
+
+    </terms>
+
+    <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε έναν διάλογο ένδειξης προόδου:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Γίνεται ενημέρωση των καταγραφών αλληλογραφίας" ; sleep 1
+echo "20" ; sleep 1
+echo "# Γίνεται επαναφορά των εργασιών cron" ; sleep 1
+echo "50" ; sleep 1
+echo "Αυτή η γραμμή θα αγνοηθεί" ; sleep 1
+echo "75" ; sleep 1
+echo "# Γίνεται επανεκκίνηση του συστήματος" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Ενημέρωση καταγραφών του συστήματος" \
+  --text="Σάρωση καταγραφών αλληλογραφίας..." \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Ακυρώθηκε η ενημέρωση."
+fi
+</code>
+
+
+    <figure id="zenity-progress-screenshot">
+      <title>Παράδειγμα διαλόγου ένδειξης προόδου</title>
+      <desc>Παράδειγμα διαλόγου ένδειξης προόδου του <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

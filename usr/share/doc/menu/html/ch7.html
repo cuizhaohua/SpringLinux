@@ -1,0 +1,821 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian Menu System - The internals of the menu package</title>
+
+<link href="index.html" rel="start">
+<link href="ch6.html" rel="prev">
+<link href="ch8.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch1.html" rel="chapter" title="1 Introduction">
+<link href="ch2.html" rel="chapter" title="2 Menu from the viewpoint of a user">
+<link href="ch3.html" rel="chapter" title="3 The menu file">
+<link href="ch4.html" rel="chapter" title="4 What packages with applications should do">
+<link href="ch5.html" rel="chapter" title="5 What packages with menu managers should do">
+<link href="ch6.html" rel="chapter" title="6 How a user can override the menus">
+<link href="ch7.html" rel="chapter" title="7 The internals of the menu package">
+<link href="ch8.html" rel="chapter" title="8 Variables and functions in the install-menu scripts">
+<link href="ch2.html#s2.1" rel="section" title="2.1 How/when do the window manager startup files get created?">
+<link href="ch2.html#s2.2" rel="section" title="2.2 Tuning of the generated window manager startup files">
+<link href="ch2.html#s2.3" rel="section" title="2.3 Optimization of menu tree: hints">
+<link href="ch3.html#s3.1" rel="section" title="3.1 Location">
+<link href="ch3.html#s3.2" rel="section" title="3.2 Syntax">
+<link href="ch3.html#s3.3" rel="section" title="3.3 The title field">
+<link href="ch3.html#s3.4" rel="section" title="3.4 The needs field">
+<link href="ch3.html#s3.5" rel="section" title="3.5 The section field">
+<link href="ch3.html#s3.6" rel="section" title="3.6 The command field">
+<link href="ch3.html#s3.7" rel="section" title="3.7 The icon field">
+<link href="ch3.html#s3.8" rel="section" title="3.8 The hints field">
+<link href="ch3.html#s3.9" rel="section" title="3.9 Entries for menu sections.">
+<link href="ch3.html#s3.10" rel="section" title="3.10 Fvwm's task and title bars">
+<link href="ch4.html#s4.1" rel="section" title="4.1 Providing a menu file">
+<link href="ch4.html#s4.2" rel="section" title="4.2 Adding a hook for dpkg in your packages">
+<link href="ch6.html#s6.1" rel="section" title="6.1 Configuring the menus">
+<link href="ch6.html#s6.2" rel="section" title="6.2 Specifying that a menu entry should not be displayed">
+<link href="ch6.html#s6.3" rel="section" title="6.3 Including other files">
+<link href="ch7.html#s7.1" rel="section" title="7.1 The update-menus program">
+<link href="ch7.html#s7.2" rel="section" title="7.2 The install-menu program">
+<link href="ch7.html#s7.3" rel="section" title="7.3 The install-menu config script definitions">
+<link href="ch7.html#s7.4" rel="section" title="7.4 Hints, tree optimization">
+<link href="ch8.html#s8.1" rel="section" title="8.1 String constants">
+<link href="ch8.html#s8.2" rel="section" title="8.2 Variables">
+<link href="ch8.html#s8.3" rel="section" title="8.3 Functions">
+<link href="ch8.html#s8.2.1" rel="subsection" title="8.2.1 Special variables">
+<link href="ch8.html#s8.2.2" rel="subsection" title="8.2.2 Preferred variables">
+<link href="ch8.html#s8.2.3" rel="subsection" title="8.2.3 Suggested variables">
+
+</head>
+
+<body>
+
+<p><a name="ch7"></a></p>
+<hr>
+
+<p>
+[ <a href="ch6.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ 7 ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch8.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian Menu System
+<br>Chapter 7 - The internals of the menu package
+</h1>
+
+<hr>
+
+<hr>
+
+<h2 id="s7.1">7.1 The update-menus program</h2>
+
+<p>
+On startup, update-menus checks the file <code>/var/run/update-menus.pid</code>
+and the pid in it.  If there's an <code>update-menus</code> process with that
+pid it kills it.  If <code>/var/lib/dpkg/lock</code> exists, it checks to see
+if dpkg supports triggers.  If so, it uses dpkg-trigger to trigger a real
+update-menus run later.  Otherwise, it forks to background and returns control
+to dpkg.  The background process checks the <code>/var/lib/dpkg/lock</code>
+file approx.  every two second until the file's gone.
+</p>
+
+<p>
+Once it's decided to run, whether in the background after dpkg exits, or in the
+foreground when used with a trigger-capable dpkg, <code>update-menus</code>
+reads the menu-entry files in the following directories:
+<code>/etc/menu</code>, <code>/usr/lib/menu</code>,
+<code>/usr/share/menu</code>, <code>/usr/share/menu/default</code>.  (if a user
+runs <code>update-menus</code>, it will add <code>~/.menu</code> to the front
+of that list).  For every menu entry line in each file it checks if the
+corresponding package is installed.  The menu entries of all packages marked as
+installed by dpkg are added together in one big buffer that is kept in memory
+(exception: executable menu entry files are executed, and stdout is placed in
+the buffer).
+</p>
+
+<p>
+Once it's read all menu entry files, <code>update-menus</code> starts all
+executable scripts in <code>/etc/menu-methods/</code>, hands the scripts the
+previously created buffer via stdin.  (If <code>update-menus</code> is run by a
+user, it will first try to run the scripts in <code>~/.menu-methods</code>, and
+only if that directory doesn't exist, it will run the scripts in
+<code>/etc/menu-methods</code>).
+</p>
+
+<p>
+Note that as an aid to debugging, one can use
+</p>
+
+<pre>
+     update-menus --stdout &gt; /tmp/menu-stdin
+</pre>
+
+<p>
+and then view the file <code>/tmp/menu-stdin</code> to see exactly what
+<code>update-menus</code> handed the menu-methods on their stdin.
+</p>
+
+<p>
+This may also be useful for people writing <code>/etc/menu-method/*</code>
+scripts: Running <code>update-menus</code> every time you changed something in
+the script may be quite time-consuming.  So, it's much easier to run
+<code>update-menus --stdout</code> once, and then run
+</p>
+
+<pre>
+       /etc/menu-methods/mymethod &lt; /tmp/menu-stdin
+</pre>
+
+<p>
+(and, if that also takes too long, just try editing /tmp/menu-stdin, and
+removing 90% or so of all entries)
+</p>
+
+<hr>
+
+<h2 id="s7.2">7.2 The install-menu program</h2>
+
+<p>
+The files <code>/etc/menu-methods/$wm</code> are executable config files that
+start with the line
+</p>
+
+<pre>
+       #!/usr/bin/install-menu
+</pre>
+
+<p>
+and thus start that program, handing it the configuration file for the specific
+window manager in the first command line argument.  This configuration consists
+of:
+</p>
+<ol type="1" start="1" >
+<li>
+<p>
+the compatibility mode (&quot;menu-1&quot; or &quot;menu-2&quot;).
+</p>
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+<p>
+where the various files should be stored/read.
+</p>
+</li>
+</ol>
+<ol type="1" start="3" >
+<li>
+<p>
+what &quot;needs&quot; are supported, and what wrapper files should be used for
+each &quot;type&quot;.
+</p>
+</li>
+</ol>
+<ol type="1" start="4" >
+<li>
+<p>
+how to remove the generated menu files.
+</p>
+</li>
+</ol>
+
+<p>
+See <code>/usr/share/doc/menu/examples/</code> of the menu package for more
+comments.
+</p>
+
+<p>
+Options to <code>install-menu</code>:
+</p>
+
+<pre>
+       --remove  Remove the menu files instead of generating them.
+       --verbose Output outline of operations that are performed.
+</pre>
+
+<p>
+Some window managers don't support an `include'-like statement in their
+<code>system.*rc</code> files (like <code>m4</code> or <code>cpp</code>
+preprocessing); they cannot read the <code>menudefs.hook</code> file generated
+by install-menu from their <code>system.*rc</code> config file.  To still be
+able to use them, <code>install-menu</code> will copy the file
+<code>$path/$examplercfile</code> to <code>$path/$rcfile</code> (with
+<code>$examplercfile</code> and <code>$rcfile</code> defined in the
+<code>install-menu</code> config file, and <code>$path</code> either the
+<code>$rootprefix</code> or <code>${HOME}/$userprefix</code>, depending on
+whether root or user executed the file.), and replace all occurrences of
+``install-menu-defs'' with the <code>$genmenu</code> file it just generated.
+</p>
+
+<p>
+As an example, consider the following:
+<samp>examplercfile=system.foo-wm-example</samp>,
+<samp>rcfile=system.foo-wm</samp>, <samp>genmenu=menudefs.hook</samp> and
+<samp>rootprefix=/var/lib/foo-wm/menu</samp>.  Now, if
+<code>install-menu</code> gets run, it will first generate the file
+<code>/var/lib/foo-wm/menu/menudefs.hook</code>.  Next, it will line-by-line
+read the file <code>/var/lib/foo-wm/menu/system.foo-wm-example</code> and copy
+its contents to <code>/var/lib/foo-wm/menu/system.foo-wm</code>, replacing
+every occurrence of the string <samp>install-menu-defs</samp> with the contents
+of the file <code>/var/lib/foo-wm/menu/menudefs.hook</code>.
+</p>
+
+<p>
+To activate the file copying in this way, simply define the
+<samp>$examplercfile</samp> and <samp>$rcfile</samp> variables in the
+<code>install-menu</code> configuration file (for example, see
+<code>/etc/menu-methods/fvwm</code>), and make sure there is a
+<code>$path/$examplercfile</code> (<samp>$path</samp> being either
+<samp>$rootprefix</samp>, or <code>$userprefix</code>.)
+</p>
+
+<p>
+If you are writing a menu method, you can use the following to make debugging
+it somewhat more easily:
+</p>
+<ol type="1" start="1" >
+<li>
+<p>
+use <samp>update-menus --stdout &gt; /tmp/menu-stdin</samp> to create a list of
+menu entries in <code>/tmp/menu-stdin</code> and then
+</p>
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+<p>
+you can run just your menu-method with (if it's called wm):
+</p>
+
+<pre>
+       ./wm -v &lt; /tmp/menu-stdin
+</pre>
+</li>
+</ol>
+
+<hr>
+
+<h2 id="s7.3">7.3 The install-menu config script definitions</h2>
+
+<p>
+The menu-methods in <code>/etc/menu-methods/*</code> are basically made up of a
+lot of ``tag=string'' definitions, telling <code>install-menu</code> how to
+generate a <code>system.${wm}rc</code> script.  This way you can tune the look
+of generated <code>system.${wm}rc</code> to your needs.
+</p>
+
+<p>
+In the following, something like
+</p>
+
+<pre>
+       treewalk=&quot;c(m)&quot;
+</pre>
+
+<p>
+means that the treewalk variable by default has the value &quot;c(m)&quot;.
+</p>
+
+<p>
+For examples of what these scripts can look like, see
+<code>/usr/share/doc/menu/examples/*</code>.
+</p>
+<dl>
+<dt><samp>compat=&quot;menu-1&quot;</samp></dt>
+<dd>
+<p>
+Two mode are defined:
+</p>
+<dl>
+<dt><samp>&quot;menu-1&quot;</samp></dt>
+<dd>
+<p>
+menu directives are terminated by an end-of-line character.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>&quot;menu-2&quot;</samp></dt>
+<dd>
+<p>
+menu directives are terminated by a semicolon character.
+</p>
+</dd>
+</dl>
+
+<p>
+This must be just after the <samp>!include &quot;menu.h&quot;</samp> directive
+so that <code>menu.h</code> can use its own compat mode.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>outputencoding=&quot;UTF-8&quot;</samp></dt>
+<dd>
+<p>
+Set the encoding used for output files.  Use <samp>iconv --list</samp> to get
+the list of supported encoding.  Useful values include &quot;UTF-8&quot; and
+&quot;ISO-8859-1&quot;.  The special value &quot;LOCALE&quot; means that the
+current locale encoding will be used.  If set to an empty string, no
+translations are performed.  This is the default.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>outputlanguage=&quot;&quot;</samp></dt>
+<dd>
+<p>
+If set to &quot;C&quot; automatic translations will be disabled.  Note that you
+can still use translate() to perform explicit translation.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>supported</samp></dt>
+<dt><samp>endsupported</samp></dt>
+<dd>
+<p>
+Between the <samp>supported</samp> and <samp>endsupported</samp> keywords you
+define what &quot;needs&quot; are supported by this window manager.  So, the
+following is an example for a wm that supports both needs=x11 and needs=text:
+</p>
+
+<pre>
+       function q($s) = &quot;\&quot;&quot; esc($s,&quot;\\\&quot;&quot;) &quot;\&quot;&quot;
+       supported
+         x11 =&quot; ShowEntry(&quot; q(title()) &quot;, &quot; q($command) &quot;)&quot;
+         text=&quot; ShowEntry(&quot; q(title()) &quot;, &quot; q(term())   &quot;)&quot;
+       endsupported
+</pre>
+
+<p>
+For the variable substitution (and functions, not shown above), see the next
+paragraph.  In the above example, you'll notice that for the menu entries that
+&quot;need=text&quot;, the term() function is used.  This is a user-supplied
+function that will run $command in a X terminal emulator.  Also, as X11 is
+higher up in the supported list above than text, a package that supplies both a
+&quot;needs=X11&quot; and a &quot;needs=text&quot; entry will have the
+needs=X11 entry installed, in favour of the needs=text entry.  You can continue
+lines on the next line with a backslash (&quot;\&quot;), but make sure you
+don't add any spaces after the backslash.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>startmenu=&quot;&quot;</samp></dt>
+<dt><samp>endmenu=&quot;&quot;</samp></dt>
+<dt><samp>submenutitle=&quot;&quot;</samp></dt>
+<dd>
+<p>
+These define what to print for the beginning/end of a menu, and how to the
+print a menu entry that pops up another menu.  They are substituted the same
+way as the &quot;supported&quot; stuff is; see next paragraph.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>treewalk=&quot;c(m)&quot;</samp></dt>
+<dd>
+<p>
+This string defines in what order to dump the <samp>$startmenu</samp>,
+<samp>$endmenu</samp>, and <samp>$submenutitle</samp> (and its children).  Each
+char in the string refers to:
+</p>
+
+<pre>
+         c  : dump children of menu.
+         m  : dump this menu's $submenutitles
+         (  : dump $startmenu
+         )  : dump $endmenu
+         M  : dump all $submenutitles of this menu and this menu's children.
+</pre>
+
+<p>
+The default is &quot;c(m)&quot;.  For olvwm, one needs: &quot;(M)&quot;
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>genmenu=&quot;&quot;</samp></dt>
+<dd>
+<p>
+The menu file to generate (usually something like
+<samp>system.&quot;$wm&quot;rc</samp>).  The file itself may depend on the
+level or title that is currently being worked on, like
+</p>
+
+<pre>
+         genmenu=&quot;/subdir/&quot; replacewith($section,&quot; &quot;,&quot;_&quot;) &quot;/rc.menu&quot;
+</pre>
+
+<p>
+(Substitution works just like in the supported stuff, see above).  Note that
+the files made this way are truncated upon opening, so if you have a genmenu
+like the example above, then your <samp>endmenu=</samp> will override the
+startmenu stuff (but you probably only need one of the two anyway).
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>rootsection=&quot;/Debian&quot;</samp></dt>
+<dd>
+<p>
+the prefix every <samp>$section</samp> variable gets.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>prerun=&quot;&quot;</samp></dt>
+<dt><samp>postrun=&quot;&quot;</samp></dt>
+<dd>
+<p>
+The commands to run before and after, respectively, the actual generation of
+the <code>menudefs.hook</code> (genmenu) file.  Commands will be executed by
+<code>sh</code>.  Example:
+</p>
+
+<pre>
+       prerun=&quot;rm -rf &quot; prefix() &quot;/*&quot;
+       postrun=&quot;killall -USR1 fvwm2&quot;
+</pre>
+
+<p>
+(Substitution works just like the supported stuff, see below).
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>preruntest=&quot;&quot;</samp></dt>
+<dd>
+<p>
+Just like prerun, but if the return value of the command is non-zero, menu will
+quit.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>also_run=&quot;&quot;</samp></dt>
+<dd>
+<p>
+If non-zero, install-menus will, after generating the output files, also load
+the file also_run, and use the new assignments to treewalk, genmenu, etc.  to
+generate more output.  This second time, variables like <samp>prerun</samp> and
+all of the hint stuff are ignored.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>removemenu=&quot;&quot;</samp></dt>
+<dd>
+<p>
+The command to run when the menu-method is invoked with the option
+<samp>--remove</samp>.  This should remove all the autogenerated menu files.
+If this option is not present, then install menu will remove
+<samp>genmenu</samp> if it is a constant string and <samp>rcfile</samp> if it
+is defined, and try to remove <samp>prefix()</samp> if it is empty.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>onlyrunasroot=false</samp></dt>
+<dt><samp>onlyrunasuser=false</samp></dt>
+<dd>
+<p>
+If <samp>onlyrunasroot</samp> is set to true, <code>install-menu</code> will
+quit silently when run as a user.  Similarly for <samp>onlyrunasuser</samp>.
+<var><samp>onlyrunasroot</samp> is deprecated since it is simpler to just not
+define <samp>userprefix</samp>.</var> On the other hand,
+<samp>onlyrunasuser</samp> might be needed if you use <samp>rcfile</samp> since
+<samp>rootprefix</samp> is used as a fallback location for the template.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>preoutput=&quot;#Automatically generated file. Do not edit (see /usr/share/doc/menu/html)\n\n&quot;</samp></dt>
+<dt><samp>postoutput=&quot;&quot;</samp></dt>
+<dd>
+<p>
+Text to put at the beginning resp.  end of the generated file ($genmenu).
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>command=&quot;&quot;</samp></dt>
+<dd>
+<p>
+A command to run instead of <code>install-menus</code>.  This command used to
+be needed to get around limitations due to compatibility stuff.  But that
+compatibility with pre menu-1 stuff has been dropped, and isn't needed any
+more.
+</p>
+
+<p>
+Example:
+</p>
+
+<pre>
+       command=&quot;cat &gt; /tmp/menu-stdin&quot;
+</pre>
+</dd>
+</dl>
+<dl>
+<dt><samp>hotkeyexclude=&quot;&quot;</samp></dt>
+<dd>
+<p>
+Keys not to use for hotkey generation.  You can use the same variables and
+functions here as in for example the startmenu sections.
+</p>
+
+<p>
+Example:
+</p>
+
+<pre>
+       hotkeyexclude=&quot;q&quot; $section
+</pre>
+</dd>
+</dl>
+<dl>
+<dt><samp>hotkeycase=&quot;insensitive&quot;</samp></dt>
+<dd>
+<p>
+can be either &quot;insensitive&quot; or &quot;sensitive&quot;.  Determines
+whether the hotkeys can be of mixed case (<samp>fvwm2</samp> reads the hotkeys
+case-insensitive, <samp>pdmenu</samp> case-sensitive).  In case of the titles
+&quot;Xa&quot; and &quot;xb&quot;, hotkey case-insensitive will generate
+&quot;X&quot; and &quot;b&quot;, whereas case-sensitive would generate
+&quot;X&quot; and &quot;x&quot;.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>sort=$sort &quot;:&quot; $title</samp></dt>
+<dd>
+<p>
+Entries within one menu will be alphabetically sorted by whatever sort returns.
+So, if you do <samp>sort=ifelse($command, &quot;1&quot;,
+&quot;0&quot;):$title</samp>, then all submenus will appear above the commands
+in a submenu.  (A submenu always has <samp>$command=&quot;&quot;</samp>).  Or,
+as Joey Hess writes:
+</p>
+
+<pre>
+       You can add another field to the menu items, with whatever name you like,
+       let's say it's called priority. Then add this line to
+       /etc/menu-methods/*:
+       
+       sort=ifelse($priority, $priority, &quot;9&quot;)
+       
+       This has the result of sorting things so items with a low priority sort to the
+       top, and items with no priority default to priority 9 and sort to the bottom.
+       
+       (Note that it compares the strings alphabetically, not numerically.)
+</pre>
+</dd>
+</dl>
+<dl>
+<dt><samp>rcfile=&quot;&quot;</samp></dt>
+<dd>
+<p>
+If the window manager doesn't support an &quot;include filename&quot; or
+&quot;read(filename)&quot; statement in it's config file, you can rename the
+wm's config file to <samp>system.&quot;$wm&quot;rc-menu</samp>, and insert a
+&quot;install-menu-defs&quot; line (without the quotes, or whitespace around
+it, and &quot;install-menu-defs&quot; must be the only thing on the line) in
+the <samp>system.&quot;$wm&quot;rc-menu</samp> file.  This will then get
+replaced by the <samp>$genmenu</samp> file that was just created (see also
+<samp>$examplercfile</samp>).
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>examplercfile=&quot;&quot;</samp></dt>
+<dd>
+<p>
+if needed (see <samp>rcfile</samp>), this is the
+<samp>system.rc&quot;$wm&quot;-menu</samp> file.  In that case, make
+<samp>rcfile=system.rc&quot;$wm&quot;</samp>.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>rootprefix=&quot;&quot;</samp></dt>
+<dd>
+<p>
+The prefix to use when running as root (applies to $genmenu, $rcfile,
+$examplercfile and other old cache files).  If it is not defined, the
+menu-method will be skipped when run as root.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>userprefix=&quot;&quot;</samp></dt>
+<dd>
+<p>
+As <samp>rootprefix</samp>, but when running as user.  userprefix is relative
+to the user home directory, unless it start with 2 slashes, in which case it is
+treated as an absolute path.  If it is not defined, the menu-method will be
+skipped when run as a user.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_optimize=false</samp></dt>
+<dd>
+<p>
+If set to true, menu will try to generate an `optimal' tree, using the
+variables below.  If set to false, menu will keep the sections as they are
+specified in the menu entry files (and ignore any hint stuff).
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_nentry=6</samp></dt>
+<dd>
+<p>
+Optimal number of entries in a submenu.  It's a float, so you can set it to 5.5
+if you cannot decide between 5 and 6.  Also, values less than 3 probably don't
+work very well at the moment.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_topnentry=5</samp></dt>
+<dd>
+<p>
+Same as hint_nentry, but for the top level menu.  Often here are other entries,
+added by the window-manager itself (like Exit, Xterm, whatever) that menu
+doesn't know about, so that you may want to instruct menu to put less entries
+in the top level menu.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_mixedpenalty=15.0</samp></dt>
+<dd>
+<p>
+Penalty for `mixed' menus.  Mixed menus are those with both submenus and direct
+commands in them.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_minhintfreq=0.1</samp></dt>
+<dd>
+<p>
+Minimal relative frequency for the hints before they are considered.  Internal
+variable to speed up the tree generation.  If you find menu slow, increase this
+value (to, say 0.2 or 0.3).
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_mlpenalty=2000</samp></dt>
+<dd>
+<p>
+`max local penalty', while evaluating the possible trees, menu gives
+`penalties' for submenus that don't contain the desired number of submenus.
+The penalty is sqrt(n_entry_opt-n_entry), and eventually will be calculated as
+a sum of all nodes.  But to speed things up, menu will discard possibilities in
+which any node has a `local' penalty of more than hint_mlpenalty.  Increase
+this value if you think menu is overlooking your favorite tree (also decrease
+minhintfreq), decrease this value if you think menu is wasting too much time.
+Because of hint_max_ntry, the influence of this variable is nearly zero
+nowadays.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_max_ntry=4</samp></dt>
+<dd>
+<p>
+menu will recursively, for each node, try the hint_max_ntry best local
+menu-divisions.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hints_max_iter_hint=5</samp></dt>
+<dd>
+<p>
+The search for what hints to use in one menu is rather expensive.  But due to
+the way things are sorted, menu seems to always find the `best' match in the
+first 2% of iterations.  Thus, a way to speed things up is simply to cut of
+menu searching after `some' iterations are done.  This value controls this, and
+limits the number of iterations to
+5+hint_max_iter_hint*number_of_possible_hints.  Set this value to negative to
+disable this.
+</p>
+</dd>
+</dl>
+<dl>
+<dt><samp>hint_debug=false</samp></dt>
+<dd>
+<p>
+Set to true if you want to see loads and loads of debug output.
+</p>
+</dd>
+</dl>
+
+<hr>
+
+<h2 id="s7.4">7.4 Hints, tree optimization</h2>
+
+<p>
+The hints actually work in a rather strange way: when
+<samp>hint_optimize=true</samp> then all <samp>$section</samp> elements are
+added to the specified <samp>$hints</samp> variable, and the order
+(<samp>/Applications/Editors</samp> or <samp>/Editors/Applications</samp>) of
+the resulting hints is completely ignored.  Then, the hints for each menu entry
+are handed to the optimization routine, which will calculate a reasonable tree
+for those hints.  That tree must comply with the following:
+</p>
+
+<p>
+When a user looks for a program &quot;Program&quot; with, say, hints
+&quot;Good,Bulky,Heaven&quot;, then, while walking through the tree, it should
+at every node visited be clear for the user what submenu to select (or the menu
+should have &quot;Program&quot; directly in it).  So, the top-level menu may
+look like
+</p>
+
+<pre>
+       Good
+       Hell
+       Microsoft
+</pre>
+
+<p>
+because then a searcher for a menu entry with hints
+&quot;Good,Bulky,Heaven&quot; will know to select the submenu &quot;Good&quot;.
+The toplevel menu may not look like
+</p>
+
+<pre>
+       Good
+       Hell
+       Heaven
+</pre>
+
+<p>
+as now it isn't clear whether to visit the Good or the Heaven submenu.
+</p>
+
+<p>
+That rule allows usually for many different trees, and the task of the
+optimization procedure is to select, in a finite amount of time, the tree that
+best matches the user's desire about the optimum number of menu entries.
+</p>
+
+<hr>
+
+<p>
+[ <a href="ch6.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ 7 ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch8.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian Menu System
+</p>
+
+<address>
+version 1.4, 4 June 2014<br>
+<br>
+Joost Witteveen <code><a href="mailto:joostje@debian.org">mailto:joostje@debian.org</a></code><br>
+Joey Hess <code><a href="mailto:joeyh@debian.org">mailto:joeyh@debian.org</a></code><br>
+Christian Schwarz <code><a href="mailto:schwarz@debian.org">mailto:schwarz@debian.org</a></code><br>
+Bill Allombert <code><a href="mailto:ballombe@debian.org">mailto:ballombe@debian.org</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

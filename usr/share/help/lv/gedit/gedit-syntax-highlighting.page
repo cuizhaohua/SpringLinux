@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Ieslēgt sintakses iekrāsošanu</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Sintakses iekrāsošana</title>
+    <p><app>gedit</app> nodrošina sintakses iekrāsošanu plašam marķēšanas, programmēšanas un zinātnisko valodu klāstam. Ja <app>gedit</app> atpazīst jūsu atvērtajā datnē lietoto sintaksi, tā automātiski iekrāso tekstu.</p>
+
+    <p>Ja jūsu sintakse vai valoda nav iekrāsota tūlīt pēc palaišanas, jūs varat izvēlēties atbilstošo sintaksi vai valodu izvēlnē <guiseq><gui style="menu">Skats</gui><gui style="menuitem">Iekrāsošanas režīms</gui></guiseq>, vai arī no saraksta <app>gedit</app> loga apakšā.</p>
+  </section>
+
+</page>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  
+     The GNU Free Documentation License 1.1 in DocBook
+     Markup by Eric Baudais <baudais@okstate.edu>
+     Maintained by the GNOME Documentation Project
+     http://developer.gnome.org/projects/gdp
+     Version: 1.0.1
+     Last Modified: Nov 16, 2000
+-->
+<appendix id="fdl">
+  <appendixinfo>
+    <releaseinfo>Verze 1.1, březen 2000</releaseinfo>
+    <copyright>
+      <year>2000</year><holder>Free Software Foundation, Inc.</holder>
+    </copyright>
+    <legalnotice id="fdl-legalnotice">
+      <para><address>Free Software Foundation, Inc. <street>51 Franklin St, 
+        Fifth Floor</street>, <city>Boston</city>, <state>MA</state>  
+        <postcode>02110-1301</postcode>  <country>USA</country></address> Kdokoliv má právo kopírovat a šířit doslovné kopie tohoto dokumentu s licencí, ale není dovoleno jej jakkoliv měnit.</para>
+    </legalnotice>
+  </appendixinfo>
+  <title>GNU Free Documentation License</title>
+
+  <sect1 id="fdl-preamble">
+    <title>0. PŘEDMLUVA</title>
+    <para>Upozorňujeme, že překlad GNU Free Documentation License do češtiny je neoficiální. Nebyl uveřejněn Free Software Foundation a není z právního hlediska zástupcem distribučních podmínek pro dokumenty, které používají GNU FDL – jen originální anglický text GNU FDL je z právního hlediska oficiální. Nicméně doufáme, že tento překlad pomůže českým mluvčím lépe porozumět GNU FDL.<literallayout/>Účelem této licence je udělat příručky, učebnice a další psané dokumenty <quote>svobodnými</quote>: zaručit všem skutečnou svobodu v jejich kopírování a dalším šíření, s úpravami nebo bez úprav, ať komerčně nebo nekomerčně. Druhotně tato licence chrání autorům a vydavatelům zásluhy za jejich práci, přičemž bere v úvahu úpravy provedené ostatními.</para>
+    
+    <para>Tato licence je typu <quote>copyleft</quote>, což znamená, že i práce odvozená z dokumentu musí být svobodná ve stejném smyslu. Jedná se o doplněk k licenci GNU General Public License, která je licencí copylelft navrženou pro svobodný software.</para>
+    
+    <para>Tato licence je navržena pro potřeby použití u příruček pro svobodný software, protože svobodný software potřebuje svobodnou dokumentaci: svobodné programy by se měly dodávat s příručkami poskytujícími stejnou svobodu, jako dává software. Licence se ale neomezuje jen na příručky k softwaru. Lze ji použít pro libovolné textové práce, bez ohledu na to, čím se zabývají, nebo zda jsou vydané v tištěné podobě. Doporučujeme tuto licenci hlavně pro práce, které slouží pro výuku nebo jako příručky.</para>
+  </sect1>
+  <sect1 id="fdl-section1">
+    <title>1. POUŽITELNOST A DEFINICE</title>
+    <para id="fdl-document">Tato licence se používá pro příručky nebo další práce tak, že držitel autorských práv do nich umístí upozornění oznamující, že mohou být šířeny za dodržení podmínek licence. Výraz <quote>dokument</quote> bude dále používán pro označení takové příručky nebo práce. Kdokoliv z veřejnosti je držitelem licence a bude oslovován jako <quote>vy</quote>.</para>
+    
+    <para id="fdl-modified">Výraz <quote>upravená verze</quote> dokumentu označuje libovolnou práci obsahující dokument nebo jeho část, buďto doslovně zkopírovanou nebo s úpravami a/nebo přeloženou do jiného jazyka.</para>
+	
+    <para id="fdl-secondary">Výraz <quote>druhý oddíl</quote> označuje pojmenovaný rejstřík nebo vpředu uvedený oddíl tvořící <link linkend="fdl-document">dokument</link>, který pojednává výhradně o vztazích vydavatele nebo autorů dokumentu ke všem ostatní subjektům týkajících se dokumentu (nebo návazných věcí) a neobsahující nic, co by přímo spadalo pod tyto subjekty. (Například, pokud je dokument z části učebnice matematiky, druhý oddíl nesmí vysvětlovat matematiku.) Vztahy by byly záležitostí historického spojení se subjektem nebo s návaznou skutečností nebo právní, komerční, filozofickou, etickou nebo politickou pozicí vůči nim.</para>
+
+    <para id="fdl-invariant">Potom <quote>neměnné oddíly</quote> jsou některé <link linkend="fdl-secondary">druhé oddíly</link>, jejichž názvy jsou ustanovené, jak bývá u takových neměnných oddílů, v poznámce, jenž říká, že <link linkend="fdl-document">dokument</link> je uvolněn pod touto licencí.</para>
+    
+    <para id="fdl-cover-texts">Výrazem <quote>texty desek</quote> se rozumí určité krátké pasáže textu, které jsou uvedené, jako texty předních desek nebo texty zadních desek, v poznámce jenž říká, že <link linkend="fdl-document">dokument</link> je uvolněn pod touto licencí.</para>
+	
+    <para id="fdl-transparent">Pod <quote>transparentní</quote> kopií <link linkend="fdl-document">dokument</link> se míní strojově čitelná kopie, ztělesněná ve formátu, jehož specifikace je všeobecně veřejně dostupná, jehož obsah lze prohlížet a upravovat ihned a přímo pomocí obecného textového editoru nebo (pro obrázky složené z pixelů) obecného kreslícího programu nebo (pro kresby) některým široce dostupným kreslícím editorem, a který je vhodný pro vstup do programů na formátování textů nebo pro automatický převod do různých formátů použitelných pro vstup do programů na formátování textu. Kopie vytvořená v jinak transparentním souborovém formátu, jehož značky byly navrženy pro znepříjemnění nebo odrazení od pozdějších změn čtenáři není transparentní. Kopie, která není <quote>transparentní</quote> se nazývá <quote>netransparentní</quote>.</para>
+    
+    <para>Příklady použitelných formátů pro transparentní kopie zahrnují ASCII bez značek, vstupní formát Texinfo, vstupní formát LaTeX, SGML nebo XML používající veřejně dostupné DTD a standardu odpovídající jednoduché HTML navržené pro úpravy člověkem. Netransparentní formáty zahrnují PostScript, PDF, proprietární formáty, které lze číst a upravovat pouze proprietárními textovými procesory, SGML nebo XML, pro které nejsou DTD a/nebo nástroje pro zpracování všeobecně dostupné a strojově generované HTML produkované některými textovými procesory pro pouze výstupní účely.</para>
+    
+    <para id="fdl-title-page">U tištěných knih se výrazem <quote>titulní strana</quote> míní vlastní titulní stránka plus ty následující stránky, které jsou potřebné k čitelnému uchování materiálu, u kterého tato licence vyžaduje, aby se objevil na titulní stránce. Pro práce ve formátu, který nemá žádnou titulní stránku jako takovou, se jako <quote>titulní strana</quote> bere text poblíž nejvýznamnějšího zobrazení názvu práce, předcházející začátku těla textu.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section2">
+    <title>2. DOSLOVNÉ KOPÍROVÁNÍ</title>
+    <para>Můžete kopírovat a šířit <link linkend="fdl-document">dokument</link> na libovolném médiu, buď komerčně nebo nekomerčně, za předpokladu, že tato licence, poznámky k autorským právům a licenční poznámky říkající, že tato licence použitá na tento dokument je rozmnožená ve všech kopiích a že jste nepřidali další podmínky o čemkoliv do této licence. Nesmíte používat technická opatření k bránění nebo ovládání čtení nebo další kopírování kopií, které vytvoříte nebo šíříte. Avšak můžete přijmout kompenzaci výměnou za kopie. Pokud šíříte celkem velký počet kopií, musíte také dodržovat podmínky uvedené v <link linkend="fdl-section3">oddíle 3</link>.</para>
+    
+    <para>Můžete také poskytnout kopie, za těch stejných podmínek uvedených dříve a můžete veřejně zobrazit kopie.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section3">
+    <title>3. HROMADNÉ KOPÍROVÁNÍ</title>
+    <para>Pokud <link linkend="fdl-document">dokument</link> vydáváte v tištěné podobě ve větším množství než 100 a licence dokumentu vyžaduje <link linkend="fdl-cover-texts">texty desek</link>, musíte vložit kopie na desky, tak že ponesou, jasně a čitelně, všechny tyto texty desek: texty předních desek na předních deskách a texty zadních desek na zadním deskách. Oboje desky musí také jasně a čitelně určit vás jako vydavatele těchto kopií. Přední desky musí uvádět plný název se všemi slovy názvu dostatečně nápadně a viditelně. Pro doplnění můžete přidat na desky další součásti. S kopií se změnami omezenými na desky, pokud zachováte pro <link linkend="fdl-document">dokument</link> název a splníte tyto podmínky, může být zacházeno jako s doslovnou kopií v dalších ohledech.</para>
+    
+    <para>Pokud jsou požadované texty pro oboje desky příliš rozsáhlé na to, aby se vlezly čitelné, měli byste první vypsat (tolik, kolik se rozumně vleze) na aktuální desky a pokračovat se zbytkem na bezprostředně další stránkách.</para>
+    
+    <para>Pokud publikujete nebo šíříte <link linkend="fdl-document">dokument</link> jako <link linkend="fdl-transparent">netransparentní</link> kopie čítající větší množství než 100, musíte buď zahrnout strojově čitelnou <link linkend="fdl-transparent">transparentní</link> kopii souběžné k té netransparentní kopii a nebo v každé netransparentní kopii uvést veřejně přes počítačovou síť dostupné umístění obsahující úplnou transparentní kopii dokumentu bez jakýchkoliv dodatků, ke které má široká veřejnost využívající síť přístup anonymně, bez poplatků a pomocí standardních síťových protokolů. V případě, že zvolíte druhou možnost, musíte učinit kroky, které zajistí, že až začnete hromadně šířit netransparentní kopie, zůstane transparentní kopie na uvedeném místě přístupná nejméně jeden rok od chvíle, kdy jste naposledy šířili netransparentní kopie (ať už přímo nebo přes prostředníky a prodejce) daného vydání veřejnosti.</para>
+    
+    <para>Je doporučeno, ale ne vyžadováno, dříve než budete šířit velký počet kopií, kontaktovat autory, kteří <link linkend="fdl-document">dokument</link> vytvořili, abyste jim dali možnost poskytnout vám aktualizovanou verzi dokumentu.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section4">
+    <title>4. ÚPRAVY</title>
+    <para>Můžete kopírovat a šířit <link linkend="fdl-document">dokument</link>, který bude <link linkend="fdl-modified">upravená verze</link> dokumentu, za podmínek daných v předcházejících oddílech <link linkend="fdl-section2">2</link> a <link linkend="fdl-section3">3</link> za předpokladu, že uvolníte upravenou verzi přesně pod touto licencí, kde upravená verze představuje dokument, takže licencování šíření a změn upravené verze komukoliv se v kopiích zachová. Navíc musíte v upravené verzi udělat následující věci:</para>
+    
+    <itemizedlist mark="opencircle">
+      <listitem>
+	<formalpara>
+	  <title>A</title>
+	  <para>Na částech <link linkend="fdl-title-page">titulní strana</link> a předních deskách (pokud existují) uvést název odlišný, než má <link linkend="fdl-document">dokument</link> a jeho dřívější verze (které by měly být, pokud nějaké jsou, uvedeny v oddíle historie v dokumentu). Pokud původní vydavatel dá oprávnění, můžete použít stejný název, jako má původní dokument.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>B</title>
+	  <para>Dále musí <link linkend="fdl-title-page">titulní strana</link> uvádět jako autory jednu nebo více osob nebo subjektů zaslouživších se o autorství změn, které má <link linkend="fdl-modified">upravená verze</link>, spolu s nejméně pěti hlavními autory, kteří vytvořili <link linkend="fdl-document">dokument</link> (pokud jich je méně než pět, musí uvádět všechny).</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>C</title>
+	  <para>Jako jméno vydavatele musí <link linkend="fdl-title-page">titulní strana</link> uvádět, kým byla vydána <link linkend="fdl-modified">upravená verze</link>.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>D</title>
+	  <para>Zachovat všechny poznámky o autorských právech, které <link linkend="fdl-document">dokument</link> uvádí.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>E</title>
+	  <para>Přidat případné poznámky o autorských právech pro své úpravy tak, že budou navazovat na ostatní poznámky o autorských právech.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>F</title>
+	  <para>Vložit, bezprostředně za poznámky o autorských právech, licenční prohlášení, které říká, že <link linkend="fdl-modified">upravená verze</link> poskytuje veřejné právo používání za podmínek této licence, v podobě ukázané dále v dodatku.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>G</title>
+	  <para>Zachovat v licenčních poznámkách úplný seznam uvádějící <link linkend="fdl-invariant">neměnné oddíly</link> a požadované <link linkend="fdl-cover-texts">texty desek</link> dané v licenčních poznámkách <link linkend="fdl-document">dokumentu</link>.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>H</title>
+	  <para>Zahrnout nezměněnou kopii této licence.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>I</title>
+	  <para>Zachovat oddíl označený <quote>historie</quote> včetně názvu a přidat do něj položku uvádějící minimálně název, rok, nové autory a vydavatele, jak je má uvedeny <link linkend="fdl-modified">upravená verze</link> a její <link linkend="fdl-title-page">titulní strana</link>. Pokud <link linkend="fdl-document">dokument</link> nemá žádný oddíl nazvaný <quote>historie</quote>, vytvořte jej s tím, že uvedete název, rok, autory a vydavatele dokumentu, jak je dáno na titulní straně a potom přidáte položky popisující upravenou verzi, uvedené ve stejném pořadí.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>J</title>
+	  <para>Zachovat síťové umístění (pokud nějaké existuje), které uvádí <link linkend="fdl-document">dokument</link> pro veřejný přístup k <link linkend="fdl-transparent">transparentní</link> kopii dokumentu a podobně síťové umístění dané v dokumentu pro předchozí verze, ze kterých vychází. Tyto údaje mohou být uvedeny v oddíle <quote>historie</quote>. Můžete vynechat síťové umístění pro práci, která byla zveřejněna nejméně čtyři roky před vlastním dokumentem nebo pokud ji původní vydavatel verze odkazuje na daná oprávnění.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>K</title>
+	  <para>Pokud jsou nějaké oddíly nazvané <quote>poděkování</quote> nebo <quote>věnování</quote>, zachovejte názvy oddílů a zachovejte v oddílech všechen podstatný obsah a tón každého přispěvatele daný v poděkování a/nebo ve věnování.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>L</title>
+	  <para>Zachovat všechny <link linkend="fdl-invariant">neměnné oddíly</link> které má <link linkend="fdl-document">dokument</link> beze změn v jejich textu a názvu. Číslo oddílu nebo podobné značení není považováno za součást názvu oddílu.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>M</title>
+	  <para>Smazat některé oddíly nazvané <quote>doporučení</quote>. Takovéto oddíly nemusí <link linkend="fdl-modified">upravená verze</link> obsahovat.</para>
+	</formalpara>
+      </listitem>
+      
+      <listitem>
+	<formalpara>
+	  <title>N</title>
+	  <para>Nepřejmenovávejte případné existující oddíly jako <quote>doporučení</quote> nebo nevytvářejte názvy kolidující s <link linkend="fdl-invariant">neměnnými oddíly</link>.</para>
+	</formalpara>
+      </listitem>
+    </itemizedlist>
+    
+    <para>Pokud <link linkend="fdl-modified">upravená verze</link> zahrnuje nové úvodní oddíly nebo přílohy, které vyhovují definici pro <link linkend="fdl-secondary">druhé oddíly</link> a neobsahují žádný materiál okopírovaný z dokumentu,  můžete dle svého uvážení označit některé nebo všechny tyto oddíly jako neměnné. Chcete-li to provést, přidejte jejich názvy mezi ostatní <link linkend="fdl-invariant">neměnné oddíly</link> v seznamu v licenční poznámce upravené verze. Tyto názvy se musí lišit od názvů kterýchkoliv jiných oddílů.</para>
+    
+    <para>Můžete přidat oddíl s názvem <quote>doporučení</quote>, který neobsahuje nic jiného, než doporučení, které má vaše <link linkend="fdl-modified">upravená verze</link> od třetích stran – například výroky z recenzí nebo informaci o schválení textu jako směrodatné definice standardu nějakou organizací.</para>
+    
+    <para>Můžete přidat pasáž až pěti slov jako <link linkend="fdl-cover-texts">text předních desek</link> a pasáž až 25 slov jako <link linkend="fdl-cover-texts">text zadních desek</link>, na konec seznamu uvádějícího <link linkend="fdl-cover-texts">texty desek</link>, které má <link linkend="fdl-modified">upravená verze</link>. Jedním subjektem (nebo po dohodě prostřednictvím jednoho subjektu) může být přidána jen jedna pasáž předních desek a jedna pasáž zadních desek. Pokud <link linkend="fdl-document">dokument</link> již obsahuje text desek pro stejné desky, který jste zadali přímo vy nebo je nepřímo zadal subjekt jednající vaším jménem, nemůžete přidat další. Ale můžete nahradit ten starší, na základě výslovného svolení od vydavatele, který ho přidal.</para>
+    
+    <para>Autor či autoři a vydavatel či vydavatelé, kteří vytvořili a vydali <link linkend="fdl-document">dokument</link> nedávají podle této licence oprávnění, aby <link linkend="fdl-modified">upravená verze</link> byla propagována nebo prosazována nebo ji byla vyjadřována podpora jejich jménem.</para>
+  </sect1>
+    
+  <sect1 id="fdl-section5">
+    <title>5. KOMBINOVÁNÍ DOKUMENTŮ</title>
+    <para>Můžete <link linkend="fdl-document">dokument</link> kombinovat s jinými dokumenty vydanými pod touto licencí, a s upravenými verzemi za podmínek definovaných v <link linkend="fdl-section4">oddíle 4</link> uvedeném dříve, s tím, že do kombinovaného dokumentu vložíte všechny <link linkend="fdl-invariant">neměnné oddíly</link> z původních dokumentů v nezměněné podobě, a v poznámce licence uvedete seznam všech těchto neměnných oddílů kombinovaného dokumentu.</para>
+    
+    <para>Stačí, když zkombinovaná práce bude obsahovat jen jednu kopii této licence a <link linkend="fdl-invariant">neměnné oddíly</link>, které jsou shodné mohou být nahrazeny jednou kopií. Pokud se vyskytne více neměnných oddílů se stejným názvem, ale rozdílným obsahem, změňte jejich názvy na jedinečné tak, že za ně přidáte do závorek jméno původního autora nebo vydavatele, pokud je znám, pokud není, tak jedinečné číslo. Stejné změny musíte provést i v seznamu neměnných oddílů v licenční poznámce kombinované práce.</para>
+    
+    <para>Při kombinování musíte také zkombinovat oddíly z původních dokumentů nazvané <quote>historie</quote> pod jediný oddíl s názvem <quote>historie</quote>. Podobně zkombinujte i případné oddíly s názvy <quote>poděkování</quote> a <quote>věnování</quote>. Musíte vymazat všechny oddíly pojmenované <quote>dodatky</quote>.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section6">
+    <title>6. SBÍRKY DOKUMENTŮ</title>
+    <para>Můžete vytvořit sbírku dokumentů, kterou bude tovřit <link linkend="fdl-document">dokument</link> a dalších dokumenty vydané pod touto licencí a nahradit jednotlivé kopie této licence v různých dokumentech jedinou kopií, která bude součástí sbírky, za předpokladu, že dodržíte pravidla této licence pro doslovné kopírování každého z těchto dokumentů ve všech dalších ohledech.</para>
+    
+    <para>Můžete z takové kolekce vytvořit výňatek v podobě jednoho dokumentu a šířit jej zvlášť pod touto licencí, tak že poskytnete její kopii vloženou do vytvořeného vyňatého dokumentu a že se budete řídit touto licencí ve všech souvislostech dbajíce doslovného kopírování takového dokumentu.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section7">
+    <title>7. SPOJENÍ S NEZÁVISLÝMI PRACEMI</title>
+    <para>Kompilace dokumentu nebo jeho odvozenin s jinými samostatnými a nezávislými dokumenty nebo pracemi dohromady nebo na úložiště nebo distribuční médium, není bráno v celku jako <link linkend="fdl-modified">upravená verze</link> dokumentu za předpokladu, že není pro kompilaci požadována kompilace copyrightu. Taková kompilace se nazývá <quote>agregační</quote> a tato licence se nevztahuje na jiné samostatné práce, které jsou s dokumentem kompilovány, z důvodu přijetí těchto kompilací, pokud nejsou samy odvozenými pracemi z dokumentu. Pokud se <link linkend="fdl-cover-texts">text desek</link> požadovaný v <link linkend="fdl-section3">oddíle 3</link> vztahuje na tyto kopie dokumentu, pak v případě, že dokument tvoří méně než čtvrtinu z celého spojení, smíte texty desek umístit na desky, které obklopují pouze dokument v rámci spojení. V opačném případě musí být umístěny na deskách celého spojení.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section8">
+    <title>8. PŘEKLAD</title>
+    <para>Překlad je považován za formu úpravy, takže můžete překlady pro <link linkend="fdl-document">dokument</link> šířit podle podmínek v <link linkend="fdl-section4">oddíle 4</link>. Abyste mohli nahrazova <link linkend="fdl-invariant">neměnné oddíly</link> překlady, musíte mít speciální oprávnění od držitelů autorských práv k nim, můžete ale přidat překlady některých nebo všech neměnných oddílů jako doplněk k originální verzi daného neměnného oddílu. Může poskytovat překlad této licence za předpokladu, že zároveň přiložíte původní anglickou verzi této licence. V případě neshod mezi překladem a originální anglickou verzí této licence, se bere jako směrodatná originální anglická verze.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section9">
+    <title>9. ZÁVĚR</title>
+    <para>Nesmíte kopírovat, upravovat, sublicencovat nebo šířit <link linkend="fdl-document">dokument</link>, pokud není poskytován výslovně za podmínek této licence. Jakékoliv jiné snahy o kopírování, úpravy, sublicencování nebo šíření dokumentu jsou neoprávněné a automaticky vedou k ukončení vašich práv pod touto licencí. Avšak strany, které od vás obdržely kopie nebo práva pod touto licencí nemusí svoji licenci ukončit, pokud s ní budou souhlasit.</para>
+    </sect1>
+    
+  <sect1 id="fdl-section10">
+    <title>10. BUDOUCÍ REVIZE TÉTO LICENCE</title>
+    <para><ulink type="http" url="http://www.gnu.org/fsf/fsf.html">Free Software Foundation</ulink> může čas od času vydat nové, revidované verze licence GNU Free Documentation License. Tyto nové verze budou v podobném duchu jako představená verze, ale mohou se lišit v detailech zaměřujících se na nové problémy nebo záležitosti. Viz <ulink type="http" url="http://www.gnu.org/copyleft">http://www.gnu.org/copyleft/</ulink>.</para>
+    
+    <para>Každá verze licence je určená rozlišujícím číslem verze. Pokud <link linkend="fdl-document">dokument</link> uvádí použití takového určitého číslo verze této licence <quote>nebo libovolné novější verze</quote>, máte volbu řídit se náležitostmi a podmínkami buďto uvedené verze nebo kterékoliv novější verze, která byla vydaná (ne pouze navrhována) organizací Free Software Foundation. Pokud DOKUMENT číslo verze této licence neuvádí, můžete si zvolit libovolnou verzi vydanou (ne pouze navrhovanou) organizací Free Software Foundation.</para>
+  </sect1>
+
+  <sect1 id="fdl-using">
+    <title>Dodatek</title>
+    <para>Pokud chcete tuto licenci použít v dokumentu, který jste napsali, zahrňte do něj kopii licence a za titulní stránku umístěte poznámku o autorském právu a licenci:</para>
+    
+    <blockquote>
+      <para>Copyright ROK VAŠE JMÉNO.</para>
+      <para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; s UVEDENÝM SEZNAMEM NÁZVŮ pro <link linkend="fdl-invariant">neměnné oddíly</link>, se SEZNAMEM <link linkend="fdl-cover-texts">textů předních desek</link> a se SEZNAMEM <link linkend="fdl-cover-texts">textů zadních desek</link>. Kopie této licence je zahrnuta v oddílu jménem <quote>GNU Free Documentation License</quote>.</para>
+    </blockquote>
+      
+    <para>Pokud nemáte žádné <link linkend="fdl-invariant">neměnné oddíly</link>, uveďte místo vyjmenování neměnných částí frázi <quote>bez neměnných oddílů</quote>. Podobně u <link linkend="fdl-cover-texts">textů předních desek</link>, pokud žádné nemáte, uveďte <quote>bez textů předních desek</quote> místo <quote>SEZNAMU textů předních desek</quote> a analogicky to udělejte u <link linkend="fdl-cover-texts">textů zadních desek</link>.</para>
+    
+    <para>Pokud váš dokument obsahuje netriviální příklady programového kódu, doporučujeme vydat tyto příklady souběžně pod svobodnou softwarovou licencí podle vaší volby, např <ulink type="http" url="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</ulink>, která povolí jejich použití ve svobodném software.</para>
+  </sect1>
+</appendix>

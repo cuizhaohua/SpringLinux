@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-edit-as-root" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Urejanje datoteke kot skrbnik</title>
+
+  <note style="warning">
+    <p>Urejanje datotek kot skrbik je potencialno nevarno in lahko vaš sistem pokvari. Bodite zelo pozorni med urejanjem datotek kot skrbnik. </p>
+  </note>
+
+  <p>Za urejanje datotek kot skrbnik zaženite <app>gedit</app> iz terminala z vnašanjem:</p>
+  <code>sudo gedit</code>
+
+  <p>Using the <cmd>sudo</cmd> command, you will need to successfully enter
+  your password before <app>gedit</app> will open.</p>
+
+  <p>Kot nadomestilo za ukaz <cmd>sudo</cmd> lahko skrbniška dovoljenja pridobite z vnosom:</p>
+  <code>su -</code>
+
+  <p>Nato bi zagnali <app>gedit</app> z ukazom <cmd>gedit</cmd>.</p>
+
+  <note style="tip">
+    <p>Once you have opened <app>gedit</app> with administrative privileges,
+    <app>gedit</app> will keep those privileges until you close it.</p>
+  </note>
+
+</page>

@@ -1,0 +1,19 @@
+This package was debianized by Aurelien Jarno <aurel32@debian.org> on
+Mon, 29 Mar 2004 12:30:31 +0200.
+
+It was downloaded from 
+  http://www.intra2net.com/en/developer/libftdi/
+
+Upstream Author: 
+  Intra2net AG <opensource@intra2net.com>
+
+Copyright:
+  Copyright (C) 2003 Intra2net AG
+
+License:
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU Lesser General Public License
+  version 2.1 as published by the Free Software Foundation;
+
+On Debian GNU/Linux systems, the complete text of the GNU Lesser General Public
+License version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1'

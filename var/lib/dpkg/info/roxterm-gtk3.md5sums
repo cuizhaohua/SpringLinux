@@ -1,0 +1,7 @@
+55c5c2383bb252e5ef9c85172129c1c1  usr/bin/roxterm
+3a6ebfc9a8fb84adaed1d66c47d89981  usr/bin/roxterm-config
+aaf81658f602f08108d2bebf04e40761  usr/share/applications/roxterm.desktop
+27e081fb163b192e6c114378fe2dade1  usr/share/doc/roxterm-gtk3/changelog.Debian.gz
+94d6e53042bff6e48bd8575326b7e9e4  usr/share/doc/roxterm-gtk3/changelog.gz
+bd830c03a4590d53d1a4a3f7ef7e389c  usr/share/doc/roxterm-gtk3/copyright
+5cf0e556f6e79f068ef1151b5e34f441  usr/share/menu/roxterm-gtk3

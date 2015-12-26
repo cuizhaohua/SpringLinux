@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="id">
+
+  <info>
+    <title type="link">gedit Penyunting Teks</title>
+    <title type="text">gedit Penyunting Teks</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title><media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/> gedit Penyunting Teks</title>
+  <p>Selamat datang ke panduan bantuan <app>gedit</app>. Untuk pengenalan singkat ke fitur paling dasar <app>gedit</app> maupun beberapa pintasan papan tik tingkat lanjut, kunjungilah halaman <link xref="gedit-quickstart">Mulai memakai gedit</link> dan <link xref="gedit-shortcut-keys">Tombol pintasan</link>.</p>
+
+  <p>Topik bantuan lain dikelompokkan bersama ke dalam seksi di bawah. Nikmati <app>gedit</app>!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Bekerja Dengan Berkas</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>Tata gedit</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>Pengaya gedit</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Mencetak dengan gedit</title>
+  </section>
+
+</page>

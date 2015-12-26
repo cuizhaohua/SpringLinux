@@ -1,0 +1,1 @@
+../../../../share/pyshared/glib/__init__.py

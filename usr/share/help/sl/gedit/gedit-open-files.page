@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Odprte ene ali več datotek</title>
+
+  <p>Za odprtje datoteke v <app>gedit</app>, kliknite na gumb <gui>Odpri</gui> ali pritisnite <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>This will cause the <gui>Open</gui> dialog to appear. Use your mouse
+  or keyboard to select the file that you wish to open, and then click
+  <gui>Open</gui>. The file that you've selected will open in a new tab.</p>
+  <p>To close the <gui>Open</gui> dialog without opening a file, click
+  <gui>Cancel</gui>.</p>
+
+  <note style="tip"><p>Za odpiranje več datotek hkrati lahko uporabite tipki <key>Ctrl</key> in <key>Shift</key>. V primeru da med izbiro več datotek držite tipko <key>Ctrl</key>, bo klik na <gui>Odpri</gui> odprl vse izbrane datoteke.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Pritisk na tipko <key>Shift</key> medtem ko izberete več datotek bo odprl vse datoteke med prvo in zadnjo izbrano.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

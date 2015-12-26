@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.11.5">
+<!ENTITY manrevision "2.0.3">
+<!ENTITY date "May 2008">
+<!ENTITY app "Rhythmbox Music Player">
+<!ENTITY mdash "&#8212;">
+]>
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.2
+  Last modified: October 02, 2002
+  Maintainers:
+               Mark Finlay <sisob@eircom.net>
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.3
+  Last modified: August 08, 2003
+  Maintainers:
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.4
+  Last modified: October 01, 2005
+  Maintainers:
+	       Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="el">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Αναπαραγωγή μουσικής Rhythmbox</title>
+	<copyright><year>2002</year> <holder>Mark Finlay</holder></copyright>
+        <copyright><year>2002</year> <year>2002</year> <holder>Mark Humphreys</holder></copyright>
+	<copyright><year>2005</year> <year>2006</year> <holder>Baptiste Mille-Mathias</holder></copyright>
+	<copyright><year>2006</year> <holder>Victor Osadci</holder></copyright>
+	<copyright><year>2008</year> <holder>Dean Sas</holder></copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	<publisher>
+	 	<publishername>Έργο τεκμηρίωσης GNOME</publishername>
+	</publisher>
+
+   
+
+  <legalnotice id="legalnotice">
+	<para>Χορηγείται άδεια αντιγραφής, διανομής και/ή τροποποίησης του παρόντος εγγράφου υπό τους όρους της έκδοσης 1.1 της Ελεύθερης Άδειας Τεκμηρίωσης GNU (GFDL), ή οποιασδήποτε μεταγενέστερης έκδοσής αυτής από το Ίδρυμα Ελεύθερου Λογισμικού (FSF), χωρίς αμετάβλητες ενότητες, κείμενα εμπροσθοφύλλου και κείμενα οπισθοφύλλου. Αντίγραφο της άδειας GFDL είναι διαθέσιμο στον ακόλουθο <ulink type="help" url="ghelp:fdl">σύνδεσμο</ulink>, ή στο αρχείο COPYING-DOCS που διανέμεται μαζί με το παρόν εγχειρίδιο.</para>
+         <para>Αυτό το εγχειρίδιο αποτελεί μέρος της συλλογής εγχειριδίων του GNOME που διανέμονται υπό τους όρους της GFDL. Αν επιθυμείτε να διανείμετε το παρόν εγχειρίδιο ξεχωριστά από τη συλλογή, οφείλετε να προσθέσετε στο εγχειρίδιο αντίγραφο της άδειας χρήσης, όπως προβλέπεται στην ενότητα 6 της άδειας.</para>
+
+	<para>Πολλές από τις ονομασίες που χρησιμοποιούνται από εταιρείες για την διαφοροποίηση των προϊόντων και υπηρεσιών τους έχουν καταχωρηθεί ως εμπορικά σήματα. Σε όποιο σημείο της τεκμηρίωσης GNOME τυχόν εμφανίζονται αυτές οι ονομασίες, και εφόσον τα μέλη του Έργου τεκμηρίωσης GNOME έχουν λάβει γνώση αυτών των εμπορικών σημάτων, οι ονομασίες ή τα αρχικά αυτών θα γράφονται με κεφαλαίους χαρακτήρες.</para>
+
+	<para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΚΑΙ ΟΙ ΤΡΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΑΥΤΟΥ ΠΑΡΕΧΟΝΤΑΙ ΥΠΟ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <orderedlist>
+		<listitem>
+		  <para>ΤΟ ΠΑΡΟΝ ΕΓΓΡΑΦΟ ΠΑΡΕΧΕΤΑΙ "ΩΣ ΕΧΕΙ", ΧΩΡΙΣ ΟΠΟΙΑΔΗΠΟΤΕ ΑΛΛΗ ΕΓΓΥΗΣΗ, ΕΙΤΕ ΡΗΤΗ ΕΙΤΕ ΣΙΩΠΗΡΗ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΤΗΣ ΕΓΓΥΗΣΗΣ ΟΤΙ ΤΟ ΕΓΓΡΑΦΟ, Ή Η ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ, ΕΙΝΑΙ ΕΜΠΟΡΕΥΣΙΜΟ, ΚΑΤΑΛΛΗΛΟ ΓΙΑ ΕΙΔΙΚΟ ΣΚΟΠΟ ΚΑΙ ΔΕΝ ΠΡΟΣΒΑΛΛΕΙ ΔΙΚΑΙΩΜΑΤΑ ΤΡΙΤΩΝ. Ο ΧΡΗΣΤΗΣ ΑΝΑΛΑΜΒΑΝΕΙ ΕΞ ΟΛΟΚΛΗΡΟΥ ΤΗΝ ΕΘΥΝΗ ΩΣ ΠΡΟΣ ΤΗΝ ΠΟΙΟΤΗΤΑ, ΤΗΝ ΑΚΡΙΒΕΙΑ ΚΑΙ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΗΣ ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ. ΣΕ ΠΕΡΙΠΤΩΣΗ ΠΟΥ ΟΠΟΙΟΔΗΠΟΤΕ ΕΓΓΡΑΦΟ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗ ΕΚΔΟΣΗ ΑΥΤΟΥ ΑΠΟΔΕΙΧΘΟΥΝ ΕΛΑΤΤΩΜΑΤΙΚΑ ΚΑΘ' ΟΙΟΝΔΗΠΟΤΕ ΤΡΟΠΟ, Ο ΧΡΗΣΤΗΣ (ΚΑΙ ΟΧΙ Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΔΗΜΙΟΥΡΓΟΣ Ή ΟΠΟΙΟΣΔΗΠΟΤΕ ΣΥΝΤΕΛΕΣΤΗΣ) ΑΝΑΛΑΜΒΑΝΕΙ ΤΟ ΚΟΣΤΟΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΑΝΑΓΚΑΙΑΣ ΣΥΝΤΗΡΗΣΗΣ, ΕΠΙΣΚΕΥΗΣ Ή ΔΙΟΡΘΩΣΗΣ. Η ΠΑΡΟΥΣΑ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ ΑΠΟΤΕΛΕΙ ΑΝΑΠΟΣΠΑΣΤΟ ΜΕΡΟΣ ΤΗΣ ΑΔΕΙΑΣ. ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΟΥΔΕΜΙΑ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ ΣΥΜΦΩΝΑ ΜΕ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΠΑΡΟΥΣΑΣ, ΠΑΡΑ ΜΟΝΟ ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ, ΚΑΙ</para>
+		</listitem>
+		<listitem>
+		  <para>Ο ΔΗΜΙΟΥΡΓΟΣ, Ο ΑΡΧΙΚΟΣ ΣΥΓΓΡΑΦΕΑΣ, ΟΙ ΣΥΝΤΕΛΕΣΤΕΣ Ή ΟΙ ΔΙΑΝΟΜΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ Ή ΤΡΟΠΟΠΟΙΗΜΕΝΗΣ ΕΚΔΟΣΗΣ ΑΥΤΟΥ, ΚΑΘΩΣ ΚΑΙ ΟΙ ΠΡΟΜΗΘΕΥΤΕΣ ΟΠΟΙΩΝΔΗΠΟΤΕ ΕΚ ΤΩΝ ΠΡΟΑΝΑΦΕΡΟΜΕΝΩΝ ΜΕΡΩΝ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ ΕΝΑΝΤΙ ΟΙΟΥΔΗΠΟΤΕ, ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΕΡΜΗΝΕΙΑ ΝΟΜΟΥ, ΕΙΤΕ ΕΞ ΑΔΙΚΟΠΡΑΞΙΑΣ (ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΗΣ ΤΗΣ ΑΜΕΛΕΙΑΣ) ΕΙΤΕ ΣΤΟ ΠΛΑΙΣΙΟ ΣΥΜΒΑΤΙΚΗΣ Ή ΑΛΛΗΣ ΥΠΟΧΡΕΩΣΗΣ, ΓΙΑ ΤΥΧΟΝ ΑΜΕΣΕΣ, ΕΜΜΕΣΕΣ, ΕΙΔΙΚΕΣ, ΤΥΧΑΙΕΣ Ή ΣΥΝΕΠΑΚΟΛΟΥΘΕΣ ΖΗΜΙΕΣ ΟΠΟΙΑΣΔΗΠΟΤΕ ΜΟΡΦΗΣ, ΣΥΜΠΕΡΙΛΑΜΒΑΝΟΜΕΝΩΝ, ΧΩΡΙΣ ΠΕΡΙΟΡΙΣΜΟ, ΖΗΜΙΩΝ ΛΟΓΩ ΑΠΩΛΕΙΑΣ ΦΗΜΗΣ ΚΑΙ ΠΕΛΑΤΕΙΑΣ, ΔΙΑΚΟΠΗΣ ΕΡΓΑΣΙΩΝ, ΔΥΣΛΕΙΤΟΥΡΓΙΑΣ Ή ΒΛΑΒΗΣ ΗΛΕΚΤΡΟΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ, Ή ΚΑΘΕ ΑΛΛΗΣ ΖΗΜΙΑΣ Ή ΑΠΩΛΕΙΑΣ ΠΟΥ ΟΦΕΙΛΕΤΑΙ Ή ΣΧΕΤΙΖΕΤΑΙ ΜΕ ΤΗΝ ΧΡΗΣΗ ΤΟΥ ΕΓΓΡΑΦΟΥ ΚΑΙ ΤΩΝ ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ, ΑΚΟΜΑ ΚΑΙ ΑΝ ΤΑ ΩΣ ΑΝΩ ΜΕΡΗ ΕΙΧΑΝ ΛΑΒΕΙ ΓΝΩΣΗ ΤΗΣ ΠΙΘΑΝΟΤΗΤΑΣ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+   other legal stuff such as "NO WARRANTY" statement. Please do not change
+   any of this. -->
+   <authorgroup>
+   		<author><firstname>Mark</firstname> <surname>Finlay</surname> <affiliation> <orgname>Έργο τεκμηρίωσης GNOME</orgname> <address><email>sisob@eircom.net</email></address> </affiliation></author>
+		<author><firstname>Mark</firstname> <surname>Humphreys</surname> <affiliation> <orgname>Έργο τεκμηρίωσης GNOME</orgname> <address><email>marquee@users.sourceforge.net</email></address> </affiliation></author>		
+		<author role="maintainer"><firstname>Baptiste</firstname> <surname>Mille-Mathias</surname> <affiliation> <orgname>Έργο τεκμηρίωσης GNOME</orgname> <address><email>baptiste.millemathias@gmail.com</email></address> </affiliation></author>
+		<author><firstname>Victor</firstname> <surname>Osadci</surname> <affiliation> <orgname>Έργο τεκμηρίωσης GNOME</orgname> <address><email>Victor.Osadci.GNOME@xhtml.md</email></address> </affiliation></author>
+		<author><firstname>Dean</firstname> <surname>Sas</surname> <affiliation> <orgname>Έργο τεκμηρίωσης Ubuntu</orgname> <address><email>dean@deansas.org</email></address> </affiliation></author>
+   </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+   <revhistory>
+      <revision><revnumber>Εγχειρίδιο Αναπαραγωγής μουσικής Rhythmbox V0.0.2</revnumber> <date>Οκτώβριος 2002</date> <revdescription> 
+	  		<para role="author">Mark Finlay</para>
+	  		<para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Εγχειρίδιο Αναπαραγωγής μουσικής Rhythmbox V0.0.3</revnumber> <date>Αύγουστος 2003</date> <revdescription> 
+	  		<para role="author">Mark Humphreys</para>
+	  		<para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Εγχειρίδιο Αναπαραγωγής μουσικής Rhythmbox V0.0.4</revnumber> <date>Οκτώβριος 2005</date> <revdescription> 
+	  		<para role="author">Baptiste Mille-Mathias</para>
+	  		<para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Εγχειρίδιο Αναπαραγωγής μουσικής Rhythmbox V2.0.2</revnumber> <date>Απρίλιος 2006</date> <revdescription> 
+	  		<para role="author">Luca Ferretti</para>
+	  		<para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+		</revdescription></revision> 
+	  <revision><revnumber>Εγχειρίδιο Αναπαραγωγής μουσικής Rhythmbox V2.0.3</revnumber> <date>Μάιος 2008</date> <revdescription>
+			<para role="author">Dean Sas</para>
+			<para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+        </revdescription></revision>
+    </revhistory> 
+
+    <releaseinfo>Αυτό το εγχειρίδιο περιγράφει την έκδοση 0.11.5 της Αναπαραγωγής μουσικής Rhythmbox.</releaseinfo> 
+    <legalnotice> 
+      <title>Ανάδραση</title> 
+      <para>Για να αναφέρετε ένα σφάλμα ή να κάνετε μία πρόταση σχετικά με την εφαρμογή Αναπαραγωγή μουσικής Rythmbox ή αυτό το εγχειρίδιο, ακολουθήστε τις οδηγίες στο σύνδεσμο <ulink url="ghelp:gnome-feedback" type="help">GNOME Feedback Page</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+   <abstract role="description">
+     <para>Η Αναπαραγωγή μουσικής (Rhythmbox) είναι ο ολοκληρωμένος αναπαραγωγέας μουσικής για την επιφάνεια εργασίας του GNOME.</para>
+   </abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Ελληνική μεταφραστική ομάδα GNOME</firstname>
+      </personname>
+      <email>team@gnome.gr</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2008-2014</year>
+      
+      <holder>Ελληνική μεταφραστική ομάδα GNOME</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Γιάννης Κατσαμπίρης</firstname>
+      </personname>
+      <email>juankatsampirhs@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2008</year>
+      
+      <holder>Γιάννης Κατσαμπίρης</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Χρήστος Τριανταφύλλης</firstname>
+      </personname>
+      <email>christriant1995@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2011</year>
+      
+      <holder>Χρήστος Τριανταφύλλης</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Μαρία Μαυρίδου</firstname>
+      </personname>
+      <email>mavridou@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2014</year>
+      
+      <holder>Μαρία Μαυρίδου</holder>
+    </copyright>
+  </articleinfo> 
+
+
+  <indexterm zone="index"><primary>Rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>Αναπαραγωγή μουσικής</primary></indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="introduction">
+    <title>Εισαγωγή</title>
+      <para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> είναι εφαρμογή αναπαραγωγής μουσικής και βιβλιοθήκη για αρχεία με ετικέτες, που υποστηρίζει διάφορες μορφές μουσικής.</para>
+      <para>Οι τρέχοντες λειτουργίες της <application>Αναπαραγωγής μουσικής Rhythmbox</application> περιλαμβάνουν:</para>
+      	<itemizedlist>
+          <listitem>
+            <para>Αναπαραγωγή διάφορων μορφών μουσικών αρχείων από την οργανωμένη με ετικέτες βιβλιοθήκη σας.</para>
+          </listitem>
+          <listitem>
+            <para>Προβολή πληροφοριών στα τραγούδια με ανάγνωση μεταδεδομένων.</para>
+          </listitem>
+          <listitem>
+            <para>Προβολή τραγουδιών σε οργανωμένη μορφή.</para>
+          </listitem>
+          <listitem>
+            <para>Δημιουργία στατικών λιστών αναπαραγωγής με σύρσιμο και ελευθέρωση από την προβολή της βιβλιοθήκης.</para>
+          </listitem>
+          <listitem>
+            <para>Δημιουργία αυτόματων λιστών αναπαραγωγής από κριτήρια.</para>
+          </listitem>
+          <listitem>
+            <para>Αναζήτηση για τραγούδια στη λίστα των πηγών όπως η βιβλιοθήκη ή οι λίστες αναπαραγωγής.</para>
+          </listitem>
+          <listitem>
+            <para>Ακρόαση ραδιοφωνικών σταθμών του διαδικτύου.</para>
+          </listitem>
+          <listitem>
+            <para>Ανάγνωση CD ήχου και ανάκτηση πληροφοριών όπως ο τίτλος του κομματιού, από το διαδίκτυο.</para>
+          </listitem>
+          <listitem>
+            <para>Εγγραφή CD ήχου από λίστες αναπαραγωγής.</para>
+          </listitem>
+          <listitem>
+            <para>Μεταφέρετε μουσική στους αναπαραγωγείς μουσικής iPod, MTP και USB Mass Storage.</para>
+          </listitem>
+        </itemizedlist>
+  </sect1>
+  <sect1 id="rb-getting-started">
+  	<title>Ξεκινήστε</title>
+	
+		<sect2 id="rb-launch">
+			<title>Για να εκκινήσετε την <application>Αναπαραγωγή μουσικής Rhythmbox</application></title>
+			<para>Μπορείτε να εκκινήσετε την <application>Αναπαραγωγή μουσικής Rhythmbox</application> με τους ακόλουθους τρόπους: <variablelist>
+					<varlistentry>
+						<term>Από το μενού <guimenu>Εφαρμογές</guimenu></term>
+						<listitem>
+							<para>Επιλέξτε <menuchoice><guisubmenu>Ήχος &amp; Βίντεο</guisubmenu> <guimenuitem>Αναπαραγωγή μουσικής Rhythmbox</guimenuitem></menuchoice>.</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Γραμμή εντολών</term>
+						<listitem>
+							<para>Πληκτρολογήστε την εντολή <command>rhythmbox</command> και ύστερα πιέστε το πλήκτρο <keycap>Return</keycap>.</para>
+						</listitem>
+					</varlistentry>
+				</variablelist></para>
+		</sect2>
+		<sect2 id="rb">
+			<title>Εκτέλεση του βοηθού</title>
+			<para>Την πρώτη φορά που εκκινείτε την <application>Αναπαραγωγή μουσικής Rhythmbox</application>, ένας βοηθός θα σας βοηθήσει να εισάγετε τη μουσική σας. Στο δεύτερο πίνακα του βοηθού, πιέστε το κουμπί <guibutton>Περιήγηση</guibutton> και επιλέξτε τον φάκελο όπου είναι αποθηκευμένη η μουσική σας.</para>
+		</sect2>
+  </sect1>
+  <sect1 id="rb-window">
+    <title>Παράθυρο Αναπαραγωγής μουσικής Rhythmbox</title>
+    <sect2 id="rb-window-intro">
+      <title>Επισκόπηση</title>
+      	<para>Το παράθυρο της <application>Αναπαραγωγής μουσικής Rhythmbox</application> σας δίνει τη δυνατότητα να περιηγηθείτε και να αναπαράγετε την αγαπημένη σας μουσική. Το <xref linkend="fig-rb-window"/> εμφανίζει τη διεπαφή της <application>Αναπαραγωγής μουσικής Rhythmbox</application> με τα κύρια περιεχόμενά της.</para>
+      	<figure id="fig-rb-window">
+        <title>Το παράθυρο της <application>Αναπαραγωγής μουσικής Rhythmbox</application></title>
+        <screenshot>
+          <mediaobject><imageobject> <imagedata fileref="figures/rb-window.png" format="PNG"/> </imageobject> <textobject> <phrase>Το παράθυρο της εφαρμογής <application>Αναπαραγωγή μουσικής Rhythmbox</application> εμφανίζουν τα διάφορα μέρη της διεπαφής της <application>Αναπαραγωγή μουσικής Rhythmbox</application>. Επεξηγήσεις: Γραμμή μενού, Περιοχή αναπαραγωγής, Περιηγητής, Πλευρική στήλη, Γραμμή κατάστασης. </phrase> </textobject></mediaobject>
+        </screenshot>
+      </figure>
+      <para>Ο Πίνακας 1 περιγράφει τα περιεχόμενα του παραθύρου της <application>Αναπαραγωγής μουσικής Rhythmbox</application>.</para>
+      <table frame="topbot" id="table-rb-window">
+        <title>Τα περιεχόμενα του παραθύρου της <application>Αναπαραγωγής μουσικής Rhythmbox</application></title>
+        <tgroup cols="3" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <colspec colname="COLSPEC2"/>
+          <thead>
+            <row rowsep="1">
+              <entry valign="top">Αναγνωριστικό</entry>
+              <entry valign="top">Συστατικό στοιχείο</entry>
+              <entry valign="top">Περιγραφή</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry valign="top">1</entry>
+              <entry valign="top">Γραμμή μενού</entry>
+              <entry valign="top">Περιέχει τα μενού που χρησιμοποιούνται για την εκτέλεση εργασιών στο παράθυρο της <application>Αναπαραγωγής μουσικής Rhythmbox</application></entry>
+            </row>
+            <row>
+              <entry valign="top">2</entry>
+              <entry valign="top">Γραμμή εργαλείων</entry>
+              <entry valign="top">Παρέχει πρόσβαση σε λειτουργίες αναπαραγωγής και λεπτομέρειες σχετικά με το κομμάτι που αναπαράγεται.</entry>
+            </row>
+            <row>
+              <entry valign="top">3</entry>
+              <entry valign="top">Ολισθητής χρόνου</entry>
+              <entry valign="top">Εμφανίζει την τοποθεσία του κομματιού όπου βρίσκεται η αναπαραγωγή. Με αυτό μπορείτε επίσης να μετακινήστε σε διαφορετικό μέρος του κομματιού.</entry>
+            </row>
+            <row>
+              <entry valign="top">4</entry>
+              <entry valign="top">Πλευρική στήλη</entry>
+              <entry valign="top">Εμφανίζει μια λίστα με τις διαθέσιμες πηγές.</entry>
+
+            </row>
+            <row>
+              <entry valign="top">5</entry>
+              <entry valign="top">Περιηγητής</entry>
+              <entry valign="top">Επιτρέπει την περιήγηση και το φιλτράρισμα των τραγουδιών της βιβλιοθήκης ανά είδος, ανά καλλιτέχνη και ανά όνομα άλμπουμ. Ο περιηγητής επίσης παρέχει λειτουργία αναζήτησης για την εμφάνιση μόνο των κομματιών που ταιριάζουν στα κριτήριά σας.</entry>
+            </row>
+            <row>
+              <entry valign="top">6</entry>
+              <entry valign="top">Λίστα κομματιών</entry>
+              <entry valign="top">Τοποθετεί σε λίστα, τα κομμάτια που ανήκουν στην επιλεγμένη πηγή.</entry>
+            </row>
+            <row>
+              <entry valign="top">7</entry>
+              <entry valign="top">Γραμμή κατάστασης</entry>
+              <entry valign="top">Εμφανίζει πληροφορίες σχετικά με την πηγή που επιλέχτηκε στην πλευρική στήλη.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="intro-sourcelist">
+      <title>Η πλευρική στήλη</title>
+      <para>Η πλευρική στήλη περιλαμβάνει την λίστα από την οποία έχετε πρόσβαση στη βιβλιοθήκη της μουσικής σας, το ραδιόφωνο από το διαδίκτυο, τις λίστες αναπαραγωγής σας και τα CD ήχου. Η πλαϊνή στήλη μπορεί να περιέχει τις ακόλουθες πηγές: <itemizedlist>
+				  <listitem><para>Η βιβλιοθήκη της <application>Αναπαραγωγής μουσικής Rhythmbox</application>, όπου θα εμφανιστούν όλα τα κομμάτια που έχουν εισαχθεί.</para></listitem>
+				  <listitem><para>Η πηγή του iRadio, με όλους τους ραδιοφωνικούς σταθμούς του διαδικτύου.</para></listitem>
+				  <listitem><para>Φορητές εκπομπές.</para></listitem>
+				  <listitem><para>Όλες οι λίστες αναπαραγωγής (έξυπνες και φυσικές).</para></listitem>
+				  <listitem><para>CD ήχου που εισήχθηκε στους οδηγούς CD του υπολογιστή.</para></listitem>
+				  <listitem><para>Οι φορητές συσκευές αναπαραγωγής όπως το IPοd είναι συνδεδεμένες στον υπολογιστή σας.</para></listitem>
+				  <listitem><para>Η κοινόχρηστη μουσική DAAP που ανιχνεύθηκε  στο τοπικό σας δίκτυο.</para></listitem>
+				  <listitem><para>Μουσικά καταστήματος όπως Jamendo και Magnatune.</para></listitem>
+				</itemizedlist></para>
+      	<para>Η εμφάνιση της πλευρικής στήλης μπορεί να χρησιμοποιείται ή όχι επιλέγοντας από το μενού <menuchoice><guimenu>Προβολή</guimenu><guimenuitem>Πλευρική στήλη</guimenuitem> </menuchoice>.</para>
+    </sect2>
+    <sect2 id="player-toolbar">
+      <title>Η γραμμή εργαλείων της εφαρμογής αναπαραγωγής</title>
+      <para>Η περιοχή της γραμμής εργαλείων παρέχει πρόσβαση σε λεπτομέρειες σχετικά με το τρέχον κομμάτι που αναπαράγεται. Όταν δεν αναπαράγεται κανένα κομμάτι, η περιοχή αυτή δεν εμφανίζει καμιά πληροφορία. Όταν αναπαράγεται ένα κομμάτι, εμφανίζεται το όνομα του κομματιού, και από κάτω, ο καλλιτέχνης και το όνομα του άλμπουμ.</para>
+      <para>Ο ανιχνευτής εμφανίζεται επίσης, προβάλλοντας την πρόοδο του αναπαραγόμενου κομματιού. Όταν ο ανιχνευτής έχει εστίαση, τα βελάκια μπορούν να χρησιμοποιηθούν για γρήγορη μετάβαση μπροστά ή πίσω στο αναπαραγόμενο κομμάτι.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar.png" format="PNG"/> </imageobject> <textobject> <phrase>Η περιοχή αναπαραγωγής πολυμέσων</phrase> </textobject></mediaobject>
+      </screenshot>
+      <tip>
+        <para>Αν χρησιμοποιείτε ποντίκι με τροχό κύλισης, μπορείτε να προσαρμόσετε την ένταση του ήχου πραγματοποιώντας την κατάλληλη κύλιση ενώ ο δείκτης του ποντικιού είναι πάνω από το κουμπί της έντασης ήχου.</para>
+      </tip>
+    </sect2>
+    <sect2 id="status-area">
+      <title>Η γραμμή κατάστασης</title>
+      <para>Η γραμμή κατάστασης περιέχει πρόσθετες πληροφορίες σχετικά με τον αριθμό των τραγουδιών και τη διάρκεια της πηγής που επιλέχτηκε. Η εμφάνιση της γραμμής κατάστασης μπορεί να εναλλάσσεται επιλέγοντας από το μενού <menuchoice> <guimenu>Προβολή</guimenu><guimenuitem>Γραμμή κατάστασης</guimenuitem></menuchoice>.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-statusbar.png" format="PNG"/> </imageobject> <textobject> <phrase>Η γραμμή κατάστασης</phrase> </textobject></mediaobject>
+      </screenshot>
+    </sect2>
+    <sect2 id="rb-window-small">
+      <title>Το ελαχιστοποιημένο παράθυρο της <application>Αναπαραγωγής μουσικής Rhythmbox</application></title>
+      <para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> διαθέτει και ελαχιστοποιημένη λειτουργία. Αυτή η λειτουργία έχει τη δυνατότητα πρόσβασης στη γραμμή μενού και στη συνάρτηση αναπαραγωγής της <application>Αναπαραγωγής μουσικής Rhythmbox</application>.</para>
+      <para>Για να μεταβείτε σε ελάχιστη προβολή, επιλέξτε από το μενού <menuchoice><guimenu>Προβολή</guimenu> <guimenuitem>Ελάχιστη προβολή</guimenuitem></menuchoice>.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-window-small.png" format="PNG"/> </imageobject> <textobject> <phrase>Η  <application>Αναπαραγωγή μουσικής Rhythmbox </application> σε λειτουργία ελάχιστης προβολής</phrase> </textobject></mediaobject>
+      </screenshot>
+    </sect2>
+  </sect1>
+  <sect1 id="Usage">
+    <title>Χρησιμοποιώντας την Αναπαραγωγή μουσικής Rhythmbox</title>
+    <sect2 id="Playing">
+      <title>Αναπαραγωγή μουσικής</title>
+      <para>Για να αναπαράγετε ένα κομμάτι, επιλέξτε από το μενού <menuchoice><guimenu>Έλεγχος</guimenu> <guimenuitem>Αναπαραγωγή</guimenuitem></menuchoice>, ή επιλέξτε το κομμάτι και πιέστε το κουμπί <guibutton>Αναπαραγωγή</guibutton> στη γραμμή εργαλείων, ή απλά κάντε διπλό κλικ με το ποντίκι σας στο κομμάτι για να ξεκινήσει η αναπαραγωγή του.</para>
+      <para>Όταν τελειώνει η αναπαραγωγή του κομματιού, η <application>Αναπαραγωγή μουσικής Rhythmbox</application> μεταβαίνει στην αναπαραγωγή του επόμενου κομματιού στη λίστα που εμφανίζεται στο πλαίσιο προβολής.</para>
+      <para>Στη βιβλιοθήκη μπορείτε να αναπαράγετε όλα τα τραγούδια από έναν καλλιτέχνη ή ένα απλό άλμπουμ επιλέγοντας την είσοδο <guilabel>Άλμπουμ</guilabel> ή <guilabel>Καλλιτέχνης</guilabel> στην <link linkend="library-filter-browser">περιήγηση βιβλιοθήκης</link>.</para>
+      <sect3 id="next-previous">
+        <title>Επόμενο/Αναπαραγωγή/Προηγούμενο</title>
+        <para>Τα κουμπιά <guibutton>Επόμενο</guibutton> και <guibutton>Προηγούμενο</guibutton> μπορούν να χρησιμοποιηθούν για τη μετακίνηση μεταξύ των κομματιών κατά την αναπαραγωγή. Αν ένα κομμάτι αναπαράγεται, το κουμπί προηγούμενο θα επαναλάβει το κομμάτι από την αρχή. Πιέζοντας το κουμπί <guibutton>Αναπαραγωγή</guibutton> θα αρχίσει η αναπαραγωγή του τρέχοντος κομματιού. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-prevplaynext.png" format="PNG"/> </imageobject> <textobject> <phrase>Τα κουμπιά <guibutton>Προηγούμενο</guibutton>, <guibutton>Αναπαραγωγή</guibutton> και <guibutton>Επόμενο</guibutton> στην εργαλειοθήκη.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="repeat">
+        <title>Επανάληψη</title>
+        <para>Με την επιλογή <guibutton>Επανάληψη</guibutton> η <application>Αναπαραγωγή μουσικής Rhythmbox</application> αρχίζει ξανά την αναπαραγωγή των κομματιών από την αρχή της λίστας όταν έχει αναπαραχθεί ήδη και το τελευταίο κομμάτι.</para>
+        <para>Για να ενεργοποιήσετε την επανάληψη, επιλέξτε από το μενού <menuchoice><guimenu>Έλεγχος</guimenu> <guimenuitem>Επανάληψη</guimenuitem></menuchoice>, ή πιέστε το κουμπί <guibutton>Επανάληψη</guibutton> στη γραμμή εργαλείων. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-repeat.png" format="PNG"/> </imageobject> <textobject> <phrase>Το κουμπί επανάληψης στην εργαλειοθήκη.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="shuffle">
+        <title>Τυχαία αναπαραγωγή</title>
+        <para>Με την επιλογή <guibutton>Τυχαία αναπαραγωγή</guibutton> η <application>Αναπαραγωγή μουσικής Rhythmbox</application> αναπαράγει τα κομμάτια με τυχαία σειρά.</para>
+        <para>Για να ενεργοποιήσετε την τυχαία αναπαραγωγή, επιλέξτε από το μενού <menuchoice><guimenu>Έλεγχος</guimenu> <guimenuitem>Τυχαία αναπαραγωγή</guimenuitem></menuchoice>, ή πιέστε το κουμπί <guibutton>Τυχαία αναπαραγωγή</guibutton> στη γραμμή εργαλείων. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-shuffle.png" format="PNG"/> </imageobject> <textobject> <phrase>Το κουμπί τυχαίας αναπαραγωγής στην εργαλειοθήκη.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="volume">
+        <title>Έλεγχος έντασης ήχου</title>
+        <para>Ο έλεγχος έντασης ήχου βρίσκεται δεξιά από τη γραμμή εργαλείων. Πιέζοντας το εικονίδιο με το ηχείο θα εμφανιστεί ο ολισθητής έντασης ήχου. Μετακινώντας τον πάνω ή κάτω θα αυξήσετε ή θα μειώσετε την ένταση του ήχου. Το εικονίδιο με το ηχείο θα αλλάξει έτσι ώστε να αντανακλά τη σχετική ένταση ήχου που χρησιμοποιείτε. <screenshot><mediaobject><imageobject><imagedata fileref="figures/rb-volume-changer.png" format="PNG"/></imageobject><textobject><phrase>Ο ολισθητής εντάσεως στην εργαλειοθήκη. </phrase></textobject></mediaobject></screenshot></para>
+        <tip>
+          <para>Μπορείτε να προσαρμόσετε την ένταση ήχου χρησιμοποιώντας τον τροχό κύλισης του ποντικιού σας πάνω από το εικονίδιο με το ηχείο.</para>
+        </tip>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="library">
+    <title>Πηγή βιβλιοθήκης</title>
+    	<para>Η βιβλιοθήκη είναι η κύρια διαθέσιμη πηγή στην <application>Αναπαραγωγή μουσικής Rhythmbox</application>, είναι δομημένη κατάλληλα ώστε να περιέχει όλα τα μουσικά αρχεία που έχετε εισάγει στην <application>Αναπαραγωγή μουσικής Rhythmbox</application> (Η βιβλιοθήκη αποθηκεύει τη διαδρομή ώστε να έχει πρόσβαση στα μουσικά αρχεία σας, και δεν περιέχει τα αρχεία από μόνα τους.)</para>
+    	<para>Η βιβλιοθήκη δεν μπορεί μόνο να περιέχει μουσικά αρχεία που βρίσκονται φυσικά στον υπολογιστή σας (στον αρχικό σας κατάλογο για παράδειγμα), αλλά μπορεί επίσης να περιέχει διαθέσιμα μουσικά αρχεία από απομακρυσμένες υπηρεσίες του διαδικτύου. Μερικά παραδείγματα υπηρεσιών του διαδικτύου που υποστηρίζονται είναι : <itemizedlist>
+				<listitem>
+					<para>Δημόσιο FTP</para>
+				</listitem>
+				<listitem>
+					<para>Πιστοποιημένο FTP</para>
+				</listitem>
+				<listitem>
+					<para>NFS</para>
+				</listitem>
+				<listitem>
+					<para>Κοινόχρηστο Windows</para>
+				</listitem>
+			</itemizedlist></para>
+    	<para>Τα αρχεία που εισάγονται στη βιβλιοθήκη εμφανίζονται στη λίστα κομματιών μαζί με τις αποθηκευμένες πληροφορίες (όπως το όνομα του καλλιτέχνη ή το όνομα του άλμπουμ) στις ετικέτες που είναι ενσωματωμένες στα κομμάτια. Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> χρησιμοποιεί αυτές τις ετικέτες για να εμφανίζει τα κομμάτια σε οργανωμένη μορφή. <tip>
+				<para>Μπορείτε να επεξεργαστείτε τις ετικέτες επιλέγοντας <menuchoice><guimenu> Μουσική</guimenu><guimenuitem>Ιδιότητες</guimenuitem> </menuchoice> και συμπληρώνοντας τις λεπτομέρειες στο παράθυρο που θα εμφανιστεί.</para>
+			</tip></para>
+    <sect2 id="library-tracks-add">
+      <title>Προσθήκη κομματιών στη βιβλιοθήκη</title>
+      		<para>Για να προσθέσετε κομμάτια στη βιβλιοθήκη, μπορείτε να ακολουθήσετε τις εξής διαφορετικές μεθόδους: <itemizedlist>
+					<listitem>
+						<para>Για να εισάγετε μόνο ένα κομμάτι, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guimenuitem>Εισαγωγή αρχείου </guimenuitem></menuchoice> και ύστερα επιλέξτε το αρχείο στον επιλογέα αρχείων και πιέστε το κουμπί <guibutton>Άνοιγμα</guibutton>.</para>
+					</listitem>
+					<listitem>
+						<para>Αν θέλετε να εισάγετε μερικά μουσικά αρχεία που βρίσκονται σε κάποιον φάκελο, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guimenuitem>Εισαγωγή φακέλου</guimenuitem></menuchoice> και ύστερα επιλέξτε τον φάκελο στον επιλογέα αρχείων και πιέστε το κουμπί <guibutton>Άνοιγμα</guibutton>. Όλα τα μουσικά αρχεία που βρίσκονται στον φάκελο και στους υποφακέλους του θα εισαχθούν.</para>
+					</listitem>
+					<listitem>
+						<para>Σύρετε και ελευθερώστε αρχεία από το διαχειριστή αρχείων (όπως ο <application> Nautilus </application>) πάνω από το παράθυρο της Αναπαραγωγής μουσικής Rhythmbox.</para>
+					</listitem>
+				</itemizedlist></para>
+      	<tip>
+       		<para>Αν έχετε ενεργοποιήσει τη λειτουργία παρακολούθησης καταλόγων (δείτε <xref linkend="prefs-library"/>), όλα τα μουσικά αρχεία από τον επιλεγμένο κατάλογο θα προστεθούν στη βιβλιοθήκη. Τα νέα αρχεία που θα προστεθούν ύστερα στον κατάλογο, θα προστεθούν αυτόματα και στη βιβλιοθήκη.</para>
+      	</tip>
+    </sect2>
+    <sect2 id="library-tracks-del">
+    	<title>Αφαίρεση κομματιών από τη βιβλιοθήκη</title>
+      	<para>Για να αφαιρέσετε ένα κομμάτι από τη βιβλιοθήκη αλλά να το διατηρήσετε στο δίσκο σας, επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenu>Αφαίρεση</guimenu></menuchoice>. Το κομμάτι και οι ιδιότητές του (όπως η βαθμολογία του ή ο αριθμός των αναπαραγωγών του) θα αφαιρεθούν από τη βάση δεδομένων της Αναπαραγωγής μουσικής (Rhythmbox).</para>
+      	<para>Για να διαγράψετε ένα κομμάτι τόσο από τη βιβλιοθήκη όσο και από το δίσκο σας, επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Μεταφορά στα απορρίμματα</guimenuitem></menuchoice>. Το κομμάτι θα αφαιρεθεί με τον ίδιο τρόπο όπως πριν, αλλά το αντίστοιχο αρχείο θα μεταφερθεί στο διαχειριστή αρχείων των απορριμάτων.</para>
+    </sect2>
+    <sect2 id="library-filter-search">
+    	<title>Αναζήτηση κομματιών χρησιμοποιώντας την Εύρεση</title>
+      	<para>Η Αναπαραγωγή μουσικής Rhythmbox παρέχει μια λειτουργία αναζήτησης, που μπορεί να αναζητήσει και να φιλτράρει κομμάτια χρησιμοποιώντας έναν όρο αναζήτησης.</para>
+      	<para>Εισάγετε κάποιο κείμενο στην εισαγωγή της αναζήτησης, και όπως πληκτρολογείτε, μόνο τα κομμάτια που ταιριάζουν με το κείμενο που εισήχθηκε, θα εμφανιστούν. Η λειτουργία εύρεσης κάνει αναζήτηση σε όλες τις ετικέτες των κομματιών που είναι αποθηκευμένα στη βιβλιοθήκη.</para>
+		<para>Για να κάνετε πιο ακριβή αναζήτηση, μπορείτε να επιλέξτε να αναζητήσετε μόνο σε συγκεκριμένες ετικέτες όπως <guilabel>Καλλιτέχνες</guilabel>, <guilabel>Άλμπουμ</guilabel> ή <guilabel>Τίτλοι</guilabel>.</para>
+    </sect2>
+    <sect2 id="library-filter-browser">
+    	<title>Εύρεση κομματιών χρησιμοποιώντας τον περιηγητή</title>
+      	<para>Ο περιηγητής είναι ένας άλλος βολικός τρόπος για να βρείτε κομμάτια. Ο περιηγητής είναι δυο ή τρία πλαίσια προβολής που ενεργοποιείται για πλοήγηση μεταξύ ειδών μουσικής, καλλιτεχνών και άλμπουμ και για εμφάνιση κομματιών που ταιριάζουν στα επιλεγμένα κριτήρια.</para>
+      	<para>Καταρχήν, για να εμφανίσετε τον περιηγητή, επιλέξτε από το μενού <menuchoice><guimenu>Προβολή</guimenu> <guimenuitem>Περιηγητής</guimenuitem></menuchoice>. Επιλέξτε τον καλλιτέχνη, το άλμπουμ και το είδος μουσικής, και ενώ επιλέγετε, θα εμφανιστούν στη λίστα κομματιών μόνο τα κομμάτια που ταιριάζουν στην επιλογή σας. Τα κριτήρια στις στήλες εφαρμόζονται από τα αριστερά στα δεξιά.</para>
+      	<tip>
+        	<para>Μπορείτε να επιλέξετε διάφορα κριτήρια για την  ίδια κατηγορία χρησιμοποιώντας το πλήκτρο <keycombo><keycap>Ctrl</keycap></keycombo>.</para>
+      	</tip>
+      		<para>Μπορείτε επίσης να βρείτε από ένα επιλεγμένο κομμάτι στη λίστα κομματιών, όλα τα κομμάτια που ανήκουν στο ίδιο είδος μουσικής, έχουν τον ίδιο καλλιτέχνη ή ανήκουν στο ίδιο άλμπουμ. Επιλέξτε το κομμάτι στη λίστα κομματιών, κάντε δεξί κλικ πάνω του, και επιλέξτε <guilabel>Περιήγηση σε αυτό το είδος/καλλιτέχνη/άλμπουμ</guilabel>. Ύστερα ο περιηγητής θα φιλτράρει τα κομμάτια χρησιμοποιώντας τα κριτήρια που επιλέξατε.</para>
+  	</sect2>
+  </sect1>
+  <sect1 id="radio">
+  	<title>Πηγή ραδιοφώνου</title>
+    <para>Ο δέκτης του διαδικτυακού ραδιοφώνου μπορεί να χρησιμοποιηθεί για να ακούτε αρχεία ήχου μέσω δικτύου, τοπικής ή διαδικτύου.</para>
+    <figure id="fig-iradio">
+      <title>Διαδικτυακό ραδιόφωνο στην <application>Αναπαραγωγή μουσικής Rhythmbox</application></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+	    <imagedata format="PNG" fileref="figures/rb-iradio-main.png"/>
+	  </imageobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+    <sect2 id="iradio-adding">
+      	<title>Προσθήκη σταθμού</title>
+      	<para>Για να προσθέσετε νέο σταθμό στον δέκτη διαδικτυακού ραδιοφώνου, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu> <guimenuitem>Προσθήκη νέου ραδιοφωνικού σταθμού του διαδικτύου</guimenuitem></menuchoice>, ύστερα εισάγετε την ιστοσελίδα του διαδικτυακού ραδιοφώνου και ύστερα πιέστε το κουμπί <guibutton>Προσθήκη</guibutton>.</para>
+    </sect2>
+    <sect2 id="iradio-modify">
+      	<title>Προβολή και τροποποίηση των ρυθμίσεων σταθμού</title>
+      	<para>Μπορείτε να εμφανίσετε και να επεξεργαστείτε τις ρυθμίσεις ενός διαδικτυακού ραδιοφωνικού σταθμού χρησιμοποιώντας από το μενού <menuchoice><guimenu>Μουσική</guimenu><guimenuitem>Ιδιότητες</guimenuitem></menuchoice>.</para>
+      	<para>Μπορείτε επίσης να τροποποιήσετε τις ιδιότητες του σταθμού επιλέγοντας το σταθμό και πατώντας δεξί κλικ, ύστερα επιλέξτε <guimenuitem>Ιδιότητες</guimenuitem>.</para>
+      	<para>Όταν έχετε πρόσβαση στις ιδιότητες ενός ραδιοφωνικού σταθμού, μπορείτε να τροποποιήσετε τον τίτλο του, το είδος μουσικής. Επίσης μπορείτε να τροποποιήσετε την τοποθεσία της ροής και να θέσετε μια βαθμολογία για αυτόν.</para>
+    </sect2>
+    <sect2 id="iradio-delete">
+    	<title>Αφαίρεση σταθμού</title>
+      	<para>Για να αφαιρέσετε ένα ραδιοφωνικό σταθμό από τη λίστα ραδιοφωνικών σταθμών, επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu> <guimenuitem>Αφαίρεση</guimenuitem></menuchoice>. Μπορείτε επίσης να πατήσετε δεξί κλικ στο σταθμό και να επιλέξετε <guimenuitem>Αφαίρεση</guimenuitem>.</para>
+    </sect2>
+  </sect1>
+  <sect1 id="podcast">
+  	<title>Πηγή φορητών εκπομπών</title>
+    <para>Το podcasting είναι ένα νέος τρόπος μεταδίδετε ηχητικό περιεχόμενο στο διαδίκτυο, όταν ο συντάκτης δημοσιεύει ένα επεισόδιο, οι συνδρομητές σε φορητές εκπομπές το πληροφορούνται μέσω τροφοδοσίας XML.</para>
+    <para>Η Αναπαραγωγή μουσικής Rhythmbox σας δίνει τη δυνατότητα να δημιουργείτε συνδρομή σε τροφοδοσίες φορητής εκπομπής, έτσι ώστε να πληροφορηθείτε όταν ένα νέο επεισόδιο είναι διαθέσιμο, θα ληφθεί αυτό το επεισόδιο και θα αναπαραχθεί.</para>
+    <tip>
+      	<para>Μπορείτε να βρείτε περισσότερες πληροφορίες σχετικά με τη φορητή εκπομπή και το podcasting αν επισκεφθείτε τον ορισμό του <ulink url="http://en.wikipedia.org/wiki/Podcast">Podcast</ulink> στη σελίδα <ulink url="http://en.wikipedia.org/">Wikipedia</ulink>.</para>
+    </tip>
+    <para>
+      <figure>
+        <title>Η διεπαφή φορητής εκπομπής</title>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-podcast-main.png" format="PNG"/> </imageobject> <textobject> <phrase>Η διεπαφή φορητής εκπομπής με κάποιες συνδρομές σε εκπομπές</phrase> </textobject></mediaobject>
+      </figure>
+    </para>
+    <sect2 id="podcast-management">
+      <title>Διαχείριση φορητών εκπομπών</title>
+      <sect3 id="podcast-feed-add">
+        <title>Προσθήκη φορητής εκπομπής</title>
+        <para>Για να δημιουργήσετε συνδρομή σε μια φορητή εκπομπή, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guimenuitem>Νέα ροή φορητής εκπομπής</guimenuitem></menuchoice>, ύστερα στο νέο παράθυρο, εισάγετε την ιστοσελίδα της τροφοδοσίας της φορητής εκπομπής. Η Αναπαραγωγή μουσικής Rhythmbox θα ανακτήσει τη λίστα με τα επεισόδια και θα ληφθεί το τελευταίο επεισόδιο στο σκληρό σας δίσκο.</para>
+        <para>Για να προσθέσετε μια νέα τροφοδοσία φορητής εκπομπής, μπορείτε επίσης να πατήσετε δεξί κλικ πάνω από την πηγή <guimenuitem>Φορητές εκπομπές</guimenuitem> και ύστερα επιλέξτε <guimenuitem>Νέα τροφοδοσία φορητής εκπομπής</guimenuitem>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-del">
+        <title>Διαγραφή φορητής εκπομπής</title>
+        <para>Για να διαγράψετε μια φορητή εκπομπή, πατήστε δεξί κλικ στο όνομα της τροφοδοσίας της στο περιηγητή, και επιλέξτε από το μενού <menuchoice><guimenuitem>Διαγραφή τροφοδοσίας της φορητής εκπομπής</guimenuitem></menuchoice>, ύστερα επιλέξτε <menuchoice><guimenuitem>Διαγραφή μόνο της τροφοδοσίας</guimenuitem></menuchoice> αν θέλετε να διατηρήσετε τα επεισόδια της φορητής εκπομπής, ή επιλέξτε <menuchoice><guimenuitem>Διαγραφή τροφοδοσίας και αντικειμένου</guimenuitem></menuchoice> αν θέλετε να διαγράψετε τη ροή και όλα τα σχετικά επεισόδια.</para>
+      </sect3>
+      <sect3 id="podcast-feed-update">
+        <title>Ενημέρωση τροφοδοσιών</title>
+        <para>Για να μάθετε αν έχουν δημοσιευτεί νέα επεισόδια για μια φορητή εκπομπή, πατήστε δεξί κλικ πάνω από το όνομα της φορητής εκπομπής στον περιηγητή και επιλέξτε <menuchoice><guimenuitem>Ενημέρωση τροφοδοσίας της φορητής εκπομπής</guimenuitem></menuchoice>. Αν έχουν δημοσιευτεί νέα επεισόδια, αυτά θα εμφανιστούν στη λίστα επεισοδίων.</para>
+        <tip>
+          <para>Η Αναπαραγωγή μουσικής Rhythmbox ελέγχει ανά τακτά διαστήματα, από μόνη της, τη λίστα τροφοδοσιών της φορητής εκπομπής αν είναι ενημερωμένες.</para>
+        </tip>
+        <para>Μπορείτε επίσης να ελέγξετε όλες τις φορητές εκπομπές, πατώντας δεξί κλικ πάνω από την πηγή <menuchoice><guimenuitem>Φορητές εκπομπές</guimenuitem></menuchoice> και επιλέξτε <menuchoice><guimenuitem>Ενημέρωση όλων των τροφοδοσιών</guimenuitem></menuchoice>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-show">
+        <title>Ιδιότητες τροφοδοσίας πρόσβασης σε φορητή εκπομπή</title>
+        <para>Για να έχετε πρόσβαση στις ιδιότητες της ροής, πατήστε δεξί κλικ στο όνομα της ροής, και επιλέξτε <menuchoice><guimenuitem>Ιδιότητες</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Στην καρτέλα <guilabel>Βασικά</guilabel> μπορείτε να δείτε τα στοιχεία <guilabel>Tίτλος</guilabel>, <guilabel>Συγγραφέας</guilabel>, την ημερομηνία για την <guilabel>Τελευταία ενημέρωση</guilabel> και την <guilabel>Περιγραφή</guilabel> για μια φορητή εκπομπή.</para></listitem><listitem><para>Στην καρτέλα <guilabel>Λεπτομέρειες</guilabel> μπορείτε να δείτε τις ιδιότητες <guilabel>Πηγή</guilabel>, <guilabel>Γλώσσα</guilabel>, και τα <guilabel>Πνευματικά δικαιώματα</guilabel> για μια τροφοδοσία.</para></listitem></itemizedlist> Μπορείτε να προβάλετε τις ιδιότητες και επίσης να επεξεργαστείτε τη βαθμολογία τη ροής.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="episode-management">
+      <title>Διαχείριση επεισοδίων</title>
+      <sect3 id="podcast-episode-download">
+        <title>Λήψη επεισοδίου φορητής εκπομπής</title>
+        <para>Για να ληφθεί ένα επεισόδιο στο δίσκο σας, πατήστε δεξί κλικ στο επεισόδιο, και επιλέξτε από το μενού <menuchoice><guimenuitem>Λήψη επεισοδίου</guimenuitem></menuchoice>, Η Αναπαραγωγή μουσικής Rhythmbox θα ξεκινήσει τη λήψη του επεισοδίου στην καθορισμένη τοποθεσία από τις προτιμήσεις. Μπορείτε να δείτε την πρόοδο της λήψης ενός επεισοδίου στη στήλη <guilabel>Κατάσταση</guilabel>.</para>
+        <tip>
+          <para>Εξ ορισμού, οι φορητές εκπομπές λαμβάνονται στον φάκελο <filename class="directory">Φορητές εκπομπές/</filename> στον αρχικό σας κατάλογο. Για να αλλάξετε την τοποθεσία, δείτε το <xref linkend="prefs-podscast"/>.</para>
+        </tip>
+      </sect3>
+      <sect3 id="podcast-episode-read">
+        <title>Ανάγνωση επεισοδίου φορητής εκπομπής</title>
+        <para>Για να αναπαράγετε ένα επεισόδιο φορητής εκπομπής, επιλέξτε το επεισόδιο που θέλετε να αναπαράγετε, και επιλέξτε <menuchoice><guimenu>Έλεγχος</guimenu><guimenuitem>Αναπαραγωγή</guimenuitem></menuchoice>, μπορείτε επίσης να πιέσετε το κουμπί <guibutton>Αναπαραγωγή</guibutton>.</para>
+        <para>Το επεισόδιο πρέπει να έχει ληφθεί πριν την ανάγνωσή του, δείτε <xref linkend="podcast-episode-download"/> για να μάθετε τον τρόπο λήψης ενός επεισοδίου φορητής εκπομπής.</para>
+      </sect3>
+      <sect3 id="podcast-episode-delete">
+        <title>Διαγραφή επεισοδίου φορητής εκπομπής</title>
+        <para>Για να διαγράψετε ένα επεισόδιο από μια φορητή εκπομπή, κάντε δεξί κλικ στο επεισόδιο, και επιλέξτε <menuchoice><guimenuitem>Διαγραφή</guimenuitem></menuchoice>, ύστερα επιλέξτε <menuchoice><guimenuitem>Διαγραφή μόνο του επεισοδίου</guimenuitem></menuchoice> αν θέλετε να διατηρήσετε το αρχείο επεισοδίων στο δίσκο σας, ή επιλέξτε <guibutton>Διαγραφή επεισοδίου και αρχείου</guibutton> αν θέλετε να αφαιρέσετε το επεισόδιο από τη λίστα και να διαγράψετε το αρχείο από το δίσκο σας.</para>
+        <warning>
+          <para>Όταν διαγράφετε ένα επεισόδιο, δεν θα είναι πλέον διαθέσιμο στη λίστα επεισοδίων, ακόμα κι αν ενημερώσετε την φορητή εκπομπή.</para>
+        </warning>
+      </sect3>
+      <sect3>
+        <title>Προβολή ιδιοτήτων επεισοδίου φορητής εκπομπής</title>
+        <para>Για να έχετε πρόσβαση στις ιδιότητες του επεισοδίου, πατήστε δεξί κλικ στο επεισόδιο, και επιλέξτε <menuchoice><guimenuitem>Ιδιότητες</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Στην καρτέλα <guilabel>Βασικά</guilabel> μπορείτε τα δείτε τα στοιχεία <guilabel>Τίτλος</guilabel>, <guilabel>Τροφοδοσία</guilabel>, τα <guilabel>Δεδομένα</guilabel> που δημοσιεύτηκαν και την <guilabel>Περιγραφή</guilabel> για μια φορητή εκπομπή.</para></listitem><listitem><para>Στην καρτέλα <guilabel>Λεπτομέρειες</guilabel> μπορείτε να δείτε τα στοιχεία <guilabel>Πηγή</guilabel>, <guilabel>Διάρκεια</guilabel>, το <guilabel>Bitrate</guilabel>, την <guilabel>Ημερομηνία τελευταίας αναπαραγωγής</guilabel>, <guilabel>Αριθμός αναπαραγωγών</guilabel> και τη <guilabel>Βαθμολογία</guilabel> για μια φορητή εκπομπή.</para></listitem></itemizedlist></para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="playqueue">
+  	<title>Πηγή ερωτημάτων αναπαραγωγής</title>
+	<para>Η αναμονή αναπαραγωγής είναι μια πηγή σχεδιασμένη να αποθηκεύει προσωρινά τα επόμενα κομμάτια που θα παιχτούν. Όταν προσθέσετε ένα κομμάτι στην αναμονή αναπαραγωγής, η <application>Αναπαραγωγή μουσικής Rhythmbox</application> θα αλλάξει αυτόματα σε αυτήν την πηγή, αφού τελειώσει το τραγούδι.</para>
+	<para>Όταν τελειώσει η αναπαραγωγή του κομματιού, αυτό θα αφαιρεθεί αυτόματα από την πηγή αναμονής για αναπαραγωγή. Όταν έχει αδειάσει η αναμονή για αναπαραγωγή, η <application>Αναπαραγωγή μουσικής Rhythmbox</application> θα αναπαράγει την πηγή που αναπαρήχθη πριν.</para>
+		<sect2 id="playqueue-track-add">
+			<title>Προσθήκη κομματιού στην αναμονή αναπαραγωγής</title>
+			<para>Για να προσθέσετε ένα κομμάτι: <orderedlist>
+					<listitem>
+						<para>Επιλέξτε το κομμάτι που θέλετε να αναπαράγετε, από οποιαδήποτε πηγή.</para>
+					</listitem>
+					<listitem>
+						<para>Επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Προσθήκη σε αναμονή αναπαραγωγής</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+		<sect2 id="playqueue-track-del">
+			<title>Αφαίρεση κομματιού στην αναμονή αναπαραγωγής</title>
+			<para>Για να αφαιρέσετε ένα κομμάτι που βρίσκεται στην αναμονή για αναπαραγωγή: <orderedlist>
+					<listitem>
+						<para>Επιλέξτε το κομμάτι που θέλετε να αφαιρέσετε στην πηγή αναμονής για την αναπαραγωγή.</para>
+					</listitem>
+					<listitem>
+						<para>Επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Διαγραφή</guimenuitem> </menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+  </sect1>
+  
+  <sect1 id="playlist">
+  	<title>Πηγή λιστών αναπαραγωγής</title>
+    <para>Οι λίστες αναπαραγωγής είναι πηγές που δημιουργήθηκαν από τα διαθέσιμα κομμάτια στην βιβλιοθήκη. Αυτές ενεργοποιούνται για να συγκεντρώνουν κομμάτια ακολουθώντας ένα συγκεκριμένο 'είδος μουσικής', μια καθορισμένη ομάδα καλλιτεχνών ή ακόμα κομμάτια που ανήκουν σε συγκεκριμένη 'διάθεση', ή οτιδήποτε εσείς θελήσετε.</para>
+    <para>Η Αναπαραγωγή μουσικής Rhythmbox έχει δύο ειδών λίστες αναπαραγωγής: <itemizedlist>
+				<listitem>
+					<para>Στατικές λίστες αναπαραγωγής</para>
+				</listitem>
+				<listitem>
+					<para>Έξυπνες λίστες αναπαραγωγής</para>
+				</listitem>
+			</itemizedlist></para>
+    <para>Η Αναπαραγωγή μουσικής Rhythmbox σας επιτρέπει να εγγράφετε τα κομμάτια των λιστών αναπαραγωγής σας σε CD ήχου.</para>
+    <sect2 id="playlist-static">
+    	<title>Στατικές λίστες αναπαραγωγής</title>
+      	<para>Οι στατικές βιβλιοθήκες είναι λίστες αναπαραγωγής που δημιουργούνται από κομμάτια συρόμενα από τη βιβλιοθήκη.</para>
+      <sect3 id="playlist-static-new">
+        <title>Δημιουργία μιας στατικής λίστας</title>
+        <para>Για να δημιουργήσετε μια νέα λίστα αναπαραγωγής, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guisubmenu>Λίστα αναπαραγωγής</guisubmenu><guimenuitem>Νέα λίστα αναπαραγωγής</guimenuitem></menuchoice>. Εμφανίζεται μια κενή λίστα αναπαραγωγής χωρίς όνομα στην πλευρική στήλη. Εισάγετε ένα όνομα για τη λίστα και πιέστε <keycombo><keycap>Enter</keycap></keycombo>.</para>
+      </sect3>
+      <sect3 id="playlist-static-tracks-add">
+        <title>Προσθήκη κομματιών σε λίστα αναπαραγωγής</title>
+        <para>Για να προσθέσετε κομμάτια σε μια λίστα αναπαραγωγής, επιλέξτε τα κομμάτια από τη λίστα κομματιών της βιβλιοθήκης και σύρετε και ελευθερώστε την επιλογή σας πάνω από το εικονίδιο της λίστας αναπαραγωγής στην πλευρική στήλη.</para>
+        <para>Μπορείτε επίσης να σύρετε πάνω από μια λίστα αναπαραγωγής ένα είδος μουσικής, έναν καλλιτέχνη, ή ένα άλμπουμ από τον περιηγητή και όλα τα κομμάτια που ανήκουν στην επιλεγμένη κατηγορία θα προστεθούν στη λίστα αναπαραγωγής.</para>
+        <tip>
+          <para>Μπορείτε να δημιουργήσετε μια λίστα αναπαραγωγής με κομμάτια με μια ενέργεια. Επιλέξτε κομμάτια από τη <guilabel>Λίστα κομματιών</guilabel>, ή απευθείας από μια ή περισσότερες κατηγορίες από τον περιηγητή (<guilabel>Είδος μουσικής</guilabel>, <guilabel>Καλλιτέχνης</guilabel> ή <guilabel>Άλμπουμ</guilabel>) και να σύρετε την επιλογή πάνω από τη <guilabel>Πλευρική στήλη</guilabel>. Με αυτόν τον τρόπο θα δημιουργήσετε αυτόματα μια λίστα με όνομα.</para>
+        </tip>
+      </sect3>
+      <sect3 id="playlist-static-tracks-del">
+        <title>Αφαίρεση κομματιών από μια λίστα αναπαραγωγής</title>
+        <para>Για να αφαιρέσετε κομμάτια από μια λίστα αναπαραγωγής, πρώτα επιλέξτε τα κομμάτια που θέλετε να αφαιρέσετε, ύστερα μπορείτε να χρησιμοποιήσετε δύο μεθόδους: <itemizedlist><listitem><para>Επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Διαγραφή</guimenuitem></menuchoice>.</para></listitem><listitem><para>Πατήστε δεξί κλικ πάνω από την επιλογή και επιλέξτε <guimenuitem>Διαγραφή</guimenuitem>.</para></listitem></itemizedlist> Αυτή η λειτουργία διαγράφει το κομμάτι μόνο από τη λίστα αναπαραγωγής και όχι από τη βιβλιοθήκη.</para>
+      </sect3>
+      <sect3 id="playlist-static-del">
+        <title>Διαγραφή στατικής βιβλιοθήκης</title>
+        <para>Για να διαγράψετε μια στατική λίστα αναπαραγωγής, επιλέξτε τη λίστα που θέλετε να διαγράψετε, και ύστερα έχετε δύο τρόπους να τη διαγράψετε: <itemizedlist><listitem><para>Επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Διαγραφή</guimenuitem></menuchoice>.</para></listitem><listitem><para>Κάντε δεξί κλικ πάνω από τη λίστα αναπαραγωγής και επιλέξτε <guimenuitem>Διαγραφή</guimenuitem>.</para></listitem></itemizedlist> Αυτή η λειτουργία διαγράφει μόνο τη λίστα αναπαραγωγής και όχι τα αποθηκευμένα τραγούδια στη λίστα αναπαραγωγής.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="playlist-smart">
+      <title>Έξυπνες λίστες αναπαραγωγής</title>
+      <para>Οι έξυπνες λίστες αναπαραγωγής είναι λίστες αναπαραγωγής που κατασκευάζονται από κριτήρια, έτσι ώστε το περιεχόμενό του να κατασκευάζεται δυναμικά. Όλα τα κομμάτια που ταιριάζουν στα κριτήρια θα προστεθούν στη λίστα αναπαραγωγής.</para>
+      <sect3 id="playlist-smart-new">
+        <title>Δημιουργία έξυπνης βιβλιοθήκης</title>
+        <para>Για να δημιουργήσετε μια νέα λίστα αναπαραγωγής: <orderedlist><listitem><para>Επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guisubmenu>Λίστα αναπαραγωγής</guisubmenu><guimenuitem>Νέα αυτόματη λίστα αναπαραγωγής</guimenuitem></menuchoice>.</para></listitem><listitem><para>Επεξεργασία των κριτηρίων για τη διαμόρφωση της λίστας αναπαραγωγής μέσω του επεξεργαστή ερωτημάτων.</para></listitem><listitem><para>Όταν επιλεχθούν τα κριτήρια, κάντε κλικ στο κουμπί <guibutton>Νέο</guibutton> για να δημιουργήσετε το ερώτημα.</para></listitem></orderedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-edit">
+        <title>Επεξεργασία μιας έξυπνης λίστας αναπαραγωγής</title>
+        <para>Η επεξεργασία μιας έξυπνης λίστας αναπαραγωγής σας επιτρέπει να τροποποιήσετε τα κριτήριά σας για αυτή τη λίστα. Για να επεξεργαστείτε μια έξυπνη λίστα αναπαραγωγής, επιλέξτε την έξυπνη λίστα αναπαραγωγής, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guisubmenu>Λίστα αναπαραγωγής</guisubmenu><guimenuitem>Επεξεργασία</guimenuitem></menuchoice>, και επεξεργαστείτε τα κριτήρια. Όταν τελειώσετε, πιέστε το κουμπί <guibutton>Κλείσιμο</guibutton>.</para>
+      </sect3>
+      <sect3 id="playlist-smart-del">
+        <title>Διαγραφή μιας έξυπνης λίστας</title>
+        <para>Για να διαγράψετε μια έξυπνη λίστα αναπαραγωγής, επιλέξτε τη λίστα που θέλετε να διαγράψετε, ύστερα έχετε δύο διαθέσιμους τρόπους για να τη διαγράψετε: <itemizedlist><listitem><para>Επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Διαγραφή</guimenuitem></menuchoice>.</para></listitem><listitem><para>Κάντε δεξί κλικ πάνω από τη λίστα αναπαραγωγής και επιλέξτε <guimenuitem>Διαγραφή</guimenuitem>.</para></listitem></itemizedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-query-use">
+        <title>Χρήση του επεξεργαστή ερωτημάτων</title>
+        <para>Επιλέξτε τα κριτήρια που θα εφαρμοστούν στον κανόνα. Αν χρειάζεστε παραπάνω κριτήριο κάντε κλικ στο κουμπί <guibutton>Προσθήκη</guibutton>, εμφανίζεται μια νέα γραμμή, και μπορείτε να καθορίσετε νέα κριτήρια.</para>
+        <para>Αν θέλετε να περιορίσετε τον αριθμό των κομματιών στη λίστα αναπαραγωγής, σημειώστε με τικ το <guilabel>Περιορισμός σε:</guilabel>, και επιλέξτε το μέγεθος του περιορισμού σας. Μπορείτε να κάνετε περιορισμούς σε σχέση με τα κομμάτια, με το συνολικό μέγεθος (σε <guilabel>MB</guilabel> ή <guilabel>GB</guilabel>), ή με τη διάρκεια (εκφρασμένη σε <guilabel>Λεπτά</guilabel>).</para>
+        <para>Όταν τελειώσετε με τον καθορισμό των κριτηρίων σας για τη λίστα αναπαραγωγής, επιλέξτε το κουμπί <guibutton>Νέο</guibutton>, κλείνει το παράθυρο του επεξεργαστή ερωτημάτων και η λίστα αναπαραγωγής εμφανίζει τα κομμάτια με βάση τα κριτήριά σας.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="AudioCD">
+    <title>Πηγή CD ήχου</title>
+	<para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> μπορεί επίσης να διαχειρίζεται CD ήχου, μπορεί να τα αναπαράγει, αλλά σας επιτρέπει επίσης να γράψετε την συλλογή σας.</para>
+    <sect2 id="cd-playing">
+      <title>Αναπαραγωγή</title>
+      <para>Όταν εισάγεται ένα CD ήχου στον οδηγό CD, αυτό θα εμφανιστεί στην πλευρική στήλη, και τα κομμάτια του μπορούν να εμφανιστούν στο κύριο παράθυρο της <application>Αναπαραγωγής μουσικής Rhythmbox</application>. Αν είστε συνδεδεμένοι στο διαδίκτυο, θα ανακτάται και θα εμφανίζεται το όνομα των τραγουδιών.</para>
+      <para>Για να κάνετε αναπαραγωγή ή να κάνετε παύση της, ή για να μεταβαίνετε μπροστά ή πίσω, χρησιμοποιήστε τους ίδιους ελέγχους που χρησιμοποιήθηκαν για την αναπαραγωγή από τη βιβλιοθήκη.</para>
+    </sect2>
+    <sect2 id="cd-import">
+      <title>Εισαγωγή CD ήχου</title>
+      <para>Αν επιθυμείτε να διατηρήσετε τα κομμάτια του CD ήχου σας στον υπολογιστή σας, μπορείτε να τα εισάγετε.</para>
+      <para>Για να εισάγετε κομμάτια από το CD ήχου σας, επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu> <guimenuitem>Εισαγωγή CD ήχου</guimenuitem></menuchoice>, αυτό θα εκκινήσει την <application>Αναπαραγωγή CD Sound-Juicer</application>, μια εφαρμογή του Gnome που ασχολείται ειδικά με την εισαγωγή CD ήχου. Για να μάθετε περισσότερα για την <application>Αναπαραγωγή CD Sound-Juicer</application>, μπορείτε να διαβάσετε το <ulink url="ghelp:sound-juicer">εγχειρίδιο του Sound-Juicer</ulink>.</para>
+      <tip>
+        <para>Για να προσθέσετε τα εισηγμένα κομμάτια αυτόματα από το Sound-Juicer στη βιβλιοθήκη της Αναπαραγωγής μουσικής Rhythmbox, πρέπει να ρυθμίσετε το Sound-Juicer να εξάγει τα κομμάτια στην τοποθεσία της βιβλιοθήκης της Αναπαραγωγή μουσικής Rhythmbox και πρέπει να έχει ενεργοποιηθεί η παρακολούθηση της βιβλιοθήκης, δείτε <ulink url="ghelp:sound-juicer#preferences">Προτιμήσεις Sound-Juicer</ulink> και <link linkend="prefs-library">Προτιμήσεις βιβλιοθήκης του Rhythmbox </link>.</para>
+      </tip>
+    </sect2>
+    <sect2 id="cd-burning">
+      <title>Δημιουργία CD ήχου</title>
+      <para>Η Αναπαραγωγή μουσικής Rhythmbox σας δίνει η δυνατότητα να δημιουργήσετε CD ήχου με την αποθηκευμένη μουσική της βιβλιοθήκης σας.</para>
+      <para>Για να δημιουργήσετε ένα CD ήχου: <orderedlist><listitem><para>Δημιουργήστε μια λίστα αναπαραγωγής, στατική ή έξυπνη' (δείτε <xref linkend="playlist"/>) και προσθέστε κομμάτια.</para></listitem>
+                <listitem><para>Επιλέξτε από το μενού <menuchoice><guimenu>Μουσική</guimenu><guisubmenu>Λίστα αναπαραγωγής</guisubmenu><guimenuitem>Δημιουργία CD ήχου</guimenuitem></menuchoice></para></listitem>
+                <listitem><para>Εισάγετε ένα κενό CD.</para></listitem>
+                <listitem><para>Πατήστε στο κουμπί <guibutton>Δημιουργία</guibutton>, η διεργασία εγγραφής εκκινείται.</para></listitem>
+                </orderedlist></para>
+    </sect2>
+  </sect1>
+  <sect1 id="portable-audio-player">
+    <title>Πηγή φορητών συσκευών αναπαραγωγής</title>
+    <para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> μπορεί να ανιχνεύσει όταν μια φορητή συσκευή αναπαραγωγής συνδέεται στο υπολογιστή σας, και έχει τη δυνατότητα να κάνει ανάγνωση των κομματιών που είναι αποθηκευμένα σε αυτή. Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> θα πρέπει να έχει τη δυνατότητα να ανιχνεύει τις περισσότερες από τις φορητές συσκευές αναπαραγωγής όπως το Apple iPod, MTP και Mass Storage αναπαραγωγείς.</para>
+    <para>Όταν συνδέετε μια φορητή συσκευή αναπαραγωγής, προστίθεται ένα εικονίδιο της φορητής συσκευής στην πλευρική στήλη. Αυτή η πηγή δουλεύει με τον ίδιο τρόπο όπως η πηγή της βιβλιοθήκης.</para>
+	<tip><para>Αν η <application>Αναπαραγωγή μουσικής Rhythmbox</application> δεν ανιχνεύει τη συσκευή σας σαν φορητή συσκευή αναπαραγωγής, μπορείτε να δημιουργήσετε ένα κενό αρχείο με επέκταση <filename>.is_audio_player</filename> στο υψηλότερο επίπεδο του συστήματος αρχείων της συσκευής σας.</para></tip>
+  </sect1>
+  <sect1 id="daap">
+    <title>Κοινόχρηστη πηγή DAAP</title>
+    <para>Το DAAP είναι ένα πρωτόκολλο διαδικτύου που επιτρέπει την κοινή χρήση της αποθηκευμένης μουσικής στην Αναπαραγωγή μουσικής Rhythmbox. DAAP σημαίνει πρωτόκολλο πρόσβασης σε ψηφιακό ήχο.</para>
+    <para>Το DAAP είναι ένα καθιερωμένο πρωτόκολλο για κοινόχρηστη μουσική, μπορείτε να ακούτε και να μοιράζεστε μουσική όχι μόνο με χρήστες του Rhythmbox, αλλά επίσης και με άλλους χρήστες που λογισμικό συμβατό με το DAAP όπως το iTunes.</para>
+    <para>Όταν εκκινήσετε το Rhythmbox, αυτή θα αναζητήσει όλες τις κοινόχρηστες μουσικές με DAAP στο τοπικό σας δίκτυο (στο σπίτι ή το γραφείο σας, όχι ολόκληρο το διαδίκτυο) από άλλους χρήστες και θα τα εμφανίσει στην πλευρική στήλη. Αν η κοινή χρήση είναι ενεργοποιημένη, το Rhythmbox θα δημοσιεύσει τη βιβλιοθήκη και τις λίστες αναπαραγωγής σας ταυτόχρονα. Με αυτόν τον τρόπο, μπορείτε να ακούτε την αποθηκευμένη μουσική στους υπολογιστές των φίλων σας και αυτοί να ακούνε τη δική σας.</para>
+    <para>Για να απενεργοποιήσετε την κοινή χρήση DAAP με το Rhythmbox, δείτε στις προτιμήσεις <xref linkend="prefs-sharing"/>.</para>
+  </sect1>
+  <sect1 id="notification">
+    <title>Περιοχή ειδοποιήσεων</title>
+    <sect2 id="notification-overview">
+      <title>Επισκόπηση</title>
+      <para>Η περιοχή ειδοποιήσεων είναι ένα χαρακτηριστικό του GΝΟΜΕ που προσθέτει ένα μικρό εικονίδιο στον πίνακα εφαρμογών του προγράμματος που εκτελείται, αυτό σας επιτρέπει να ελέγχετε την <application>Αναπαραγωγή μουσικής Rhythmbox</application> από την περιοχή ειδοποιήσεων και να λαμβάνετε πληροφορίες όταν η διεπαφή της <application>Αναπαραγωγής μουσικής Rhythmbox</application> δεν είναι ορατή.</para>
+      <figure id="fig-notification-zone">
+        <title>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> στην περιοχή ειδοποιήσεων</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-zone.png"/>
+	    </imageobject>
+	  </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+    <sect2 id="notification-info-receive">
+      <title>Λήψη πληροφοριών</title>
+      <sect3 id="notification-info-tooltip">
+        <title>Πληροφορίες σαν συμβουλές οθόνης</title>
+        <para>Όταν μετακινείτε το δρομέα του ποντικιού σας πάνω στο εικονίδιο της <application>Αναπαραγωγής μουσικής Rhythmbox</application>, μπορείτε να δείτε τον καλλιτέχνη του κομματιού, το όνομα του κομματιού και το χρόνο αναπαραγωγής του.</para>
+      </sect3>
+      <sect3 id="notification-info-window">
+        <title>Παράθυρο ειδοποίησης</title>
+        <para>Κάθε φορά που τροποποιείται το κομμάτι ή έχει ληφθεί το επεισόδιο φορητής εκπομπής, η <application>Αναπαραγωγή μουσικής Rhythmbox</application> μπορεί να σας πληροφορήσει, εμφανίζει ένα παράθυρο ειδοποίησης στην επιφάνεια εργασίας, που περιέχει τις σχετικές πληροφορίες.</para>
+        <figure id="fig-notification-window">
+          <title>Το παράθυρο ειδοποίησης της <application>Αναπαραγωγής μουσικής Rhythmbox</application></title>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata format="PNG" fileref="figures/rb-notification-window.png"/>
+	      </imageobject>
+	    </mediaobject>
+          </screenshot>
+        </figure>
+        <tip>
+          <para>Το παράθυρο ειδοποίησης μπορεί να απενεργοποιηθεί αποεπιλέγοντας της επιλογή <guilabel>Εμφάνιση ειδοποιήσεων</guilabel> από το μενού περιεχομένων του εικονιδίου στην περιοχή ειδοποιήσεων.</para>
+        </tip>
+      </sect3>
+    </sect2>
+    <sect2 id="notification-control">
+      <title>Έλεγχος του Rhythmbox</title>
+      <para>Χρησιμοποιώντας το εικονίδιο της <application>Αναπαραγωγής μουσικής Rhythmbox</application> στην περιοχή ειδοποιήσεων, θα σταλούν οι ακόλουθες εντολές στην εφαρμογή:</para>
+      <figure id="fig-notification-menu">
+        <title>Περιοχή ειδοποιήσεων (εμφάνιση μενού)</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-area-menu.png"/>
+            </imageobject>
+           </mediaobject>
+        </screenshot>
+      </figure>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para><guibutton>Αναπαραγωγή</guibutton> — Αν είναι επιλεγμένο, αναπαράγει το τρέχον επιλεγμένο τραγούδι.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Προηγούμενο</guibutton> — Μετάβαση στο προηγούμενο τραγούδι στην επιλεγμένη πηγή. </para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Επόμενο</guibutton> — Μετάβαση στο επόμενο τραγούδι στην επιλεγμένη πηγή. </para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Εμφάνιση παραθύρου αναπαραγωγής</guibutton> — Επιλέξετε αν το παράθυρο της <application>Αναπαραγωγής μουσικής Rhythmbox</application> θα είναι ορατό ή όχι στην επιφάνεια εργασίας.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Εμφάνιση ειδοποιήσεων</guibutton> — Επιλέξτε αν η <application>Αναπαραγωγή μουσικής Rhythmbox</application> θα σας ειδοποιεί ή όχι σχετικά με τις αλλαγές των κομματιών και με διάφορες άλλες πληροφορίες.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Έξοδος</guibutton> — Τερματισμός της <application>Αναπαραγωγής μουσικής Rhythmbox</application>. </para>
+          </listitem>
+        </itemizedlist>
+        <tip>
+        	<para>Αν χρησιμοποιείτε ποντίκι με τροχό κύλισης, μπορείτε να προσαρμόζετε την ένταση ήχου μετακινώντας πάνω κάτω τον τροχό ενώ ο δρομέας του ποντικιού σας είναι πάνω από τη σχετική μικροεφαρμογή στον πίνακα εφαρμογών.</para>
+          <para>Μπορείτε να εναλλάσσεστε γρήγορα μεταξύ Αναπαραγωγής/Παύσης πιέζοντας το μεσαίο κουμπί του ποντικιού σας.</para>
+        </tip>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="customize">
+    <title>Προσαρμογή της Αναπαραγωγής μουσικής Rhythmbox</title>
+    <para>Αυτός ο τομέας περιγράφει πως να προσαρμόσετε την <application>Αναπαραγωγή μουσικής Rhythmbox</application> για να ταιριάζει στις απαιτήσεις και τις προτιμήσεις σας.</para>
+    <sect2 id="prefs">
+      <title>Καθορισμός των προτιμήσεών σας</title>
+      <para>Χρησιμοποιώντας το διάλογο <guilabel>Προτιμήσεις</guilabel> μπορείτε να προσαρμόσετε πώς θέλετε να φαίνεται και να συμπεριφέρεται η <application>Αναπαραγωγή μουσικής Rhythmbox</application>. Για να εμφανίσετε το διάλογο <guilabel>Προτιμήσεις</guilabel>, επιλέξτε από το μενού <menuchoice><guimenu>Επεξεργασία</guimenu><guimenuitem>Προτιμήσεις</guimenuitem></menuchoice>.</para>
+      <sect3 id="prefs-general">
+      	<title>Γενικά</title>
+		<para>Επιλέξτε τον τρόπο που θα εμφανίζεται η <guilabel>Προβολή περιήγησης</guilabel>. Μπορείτε να επιλέξετε να χρησιμοποιήσετε δύο ή τρείς στήλες και τι θα εμφανίζονται σε αυτές.</para>
+      	<para>Επιλέξτε τις <guilabel>Ορατές στήλες</guilabel> που θέλετε να εμφανίζονται στην <application>Αναπαραγωγή μουσικής Rhythmbox</application>. Αυτή η επιλογή επηρεάζει τις ακόλουθες πηγές: <itemizedlist>
+				<listitem><para>Βιβλιοθήκη</para></listitem>
+				<listitem><para>CD ήχου</para></listitem>
+				<listitem><para>Φορητές συσκευές</para></listitem>
+				<listitem><para>Λίστες αναπαραγωγής</para></listitem>
+				<listitem><para>Κοινόχρηστη μουσική DAAP</para></listitem>
+			</itemizedlist></para>
+      </sect3>
+      <sect3 id="prefs-library">
+        <title>Μουσική</title>
+        <itemizedlist>
+          <listitem>
+            <para>Η <guilabel>Τοποθεσία βιβλιοθήκης</guilabel> είναι ένας φάκελος που θα παρακολουθεί η <application>Αναπαραγωγή μουσικής Rhythmbox</application> για να βρίσκει νέα τραγούδια. Όταν προσθέτετε νέα αρχεία ήχου σε αυτόν τον φάκελο ή τους υποφακέλους του με τον περιηγητή αρχείων (όπως ο Nautilus), η <application>Αναπαραγωγή μουσικής Rhythmbox</application> θα τα ανιχνεύσει αυτόματα και θα τα προσθέσει στη βιβλιοθήκη.</para>
+            <warning>
+            	<para>Αποφύγετε να καθορίζετε τον <filename class="directory">Προσωπικό</filename> φάκελο σαν τοποθεσία βιβλιοθήκης επειδή αυτό το χαρακτηριστικό θα επιβαρύνει την CPU.</para>
+            </warning>
+            <para>Για να απενεργοποιήσετε τη λειτουργία παρακολούθησης αποεπιλέξτε την <guilabel>Παρακολούθηση της βιβλιοθήκης μου για νέα αρχεία</guilabel>.</para>
+            <tip>
+            	<para>Αν θέλετε να προσθέσετε περισσότερους από έναν φακέλους για παρακολούθηση, χρησιμοποιήστε την εφαρμογή <application>gconf-editor</application> και προσθέστε τον στη λίστα  /app/rhythmbox/library_locations</para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-podscast">
+        <title>Φορητές εκπομπές</title>
+        <itemizedlist>
+          <listitem>
+            <para>Η <guilabel>Τοποθεσία λήψης</guilabel> των φορητών εκπομπών ορίζεται προεπιλεγμένα στον φάκελο  <filename class="directory">Podcasts/</filename> στον προσωπικό σας φάκελο.</para>
+            <para>Αν αυτή η τοποθεσία δεν ταιριάζει στις ανάγκες σας, επιλέξτε έναν άλλο φάκελο στην αναδυόμενη λίστα ή επιλέξτε <guilabel>Άλλη</guilabel> για να εμφανιστεί ο επιλογέας αρχείων.</para>
+          </listitem>
+          <listitem>
+            <para>Επιλέξτε τη συχνότητα που η <application>Αναπαραγωγή μουσικής Rhythmbox</application> θα ελέγχει για νέα επεισόδια της φορητής εκπομπής.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-sharing">
+        <title>Κοινή χρήση</title>
+        <para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> μπορεί να μοιράζεται τα περιεχόμενα της βιβλιοθήκης σας στο τοπικό δίκτυο, σε άλλες εφαρμογές <application>Αναπαραγωγής μουσικής Rhythmbox</application> και σε χρήστες της υπηρεσίας Apple iTunes.</para>
+        <itemizedlist>
+          <listitem>
+            <para>Επιλέξτε <guilabel>Κοινή χρήση της μουσικής μου</guilabel> για να δώσετε τη δυνατότητα στους χρήστες του τοπικού σας δικτύου να μπορούν να δουν και να αναπαράγουν τα τραγούδια σας.</para>
+          </listitem>
+          <listitem>
+            <para>Εισάγετε το όνομα που θέλετε να εμφανίζεται στην τοπική σας σύνδεση στο πεδίο <guilabel>Όνομα κοινόχρηστης μουσικής</guilabel>.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-lastfm">
+        <title>Προφίλ για το Last.fm</title>
+        <para>Το προφίλ της πρόσθετης λειτουργίας Last.fm συλλέγει πληροφορίες σχετικά με τα τραγούδια που ακούτε και τις στέλνει στη σελίδα <ulink url="http://www.last.fm/">Last.fm</ulink>, κατασκευάζοντας ένα προφίλ των ακροαματικών συνηθειών σας. Με αυτό το προφίλ, μπορείτε: <itemizedlist>
+				<listitem>
+					<para>εκτίμηση στατιστικής, όπως τα πιο συχνά αναπαραγόμενα τραγούδια ή οι πιο συχνοί καλλιτέχνες που έχετε αναπαράγει.</para>
+				</listitem>
+				<listitem>
+					<para>αποδοχή προτάσεων σχετικά με καλλιτέχνες που σας αρέσουν.</para>
+				</listitem>
+			</itemizedlist></para>
+        <warning>
+          <para>Για να χρησιμοποιήσετε το προφίλ της πρόσθετης λειτουργίας Last.fm, πρέπει να έχετε λογαριασμό Last.fm. Αν δεν έχετε ήδη έναν, χρησιμοποιήστε το σύνδεσμο <ulink url="http://www.last.fm/signup.php">Last.fm signup page</ulink> για να δημιουργήσετε. Εισάγετε τις λεπτομέρειες του λογαριασμού σας στο Last.fm  στα πεδία <guilabel>Όνομα χρήστη</guilabel> και <guilabel>Κωδικός πρόσβασης</guilabel> στο παράθυρο ρυθμίσεων της πρόσθετης λειτουργίας Last.fm.</para>
+        </warning>
+		<para>Το παράθυρο ρυθμίσεων της πρόσθετης λειτουργίας Last.fm εμφανίζει επίσης πληροφορίες της κατάστασης. Αν η σελίδα του προφίλ σας στο Last.fm εμφανίζει ότι το προφίλ σας δεν έχει ενημερωθεί, οι πληροφορίες που υπάρχουν εδώ θα σας βοηθήσουν να διαγνώσετε το πρόβλημα.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="shortcuts">
+    <title>Συντομεύσεις</title>
+    <sect2 id="keyboard-keys">
+      <title>Συντομεύσεις πληκτρολογίου</title>
+      <table frame="topbot" id="rb-shorcuts-1">
+	  	<title>Συντομεύσεις αναπαραγωγής</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Συντομεύσεις</entry>
+              <entry>Ενέργειες</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>p</keycap> </keycombo></entry>
+              <entry>
+                <para>Αναπαραγωγή / Παύση</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Αριστερό βέλος</keycap> </keycombo></entry>
+              <entry>
+                <para>Μετάβαση στο προηγούμενο κομμάτι / Μετάβαση στην αρχή του κομματιού</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Δεξί βέλος</keycap> </keycombo></entry>
+              <entry>
+                <para>Μετάβαση στο επόμενο κομμάτι</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Πάνω βέλος</keycap> </keycombo></entry>
+              <entry>
+                <para>Αύξηση της έντασης αναπαραγωγής</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Κάτω βέλος</keycap> </keycombo></entry>
+              <entry>
+                <para>Μείωση της έντασης αναπαραγωγής </para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>R</keycap> </keycombo></entry>
+              <entry>
+                <para>Ενεργοποίηση / Απενεργοποίηση επανάληψης αναπαραγωγής</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>U</keycap> </keycombo></entry>
+              <entry>
+                <para>Ενεργοποίηση / Απενεργοποίηση τυχαίας αναπαραγωγής</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-2">
+	  	<title>Γενικές συντομεύσεις</title>
+		<tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Συντομεύσεις</entry>
+              <entry>Ενέργειες</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>A</keycap> </keycombo></entry>
+              <entry>
+                <para>Επιλογή όλων</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Shift</keycap> <keycap>Ctrl</keycap> <keycap>A</keycap> </keycombo></entry>
+              <entry>
+                <para>Αποεπιλογή όλων</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>J</keycap> </keycombo></entry>
+              <entry>
+                <para>Μετάβαση στο τραγούδι που αναπαράγεται</para>
+              </entry>
+	    </row>
+	    <!--
+            <row>
+              <entry>
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Y</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Clear the search field text and remove all filters in the browser</para>
+              </entry>
+	    </row>
+            -->
+            <row>
+              <entry><keycombo> <keycap>Alt</keycap> <keycap>S</keycap> </keycombo></entry>
+              <entry>
+                <para>Μετάβαση στο πεδίο αναζήτησης</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Alt</keycap> <keycap>Return</keycap> </keycombo></entry>
+              <entry>
+                <para>Προβολή των ιδιοτήτων του κομματιού</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-3">
+	  	<title>Συντομεύσεις παραθύρων</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Συντομεύσεις</entry>
+              <entry>Ενέργειες</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>Q</keycap> </keycombo></entry>
+              <entry>
+                <para>Έξοδος από την <application>Αναπαραγωγή μουσικής Rhythmbox</application></para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>B</keycap> </keycombo></entry>
+              <entry>
+                <para>Εμφάνιση / Απόκρυψη του περιηγητή</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>F9</keycap> </keycombo></entry>
+              <entry>
+                <para>Εμφάνιση / Απόκρυψη της πλευρικής στήλης</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Ctrl</keycap> <keycap>K</keycap> </keycombo></entry>
+              <entry>
+                <para>Εμφάνιση / Απόκρυψη της πλευρικής στήλης αναμονής</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>F11</keycap> </keycombo></entry>
+              <entry>
+                <para>Εναλλαγή / Μη εναλλαγή της λειτουργίας πλήρους οθόνης</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="multimedia-keys">
+      <title>Πλήκτρα πολυμέσων</title>
+      <para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> υποστηρίζει τα πλήκτρα σε πληκτρολόγια πολυμέσων, αν έχουν ρυθμιστεί στο περιβάλλον της επιφάνειας εργασίας σας.</para>
+      <table frame="none">
+	  	<title>Συντομεύσεις παραθύρων</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Συντομεύσεις</entry>
+              <entry>Ενέργειες</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>Stop</keycap></entry>
+              <entry>
+                <para>Διακοπή</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Pause / Play</keycap></entry>
+              <entry>
+                <para>Παύση / Αναπαραγωγή</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Prev</keycap></entry>
+              <entry>
+                <para>Προηγούμενο αναπαραγόμενο κομμάτι</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Next</keycap></entry>
+              <entry>
+                <para>Επόμενο κομμάτι</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="lirc">
+      <title>Υπέρυθρος απομακρυσμένος έλεγχος Linux</title>
+      <para>Η <application>Αναπαραγωγή μουσικής Rhythmbox</application> περιλαμβάνει μια πρόσθετη λειτουργία για υποστήριξη απομακρυσμένο υπέρυθρο έλεγχο Linux (LIRC). Τα ακόλουθα αλφαριθμητικά εντολών υποστηρίζονται, χρησιμοποιώντας το όνομα προγράμματος 'rhythmbox':</para>
+      <table frame="none">
+	  	<title>Συντομεύσεις παραθύρων</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Αλφαριθμητικό εντολής</entry>
+              <entry>Ενέργεια</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>play</keycap></entry>
+              <entry> <para>Έναρξη αναπαραγωγής</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>pause</keycap></entry>
+              <entry> <para>Παύση αναπαραγωγής</para> </entry>
+            </row>
+	    <row>
+	      <entry><keycap>playpause</keycap></entry>
+	      <entry> <para>Εναλλαγή μεταξύ αναπαραγωγής και παύσης</para> </entry>
+	    </row>
+            <row>
+              <entry><keycap>shuffle</keycap></entry>
+              <entry> <para>Εναλλαγή της τυχαίας αναπαραγωγής</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>repeat</keycap></entry>
+              <entry> <para>Εναλλαγή της επανάληψης της αναπαραγωγής</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>next</keycap></entry>
+              <entry> <para>Μετάβαση στο επόμενο κομμάτι</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>previous</keycap></entry>
+              <entry> <para>Μετάβαση στο επόμενο κομμάτι</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>seek_forward</keycap></entry>
+              <entry> <para>Μετάβαση 10 δευτερόλεπτα μπροστά στην αναπαραγωγή του κομματιού</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>seek_backward</keycap></entry>
+              <entry> <para>Μετάβαση 10 δευτερόλεπτα πίσω στην αναπαραγωγή του κομματιού</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volume_up</keycap></entry>
+              <entry> <para>Αύξηση της έντασης ήχου της αναπαραγωγής κατά 10%</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volume_down</keycap></entry>
+              <entry> <para>Μείωση της έντασης ήχου της αναπαραγωγής κατά 10%</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>mute</keycap></entry>
+              <entry> <para>Σίγαση της αναπαραγωγής</para> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+  </sect1>
+</article>

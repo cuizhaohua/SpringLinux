@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Uspořádávání souborů do skupinových karet</title>
+
+  <p>Když v editoru <app>gedit</app> pracujete s více kartami, můžete si je seskupovat, abyste v otevřených souborech měli lepší přehled. Přidáním nové skupiny karet se okno <app>gedit</app> rozdělí na dva panely, otevře se nový „Nepojmenovaný dokument“ v novém panelu a zaměří se. Nyní můžete otevírat soubory do této skupiny karet a přesouvat karty z jedné skupiny do druhé.</p>
+
+<section id="open-new-tab-group">
+  <title>Otevření nové skupiny karet v okně gedit</title>
+
+  <p>Když chcete otevřít novou skupinu karet:</p>
+
+  <list>
+    <item>
+      <p>Jděte v nabídce na <guiseq><gui>Dokumenty</gui> <gui>Nová skupina karet</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Použijte klávesovou zkratku <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Tím se okno <app>gedit</app> rozdělí na dva panely a panel s novou skupinou karet bude umístěn na pravo. Pomocí úchytu na oddělovací čáře mezi panely můžete měnit vzájemnou velikost panelů podle svých potřeb.</p>
+
+  <p>Skupin karet si můžete v okně <app>gedit</app> otevřít, kolik vám obrazovka dovolí, ale budete si muset upravit jejich rozměry, aby se daly používat.</p>
+
+  <p>Aby se zavřela skupina karet, stačí pozavírat všechny karty, které obsahuje.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Pohyb po skupinách karet</title>
+
+  <p>Pro přechod do následující skupiny karet:</p>
+
+  <list>
+    <item>
+      <p>V nabídce jděte na <guiseq><gui>Dokumenty</gui> <gui>Následující skupina karet</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Použijte klávesovou zkratku <keyseq><key>Shift</key> <key>Ctrl</key> <key>Alt</key> <key>Page Down</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Pro přechod do předchozí skupiny karet:</p>
+
+  <list>
+    <item>
+      <p>V nabídce jděte na <guiseq><gui>Dokumenty</gui> <gui>Předchozí skupina karet</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Použijte klávesovou zkratku <keyseq><key>Shift</key> <key>Ctrl</key> <key>Alt</key> <key>Page Up</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Přesun karty do jiné skupiny karet</title>
+
+  <p>Když chcete přesunout kartu z jedné skupiny karet do jiné:</p>
+
+  <steps>
+    <item>
+      <p>Klikněte tlačítkem myši na kartě a držte jej zmáčknuté.</p>
+    </item>
+    <item>
+      <p>Přetáhněte kartu do jiného panelu skupiny karet.</p>
+    </item>
+    <item>
+      <p>Umístěte ji mezi ostatní karty ve skupině.</p>
+    </item>
+    <item>
+      <p>Uvolněte tlačítko myši.</p>
+    </item>
+  </steps>
+
+  <p>Práci se skupinami karet si můžete usnadnit používáním <link xref="gedit-shortcut-keys">klávesových zkratek vztahujících se ke kartám</link>.</p>
+
+</section>
+
+</page>

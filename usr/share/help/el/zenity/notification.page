@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--notification</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Εικονίδιο ειδοποίησης</title>
+    <p>Χρησιμοποιήστε την επιλογή <cmd>--notification</cmd> για να δημιουργήσετε ένα εικονίδιο ειδοποίησης</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>κείμενο</var></title>
+      <p>Καθορίζει το κείμενο που προβάλλεται στην περιοχή ειδοποίησης.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>text</var>', message: '<var>text</var>', tooltip: '<var>text</var>', visible: '<var>text</var>',</title>
+      <p>Αποκρίνεται σε εντολές στην τυπική είσοδο. Τουλάχιστον μια εντολή πρέπει να οριστεί. Οι εντολές χωρίζονται με κόμμα. Μια εντολή πρέπει να ακολουθείται από : και μια τιμή.</p>
+      <note style="tip">
+        <p>Η εντολή <cmd>icon</cmd> δέχεται επίσης τέσσερις τιμές έτοιμου εικονιδίου όπως <var>error</var>, <var>info</var>, <var>question</var> και <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε ένα εικονίδιο ειδοποίησης:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Υπάρχουν ενημερώσεις συστήματος!"
+  </code>
+
+  <figure id="zenity-notification-screenshot">
+    <title>Παράδειγμα εικονιδίου ειδοποίησης</title>
+    <desc>Παράδειγμα εικονιδίου ειδοποίησης του <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>Το παρακάτω παράδειγμα σεναρίου δείχνει πώς να δημιουργήσετε ένα εικονίδιο ειδοποίησης με <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: this is the message text
+  EOH
+  </code>
+
+  <figure id="zenity-notification-listen-screenshot">
+    <title>Παράδειγμα εικονιδίου ειδοποίησης με <cmd>--listen</cmd></title>
+    <desc>Παράδειγμα ειδοποίησης του <app>Zenity</app> με <cmd>--listen</cmd></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

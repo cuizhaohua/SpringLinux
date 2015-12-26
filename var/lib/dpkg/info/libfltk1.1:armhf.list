@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libfltk1.1
+/usr/share/doc/libfltk1.1/changelog.Debian.armhf.gz
+/usr/share/doc/libfltk1.1/CREDITS
+/usr/share/doc/libfltk1.1/changelog.Debian.gz
+/usr/share/doc/libfltk1.1/changelog.gz
+/usr/share/doc/libfltk1.1/copyright
+/usr/share/doc/libfltk1.1/README.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libfltk_images.so.1.1
+/usr/lib/arm-linux-gnueabihf/libfltk_forms.so.1.1
+/usr/lib/arm-linux-gnueabihf/libfltk.so.1.1
+/usr/lib/arm-linux-gnueabihf/libfltk_gl.so.1.1

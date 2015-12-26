@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αλλαγή συνδυασμού χρωμάτων</title>
+
+  <p>Το <app>gedit</app> συμπεριλαμβάνει αρκετούς διαφορετικούς συνδυασμούς χρωμάτων, επιτρέποντας σας να αλλάξετε την εμφάνιση του κύριου παράθυρου του κειμένου.</p>
+
+  <p>Για να αλλάξετε τον συνδυασμό χρωμάτων, κάντε τα ακόλουθα:</p>
+  <steps>
+    <item><p>Επιλέξτε <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Προτιμήσεις</gui> <gui>Γραμματοσειρά &amp; χρώματα</gui></guiseq>.</p></item>
+    <item><p>Διαλέξτε τον επιθυμητό συνδυασμό χρωμάτων.</p></item>
+  </steps>
+
+  <p>Ο νέος συνδυασμός χρωμάτων θα εφαρμοστεί άμεσα.</p>
+
+  <section id="custom-color-scheme">
+    <title>Χρήση ενός προσαρμοσμένου συνδυασμού χρωμάτων</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Μπορείτε επίσης τους συνδυασμούς χρωμάτων που έχουν δημιουργηθεί από άλλους, ή να δημιουργήσετε και να χρησιμοποιήσετε τους δικούς σας.</p>
+    <p>Οδηγίες για το πώς να εγκαταστήσετε συνήθεις συνδυασμούς χρωμάτων, όπως και παραδείγματα συνδυασμών χρωμάτων που μπορείτε να κατεβάσετε και να χρησιμοποιήσετε, είναι διαθέσιμες στο <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">gedit wiki</link>.</p>
+  </section>
+
+</page>

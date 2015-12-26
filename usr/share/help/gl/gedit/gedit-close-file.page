@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pechar un ficheiro</title>
+
+  <p>Para pechar un fihceiro en <app>gedit</app>, seleccione <guiseq><gui>Ficheiro</gui><gui>Pechar</gui></guiseq>. De forma alternativa, pode premer o X que aparece na parte dereita da lapela do ficheiro ou premer <keyseq><key>Ctrl</key><key>W</key></keyseq>.</p>
+  <p>Calquera destas accións pechará un ficheiro en <app>gedit</app>. Se o seu ficheiro contén cambios que non se gardaran, <app>gedit</app> preguntaralle se quere gardalos antes de pechar o ficheiro.</p>
+
+</page>

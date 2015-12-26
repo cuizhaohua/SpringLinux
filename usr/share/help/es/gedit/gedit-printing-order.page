@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Imprimir copias en el orden correcto</title>
+
+  <section id="printing-reverse">
+    <title>Invertir</title>
+
+    <p>Generalmente, las impresoras imprimen primero la primera página, y luego la última, por lo que las páginas acaban en orden inverso cuando las coge. Para invertir el orden:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Imprimir…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>En la pestaña <gui style="tab">General</gui> de la ventana de impresión, en <gui style="group">Copias</gui> seleccione <gui style="checkbox">Invertir</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La última página se imprimirá primero, y así sucesivamente.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Intercalar</title>
+    
+    <p>Si está imprimiendo más de una copia del documento, de forma predeterminada las impresiones se agruparán por número de página. (Ej.: saldrán todas las copias de la página uno, después de la página dos, etc.) Intercalarlas hará que cada copia salga con sus páginas agrupadas.</p>
+
+    <p>Para intercalar:</p>
+    <steps>
+      <item>
+        <p>Pulse en <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Imprimir</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>En la pestaña <gui>General</gui> de la ventana de impresión, en <gui style="group">Copies</gui> marque <gui style="checkbox">Intercalar</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

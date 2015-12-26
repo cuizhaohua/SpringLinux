@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgpgme11
+/usr/share/doc/libgpgme11/changelog.Debian.gz
+/usr/share/doc/libgpgme11/changelog.gz
+/usr/share/doc/libgpgme11/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgpgme-pthread.so.11.13.0
+/usr/lib/arm-linux-gnueabihf/libgpgme.so.11.13.0
+/usr/lib/arm-linux-gnueabihf/libgpgme-pthread.so.11
+/usr/lib/arm-linux-gnueabihf/libgpgme.so.11

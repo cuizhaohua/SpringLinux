@@ -1,0 +1,30 @@
+Note that tiff 4.x packages libtiff5, while tiff 3.x packaged
+libtiff4.  During the libtiff4 -> libtiff5 transition, the tiff source
+package is providing transitional packages for libtiff4-dev and
+libtiff5-alt-dev.  If you have a package with a build dependency on
+libtiff-dev, you don't have to care about any of this.  Otherwise, the
+notes below describe what you should do to make sure your package is
+ready for the transition.
+
+ * If your package build-depends on libtiff-dev already, no action
+   required; the release team will automatically schedule a rebuild of
+   your package at the appropriate time.
+
+ * If your package depends on libtiff4-dev but can work fine with tiff
+   4.x (most packages), replace your dependency on libtiff4-dev with a
+   new dependency on libtiff-dev.
+
+ * If your package build-depends on libtiff5-dev or libtiff5-alt-dev and
+   is known to work with both tiff 3.x and tiff 4.x (i.e., it does not
+   use the BIGTIFF extensions in tiff 4.x), you can just change the
+   build dependency to an unversioned libtiff-dev.  You can also remove
+   any special code that you may have added to your package to get it to
+   find tiff in the non-standard location.  If you were finding tiff
+   with pkg-config, you shouldn't have to make any changes to your
+   package other than the build dependency.
+
+ * If your package build-depends on libtiff5-dev, you don't HAVE to do
+   anything, but you may be helping yourself in the future if you change
+   the build dependency to libtiff-dev (>> 4.0.3-6~).
+
+ -- Jay Berkenbilt <qjb@debian.org>, Thu,  5 Dec 2013 12:55:17 -0500

@@ -1,0 +1,28 @@
+#!/bin/sh
+cat > /tmp/menu-stdin
+
+exit 0
+
+#In the good old days of menu-0 compatibility, one had to use:
+
+# #!/usr/bin/install-menu
+# #I need menu-1!
+# 
+# #
+# #This file can be very usefull when you want to run one particular
+# #menu-method file several times, without running any of the others.
+# #In order to do so, do:
+# #  - cp ./cat /etc/menu-methods/
+# #  - run update-menus so that the "cat" menu-method gets executed. 
+# #    Now you've got /tmp/menu-stdin.
+# #  - With this file, you don't need update-menus at all any more, and you
+# #     can symply run your hand-written "menu-test" menu-method by typing:
+# #	./menu-test < /tmp/menu-stdin
+# #
+# # The advantage of doing this is
+# #   - none of the other menu-method files get excecuted (speedup)
+# #   - update-menus doesn't need to open some hundred menu-entry files
+# #     every time you test a change in your menu-method file.
+# #     (speedup)
+# compat="menu-1"
+# command="cat > /tmp/menu-stdin"

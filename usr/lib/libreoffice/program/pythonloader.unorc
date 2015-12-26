@@ -1,0 +1,4 @@
+[Bootstrap]
+PYUNO_LOADER_PYTHONPATH=$ORIGIN
+PYTHONHOME=file:///usr/lib/python3.4
+PYTHONPATH=$PYTHONHOME $PYTHONHOME/site-packages $PYTHONHOME/lib-dynload $PYTHONHOME/lib-tk $ORIGIN

@@ -1,0 +1,53 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+	. /usr/share/debconf/confmodule
+
+	CONFAVAIL=/etc/fonts/conf.avail
+	CONFDIR=/etc/fonts/conf.d
+
+	db_get xfonts-wqy/enable_wqy
+	enable_wqy="$RET"
+
+	wqy_old_conf="70-debconf-wqy.conf"
+	wqy_conf="85-xfonts-wqy.conf"
+
+	if [ -h $CONFDIR/$wqy_old_conf ]; then
+	    rm -f $CONFDIR/$wqy_old_conf
+	elif [ -h $CONFDIR/$wqy_conf ]; then
+	    rm -f $CONFDIR/$wqy_conf
+	fi
+
+	if [ "$enable_wqy" = "true" ]; then
+	    ln -s $CONFAVAIL/$wqy_conf $CONFDIR
+	fi
+
+	if [ -x /usr/bin/fc-cache ]; then
+	    echo -n "Regenerating fonts cache... "
+
+	    HOME=/root fc-cache -f -v 1>/var/log/fontconfig.log 2>&1 || \
+		(echo "failed; see /var/log/fontconfig.log for more information."; \
+		exit 1)
+
+	    echo "done."
+	fi
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+	echo "postinst called with unknown argument \`$1'" >&2
+	exit 1
+    ;;
+esac
+
+# Automatically added by dh_installxfonts
+if which update-fonts-dir >/dev/null 2>&1; then
+	update-fonts-dir --x11r7-layout misc;update-fonts-alias --include /etc/X11/fonts/misc/xfonts-wqy.alias misc
+fi
+# End automatically added section
+

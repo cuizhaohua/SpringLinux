@@ -1,0 +1,14 @@
+CITRIX 许可协议
+
+使用此 Citrix Receiver 软件时应遵守与其共同使用的 Citrix 产品特定版本所遵循的 
+Citrix 许可协议。Citrix Receiver 仅限于在为连接至 Citrix 产品而专门设计开发了此组件
+的设备上使用。如果您的设备连接到 Internet，Citrix Receiver 可在不另行通知的情况下检
+查可供下载并安装到设备上的 Citrix Receiver 更新，并告知您这些更新的可用性。检查更
+新时仅发送非个人身份信息，但在将 IP 地址视为个人身份信息的某些司法管辖区除外。
+使用此类信息（包括 IP 地址）时应遵守 www.citrix.com 上的 Citrix 隐私政策。除非获得
+您的同意，否则不会下载或安装这些更新。
+某些受独立许可条件限制的第三方软件可能会随此软件提供。第三方软件的许可位于随此
+组件提供的第三方许可文件中或 www.citrix.com 上提供的相应许可文件中。
+Citrix 和 Citrix Receiver 是 Citrix Systems, Inc. 在美国和其他国家/地区的商标和/或注册
+商标。
+CTX_code：CR_T_A121081

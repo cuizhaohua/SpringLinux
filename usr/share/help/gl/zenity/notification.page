@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="gl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opción <cmd>--notification</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Icona de notificación</title>
+    <p>Use a opción <option>--notification</option> para crear un diálogo de notificación.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>texto</var></title>
+      <p>Especifica o texto que se mostra na área de notificación.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>text</var>', message: '<var>text</var>', tooltip: '<var>text</var>', visible: '<var>text</var>',</title>
+      <p>Listens for commands at standard input. At least one command must be specified. Commands are comma seperated. A command must be followed by a colon and a value. </p>
+      <note style="tip">
+        <p>The <cmd>icon</cmd> command also accepts four stock icon values such as <var>error</var>, <var>info</var>, <var>question</var> and <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>O seguinte script de exemplo mostra como crear un diálogo de selección de notificación:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="There are system updates necessary!"
+  </code>
+
+  <figure id="zenity-notification-screenshot">
+    <title>Exemplo de icona de notificación</title>
+    <desc>Exemplo da icona de notificación de <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>The following example script shows how to create a notification icon along with <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: this is the message text
+  EOH
+  </code>
+
+  <figure id="zenity-notification-listen-screenshot">
+    <title>Notification Icon with <cmd>--listen</cmd> Example</title>
+    <desc><app>Zenity</app> notification with <cmd>--listen</cmd> example</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

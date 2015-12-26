@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Шобха Тиаджи (Shobha Tyagi)</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Использование полноэкранного режима</title>
+
+  <p>Полноэкранный режим <app>gedit</app> удобен при работе с большими документами. При использовании полноэкранного режима будут скрыты <gui>панель меню</gui>, <gui>панель вкладок</gui> и <gui>панель инструментов</gui>, позволяя видеть больше текста и лучше сосредоточиться на текущих задачах.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Включение полноэкранного режима</title>
+    <p>To turn on fullscreen mode, press <key>F11</key>. <app>gedit's</app>
+    menu, title, and tab-bars will hide, and you will only be presented with
+    the text of your current file.</p>
+    <p>Если при работе в полноэкранном режиме нужно выполнить действие из меню <app>gedit</app>, наведите указатель мыши к верхней части экрана. Появится всплывающая панель меню <app>gedit</app>, на которой можно выбрать нужное действие.</p>
+
+    <note>
+      <p>Для переключения между открытыми вкладками в полноэкранном режиме нажмите <keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> или <keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Выключение полноэкранного режима</title>
+    <p>Чтобы включить или выключить полноэкранный режим <app>gedit</app>, нажмите <key>F11</key>.</p>
+    <p>Также можно переместить указатель мыши в верхнюю часть экрана, подождать появления <gui>панели меню</gui> и выбрать в появившейся панели <gui>Покинуть полноэкранный режим</gui>.</p>
+  </section>
+
+</page>

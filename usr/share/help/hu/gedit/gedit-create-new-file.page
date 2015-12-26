@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-create-new-file" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="first"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Új fájl létrehozása</title>
+
+  <p>A legegyszerűbben úgy hozhat létre új dokumentumot a <app>gedit</app> alkalmazásban, ha az eszköztár bal oldalán az <gui>Új dokumentum létrehozása</gui> gombra kattint, vagy lenyomja a <keyseq><key>Ctrl</key><key>T</key></keyseq> billentyűkombinációt.</p>
+
+  <p>A fentiek bármelyike létrehoz egy új fájlt a <app>geditben</app>. Ha már más fájljai is nyitva vannak a <app>geditben</app>, akkor az újonnan létrehozott fájl azoktól jobbra, új lapon jelenik meg.</p>
+
+</page>

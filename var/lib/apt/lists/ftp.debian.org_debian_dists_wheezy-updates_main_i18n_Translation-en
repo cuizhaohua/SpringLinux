@@ -1,0 +1,285 @@
+Package: clamav
+Description-md5: 25816a2f56a0c214a484e117fd9fe0b1
+Description-en: anti-virus utility for Unix - command-line interface
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the command line interface. Features:
+  - built-in support for various archive formats, including Zip, Tar,
+    Gzip, Bzip2, OLE2, Cabinet, CHM, BinHex, SIS and others;
+  - built-in support for almost all mail file formats;
+  - built-in support for ELF executables and Portable Executable files
+    compressed with UPX, FSG, Petite, NsPack, wwpack32, MEW, Upack and
+    obfuscated with SUE, Y0da Cryptor and others;
+  - built-in support for popular document formats including Microsoft
+    Office and Mac Office files, HTML, RTF and PDF.
+ .
+ For scanning to work, a virus database is needed. There are two options
+ for getting it:
+  - clamav-freshclam: updates the database from Internet. This is
+    recommended with Internet access.
+  - clamav-data: for users without Internet access. The package is
+    not updated once installed. The clamav-getfiles package allows
+    creating custom packages from an Internet-connected computer.
+
+Package: clamav-base
+Description-md5: 07cae146971b36633118e9688da90286
+Description-en: anti-virus utility for Unix - base package
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package mainly manages the clamav system account. It is not really
+ useful without the clamav or clamav-daemon package.
+
+Package: clamav-daemon
+Description-md5: 01e2982f3aaa3547dd03d9e8c044bd42
+Description-en: anti-virus utility for Unix - scanner daemon
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the daemon and the daemon scanner client featuring:
+  - fast, multi-threaded daemon;
+  - easy integration with MTA's;
+  - support for on-access scanning;
+  - remote scanning;
+  - able to be run supervised by daemon.
+
+Package: clamav-dbg
+Description-md5: 33a33cc71dce345b4a0ce175ebeca8c7
+Description-en: debug symbols for ClamAV
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the stripped debugging symbols for the ClamAV suite.
+
+Package: clamav-docs
+Description-md5: e2412f6e57d4fb282e22d549e939cb72
+Description-en: anti-virus utility for Unix - documentation
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the documentation for the ClamAV suite.
+
+Package: clamav-freshclam
+Description-md5: 824a85afc618e1467a907719e4edd7bb
+Description-en: anti-virus utility for Unix - virus database update utility
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the freshclam program and scripts to automate virus
+ database updating. It relies on an Internet connection, but can be
+ run in a variety of ways to compensate for intermittent connections.
+
+Package: clamav-milter
+Description-md5: bdf4d5012233691e2d3d904e79a57dcf
+Description-en: anti-virus utility for Unix - sendmail integration
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains the ClamAV milter for use with sendmail. It can
+ be configured to be run either standalone, or using clamav-daemon.
+
+Package: clamav-testfiles
+Description-md5: 02a1eb16b2a0a9f53fc09fe0d784518c
+Description-en: anti-virus utility for Unix - test files
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ This package contains files 'infected' with a test signature. The test
+ signature (ClamAV-Test-Signature) should be detectable by all
+ anti-virus programs.
+
+Package: libclamav-dev
+Description-md5: f9403f3147d4d160269156db01264656
+Description-en: anti-virus utility for Unix - development files
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ The package contains the needed headers and libraries for
+ developing software using the libclamav interface.
+ .
+ This library can be used to develop virus scanner applications.
+
+Package: libclamav6
+Description-md5: 8eec48379ead2492f2f06feeb97a6a2f
+Description-en: anti-virus utility for Unix - library
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav6, which can be used by other software.
+ .
+ For programs written using the libclamav library. Libclamav may be used to add
+ virus protection into software. The library is thread-safe, and automatically
+ recognizes and scans archives. Scanning is very fast and most of the time
+ not noticeable.
+
+Package: libdatetime-timezone-perl
+Description-md5: 49fff32146b7c0ac14d7bcca1f92bfe6
+Description-en: framework exposing the Olson time zone database to Perl
+ DateTime::TimeZone is a Perl module framework providing an interface to the
+ Olson time zone database. It exposes the database as a set of modules, one
+ for each time zone defined, allowing for various optimizations in doing time
+ zone calculations.
+ .
+ The Olson time zone database is the best available source for worldwide time
+ zone information and is available from <URL:ftp://ftp.iana.org/tz/releases/>.
+
+Package: open-vm-dkms
+Description-md5: 8a2d753ada147c1a7cb97561da0092bf
+Description-en: Source for VMware guest systems driver (DKMS)
+ This package provides the source code for the open-vm kernel modules.
+ The open-vm-tools package is also required in order to make use of these
+ modules. Kernel source or headers are required to compile these modules.
+
+Package: open-vm-toolbox
+Description-md5: 1601fcf0f867cbbe0d1e0907159f12c4
+Description-en: tools and components for VMware guest systems (GUI tools)
+ The Open Virtual Machine Tools (open-vm-tools) are the open source
+ implementation of VMware Tools. They are a set of guest operating system
+ virtualization components that enhance performance and user experience of
+ virtual machines.
+ .
+ As virtualization technology rapidly becomes mainstream, each virtualization
+ solution provider implements their own set of tools and utilities to supplement
+ the guest virtual machine. However, most of the implementations are proprietary
+ and are tied to a specific virtualization platform.
+
+Package: open-vm-tools
+Description-md5: c80bb65ec21cb5da97bef3a00b822d31
+Description-en: tools and components for VMware guest systems (CLI tools)
+ The Open Virtual Machine Tools (open-vm-tools) are the open source
+ implementation of VMware Tools. They are a set of guest operating system
+ virtualization components that enhance performance and user experience of
+ virtual machines.
+ .
+ As virtualization technology rapidly becomes mainstream, each virtualization
+ solution provider implements their own set of tools and utilities to supplement
+ the guest virtual machine. However, most of the implementations are proprietary
+ and are tied to a specific virtualization platform.
+
+Package: open-vm-tools-dbg
+Description-md5: e46be2fece63314e3c06d559878a3ded
+Description-en: tools and components for VMware guest systems (debug)
+ The Open Virtual Machine Tools (open-vm-tools) are the open source
+ implementation of VMware Tools. They are a set of guest operating system
+ virtualization components that enhance performance and user experience of
+ virtual machines.
+ .
+ This package contains the debugging symbols.
+
+Package: open-vm-tools-dev
+Description-md5: 216649bda1987378aefcc5b7b26e7585
+Description-en: tools and components for VMware guest systems (development)
+ The Open Virtual Machine Tools (open-vm-tools) are the open source
+ implementation of VMware Tools. They are a set of guest operating system
+ virtualization components that enhance performance and user experience of
+ virtual machines.
+ .
+ This package contains the development files.
+
+Package: policyd-weight
+Description-md5: b49f51c6147d3c38b7e7ac0a66df6758
+Description-en: Perl policy daemon for the Postfix MTA
+ policyd-weight is intended to eliminate forged envelope senders and HELOs
+ (i.e. in bogus mails). It allows you to score DNSBLs (RBL/RHSBL), HELO,
+ MAIL FROM and client IP addresses before any queuing is done. It allows
+ you to REJECT messages which have a score higher than allowed, providing
+ improved blocking of spam and virus mails. policyd-weight caches the most
+ frequent client/sender combinations (SPAM as well as HAM) to reduce the
+ number of DNS queries.
+
+Package: spamassassin
+Description-md5: dc09f4668ebbf8e10ef779ed26e5716c
+Description-en: Perl-based spam filter using text analysis
+ SpamAssassin is a very powerful and fully configurable spam filter
+ with numerous features including automatic white-listing, RBL
+ testing, Bayesian analysis, header and body text analysis. It is
+ designed to be called from a user's .procmail or .forward file, but
+ can also be integrated into a Mail Transport Agent (MTA).
+ .
+ Included in this package is a daemonized form of spamassassin (spamd)
+ which communicates with its client (spamc) via TCP, to reduce the
+ overhead of loading perl with each message. To take advantage of
+ this, you must install the spamc package.
+
+Package: spamc
+Description-md5: b2e3d1db161689a544d73b142bacbe57
+Description-en: Client for SpamAssassin spam filtering daemon
+ spamc is the client to communicate with spamd, the daemonized form of
+ SpamAssassin (see the spamassassin package). It is written in C for
+ maximum speed and minimum loading overhead.
+ .
+ spamc is quite useful for integrating spamassassin into an MTA or
+ into a .procmailrc file because of its speed.
+ .
+ This package is useless unless you have spamassassin installed,
+ either on this machine or another local machine (i.e. a mail server).
+
+Package: tzdata
+Description-md5: a77a3cc9a67658dd7cfdc6547391b8f8
+Description-en: time zone and daylight-saving time data
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+
+Package: tzdata-java
+Description-md5: 811cf395ae4cc676283711d9bc20443f
+Description-en: time zone and daylight-saving time data for use by java runtimes
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+ .
+ This package contains the data for use by Java runtimes.
+

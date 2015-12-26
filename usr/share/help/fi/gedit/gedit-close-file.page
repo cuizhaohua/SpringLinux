@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tiedoston sulkeminen</title>
+
+  <p>Tiedoston sulkeminen <app>geditissä</app> onnistuu valitsemalla <guiseq><gui>Tiedosto</gui> <gui>Sulje</gui></guiseq>, painamalla tiedoston välilehden oikeassa reunassa olevaa rastia tai käyttämällä näppäinkomentoa <keyseq><key>Ctrl</key> <key>W</key></keyseq> .</p>
+  <p>Mikä tahansa edellä mainituista toiminnoista sulkee tiedoston <app>geditissä</app>. Jos tiedostoon on tehty muutoksia viimeisimmän tallennuksen jälkeen, <app>gedit</app> antaa mahdollisuuden tallentaa muutokset ennen tiedoston sulkemista.</p>
+
+</page>

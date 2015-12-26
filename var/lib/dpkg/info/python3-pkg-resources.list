@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/pkg_resources.py
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-pkg-resources
+/usr/share/doc/python3-pkg-resources/copyright
+/usr/share/doc/python3-pkg-resources/changelog.Debian.gz

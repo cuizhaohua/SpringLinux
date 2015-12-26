@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvo-aacenc0
+/usr/share/doc/libvo-aacenc0/changelog.Debian.gz
+/usr/share/doc/libvo-aacenc0/changelog.gz
+/usr/share/doc/libvo-aacenc0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libvo-aacenc.so.0.0.4
+/usr/lib/arm-linux-gnueabihf/libvo-aacenc.so.0

@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>tumbler Reference Manual: TumblerThumbnail</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="tumbler Reference Manual">
+<link rel="up" href="thumbnails.html" title="Part III. Querying and Generating Thumbnails">
+<link rel="prev" href="tumbler-tumbler-file-info.html" title="tumbler-file-info">
+<link rel="next" href="TumblerCache.html" title="TumblerCache">
+<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
+                  <a href="#TumblerThumbnail.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
+                  <a href="#TumblerThumbnail.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties"> <span class="dim">|</span> 
+                  <a href="#TumblerThumbnail.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="thumbnails.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="tumbler-tumbler-file-info.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="TumblerCache.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="TumblerThumbnail"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="TumblerThumbnail.top_of_page"></a>TumblerThumbnail</span></h2>
+<p>TumblerThumbnail</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="TumblerThumbnail.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TumblerThumbnail.html#tumbler-thumbnail-load" title="tumbler_thumbnail_load ()">tumbler_thumbnail_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TumblerThumbnail.html#tumbler-thumbnail-needs-update" title="tumbler_thumbnail_needs_update ()">tumbler_thumbnail_needs_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TumblerThumbnail.html#tumbler-thumbnail-save-image-data" title="tumbler_thumbnail_save_image_data ()">tumbler_thumbnail_save_image_data</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="TumblerThumbnail.html#tumbler-thumbnail-save-file" title="tumbler_thumbnail_save_file ()">tumbler_thumbnail_save_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">TumblerThumbnailFlavor</span> *
+</td>
+<td class="function_name">
+<a class="link" href="TumblerThumbnail.html#tumbler-thumbnail-get-flavor" title="tumbler_thumbnail_get_flavor ()">tumbler_thumbnail_get_flavor</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a class="link" href="TumblerCache.html" title="TumblerCache"><span class="type">TumblerCache</span></a> *</td>
+<td class="property_name"><a class="link" href="TumblerThumbnail.html#TumblerThumbnail--cache" title="The “cache” property">cache</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">TumblerThumbnailFlavor</span> *</td>
+<td class="property_name"><a class="link" href="TumblerThumbnail.html#TumblerThumbnail--flavor" title="The “flavor” property">flavor</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="TumblerThumbnail.html#TumblerThumbnail--uri" title="The “uri” property">uri</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="TumblerThumbnail.html#TumblerImageData" title="struct TumblerImageData">TumblerImageData</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GInterface
+    <span class="lineart">╰──</span> TumblerThumbnail
+</pre>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="tumbler-thumbnail-load"></a><h3>tumbler_thumbnail_load ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tumbler_thumbnail_load (<em class="parameter"><code><a class="link" href="TumblerThumbnail.html" title="TumblerThumbnail"><span class="type">TumblerThumbnail</span></a> *thumbnail</code></em>,
+                        <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                        <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.4.3.8.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tumbler-thumbnail-needs-update"></a><h3>tumbler_thumbnail_needs_update ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tumbler_thumbnail_needs_update (<em class="parameter"><code><a class="link" href="TumblerThumbnail.html" title="TumblerThumbnail"><span class="type">TumblerThumbnail</span></a> *thumbnail</code></em>,
+                                <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                                <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> mtime</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.4.3.8.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tumbler-thumbnail-save-image-data"></a><h3>tumbler_thumbnail_save_image_data ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tumbler_thumbnail_save_image_data (<em class="parameter"><code><a class="link" href="TumblerThumbnail.html" title="TumblerThumbnail"><span class="type">TumblerThumbnail</span></a> *thumbnail</code></em>,
+                                   <em class="parameter"><code><a class="link" href="TumblerThumbnail.html#TumblerImageData" title="struct TumblerImageData"><span class="type">TumblerImageData</span></a> *data</code></em>,
+                                   <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> mtime</code></em>,
+                                   <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                   <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.4.3.8.4.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tumbler-thumbnail-save-file"></a><h3>tumbler_thumbnail_save_file ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+tumbler_thumbnail_save_file (<em class="parameter"><code><a class="link" href="TumblerThumbnail.html" title="TumblerThumbnail"><span class="type">TumblerThumbnail</span></a> *thumbnail</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a> mtime</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.4.3.8.5.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="tumbler-thumbnail-get-flavor"></a><h3>tumbler_thumbnail_get_flavor ()</h3>
+<pre class="programlisting"><span class="returnvalue">TumblerThumbnailFlavor</span> *
+tumbler_thumbnail_get_flavor (<em class="parameter"><code><a class="link" href="TumblerThumbnail.html" title="TumblerThumbnail"><span class="type">TumblerThumbnail</span></a> *thumbnail</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.4.3.8.6.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="TumblerImageData"></a><h3>struct TumblerImageData</h3>
+<pre class="programlisting">struct TumblerImageData {
+  TumblerColorspace colorspace;
+  const guchar     *data;
+  gboolean          has_alpha;
+  gint              bits_per_sample;
+  gint              width;
+  gint              height;
+  gint              rowstride;
+};
+</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="TumblerThumbnail.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="TumblerThumbnail--cache"></a><h3>The <code class="literal">“cache”</code> property</h3>
+<pre class="programlisting">  “cache”                    <a class="link" href="TumblerCache.html" title="TumblerCache"><span class="type">TumblerCache</span></a> *</pre>
+<p>cache.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TumblerThumbnail--flavor"></a><h3>The <code class="literal">“flavor”</code> property</h3>
+<pre class="programlisting">  “flavor”                   <span class="type">TumblerThumbnailFlavor</span> *</pre>
+<p>flavor.</p>
+<p>Flags: Read / Write / Construct Only</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TumblerThumbnail--uri"></a><h3>The <code class="literal">“uri”</code> property</h3>
+<pre class="programlisting">  “uri”                      <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>uri.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.20</div>
+</body>
+</html>

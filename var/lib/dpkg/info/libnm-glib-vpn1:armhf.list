@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnm-glib-vpn1
+/usr/share/doc/libnm-glib-vpn1/changelog.Debian.gz
+/usr/share/doc/libnm-glib-vpn1/changelog.gz
+/usr/share/doc/libnm-glib-vpn1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnm-glib-vpn.so.1.2.0
+/usr/lib/arm-linux-gnueabihf/libnm-glib-vpn.so.1

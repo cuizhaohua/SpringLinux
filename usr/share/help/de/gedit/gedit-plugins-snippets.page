@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="de">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Schnipsel zum schnellen Einfügen oft genutzter Textteile verwenden</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Schnipsel</title>
+
+  <p><app>Schnipsel</app> bieten eine bequeme Möglichkeit, wiederkehrende Code-Teile in Ihre Dateien einzufügen. Beispielsweise fügt ein HTML-Schnipsel für den <code>&lt;img&gt;</code>-Tag die öffnenden und schließenden Teile für diesen Tag ein sowie feste Plätze zum Eingeben von Bildattributen. Dadurch wird das Schreiben des Codes einfacher und schneller.</p>
+
+  <section id="enable-snippets">
+    <title>Das Schnipsel-Plugin aktivieren</title>
+
+    <p>So aktivieren Sie das <gui>Schnipsel</gui>-Plugin:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Einstellungen</gui><gui>Plugins</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">Schnipsel</gui>, um das Plugin zu aktivieren.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Schnipsel durchsuchen</title>
+
+    <p>So durchsuchen Sie verfügbare Schnipsel:</p>
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">Werkzeuge</gui><gui style="menuitem">Schnipsel verwalten</gui></guiseq>.</p>
+        <note style="important">
+          <p>Stellen Sie sicher, dass die Syntax richtig festgelegt ist. Die Statuszeile am unteren Rand des <app>gedit</app>-Fensters zeigt die aktuelle Spracheinstellung an, welche <app>gedit</app> ermöglicht, die richtigen Schnipsel einzufügen. <app>Gedit</app> erkennt normalerweise die Sprache oder Syntax der verwendeten Datei automatisch, aber gelegentlich werden Sie sie selbst festlegen müssen.</p>
+          <figure>
+            <desc>In diesem Beispiel ist die Sprache auf HTML gesetzt.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Durchsuchen Sie die Schnipsel, die für Ihre Sprache oder Syntax verfügbar sind.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Schnipsel verwenden</title>
+
+    <p>So fügen Sie einen Schnipsel in Ihr aktuelles Dokument ein:</p>
+
+    <steps>
+      <item>
+        <p>Tippen Sie den gewünschten Schnipselname an beliebiger Stelle in Ihrem aktuellen Dokument.</p>
+      </item>
+      <item>
+        <p>Drücken Sie die <key>Tabulatortaste</key>, um Schnipsel einzufügen, die mit dem Eingabebegriff verknüpft sind.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Beispiel für den Einsatz von Schnipseln</title>
+
+    <p>Wenn Sie die Syntax beispielsweise auf <em>HTML</em> gesetzt haben, geben Sie <code>head</code> ein und drücken Sie die <key>Tabulatortaste</key>. Daraufhin sollte automatisch Folgendes erscheinen:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Schnipsel hinzufügen</title>
+
+    <p>Sie können neue Schnipsel hinzufügen, die entweder global (d.h. sprachweit) oder nur für eine bestimmte Syntax funktionieren.</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq style="menu"><gui style="menuitem">Werkzeuge</gui><gui style="menuitem">Schnipsel verwalten</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Wählen Sie in der Seitenleiste namens <gui>Schnipsel verwalten</gui> die gewünschte Syntax und klicken Sie dann auf den »+«-Knopf, um bereits für die gewählte Syntax vorhandene Schnipsel aufzulisten.</p>
+        <note style="tip">
+          <p>Wählen Sie <gui>Global</gui> in der Seitenleiste <gui>Schnipsel verwalten</gui>, um ein Schnipsel hinzuzufügen, das global funktioniert (d.h. wenn keine Sprache oder Syntax für das Dokument festgelegt ist).</p>
+        </note>
+      </item>
+      <item>
+        <p>Klicken Sie auf das Plus-Symbol in der Seitenleiste <gui>Schnipsel verwalten</gui>, um einen neuen Schnipsel hinzuzufügen.</p>
+      </item>
+      <item>
+        <p>Geben Sie einen Namen für den neuen Schnipsel ein. Der Schnipselname ist beliebig.</p>
+      </item>
+      <item>
+        <p>Sie müssen im Abschnitt <gui style="group">Aktivierung</gui> einen Begriff für den Textbereich <gui style="input">Tabulatorauslösung:</gui> eingeben. Verwenden Sie dann diesen Begriff, um Ihren Schnipsel einzufügen.</p>
+        <note style="tip">
+          <p>If you wish to insert a snippet with a keyboard shortcut, then click your mouse pointer on <gui style="input">Shortcut key:</gui> textarea and press the desired combination of keys. Once you have pressed and released the keys, the keyboard shortcut will be set.</p>
+        </note>
+      </item>
+      <item>
+        <p>Geben Sie den für den Schnipsel gewünschten Text im Textbereich unter <gui style="input">Bearbeiten:</gui> ein. Verwenden Sie <code>${n}</code>, um Variaben zu definieren, wobei <em>n</em> durch eine Zahl ersetzt wird, welche die numerische Reihenfolge der enthaltenen Variablen darstellt.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Beispiel für einen neuen Schnipsel</title>
+
+    <p>1</p>
+
+    <code>
+      &lt;greetings&gt;Hello ${1:wonderful}${2:amazing} world!
+      &lt;/greetings&gt;
+    </code>
+
+    <p>1</p>
+
+    <code>
+      &lt;greetings&gt;Hello wonderfulamazing world!&lt;/greetings&gt;
+    </code>
+
+    <p>Die Worte »wunderbar« und »erstaunlich« können beibehalten oder gelöscht werden, je nach Ihrer Wahl der Nutzung?. Drücken Sie dazu die <key>Tabulatortaste</key> und wählen Sie zwischen »wunderbar« und »erstaunlich« und drücken Sie <key>Entf</key>, um die ungewünschte Option zu entfernen.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

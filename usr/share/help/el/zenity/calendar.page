@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--calendar</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος ημερολογίου</title>
+    <p>Χρησιμοποιώντας την επιλογή <cmd>--calendar</cmd> δημιουργείτε έναν διάλογο ημερολογίου. Το Zenity αποδίδει την επιλεγμένη ημερομηνία σαν κανονική έξοδο. Αν δεν καθοριστεί ημερομηνία στην γραμμή εντολών, ο διάλογος χρησιμοποιεί την τρέχουσα ημερομηνία.</p>
+    <p>Ο διάλογος ημερολογίου υποστηρίζει τις εξής επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>κείμενο</var></title>
+	<p>Καθορίζει το κείμενο που προβάλλεται στον διάλογο ημερολογίου.</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>ημέρα</var></title>
+	<p>Καθορίζει την ημέρα που επιλέγεται στον διάλογο ημερολογίου. Η ημέρα πρέπει να είναι ένας αριθμός από 1 έως και 31.</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>μήνας</var></title>
+	<p>Καθορίζει τον μήνα που επιλέγεται στον διάλογο ημερολογίου. Ο μήνας πρέπει να είναι ένας αριθμός από 1 έως και 12.</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>έτος</var></title>
+	<p>Καθορίζει το έτος που επιλέγεται στον διάλογο ημερολογίου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--date-format</cmd>=<var>μορφή</var></title>
+	<p>Καθορίζει την μορφή που αποδίδεται από τον διάλογο ημερολογίου μετά την επιλογή ημερομηνίας. Η προεπιλεγμένη μορφή εξαρτάται από την προσαρμογή εντοπιότητας(locale) που χρησιμοποιείτε. Η μορφή πρέπει να συντάσσεται έτσι ώστε να γίνεται αποδεκτή από την λειτουργία <cmd>strftime</cmd>, για παράδειγμα <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε έναν διάλογο ημερολογίου:</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="Επιλέξτε ημερομηνία" \
+--text="Κάντε κλικ σε μια ημερομηνία για να την επιλέξετε." \
+--day=2 --month=4 --year=2009
+  then echo $?
+  else echo "No date selected"
+fi
+</code>
+
+
+    <figure id="zenity-calendar-screenshot">
+      <title>Παράδειγμα διαλόγου ημερολογίου</title>
+      <desc>Παράδειγμα διαλόγου ημερολογίου του Zenity</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

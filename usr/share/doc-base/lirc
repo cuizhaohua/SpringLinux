@@ -1,0 +1,10 @@
+Document: lirc
+Title: LIRC (Linux Infrared Remote Control)
+Author: Christoph Bartelmus <lirc@bartelmus.de>, Karsten Scheibler <karsten.scheibler@bigfoot.de>
+Abstract: 
+Section: Help
+
+Format: HTML
+Index: /usr/share/doc/lirc/html/index.html
+Files: /usr/share/doc/lirc/html/*.html
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Recherche de texte</title>
+  
+    <p>L'outil Recherche peut vous aider à trouver des morceaux de texte particuliers dans votre fichier.</p>
+
+    <steps>
+      <title>Recherche de texte</title>
+      <item>
+        <p>Ouvrez le <gui>champ de recherche</gui> en cliquant sur <guiseq><gui style="menu">Rechercher</gui><gui style="menuitem">Rechercher...</gui></guiseq> ou en appuyant sur <keyseq><key>Ctrl</key><key>F</key></keyseq>. Cela déplace le curseur au début du <gui>champ de recherche</gui>.</p>
+      </item>
+      <item>
+        <p>Saisissez le texte que vous voulez rechercher dans le <gui>champ de recherche</gui>.</p>
+      </item>
+      <item>
+        <p>Au fur et à mesure de votre saisie, <app>gedit</app> commence à mettre en surbrillance les parties de texte qui correspondent à ce que vous avez saisi.</p>
+      </item>
+    </steps>
+    
+    <p>Pour parcourir les résultats de recherche, effectuez l'une des opérations suivantes :</p>
+    <list>
+      <item>
+        <p>Cliquez sur les flèches <gui style="button">haut</gui> ou <gui style="button">bas</gui> situées à côté du <gui>champ de recherche</gui>.</p>
+      </item>
+      <item>
+        <p>Appuyez sur les touches <key>flèche haut</key> ou <key>flèche bas</key> de votre clavier.</p>
+      </item>
+      <item>
+        <p>Appuyez sur <keyseq><key>Ctrl</key><key>G</key></keyseq> ou <keyseq><key>Ctrl</key><key>Maj</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Pour faire défiler le texte vers le haut ou le bas, maintenez la touche <key>Ctrl</key> enfoncée et utilisez le <key>défilement</key> de votre souris ou de votre pavé tactile.</p>
+      </item>
+    </list>
+
+  <p>Pour fermer le <gui>champ de recherche</gui>, appuyez sur la touche <key>Échap</key> ou sur la touche <key>Entrée</key>. La touche <key>Échap</key> positionne le curseur là où il était avant d'avoir lancé la recherche, tandis que la touche <key>Entrée</key> positionne le curseur là où il est dans les résultats de la recherche.</p>
+
+  <list>
+    <title>Astuces pour la recherche</title>
+    <item>
+      <p>Si vous sélectionnez une portion de texte avant d'appuyer sur <keyseq><key>Ctrl</key><key>F</key></keyseq>, le texte surligné apparaît dans le champ de recherche.</p>
+    </item>
+    <item>
+      <p>Pour accéder à plus d'options de recherche, cliquez sur l'icône <gui style="button">loupe</gui> du champ de recherche, ou faites un clic droit n'importe où dans le champ de recherche. Vous accédez alors à une ou plusieurs de ces options supplémentaires :</p>
+      <list>
+        <item>
+          <p>Sélectionnez <gui>Respecter la casse</gui> pour rendre la recherche sensible à la casse.</p>
+        </item>
+        <item>
+          <p>Sélectionnez <gui>Mots entiers seulement</gui> pour ne rechercher que des mots entiers.</p>
+        </item>
+        <item>
+          <p>Sélectionnez <gui>Recherche circulaire</gui> pour rechercher du texte depuis votre position actuelle jusqu'en bas et recommencer le cycle depuis le haut.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Le texte que vous avez recherché reste coloré, même après la fin de la recherche. Pour supprimer la coloration, cliquez sur <guiseq><gui>Rechercher</gui><gui>Supprimer la coloration</gui></guiseq> ou appuyez sur <keyseq><key>Ctrl</key><key>Maj</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

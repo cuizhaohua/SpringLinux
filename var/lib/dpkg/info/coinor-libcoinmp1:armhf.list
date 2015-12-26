@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/coinor-libcoinmp1
+/usr/share/doc/coinor-libcoinmp1/changelog.Debian.gz
+/usr/share/doc/coinor-libcoinmp1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libCoinMP.so.1.7.6
+/usr/lib/arm-linux-gnueabihf/libCoinMP.so.1

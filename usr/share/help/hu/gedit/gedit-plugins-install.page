@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="hu">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Harmadik féltől származó bővítmények telepítése</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>További gedit bővítmények</title>
+
+  <p>Harmadik féltől származó bővítmények telepítése olyan extra funkciókat biztosít, amelyeket sem a <app>gedit</app> alaptelepítése, sem a <app>gedit-plugins</app> csomag nem tartalmaz. A harmadik féltől származó bővítmények online listája <link href="https://wiki.gnome.org/Apps/Gedit">itt érhető el</link>.</p>
+  
+  <p>A harmadik féltől származó bővítmények telepítése a bővítmény letöltését, a fájlok megfelelő könyvtárba másolását és a bővítmény aktiválását foglalja magában.</p>
+  
+  <steps>
+    <item><p>Bővítményeket általában azok weboldalairól tölthet le, de szükség lehet verziókezelő programok használatára is, mint például a <app>git</app>, <app> bazaar</app> vagy <app>subversion</app> a bővítményhez tartozó fájlok letöltéséhez az internetről. A bővítmények beszerzésével kapcsolatos információkat azok dokumentációjában találja.</p></item>
+    <item><p>Másolja a bővítmény fájljait a <file>/home/<var>felhasználónév</var>/.local/share/gedit/plugins</file> könyvtárba.</p>
+    <p>A <var>felhasználónév</var> helyett saját felhasználónevét használja.</p></item>
+    <item><p>A bővítményfájlok megfelelő könyvtárba helyezése után a bővítmény megjelenik a Beállítások menüben. Válassza a <guiseq><gui>Szerkesztés</gui><gui style="menuitem">Beállítások</gui><gui>Bővítmények</gui> <gui>[Bővítmény neve]</gui></guiseq> lehetőséget a bővítmény engedélyezéséhez.</p></item>
+    <item><p>Nyomja meg a <gui>Bezárás</gui> gombot.</p></item>
+  </steps>
+  
+  <p>A bővítmény engedélyezése után az azonnal használhatóvá válik.</p>
+  
+  <note style="tip">
+    <p>A <file>.local</file> könyvtár alapesetben nem látható. A megjelenítéséhez válassza a <guiseq><gui>Nézet</gui><gui>Rejtett fájlok megjelenítése</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Ctrl</key><key>H</key></keyseq> kombinációt.</p>
+  </note>
+
+  <note style="tip">
+    <p>Ha a <file>.local/share/gedit/plugins/</file> könyvtár nem létezik, akkor hozza létre azt.</p>
+  </note>
+  
+</page>

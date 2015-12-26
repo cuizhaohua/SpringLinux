@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="intro" xml:lang="zh-CN">
+<info>
+  <link type="guide" xref="index"/>
+  <desc><app>Zenity</app> 可以创建各种类型的简单对话框。</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+<title>介绍</title>
+<p><app>Zenity</app> 可以创建下列类型的简单对话框：</p>
+
+<list>
+    <item><p>日历</p></item>
+    <item><p>文件选择</p></item>
+    <item><p>表格</p></item>
+    <item><p>列表</p></item>
+    <item><p>通知图标</p></item>
+    <item><p>消息</p>
+        <list>
+            <item><p>错误</p></item>
+    	<item><p>信息</p></item>
+    	<item><p>问题</p></item>
+    	<item><p>警告</p></item>
+        </list>
+    </item>
+    <item><p>密码输入</p></item>
+    <item><p>进度</p></item>
+    <item><p>文本输入</p></item>
+    <item><p>文本信息</p></item>
+    <item><p>范围</p></item>
+    <item><p>颜色选择</p></item>
+</list>
+</page>

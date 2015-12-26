@@ -1,0 +1,24 @@
+Reporting menu bugs
+---------------------
+
+If you are reporting a bug about the way menus are displayed, please
+provide the name and version of the window manager (or menu manager)
+you use. You can use the output of 
+dpkg-query -l <window manager package name>
+
+-----------------------
+If you have a difficult to reproduce problem with install-menu
+-----------------------
+
+# update-menus --stdout > /tmp/menu-stdin
+# bzip2 /tmp/menu-stdin
+# tar -cvf /tmp/tar.tar /tmp/menu-stdin.bz2 #and any other interesting file
+# uuencode /tmp/tar.tar /tmp/tar.tar | mail -s tar.tar menu@packages.debian.org
+
+If you want to try out a menu-method yourselve several times
+(with minor changes etc), you can use the /tmp/menu-stdin file
+this way to start your menu-method without starting update-menus:
+
+/etc/menu-methods/my_wm < /tmp/menu-stdin
+
+

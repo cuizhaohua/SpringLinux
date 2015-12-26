@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Odpiranje datoteke, ki se nahaja na strežniku</title>
+
+  <p>Pred odpiranjem datoteke na strežniku v <app>gedit</app> morate vedeti nekaj tehničnih podrobnosti o strežniku. Na primer, vedeti boste morali IP naslov ali URL strežnika in morda boste morali vedeti kakšno vrsto strežnika imate (na primer HTTP, FTP, itd.)</p>
+
+  <p>Nekatere vrste strežnika omejujejo kaj lahko storite z datotekami, ki so shranjene na strežniku. Tako boste morda lahko odprli datoteko na strežniku, vendar boste morali spremembe datoteke shraniti krajevno na svojem računalniku. </p>
+
+  <p>S tem v mislih izvedite naslednje korake za odprtje datoteke s strežnika z uporabo <app>gedit</app>:</p>
+
+    <steps>
+      <item><p>Izberite <guiseq><gui>Datoteka</gui><gui>Odpri</gui></guiseq> za prikaz pogovornega okna <gui>Odpiranje datotek</gui>.</p></item>
+      <item><p>Izberite ikono <gui>Svinčnik</gui> blizu vrha pogovornega okna <gui>Odpiranje datotek</gui>.</p></item>
+      <item><p>Vnesite IP naslov ali URL ustreznega strežnika.</p></item>
+      <item><p>Najdite in izberite datoteko, ki jo želite odpreti.</p></item>
+      <item><p>V spustnem seznamu Znakovno kodiranje izberite ustrezno znakovno kodiranje.</p></item>
+      <item><p>Kliknite <gui>Odpri</gui></p></item>
+    </steps>
+
+  <p>Veljavne vrste URI vključujejo http:, ftp:, file: in vse načine, ki jih podpira <app>vfs</app>.</p>
+
+  <note>
+    <p>Datoteke iz nekaterih vrsti URI-jev so odprte kot le za branje in vse spremembe, ki jih naredite, morajo biti shranjene na drugo mesto. HTTP na primer omogoča le branje datotek. Datoteke, ki so odprte preko FTP, so le za branje, ker vsi strežniki FTP ne delujejo pravilno s shranjevanjem oddaljenih datotek.</p>
+  </note>
+
+</page>

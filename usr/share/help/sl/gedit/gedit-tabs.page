@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="second"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Dodajanje in odstranjevanje zavihkov</title>
+  <p>Delo z zavihki v <app>gedit</app> vam omogoča nadzor nad več datotekami v enem oknu. Zavihek, ki je večji kot drugi zavihki, nakazuje, da je ta datoteka trenutno odprta. Manjši zavihki nakazujejo, da so druge datoteke na voljo za delo.</p>
+
+  <section id="gedit-adding-tabs">
+    <title>Dodajanje zavihkov</title>
+    <p>To add a new tab, create a new file with <keyseq><key>Ctrl</key>
+    <key>T</key></keyseq>. The tab will be added to the right side of any other
+    tabs.</p>
+  </section>
+
+  <section id="gedit-removing-tabs">
+    <title>Odstranjevanje zavihkov</title>
+    <p>To remove a tab, click the <gui style="button">×</gui> on the tab's
+    right side. To remove all open tabs, press <keyseq><key>Ctrl</key>
+    <key>Shift</key><key>W</key></keyseq>.</p>
+  </section>
+
+</page>

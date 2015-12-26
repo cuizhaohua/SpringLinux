@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-selection" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Použití přepínače <cmd>--file-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno pro výběr souboru</title>
+    <p>K vytvoření dialogového okna pro výběr souboru použijte přepínač <cmd>--file-selection</cmd>. Aplikace <app>Zenity</app> vrátí vybrané soubory nebo složky na standardní výstup. Výchozí režim dialogového okna pro výběr souboru je open (otevřít).</p>
+    <p>Dialogové okno pro výběr souboru podporuje následující přepínače:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>NÁZEV_SOUBORU</var></title>
+	<p>Určuje soubor nebo složku, které budou vybrané při prvním spuštění dialogového okna.</p>
+      </item>
+
+      <item>
+	<title><cmd>--multiple</cmd></title>
+	<p>Umožní v dialogovém okně vybrat více souborů naráz.</p>
+      </item>
+
+      <item>
+	<title><cmd>--directory</cmd></title>
+	<p>Umožní v dialogovém okně pouze výběr složek.</p>
+      </item>
+
+      <item>
+	<title><cmd>--save</cmd></title>
+	<p>Přepne dialogové okno pro výběr souboru do režimu save (uložit).</p>
+      </item>
+
+      <item>
+	<title><cmd>--separator</cmd>=<var>ODDĚLOVAČ</var></title>
+	<p>Určuje řetězec, který se použije k oddělení jednotlivých názvů souborů ve vráceném seznamu.</p>
+      </item>
+
+    </terms>
+
+    <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno pro výběr souboru:</p>
+
+<code>
+#!/bin/sh
+
+FILE=`zenity --file-selection --title="Výběr souboru"`
+
+case $? in
+         0)
+                echo "Vybrán soubor „$FILE“.";;
+         1)
+                echo "Nebyl vybrán žádný soubor.";;
+        -1)
+                echo "Vyskytla se neočekávaná chyba.";;
+esac
+</code>
+
+    <figure id="zenity-fileselection-screenshot">
+      <title>Příklad dialogového okna pro výběr souboru</title>
+      <desc>Ukázka dialogového okna <app>Zenity</app> pro výběr souboru</desc>
+      <media type="image" mime="image/png" src="figures/zenity-fileselection-screenshot.png"/>
+    </figure>
+</page>

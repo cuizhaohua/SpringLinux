@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="entry" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--entry</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>文本输入框</title>
+    <p>使用 <cmd>--entry</cmd> 选项创建一个文本输入对话框。<app>Zenity</app> 将文本框的内容返回到标准输出。</p>	
+    <p>文本输入框支持以下选项：</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>文本</var></title>
+	<p>指定在文本输入框中显示的文本。</p>
+      </item>
+
+      <item>
+        <title><cmd>--entry-text</cmd>=<var>文本</var></title>
+	<p>指定在文本框的文本域里显示的文本。</p>
+      </item>
+
+      <item>
+        <title><cmd>--hide-text</cmd></title>
+	<p>隐藏文本框中输入的字段内容。</p>
+      </item>
+
+    </terms>
+
+    <p>下面的脚本示范了如何创建一个文本输入对话框：</p>
+
+<code>
+#!/bin/sh
+
+if zenity --entry \
+--title="添加新配置" \
+--text="输入新配置的名称：" \
+--entry-text "新配置"
+  then echo $?
+  else echo "未输入名称"
+fi
+</code>
+
+
+    <figure id="zenity-entry-screenshot">
+      <title>文本框范例</title>
+      <desc><app>Zenity</app> 文本对话框范例</desc>
+      <media type="image" mime="image/png" src="figures/zenity-entry-screenshot.png"/>
+    </figure>
+</page>

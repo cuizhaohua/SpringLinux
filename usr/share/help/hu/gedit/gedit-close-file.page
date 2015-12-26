@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fájl bezárása</title>
+
+  <p>Fájl bezárásához a <app>geditben</app> válassza a <guiseq><gui>Fájl</gui><gui>Bezárás</gui></guiseq> menüpontot. Ennek alternatívájaként rákattinthat a fájl lapjának jobb oldalán megjelenő kis „X”-re, vagy megnyomhatja a <keyseq><key>Ctrl</key><key>W</key></keyseq> kombinációt.</p>
+  <p>Ezek bármelyike bezárja a fájlt a <app>geditben</app>. Ha a fájl mentetlen változtatásokat tartalmaz, akkor a <app>gedit</app> figyelmezteti a változtatások mentésére a fájl bezárása előtt.</p>
+
+</page>

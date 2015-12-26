@@ -1,0 +1,74 @@
+#!/bin/sh
+
+set -e
+
+VERSION=0.2.20080216.1-2
+PKG=ttf-arphic-ukai
+FILE=/etc/defoma/hints/${PKG}.hints
+
+# Remove a no-longer used conffile
+rm_conffile() {
+    local PKGNAME="$1"
+    local CONFFILE="$2"
+    [ -e "$CONFFILE" ] || return 0
+
+    local md5sum="$(md5sum $CONFFILE | sed -e 's/ .*//')"
+    local old_md5sum="$(dpkg-query -W -f='${Conffiles}' $PKGNAME | \
+            sed -n -e "\' $CONFFILE ' { s/ obsolete$//; s/.* //; s/newconffile//;p }")"
+    if [ "$md5sum" != "$old_md5sum" ]; then
+        echo "Obsolete conffile $CONFFILE has been modified by you."
+        echo "Saving as $CONFFILE.dpkg-bak ..."
+        mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+    else
+        echo "Removing obsolete conffile $CONFFILE ..."
+        rm -f "$CONFFILE"
+    fi
+}
+
+case "$1" in
+install|upgrade)
+    if dpkg --compare-versions "$2" lt-nl "$VERSION"; then
+	if [ -f $FILE ]; then
+        	if [ -x /usr/bin/defoma-font ]; then
+			defoma-font purge-all $FILE || true
+		fi
+	fi
+	rm_conffile $PKG $FILE
+    fi
+
+    # cleaning up old cruft
+
+    VERSION=0.2.20080216.1-1
+    PKG=ttf-arphic-ukai
+    FILE=/etc/defoma/hints/${PKG}-mbe.hints
+
+    if dpkg --compare-versions "$2" lt-nl "$VERSION"; then
+	if [ -f $FILE ]; then
+        	if [ -x /usr/bin/defoma-font ]; then
+			defoma-font purge-all $FILE || true
+		fi
+	fi
+	rm_conffile $PKG $FILE
+
+	OLDTTF=ukai.ttf
+	OLDMBETTF=ukaimbe.ttf
+
+	for X in [ /etc/fonts/conf.d/70-${PACKAGE}.conf \
+		   /etc/fonts/conf.d/${PACKAGE} \
+		   /usr/share/fonts/truetype/${OLDTTF} \
+		   /usr/share/fonts/truetype/${OLDMBETTF} \
+		   /var/lib/defoma/x-ttcidconf.d/dirs/TrueType/${OLDTTF} \
+		   /var/lib/defoma/x-ttcidconf.d/dirs/TrueType/${OLDMBETTF} \
+		]; do
+  		if [ -e ${X} ]; then
+    			rm -f ${X};
+  		fi;
+	done
+	if [ -d /usr/share/${PACKAGE} ]; then
+		rm -rf /usr/share/${PACKAGE};
+	fi
+    fi
+
+esac
+
+

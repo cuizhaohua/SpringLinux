@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# This file is actually used to create and to remove entries from a
+# policy. It automatically removes old versions, and if there is a new
+# one, it installs it. This allows the system to remove the "best" one
+# and have it pick the second-best, if installed.
+
+# Variables
+ASSEMBLY=$1
+VERSION=$2
+COMBINED="$VERSION.$ASSEMBLY"
+POLICY="policy.$VERSION.$ASSEMBLY"
+
+# Remove the old policy, if we have one installed
+if [ -f /usr/share/cli-common/packages.d/$POLICY.installcligac ]; then
+    /usr/share/cli-common/policy-remove $ASSEMBLY $VERSION > /dev/null
+fi
+
+# Choose the correct one
+for file in $(ls /usr/share/cli-common/policies.d/???-$COMBINED \
+    2>/dev/null | sort -rn)
+do
+    # Copy this one as a installcligac
+    cp $file /usr/share/cli-common/packages.d/$POLICY.installcligac
+
+    #echo "Installing GAC policy file ($POLICY) into available GACs"
+    /usr/share/cli-common/gac-package-install $POLICY > /dev/null || exit 1
+    	    
+    # We just deal with the one
+    exit
+done

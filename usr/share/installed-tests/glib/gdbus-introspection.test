@@ -1,0 +1,4 @@
+[Test]
+Type=session
+Exec=/usr/lib/glib2.0/installed-tests/glib/gdbus-introspection --tap
+Output=TAP

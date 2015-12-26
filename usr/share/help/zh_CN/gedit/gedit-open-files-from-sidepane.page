@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>从侧边栏查看和打开文件</title>
+  <p>在 <app>gedit</app> 中切换文件最常用的方法是，点击窗口上的标签栏。而在某些情况下，比如当您要操作大量文件时，您会发现使用<app>侧边栏</app>会更方便些。</p> 
+
+  <p>要激活<app>侧边栏</app>，点菜单 <guiseq><gui>查看</gui><gui>侧边栏</gui></guiseq>，或者按 <key>F9</key> 键。</p>
+
+  <note style="note">
+    <p>您可以在任何时候，按 <key>F9</key> 来切换<gui>侧边栏</gui>的显示。</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>从侧边栏打开文件</title>
+    <p>要从<app>侧边栏</app>中打开文件，首先要打开<app>侧边栏</app>，点菜单 <guiseq><gui>查看</gui><gui>侧边栏</gui></guiseq>，然后点面板底部的<gui>文件浏览器</gui>图标。</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>这将会激活<app>侧边栏</app>的<em>文件浏览器</em>模式，您可以使用面板顶部的访问按钮来定位文件的路径。</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>使用侧边栏来切换各个打开的文件</title>
+    <p>当您打开多个文件时，可以使用侧边栏来切换各个文件，要激活<app>侧边栏</app>的文件浏览功能，点击<gui>侧边栏</gui>底部的<gui>文件</gui>按钮图标。</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>点击<gui>侧边栏</gui>中的文件名，就会在工作区中显示它。</p>
+  </section>
+ 
+ </page>

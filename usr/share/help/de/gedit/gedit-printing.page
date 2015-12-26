@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dokumente drucken</title>
+
+    <note style="important">
+      <p>Drucken mit <app>gedit</app> erfordert einen bereits angeschlossenen und eingerichteten Drucker. Falls dies noch nicht geschehen ist, ziehen Sie bitte die <link href="help:gnome-help?printing">Hilfedokumentation zum Drucken in GNOME</link> zu Rate.</p>
+    </note>
+  
+  <p><app>gedit</app> ermöglicht sowohl das Drucken in eine Ausgabedatei als auch das Drucken auf Papier.</p>
+
+  <section id="print-preview">
+    <title>Druckvorschau</title>
+
+  <p>Vor dem eigentlichen Drucken Ihres Dokuments können Sie auch in einer <gui>Druckvorschau</gui> überprüfen, wie Ihr Dokument aussehen wird. So öffnen Sie die Druckvorschau:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Datei</gui><gui style="menuitem">Druckvorschau</gui></guiseq> oder drücken Sie alternativ <keyseq><key>Strg</key><key>Umschalt</key><key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Eine Vorschau Ihres Dokuments öffnet sich im selber Reiter wie die Datei. Schauen Sie sich die Vorschau mit Hilfe der Navigationsknöpfe und der Werkzeuge in der Werkzeugleiste oben im Reiter an. Klicken Sie auf <gui style="button">Vorschau verlassen</gui>, um zum Dokument zurückzukehren.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Drucken auf Papier</title>
+
+  <p>Sie können Ihre Dokumente mit einem lokalen oder entfernten Drucker ausdrucken. So drucken Sie eine Datei:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Datei</gui><gui style="menuitem">Drucken</gui><gui style="tab">Allgemein</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Wählen Sie den gewünschten Drucker aus der Liste der verfügbaren Drucker.</p>
+    </item>
+    <item>
+      <p>Verwenden Sie für eine Voransicht die <gui style="button">Druckvorschau</gui>. Sobald Sie mit den Einstellungen zufrieden sind, klicken Sie auf <gui style="button">Drucken</gui>, um die Datei mit einem Drucker auszugeben.</p>
+    </item>
+  </steps>
+
+  <p>Zusätzlich können Sie im Reiter <gui style="tab">Seite einrichten</gui>: <gui style="group">Layout</gui> und <gui style="group">Papier</gui> wählen. Diese Einstellungen sind in allen <app>GNOME</app>-Anwendungen verfügbar. Bitte lesen Sie dazu auch <link href="help:gnome-help/printing#paper">Optionen für Layout und Papier</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Mehrere Kopien und bestimmte Seitenzahlenbereiche drucken</title>
+
+    <p>Die Einstellungen <gui style="group">Bereich</gui> und <gui style="group">Kopien</gui> unterstützen Sie dabei:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Drucken in eine Datei</title>
+
+  <p>Sie können auch mit <app>gedit</app> in eine Datei drucken. So drucken Sie Ihre Dokumente in eine Datei eines anderen Formats:</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui style="menu">Datei</gui><gui style="menuitem">Drucken</gui><gui style="menuitem">In Datei drucken</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Drucken ist für die folgenden Dateiformate möglich, aus denen Sie frei wählen können:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Starten Sie den Druckvorgang, indem Sie auf <gui style="button">Drucken</gui> klicken.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

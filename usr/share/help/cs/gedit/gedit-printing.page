@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tisk dokumentů</title>
+
+    <note style="important">
+      <p>Abyste mohli z aplikace <app>gedit</app> tisknout, musíte mít připojenou a nastavenou tiskárnu. Pokud tomu tak doposud není, můžete najít příslušné rady v <link href="help:gnome-help/printing">nápovědě k tisku v GNOME</link>.</p>
+    </note>
+  
+  <p><app>gedit</app> umožňuje tisknout jak do souboru, tak na papír.</p>
+
+  <section id="print-preview">
+    <title>Náhled tisku</title>
+
+  <p>Než svůj dokument vytisknete, můžete si pomocí <gui>Náhled tisku</gui> prohlédnout, jak bude vytisklý dokument vypadat. Pro zobrazení náhledu:</p>
+
+  <steps>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Soubor</gui> <gui style="menuitem">Náhled tisku</gui></guiseq>. Případně můžete zmáčknout <keyseq><key>Ctrl</key> <key>Shift</key> <key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Náhled dokumentu se otevře v té samé kartě, jako soubor. Náhled si můžete procházet pomocí navigačních tlačítek a nástrojů na nástrojové liště v horní části karty s náhledem. Pro zavření náhledu a návrat do dokumentu klikněte na <gui style="button">Zavřít náhled</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Tisk na papír</title>
+
+  <p>Svůj dokument můžete vytisknout na tiskárně, jak místní, tak vzdálené. Postupujte následovně:</p>
+
+  <steps>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Soubor</gui> <gui style="menuitem">Tisk</gui> <gui style="tab">Obecné</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Ze seznamu dostupných tiskáren vyberte požadovanou tiskárnu.</p>
+    </item>
+    <item>
+      <p>Můžete si nechat zobrazit náhled souboru pomocí <gui style="button">Náhled tisku</gui> a teprve, až jej shledáte uspokojivým, klikněte na <gui style="button">Tisk</gui>, aby se odeslal do tiskárny.</p>
+    </item>
+  </steps>
+
+  <p>Navíc můžete na kartě <gui style="tab">Nastavení stránky</gui> upravit volby <gui style="group">Rozvržení</gui> a <gui style="group">Papír</gui>. Protože tyhle volby se obecně týkají všech programů v <app>GNOME</app>, podívejte se do nápovědy <link href="help:gnome-help/printing#paper">Volby Rozvržení a Papír</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Tisk více kopií a určeného rozsahu stránek</title>
+
+    <p>Může se vám hodit možnost nastavení voleb <gui style="group">Rozsah</gui> a <gui style="group">Kope</gui>:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Tisk do souboru</title>
+
+  <p><app>gedit</app> můžete použít také k tisku do souboru. Abyste vytiskli svůj dokument do souboru v některém z formátů:</p>
+
+  <steps>
+    <item>
+      <p>Vyberte <guiseq><gui style="menu">Soubor</gui> <gui style="menuitem">Tisk</gui> <gui style="menuitem">Tisk do souboru</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Při tisku do souboru máte na výběr z následujících formátů:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Kliknutím na <gui style="button">Tisk</gui> dokument vytisknete do souboru.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

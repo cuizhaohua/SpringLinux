@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="zh-TW">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Configure and use gedit Plugins</title>
+  <p>You can do more with <app>gedit</app> by using plugins. Several plugins 
+  are installed by default, but a large number of other plugins are available 
+  separately.</p>
+  
+  <note><p>Many Linux distributions make a group of these plugins available as 
+  a <app>gedit-plugins</app> package.  Install the <app>gedit-plugins</app> 
+  package to make these extra plugins available to <app>gedit</app>.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Default gedit Plugins</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Additional gedit Plugins</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

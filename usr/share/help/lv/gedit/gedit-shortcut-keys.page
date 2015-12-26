@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Īsinājumtaustiņi</title>
+
+  <p>Izmantojiet <gui>īsinājumtaustiņus</gui>, lai veiktu ierastas darbības ātrāk nekā ar peli un izvēlnēm. Zemāk uzskaitīti visi <app>gedit</app> īsinājumtaustiņi.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Īsinājumtaustiņi darbam ar cilnēm</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Pārslēgties uz nākamo cilni kreisajā pusē</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārslēgties uz nākamo cilni labajā pusē</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Aizvērt cilni</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Saglabāt visas cilnes</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Aizvērt visas cilnes</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reopen the most recently closed tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārslēgties uz <var>n</var>-to cilni</p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Jauna ciļņu grupa</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Iepriekšējā ciļņu grupa</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Nākamā ciļņu grupa</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Īsinājumtaustiņi darbam ar datnēm</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Izveidot jaunu dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Atvērt dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Saglabāt pašreizējo dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Saglabāt pašreizējo dokumentu ar jaunu nosaukumu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izdrukāt pašreizējo dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Drukas priekšskatījums</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Aizvērt pašreizējo dokumentu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Iziet no gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Īsinājumtaustiņi datņu rediģēšanai</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Pārvietot uz pašreizējās rindas sākumu</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārvietot uz pašreizējās rindas beigām</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Pāriet uz dokumenta sākumu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pāriet uz dokumenta beigām</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārvietot izvēlēto vārdu vienu vārdu pa labi</p></td>
+          <td><p><keyseq><key>Alt</key><key>Labā bulta</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārvietot izvēlēto vārdu vienu vārdu pa kreisi</p></td>
+          <td><p><keyseq><key>Alt</key><key>Kreisā bulta</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Atsaukt pēdējo darbību</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Atatsaukt pēdējo atsaukto darbību</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izgriezt atlasīto tekstu vai apgabalu un ievietot to starpliktuvē</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Iekopēt atlasīto tekstu vai apgabalu starpliktuvē</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Ielīmēt starpliktuves (clipboard) saturu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izvēlēties visu datnes tekstu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izdzēst pašreizējo rindu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārvietot izvēlēto rindu augšup</p></td>
+          <td><p><keyseq><key>Alt</key><key>Bulta augšup</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārvietot izvēlēto rindu lejup</p></td>
+          <td><p><keyseq><key>Alt</key><key>Bulta lejup</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pievienot tabulācijas pieturu</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Izņemt tabulācijas pieturu</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Konvertēt izvēlēto tekstu uz lielajiem burtiem</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārveidot izvēlēto tekstu uz mazajiem burtiem</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pārslēgt izvēlētā teksta burtu reģistru uz pretējo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Īsinājumtaustiņi saskarnes elementu parādīšanai un slēpšanai</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Parādīt / slēpt sānu rūti</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Parādīt / slēpt apakšējo rūti</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Īsinājumtaustiņi meklēšanai</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Atrast virkni (teksta fragmentu)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Atrast nākamo vietu, kur tekstā ir dotā virkne</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Atrast iepriekšējo vietu, kur tekstā ir dotā virkne</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Atrast un aizvietot</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Noņemt izcēlumu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Doties uz rindu</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Īsinājumtaustiņi rīkiem</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Pārbaudīt pareizrakstību</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Aizvākt atstarpes rindas beigās (ar spraudni)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Palaist "make" aktuālajā direktorijā (ar spraudni)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Direktorija saraksts (ar spraudni)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Īsinājumtaustiņi palīdzībai</title>
+      <thead>
+        <tr>
+          <td><p>Veicamā darbība</p></td>
+          <td><p>Īsinājumtaustiņi</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Atvērt gedit lietotāja ceļvedi</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

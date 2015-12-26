@@ -1,0 +1,12 @@
+auto lo br0
+iface lo inet loopback
+
+allow-hotplug eth0
+iface eth0 inet manual
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+
+iface br0 inet dhcp
+bridge_ports eth0 wlan0
+hwaddress ether 00:01:43:66:19:c7 00:01:43:d6:03:a1 # will be added at first boot

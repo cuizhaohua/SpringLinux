@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Aizvērt datni</title>
+
+  <p>Lai aizvērtu datni <app>gedit</app>, izvēlieties <guiseq><gui>Datne</gui><gui>Aizvērt</gui></guiseq> vai veiciet klikšķi uz "X" datnes cilnes labajā pusē, vai nospiediet <keyseq><key>Ctrl</key><key>W</key></keyseq>.</p>
+  <p>Jebkura no šīm darbībām aizvērs datni <app>gedit</app>. Ja datnē ir nesaglabātas izmaiņas, <app>gedit</app> piedāvās tās saglabāt, pirms aizvērt datni.</p>
+
+</page>

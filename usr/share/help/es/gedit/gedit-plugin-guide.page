@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configurar y usar los complementos de gedit</title>
+  <p>Puede hacer más con <app>gedit</app> usando los complementos. Varios complementos están instalados de forma predeterminada, pero existe un gran número de complementos disponibles de forma separada.</p>
+  
+  <note><p>La mayoría de las distribuciones de Linux agrupan estos complementos en un paquete llamado <app>gedit-plugins</app>. Instale el paquete <app>gedit-plugins</app> para hacer que estos complementos estén disponibles en <app>gedit</app>.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Complementos predeterminados de gedit</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Complementos adicionales de gedit</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

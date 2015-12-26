@@ -1,0 +1,2 @@
+# this package externalizes libpostproc now
+libpostproc52: embedded-library

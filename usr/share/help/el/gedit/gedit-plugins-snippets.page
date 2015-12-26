@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="el">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Χρησιμοποιήστε αποσπάσματα για να εισάγετε συχνά χρησιμοποιούμενα κομμάτια κειμένου.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αποσπάσματα</title>
+
+  <p>Τα <app>Αποσπάσματα</app> παρέχουν ένα βολικό τρόπο εισαγωγής επαναλαμβανόμενων κομματιών κώδικα στα έγγραφα σας. Για παράδειγμα, ένα απόσπασμα HTML για την ετικέτα <code>&lt;img&gt;</code> εισάγει το αρχικό και το τελικό της κομμάτι, όπως επίσης διορθώνει και τα μέρη που μπορείτε να τοποθετήσετε ορίσματα εικόνων. Αυτό κάνει το γράψιμο κώδικα ευκολότερο και γρηγορότερο.</p>
+
+  <section id="enable-snippets">
+    <title>Ενεργοποίηση προσθέτου αποσπασμάτων</title>
+
+    <p>Για ενεργοποίηση του προσθέτου <gui>Αποσπάσματα</gui>:</p>
+
+    <steps>
+      <item>
+        <p>Επιλέξτε <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Προτιμήσεις</gui> <gui style="tab">Πρόσθετα</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Επιλέξτε <gui style="menuitem">Αποσπάσματα</gui> για ενεργοποίηση του προσθέτου.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Αποσπάσματα περιήγησης</title>
+
+    <p>Για περιήγηση των διαθέσιμων αποσπασμάτων:</p>
+    <steps>
+      <item>
+        <p>Επιλέξτε <guiseq><gui style="menu">Εργαλεία</gui> <gui style="menuitem">Διαχείριση αποσπασμάτων</gui></guiseq>.</p>
+        <note style="important">
+          <p>Βεβαιωθείτε ότι η σύνταξη ορίζεται κατάλληλα. Η γραμμή κατάστασης στο κάτω μέρος του <app>gedit</app> εμφανίζει την τρέχουσα ρύθμιση της γλώσσας. Αυτή η ρύθμιση επιτρέπει την εισαγωγή των σωστών αποσπασμάτων. Το <app>Gedit</app> συνήθως ανιχνεύει τη γλώσσα ή τη σύνταξη του αρχείου που χρησιμοποιείτε, αλλά μερικές φορές μπορεί να χρειαστεί να τα ορίσετε.</p>
+          <figure>
+            <desc>Σε αυτό το παράδειγμα, η γλώσσα έχει ορισθεί σε HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Περιήγηση των αποσπασμάτων που είναι διαθέσιμα για τη γλώσσα σας ή τη σύνταξη.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Χρησιμοποιώντας αποσπάσματα</title>
+
+    <p>Για εισαγωγή αποσπάσματος στο τρέχον έγγραφο:</p>
+
+    <steps>
+      <item>
+        <p>Πληκτρολογήστε το επιθυμητό όνομα αποσπάσματος οπουδήποτε στο τρέχον έγγραφο.</p>
+      </item>
+      <item>
+        <p>Πατήστε <key>στηλοθέτης</key> για εισαγωγή του συσχετισμένου αποσπάσματος με τον όρο εισόδου.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Χρήση παραδείγματος αποσπάσματος</title>
+
+    <p>Για παράδειγμα, αν ορίσετε τη σύνταξη σας σε <em>HTML</em>, πληκτρολογήστε <code>head </code> και πατήστε το πλήκτρο <key>στηλοθέτη</key>. Το κείμενο θα πρέπει να συμπληρωθεί αυτόματα στο απόσπασμα ως:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Page Title&lt;/title&gt;
+      &lt;/head&gt;</code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Προσθήκη αποσπασμάτων</title>
+
+    <p>Μπορείτε να προσθέσετε νέα αποσπάσματα που δουλεύουν είτε γενικά (δηλαδή, είναι αγνωστικιστικές γλώσσες) ή μόνο σε συγκεκριμένη σύνταξη.</p>
+
+    <steps>
+      <item>
+        <p>Επιλέξτε <guiseq style="menu"><gui style="menuitem">Εργαλεία</gui> <gui style="menuitem">Διαχείριση αποσπασμάτων</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Από την πλευρική στήλη <gui>Διαχείριση αποσπασμάτων</gui> επιλέξτε την επιθυμητή σύνταξη και πατήστε στο κουμπί "+" για τη λίστα των υπαρχόντων αποσπασμάτων για την επιλεγμένη σύνταξη.</p>
+        <note style="tip">
+          <p>Για προσθήκη αποσπάσματος που δουλεύει γενικά (δηλαδή, όταν καμιά συγκεκριμένη σύνταξη ή γλώσσα δεν έχει οριστεί για το έγγραφο) επιλέξτε <gui>Γενικά</gui> από την πλευρική στήλη <gui>Διαχείριση αποσπασμάτων</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Για προσθήκη νέου αποσπάσματος, πατήστε στο εικονίδιο "συν" στην πλευρική στήλη <gui>Διαχείριση αποσπασμάτων</gui>.</p>
+      </item>
+      <item>
+        <p>Εισάγετε ένα όνομα για το νέο απόσπασμα. Το όνομα του αποσπάσματος μπορεί να είναι διαφορετικό από το απόσπασμα που θέλετε να προσθέσετε.</p>
+      </item>
+      <item>
+        <p>Στην ενότητα <gui style="group">Ενεργοποίηση</gui>, πρέπει να εισάγετε έναν όρο για την περιοχή κειμένου <gui style="input">έναυσμα στηλοθέτη:</gui>. Θα χρησιμοποιήσετε αυτόν τον όρο για εισαγωγή του αποσπάσματός σας.</p>
+        <note style="tip">
+          <p>Αν επιθυμείτε να εισάγετε ένα απόσπασμα με μια συντόμευση πληκτρολογίου, τότε πατήστε τον δείκτη του ποντικιού σας στην περιοχή κειμένου <gui style="input">Πλήκτρο συντόμευσης:</gui> και πατήστε τον επιθυμητό συνδυασμό των πλήκτρων. Αφού έχετε πατήσει και απελευθερώσει τα πλήκτρα, η συντόμευση πληκτρολογίου θα οριστεί.</p>
+        </note>
+      </item>
+      <item>
+        <p>Στην περιοχή κειμένου για <gui style="input">Επεξεργασία:</gui>, εισάγετε το επιθυμητό κείμενο για το απόσπασμα. Μπορείτε να χρησιμοποιήσετε <code>${n}</code> για να δείξετε τις μεταβλητές, όπου το <em>n</em> αντικαθίσταται με έναν αριθμό που αναπαριστά την αριθμητική σειρά των περιεχόμενων μεταβλητών.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Παράδειγμα νέου αποσπάσματος</title>
+
+    <p>Θεωρήστε ότι έχετε δημιουργήσει ένα απόσπασμα με τον όρο <var>greetings</var> στο <gui style="input">έναυσμα στηλοθέτη:</gui>. Η περιοχή κειμένου <gui style="input">Επεξεργασία:</gui> περιέχει:</p>
+
+    <code>
+      &lt;greetings&gt;Hello ${1:wonderful}${2:amazing} world!
+      &lt;/greetings&gt;
+    </code>
+
+    <p>Μπορείτε να εισάγετε αυτό το απόσπασμα πληκτρολογώντας <var>greetings</var> στο έγγραφο και πατώντας το πλήκτρο <key>στηλοθέτη</key>. Το ακόλουθο απόσπασμα κειμένου θα εισαχθεί:</p>
+
+    <code>
+      &lt;greetings&gt;Hello wonderfulamazing world!&lt;/greetings&gt;
+    </code>
+
+    <p>Οι λέξεις "wonderful" και "amazing" μπορούν να διατηρηθούν ή να διαγραφούν ανάλογα με την επιλογή χρήση σας. Για να γίνει αυτό, πατήστε <key>στηλοθέτης</key> για να επιλέξετε μεταξύ "wonderful" και "amazing" πατήστε το πλήκτρο <key>Διαγραφή</key> για να διαγράψετε την λιγότερο προτιμώμενη επιλογή.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

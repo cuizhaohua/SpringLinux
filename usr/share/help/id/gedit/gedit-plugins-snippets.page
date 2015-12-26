@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="id">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Memakai snippet untuk secara cepat menyisipkan penggalan teks yang sering dipakai</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Snippet</title>
+
+  <p><app>Snippet</app> menyediakan cara yang mudah untuk menyisipkan bagian kode yang berulang ke dalam berkas Anda. Sebagai contoh, suatu snippet HTML bagi tag <code>&lt;img&gt;</code> akan menyisipkan bagian pembuka dan penutup dari tag, maupun tempat-tempat tetap dimana Anda dapat memasukkan atribut gambar. Ini dapat membuat penulisan kode lebih mudah dan cepat.</p>
+
+  <section id="enable-snippets">
+    <title>Fungsikan Plugin Snippet</title>
+
+    <p>Untuk memfungsikan plugin <gui>Snippet</gui>:</p>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferensi</gui> <gui style="tab">Plugin</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Pilih <gui style="menuitem">Snippets</gui> untuk memfungsikan plugin.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Ramban Snippet</title>
+
+    <p>Untuk meramban snippet yang tersedia:</p>
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">Perkakas</gui> <gui style="menuitem">Kelola Snippet</gui></guiseq>.</p>
+        <note style="important">
+          <p>Pastikan bahwa sintaks ditata secara sesuai. Bilah status di dasar jendela <app>gedit</app> akan menampilkan pengaturan bahasa saat ini. Pengaturan bahasa inilah yang memungkinkan gedit menyisipkan snippet yang benar. <app>gedit</app> akan secara normal mendeteksi bahasa atau sintaks dari berkas yang sedang Anda pakai, tapi kadang-kadang Anda mungkin perlu menatanya.</p>
+          <figure>
+            <desc>Dalam contoh ini, bahasa diatur ke HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Ramban snippet yang tersedia bagi bahasa atau sintaks Anda.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Memakai Snippet</title>
+
+    <p>Untuk menyisipkan suatu snippet ke dalam dokumen Anda saat ini:</p>
+
+    <steps>
+      <item>
+        <p>Ketikkan nama snippet yang dikehendaki dimanapun dalam dokumen Anda saat ini.</p>
+      </item>
+      <item>
+        <p>Tekan <key>Tab</key> untuk menyisipkan snippet yang terkait dengan istilah masukan.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Cara Pakai Contoh Snippet</title>
+
+    <p>Sebagai contoh, bila Anda telah menata sintaks ke <em>HTML</em>, ketikkan <code>head</code>, dan tekan tombol <key>Tab</key>. Teks akan dilengkapi secara otomatis menjadi snippet:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Judul Halaman&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Menambah Snippet</title>
+
+    <p>Anda dapat menambahkan snippet baru yang bekerja secara global (yaitu, mereka agnostik bahasa) atau hanya dalam sintaks tertentu.</p>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq style="menu"><gui style="menuitem">Perkakas</gui> <gui style="menuitem">Kelola Snippet</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Dari bilah sisi <gui>Kelola Snippet</gui> pilih sintaks yang diinginkan dan klik pada tombol "+" untuk menampilkan daftar snippet yang ada untuk sintaks yang dipilih.</p>
+        <note style="tip">
+          <p>Untuk menambahkan snippet yang bekerja secara global (yaitu, ketika sintaks atau bahasa tertentu belum ditata bagi dokumen), pilih <gui>Global</gui> dari bilah sisi <gui>Kelola Snippet</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Untuk menambah suatu snippet baru, klik pada ikon "plus" dalam bilah sisi <gui>Kelola Snippet</gui>.</p>
+      </item>
+      <item>
+        <p>Masukkan suatu nama bagi snippet baru. Nama snippet bisa berbeda dari snippet yang ingin Anda tambahkan.</p>
+      </item>
+      <item>
+        <p>Di bawah bagian <gui style="group">Aktivasi</gui>, Anda mesti memasukkan suatu istilah bagi area teks <gui style="input">Pemicu tab:</gui>. Anda akan memakai istilah ini untuk menyisipkan snippet Anda.</p>
+        <note style="tip">
+          <p>Bila Anda hendak menyisipkan suatu snippet dengan pintasan papan tik, maka klik penunjuk tetikus Anda pada wilayah teks <gui style="input">Tombol pintasan:</gui> dan tekan kombinasi tombol yang dikehendaki. Sekali Anda telah menekan dan melepas tombol, pintasan papan tik akan ditata.</p>
+        </note>
+      </item>
+      <item>
+        <p>Di bahwa area teks bagi <gui style="input">Sunting:</gui>, masukkan teks yang dikehendaki bagi snippet. Anda bisa memakai <code>${n}</code> untuk mengindikasikan variabel, dimana <em>n</em> digantikan oleh suatu bilangan yang mewakili urutan numerik dari variabel yang disertakan.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Contoh Snippet Baru</title>
+
+    <p>Anggap saja Anda telah membuat suatu snippet dengan istilah <var>greetings</var> dalam in <gui style="input">Pemicu tab:</gui>. Area teks <gui style="input">Sunting:</gui> memuat:</p>
+
+    <code>
+      &lt;greetings&gt;Hello ${1:wonderful}${2:amazing} world!
+      &lt;/greetings&gt;
+    </code>
+
+    <p>Anda bisa menyisipkan snippet ini dengan mengetikkan <var>greetings</var> dalam dokumen dan menekan tombol <key>Tab</key>. Snippet teks berikut akan disisipkan:</p>
+
+    <code>
+      &lt;greetings&gt;Hello wonderfulamazing world!&lt;/greetings&gt;
+    </code>
+
+    <p>Kata "wonderful" dan "amazing" bisa dipertahankan atau dihapus bergantung kepada pilihan penggunaan Anda. Untuk melakukannya, tekan <key>Tab</key> untuk memilih antara "wonderful" atau "amazing" dan tekan <key>Del</key> untuk menghapus opsi yang paling tidak disukai.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

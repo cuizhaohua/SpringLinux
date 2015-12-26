@@ -1,0 +1,252 @@
+[  1086.819] 
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+[  1086.830] X Protocol Version 11, Revision 0
+[  1086.834] Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+[  1086.838] Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+[  1086.838] Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+[  1086.855] Build Date: 11 February 2015  01:18:06AM
+[  1086.860] xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+[  1086.864] Current version of pixman: 0.32.6
+[  1086.873] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  1086.873] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  1086.892] (==) Log file: "/var/log/Xorg.2.log", Time: Fri Jan  1 02:49:21 2010
+[  1086.898] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  1086.899] (==) No Layout section.  Using the first Screen section.
+[  1086.899] (==) No screen section available. Using defaults.
+[  1086.899] (**) |-->Screen "Default Screen Section" (0)
+[  1086.899] (**) |   |-->Monitor "<default monitor>"
+[  1086.900] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  1086.900] (==) Automatically adding devices
+[  1086.900] (==) Automatically enabling devices
+[  1086.900] (==) Automatically adding GPU devices
+[  1086.900] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[  1086.900] 	Entry deleted from font path.
+[  1086.900] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[  1086.900] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  1086.900] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  1086.900] (II) Loader magic: 0xb6fccf18
+[  1086.900] (II) Module ABI versions:
+[  1086.901] 	X.Org ANSI C Emulation: 0.4
+[  1086.901] 	X.Org Video Driver: 18.0
+[  1086.901] 	X.Org XInput driver : 21.0
+[  1086.901] 	X.Org Server Extension : 8.0
+[  1086.901] (II) no primary bus or device found
+[  1086.901] (II) LoadModule: "glx"
+[  1086.902] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  1086.917] (II) Module glx: vendor="X.Org Foundation"
+[  1086.917] 	compiled for 1.16.4, module version = 1.0.0
+[  1086.917] 	ABI class: X.Org Server Extension, version 8.0
+[  1086.917] (==) AIGLX enabled
+[  1086.917] (==) Matched modesetting as autoconfigured driver 0
+[  1086.917] (==) Matched fbdev as autoconfigured driver 1
+[  1086.917] (==) Assigned the driver to the xf86ConfigLayout
+[  1086.917] (II) LoadModule: "modesetting"
+[  1086.918] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  1086.919] (II) Module modesetting: vendor="X.Org Foundation"
+[  1086.919] 	compiled for 1.16.4, module version = 0.9.0
+[  1086.919] 	Module class: X.Org Video Driver
+[  1086.919] 	ABI class: X.Org Video Driver, version 18.0
+[  1086.919] (II) LoadModule: "fbdev"
+[  1086.924] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[  1086.925] (II) Module fbdev: vendor="X.Org Foundation"
+[  1086.925] 	compiled for 1.15.99.904, module version = 0.4.4
+[  1086.925] 	Module class: X.Org Video Driver
+[  1086.925] 	ABI class: X.Org Video Driver, version 18.0
+[  1086.925] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  1086.925] (II) FBDEV: driver for framebuffer: fbdev
+[  1086.925] (++) using VT number 2
+
+[  1086.925] (--) controlling tty is VT number 2, auto-enabling KeepTty
+[  1086.926] (WW) Falling back to old probe method for modesetting
+[  1086.926] (EE) open /dev/dri/card0: No such file or directory
+[  1086.926] (WW) Falling back to old probe method for fbdev
+[  1086.926] (II) Loading sub module "fbdevhw"
+[  1086.926] (II) LoadModule: "fbdevhw"
+[  1086.926] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  1086.927] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  1086.927] 	compiled for 1.16.4, module version = 0.0.2
+[  1086.927] 	ABI class: X.Org Video Driver, version 18.0
+[  1086.927] (II) FBDEV(0): using default device
+[  1086.928] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  1086.928] (II) FBDEV(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  1086.928] (==) FBDEV(0): Depth 24, (==) framebuffer bpp 32
+[  1086.928] (==) FBDEV(0): RGB weight 888
+[  1086.928] (==) FBDEV(0): Default visual is TrueColor
+[  1086.928] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1086.928] (II) FBDEV(0): hardware:  (video memory: 6144kB)
+[  1086.928] (II) FBDEV(0): checking modes against framebuffer device...
+[  1086.928] (II) FBDEV(0): checking modes against monitor...
+[  1086.928] (--) FBDEV(0): Virtual size is 1024x768 (pitch 1024)
+[  1086.928] (**) FBDEV(0):  Built-in mode "current": 65.2 MHz, 48.5 kHz, 60.2 Hz
+[  1086.928] (II) FBDEV(0): Modeline "current"x0.0   65.25  1024 1048 1184 1344  768 772 778 806 -hsync -vsync -csync (48.5 kHz b)
+[  1086.928] (==) FBDEV(0): DPI set to (96, 96)
+[  1086.928] (II) Loading sub module "fb"
+[  1086.928] (II) LoadModule: "fb"
+[  1086.929] (II) Loading /usr/lib/xorg/modules/libfb.so
+[  1086.930] (II) Module fb: vendor="X.Org Foundation"
+[  1086.930] 	compiled for 1.16.4, module version = 1.0.0
+[  1086.930] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  1086.930] (**) FBDEV(0): using shadow framebuffer
+[  1086.930] (II) Loading sub module "shadow"
+[  1086.930] (II) LoadModule: "shadow"
+[  1086.930] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[  1086.931] (II) Module shadow: vendor="X.Org Foundation"
+[  1086.931] 	compiled for 1.16.4, module version = 1.1.0
+[  1086.931] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  1086.931] (II) UnloadModule: "modesetting"
+[  1086.931] (II) Unloading modesetting
+[  1086.931] (==) Depth 24 pixmap format is 32 bpp
+[  1086.933] (==) FBDEV(0): Backing store enabled
+[  1086.934] (==) FBDEV(0): DPMS enabled
+[  1086.934] (==) RandR enabled
+[  1086.971] (II) SELinux: Disabled on system
+[  1086.976] (II) AIGLX: Screen 0 is not DRI2 capable
+[  1086.976] (EE) AIGLX: reverting to software rendering
+[  1086.993] (II) AIGLX: Loaded and initialized swrast
+[  1086.993] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  1087.244] (II) config/udev: Adding input device axp20-supplyer (/dev/input/event1)
+[  1087.244] (**) axp20-supplyer: Applying InputClass "evdev keyboard catchall"
+[  1087.245] (II) LoadModule: "evdev"
+[  1087.245] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[  1087.247] (II) Module evdev: vendor="X.Org Foundation"
+[  1087.247] 	compiled for 1.16.0, module version = 2.9.0
+[  1087.247] 	Module class: X.Org XInput Driver
+[  1087.247] 	ABI class: X.Org XInput driver, version 21.0
+[  1087.248] (II) Using input driver 'evdev' for 'axp20-supplyer'
+[  1087.248] (**) axp20-supplyer: always reports core events
+[  1087.248] (**) evdev: axp20-supplyer: Device: "/dev/input/event1"
+[  1087.248] (--) evdev: axp20-supplyer: Vendor 0x1 Product 0x1
+[  1087.248] (--) evdev: axp20-supplyer: Found keys
+[  1087.248] (II) evdev: axp20-supplyer: Configuring as keyboard
+[  1087.248] (**) Option "config_info" "udev:/sys/devices/platform/sunxi-i2c.0/i2c-0/0-0034/axp20-supplyer.28/input/input1/event1"
+[  1087.249] (II) XINPUT: Adding extended input device "axp20-supplyer" (type: KEYBOARD, id 6)
+[  1087.249] (**) Option "xkb_rules" "evdev"
+[  1087.249] (**) Option "xkb_model" "pc105"
+[  1087.249] (**) Option "xkb_layout" "us,de,fr,ua,ru"
+[  1087.249] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[  1087.403] (II) config/udev: Adding input device PixArt USB Optical Mouse (/dev/input/event2)
+[  1087.403] (**) PixArt USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[  1087.403] (II) Using input driver 'evdev' for 'PixArt USB Optical Mouse'
+[  1087.403] (**) PixArt USB Optical Mouse: always reports core events
+[  1087.403] (**) evdev: PixArt USB Optical Mouse: Device: "/dev/input/event2"
+[  1087.403] (--) evdev: PixArt USB Optical Mouse: Vendor 0x93a Product 0x2510
+[  1087.404] (--) evdev: PixArt USB Optical Mouse: Found 12 mouse buttons
+[  1087.404] (--) evdev: PixArt USB Optical Mouse: Found scroll wheel(s)
+[  1087.404] (--) evdev: PixArt USB Optical Mouse: Found relative axes
+[  1087.404] (--) evdev: PixArt USB Optical Mouse: Found x and y relative axes
+[  1087.404] (II) evdev: PixArt USB Optical Mouse: Configuring as mouse
+[  1087.404] (II) evdev: PixArt USB Optical Mouse: Adding scrollwheel support
+[  1087.404] (**) evdev: PixArt USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[  1087.404] (**) evdev: PixArt USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  1087.404] (**) Option "config_info" "udev:/sys/devices/platform/sw-ohci.1/usb3/3-1/3-1:1.0/input/input5/event2"
+[  1087.404] (II) XINPUT: Adding extended input device "PixArt USB Optical Mouse" (type: MOUSE, id 7)
+[  1087.405] (II) evdev: PixArt USB Optical Mouse: initialized for relative axes.
+[  1087.405] (**) PixArt USB Optical Mouse: (accel) keeping acceleration scheme 1
+[  1087.406] (**) PixArt USB Optical Mouse: (accel) acceleration profile 0
+[  1087.406] (**) PixArt USB Optical Mouse: (accel) acceleration factor: 2.000
+[  1087.406] (**) PixArt USB Optical Mouse: (accel) acceleration threshold: 4
+[  1087.407] (II) config/udev: Adding input device PixArt USB Optical Mouse (/dev/input/mouse0)
+[  1087.408] (II) No input driver specified, ignoring this device.
+[  1087.408] (II) This device may have been added with another device file.
+[  1087.409] (II) config/udev: Adding input device SIGMACHIP USB Keyboard (/dev/input/event3)
+[  1087.409] (**) SIGMACHIP USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[  1087.410] (II) Using input driver 'evdev' for 'SIGMACHIP USB Keyboard'
+[  1087.410] (**) SIGMACHIP USB Keyboard: always reports core events
+[  1087.410] (**) evdev: SIGMACHIP USB Keyboard: Device: "/dev/input/event3"
+[  1087.410] (--) evdev: SIGMACHIP USB Keyboard: Vendor 0x1c4f Product 0x2
+[  1087.410] (--) evdev: SIGMACHIP USB Keyboard: Found keys
+[  1087.410] (II) evdev: SIGMACHIP USB Keyboard: Configuring as keyboard
+[  1087.410] (**) Option "config_info" "udev:/sys/devices/platform/sw-ohci.2/usb5/5-1/5-1:1.0/input/input3/event3"
+[  1087.410] (II) XINPUT: Adding extended input device "SIGMACHIP USB Keyboard" (type: KEYBOARD, id 8)
+[  1087.410] (**) Option "xkb_rules" "evdev"
+[  1087.410] (**) Option "xkb_model" "pc105"
+[  1087.410] (**) Option "xkb_layout" "us,de,fr,ua,ru"
+[  1087.410] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[  1087.415] (II) config/udev: Adding input device SIGMACHIP USB Keyboard (/dev/input/event4)
+[  1087.415] (**) SIGMACHIP USB Keyboard: Applying InputClass "evdev keyboard catchall"
+[  1087.415] (II) Using input driver 'evdev' for 'SIGMACHIP USB Keyboard'
+[  1087.415] (**) SIGMACHIP USB Keyboard: always reports core events
+[  1087.415] (**) evdev: SIGMACHIP USB Keyboard: Device: "/dev/input/event4"
+[  1087.416] (--) evdev: SIGMACHIP USB Keyboard: Vendor 0x1c4f Product 0x2
+[  1087.416] (--) evdev: SIGMACHIP USB Keyboard: Found 1 mouse buttons
+[  1087.416] (--) evdev: SIGMACHIP USB Keyboard: Found scroll wheel(s)
+[  1087.416] (--) evdev: SIGMACHIP USB Keyboard: Found relative axes
+[  1087.416] (II) evdev: SIGMACHIP USB Keyboard: Forcing relative x/y axes to exist.
+[  1087.416] (--) evdev: SIGMACHIP USB Keyboard: Found absolute axes
+[  1087.416] (II) evdev: SIGMACHIP USB Keyboard: Forcing absolute x/y axes to exist.
+[  1087.416] (--) evdev: SIGMACHIP USB Keyboard: Found keys
+[  1087.416] (II) evdev: SIGMACHIP USB Keyboard: Configuring as mouse
+[  1087.416] (II) evdev: SIGMACHIP USB Keyboard: Configuring as keyboard
+[  1087.416] (II) evdev: SIGMACHIP USB Keyboard: Adding scrollwheel support
+[  1087.416] (**) evdev: SIGMACHIP USB Keyboard: YAxisMapping: buttons 4 and 5
+[  1087.416] (**) evdev: SIGMACHIP USB Keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  1087.416] (**) Option "config_info" "udev:/sys/devices/platform/sw-ohci.2/usb5/5-1/5-1:1.1/input/input4/event4"
+[  1087.416] (II) XINPUT: Adding extended input device "SIGMACHIP USB Keyboard" (type: KEYBOARD, id 9)
+[  1087.416] (**) Option "xkb_rules" "evdev"
+[  1087.417] (**) Option "xkb_model" "pc105"
+[  1087.417] (**) Option "xkb_layout" "us,de,fr,ua,ru"
+[  1087.417] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[  1087.418] (II) evdev: SIGMACHIP USB Keyboard: initialized for relative axes.
+[  1087.418] (WW) evdev: SIGMACHIP USB Keyboard: ignoring absolute axes.
+[  1087.419] (**) SIGMACHIP USB Keyboard: (accel) keeping acceleration scheme 1
+[  1087.419] (**) SIGMACHIP USB Keyboard: (accel) acceleration profile 0
+[  1087.419] (**) SIGMACHIP USB Keyboard: (accel) acceleration factor: 2.000
+[  1087.419] (**) SIGMACHIP USB Keyboard: (accel) acceleration threshold: 4
+[  1087.422] (II) config/udev: Adding input device sunxi-ir (/dev/input/event0)
+[  1087.422] (**) sunxi-ir: Applying InputClass "evdev keyboard catchall"
+[  1087.422] (II) Using input driver 'evdev' for 'sunxi-ir'
+[  1087.422] (**) sunxi-ir: always reports core events
+[  1087.422] (**) evdev: sunxi-ir: Device: "/dev/input/event0"
+[  1087.422] (--) evdev: sunxi-ir: Vendor 0x1 Product 0x1
+[  1087.422] (--) evdev: sunxi-ir: Found keys
+[  1087.422] (II) evdev: sunxi-ir: Configuring as keyboard
+[  1087.422] (**) Option "config_info" "udev:/sys/devices/virtual/input/input0/event0"
+[  1087.422] (II) XINPUT: Adding extended input device "sunxi-ir" (type: KEYBOARD, id 10)
+[  1087.422] (**) Option "xkb_rules" "evdev"
+[  1087.422] (**) Option "xkb_model" "pc105"
+[  1087.423] (**) Option "xkb_layout" "us,de,fr,ua,ru"
+[  1087.423] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[  1176.512] (II) evdev: sunxi-ir: Close
+[  1176.512] (II) UnloadModule: "evdev"
+[  1176.513] (II) evdev: SIGMACHIP USB Keyboard: Close
+[  1176.513] (II) UnloadModule: "evdev"
+[  1176.513] (II) evdev: SIGMACHIP USB Keyboard: Close
+[  1176.513] (II) UnloadModule: "evdev"
+[  1176.513] (II) evdev: PixArt USB Optical Mouse: Close
+[  1176.513] (II) UnloadModule: "evdev"
+[  1176.513] (II) evdev: axp20-supplyer: Close
+[  1176.513] (II) UnloadModule: "evdev"
+[  1176.525] (WW) xf86CloseConsole: KDSETMODE failed: Input/output error
+[  1176.525] (WW) xf86CloseConsole: VT_GETMODE failed: Input/output error
+[  1176.525] (EE) 
+Fatal server error:
+[  1176.525] (EE) xf86CloseConsole: VT_ACTIVATE failed: Input/output error
+[  1176.525] (EE) 
+[  1176.525] (EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+[  1176.525] (EE) Please also check the log file at "/var/log/Xorg.2.log" for additional information.
+[  1176.525] (EE) 
+[  1176.525] (EE) 
+[  1176.525] (EE) Backtrace:
+[  1176.525] (EE) 
+[  1176.525] (EE) Segmentation fault at address 0x4c
+[  1176.525] (EE) 
+FatalError re-entered, aborting
+[  1176.525] (EE) Caught signal 11 (Segmentation fault). Server aborting
+[  1176.525] (EE) 

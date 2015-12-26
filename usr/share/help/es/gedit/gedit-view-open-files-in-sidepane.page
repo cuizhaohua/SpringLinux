@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-view-open-files-in-sidepane" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+      <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email its:translate="no">dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ver una lista de archivos en el panel lateral</title>
+
+  <p>Mantener un seguimiento de un gran número de archivos usando pestañas puede ser difícil. Una forma de gestionar grandes números de archivos es verlos en un panel lateral. Los paneles laterales le permiten ver más archivos al mismo tiempo que sólo usando pestañas.</p>
+
+  <p>Para ver una lista de los archivos abiertos en un panel lateral, pulse <guiseq><gui style="menu">Ver</gui> <gui style="menuitem">Panel lateral</gui></guiseq>. Aparecerá un panel a la izquierda del área de trabajo con una lista de todos los archivos actualmente abiertos. Pulsar en un archivo en el panel lateral hará que su contenido se muestre en el área de trabajo.</p>
+
+  <p>El panel lateral también contiene una vista de <app>Examinador de archivos</app>. Si el panel lateral muestra una lista de archivos en lugar de los archivos abiertos actualmente, pulse <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"><span its:translate="yes">icono de documentos</span></media> en la parte inferior del panel para cambiar a la vista de <app>Documentos</app>.</p>
+
+  <note>
+    <p>El panel lateral sólo muestra los archivos abiertos en la ventana actual. Cuando hay varias ventanas abiertas, en el panel lateral sólo se muestran los archivos abiertos en la ventana actual.</p>
+  </note>
+</page>

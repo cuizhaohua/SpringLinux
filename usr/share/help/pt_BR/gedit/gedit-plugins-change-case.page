@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-change-case" xml:lang="pt-BR">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Altera entre maiúsculo e minúsculo o texto selecionado</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Alterar maiusculização</title>
+
+  <p>Este plug-in ajuda a alterar entre maiúsculo e minúsculo partes selecionadas do texto. Você pode usá-lo para mudar o texto para ser todo em minúsculo, todo em maiúsculo, para inverter a maiusculização, ou aplicar maiusculização de título. Para ativar este plug-in, selecione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferências</gui><gui>Plug-ins</gui><gui>Alterar maiusculização</gui></guiseq>.</p>
+
+  <p>Assim que o plug-in <em>Alterar maiusculização</em> estiver ativado, você poderá usá-lo completando os seguintes passos:</p>
+
+  <steps>
+    <item><p>Selecione a parte do texto que você quer alterar.</p></item>
+    <item><p>Selecione <guiseq><gui style="menu">gedit</gui> <gui>Alterar maiusculização</gui></guiseq>.</p>
+    </item>
+    <item><p>Escolha sua opção de formatação de texto desejada.</p></item> 
+  </steps>
+
+  <p>As atualizações para a formatação de texto terão lugar imediatamente.</p>
+
+  <note style="tip">
+    <p>A opção <gui>Inverter maiusculização</gui> converterá cada caractere de minúsculo para maiúsculo, e converterá cada maiúsculo para minúsculo.</p>
+    <p>A opção <gui>Iniciais maiúsculas</gui> converterá a primeira letra de cada palavra para maiúscula. Todas as outras letras serão convertidas para minúsculas.</p>
+  </note>
+
+  <note>
+    <p>Se você não destacou nenhum texto, o recurso <em>Alterar maiusculização</em> ficará acinzentado. Você precisa selecionar uma parte do texto antes de usar o recurso <em>Alterar maiusculização</em>.</p>
+  </note>
+
+</page>

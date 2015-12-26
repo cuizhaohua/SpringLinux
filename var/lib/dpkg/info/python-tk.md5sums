@@ -1,0 +1,7 @@
+a2d741da26cc3694403aec3a0c5acb4f  usr/lib/python2.7/lib-dynload/_tkinter.so
+7e17f61adab3dee1c39a63a513306e65  usr/share/doc/python-tk/README.Debian
+6d98505379cdac1ff21be68db897e611  usr/share/doc/python-tk/README.Tk
+fab4e02a4a95c800ffb87afe6ecefe4a  usr/share/doc/python-tk/changelog.Debian.armhf.gz
+b36f11f4e03ac0e9ca350562f5ffcbc7  usr/share/doc/python-tk/changelog.Debian.gz
+f556582cd5efd917f9f0ab04ec33a3c1  usr/share/doc/python-tk/copyright
+c64cde32d23b4e8b5f56369d8dd83173  usr/share/lintian/overrides/python-tk

@@ -1,0 +1,3673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Totem Reference Manual: BaconVideoWidget</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Totem Reference Manual">
+<link rel="up" href="core-api.html" title="Core API">
+<link rel="prev" href="totem-TotemPlugin.html" title="TotemPlugin">
+<link rel="next" href="api-index-full.html" title="Index of all symbols">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#BaconVideoWidget.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#BaconVideoWidget.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#BaconVideoWidget.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#BaconVideoWidget.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#BaconVideoWidget.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="totem-TotemPlugin.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="BaconVideoWidget"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="BaconVideoWidget.top_of_page"></a>BaconVideoWidget</span></h2>
+<p>BaconVideoWidget — video playing widget and abstraction</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="BaconVideoWidget.stability-level"></a><h2>Stability Level</h2>
+<acronym title="Unstable interfaces are experimental or transitional. They are typically used to
+give outside developers early access to new or rapidly changing technology, or
+to provide an interim solution to a problem where a more general solution is
+anticipated. No claims are made about either source or binary compatibility from
+one minor release to the next.
+
+The Unstable interface level is a warning that these interfaces are  subject to
+change without warning and should not be used in unbundled products.
+
+Given such caveats, customer impact need not be a factor when considering
+incompatible changes to an Unstable interface in a major or minor release.
+Nonetheless, when such changes are introduced, the changes should still be
+mentioned in the release notes for the affected release.
+"><span class="acronym">Unstable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-new" title="bacon_video_widget_new ()">bacon_video_widget_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-open" title="bacon_video_widget_open ()">bacon_video_widget_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-play" title="bacon_video_widget_play ()">bacon_video_widget_play</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-pause" title="bacon_video_widget_pause ()">bacon_video_widget_pause</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-seek" title="bacon_video_widget_seek ()">bacon_video_widget_seek</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-seek-time" title="bacon_video_widget_seek_time ()">bacon_video_widget_seek_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-stop" title="bacon_video_widget_stop ()">bacon_video_widget_stop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-close" title="bacon_video_widget_close ()">bacon_video_widget_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-can-direct-seek" title="bacon_video_widget_can_direct_seek ()">bacon_video_widget_can_direct_seek</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-can-get-frames" title="bacon_video_widget_can_get_frames ()">bacon_video_widget_can_get_frames</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-can-set-volume" title="bacon_video_widget_can_set_volume ()">bacon_video_widget_can_set_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-dvd-event" title="bacon_video_widget_dvd_event ()">bacon_video_widget_dvd_event</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-has-menus" title="bacon_video_widget_has_menus ()">bacon_video_widget_has_menus</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="BaconVideoWidget.html#BvwAspectRatio" title="enum BvwAspectRatio"><span class="returnvalue">BvwAspectRatio</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-aspect-ratio" title="bacon_video_widget_get_aspect_ratio ()">bacon_video_widget_get_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-aspect-ratio" title="bacon_video_widget_set_aspect_ratio ()">bacon_video_widget_set_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType"><span class="returnvalue">BvwAudioOutputType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-audio-output-type" title="bacon_video_widget_get_audio_output_type ()">bacon_video_widget_get_audio_output_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-audio-output-type" title="bacon_video_widget_set_audio_output_type ()">bacon_video_widget_set_audio_output_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GdkPixbuf</span> *
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-current-frame" title="bacon_video_widget_get_current_frame ()">bacon_video_widget_get_current_frame</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-current-time" title="bacon_video_widget_get_current_time ()">bacon_video_widget_get_current_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-deinterlacing" title="bacon_video_widget_get_deinterlacing ()">bacon_video_widget_get_deinterlacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-deinterlacing" title="bacon_video_widget_set_deinterlacing ()">bacon_video_widget_set_deinterlacing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-languages" title="bacon_video_widget_get_languages ()">bacon_video_widget_get_languages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-language" title="bacon_video_widget_get_language ()">bacon_video_widget_get_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-language" title="bacon_video_widget_set_language ()">bacon_video_widget_set_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-logo" title="bacon_video_widget_set_logo ()">bacon_video_widget_set_logo</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-logo-mode" title="bacon_video_widget_get_logo_mode ()">bacon_video_widget_get_logo_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-logo-mode" title="bacon_video_widget_set_logo_mode ()">bacon_video_widget_set_logo_mode</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-metadata" title="bacon_video_widget_get_metadata ()">bacon_video_widget_get_metadata</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="returnvalue">GOptionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-option-group" title="bacon_video_widget_get_option_group ()">bacon_video_widget_get_option_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-position" title="bacon_video_widget_get_position ()">bacon_video_widget_get_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-referrer" title="bacon_video_widget_set_referrer ()">bacon_video_widget_set_referrer</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="BaconVideoWidget.html#BvwRotation" title="enum BvwRotation"><span class="returnvalue">BvwRotation</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-rotation" title="bacon_video_widget_get_rotation ()">bacon_video_widget_get_rotation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-rotation" title="bacon_video_widget_set_rotation ()">bacon_video_widget_set_rotation</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-stream-length" title="bacon_video_widget_get_stream_length ()">bacon_video_widget_get_stream_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-subtitles" title="bacon_video_widget_get_subtitles ()">bacon_video_widget_get_subtitles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-subtitle" title="bacon_video_widget_get_subtitle ()">bacon_video_widget_get_subtitle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-subtitle" title="bacon_video_widget_set_subtitle ()">bacon_video_widget_set_subtitle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-text-subtitle" title="bacon_video_widget_set_text_subtitle ()">bacon_video_widget_set_text_subtitle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-subtitle-encoding" title="bacon_video_widget_set_subtitle_encoding ()">bacon_video_widget_set_subtitle_encoding</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-subtitle-font" title="bacon_video_widget_set_subtitle_font ()">bacon_video_widget_set_subtitle_font</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-user-agent" title="bacon_video_widget_set_user_agent ()">bacon_video_widget_set_user_agent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-video-property" title="bacon_video_widget_get_video_property ()">bacon_video_widget_get_video_property</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-video-property" title="bacon_video_widget_set_video_property ()">bacon_video_widget_set_video_property</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">double</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-volume" title="bacon_video_widget_get_volume ()">bacon_video_widget_get_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-volume" title="bacon_video_widget_set_volume ()">bacon_video_widget_set_volume</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="BaconVideoWidget.html#BvwZoomMode" title="enum BvwZoomMode"><span class="returnvalue">BvwZoomMode</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-zoom" title="bacon_video_widget_get_zoom ()">bacon_video_widget_get_zoom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-zoom" title="bacon_video_widget_set_zoom ()">bacon_video_widget_set_zoom</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-has-angles" title="bacon_video_widget_has_angles ()">bacon_video_widget_has_angles</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-next-angle" title="bacon_video_widget_set_next_angle ()">bacon_video_widget_set_next_angle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-has-next-track" title="bacon_video_widget_has_next_track ()">bacon_video_widget_has_next_track</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-has-previous-track" title="bacon_video_widget_has_previous_track ()">bacon_video_widget_has_previous_track</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-is-playing" title="bacon_video_widget_is_playing ()">bacon_video_widget_is_playing</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-is-seekable" title="bacon_video_widget_is_seekable ()">bacon_video_widget_is_seekable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-rate" title="bacon_video_widget_get_rate ()">bacon_video_widget_get_rate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-rate" title="bacon_video_widget_set_rate ()">bacon_video_widget_set_rate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-step" title="bacon_video_widget_step ()">bacon_video_widget_step</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType"><span class="type">BvwAudioOutputType</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--audio-output-type" title="The “audio-output-type” property">audio-output-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--av-offset" title="The “av-offset” property">av-offset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--brightness" title="The “brightness” property">brightness</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--contrast" title="The “contrast” property">contrast</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--deinterlacing" title="The “deinterlacing” property">deinterlacing</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--download-filename" title="The “download-filename” property">download-filename</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--hue" title="The “hue” property">hue</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--logo-mode" title="The “logo-mode” property">logo-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--playing" title="The “playing” property">playing</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--position" title="The “position” property">position</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--referrer" title="The “referrer” property">referrer</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--reveal-controls" title="The “reveal-controls” property">reveal-controls</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--saturation" title="The “saturation” property">saturation</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--seekable" title="The “seekable” property">seekable</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--stream-length" title="The “stream-length” property">stream-length</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--user-agent" title="The “user-agent” property">user-agent</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget--volume" title="The “volume” property">volume</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-buffering" title="The “buffering” signal">buffering</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-channels-change" title="The “channels-change” signal">channels-change</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-download-buffering" title="The “download-buffering” signal">download-buffering</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-eos" title="The “eos” signal">eos</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-error" title="The “error” signal">error</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-got-metadata" title="The “got-metadata” signal">got-metadata</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-got-redirect" title="The “got-redirect” signal">got-redirect</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-missing-plugins" title="The “missing-plugins” signal">missing-plugins</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-seek-requested" title="The “seek-requested” signal">seek-requested</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-tick" title="The “tick” signal">tick</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-volume-change-requested" title="The “volume-change-requested” signal">volume-change-requested</a></td>
+<td class="signal_flags">Run Last</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidget-struct" title="BaconVideoWidget">BaconVideoWidget</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BaconVideoWidgetClass" title="BaconVideoWidgetClass">BaconVideoWidgetClass</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwAspectRatio" title="enum BvwAspectRatio">BvwAspectRatio</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType">BvwAudioOutputType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwDVDEvent" title="enum BvwDVDEvent">BvwDVDEvent</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwMetadataType" title="enum BvwMetadataType">BvwMetadataType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwRotation" title="enum BvwRotation">BvwRotation</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwVideoProperty" title="enum BvwVideoProperty">BvwVideoProperty</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwZoomMode" title="enum BvwZoomMode">BvwZoomMode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="BaconVideoWidget.html#BvwError" title="enum BvwError">BvwError</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> GtkClutterEmbed
+                    <span class="lineart">╰──</span> BaconVideoWidget
+</pre>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+BaconVideoWidget implements
+ AtkImplementorIface,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a> and  <a href="http://library.gnome.org/devel/gio/unstable/GInitable.html">GInitable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;bacon-video-widget.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.description"></a><h2>Description</h2>
+<p><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> is a widget to play audio or video streams, with support for visualisations for audio-only streams. It has a GStreamer
+backend, and abstracts away the differences to provide a simple interface to the functionality required by Totem. It handles all the low-level
+audio and video work for Totem (or passes the work off to the backend).</p>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="bacon-video-widget-new"></a><h3>bacon_video_widget_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+bacon_video_widget_new (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Creates a new <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a>.</p>
+<p>A <a class="link" href="BaconVideoWidget.html#BvwError" title="enum BvwError"><span class="type">BvwError</span></a> will be returned on error.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.2.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.2.7"></a><h4>Returns</h4>
+<p> a new <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>; destroy with <a href="http://developer.gnome.org/gtk2/GtkWidget.html#gtk-widget-destroy"><code class="function">gtk_widget_destroy()</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-open"></a><h3>bacon_video_widget_open ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_open (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                         <em class="parameter"><code>const <span class="type">char</span> *mrl</code></em>);</pre>
+<p>Opens the given <em class="parameter"><code>mrl</code></em>
+ in <em class="parameter"><code>bvw</code></em>
+ for playing.</p>
+<p>The MRL is loaded and waiting to be played with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-play" title="bacon_video_widget_play ()"><code class="function">bacon_video_widget_play()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mrl</p></td>
+<td class="parameter_description"><p>an MRL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-play"></a><h3>bacon_video_widget_play ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_play (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Plays the currently-loaded video in <em class="parameter"><code>bvw</code></em>
+.</p>
+<p>Errors from the GStreamer backend will be returned asynchronously via the
+<a class="link" href="BaconVideoWidget.html#BaconVideoWidget-error" title="The “error” signal"><span class="type">“error”</span></a> signal, even if this function returns <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.4.7"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-pause"></a><h3>bacon_video_widget_pause ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_pause (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Pauses the current stream in the video widget.</p>
+<p>If a live stream is being played, playback is stopped entirely.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-seek"></a><h3>bacon_video_widget_seek ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_seek (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                         <em class="parameter"><code><span class="type">double</span> position</code></em>,
+                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Seeks the currently-playing stream to <em class="parameter"><code>position</code></em>
+ as a percentage of the total
+stream length.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>the percentage of the way through the stream to which to seek</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.6.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-seek-time"></a><h3>bacon_video_widget_seek_time ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_seek_time (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                              <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a> _time</code></em>,
+                              <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> accurate</code></em>,
+                              <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Seeks the currently-playing stream to the absolute position <em class="parameter"><code>time</code></em>
+, in milliseconds.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>_time</p></td>
+<td class="parameter_description"><p>the time to which to seek, in milliseconds</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>accurate</p></td>
+<td class="parameter_description"><p>whether to use accurate seek, an accurate seek might be slower for some formats (see GStreamer docs)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.7.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-stop"></a><h3>bacon_video_widget_stop ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_stop (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Stops playing the current stream and resets to the first position in the stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-close"></a><h3>bacon_video_widget_close ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_close (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Closes the current stream and frees the resources associated with it.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-can-direct-seek"></a><h3>bacon_video_widget_can_direct_seek ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_can_direct_seek (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Determines whether direct seeking is possible for the current stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.10.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if direct seeking is possible, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-can-get-frames"></a><h3>bacon_video_widget_can_get_frames ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_can_get_frames (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                   <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Determines whether individual frames from the current stream can
+be returned using <a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-current-frame" title="bacon_video_widget_get_current_frame ()"><code class="function">bacon_video_widget_get_current_frame()</code></a>.</p>
+<p>Frames cannot be returned for audio-only streams, unless visualisations
+are enabled.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.11.7"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if frames can be captured, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-can-set-volume"></a><h3>bacon_video_widget_can_set_volume ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_can_set_volume (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns whether the volume level can be set, given the current settings.</p>
+<p>The volume cannot be set if the audio output type is set to
+<a class="link" href="BaconVideoWidget.html#BVW-AUDIO-SOUND-AC3PASSTHRU:CAPS"><code class="literal">BVW_AUDIO_SOUND_AC3PASSTHRU</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.12.7"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the volume can be set, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-dvd-event"></a><h3>bacon_video_widget_dvd_event ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_dvd_event (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                              <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwDVDEvent" title="enum BvwDVDEvent"><span class="type">BvwDVDEvent</span></a> type</code></em>);</pre>
+<p>Issues a DVD navigation event to the video widget, such as one to skip to the
+next chapter, or navigate to the DVD title menu.</p>
+<p>This is a no-op if the current stream is not navigable.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.13.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of DVD event to issue</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-has-menus"></a><h3>bacon_video_widget_has_menus ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_has_menus (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns whether the widget is currently displaying a menu,
+such as a DVD menu.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.14.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a menu is displayed, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-aspect-ratio"></a><h3>bacon_video_widget_get_aspect_ratio ()</h3>
+<pre class="programlisting"><a class="link" href="BaconVideoWidget.html#BvwAspectRatio" title="enum BvwAspectRatio"><span class="returnvalue">BvwAspectRatio</span></a>
+bacon_video_widget_get_aspect_ratio (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the current aspect ratio used by the widget, from
+<a class="link" href="BaconVideoWidget.html#BvwAspectRatio" title="enum BvwAspectRatio"><span class="type">BvwAspectRatio</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.15.6"></a><h4>Returns</h4>
+<p> the aspect ratio</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-aspect-ratio"></a><h3>bacon_video_widget_set_aspect_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_aspect_ratio (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                     <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwAspectRatio" title="enum BvwAspectRatio"><span class="type">BvwAspectRatio</span></a> ratio</code></em>);</pre>
+<p>Sets the aspect ratio used by the widget, from <a class="link" href="BaconVideoWidget.html#BvwAspectRatio" title="enum BvwAspectRatio"><span class="type">BvwAspectRatio</span></a>.</p>
+<p>Changes to this take effect immediately.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.16.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ratio</p></td>
+<td class="parameter_description"><p>the new aspect ratio</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-audio-output-type"></a><h3>bacon_video_widget_get_audio_output_type ()</h3>
+<pre class="programlisting"><a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType"><span class="returnvalue">BvwAudioOutputType</span></a>
+bacon_video_widget_get_audio_output_type
+                               (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the current audio output type (e.g. how many speaker channels)
+from <a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType"><span class="type">BvwAudioOutputType</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.17.6"></a><h4>Returns</h4>
+<p> the audio output type, or <code class="code">-1</code></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-audio-output-type"></a><h3>bacon_video_widget_set_audio_output_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_audio_output_type
+                               (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType"><span class="type">BvwAudioOutputType</span></a> type</code></em>);</pre>
+<p>Sets the audio output type (number of speaker channels) in the video widget.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the new audio output type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-current-frame"></a><h3>bacon_video_widget_get_current_frame ()</h3>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *
+bacon_video_widget_get_current_frame (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns a <span class="type">GdkPixbuf</span> containing the current frame from the playing
+stream. This will wait for any pending seeks to complete before
+capturing the frame.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.19.6"></a><h4>Returns</h4>
+<p> the current frame, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>; unref with <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-current-time"></a><h3>bacon_video_widget_get_current_time ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+bacon_video_widget_get_current_time (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the current position in the stream, as the time (in milliseconds)
+since the beginning of the stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.20.6"></a><h4>Returns</h4>
+<p> time since the beginning of the stream, in milliseconds, or <code class="code">-1</code></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-deinterlacing"></a><h3>bacon_video_widget_get_deinterlacing ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_get_deinterlacing (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns whether deinterlacing of videos is enabled for this widget.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.21.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if automatic deinterlacing is enabled, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-deinterlacing"></a><h3>bacon_video_widget_set_deinterlacing ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_deinterlacing (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                      <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> deinterlace</code></em>);</pre>
+<p>Sets whether the widget should deinterlace videos.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>deinterlace</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if videos should be automatically deinterlaced, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-languages"></a><h3>bacon_video_widget_get_languages ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+bacon_video_widget_get_languages (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns a list of audio language tags, each in the form <code class="literal">AUDIO <em class="replaceable"><code>x</code></em></code>,
+where <em class="replaceable"><code>x</code></em> is the language index.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.23.6"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of audio language tags, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>; free each element with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> and the list with <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-language"></a><h3>bacon_video_widget_get_language ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+bacon_video_widget_get_language (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the index of the current audio language.</p>
+<p>If the widget is not playing, or the default language is in use, <code class="code">-1</code> will be returned.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.24.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.24.7"></a><h4>Returns</h4>
+<p> the audio language index</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-language"></a><h3>bacon_video_widget_set_language ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_language (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> language</code></em>);</pre>
+<p>Sets the audio language index for <em class="parameter"><code>bvw</code></em>
+. If <em class="parameter"><code>language</code></em>
+ is <code class="code">-1</code>, the default language will
+be used.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>language</p></td>
+<td class="parameter_description"><p>an audio language index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-logo"></a><h3>bacon_video_widget_set_logo ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_logo (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Sets the logo displayed on the video widget when no stream is loaded.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.26.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>the icon name of the logo</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-logo-mode"></a><h3>bacon_video_widget_get_logo_mode ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_get_logo_mode (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Gets whether the logo is displayed when no stream is loaded.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.27.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.27.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the logo is displayed, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-logo-mode"></a><h3>bacon_video_widget_set_logo_mode ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_logo_mode (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                  <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> logo_mode</code></em>);</pre>
+<p>Sets whether to display a logo set with <em class="parameter"><code>bacon_video_widget_set_logo</code></em>
+ when
+no stream is loaded. If <em class="parameter"><code>logo_mode</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, nothing will be displayed
+and the video widget will take up no space. Otherwise, the logo will be
+displayed and will requisition a corresponding amount of space.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.28.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>logo_mode</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> to display the logo, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-metadata"></a><h3>bacon_video_widget_get_metadata ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_get_metadata (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                 <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwMetadataType" title="enum BvwMetadataType"><span class="type">BvwMetadataType</span></a> type</code></em>,
+                                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
+<p>Provides metadata of the given <em class="parameter"><code>type</code></em>
+ about the current stream in <em class="parameter"><code>value</code></em>
+.</p>
+<p>Free the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> with <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#g-value-unset"><code class="function">g_value_unset()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.29.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of metadata to return</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-option-group"></a><h3>bacon_video_widget_get_option_group ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="returnvalue">GOptionGroup</span></a> *
+bacon_video_widget_get_option_group (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns the <a href="http://library.gnome.org/devel/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="type">GOptionGroup</span></a> containing command-line options for
+<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a>.</p>
+<p>Applications must call either this exactly once.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.30.6"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/glib/unstable/glib-Commandline-option-parser.html#GOptionGroup"><span class="type">GOptionGroup</span></a> giving command-line options for <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-position"></a><h3>bacon_video_widget_get_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+bacon_video_widget_get_position (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the current position in the stream, as a value between</p>
+<code class="code">0</code> and <code class="code">1</code>.
+<div class="refsect3">
+<a name="id-1.3.5.12.31.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.31.8"></a><h4>Returns</h4>
+<p> the current position, or <code class="code">-1</code></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-referrer"></a><h3>bacon_video_widget_set_referrer ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_referrer (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                 <em class="parameter"><code>const <span class="type">char</span> *referrer</code></em>);</pre>
+<p>Sets the HTTP referrer URI to use when fetching HTTP ressources.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.32.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>referrer</p></td>
+<td class="parameter_description"><p>a HTTP referrer URI, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-rotation"></a><h3>bacon_video_widget_get_rotation ()</h3>
+<pre class="programlisting"><a class="link" href="BaconVideoWidget.html#BvwRotation" title="enum BvwRotation"><span class="returnvalue">BvwRotation</span></a>
+bacon_video_widget_get_rotation (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the angle of rotation of the video, in degrees.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.33.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.33.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="BaconVideoWidget.html#BvwRotation" title="enum BvwRotation"><span class="type">BvwRotation</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-rotation"></a><h3>bacon_video_widget_set_rotation ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_rotation (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                 <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwRotation" title="enum BvwRotation"><span class="type">BvwRotation</span></a> rotation</code></em>);</pre>
+<p>Sets the rotation to be applied to the video when it is displayed.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.34.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>rotation</p></td>
+<td class="parameter_description"><p>the <a class="link" href="BaconVideoWidget.html#BvwRotation" title="enum BvwRotation"><span class="type">BvwRotation</span></a> of the video in degrees</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-stream-length"></a><h3>bacon_video_widget_get_stream_length ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="returnvalue">gint64</span></a>
+bacon_video_widget_get_stream_length (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the total length of the stream, in milliseconds.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.35.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.35.6"></a><h4>Returns</h4>
+<p> the stream length, in milliseconds, or <code class="code">-1</code></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-subtitles"></a><h3>bacon_video_widget_get_subtitles ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+bacon_video_widget_get_subtitles (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns a list of subtitle tags, each in the form <code class="literal">TEXT <em class="replaceable"><code>x</code></em></code>,
+where <em class="replaceable"><code>x</code></em> is the subtitle index.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.36.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.36.6"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of subtitle tags, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>; free each element with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> and the list with <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-subtitle"></a><h3>bacon_video_widget_get_subtitle ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+bacon_video_widget_get_subtitle (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the index of the current subtitles.</p>
+<p>If the widget is not playing, <code class="code">-2</code> will be returned. If no subtitles are
+being used, <code class="code">-1</code> is returned.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.37.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.37.7"></a><h4>Returns</h4>
+<p> the subtitle index</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-subtitle"></a><h3>bacon_video_widget_set_subtitle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_subtitle (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                 <em class="parameter"><code><span class="type">int</span> subtitle</code></em>);</pre>
+<p>Sets the subtitle index for <em class="parameter"><code>bvw</code></em>
+. If <em class="parameter"><code>subtitle</code></em>
+ is <code class="code">-1</code>, no subtitles will
+be used.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.38.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>subtitle</p></td>
+<td class="parameter_description"><p>a subtitle index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-text-subtitle"></a><h3>bacon_video_widget_set_text_subtitle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_text_subtitle (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                      <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *subtitle_uri</code></em>);</pre>
+<p>Sets the URI for the text subtitle file to be displayed alongside
+the current video. Use <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you want to unload the current text subtitle
+file being used.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.39.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>subtitle_uri</p></td>
+<td class="parameter_description"><p> the URI of a subtitle file, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-subtitle-encoding"></a><h3>bacon_video_widget_set_subtitle_encoding ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_subtitle_encoding
+                               (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *encoding</code></em>);</pre>
+<p>Sets the encoding system for the subtitles, so that they can be decoded
+properly.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.40.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>encoding</p></td>
+<td class="parameter_description"><p>an encoding system</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-subtitle-font"></a><h3>bacon_video_widget_set_subtitle_font ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_subtitle_font (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                      <em class="parameter"><code>const <span class="type">char</span> *font</code></em>);</pre>
+<p>Sets the font size and style in which to display subtitles.</p>
+<p><em class="parameter"><code>font</code></em>
+ is a Pango font description string, as understood by
+<code class="function">pango_font_description_from_string()</code>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.41.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>font</p></td>
+<td class="parameter_description"><p>a font description string</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-user-agent"></a><h3>bacon_video_widget_set_user_agent ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_user_agent (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                   <em class="parameter"><code>const <span class="type">char</span> *user_agent</code></em>);</pre>
+<p>Sets the HTTP user agent string to use when fetching HTTP ressources.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.42.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_agent</p></td>
+<td class="parameter_description"><p>a HTTP user agent string, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to use the default</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-video-property"></a><h3>bacon_video_widget_get_video_property ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+bacon_video_widget_get_video_property (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                       <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwVideoProperty" title="enum BvwVideoProperty"><span class="type">BvwVideoProperty</span></a> type</code></em>);</pre>
+<p>Returns the given property of the video display, such as its brightness or saturation.</p>
+<p>It is returned as a percentage in the full range of integer values; from <code class="code">0</code>
+to <code class="code">65535</code> (inclusive), where <code class="code">32768</code> is the default.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.43.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of property</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.43.7"></a><h4>Returns</h4>
+<p> the property's value, in the range <code class="code">0</code> to <code class="code">65535</code></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-video-property"></a><h3>bacon_video_widget_set_video_property ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_video_property (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                                       <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwVideoProperty" title="enum BvwVideoProperty"><span class="type">BvwVideoProperty</span></a> type</code></em>,
+                                       <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>Sets the given property of the video display, such as its brightness or saturation.</p>
+<p>It should be given as a percentage in the full range of integer values; from <code class="code">0</code>
+to <code class="code">65535</code> (inclusive), where <code class="code">32768</code> is the default.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.44.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of property</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the property's value, in the range <code class="code">0</code> to <code class="code">65535</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-volume"></a><h3>bacon_video_widget_get_volume ()</h3>
+<pre class="programlisting"><span class="returnvalue">double</span>
+bacon_video_widget_get_volume (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the current volume level, as a percentage between <code class="code">0</code> and <code class="code">1</code>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.45.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.45.6"></a><h4>Returns</h4>
+<p> the volume as a percentage between <code class="code">0</code> and <code class="code">1</code></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-volume"></a><h3>bacon_video_widget_set_volume ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_volume (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                               <em class="parameter"><code><span class="type">double</span> volume</code></em>);</pre>
+<p>Sets the volume level of the stream as a percentage between <code class="code">0</code> and <code class="code">1</code>.</p>
+<p>If <a class="link" href="BaconVideoWidget.html#bacon-video-widget-can-set-volume" title="bacon_video_widget_can_set_volume ()"><code class="function">bacon_video_widget_can_set_volume()</code></a> returns <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, this is a no-op.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.46.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>volume</p></td>
+<td class="parameter_description"><p>the new volume level, as a percentage between <code class="code">0</code> and <code class="code">1</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-zoom"></a><h3>bacon_video_widget_get_zoom ()</h3>
+<pre class="programlisting"><a class="link" href="BaconVideoWidget.html#BvwZoomMode" title="enum BvwZoomMode"><span class="returnvalue">BvwZoomMode</span></a>
+bacon_video_widget_get_zoom (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns the zoom mode applied to videos displayed by the widget.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.47.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.47.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="BaconVideoWidget.html#BvwZoomMode" title="enum BvwZoomMode"><span class="type">BvwZoomMode</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-zoom"></a><h3>bacon_video_widget_set_zoom ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_zoom (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                             <em class="parameter"><code><a class="link" href="BaconVideoWidget.html#BvwZoomMode" title="enum BvwZoomMode"><span class="type">BvwZoomMode</span></a> mode</code></em>);</pre>
+<p>Sets the zoom type applied to the video when it is displayed.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.48.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>the <a class="link" href="BaconVideoWidget.html#BvwZoomMode" title="enum BvwZoomMode"><span class="type">BvwZoomMode</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-has-angles"></a><h3>bacon_video_widget_has_angles ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_has_angles (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns whether the widget is currently playing a stream with
+multiple angles.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.49.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.49.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the current video stream has multiple
+angles, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-next-angle"></a><h3>bacon_video_widget_set_next_angle ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+bacon_video_widget_set_next_angle (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Select the next angle, or video track in the playing stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.50.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-has-next-track"></a><h3>bacon_video_widget_has_next_track ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_has_next_track (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Determines whether there is another track after the current one, typically
+as a chapter on a DVD.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.51.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.51.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there is another track, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-has-previous-track"></a><h3>bacon_video_widget_has_previous_track ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_has_previous_track (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Determines whether there is another track before the current one, typically
+as a chapter on a DVD.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.52.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.52.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if there is another track, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-is-playing"></a><h3>bacon_video_widget_is_playing ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_is_playing (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns whether the widget is currently playing a stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.53.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.53.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a stream is playing, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-is-seekable"></a><h3>bacon_video_widget_is_seekable ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_is_seekable (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Returns whether seeking is possible in the current stream.</p>
+<p>If no stream is loaded, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> is returned.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.54.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.54.7"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the stream is seekable, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-get-rate"></a><h3>bacon_video_widget_get_rate ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gfloat"><span class="returnvalue">gfloat</span></a>
+bacon_video_widget_get_rate (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>);</pre>
+<p>Get the current playback rate, with 1.0 being normal rate.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.55.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.55.6"></a><h4>Returns</h4>
+<p> the current playback rate</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-set-rate"></a><h3>bacon_video_widget_set_rate ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_set_rate (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> new_rate</code></em>);</pre>
+<p>Sets the current playback rate.</p>
+<div class="refsect3">
+<a name="id-1.3.5.12.56.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>new_rate</p></td>
+<td class="parameter_description"><p>the new playback rate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.56.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> on failure.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="bacon-video-widget-step"></a><h3>bacon_video_widget_step ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+bacon_video_widget_step (<em class="parameter"><code><a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *bvw</code></em>,
+                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> forward</code></em>,
+                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Step one frame forward, if <em class="parameter"><code>forward</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, or backwards, if <em class="parameter"><code>forward</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p>
+<div class="refsect3">
+<a name="id-1.3.5.12.57.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>bvw</p></td>
+<td class="parameter_description"><p>a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>forward</p></td>
+<td class="parameter_description"><p>the direction of the frame step</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.12.57.6"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="BaconVideoWidget-struct"></a><h3>BaconVideoWidget</h3>
+<pre class="programlisting">typedef struct _BaconVideoWidget BaconVideoWidget;</pre>
+<p>All the fields in the <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> structure are private and should never be accessed directly.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidgetClass"></a><h3>BaconVideoWidgetClass</h3>
+<pre class="programlisting">typedef struct {
+} BaconVideoWidgetClass;
+</pre>
+<p>All the fields in the <a class="link" href="BaconVideoWidget.html#BaconVideoWidgetClass" title="BaconVideoWidgetClass"><span class="type">BaconVideoWidgetClass</span></a> structure are private and should never be accessed directly.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwAspectRatio"></a><h3>enum BvwAspectRatio</h3>
+<p>The pixel aspect ratios available in which to display videos using
+<em class="parameter"><code><a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-aspect-ratio" title="bacon_video_widget_set_aspect_ratio ()"><code class="function">bacon_video_widget_set_aspect_ratio()</code></a></code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-RATIO-AUTO:CAPS"></a>BVW_RATIO_AUTO</p></td>
+<td class="enum_member_description">
+<p>automatic</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-RATIO-SQUARE:CAPS"></a>BVW_RATIO_SQUARE</p></td>
+<td class="enum_member_description">
+<p>square (1:1)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-RATIO-FOURBYTHREE:CAPS"></a>BVW_RATIO_FOURBYTHREE</p></td>
+<td class="enum_member_description">
+<p>four-by-three (4:3)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-RATIO-ANAMORPHIC:CAPS"></a>BVW_RATIO_ANAMORPHIC</p></td>
+<td class="enum_member_description">
+<p>anamorphic (16:9)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-RATIO-DVB:CAPS"></a>BVW_RATIO_DVB</p></td>
+<td class="enum_member_description">
+<p>DVB (20:9)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwAudioOutputType"></a><h3>enum BvwAudioOutputType</h3>
+<p>The audio output types available for use with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-audio-output-type" title="bacon_video_widget_set_audio_output_type ()"><code class="function">bacon_video_widget_set_audio_output_type()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.5.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-AUDIO-SOUND-STEREO:CAPS"></a>BVW_AUDIO_SOUND_STEREO</p></td>
+<td class="enum_member_description">
+<p>stereo output</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-AUDIO-SOUND-4CHANNEL:CAPS"></a>BVW_AUDIO_SOUND_4CHANNEL</p></td>
+<td class="enum_member_description">
+<p>4-channel output</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-AUDIO-SOUND-41CHANNEL:CAPS"></a>BVW_AUDIO_SOUND_41CHANNEL</p></td>
+<td class="enum_member_description">
+<p>4.1-channel output</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-AUDIO-SOUND-5CHANNEL:CAPS"></a>BVW_AUDIO_SOUND_5CHANNEL</p></td>
+<td class="enum_member_description">
+<p>5-channel output</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-AUDIO-SOUND-51CHANNEL:CAPS"></a>BVW_AUDIO_SOUND_51CHANNEL</p></td>
+<td class="enum_member_description">
+<p>5.1-channel output</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-AUDIO-SOUND-AC3PASSTHRU:CAPS"></a>BVW_AUDIO_SOUND_AC3PASSTHRU</p></td>
+<td class="enum_member_description">
+<p>AC3 passthrough output</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwDVDEvent"></a><h3>enum BvwDVDEvent</h3>
+<p>The DVD navigation actions available to fire as DVD events to
+the <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.6.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ROOT-MENU:CAPS"></a>BVW_DVD_ROOT_MENU</p></td>
+<td class="enum_member_description">
+<p>root menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-TITLE-MENU:CAPS"></a>BVW_DVD_TITLE_MENU</p></td>
+<td class="enum_member_description">
+<p>title menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-SUBPICTURE-MENU:CAPS"></a>BVW_DVD_SUBPICTURE_MENU</p></td>
+<td class="enum_member_description">
+<p>subpicture menu (if available)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-AUDIO-MENU:CAPS"></a>BVW_DVD_AUDIO_MENU</p></td>
+<td class="enum_member_description">
+<p>audio menu (if available)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ANGLE-MENU:CAPS"></a>BVW_DVD_ANGLE_MENU</p></td>
+<td class="enum_member_description">
+<p>angle menu (if available)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-CHAPTER-MENU:CAPS"></a>BVW_DVD_CHAPTER_MENU</p></td>
+<td class="enum_member_description">
+<p>chapter menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-NEXT-CHAPTER:CAPS"></a>BVW_DVD_NEXT_CHAPTER</p></td>
+<td class="enum_member_description">
+<p>the next chapter</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-PREV-CHAPTER:CAPS"></a>BVW_DVD_PREV_CHAPTER</p></td>
+<td class="enum_member_description">
+<p>the previous chapter</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-NEXT-TITLE:CAPS"></a>BVW_DVD_NEXT_TITLE</p></td>
+<td class="enum_member_description">
+<p>the next title in the current chapter</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-PREV-TITLE:CAPS"></a>BVW_DVD_PREV_TITLE</p></td>
+<td class="enum_member_description">
+<p>the previous title in the current chapter</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ROOT-MENU-UP:CAPS"></a>BVW_DVD_ROOT_MENU_UP</p></td>
+<td class="enum_member_description">
+<p>go up in the menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ROOT-MENU-DOWN:CAPS"></a>BVW_DVD_ROOT_MENU_DOWN</p></td>
+<td class="enum_member_description">
+<p>go down in the menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ROOT-MENU-LEFT:CAPS"></a>BVW_DVD_ROOT_MENU_LEFT</p></td>
+<td class="enum_member_description">
+<p>go left in the menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ROOT-MENU-RIGHT:CAPS"></a>BVW_DVD_ROOT_MENU_RIGHT</p></td>
+<td class="enum_member_description">
+<p>go right in the menu</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-DVD-ROOT-MENU-SELECT:CAPS"></a>BVW_DVD_ROOT_MENU_SELECT</p></td>
+<td class="enum_member_description">
+<p>select the current menu entry</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwMetadataType"></a><h3>enum BvwMetadataType</h3>
+<p>The different metadata available for querying from a <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a>
+stream with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-metadata" title="bacon_video_widget_get_metadata ()"><code class="function">bacon_video_widget_get_metadata()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.7.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-TITLE:CAPS"></a>BVW_INFO_TITLE</p></td>
+<td class="enum_member_description">
+<p>the stream's title</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-ARTIST:CAPS"></a>BVW_INFO_ARTIST</p></td>
+<td class="enum_member_description">
+<p>the artist who created the work</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-YEAR:CAPS"></a>BVW_INFO_YEAR</p></td>
+<td class="enum_member_description">
+<p>the year in which the work was created</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-COMMENT:CAPS"></a>BVW_INFO_COMMENT</p></td>
+<td class="enum_member_description">
+<p>a comment attached to the stream</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-ALBUM:CAPS"></a>BVW_INFO_ALBUM</p></td>
+<td class="enum_member_description">
+<p>the album in which the work was released</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-DURATION:CAPS"></a>BVW_INFO_DURATION</p></td>
+<td class="enum_member_description">
+<p>the stream's duration, in seconds</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-TRACK-NUMBER:CAPS"></a>BVW_INFO_TRACK_NUMBER</p></td>
+<td class="enum_member_description">
+<p>the track number of the work on the album</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-COVER:CAPS"></a>BVW_INFO_COVER</p></td>
+<td class="enum_member_description">
+<p>a <span class="type">GdkPixbuf</span> of the cover artwork</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-CONTAINER:CAPS"></a>BVW_INFO_CONTAINER</p></td>
+<td class="enum_member_description">
+<p>the type of stream container</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-HAS-VIDEO:CAPS"></a>BVW_INFO_HAS_VIDEO</p></td>
+<td class="enum_member_description">
+<p>whether the stream has video</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-DIMENSION-X:CAPS"></a>BVW_INFO_DIMENSION_X</p></td>
+<td class="enum_member_description">
+<p>the video's width, in pixels</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-DIMENSION-Y:CAPS"></a>BVW_INFO_DIMENSION_Y</p></td>
+<td class="enum_member_description">
+<p>the video's height, in pixels</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-VIDEO-BITRATE:CAPS"></a>BVW_INFO_VIDEO_BITRATE</p></td>
+<td class="enum_member_description">
+<p>the video's bitrate, in kilobits per second</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-VIDEO-CODEC:CAPS"></a>BVW_INFO_VIDEO_CODEC</p></td>
+<td class="enum_member_description">
+<p>the video's codec</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-FPS:CAPS"></a>BVW_INFO_FPS</p></td>
+<td class="enum_member_description">
+<p>the number of frames per second in the video</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-HAS-AUDIO:CAPS"></a>BVW_INFO_HAS_AUDIO</p></td>
+<td class="enum_member_description">
+<p>whether the stream has audio</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-AUDIO-BITRATE:CAPS"></a>BVW_INFO_AUDIO_BITRATE</p></td>
+<td class="enum_member_description">
+<p>the audio's bitrate, in kilobits per second</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-AUDIO-CODEC:CAPS"></a>BVW_INFO_AUDIO_CODEC</p></td>
+<td class="enum_member_description">
+<p>the audio's codec</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-AUDIO-SAMPLE-RATE:CAPS"></a>BVW_INFO_AUDIO_SAMPLE_RATE</p></td>
+<td class="enum_member_description">
+<p>the audio sample rate, in bits per second</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-INFO-AUDIO-CHANNELS:CAPS"></a>BVW_INFO_AUDIO_CHANNELS</p></td>
+<td class="enum_member_description">
+<p>a string describing the number of audio channels in the stream</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwRotation"></a><h3>enum BvwRotation</h3>
+<p>The rotation is used by the video widget, as set by
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-rotation" title="bacon_video_widget_set_rotation ()"><code class="function">bacon_video_widget_set_rotation()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.8.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ROTATION-R-ZERO:CAPS"></a>BVW_ROTATION_R_ZERO</p></td>
+<td class="enum_member_description">
+<p>No rotation</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ROTATION-R-90R:CAPS"></a>BVW_ROTATION_R_90R</p></td>
+<td class="enum_member_description">
+<p>Rotate 90 degrees to the right</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ROTATION-R-180:CAPS"></a>BVW_ROTATION_R_180</p></td>
+<td class="enum_member_description">
+<p>Rotate 180 degrees</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ROTATION-R-90L:CAPS"></a>BVW_ROTATION_R_90L</p></td>
+<td class="enum_member_description">
+<p>Rotate 90 degrees to the left</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwVideoProperty"></a><h3>enum BvwVideoProperty</h3>
+<p>The video properties queryable with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-video-property" title="bacon_video_widget_get_video_property ()"><code class="function">bacon_video_widget_get_video_property()</code></a>,
+and settable with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-video-property" title="bacon_video_widget_set_video_property ()"><code class="function">bacon_video_widget_set_video_property()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.9.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-VIDEO-BRIGHTNESS:CAPS"></a>BVW_VIDEO_BRIGHTNESS</p></td>
+<td class="enum_member_description">
+<p>the video brightness</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-VIDEO-CONTRAST:CAPS"></a>BVW_VIDEO_CONTRAST</p></td>
+<td class="enum_member_description">
+<p>the video contrast</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-VIDEO-SATURATION:CAPS"></a>BVW_VIDEO_SATURATION</p></td>
+<td class="enum_member_description">
+<p>the video saturation</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-VIDEO-HUE:CAPS"></a>BVW_VIDEO_HUE</p></td>
+<td class="enum_member_description">
+<p>the video hue</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwZoomMode"></a><h3>enum BvwZoomMode</h3>
+<p>The zoom mode used by the video widget, as set by
+<a class="link" href="BaconVideoWidget.html#bacon-video-widget-set-zoom" title="bacon_video_widget_set_zoom ()"><code class="function">bacon_video_widget_set_zoom()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.10.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ZOOM-NONE:CAPS"></a>BVW_ZOOM_NONE</p></td>
+<td class="enum_member_description">
+<p>No video zooming/cropping</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ZOOM-EXPAND:CAPS"></a>BVW_ZOOM_EXPAND</p></td>
+<td class="enum_member_description">
+<p>Fill area with video, and crop the excess</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BvwError"></a><h3>enum BvwError</h3>
+<p>Error codes for <a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> operations.</p>
+<div class="refsect3">
+<a name="id-1.3.5.13.11.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-NO-PLUGIN-FOR-FILE:CAPS"></a>BVW_ERROR_NO_PLUGIN_FOR_FILE</p></td>
+<td class="enum_member_description">
+<p>A required GStreamer plugin is missing.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-BROKEN-FILE:CAPS"></a>BVW_ERROR_BROKEN_FILE</p></td>
+<td class="enum_member_description">
+<p>The movie file is broken and cannot be decoded.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-FILE-GENERIC:CAPS"></a>BVW_ERROR_FILE_GENERIC</p></td>
+<td class="enum_member_description">
+<p>A generic error for problems with movie files.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-FILE-PERMISSION:CAPS"></a>BVW_ERROR_FILE_PERMISSION</p></td>
+<td class="enum_member_description">
+<p>Permission was refused to access the stream, or authentication was required.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-FILE-ENCRYPTED:CAPS"></a>BVW_ERROR_FILE_ENCRYPTED</p></td>
+<td class="enum_member_description">
+<p>The stream is encrypted and cannot be played.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-FILE-NOT-FOUND:CAPS"></a>BVW_ERROR_FILE_NOT_FOUND</p></td>
+<td class="enum_member_description">
+<p>The stream cannot be found.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-DVD-ENCRYPTED:CAPS"></a>BVW_ERROR_DVD_ENCRYPTED</p></td>
+<td class="enum_member_description">
+<p>The DVD is encrypted and libdvdcss is not installed.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-INVALID-DEVICE:CAPS"></a>BVW_ERROR_INVALID_DEVICE</p></td>
+<td class="enum_member_description">
+<p>The device given in an MRL (e.g. DVD drive or DVB tuner) did not exist.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-UNKNOWN-HOST:CAPS"></a>BVW_ERROR_UNKNOWN_HOST</p></td>
+<td class="enum_member_description">
+<p>The host for a given stream could not be resolved.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-NETWORK-UNREACHABLE:CAPS"></a>BVW_ERROR_NETWORK_UNREACHABLE</p></td>
+<td class="enum_member_description">
+<p>The host for a given stream could not be reached.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-CONNECTION-REFUSED:CAPS"></a>BVW_ERROR_CONNECTION_REFUSED</p></td>
+<td class="enum_member_description">
+<p>The server for a given stream refused the connection.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-INVALID-LOCATION:CAPS"></a>BVW_ERROR_INVALID_LOCATION</p></td>
+<td class="enum_member_description">
+<p>An MRL was malformed, or CDDB playback was attempted (which is now unsupported).</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-GENERIC:CAPS"></a>BVW_ERROR_GENERIC</p></td>
+<td class="enum_member_description">
+<p>A generic error occurred.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-CODEC-NOT-HANDLED:CAPS"></a>BVW_ERROR_CODEC_NOT_HANDLED</p></td>
+<td class="enum_member_description">
+<p>The audio or video codec required by the stream is not supported.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-CANNOT-CAPTURE:CAPS"></a>BVW_ERROR_CANNOT_CAPTURE</p></td>
+<td class="enum_member_description">
+<p>Error determining frame capture support for a video with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-can-get-frames" title="bacon_video_widget_can_get_frames ()"><code class="function">bacon_video_widget_can_get_frames()</code></a>.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-READ-ERROR:CAPS"></a>BVW_ERROR_READ_ERROR</p></td>
+<td class="enum_member_description">
+<p>A generic error for problems reading streams.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-PLUGIN-LOAD:CAPS"></a>BVW_ERROR_PLUGIN_LOAD</p></td>
+<td class="enum_member_description">
+<p>A library or plugin could not be loaded.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="BVW-ERROR-EMPTY-FILE:CAPS"></a>BVW_ERROR_EMPTY_FILE</p></td>
+<td class="enum_member_description">
+<p>A movie file was empty.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="BaconVideoWidget--audio-output-type"></a><h3>The <code class="literal">“audio-output-type”</code> property</h3>
+<pre class="programlisting">  “audio-output-type”        <a class="link" href="BaconVideoWidget.html#BvwAudioOutputType" title="enum BvwAudioOutputType"><span class="type">BvwAudioOutputType</span></a></pre>
+<p>The type of audio output to use (e.g. the number of channels).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: BVW_AUDIO_SOUND_STEREO</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--av-offset"></a><h3>The <code class="literal">“av-offset”</code> property</h3>
+<pre class="programlisting">  “av-offset”                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>Control the synchronisation offset between the audio and video streams.
+Positive values make the audio ahead of the video and negative values
+make the audio go behind the video.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--brightness"></a><h3>The <code class="literal">“brightness”</code> property</h3>
+<pre class="programlisting">  “brightness”               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The brightness of the video display.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,65535]</p>
+<p>Default value: 32768</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--contrast"></a><h3>The <code class="literal">“contrast”</code> property</h3>
+<pre class="programlisting">  “contrast”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The contrast of the video display.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,65535]</p>
+<p>Default value: 32768</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--deinterlacing"></a><h3>The <code class="literal">“deinterlacing”</code> property</h3>
+<pre class="programlisting">  “deinterlacing”            <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to automatically deinterlace videos.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--download-filename"></a><h3>The <code class="literal">“download-filename”</code> property</h3>
+<pre class="programlisting">  “download-filename”        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The filename of the fully downloaded stream when using
+download buffering.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--hue"></a><h3>The <code class="literal">“hue”</code> property</h3>
+<pre class="programlisting">  “hue”                      <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The hue of the video display.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,65535]</p>
+<p>Default value: 32768</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--logo-mode"></a><h3>The <code class="literal">“logo-mode”</code> property</h3>
+<pre class="programlisting">  “logo-mode”                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the logo should be displayed when no stream is loaded, or the widget
+should take up no space.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--playing"></a><h3>The <code class="literal">“playing”</code> property</h3>
+<pre class="programlisting">  “playing”                  <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether a stream is currently playing.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--position"></a><h3>The <code class="literal">“position”</code> property</h3>
+<pre class="programlisting">  “position”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>The current position in the stream, as a percentage between <code class="code">0</code> and <code class="code">1</code>.</p>
+<p>Flags: Read</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--referrer"></a><h3>The <code class="literal">“referrer”</code> property</h3>
+<pre class="programlisting">  “referrer”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The HTTP referrer URI.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--reveal-controls"></a><h3>The <code class="literal">“reveal-controls”</code> property</h3>
+<pre class="programlisting">  “reveal-controls”          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether to show or hide the controls.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--saturation"></a><h3>The <code class="literal">“saturation”</code> property</h3>
+<pre class="programlisting">  “saturation”               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The saturation of the video display.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,65535]</p>
+<p>Default value: 32768</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--seekable"></a><h3>The <code class="literal">“seekable”</code> property</h3>
+<pre class="programlisting">  “seekable”                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the current stream can be seeked.</p>
+<p>Flags: Read</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--stream-length"></a><h3>The <code class="literal">“stream-length”</code> property</h3>
+<pre class="programlisting">  “stream-length”            <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>The length of the current stream, in milliseconds.</p>
+<p>Flags: Read</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--user-agent"></a><h3>The <code class="literal">“user-agent”</code> property</h3>
+<pre class="programlisting">  “user-agent”               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The HTTP user agent string to use.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget--volume"></a><h3>The <code class="literal">“volume”</code> property</h3>
+<pre class="programlisting">  “volume”                   <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>The current volume level, as a percentage between <code class="code">0</code> and <code class="code">1</code>.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="BaconVideoWidget.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="BaconVideoWidget-buffering"></a><h3>The <code class="literal">“buffering”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *percentage,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>           arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted regularly when a network stream is being buffered, to provide status updates on the buffering
+progress.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>percentage</p></td>
+<td class="parameter_description"><p>the percentage of buffering completed, between <code class="code">0</code> and <code class="code">1</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-channels-change"></a><h3>The <code class="literal">“channels-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *arg0,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when the number of audio languages available changes, or when the
+selected audio language is changed.</p>
+<p>Query the new list of audio languages with <a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-languages" title="bacon_video_widget_get_languages ()"><code class="function">bacon_video_widget_get_languages()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-download-buffering"></a><h3>The <code class="literal">“download-buffering”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *percentage,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>           arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted regularly when a network stream is being cached on disk, to provide status
+ updates on the buffering level of the stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>percentage</p></td>
+<td class="parameter_description"><p>the percentage of download buffering completed, between <code class="code">0</code> and <code class="code">1</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-eos"></a><h3>The <code class="literal">“eos”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *arg0,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when the end of the current stream is reached.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-error"></a><h3>The <code class="literal">“error”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *message,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>            *playback_stopped,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>          fatal,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when the backend wishes to asynchronously report an error. If <em class="parameter"><code>fatal</code></em>
+ is <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>,
+playback of this stream cannot be restarted.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>message</p></td>
+<td class="parameter_description"><p>the error message</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>playback_stopped</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if playback has stopped due to the error, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fatal</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the error was fatal to playback, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-got-metadata"></a><h3>The <code class="literal">“got-metadata”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *arg0,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when the widget has updated the metadata of the current stream. This
+will typically happen just after opening a stream.</p>
+<p>Call <a class="link" href="BaconVideoWidget.html#bacon-video-widget-get-metadata" title="bacon_video_widget_get_metadata ()"><code class="function">bacon_video_widget_get_metadata()</code></a> to query the updated metadata.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-got-redirect"></a><h3>The <code class="literal">“got-redirect”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *new_mrl,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>            *arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when a redirect response is received from a stream's server.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>new_mrl</p></td>
+<td class="parameter_description"><p>the new MRL</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-missing-plugins"></a><h3>The <code class="literal">“missing-plugins”</code> signal</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *details,
+               <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>             descriptions,
+               <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>             playing,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>          Returns,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when plugins required to play the current stream are not found. This allows the application
+to request the user install them before proceeding to try and play the stream again.</p>
+<p>Note that this signal is only available for the GStreamer backend.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>details</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of missing plugin details for use when installing the plugins with libgimme-codec</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>descriptions</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of missing plugin descriptions for display to the user</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>playing</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the stream could be played even without these plugins, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.5.15.9.7"></a><h4>Returns</h4>
+<p> <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the signal was handled and some action was taken, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p>
+<p></p>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-seek-requested"></a><h3>The <code class="literal">“seek-requested”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *forward,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>          arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when a gesture, our mouse movement that should seek is made.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>forward</p></td>
+<td class="parameter_description"><p>whether the seek requested is a forward or backward seek.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-tick"></a><h3>The <code class="literal">“tick”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *current_time,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a>            stream_length,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a>            current_position,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a>           seekable,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>          arg4,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted every time an important time event happens, or at regular intervals when playing a stream.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>current_time</p></td>
+<td class="parameter_description"><p>the current position in the stream, in milliseconds since the beginning of the stream</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>stream_length</p></td>
+<td class="parameter_description"><p>the length of the stream, in milliseconds</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>current_position</p></td>
+<td class="parameter_description"><p>the current position in the stream, as a percentage between <code class="code">0</code> and <code class="code">1</code></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>seekable</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the stream can be seeked, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="BaconVideoWidget-volume-change-requested"></a><h3>The <code class="literal">“volume-change-requested”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="BaconVideoWidget.html" title="BaconVideoWidget"><span class="type">BaconVideoWidget</span></a> *increase,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>          arg1,
+               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)</pre>
+<p>Emitted when a gesture, our mouse movement that should change the volume
+is emitted.</p>
+<div class="refsect3">
+<a name="id-1.3.5.15.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>increase</p></td>
+<td class="parameter_description"><p>whether the volume change requested is an increase or decrease.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: Run Last</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+#
+# This file is part of the LibreOffice project.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# This file incorporates work covered by the following license notice:
+#
+#   Licensed to the Apache Software Foundation (ASF) under one or more
+#   contributor license agreements. See the NOTICE file distributed
+#   with this work for additional information regarding copyright
+#   ownership. The ASF licenses this file to you under the Apache
+#   License, Version 2.0 (the "License"); you may not use this file
+#   except in compliance with the License. You may obtain a copy of
+#   the License at http://www.apache.org/licenses/LICENSE-2.0 .
+#
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Icon=libreoffice-writer
+Type=Application
+Categories=Office;WordProcessor;
+Exec=libreoffice --writer %U
+MimeType=application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.text-web;application/vnd.oasis.opendocument.text-master;application/vnd.sun.xml.writer;application/vnd.sun.xml.writer.template;application/vnd.sun.xml.writer.global;application/msword;application/vnd.ms-word;application/x-doc;application/x-hwp;application/rtf;text/rtf;application/vnd.wordperfect;application/wordperfect;application/vnd.lotus-wordpro;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.ms-word.document.macroenabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.template;application/vnd.ms-word.template.macroenabled.12;application/vnd.ms-works;application/vnd.stardivision.writer-global;application/x-extension-txt;application/x-t602;text/plain;application/vnd.oasis.opendocument.text-flat-xml;application/x-fictionbook+xml;application/macwriteii;application/x-aportisdoc;application/prs.plucker;application/vnd.palm;application/clarisworks;
+Name=LibreOffice Writer
+GenericName=Word Processor
+GenericName[el]=Επεξεργαστής Word
+GenericName[zu]=Word Processor
+GenericName[is]=Ritvinnsluforrit
+GenericName[ml]=വേര്‍ഡ് പ്രൊസസ്സര്‍
+GenericName[be]=Тэкставы працэсар
+GenericName[uk]=Текстовий процесор
+GenericName[kk]=Мәтіндік процессор
+GenericName[cs]=Textový procesor
+GenericName[fa]=واژه‌پرداز
+GenericName[om]=Hujeessaa Jecha
+GenericName[es]=Procesador de texto
+GenericName[zh_TW]=文書處理器
+GenericName[te]=వర్డ్ ప్రాసెసర్
+GenericName[gu]=વર્ડ પ્રોસેસર
+GenericName[ca]=Processador de textos
+GenericName[it]=Elaboratore di testo
+GenericName[br]=Kewerier testenn
+GenericName[hi]=वर्ड प्रोसेसर
+GenericName[pt]=Processador de texto
+GenericName[mk]=Обработка на текст
+GenericName[si]=ලිපි සකසනය
+GenericName[eu]=Testu prozesatzailea
+GenericName[pa_IN]=ਵਰਡ ਪਰੋਸੈਸਰ
+GenericName[ro]=Procesor de text
+GenericName[ga]=Próiseálaí Focal
+GenericName[id]=Pengolah Kata
+GenericName[pt_BR]=Editor de texto
+GenericName[kmr_Latn]=Kiryarê Peyvan
+GenericName[ru]=Текстовый процессор
+GenericName[ka]=Word Processor
+GenericName[uz]=Matn protsessori
+GenericName[vi]=Xử lý từ
+GenericName[fr]=Traitement de texte
+GenericName[th]=Word Processor
+GenericName[lt]=Tekstų rengyklė
+GenericName[ast]=Procesador de testos
+GenericName[bn]=ওয়ার্ড প্রসেসর
+GenericName[gd]=Giullachair teacsa
+GenericName[fi]=Tekstinkäsittely
+GenericName[mr]=वर्ड प्रोसेसर
+GenericName[dz]=Word Processor
+GenericName[sr]=Уређивач текста
+GenericName[ug]=يېزىق بىر تەرەپ قىلىش
+GenericName[nn]=Teksthandsamar
+GenericName[hr]=Program za obradu teksta
+GenericName[nso]=Sebopi sa mantšu
+GenericName[et]=Tekstitöötlus
+GenericName[sk]=Textový procesor
+GenericName[xh]=Word Processor
+GenericName[ca_valencia]=Processador de textos
+GenericName[km]=កម្មវិធី​វាយ​អត្ថបទ
+GenericName[ts]=Word Processor
+GenericName[oc]=Tractament de tèxte
+GenericName[ko]=워드 프로세서
+GenericName[sv]=Ordbehandlare
+GenericName[sl]=Urejevalnik besedila
+GenericName[ja]=ワードプロセッサ
+GenericName[ta]=சொற்செயலி
+GenericName[or]=ଶବ୍ଦ ସଞ୍ଚାଳକ
+GenericName[ve]=Word Processor
+GenericName[en_ZA]=Word Processor
+GenericName[nb]=Skriveprogram
+GenericName[tn]=Word Processor
+GenericName[gl]=Procesador de textos
+GenericName[ss]=Word Processor
+GenericName[he]=מעבד תמלילים
+GenericName[tr]=Kelime İşlemci
+GenericName[cy]=Prosesydd Geiriau
+GenericName[tg]=Word Processor
+GenericName[en_GB]=Word Processor
+GenericName[zh_CN]=字处理器
+GenericName[lv]=Tekstapstrādes programma
+GenericName[nr]=Word Processor
+GenericName[ne]=वर्ड प्रोसेसर
+GenericName[ar]=معالج المستندات
+GenericName[da]=Tekstbehandling
+GenericName[nl]=Tekstverwerker
+GenericName[bs]=Program za obradu teksta
+GenericName[st]=Word Processor
+GenericName[de]=Textverarbeitung
+GenericName[en]=Word Processor
+GenericName[bg]=Текстообработка
+GenericName[hu]=Szövegszerkesztő
+GenericName[af]=Woordverwerker
+GenericName[rw]=Musesenguramagambo
+GenericName[as]=Word প্ৰচেছৰ
+GenericName[mn]=Ворд боловсруулагч
+GenericName[pl]=Word Processor
+GenericName[eo]=Vortprocesilo
+Comment=Create and edit text and graphics in letters, reports, documents and Web pages by using Writer.
+Comment[as]=Writer ব্যৱহাৰ কৰি চিঠি, সংবাদ, দস্তাবেজ আৰু পৃষ্ঠাবোৰত থকা লিখনী আৰু গ্ৰাফিক্স সৃষ্টি আৰু সম্পাদনা কৰক।
+Comment[te]=పత్రము మరియు లేఖ యొక్క చిత్రరూపములు,నివేదనలు,పత్రములు మరియు వ్రాయు యంత్రమును ఉపయోగించిన వెబ్  పుటలును నిర్మించి సరిచేయుము. 
+Comment[pl]=Twórz i edytuj listy, raporty, dokumenty i strony www wykorzystując program Writer.
+Comment[km]=បង្កើត និង​កែ​សម្រួល​អត្ថបទ និង​ក្រាហ្វិក​ក្នុង​សំបុត្រ របាយការណ៍ ឯកសារ និង​ទំព័រ​បណ្តាញ​ដោយ​ប្រើ Writer ។
+Comment[gu]=લખાણ દ્દારા પત્રો, અહેવાલો, દસ્તાવેજો અને વેબ પાનાઓમાં લખાણ અને ચિત્રો બનાવો અને સુઘારો.
+Comment[cy]=Creu a golygu testun a graffigau mewn llythyron, adroddiadau, dogfennau a thudalennau Gwe gyda Writer.
+Comment[lt]=Tekstų rengykle galima kurti laiškus, ataskaitas, kitus dokumentus ir tinklalapius, įterpti į juos paveikslus.
+Comment[st]=Bopa le ho lokisa mongolo le ditshwantsho mangolong, ditlalehong, ditokomaneng le maqepheng a Wepe ka ho sebedisa Writer.
+Comment[ca]=Creeu i editeu textos i gràfics en cartes, informes, documents i pàgines web amb el Writer.
+Comment[sl]=S programom Writer ustvarjajte in urejajte besedilo in slike v pismih, poročilih, dokumentih in spletnih straneh.
+Comment[nl]=Met Writer kunt u tekst en afbeeldingen in brieven, rapporten, documenten en webpagina's maken en bewerken.
+Comment[sv]=Skapa och redigera text och grafik i brev, rapporter, dokument och webbsidor med hjälp av Writer.
+Comment[sr]=Пишите и уређујте текст и графику у писмима, извештајима и веб страницама у Писцу.
+Comment[it]=Usando Writer, puoi creare e modificare il testo e le immagini di lettere, rapporti, documenti e pagine Web.
+Comment[be]=Стварайце і рэдагуйце тэкст і графіку ў лістах, справаздачах, дакументах і старонках Сеціва з дапамогаю Writer-а.
+Comment[fr]=Writer - Création et édition de textes et d'images pour courriers, rapports, documents et pages Web.
+Comment[ro]=Creați și editați textele și grafica din documente, scrisori, rapoarte și pagini web folosind Writer.
+Comment[es]=Cree y edite texto y gráficos en cartas, informes, documentos y páginas Web con Writer.
+Comment[hu]=Levelek, jelentések, dokumentumok és weboldalak szövegének és grafikájának létrehozása és szerkesztése a Writer használatával.
+Comment[rw]=Kurema no guhindura umwandiko n'ibishushanyo mu mabaruwa, raporo, inyandiko na paji Rubuga ukoresheje Writer.
+Comment[pt_BR]=Crie e edite textos e figuras em cartas, relatórios, documentos e páginas da Web por meio do Writer.
+Comment[ne]=लेखकको प्रयोगद्वारा चिठ्ठीहरू, प्रतिवेदनहरू, कागजातहरू र वेब पृष्ठहरूमा पाठ तथा ग्राफिक्स सिर्जना तथा सम्पादन गर्नुहोस् ।
+Comment[hr]=Stvorite i uredite tekst i grafiku u pisma, izvještajima, dokumentima i internet stranicama koristeći Writer.
+Comment[tr]=Writer kullanarak mektuplardaki metin ve grafikleri, rapor, belge ve Web sayfaları oluşturabilir ve düzenleyebilirsiniz.
+Comment[ka]=ქმნის და ასწორებს დოკუმენტებსა და დიაგრამებს წერილებში, მოხსენებებში, დოკუმენტებში და ვებ-გვერდებში Writer-ის მეშვეობით.
+Comment[el]=Δημιουργία και επεξεργασία κειμένου και γραφικών σε επιστολές, αναφορές, έγγραφα και ιστοσελίδες με τη χρήση του Writer.
+Comment[kmr_Latn]=Nivîs û grafîkên di name, rapor, belge û rûpelên torê de bî Writerê çêbike û sererast bike.
+Comment[tn]=Create and edit text and graphics in letters, reports, documents and Web pages by using Writer.
+Comment[ru]=Создание и редактирование текста и рисунков в письмах, отчётах, документах или веб-страницах.
+Comment[pa_IN]=ਰਾਇਟਰ ਨਾਲ ਪੱਤਰਾਂ, ਰਿਪੋਰਟਾਂ, ਡੌਕੂਮੈਂਟਾਂ ਅਤੇ ਵੈੱਬ ਸਫ਼ਿਆਂ ਵਿੱਚ ਟੈਕਸਟ ਅਤੇ ਚਿੱਤਰ ਬਣਾਏ ਅਤੇ ਸੋਧੇ ਜਾ ਸਕਦੇ ਹਨ।
+Comment[zu]=Yenza futhi ulungise umbhalo nemidwebo esezinhlamvini zamagama, emibikweni, emafayelini nasemakhasini eWebhu ngokusebenzisa i-Writer.
+Comment[ko]=Writer를 사용하여 편지, 보고서, 문서 및 웹 페이지에서 텍스트와 그림을 만들고 편집할 수 있습니다.
+Comment[ga]=Cruthaigh téacs agus grafaicí i litreacha, tuairiscí, cáipéisí, agus leathanaigh Ghréasáin le Writer.
+Comment[ve]=Vhumbani ni dovhe ni lulamise ḽiṅwalwa na dzigirafiki kha maṅwalo, mivhigo, maṅwalo na masiaṱari a Web nga u shumisa Writer.
+Comment[ar]=إنشاء النصوص والرسومات في الخطابات، والتقارير، والمستندات وصفحات ويب وتحريرها باستخدام رايتر.
+Comment[da]=Opret og rediger tekst og grafik i breve, rapporter, dokumenter og websider ved hjælp af Writer.
+Comment[he]=יצירה ועריכה של טקסט וגרפיקה במכתבים, דוחות, מסמכים ודפי אינטרנט באמצעות Writer.
+Comment[nso]=Hlama le go lokiša sengwalwa le dikrafiki mangwalong, dipegong, ditokumenteng le matlakaleng a wepe ka go diriša Writer.
+Comment[uk]=Створення та редагування тексту та графіки у листах, звітах, документах та веб-сторінках.
+Comment[lv]=Veidot un rediģēt tekstu un grafisku vēstulēs, atskaitēs, dokumentos un tīmekļa lapās, lietojot Writer.
+Comment[nn]=Med Writer kan du laga og redigera tekst og bilete i brev, rapportar, dokument og nettsider.
+Comment[ja]=Writer を使用して、レター、レポート、ドキュメントおよび Web ページのテキストおよび図を作成および編集します。
+Comment[bs]=Pravite i mijenjajte tekst i grafiku u pismima, izvještajima, dokumentima i Web stranicama koristeći Writer.
+Comment[mn]=Writer ашиглан захиа, тайлан, баримт дахь бичвэр ба график үүсгэх болон засварлах.
+Comment[nr]=Enza nokuhlela itheksti neentjengiso eziseencwadini, emibikweni, emitlolweni nemakhasini weWebh ngokusebenzisa i-Writer.
+Comment[en_GB]=Create and edit text and graphics in letters, reports, documents and Web pages using Writer.
+Comment[xh]=Dala uze uhlele isiqendu nezazobe zegrafu ezileteni, iingxelo, amaxwebhu namakhasi Othungelwano ngokusebenzisa i-Writer.
+Comment[bg]=С Writer можете да създавате и редактирате текст и графики в писма, отчети, документи и уебстраници.
+Comment[eu]=Testua eta grafikoak sortu eta editatu gutunetan, txostenetan, dokumentuetan eta web orrietan Writer erabiliz.
+Comment[af]=Skep en redigeer teks en grafika in briewe, verslae, dokumente en webbladsye met Writer.
+Comment[gl]=Crear e editar texto ou imaxes en cartas, informes, documentos e páxinas web usando Writer.
+Comment[ca_valencia]=Creeu i editeu textos i gràfics en cartes, informes, documents i pàgines web amb el Writer.
+Comment[de]=Erstellen und bearbeiten von Text und Grafiken in Briefen, Reports, Dokumenten und Web-Seiten - Writer macht's möglich.
+Comment[si]=Writer භාවිතා කරමින් ලිපි වල පෙළ සහ චිත්‍රක, වාර්තා, ලිපි සහ වියුණු පිටු සාදන්න සහ වෙනස් කරන්න.
+Comment[zh_TW]=使用 Writer 可以在信件、報告、文件和網頁中建立與編輯文字和圖形。
+Comment[dz]=རྩོམ་འབྲི་པ་ལག་ལེན་འཐབ་ཐོག་ལས་ ཝེབ་པེཇི་དང་ ཡིག་ཆའི་རིགས་ སྙན་ཞུའི་རིགས་ ཡི་གུའི་རིགས་ཚུ་ནང་ལུ་ ཚིག་ཡིག་དང་ཚད་རིས་ཚུ་བཟོ་ནི་དང་ཞུན་དག་རྐྱབ་ནི།
+Comment[oc]=Writer - Creacion e edicion de tèxtes e d'imatges per corrièrs, rapòrts, documents e paginas Web.
+Comment[ast]=Crear y editar testos y gráficos de cartes, informes, documentos y páxines Web usando Writer.
+Comment[nb]=Opprett og rediger tekst og bilder i brev, rapporter, dokumenter og nettsider ved å bruke Writer.
+Comment[fi]=Luo ja muokkaa tekstiä ja grafiikkaa kirjeisiin, raportteihin, tekstiasiakirjoihin ja internet-sivuihin Writer-ohjelmalla.
+Comment[sk]=Vytvárajte a upravujte textové a grafické listy, správy, dokumenty a webové stránky s použitím Writer.
+Comment[mr]=Writer चा वापरून पत्रं, अहवाल, दस्तऐवज व वेब पान अंतर्गत पाठ्य व चित्रलेख बनवा व संपादीत करा.
+Comment[cs]=Writer umožňuje vytvářet a upravovat text a grafiku v dopisech, sestavách, dokumentech a webových stránkách.
+Comment[id]=Mengolah teks dan gambar pada surat, laporan, dokumen, dan halaman Web menggunakan Writer.
+Comment[ss]=Yakha u-edithe umbhalo nemagrafiki etincwadzini, umbiko, wemadokhumenti nemapheji eWebhu ngekusebentisa Writer.
+Comment[en]=Create and edit text and graphics in letters, reports, documents and Web pages by using Writer.
+Comment[gd]=Cruthaich is deasaich teacsa is dealbhan ann an litrichean, aithisgean, sgrìobhainnean is duilleagan-lìn le Writer.
+Comment[ug]=Writer ئىشلىتىپ خەت-چەك، دوكلات جەدۋىلى، پۈتۈك ۋە تور بەتتىكى تېكست ۋە گرافىكلارنى قۇرۇپ تەھرىرلىگىلى بولىدۇ.
+Comment[vi]=Tạo và sửa văn bản và đồ họa trong lá thư, báo cáo, tài liệu và trang Web bằng Writer.
+Comment[kk]=Writer көмегімен хаттарда, құжаттарда, есептемелерде және веб-парақтарда мәтінді және суреттерді жасау және түзетуге болады.
+Comment[hi]=लेखक के प्रयोग से पत्र, रिपोर्ट, दस्तावेज़ में पाठ और आरेख बनाता है और संपादित करता है.
+Comment[ta]=கடிதங்கள், அறிக்கைகள், ஆவணங்கள், வலைப்பக்கங்கள் ஆகியவற்றின் உரை, படங்கள் இவற்றை உருவாக்கவும் தொகுக்கவும் ரைட்டரைப் பயன்படுத்துக.
+Comment[zh_CN]=使用 Writer 创建并编辑信函、报表、文档和网页中的文本和图形。
+Comment[bn]=রাইটার ব্যবহার করে চিঠিপত্র, রিপোর্ট, নথি এবং ওয়েবপেজের লেখা ও ছবি তৈরি এবং সম্পাদনা করুন।
+Comment[ml]=റൈറ്റര് ഉപയോഗിച്ച്  കത്തുകളിലെയും റിപ്പോര്ട്ടുകളിലെയും ഡോക്കുമെന്റിലെയും വെബ് പേജിലെയും  ടെക്സ്റ്റും ഗ്രാഫിക്സും സൃഷ്ടിക്കുകയും എഡിറ്റു ചെയ്യുകയും ചെയ്യുക.
+Comment[om]=Bareessaa fayyadamuun xalayaalee, gabasota, galmeewwanii fi fuulota saphaphuu irratti barruu fi saxxatoo uumi, gulaali.
+Comment[et]=Writer võimaldab luua ja redigeerida kirjade, aruannete, dokumentide ning veebilehtede teksti ja pilte.
+Comment[eo]=Krei kaj redakti tekston kaj grafikaĵojn en leteroj, raportoj, dokumentoj kaj TTT-paĝoj per Verkilo.
+Comment[fa]=با استفاده از کاتب، متن و گرافیک نامه‌ها، گزارش‌ها، نوشتارها و صفحات وب را ایجاد یا ویرایش کنید.
+Comment[th]=สร้างและแก้ไขข้อความและกราฟิกส์ในจดหมาย รายงาน เอกสาร และหน้าเว็บโดยการใช้ Writer
+Comment[ts]=Cinca ni ku lulamisa marito ni vudirowi eka mapapila, swiviko, tidokumente ni tipheji ta Web hi ku tirhisa Writer.
+Comment[mk]=Креирајте и уредувајте текст и графика во писма, извештаи, документи и веб-страници со користење на Writer.
+Comment[en_ZA]=Create and edit text and graphics in letters, reports, documents and Web pages by using Writer.
+Comment[tg]=Бо ёрии Writer матн ва тасвир сохтан, онҳоро ислоҳ кардан мумкин аст.
+Comment[or]=ରାଇଟର ଉପୟୋଗ କରି ପତ୍ରଗୁଡିକରେ, ରିପୋର୍ଟରେ,ଦଲିଲଗୁଡିକରେ ଏବଂ ଉଏବ୍ ପୃଷ୍ଠାଗୁଡିକରେ ଟେକ୍ସଟ ଏବଂ ଲେଖାଚିତ୍ରଗୁଡିକୁ ସୃଷ୍ଟି ଏବଂ ସମ୍ପାଦନ କରନ୍ତୁ।
+Comment[br]=Writer - Krouiñ hag embann testennoù ha skeudennoù evit lizhiri, danevelloù, teulioù ha pajennoù Web.
+Comment[uz]=Writer yordamida hisobotlar, matn hujjatlari, veb sahifalar yaratish va tahrirlash.
+Comment[is]=Búa til og breyta texta og myndefni í bréfum, skýrslum, skjölum og vefsíðum með því að nota Writer.
+Comment[pt]=Criar e editar texto e imagens em cartas, relatórios, documentos e páginas web com o Writer.
+StartupNotify=true
+X-GIO-NoFuse=true
+Keywords=Text;Letter;Fax;Document;OpenDocument Text;Microsoft Word;Microsoft Works;Lotus WordPro;OpenOffice Writer;CV;odt;doc;docx;rtf;
+InitialPreference=5
+StartupWMClass=libreoffice-writer
+X-KDE-Protocols=file,http,smb,ftp,webdav
+
+Actions=NewDocument;
+[Desktop Action NewDocument]
+Name=New Document
+Exec=libreoffice --writer

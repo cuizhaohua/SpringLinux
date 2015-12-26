@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="id">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Fungsikan dan pakai fitur pemeriksaan ejaan</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Periksa ejaan dokumen Anda</title>
+  <section id="enable-spell-check">
+    <title>Fungsikan pemeriksa ejaan</title>
+    <p>Fitur Periksa-ejaan disediakan sebagai pengaya dalam <app>gedit</app> yang dapat difungsikan seperlunya. Untuk memfungsikan pengaya:</p>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferensi</gui> <gui style="tab">Plugin</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Pilih <gui style="menuitem">Periksa Ejaan</gui> untuk memfungsikan plugin.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Periksa ejaan dokumen Anda</title>
+
+    <p>Untuk memeriksa kata salah eja dalam dokumen Anda:</p>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">Perkakas</gui> <gui style="menuitem">Periksa Ejaan</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Agar <app>gedit</app> secara otomatis menyorot kata-kata salah eja dalam dokumen Anda sembari Anda mengetik, pilih <guiseq><gui style="menu">Perkakas</gui><gui style="menuitem">Sorot Kata-kata Salah Eja</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Memakai pemeriksaan ejaan</title>
+
+    <p>Anda dapat memilih pengganti yang tepat bagi kata yang salah eja dengan memakai dialog Periksa Ejaan. Kata yang salah eja yang sedang diperiksa oleh pemeriksa ejaan ditampilkan dalam cetak tebal di sebelah <gui>Kata salah eja:</gui>. Anda dapat memilih dari aksi-aksi perbaikan berikut:</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Ubah ke:</gui> memungkinkan Anda memasukkan suatu kata dan memakai <gui style="button">Periksa Kata</gui> untuk memeriksa keabsahan ejaan.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Saran:</gui> mendaftar pengganti yang tersedia bagi kata tersebut.</p>
+      </item>
+      <item>
+        <p><gui style="button">Abaikan</gui> memungkinkan Anda melewati pemeriksaan ejaan bagi <em>suatu</em> kemunculan kata saat ini.</p>
+      </item>
+      <item>
+        <p><gui style="button">Abaikan Semua</gui> memungkinkan Anda melewati pemeriksaan ejaan bagi <em>semua</em> kemunculan kata saat ini.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ubah semua</gui> menggantikan kata yang salah eja atau tak dikenal dengan pengganti yang dipilih dari daftar <gui style="menuitem">Saran:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ubah semua</gui> menggantikan <em>semua</em> kata yang salah eja atau tak dikenal dengan pengganti yang dipilih dari daftar <gui style="menuitem">Saran:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Tambah kata</gui> memungkinkan Anda menambah kata saat ini ke <gui>Kamus pengguna</gui> <app>gedit</app>. Menambahkan kata-kata ubahan ke <gui>Kamus pengguna</gui> akan memungkinkan <app>gedit</app> untuk mengenali kata dalam dokumen sehingga tidak akan disorot sebagai kata yang salah eja.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Menentukan bahasa yang dipakai untuk memeriksa ejaan</title>
+    <p>Secara baku, <app>gedit</app> akan memakai bahasa Anda saat ini untuk memeriksa ejaan dokumen Anda. Bila Anda perlu memakai bahasa lain, pilih <guiseq><gui style="menu">Perkakas</gui><gui style="menuitem">Atur Bahasa…</gui></guiseq>, lalu pilih bahasa yang ingin Anda pakai.</p>
+  </section>
+
+  <section id="dict">
+    <title>Kamus</title>
+
+    <p><app>gedit</app> memakai <link href="http://www.abisource.com/projects/enchant/">Enchant</link>, suatu utilitas sistem kecil, untuk memeriksa ejaan. Enchant dapat memakai beberapa kamus yang berbeda untuk memeriksa ejaan Anda. Dua diantara back end kamus tersebut adalah <em>Hunspell</em> dan <em>Aspell</em>.</p>
+
+    <p>Bila bahasa yang ingin Anda pakai tak tersedia dalam <app>gedit</app>, gunakan pemasang perangkat lunak komputer Anda atau manajer paket untuk memasang back end kamus yang Anda inginkan.</p>
+  </section>
+</page>

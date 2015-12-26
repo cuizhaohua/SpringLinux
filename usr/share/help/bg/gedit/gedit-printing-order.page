@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Фил Бул</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Отпечатване в правилната поредност</title>
+
+  <section id="printing-reverse">
+    <title>Обратен ред</title>
+
+    <p>Printers usually print the first page first, and the last page last, so
+    the pages end up in reverse order when you pick them up. To reverse the
+    order:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">File</gui>
+        <gui style="menuitem">Print</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>In the <gui style="tab">General</gui> tab of the Print dialog under
+        <gui style="group">Copies</gui>, check
+        <gui style="checkbox">Reverse</gui>.</p>
+      </item>
+    </steps>
+
+    <p>The last page will be printed first, and so on.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Последователно подреждане</title>
+    
+    <p>Ако отпечатвате повече копия на документ, стандартно листите ще бъдат групирани по номер на страница (т.е. копията на страница едно излизат първи, после копията на страница две и т.н.). Последователното подреждане ще отпечата всяко копие групирано по страниците си.</p>
+
+    <p>За последователно подреждане:</p>
+    <steps>
+      <item>
+        <p>Click <guiseq><gui style="menu">File</gui>
+        <gui style="menuitem">Print</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>In the <gui style="tab">General</gui> tab of the Print dialog under
+        <gui style="group">Copies</gui> check
+        <gui style="checkbox">Collate</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

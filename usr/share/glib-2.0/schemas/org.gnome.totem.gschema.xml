@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<schema path="/org/gnome/Totem/" id="org.gnome.totem" gettext-domain="totem">
+		<key type="i" name="brightness">
+			<default>32767</default>
+			<summary>The brightness of the video</summary>
+		</key>
+		<key type="i" name="contrast">
+			<default>32767</default>
+			<summary>The contrast of the video</summary>
+		</key>
+		<key type="i" name="hue">
+			<default>32767</default>
+			<summary>The hue of the video</summary>
+		</key>
+		<key type="i" name="saturation">
+			<default>32767</default>
+			<summary>The saturation of the video</summary>
+		</key>
+		<key type="b" name="repeat">
+			<default>false</default>
+			<summary>Repeat mode</summary>
+		</key>
+		<key type="b" name="disable-deinterlacing">
+			<default>false</default>
+			<summary>Whether to disable deinterlacing for interlaced movies</summary>
+		</key>
+		<key type="b" name="debug">
+			<default>false</default>
+			<summary>Whether to enable debug for the playback engine</summary>
+		</key>
+		<key name="audio-output-type" enum="org.gnome.totem.BvwAudioOutputType">
+			<default>'stereo'</default>
+			<summary>Type of audio output to use</summary>
+		</key>
+		<key type="d" name="network-buffer-threshold">
+			<default>2</default>
+			<summary>Network buffering threshold</summary>
+			<description>Amount of data to buffer for network streams before starting to display the stream (in seconds).</description>
+		</key>
+		<key type="s" name="subtitle-font">
+			<default>'Sans Bold 20'</default>
+			<summary>Subtitle font</summary>
+			<description>Pango font description for subtitle rendering.</description>
+		</key>
+		<key type="s" name="subtitle-encoding">
+			<default l10n="messages" context="subtitle-encoding">
+				
+				'UTF-8'</default>
+			<summary>Subtitle encoding</summary>
+			<description>Encoding character set for subtitle.</description>
+		</key>
+		<key type="s" name="open-uri">
+			<default>''</default>
+			<summary>Default location for the "Open..." dialogs</summary>
+			<description>Default location for the "Open..." dialogs. Default is the current directory.</description>
+		</key>
+		<key type="s" name="screenshot-save-uri">
+			<default>''</default>
+			<summary>Default location for the "Take Screenshot" dialogs</summary>
+			<description>Default location for the "Take Screenshot" dialogs. Default is the Pictures directory.</description>
+		</key>
+		<key type="b" name="disable-user-plugins">
+			<default>false</default>
+			<summary>Whether to disable the plugins in the user's home directory</summary>
+		</key>
+		<key type="b" name="disable-keyboard-shortcuts">
+			<default>false</default>
+			<summary>Whether to disable the keyboard shortcuts</summary>
+		</key>
+		<key type="b" name="autoload-subtitles">
+			<default>false</default>
+			<summary>Whether to autoload text subtitle files when a movie is loaded</summary>
+		</key>
+		<key type="b" name="autoload-chapters">
+			<default>true</default>
+			<summary>Whether to autoload external chapter files when a movie is loaded</summary>
+		</key>
+		<key type="as" name="active-plugins">
+			<default>['skipto','chapters','screenshot','media_player_keys','screensaver','movie-properties','save-file']</default>
+			<summary>Active plugins list</summary>
+			<description>A list of the names of the plugins which are currently active (loaded and running).</description>
+		</key>
+		<key type="as" name="filesystem-paths">
+			<default>[]</default>
+			<summary>Directories to show</summary>
+			<description>Directories to show in the browse interface, none by default</description>
+		</key>
+	</schema>
+</schemalist>

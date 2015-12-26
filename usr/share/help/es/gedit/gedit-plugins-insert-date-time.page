@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-insert-date-time" xml:lang="es">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Inserta la fecha y hora actual en la posición del cursor</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Insertar fecha/hora</title>
+
+  <p>Como su propio nombre indica, el complemento <gui>Insertar fecha y hora</gui> le permite insertar la fecha y/o la hora en posición actual del cursor. Para activar este complemento, seleccione <guiseq><gui style="menu">gedit</gui><gui> Preferencias</gui><gui>Complementos</gui><gui>Insertar fecha y hora</gui></guiseq>. Para usar el complemento, pulse <guiseq><gui style="menu">Editar</gui><gui>Insertar fecha y hora</gui></guiseq>.</p>
+
+  <p>De manera predeterminada, el complemento <gui>Insertar fecha y hora</gui> le pedirá su formato de fecha y hora preferido cada vez que use el complemento. Sin embargo, puede seleccionar el formato de fecha y hora predeterminado seleccionando <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferencias</gui> <gui>Complementos</gui><gui>Insertar fecha y horar</gui><gui>Configurar</gui></guiseq>.</p>
+
+</page>

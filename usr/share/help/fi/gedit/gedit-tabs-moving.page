@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Välilehtien siirtäminen ja järjesteleminen</title>
+  <p><app>geditin</app> välilehtiä voidaan siirtää työskentelyn helpottamiseksi. Välilehtiä voi järjestellä ikkunakohtaisesti, siirtää <app>geditin</app> ikkunan ulkopuolelle (luo uuden <app>gedit</app>-ikkunan) ja siirtää ikkunasta toiseen.</p>
+
+  <section id="tabs-change-order">
+    <title>Välilehtien uudelleenjärjestäminen</title>
+
+    <p>Välilehtien järjestyksen muuttaminen onnistuu seuraavasti:</p>
+
+    <steps>
+      <item>
+        <p>Napsauta ja pidä hiiren painike pohjassa välilehden päällä.</p>
+      </item>
+      <item>
+        <p>Move the tab to the desired position among the other tab.</p>
+      </item>
+      <item>
+        <p>Vapauta hiiren painike.</p>
+      </item>
+    </steps>
+
+    <p>Välilehti asetetaan mahdollisimman lähelle sitä kohtaa, jossa hiiren painike vapautetaan, muiden välilehtien joukkoon.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Uuden ikkunan avaaminen välilehteä siirtämällä</title>
+    <p>To create a new window from an existing tab:</p>
+
+    <steps>
+      <item>
+        <p>Napsauta ja pidä hiiren painike pohjassa välilehden päällä.</p>
+      </item>
+      <item>
+        <p>Raahaa välilehti <app>gedit</app>-ikkunan ulkopuolelle.</p>
+      </item>
+      <item>
+        <p>Vapauta hiiren painike.</p>
+      </item>
+    </steps>
+
+    <p>tai kun välilehti on avoinna, valitse <guiseq><gui>Asiakirjat </gui><gui>Siirrä uuteen ikkunaan</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Jos <app>geditin</app> ikkuna on suurennettu, raahaa välilehti valikkopalkkiin näytön yläreunassa siirtääksesi välilehden uuteen ikkunaan.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Välilehden siirtäminen toiseen geditin ikkunaan</title>
+
+    <p>Jos haluat siirtää välilehden ikkunasta toiseen, toimi seuraavasti:</p>
+
+    <steps>
+      <item>
+        <p>Napsauta ja pidä hiiren painike pohjassa välilehden päällä.</p>
+      </item>
+      <item>
+        <p>Drag the tab to the new window.</p>
+      </item>
+      <item>
+        <p>Place it beside other tabs in the new window.</p>
+      </item>
+      <item>
+        <p>Vapauta hiiren painike.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>You may find it easier to move a tab from one window to another by
+      dragging the tab to the <gui>Activities</gui> hot-corner of
+      <gui>GNOME Shell</gui>. This will reveal each of the open
+      <app>gedit</app> windows. You can then release the tab on the
+      desired <app>gedit</app> window.</p>
+    </note>
+
+    <p>See the <link xref="gedit-shortcut-keys">tab-related shortcut
+    keys</link> table to make it easier to manage your tabs.</p>
+
+  </section>
+
+</page>

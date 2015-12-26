@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.11.5">
+<!ENTITY manrevision "2.0.3">
+<!ENTITY date "May 2008">
+<!ENTITY app "Rhythmbox Music Player">
+<!ENTITY mdash "&#8212;">
+]>
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.2
+  Last modified: October 02, 2002
+  Maintainers:
+               Mark Finlay <sisob@eircom.net>
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.3
+  Last modified: August 08, 2003
+  Maintainers:
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.4
+  Last modified: October 01, 2005
+  Maintainers:
+	       Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="de">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Rhythmbox Musik-Player</title>
+	<copyright><year>2002</year> <holder>Mark Finlay</holder></copyright>
+        <copyright><year>2002</year> <year>2002</year> <holder>Mark Humphreys</holder></copyright>
+	<copyright><year>2005</year> <year>2006</year> <holder>Baptiste Mille-Mathias</holder></copyright>
+	<copyright><year>2006</year> <holder>Victor Osadci</holder></copyright>
+	<copyright><year>2008</year> <holder>Dean Sas</holder></copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	<publisher>
+	 	<publishername>GNOME-Dokumentationsprojekt</publishername>
+	</publisher>
+
+   
+
+  <legalnotice id="legalnotice">
+	<para>Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free Software Foundation veröffentlichten Version ohne unveränderbare Abschnitte sowie ohne Texte auf dem vorderen und hinteren Buchdeckel kopiert, verteilt und/oder modifiziert werden. Eine Kopie der GFDL finden Sie unter diesem <ulink type="help" url="help:fdl">Link</ulink> oder in der mit diesem Handbuch gelieferten Datei COPYING-DOCS.</para>
+         <para>Dieses Handbuch ist Teil einer Sammlung von GNOME-Handbüchern, die unter der GFDL veröffentlicht werden. Wenn Sie dieses Handbuch getrennt von der Sammlung weiterverbreiten möchten, können Sie das tun, indem Sie eine Kopie der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz beschrieben ist.</para>
+
+	<para>Viele der Namen, die von Unternehmen verwendet werden, um ihre Produkte und Dienstleistungen von anderen zu unterscheiden, sind eingetragene Warenzeichen. An den Stellen, an denen diese Namen in einer GNOME-Dokumentation erscheinen, werden die Namen in Großbuchstaben oder mit einem großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt auf diese Warenzeichen hingewiesen wird.</para>
+
+	<para>DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <orderedlist>
+		<listitem>
+		  <para>DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH AUCH OHNE EINSCHRÄNKUNG AUF GARANTIEN, DASS DIESES DOKUMENT ODER VERÄNDERTE FASSUNGEN DIESES DOKUMENTS FREI VON HANDELSDEFEKTEN, FÜR EINEN BESTIMMTEN ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND</para>
+		</listitem>
+		<listitem>
+		  <para>UNTER KEINEN UMSTÄNDEN UND AUF BASIS KEINER RECHTSGRUNDLAGE, EGAL OB DURCH UNERLAUBTEN HANDLUNGEN (EINSCHLIEßLICH FAHRLÄSSIGKEIT), VERTRAG ODER ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN INFORMIERT WAREN.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+   other legal stuff such as "NO WARRANTY" statement. Please do not change
+   any of this. -->
+   <authorgroup>
+   		<author><firstname>Mark</firstname> <surname>Finlay</surname> <affiliation> <orgname>GNOME-Dokumentationsprojekt</orgname> <address><email>sisob@eircom.net</email></address> </affiliation></author>
+		<author><firstname>Mark</firstname> <surname>Humphreys</surname> <affiliation> <orgname>GNOME-Dokumentationsprojekt</orgname> <address><email>marquee@users.sourceforge.net</email></address> </affiliation></author>		
+		<author role="maintainer"><firstname>Baptiste</firstname> <surname>Mille-Mathias</surname> <affiliation> <orgname>GNOME-Dokumentationsprojekt</orgname> <address><email>baptiste.millemathias@gmail.com</email></address> </affiliation></author>
+		<author><firstname>Victor</firstname> <surname>Osadci</surname> <affiliation> <orgname>GNOME-Dokumentationsprojekt</orgname> <address><email>Victor.Osadci.GNOME@xhtml.md</email></address> </affiliation></author>
+		<author><firstname>Dean</firstname> <surname>Sas</surname> <affiliation> <orgname>Ubuntu-Dokumentationsprojekt</orgname> <address><email>dean@deansas.org</email></address> </affiliation></author>
+   </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+   <revhistory>
+      <revision><revnumber>Rhythmbox Musikwiedergabe-Handbuch V0.0.2</revnumber> <date>Oktober 2002</date> <revdescription> 
+	  		<para role="author">Mark Finlay</para>
+	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+		</revdescription></revision> 
+      <revision><revnumber>Rhythmbox Musikwiedergabe-Handbuch V0.0.3</revnumber> <date>August 2003</date> <revdescription> 
+	  		<para role="author">Mark Humphreys</para>
+	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+		</revdescription></revision> 
+      <revision><revnumber>Rhythmbox Musikwiedergabe-Handbuch V0.0.4</revnumber> <date>Oktober 2005</date> <revdescription> 
+	  		<para role="author">Baptiste Mille-Mathias</para>
+	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+		</revdescription></revision> 
+      <revision><revnumber>Rhythmbox Musikwiedergabe-Handbuch V2.0.2</revnumber> <date>April 2006</date> <revdescription> 
+	  		<para role="author">Luca Ferretti</para>
+	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+		</revdescription></revision> 
+	  <revision><revnumber>Rhythmbox Musikwiedergabe-Handbuch V2.0.3</revnumber> <date>Mai 2008</date> <revdescription>
+			<para role="author">Dean Sas</para>
+			<para role="publisher">GNOME-Dokumentationsprojekt</para>
+        </revdescription></revision>
+    </revhistory> 
+
+    <releaseinfo>In diesem Handbuch wird die Version 0.11.5 von Rhythmbox Musik-Player beschrieben.</releaseinfo> 
+    <legalnotice> 
+      <title>Rückmeldungen</title> 
+      <para>Wenn Sie Fehler finden oder Vorschläge zur Rhythmbox Musik-Player-Anwendung oder zu diesem Handbuch haben, folgen Sie bitte den Anweisungen auf der <ulink url="ghelp:gnome-feedback" type="help">GNOME-Seite für Rückmeldungen</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+   <abstract role="description">
+     <para>Rhythmbox ist das leistungsstarke Musik-Wiedergabeprogramm des GNOME-Desktops.</para>
+   </abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Jonas Haag</firstname>
+      </personname>
+      <email>jonas@jonashaag.de</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+      <holder>Jonas Haag</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Nicolai Spohrer</firstname>
+      </personname>
+      <email>nicolai@xeve.de</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+      <holder>Nicolai Spohrer</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Mario Blättermann</firstname>
+      </personname>
+      <email>mariobl@gnome.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2008</year>
+      
+        <year>2009</year>
+      
+      <holder>Mario Blättermann</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Christian Kirbach</firstname>
+      </personname>
+      <email>christian.kirbach@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2013</year>
+      
+      <holder>Christian Kirbach</holder>
+    </copyright>
+  </articleinfo> 
+
+
+  <indexterm zone="index"><primary>Rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>Musikwiedergabe</primary></indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="introduction">
+    <title>Einführung</title>
+      <para><application>Rhythmbox Musik-Player</application> ist ein Musik-Player und eine Musiksammlung zur Verwaltung und Wiedergabe von mit Meta-Daten versehenen Musikdateien. Zahlreiche Musikdateiformate werden unterstützt.</para>
+      <para>Zur Zeit beherrscht <application>Rhythmbox Musik-Player</application> die Ausführung folgender Aufgaben:</para>
+      	<itemizedlist>
+          <listitem>
+            <para>Abspielen von Musikdateien zahlreicher Formate aus einer organisierten, mit Tags versehenen Musiksammlung.</para>
+          </listitem>
+          <listitem>
+            <para>Anzeigen von titelspezifischen Informationen mit Hilfe von Meta-Daten.</para>
+          </listitem>
+          <listitem>
+            <para>Anzeigen aller Titel in einer organisierten Ansicht.</para>
+          </listitem>
+          <listitem>
+            <para>Erstellen von statischen Wiedergabelisten durch Ziehen und Ablegen aus der Musiksammlungsansicht.</para>
+          </listitem>
+          <listitem>
+            <para>Erstellen automatischer Wiedergabelisten nach Kriterien.</para>
+          </listitem>
+          <listitem>
+            <para>In Quellen wie der Musiksammlung oder Wiedergabelisten nach Titeln suchen.</para>
+          </listitem>
+          <listitem>
+            <para>Anhören von Internetradio.</para>
+          </listitem>
+          <listitem>
+            <para>Abspielen von Audio-CDs und Abrufen von Informationen (z.B. Titelnamen) aus dem Internet.</para>
+          </listitem>
+          <listitem>
+            <para>Brennen von Audio-CDs aus Wiedergabelisten.</para>
+          </listitem>
+          <listitem>
+            <para>Musik zu iPods, MTP-Playern und Massenspeicher-Wiedergabegeräten übertragen.</para>
+          </listitem>
+        </itemizedlist>
+  </sect1>
+  <sect1 id="rb-getting-started">
+  	<title>Erste Schritte</title>
+	
+		<sect2 id="rb-launch">
+			<title><application>Rhythmbox Musik-Player</application> starten</title>
+			<para>Sie können <application>Rhythmbox Musik-Player</application> auf folgende Arten starten: <variablelist>
+					<varlistentry>
+						<term><guimenu>Anwendungen</guimenu>-Menü</term>
+						<listitem>
+							<para>Wählen Sie <menuchoice><guisubmenu>Multimedia</guisubmenu><guimenuitem>Rhythmbox Musik-Wiedergabeprogramm</guimenuitem></menuchoice>.</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Befehlszeile</term>
+						<listitem>
+							<para>Geben Sie <command>rhythmbox</command> ein, und drücken Sie die <keycap>Eingabetaste</keycap>.</para>
+						</listitem>
+					</varlistentry>
+				</variablelist></para>
+		</sect2>
+		<sect2 id="rb">
+			<title>Den Assistenten starten</title>
+			<para>Wenn <application>Rhythmbox Musik-Player</application> zum ersten Mal gestartet wird, wird Ihnen ein Assistent beim Importieren Ihrer Musiksammlung helfen. Klicken Sie auf der zweiten Seite des Assistenten auf <guibutton>Durchsuchen</guibutton> und wählen Sie den Ordner aus, in dem Ihre Musik gespeichert ist.</para>
+		</sect2>
+  </sect1>
+  <sect1 id="rb-window">
+    <title>Rhythmbox Musik-Player-Fenster</title>
+    <sect2 id="rb-window-intro">
+      <title>Übersicht</title>
+      	<para>Das <application>Rhythmbox Musik-Player</application>-Fenster erlaubt es Ihnen, Ihre Lieblingsmusik zu durchsuchen und diese abzuspielen. <xref linkend="fig-rb-window"/> zeigt die Oberfläche des <application>Rhythmbox Musik-Player</application>s mit seinen Hauptbestandteilen.</para>
+      	<figure id="fig-rb-window">
+        <title>Das <application>Rhythmbox Musik-Player</application>-Fenster</title>
+        <screenshot>
+          <mediaobject>ok</mediaobject>
+        </screenshot>
+      </figure>
+      <para>Tabelle 1 beschreibt die verschiedenen Komponenten des <application>Rhythmbox Musik-Player</application>-Fensters.</para>
+      <table frame="topbot" id="table-rb-window">
+        <title><application>Rhythmbox Musik-Player</application>-Fensterkomponenten</title>
+        <tgroup cols="3" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <colspec colname="COLSPEC2"/>
+          <thead>
+            <row rowsep="1">
+              <entry valign="top">Id</entry>
+              <entry valign="top">Komponente</entry>
+              <entry valign="top">Beschreibung</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry valign="top">1</entry>
+              <entry valign="top">Menüleiste</entry>
+              <entry valign="top">Enthält Menüs zur Ausführung von Aufgaben im <application>Rhythmbox Musik-Player</application>-Fenster.</entry>
+            </row>
+            <row>
+              <entry valign="top">2</entry>
+              <entry valign="top">Werkzeugleiste</entry>
+              <entry valign="top">Bietet Zugriff auf die Abspielfunktionen und Details über den momentanen Titel.</entry>
+            </row>
+            <row>
+              <entry valign="top">3</entry>
+              <entry valign="top">Schieberegler für Position im Musikstück</entry>
+              <entry valign="top">Zeigt die Position im momentanen Titel an und erlaubt Ihnen, während des Abspielens zu anderen Stellen im Titel zu springen.</entry>
+            </row>
+            <row>
+              <entry valign="top">4</entry>
+              <entry valign="top">Seitenleiste</entry>
+              <entry valign="top">Zeigt die Liste aller verfügbarer Quellen an.</entry>
+
+            </row>
+            <row>
+              <entry valign="top">5</entry>
+              <entry valign="top">Browser</entry>
+              <entry valign="top">Ermöglicht es, Titel aus der Bibliothek nach Musikrichtung, Künstler oder Album zu filtern. Der Browser enthält außerdem eine Suchfunktion, um nur die Lieder anzuzeigen, die den Suchkriterien entsprechen.</entry>
+            </row>
+            <row>
+              <entry valign="top">6</entry>
+              <entry valign="top">Titelliste</entry>
+              <entry valign="top">Listet die Titel auf, die zur ausgewählten Quelle gehören.</entry>
+            </row>
+            <row>
+              <entry valign="top">7</entry>
+              <entry valign="top">Statusleiste</entry>
+              <entry valign="top">Zeigt Informationen über die in der Seitenleiste ausgewählte Quelle an.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="intro-sourcelist">
+      <title>Die Seitenleiste</title>
+      <para>In der Seitenleiste greifen Sie auf Ihre Musiksammlung, Internetradio, Ihre Wiedergabelisten und Audio-CDs zu. Die Seitenleiste kann die folgenden Quellen enthalten: <itemizedlist>
+				  <listitem><para>Die <application>Rhythmbox Musik-Player</application>-Musiksammlung, in der alle importierten Titel erscheinen.</para></listitem>
+				  <listitem><para>Die iRadio-Quelle mit allen Internetradio-Stationen.</para></listitem>
+				  <listitem><para>Podcasts.</para></listitem>
+				  <listitem><para>Alle Abspiellisten (normal und automatisch)</para></listitem>
+				  <listitem><para>Audio-CDs, die in das CD-Laufwerk eingelegt werden.</para></listitem>
+				  <listitem><para>Mobile Abspielgeräte wie iPods, die am Computer angeschlossen sind.</para></listitem>
+				  <listitem><para>Die DAAP-Musikverteiler im lokalen Netzwerk.</para></listitem>
+				  <listitem><para>Musikläden wie Jamendo und Magnatune.</para></listitem>
+				</itemizedlist></para>
+      	<para>Die Anzeige der Seitenleiste kann mit <menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Seitenleiste</guimenuitem></menuchoice> ein- oder ausgeschaltet werden.</para>
+    </sect2>
+    <sect2 id="player-toolbar">
+      <title>Die Werkzeugleiste</title>
+      <para>Die Werkzeugleiste bietet Zugriff auf Details über den momentan gespielten Titel. Wenn kein Titel angezeigt wird, zeigt sie keine Informationen an. Wenn ein Titel gespielt wird, wird der Titelname und darunter der Künstler- und Albumname angezeigt.</para>
+      <para>Eine Fortschrittsleiste zeigt auch den Fortschritt des momentan gespielten Titels an. Wenn die Fortschrittsleiste fokussiert ist können die Pfeiltasten dazu benutzt werden, vor- oder zurückzuspulen.</para>
+      <screenshot>
+        <mediaobject>ok</mediaobject>
+      </screenshot>
+      <tip>
+        <para>Wenn Sie eine Maus mit Mausrad besitzen, können Sie die Lautstärke einstellen, indem Sie das Mausrad drehen während sich der Mauszeiger über dem Lautstärkeregler befindet.</para>
+      </tip>
+    </sect2>
+    <sect2 id="status-area">
+      <title>Die Statusleiste</title>
+      <para>Die Statusleiste enthält weitere Informationen über die Anzahl der Titel und die Gesamtdauer der ausgewählten Quelle. Ob die Statusleiste angezeigt werden soll, kann mit <menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Statusbar</guimenuitem></menuchoice> umgeschaltet werden.</para>
+      <screenshot>
+        <mediaobject>ok</mediaobject>
+      </screenshot>
+    </sect2>
+    <sect2 id="rb-window-small">
+      <title> Minimiertes Fenster von <application>Rhythmbox Musik-Player</application></title>
+      <para>Der <application>Rhythmbox Musik-Player</application> beherrscht einen Kompaktmodus. Dieser Modus erlaubt nur Zugriff auf die Menüleiste und die Abspielfunktionen von <application>Rhythmbox Musik-Player</application>.</para>
+      <para>Sie können den Kompaktmodus einschalten, indem Sie <menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Kompakt</guimenuitem></menuchoice> wählen.</para>
+      <screenshot>
+        <mediaobject>ok</mediaobject>
+      </screenshot>
+    </sect2>
+  </sect1>
+  <sect1 id="Usage">
+    <title>Rhythmbox Musik-Player benutzen</title>
+    <sect2 id="Playing">
+      <title>Musik abspielen</title>
+      <para>Um einen Titel abzuspielen, gibt es drei Möglichkeiten: wählen Sie <menuchoice><guimenu>Steuerung</guimenu><guimenuitem>Wiedergabe</guimenuitem></menuchoice>, wählen Sie den Titel aus und klicken Sie auf <guibutton>Wiedergabe</guibutton>, oder klicken Sie einfach zweimal auf den zu spielenden Titel.</para>
+      <para>Wenn der Titel zu Ende ist, springt der <application>Rhythmbox Musik-Player</application> zum nächsten Titel, der in der Titelliste in der Seitenleiste angezeigt wird.</para>
+      <para>In der Musiksammlung können Sie alle Titel eines Künstlers oder eines bestimmten Albums abspielen, indem Sie den <guilabel>Album</guilabel> oder <guilabel>Künstler</guilabel>-Eintrag im <link linkend="library-filter-browser">Musiksammlungs-Browser</link> wählen.</para>
+      <sect3 id="next-previous">
+        <title>Nächster/Wiedergabe/Vorheriger</title>
+        <para>Die Knöpfe <guibutton>Nächster</guibutton> und <guibutton>Vorheriger</guibutton> können dazu verwendet werden, um während der Wiedergabe zwischen Titeln hin und her zu springen. Wenn ein Titel gerade abgespielt wird, startet der Vorheriger-Knopf den Titel neu. Wenn der <guibutton>Wiedergabe</guibutton>-Knopf angeklickt wird, wird der momentane Titel abgespielt. <screenshot>
+				<mediaobject>ok</mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="repeat">
+        <title>Wiederholen</title>
+        <para>Die Option <guibutton>Endlosschleife</guibutton> bewirkt, dass der <application>Rhythmbox Musik-Player</application> nach dem Ende des letzten Titels der Liste beim ersten Titel von vorn beginnt.</para>
+        <para>Um die Endlosschleife einzuschalten, wählen Sie <menuchoice><guimenu>Steuerung</guimenu><guimenuitem>Endlosschleife</guimenuitem></menuchoice> oder klicken Sie auf den Knopf <guibutton>Endlosschleife</guibutton> in der Werkzeugleiste. <screenshot>
+				<mediaobject>ok</mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="shuffle">
+        <title>Zufallswiedergabe</title>
+        <para>Die Option <guibutton>Zufall</guibutton> bewirkt, dass der <application>Rhythmbox Music Player</application> die Titel in einer zufälligen Reihenfolge abspielt.</para>
+        <para>Um die Option »Zufall« zu aktivieren, wählen Sie <menuchoice><guimenu>Steuerung</guimenu><guimenuitem>Zufall</guimenuitem></menuchoice> oder klicken Sie den Knopf <guibutton>Zufall</guibutton> in der Werkzeugleiste. <screenshot>
+				<mediaobject>ok</mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="volume">
+        <title>Die Wiedergabelautstärke festlegen</title>
+        <para>Das Lautstärkeregler ist in der rechten Seite der Werkzeugleiste platziert. Wenn Sie auf das Symbol klicken, erscheint ein Schieberegler, mit dem Sie die Lautstärke erhöhen oder verringern können. An den blauen Halbkreisen auf dem Symbol können Sie die ungefähre Lautstärke erkennen. <screenshot><mediaobject>ok</mediaobject></screenshot></para>
+        <tip>
+          <para>Die Lautstärke kann auch verändert werden, wenn Sie das Mausrad direkt über dem Symbol des Lautstärkereglers drehen.</para>
+        </tip>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="library">
+    <title>Quelle »Musik«</title>
+    	<para>Die Musiksammlung ist die Hauptquelle im <application>Rhythmbox Musik-Player</application>, sie ist die Datenbank, die alle in <application>Rhythmbox Musik-Player</application> importieren Musikdateien enthält. In der Musiksammlung sind nur die Pfade zum Zugriff auf die Titel, nicht die Dateien selbst gespeichert.</para>
+    	<para>Die Musiksammlung kann nicht nur Dateien enthalten, die physisch auf Ihrem Rechner gespeichert sind (in Ihrem persönlichen Ordner zum Beispiel), sondern auch Dateien, die von einem entfernten Rechner über einen Netzwerkdienst angeboten werden. Einige Beispiel für unterstützte Netzwerkdienste sind: <itemizedlist>
+				<listitem>
+					<para>Öffentlicher FTP-Server</para>
+				</listitem>
+				<listitem>
+					<para>FTP-Server, der Zugangsdaten verlangt</para>
+				</listitem>
+				<listitem>
+					<para>NFS-Server</para>
+				</listitem>
+				<listitem>
+					<para>Windows-Dateiaustausch-Server</para>
+				</listitem>
+			</itemizedlist></para>
+    	<para>Die Titel, die in die Musiksammlung importiert wurden, werden in der Wiedergabeliste mit Informationen wie Künstlername oder dem Namen des Titels angezeigt. Diese Informationen sind in den Dateien selbst als sogenannte Tags eingebettet. Der <application>Rhythmbox Musik-Player</application> verwendet diese Tags, um die Titel in einer übersichtlichen Anordnung darzustellen. <tip>
+				<para>Tags können bearbeitet werden, indem Sie <menuchoice><guimenu>Musik</guimenu><guimenuitem>Eigenschaften</guimenuitem></menuchoice> wählen und die Details in dem sich öffnenden Fenster eingeben.</para>
+			</tip></para>
+    <sect2 id="library-tracks-add">
+      <title>Titel zur Musiksammlung hinzufügen</title>
+      		<para>Um Titel der Musiksammlung hinzuzufügen, können Sie auf folgende Weisen vorgehen: <itemizedlist>
+					<listitem>
+						<para>Um einen einzelnen Titel zu importieren, wählen Sie <menuchoice><guimenu>Musik</guimenu><guimenuitem>Datei importieren</guimenuitem></menuchoice> im Menü, klicken die Datei an und klicken auf den <guibutton>Öffnen</guibutton>-Knopf.</para>
+					</listitem>
+					<listitem>
+						<para>Wenn Sie mehrere Musikdateien aus einem bestimmten Ordner importieren möchten, wählen Sie <menuchoice><guimenu>Musik</guimenu><guimenuitem>Ordner importieren</guimenuitem></menuchoice>, wählen den Ordner aus und klicken auf den <guibutton>Öffnen</guibutton>-Knopf. Alle Musikdateien in diesem Ordner und dessen Unterordnern werden so importiert.</para>
+					</listitem>
+					<listitem>
+						<para>Sie können Titel auch einfach aus einem Dateimanager (wie zum Beispiel <application>Nautilus</application>) in das Rhythmbox-Fenster ziehen.</para>
+					</listitem>
+				</itemizedlist></para>
+      	<tip>
+       		<para>Wenn Sie die Funktion »Die Musiksammlung auf neue Dateien hin überwachen« aktiviert haben (siehe <xref linkend="prefs-library"/>), werden alle Musikdateien, die in dem gewählten Ordner gespeichert werden, zur Musiksammlung hinzugefügt. Neue Dateien, die später hinzugefügt werden, werden ebenfalls importiert.</para>
+      	</tip>
+    </sect2>
+    <sect2 id="library-tracks-del">
+    	<title>Titel aus der Musiksammlung entfernen</title>
+      	<para>Um einen Titel aus der Musiksammlung zu entfernen, ihn aber trotzdem auf der Festplatte gespeichert zu lassen, wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenu>Entfernen</guimenu></menuchoice>. Der Titel und dessen Eigenschaften (wie Bewertung, oder wie oft er abgespielt wurde) werden dann aus der Rhythmbox-Datenbank entfernt.</para>
+      	<para>Um einen Titel aus der Musiksammlung und von Ihrer Festplatte zu entfernen, wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>In den Papierkorb verschieben</guimenuitem></menuchoice>. Der Titel wird dann auf die gleiche Weise wie vorher beschrieben aus der Musiksammlung entfernt, aber zusätzlich in den Papierkorb-Ordner der Dateiverwaltung verschoben.</para>
+    </sect2>
+    <sect2 id="library-filter-search">
+    	<title>Titel mit der Suchfunktion finden</title>
+      	<para>Rhythmbox besitzt eine Suchfunktion, mit der Sie alle Titel anhand von Suchbegriffen suchen und filtern können.</para>
+      	<para>Geben Sie einige Buchstaben in das Suchfeld ein. Bereits während Ihrer Eingabe werden nur noch die Titel angezeigt, die zu Ihrer Eingabe passen. Es werden alle Tags der in der Musiksammlung enthaltenen Titel mit einbezogen.</para>
+		<para>Um eine präzisere Suche durchzuführen, können Sie auch nur bestimmte Tags durchsuchen lassen, wie zum Beispiel <guilabel>Künstler</guilabel>, <guilabel>Alben</guilabel> oder den <guilabel>Titel</guilabel> von Stücken.</para>
+    </sect2>
+    <sect2 id="library-filter-browser">
+    	<title>Titel mit Hilfe des Browsers finden</title>
+      	<para>Der Browser ist eine weitere komfortable Möglichkeit, bestimmte Titel zu finden. Der Browser ist ein dreigeteiltes Werkzeug, mit dem man durch Musikgenres, Künstler und Alben navigieren kann und der dann nur die zu den Suchbegriffen passenden Titel anzeigt.</para>
+      	<para>Um den Browser anzuzeigen, wählen Sie <menuchoice><guimenu>Ansicht</guimenu><guimenuitem>Durchsuchen</guimenuitem></menuchoice>. Wenn Sie einen bestimmten Künstler, ein bestimmtes Album oder/und Genre auswählen, werden sofort die auf die Kriterien passenden Titel angezeigt. Die Kriterien werden auf die Spalten von links nach rechts angewendet.</para>
+      	<tip>
+        	<para>Sie können mehrere Kriterien der gleichen Kategorie wählen, indem Sie die Taste <keycombo><keycap>Strg</keycap></keycombo> drücken und dann entsprechend auswählen.</para>
+      	</tip>
+      		<para>Sie können auch Titel finden, die dasselbe Genre, denselben Künstler oder Albumnamen wie der ausgewählte Titel haben, ausgehend von den Tags eines der Titel in der Titelliste. Wählen Sie einen Titel aus der Titelliste, klicken Sie mit der rechten Maustaste darauf, wählen Sie <guilabel>Dieses Genre durchsuchen</guilabel>, <guilabel>Nach diesem Künstler suchen</guilabel> oder <guilabel>Dieses Album durchsuchen</guilabel>. Der Browser wird die Titel dann nach den angegebenen Kriterien filtern.</para>
+  	</sect2>
+  </sect1>
+  <sect1 id="radio">
+  	<title>Quelle »Radio«</title>
+    <para>Der Internetradiospieler kann dazu benutzt werden, um einen Audio-Datenstrom von einem anderen Computer wiederzugeben, zum Beispiel über das Internet.</para>
+    <figure id="fig-iradio">
+      <title>Der Internetradiospieler in <application>Rhythmbox Musik-Player</application></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+	    <imagedata format="PNG" fileref="figures/rb-iradio-main.png"/>
+	  </imageobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+    <sect2 id="iradio-adding">
+      	<title>Neue Internetradio-Sender hinzufügen</title>
+      	<para>Um zum Internetradioplayer einen neuen Internetradio-Sender hinzuzufügen, wählen Sie <menuchoice><guimenu>Musik</guimenu><guimenuitem>Neuer Internetradio-Sender</guimenuitem></menuchoice>, geben die Adresse des Internetradios ein und klicken auf den Knopf <guibutton>Hinzufügen</guibutton>.</para>
+    </sect2>
+    <sect2 id="iradio-modify">
+      	<title>Die Einstellungen eines Senders betrachten und verändern</title>
+      	<para>Die Einstellungen eines Internetradio-Senders können mit <menuchoice><guimenu>Musik</guimenu><guimenuitem>Eigenschaften</guimenuitem></menuchoice> betrachtet und verändert werden.</para>
+      	<para>Sie können die Einstellungen eines Senders auch ändern, indem Sie mit der rechten Maustaste auf den Sender klicken und dann <guimenuitem>Eigenschaften</guimenuitem> wählen.</para>
+      	<para>Wenn Sie auf die Eigenschaften eines Senders zugreifen, können Sie seinen Titel und sein Genre verändern; die Adresse des Datenstroms und die Bewertungen sind ebenso veränderbar.</para>
+    </sect2>
+    <sect2 id="iradio-delete">
+    	<title>Einen Internetradio-Sender entfernen</title>
+      	<para>Um einen Sender aus der Internetradio-Liste zu entfernen, klicken Sie auf den Sender und wählen <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Entfernen</guimenuitem></menuchoice>. Sie können auch mit der rechten Maustaste auf den Sender klicken und <guimenuitem>Entfernen</guimenuitem> auswählen.</para>
+    </sect2>
+  </sect1>
+  <sect1 id="podcast">
+  	<title>Quelle »Podcasts«</title>
+    <para>Podcasting ist ein neuer Weg um Audioinhalte über das Internet zu verteilen. Wenn ein Autor eine neue Folge veröffentlicht, werden die Podcast-Abonnenten über einen XML-Feed informiert.</para>
+    <para>Rhythmbox kann Podcasts abonnieren. Wenn Sie über die Veröffentlichung einer neuen Folge des Podcasts informiert werden, wird die Folge heruntergeladen und abgespielt.</para>
+    <tip>
+      	<para>Wenn Sie mehr über Podcasts erfahren möchten, können Sie sich den <ulink url="http://de.wikipedia.org/">Wikipedia</ulink>-Artikel über <ulink url="http://de.wikipedia.org/wiki/Podcasting">Podcasting</ulink> anschauen.</para>
+    </tip>
+    <para>
+      <figure>
+        <title>Die Podcast-Oberfläche</title>
+        <mediaobject>ok</mediaobject>
+      </figure>
+    </para>
+    <sect2 id="podcast-management">
+      <title>Podcast-Verwaltung</title>
+      <sect3 id="podcast-feed-add">
+        <title>Einen neuen Podcast hinzufügen</title>
+        <para>Um ein neues Podcast-Abonnement hinzuzufügen, wählen Sie <menuchoice><guimenu>Musik</guimenu><guimenuitem>Neuer Podcast-Feed</guimenuitem></menuchoice> und geben im neu erscheinenden Fenster die Adresse des Podcasts an. Rhythmbox wird dann die Liste aller Folgen herunterladen und die neueste Folge auf der Festplatte speichern.</para>
+        <para>Um ein neues Podcast-Abonnement hinzuzufügen, können Sie auch mit der rechten Maustaste auf die <guimenuitem>Podcasts</guimenuitem>-Quelle klicken und dort <guimenuitem>Neuer Podcast-Feed</guimenuitem> wählen.</para>
+      </sect3>
+      <sect3 id="podcast-feed-del">
+        <title>Einen Podcast löschen</title>
+        <para>Um einen Podcast zu löschen, klicken Sie mit der rechten Maustaste auf den Namen des Podcasts im Browser und wählen <menuchoice><guimenuitem>Podcast-Feed entfernen</guimenuitem></menuchoice>, und dann <menuchoice><guimenuitem>Nur Feed löschen</guimenuitem></menuchoice> wenn Sie die Podcast-Folgen behalten möchten, oder <menuchoice><guimenuitem>Feed und Dateien löschen</guimenuitem></menuchoice> wenn Sie den Feed und dessen Folgen löschen möchten.</para>
+      </sect3>
+      <sect3 id="podcast-feed-update">
+        <title>Podcast-Abonnements aktualisieren</title>
+        <para>Um herauszufinden, ob neue Podcast-Folgen veröffentlicht wurden, klicken Sie mit der rechten Maustaste auf den Namen des Podcasts im Browser und wählen <menuchoice><guimenuitem>Podcast-Feed aktualisieren</guimenuitem></menuchoice>. Wenn eine neue Folge erschienen ist, wird diese in der Folgenliste erscheinen.</para>
+        <tip>
+          <para>Rhythmbox durchsucht selbst in regelmäßigen Abständen die Liste der Podcasts, um nach Aktualisierungen zu suchen.</para>
+        </tip>
+        <para>Sie können auch alle Podcasts aktualisieren, indem Sie mit der rechten Maustaste auf die <menuchoice><guimenuitem>Podcasts</guimenuitem></menuchoice>-Quelle klicken und <menuchoice><guimenuitem>Alle Feeds aktualisieren</guimenuitem></menuchoice> wählen.</para>
+      </sect3>
+      <sect3 id="podcast-feed-show">
+        <title>Auf die Podcast-Abonnement-Einstellungen zugreifen</title>
+        <para>Um auf die Eigenschaften eines Feeds zuzugreifen, klicken Sie mit der rechten Maustaste auf den Namen des Feeds und wählen <menuchoice><guimenuitem>Eigenschaften</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Im Reiter <guilabel>Grundlegend</guilabel> können Sie den <guilabel>Titel</guilabel>, <guilabel>Autor</guilabel>, die <guilabel>Letzte Aktualisierung</guilabel> und die <guilabel>Beschreibung</guilabel> des Podcasts sehen.</para></listitem><listitem><para>Im Reiter <guilabel>Details</guilabel> können Sie die <guilabel>Quelle</guilabel>, <guilabel>Sprache</guilabel> und das <guilabel>Copyright</guilabel> des Feeds sehen.</para></listitem></itemizedlist> Sie können die Eigenschaften betrachten und die Bewertung ändern.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="episode-management">
+      <title>Folgenverwaltung</title>
+      <sect3 id="podcast-episode-download">
+        <title>Eine Podcast-Folge herunterladen</title>
+        <para>Um eine Folge auf Ihre Festplatte herunterzuladen, klicken Sie mit der rechten Maustaste auf die Folge und wählen <menuchoice><guimenuitem>Folge herunterladen</guimenuitem></menuchoice>. Rhythmbox wird die Folge herunterladen und am in den Einstellungen angegebenen Ort speichern. Sie können den Fortschritt einer Folge in der Spalte <guilabel>Status</guilabel> betrachten.</para>
+        <tip>
+          <para>Standardmäßig werden Podcasts in den Ordner <filename class="directory">Podcasts/</filename> in Ihrem persönlichen Ordner heruntergeladen. Wie Sie dies ändern können, lesen Sie in <xref linkend="prefs-podscast"/>.</para>
+        </tip>
+      </sect3>
+      <sect3 id="podcast-episode-read">
+        <title>Eine Podcast-Folge herunterladen</title>
+        <para>Um eine Podcast-Folge abzuspielen, wählen Sie die gewünschte Folge aus und wählen Sie dann <menuchoice><guimenu>Steuerung</guimenu><guimenuitem>Wiedergabe</guimenuitem></menuchoice>. Sie können auch auf den Knopf <guibutton>Wiedergabe</guibutton> klicken.</para>
+        <para>Bevor Sie die Folge wiedergeben können, muss diese heruntergeladen werden. In <xref linkend="podcast-episode-download"/> wird beschrieben, wie Sie eine Folge herunterladen können.</para>
+      </sect3>
+      <sect3 id="podcast-episode-delete">
+        <title>Eine Podcast-Folge löschen</title>
+        <para>Um eine Podcast-Folge zu entfernen, klicken Sie mit der rechten Maustaste darauf und wählen Sie dann <menuchoice><guimenuitem>Löschen</guimenuitem></menuchoice>. Dann wählen Sie <menuchoice><guimenuitem>Nur Folge löschen</guimenuitem></menuchoice> falls Sie die zugehörige Datei auf Ihrer Festplatte behalten wollen, oder wählen Sie <guibutton>Folgen und Dateien löschen</guibutton>, falls die Folge sowohl aus der Liste als auch die Datei selbst gelöscht werden soll.</para>
+        <warning>
+          <para>Wenn Sie eine Folge löschen, wird diese nicht mehr in der Liste erscheinen, es sei denn, Sie aktualisieren den Podcast.</para>
+        </warning>
+      </sect3>
+      <sect3>
+        <title>Anzeigen der Eigenschaften einer Podcast-Folge</title>
+        <para>Um auf die Eigenschaften einer Folge zugreifen zu können, klicken Sie mit der rechten Maustaste auf die Folge und wählen dann <menuchoice><guimenuitem>Eigenschaften</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Im Reiter <guilabel>Grundlegend</guilabel> sehen Sie den <guilabel>Titel</guilabel> und den <guilabel>Feed</guilabel> des Podcasts, das <guilabel>Datum</guilabel> der Veröffentlichung und die <guilabel>Beschreibung</guilabel>.</para></listitem><listitem><para>Im Reiter <guilabel>Details</guilabel> sehen Sie die <guilabel>Quelle</guilabel> des Podcasts, die <guilabel>Länge</guilabel>, die <guilabel>Bitrate</guilabel>, das Datum der <guilabel>Letzten Wiedergabe</guilabel>, die Anzahl der <guilabel>Wiedergaben</guilabel> sowie die <guilabel>Bewertung</guilabel>.</para></listitem></itemizedlist></para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="playqueue">
+  	<title>Quelle »Warteschlange«</title>
+	<para>Die Warteschlange ist eine Quelle, die zum Zwischenspeichern der nächsten abzuspielenden Titel dient. Wenn Sie einen Titel zur Warteschlange hinzufügen, wechselt <application>Rhythmbox Musik-Player</application> automatisch zu dieser Quelle, sobald die Titel abgespielt wurden.</para>
+	<para>Sobald ein Titel abgespielt wird, wird er automatisch aus der Warteschlange entfernt. Sobald die Warteschlange leer ist, spielt <application>Rhythmbox Musik-Player</application> die zuvor gespielte Quelle ab.</para>
+		<sect2 id="playqueue-track-add">
+			<title>Einen Titel in die Warteschlange aufnehmen</title>
+			<para>So fügen Sie einen Titel hinzu: <orderedlist>
+					<listitem>
+						<para>Wählen Sie aus einer beliebigen Quelle den abzuspielenden Titel aus.</para>
+					</listitem>
+					<listitem>
+						<para>Wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>In die Wiedergabeliste aufnehmen</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+		<sect2 id="playqueue-track-del">
+			<title>Einen Titel aus der Warteschlange entfernen</title>
+			<para>So entfernen Sie einen Titel aus der Warteschlange: <orderedlist>
+					<listitem>
+						<para>Wählen Sie den zu löschenden Titel in der Warteschlange aus.</para>
+					</listitem>
+					<listitem>
+						<para>Wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Löschen</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+  </sect1>
+  
+  <sect1 id="playlist">
+  	<title>Quelle »Wiedergabelisten«</title>
+    <para>Wiedergabelisten sind Quellen, die aus den in der Bibliothek vorhandenen Titeln zusammengestellt werden. Sie ermöglichen die Anordnung der Titel anhand bestimmter »Genres« oder einer bestimmten Gruppe von Künstlern. Ebenso möglich ist die Auswahl anhand von »Stimmungen« oder was auch immer Sie wollen.</para>
+    <para>Rhythmbox kennt zwei Arten von Wiedergabelisten: <itemizedlist>
+				<listitem>
+					<para>Statische Wiedergabelisten</para>
+				</listitem>
+				<listitem>
+					<para>Dynamische Wiedergabelisten</para>
+				</listitem>
+			</itemizedlist></para>
+    <para>Mit Rhythmbox können Sie die Titel einer Wiedergabeliste auf eine Audio-CD brennen.</para>
+    <sect2 id="playlist-static">
+    	<title>Statische Wiedergabelisten</title>
+      	<para>Statische Wiedergabelisten werden aus Titeln erstellt, die aus der Bibliothek in der Liste abgelegt werden.</para>
+      <sect3 id="playlist-static-new">
+        <title>Eine statische Wiedergabeliste erstellen</title>
+        <para>Um eine neue Wiedergabeliste zu erstellen, wählen Sie <menuchoice><guimenu>Musik</guimenu><guisubmenu>Wiedergabeliste</guisubmenu><guimenuitem>Neue Wiedergabeliste</guimenuitem></menuchoice>. Eine leere Wiedergabeliste ohne Titelnamen erscheint in der Seitenleiste. Geben Sie einen Namen für die Wiedergabeliste ein und drücken Sie dann die <keycombo><keycap>Eingabetaste</keycap></keycombo>.</para>
+      </sect3>
+      <sect3 id="playlist-static-tracks-add">
+        <title>Ein Lied zu einer Wiedergabeliste hinzufügen</title>
+        <para>Um Titel zu einer Wiedergabeliste hinzuzufügen, wählen Sie Titel aus der Bibliothek aus und ziehen Sie Ihre Auswahl auf das Wiedergabelisten-Symbol in der Seitenleiste.</para>
+        <para>Sie können auch einer Wiedergabeliste ein Genre, einen Künstler oder einen Albumnamen aus dem Browser zuweisen. Auf diese Weise werden alle Titel der gewählten Kategorie zur Wiedergabeliste hinzugefügt.</para>
+        <tip>
+          <para>Sie können eine gefüllte Wiedergabeliste auch in einem Arbeitsgang erstellen. Wählen Sie Titel in der <guilabel>Titelliste</guilabel> aus, oder direkt eine oder mehrere Kategorien im Browser (<guilabel>Genre</guilabel>, <guilabel>Künstler</guilabel> oder <guilabel>Album</guilabel>) und ziehen Sie Ihre Auswahl in die <guilabel>Seitenleiste</guilabel>. Dadurch wird automatisch eine benannte Wiedergabeliste erstellt.</para>
+        </tip>
+      </sect3>
+      <sect3 id="playlist-static-tracks-del">
+        <title>Lieder von einer Wiedergabeliste entfernen</title>
+        <para>Um Titel aus der Wiedergabeliste zu entfernen, wählen Sie zunächst die zu entfernenden Titel aus. Danach stehen Ihnen zwei Methoden zur Verfügung: <itemizedlist><listitem><para>Wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Löschen</guimenuitem></menuchoice>.</para></listitem><listitem><para>Führen Sie einen Klick mit der rechten Maustaste über der Auswahl aus und wählen Sie dann <guimenuitem>Löschen</guimenuitem>.</para></listitem></itemizedlist> Diese Operation entfernt die Titel nur aus der Wiedergabeliste und nicht aus der Bibliothek.</para>
+      </sect3>
+      <sect3 id="playlist-static-del">
+        <title>Eine statische Wiedergabeliste löschen</title>
+        <para>Um eine statische Wiedergabeliste zu löschen, wählen Sie die Wiedergabeliste aus. Dann gibt es zwei Möglichkeiten, die Liste zu löschen: <itemizedlist><listitem><para>Wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Löschen</guimenuitem></menuchoice>.</para></listitem><listitem><para>Führen Sie einen Klick mit der rechten Maustaste über der Wiedergabeliste aus und klicken Sie auf <guimenuitem>Löschen</guimenuitem>.</para></listitem></itemizedlist> Diese Möglichkeit löscht nur die Wiedergabeliste an sich und nicht die darin befindlichen Titel.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="playlist-smart">
+      <title>Dynamische Wiedergabelisten</title>
+      <para>Automatische Wiedergabelisten sind Wiedergabelisten, die durch bestimmte Kriterien erzeugt werden, deren Inhalt also dynamisch erstellt wird. Alle Titel, die auf die Kriterien passen, werden zur Wiedergabeliste hinzugefügt.</para>
+      <sect3 id="playlist-smart-new">
+        <title>Eine automatische Wiedergabeliste erstellen</title>
+        <para>So erstellen Sie eine neue Wiedergabeliste: <orderedlist><listitem><para>Wählen Sie <menuchoice><guimenu>Musik</guimenu><guisubmenu>Wiedergabeliste</guisubmenu><guimenuitem>Neue automatische Wiedergabeliste</guimenuitem></menuchoice>.</para></listitem><listitem><para>Wiedergabelisten-Kriterien mit dem Abfrage-Editor bearbeiten.</para></listitem><listitem><para>Sobald Sie die Kriterien eingestellt haben, klicken Sie auf <guibutton>Neu</guibutton>, um die Abfrage zu erstellen.</para></listitem></orderedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-edit">
+        <title>Eine automatische Wiedergabeliste bearbeiten</title>
+        <para>Wenn Sie eine automatische Wiedergabeliste bearbeiten, können Sie die Kriterien dieser Wiedergabeliste ändern. Um eine automatische Wiedergabeliste zu bearbeiten, wählen Sie die Wiedergabeliste aus, wählen <menuchoice><guimenu>Musik</guimenu><guisubmenu>Wiedergabeliste</guisubmenu><guimenuitem>Bearbeiten …</guimenuitem></menuchoice> und bearbeiten die Kriterien. Wenn Sie damit fertig sind, klicken Sie auf <guibutton>Schließen</guibutton>.</para>
+      </sect3>
+      <sect3 id="playlist-smart-del">
+        <title>Eine automatische Wiedergabeliste löschen</title>
+        <para>Um eine automatische Wiedergabeliste zu löschen, wählen Sie die zu löschende Wiedergabeliste aus. Dann gibt es zwei Möglichkeiten, die Liste zu löschen: <itemizedlist><listitem><para>Wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Löschen</guimenuitem></menuchoice>.</para></listitem><listitem><para>Führen Sie einen Klick mit der rechten Maustaste über der Wiedergabeliste aus und klicken Sie auf <guimenuitem>Löschen</guimenuitem>.</para></listitem></itemizedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-query-use">
+        <title>Den Abfragen-Editor benutzen</title>
+        <para>Wählen Sie das Kriterium aus, welches Sie zur Regel hinzufügen wollen. Falls Sie mehrere Kriterien benötigen, klicken Sie auf <guibutton>Hinzufügen</guibutton>. Eine neue Zeile erscheint, in der Sie Ihr Kriterium eingeben können.</para>
+        <para>Falls Sie die Anzahl der Titel in der Wiedergabeliste begrenzen wollen, klicken Sie auf <guilabel>Begrenzen auf:</guilabel> und wählen Sie Ihre Limitierung aus. Sie können nach Titeln, Gesamtgröße (in <guilabel>MB</guilabel> oder <guilabel>GB</guilabel>) oder nach Dauer (in <guilabel>Minuten</guilabel> limitieren. </para>
+        <para>Sobald Sie mit der Auswahl der Kriterien für Ihre Wiedergabeliste fertig sind, klicken Sie auf <guibutton>Neu</guibutton> um den Auswahleditor zu schließen und die Titel anzuzeigen, die in Ihre ausgewählten Kriterien passen.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="AudioCD">
+    <title>Quelle »Audio-CD«</title>
+	<para>Mit <application>Rhythmbox Musik-Player</application> können Sie Audio-CDs abspielen und Ihre eigenen Zusammenstellungen auf solche brennen.</para>
+    <sect2 id="cd-playing">
+      <title>Wiedergabe</title>
+      <para>Wenn eine Audio-CD in das CD-Laufwerk eingelegt wird, erscheint diese in der Quellenliste und die enthaltenen Titel können im Hauptfenster von <application>Rhythmbox Musik-Player</application> angezeigt werden. Falls Sie mit dem Internet verbunden sind, werden die Details zu den Titeln abgerufen und angezeigt.</para>
+      <para>Benutzen Sie die gleichen Bedienelemente wie in der Quelle »Musik«, um die Wiedergabe zu starten, zu unterbrechen, oder um vorwärts oder rückwärts zu spulen.</para>
+    </sect2>
+    <sect2 id="cd-import">
+      <title>Audio-CD importieren</title>
+      <para>Falls Sie die Titel Ihrer Audio-CDs auf Ihrem Rechner behalten wollen, können Sie diese importieren.</para>
+      <para>Um Titel einer Audio-CD zu importieren, wählen Sie <menuchoice><guimenu>Musik</guimenu><guimenuitem>Audio-CD importieren</guimenuitem></menuchoice>. Dies wird <application>Sound-Juicer</application> starten, eine Anwendung zum Importieren der Titel einer Audio-CD. Weitere Informationen hierzu finden Sie im <ulink url="ghelp:sound-juicer">Sound-Juicer-Handbuch</ulink>.</para>
+      <tip>
+        <para>Um von Sound-Juicer importierte Titel automatisch Ihrer Rhythmbox-Musikbibliothek hinzuzufügen, müssen Sie Sound-Juicer so konfigurieren, dass es alle Lieder an den Ort Ihrer Musiksammlung kopiert. Außerdem müssen Sie die Überwachungsfunktion einschalten. Weitere Informationen hierzu finden Sie in den <ulink url="ghelp:sound-juicer#preferences">Sound-Juicer Einstellungen</ulink> und in den <link linkend="prefs-library">Einstellungen der Musiksammlung</link>.</para>
+      </tip>
+    </sect2>
+    <sect2 id="cd-burning">
+      <title>Eine Musik-CD erstellen</title>
+      <para>Rhythmbox erlaubt es Ihnen, Ihre eigenen Musik-CDs aus den Titeln Ihrer Musiksammlung zu erstellen.</para>
+      <para>So erstellen Sie eine Musik-CD: <orderedlist><listitem><para>Erstellen Sie eine automatische oder statische Wiedergabeliste (siehe <xref linkend="playlist"/> und fügen Sie Titel hinzu.</para></listitem>
+                <listitem><para>Wählen Sie <menuchoice><guimenu>Musik</guimenu><guisubmenu>Wiedergabeliste</guisubmenu><guimenuitem>Musik-CD erstellen</guimenuitem></menuchoice></para></listitem>
+                <listitem><para>Legen Sie eine leere CD ein.</para></listitem>
+                <listitem><para>Klicken Sie auf <guibutton>Erstellen</guibutton>, um den Brennprozess zu starten.</para></listitem>
+                </orderedlist></para>
+    </sect2>
+  </sect1>
+  <sect1 id="portable-audio-player">
+    <title>Quelle »Tragbare Musikplayer«</title>
+    <para><application>Rhythmbox</application> erkennt, wenn ein tragbares Musikgerät eingesteckt wurde und ist in der Lage, die sich darauf befindenden Titel auszulesen. <application>Rhythmbox Musik-Player</application> sollte in der Lage sein, die meisten tragbaren Musikplayer wie den Apple iPod, MTP-Player und Massenspeicher-Wiedergabegeräte zu erkennen.</para>
+    <para>Sobald Sie einen tragbaren Musikplayer einstecken, wird ein Symbol für diesen Player zur Seitenleiste hinzugefügt. Diese Quelle funktioniert dann auf die gleiche Weise wie die Musiksammlung.</para>
+	<tip><para>Falls <application>Rhythmbox Musik-Player</application> Ihr Gerät nicht als tragbaren Musikplayer erkennt, können Sie von Hand eine leere Datei namens <filename>.is_audio_player</filename> im Hauptordner Ihres Players erstellen.</para></tip>
+  </sect1>
+  <sect1 id="daap">
+    <title>Quelle »DAAP-Musikverteilung«</title>
+    <para>DAAP ist ein Netzwerkprotokoll, welches erlaubt, Ihre in Rhythmbox gespeicherte Musik zu verteilen. DAAP steht für »Digital Audio Access Protocol« (»Digitales Musikzugriffs-Protokoll«)</para>
+    <para>Weil DAAP ein Standardprotokoll für Musikverteilung ist, können Sie nicht nur von anderen Rhythmbox-Benutzern freigegebene Musik anhören, sondern auch solche, die von DAAP-kompatibler Software wie zum Beispiel iTunes verteilt wird.</para>
+    <para>Wenn Sie Rhythmbox starten, sucht es automatisch nach allen DAAP-Freigaben (zu Hause oder in Ihrem Büro, nicht im gesamten Internet), die von Anderen verteilt werden, und zeigt diese in der Seitenleiste an. Falls Sie das Verteilen Ihrer Titel aktiviert haben, verteilt Rhythmbox gleichzeitig Ihre Musiksammlung und Ihre Wiedergabelisten. Auf diese Weise können Sie Musik hören, die sich auf den Rechnern Ihrer Freunde befindet, und auch diese können Ihre Musik anhören.</para>
+    <para>In <xref linkend="prefs-sharing"/> finden Sie eine Beschreibung der Deaktivierung der DAAP-Verteilfunktion von Rhythmbox.</para>
+  </sect1>
+  <sect1 id="notification">
+    <title>Benachrichtigungsfeld</title>
+    <sect2 id="notification-overview">
+      <title>Übersicht</title>
+      <para>Das Benachrichtigungsfeld ist eine GNOME-Funktion, welche während ein kleines Symbol zum Panel hinzufügt während Rhythmbox läuft. Über dieses Symbol kann der <application>Rhythmbox Musik-Player</application> bedient werden. Solange die Benutzeroberfläche von <application>Rhythmbox Musik-Player</application> nicht sichtbar ist, werden Informationen angezeigt.</para>
+      <figure id="fig-notification-zone">
+        <title><application>Rhythmbox Musik-Player</application> im Benachrichtigungsfeld</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-zone.png"/>
+	    </imageobject>
+	  </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+    <sect2 id="notification-info-receive">
+      <title>Weitere Informationen</title>
+      <sect3 id="notification-info-tooltip">
+        <title>Minihilfen</title>
+        <para>Wenn Sie den Mauszeiger über das <application>Rhythmbox Musik-Player</application>-Symbol bewegen, können Sie den Künstler, den Titelnamen und die aktuelle Abspielposition sehen.</para>
+      </sect3>
+      <sect3 id="notification-info-window">
+        <title>Benachrichtigungsfenster</title>
+        <para>Immer wenn der Titel gewechselt oder eine Podcast-Folge heruntergeladen wurde, kann <application>Rhythmbox Musik-Player</application> Sie informieren. Es zeigt eine Kurzinfo auf dem Desktop an, welche die entsprechenden Informationen beinhaltet.</para>
+        <figure id="fig-notification-window">
+          <title>Das Benachrichtigungsfenster des <application>Rhythmbox Musik-Players</application></title>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata format="PNG" fileref="figures/rb-notification-window.png"/>
+	      </imageobject>
+	    </mediaobject>
+          </screenshot>
+        </figure>
+        <tip>
+          <para>Das Benachrichtigungsfenster kann über den Menüeintrag <guilabel>Benachrichtigungen anzeigen</guilabel> des Kontextmenüs des Symbols im Benachrichtigungsfeld deaktiviert werden.</para>
+        </tip>
+      </sect3>
+    </sect2>
+    <sect2 id="notification-control">
+      <title>Rhythmbox bedienen</title>
+      <para>Mit dem <application>Rhythmbox Musik-Player</application>-Symbol im Benachrichtigungsfeld von GNOME können Sie die folgenden Befehle an die Anwendung schicken:</para>
+      <figure id="fig-notification-menu">
+        <title>Benachrichtigungsfeld mit Menü</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-area-menu.png"/>
+            </imageobject>
+           </mediaobject>
+        </screenshot>
+      </figure>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para><guibutton>Wiedergabe</guibutton> — Spielt den ausgewählten Titel ab.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Zurück</guibutton> — Zum vorherigen Titel der ausgewählten Quelle springen.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Weiter</guibutton> — Zum nächsten Titel der ausgewählten Quelle springen.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Wiedergabefenster anzeigen</guibutton> — Wählen Sie, ob das <application>Rhythmbox Musik-Player</application>-Fenster angezeigt werden soll oder nicht.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Benachrichtigungen anzeigen</guibutton> — Wählen Sie, ob Sie <application>Rhythmbox Musik-Player</application> über Titelwechsel und andere Informationen benachrichtigen soll.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Beenden</guibutton> — Beendet <application>Rhythmbox Musik-Player</application>.</para>
+          </listitem>
+        </itemizedlist>
+        <tip>
+        	<para>Wenn Sie eine Maus mit Scrollrad verwenden, können Sie die Lautstärke mit Hilfe dieses Scrollrades verändern, wenn sich der Mauszeiger über dem Lautstärkeregler befindet.</para>
+          <para>Sie können schnell zwischen Wiedergabe und Pause wechseln, indem Sie die mittlere Maustaste drücken.</para>
+        </tip>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="customize">
+    <title>Rhythmbox Musik-Player anpassen</title>
+    <para>Dieser Abschnitt beschreibt die Anpassung des <application>Rhythmbox Musik-Player</application> an Ihre Wünsche und Bedürfnisse.</para>
+    <sect2 id="prefs">
+      <title>Ändern der Einstellungen</title>
+      <para>Im <guilabel>Einstellungen</guilabel>-Dialog können Sie das Verhalten und Aussehen von <application>Rhythmbox Musik-Player</application> Ihren Wünschen anpassen. Um den <guilabel>Einstellungen</guilabel>-Dialog anzuzeigen, wählen Sie <menuchoice><guimenu>Bearbeiten</guimenu><guimenuitem>Einstellungen</guimenuitem></menuchoice>.</para>
+      <sect3 id="prefs-general">
+      	<title>Allgemein</title>
+		<para>Wählen Sie aus, wie die <guilabel>Browseransicht</guilabel> angezeigt werden soll. Sie können zwischen zwei oder drei Spalten wählen sowie die Art des Inhalts bestimmen..</para>
+      	<para>Wählen Sie die<guilabel>Sichtbare Spalten</guilabel>, die in <application>Rhythmbox Musik-Player</application> angezeigt werden sollen. Diese Einstellung beeinflusst folgende Quellen: <itemizedlist>
+				<listitem><para>Musiksammlung</para></listitem>
+				<listitem><para>Musik-CD</para></listitem>
+				<listitem><para>Tragbare Geräte</para></listitem>
+				<listitem><para>Wiedergabelisten</para></listitem>
+				<listitem><para>DAAP-Musikfreigaben</para></listitem>
+			</itemizedlist></para>
+      </sect3>
+      <sect3 id="prefs-library">
+        <title>Musik</title>
+        <itemizedlist>
+          <listitem>
+            <para>Der <guilabel>Ort der Musiksammlung</guilabel> ist ein Ordner, den <application>Rhythmbox Musik-Player</application> nach Titeln durchsucht. Wenn Sie neue Audiodateien in diesen Ordner oder einen Unterordner mit einem Dateimanager (wie Nautilus) hinzufügen, fügt sie <application>Rhythmbox Musik-Player</application> automatisch der Musiksammlung hinzu.</para>
+            <warning>
+            	<para>Versuchen Sie es zu vermeiden, Ihren gesamten <filename class="directory">persönlichen Ordner</filename> als Ort der Musiksammlung anzugeben, da dies den Prozessor Ihres Rechners nur unnötig belasten würde.</para>
+            </warning>
+            <para>Um die Überwachung zu deaktivieren, wählen Sie <guilabel>Die Musiksammlung auf neue Dateien hin überwachen</guilabel> ab.</para>
+            <tip>
+            	<para>Falls Sie mehr als einen Ordner überwachen lassen wollen, benutzen Sie bitte den <application>Konfigurationseditor</application> und fügen den Ordner zur Liste /apps/rhythmbox/library_locations hinzu.</para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-podscast">
+        <title>Podcasts</title>
+        <itemizedlist>
+          <listitem>
+            <para>Der vorgegebene <guilabel>Speicherort</guilabel> für Podcasts ist <filename class="directory">Podcasts/</filename> in Ihrem persönlichen Ordner.</para>
+            <para>Falls dieser Ort nicht Ihren Wünschen entspricht, wählen Sie einen anderen Ordner aus der Auswahlliste oder wählen Sie <guilabel>Andere</guilabel>, um einen Dateiauswahldialog zu öffnen.</para>
+          </listitem>
+          <listitem>
+            <para>Wählen Sie aus, wie oft <application>Rhythmbox Musik-Player</application> nach neuen Podcast-Folgen suchen soll.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-sharing">
+        <title>Verteilen</title>
+        <para><application>Rhythmbox Musik-Player</application> kann ihre Musik über Ihr lokales Netzwerk an andere <application>Rhythmbox Musik-Player-</application> und Apple iTunes-Benutzer verteilen.</para>
+        <itemizedlist>
+          <listitem>
+            <para>Wählen Sie <guilabel>Eigene Musik verteilen</guilabel>, um Nutzern des Netzwerks Zugriff auf Ihre Titel zu gestatten.</para>
+          </listitem>
+          <listitem>
+            <para>Geben Sie im Feld <guilabel>Name des gemeinsamen Musikordners</guilabel> einen Namen ein, welcher im Netzwerk erscheinen soll.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-lastfm">
+        <title>Last.fm-Profil</title>
+        <para>Die Last.fm-Profil-Erweiterung sammelt Informationen über die Titel, die Sie anhören und sendet diese zur <ulink url="http://www.last.fm/">Last.fm-Website</ulink>, um ein Profil Ihrer Hörgewohnheiten aufzubauen. Mit diesem Profil können Sie: <itemizedlist>
+				<listitem>
+					<para>Statistiken anzeigen, wie am häufigsten gespielten Lieder oder Künstler.</para>
+				</listitem>
+				<listitem>
+					<para>Empfehlungen über für Sie interessante Künstler empfangen.</para>
+				</listitem>
+			</itemizedlist></para>
+        <warning>
+          <para>Um die Last.fm-Erweiterung zu benutzen, benötigten Sie ein Last.fm-Konto. Falls Sie noch kein solches Konto besitzen, erstellen Sie auf der <ulink url="http://www.last.fm/signup.php">Last.fm-Anmeldungsseite</ulink> eines. Geben Sie Ihre Last-fm-Benutzerdaten in die <guilabel>Benutzername-</guilabel> und <guilabel>Passwort</guilabel>-Felder im Konfigurationsfenster der Last.fm-Erweiterung ein.</para>
+        </warning>
+		<para>Das Konfigurationsfenster für das Last.fm-Profil zeigt auch Statusinformationen an. Falls Ihr Last.fm-Profil nicht aktualisiert wird, könnten die Informationen, die hier angezeigt werden, dabei helfen, das Problem zu lösen.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="shortcuts">
+    <title>Tastenkombination</title>
+    <sect2 id="keyboard-keys">
+      <title>Tastenkombinationen</title>
+      <table frame="topbot" id="rb-shorcuts-1">
+	  	<title>Wiedergabe-Tastenkombinationen</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Tastenkombination</entry>
+              <entry>Befehl</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>p</keycap> </keycombo></entry>
+              <entry>
+                <para>Abspielen / Pause</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>←</keycap> </keycombo></entry>
+              <entry>
+                <para>Zum vorherigen Lied springen / Zurück zum Anfang des Liedes</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>→</keycap> </keycombo></entry>
+              <entry>
+                <para>Zum nächsten Lied springen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>↑</keycap> </keycombo></entry>
+              <entry>
+                <para>Lautstärke erhöhen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>↓</keycap> </keycombo></entry>
+              <entry>
+                <para>Lautstärke absenken</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>R</keycap> </keycombo></entry>
+              <entry>
+                <para>Wiederholung ein/ausschalten</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>U</keycap> </keycombo></entry>
+              <entry>
+                <para>Zufallswiedergabe ein/ausschalten</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-2">
+	  	<title>Allgemeine Tastenkombinationen</title>
+		<tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Tastenkombination</entry>
+              <entry>Befehl</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>A</keycap> </keycombo></entry>
+              <entry>
+                <para>Alles markieren</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Umschalttaste</keycap> <keycap>Strg</keycap> <keycap>A</keycap> </keycombo></entry>
+              <entry>
+                <para>Nichts markieren</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>J</keycap> </keycombo></entry>
+              <entry>
+                <para>Zum aktuellen Titel springen</para>
+              </entry>
+	    </row>
+	    <!--
+            <row>
+              <entry>
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Y</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Clear the search field text and remove all filters in the browser</para>
+              </entry>
+	    </row>
+            -->
+            <row>
+              <entry><keycombo> <keycap>Alt</keycap> <keycap>S</keycap> </keycombo></entry>
+              <entry>
+                <para>Ins Suchfeld wechseln</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Alt</keycap> <keycap>Eingabetaste</keycap> </keycombo></entry>
+              <entry>
+                <para>Titeleigenschaften anzeigen</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-3">
+	  	<title>Tastenkombinationen für Fenster</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Tastenkombination</entry>
+              <entry>Befehl</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>Q</keycap> </keycombo></entry>
+              <entry>
+                <para><application>Rhythmbox Musik-Player</application> beenden</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>B</keycap> </keycombo></entry>
+              <entry>
+                <para>Den Browser anzeigen/ausblenden</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>F9</keycap> </keycombo></entry>
+              <entry>
+                <para>Seitenleiste anzeigen/ausblenden</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>Strg</keycap> <keycap>K</keycap> </keycombo></entry>
+              <entry>
+                <para>Warteschlange anzeigen/verbergen</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo> <keycap>F11</keycap> </keycombo></entry>
+              <entry>
+                <para>Vollbildmodus ein/ausschalten</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="multimedia-keys">
+      <title>Multimediatasten</title>
+      <para><application>Rhythmbox Musik-Player</application> unterstützt die Multimediatasten Ihrer Tastatur, sofern diese korrekt in Ihrer Arbeitsumgebung eingerichtet wurden.</para>
+      <table frame="none">
+	  	<title>Tastenkombinationen für Fenster</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Tastenkombination</entry>
+              <entry>Befehl</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>Stopp</keycap></entry>
+              <entry>
+                <para>Anhalten</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Anhalten / Wiedergeben</keycap></entry>
+              <entry>
+                <para>Pause / Wiedergabe</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Vorheriger</keycap></entry>
+              <entry>
+                <para>Vorheriger Titel</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Nächster</keycap></entry>
+              <entry>
+                <para>Nächster Titel</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="lirc">
+      <title>Linux Infrarot-Fernbedienung</title>
+      <para><application>Rhythmbox Musik-Player</application> enthält eine Erweiterung für »Linux Infrared Remote Control« (LIRC), mit dem Rhythmbox per Infrarot bedient werden kann. Die folgenden Befehle werden von Rhythmbox unterstützt:</para>
+      <table frame="none">
+	  	<title>Tastenkombinationen für Fenster</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Befehlszeichenkette</entry>
+              <entry>Aktion</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>play</keycap></entry>
+              <entry> <para>Wiedergabe starten</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>pause</keycap></entry>
+              <entry> <para>Wiedergabe anhalten</para> </entry>
+            </row>
+	    <row>
+	      <entry><keycap>playpause</keycap></entry>
+	      <entry> <para>Wiedergabe an/aus</para> </entry>
+	    </row>
+            <row>
+              <entry><keycap>shuffle</keycap></entry>
+              <entry> <para>Zufallsmodus an/ausschalten</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>repeat</keycap></entry>
+              <entry> <para>Wiederholungsmodus an/ausschalten</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>next</keycap></entry>
+              <entry> <para>Zum nächsten Titel springen</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>previous</keycap></entry>
+              <entry> <para>Zum vorherigen Titel springen</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>seek_forward</keycap></entry>
+              <entry> <para>Um 10 Sekunden im aktuellen Titel vorspringen</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>seek_backward</keycap></entry>
+              <entry> <para>Um 10 Sekunden im aktuellen Titel zurückspringen</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volume_up</keycap></entry>
+              <entry> <para>Lautstärke um 10% erhöhen</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volume_down</keycap></entry>
+              <entry> <para>Lautstärke um 10% absenken</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>mute</keycap></entry>
+              <entry> <para>Stumm schalten</para> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+  </sect1>
+</article>

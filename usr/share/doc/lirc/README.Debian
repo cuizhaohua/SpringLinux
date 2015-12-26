@@ -1,0 +1,45 @@
+Debianization README for LIRC notes
+===================================
+
+If you need irxevent or xmode2 they can be found in lirc-x package. This split
+has been done to prevent a dependency on xlibs for the main lirc package.
+
+Starting with lirc 0.9~ and kernel 2.6.36, lirc modules have been merged as
+staging into the mainline kernel. A rewrite of these staging modules to port
+them to the new RC_CORE subsystem is underway.
+
+If you use lirc_sir or lirc_serial kernel modules you should either remove
+the official serial driver or use 'setserial /dev/ttySX uart none' so it
+releases the serial port for use with lirc.
+
+For fine tuning you should look at /etc/lirc/hardware.conf
+
+If you already have a proper configuration file for the libirman package, you
+may convert it to lirc syntax with irman2lirc. For more information take a
+look at html/configure.html.
+
+
+TROUBLE SHOOTING
+----------------
+
+We currently try to do it all automatically but if we miss the target there
+are ways to solve this:
+
+If you configure lircmd to use IMPS/2 protocol gpm will refuse to work with
+it, you will have to use IntelliMouse or MouseSystems for gpm to work. You can
+find  detailed information on how to configure lircmd in:
+	
+	/usr/share/doc/lirc/html/configure.html
+
+If the installation can't find proper configuration files for your hardware or
+you have special needs, you may find one under the remotes/ directory or at
+least a sample to start with. Or you can make your own from scratch with
+irrecord.  Read the documentation under html/ for more details.
+
+If you need to use a different device or driver, you can select them manually in
+/etc/lirc/hardware.conf. Running lircd --driver=blah will give a list of
+supported drivers.
+
+All logging output has been diverted to syslog since lirc 0.6.5-1.
+
+-- Manuel Estrada Sainz <ranty@debian.org>  Sat,  9 Jun 2001 18:40:00 +0100

@@ -1,0 +1,54 @@
+Debian README for xdm package
+=============================
+
+Upgraders from Debian GNU/Linux 2.0 or earlier should be aware that the
+/etc/X11/config file is no longer used; its xdm-specific options are now in
+/etc/X11/xdm/xdm.options.
+
+The default configuration for the X display manager (xdm) under Debian
+GNU/Linux presumes that one wishes xdm to manage one local session.  (In
+other words, the xdm login screen occupies one virtual console
+automatically at boot.)  If one does not wish to run a local X server, the
+following line should be commented out of /etc/X11/xdm/Xservers:
+
+:0 local /usr/bin/X vt7
+
+Several configuration files are shipped with the xdm package; they reside
+in the /etc/X11/xdm/ directory.  Extensive documentation about the xdm
+configuration files may be found in the xdm(1) manual page.
+
+xdm-config contains X resources specific to xdm itself.  See the X(1)
+manual page for more information about X resources, and the xdm(1) manual
+pages for documentation of the available xdm resources.
+
+Xresources contains X resources that are designed to be specfic to sessions
+running under xdm.  Note that this file does contain the resource entries
+for xdm itself -- those are contained in the file xdm-config.  See the X(1)
+manual page for more information about X resources.
+
+The above three files, despite being X resource files, are not placed in the
+/etc/X11/Xresources directory because they should not be used automatically 
+in all X sessions; the /etc/X11/Xsession script merges in the resources of 
+all files found in /etc/X11/Xresources, and this action would be inappropriate
+for these resource files.
+
+Xservers contains entries to start the X server(s) on the local machine, and
+on any remote X terminals that do not support XDMCP.  This file is internally
+documented.
+
+Xaccess determines what hosts on the network may use the services of the
+running xdm daemon.  This file is internally documented.  Note that as of
+version 3.3.4-1 of the xdm package, all remote XDMCP access is turned off
+by default.
+
+Xstartup is a shell script which is run (as root) after a user has logged in
+on a server.
+
+Xreset is a shell script which is run (as root) after a user's X session ends on
+a server.
+
+xdm.options contains configuration options for xdm that are specific to the
+Debian GNU/Linux system.  See the xdm.options(5) manual page for more
+information.
+
+vim:set ai et sts=4 sw=4 tw=80:

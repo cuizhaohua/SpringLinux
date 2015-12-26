@@ -1,0 +1,8 @@
+application/x-ogg; rhythmbox '%s'; description="Ogg Vorbis audio"; test=test -n "$DISPLAY"; nametemplate=%s.ogg
+application/ogg; rhythmbox '%s'; description="Ogg Media"; test=test -n "$DISPLAY"
+audio/x-mp3; rhythmbox '%s'; description="MP3 audio"; test=test -n "$DISPLAY"; nametemplate=%s.mp3
+audio/x-scpls; rhythmbox '%s'; description="MP3 ShoutCast playlist"; test=test -n "$DISPLAY"; nametemplate=%s.pls
+audio/x-mpeg; rhythmbox '%s'; description="MP3 audio"; test=test -n "$DISPLAY"
+audio/mpeg; rhythmbox '%s'; description="MP3 audio"; test=test -n "$DISPLAY"
+audio/x-mpegurl; rhythmbox '%s'; description="Playlist"; test=test -n "$DISPLAY"; nametemplate=%s.m3u
+application/x-flac; rhythmbox '%s'; description="FLAC audio"; test=test -n "$DISPLAY"; nametemplate=%s.flac

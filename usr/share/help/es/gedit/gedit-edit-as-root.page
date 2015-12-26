@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-edit-as-root" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Editar un archivo como root</title>
+
+  <note style="warning">
+    <p>Editar archivos como superusuario es potencialmente peligroso y puede romper su sistema. Tenga mucho cuidado al editar archivos como superusuario.</p>
+  </note>
+
+  <p>Para editar archivos como superusuario lance <app>gedit</app> desde la terminal introduciendo:</p>
+  <code>sudo gedit</code>
+
+  <p>Usando el comando <cmd>sudo</cmd> deberá introducir correctamente su contraseña antes de que <app>gedit</app> se abra.</p>
+
+  <p>Como alternativa al comando <cmd>sudo</cmd> puede obtener privilegios de administración introduciendo:</p>
+  <code>su -</code>
+
+  <p>Después podrá lanzar <app>gedit</app> usando el comando <cmd>gedit</cmd>.</p>
+
+  <note style="tip">
+    <p>Una vez que haya abierto <app>gedit</app> con privilegios de administración, <app>gedit</app> retendrá esos privilegios hasta que la cierre.</p>
+  </note>
+
+</page>

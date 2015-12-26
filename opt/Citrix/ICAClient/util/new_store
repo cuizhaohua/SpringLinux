@@ -1,0 +1,28 @@
+#!/bin/sh
+# Used by the plugin to handle CR files
+# Pass in the FULL path to the CR file as the parameter;
+# this script also accepts a "-icarooot xxxxx" option.
+#
+# Copyright 2013-2014 Citrix Systems, Inc.  All Rights Reserved.
+
+if [ "$1" = "-icaroot" ] && [ -n "$2" ] 
+then
+    BASEDIR=$2
+    shift ; shift
+else
+    BASEDIR=$(dirname $0)
+fi
+
+STORERESULT=`$BASEDIR/storebrowse --icaroot $BASEDIR -C "$*"`
+STORERETCODE=$?
+
+# Check for successful return code
+if [ "$STORERETCODE" = "0" ]
+then
+  # and if we have added stores, then launch selfservice
+    STORECOUNT=`echo $STORERESULT | grep -c "'"`
+    if [ "$STORECOUNT" != "0" ]
+    then
+	$BASEDIR/../selfservice --icaroot $BASEDIR &
+    fi
+fi

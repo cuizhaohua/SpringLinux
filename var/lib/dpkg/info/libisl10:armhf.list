@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libisl.so.10.2.2
+/usr/share
+/usr/share/doc
+/usr/share/doc/libisl10
+/usr/share/doc/libisl10/changelog.gz
+/usr/share/doc/libisl10/changelog.Debian.gz
+/usr/share/doc/libisl10/copyright
+/usr/lib/arm-linux-gnueabihf/libisl.so.10

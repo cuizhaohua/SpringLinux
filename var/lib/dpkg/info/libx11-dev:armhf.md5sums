@@ -1,0 +1,16 @@
+5342876a1c977b7e02ea018cb984b90e  usr/include/X11/ImUtil.h
+83b76994b177c6fb7d0f6fb4eaae0c56  usr/include/X11/XKBlib.h
+0026f3941b4264bba4be6fa4bd4d77c9  usr/include/X11/Xcms.h
+29d5f02cf46a38cc0c8ac49b98c00723  usr/include/X11/Xlib.h
+0ebe0dfd854ba01cb4ae410b5725f451  usr/include/X11/XlibConf.h
+d09c2a55659d6ece731a454b53c5f92c  usr/include/X11/Xlibint.h
+ab272ffd24cfe4c58dbda9e3766e62a6  usr/include/X11/Xlocale.h
+c941db256d55ce1e93a2e5b4b8d2d873  usr/include/X11/Xregion.h
+eef17fe96484467629446ef5ccbc0dea  usr/include/X11/Xresource.h
+c46cd2e0368691900d85a4d77bd263e5  usr/include/X11/Xutil.h
+19a2b85301ceefbccf163b6af8eb59e0  usr/include/X11/cursorfont.h
+547d78897e62485da9d87b84c0005aae  usr/lib/arm-linux-gnueabihf/libX11.a
+e0a8e976e5c5733a93f2b72864e0513f  usr/lib/arm-linux-gnueabihf/pkgconfig/x11.pc
+2e3de7745aaed94167ebf7f6b17a9d74  usr/share/doc/libx11-dev/changelog.Debian.gz
+bdb95e3fcf9031ae620f8b47817ea7f4  usr/share/doc/libx11-dev/changelog.gz
+baa43cabe19521cd793947b55fc034db  usr/share/doc/libx11-dev/copyright

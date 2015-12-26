@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="พวงกุญแจที่จะใช้เก็บรหัสผ่าน">
+						<longdesc>ชื่อของพวงกุญแจที่จะให้ gksu ใช้ ค่าโดยทั่วไปคือ &quot;session&quot; ซึ่งจะเก็บรหัสผ่านไว้ใช้จนจบวาระ และ &quot;default&quot; ซึ่งจะเก็บรหัสผ่านโดยไม่มีกำหนดหมดอายุ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="เก็บรหัสผ่านใน gnome-keyring">
+						<longdesc>gksu สามารถเก็บรหัสผ่านที่คุณป้อนเข้าใน gnome-keyring ได้ เพื่อที่คุณจะไม่ต้องป้อนรหัสผ่านทุกครั้ง</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="แสดงข้อความแจ้งเตือนเมื่อไม่จำเป็นต้องใช้รหัสผ่าน">
+						<longdesc>กำหนดว่าจะแสดงกล่องข้อความเพื่อแจ้งให้ผู้ใช้ทราบหรือไม่ ว่ากำลังจะเรียกโปรแกรมโดยไม่จำเป็นต้องถามรหัสผ่านด้วยเหตุผลบางประการ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="ถามการยึดครอง">
+						<longdesc>ตัวเลือกนี้จะทำให้ gksu ถามผู้ใช้ว่าต้องการให้ยึดครองหน้าจอหรือไม่ ก่อนที่จะป้อนรหัสผ่าน สังเกตว่าค่านี้จะมีผลก็ต่อเมื่อตัวเลือก force-grab ปิดอยู่เท่านั้น</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="โหมด sudo">
+						<longdesc>กำหนดว่า จะใช้ sudo เป็นวิธีปริยายหรือไม่ หากไม่กำหนด ก็ยังสามารถเรียกใช้วิธีนี้ได้ ผ่านตัวเลือก -S หรือโดยเรียกคำสั่ง &apos;gksudo&apos; แทน &apos;gksu&apos;</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="บังคับยึดครองแป้นพิมพ์และเมาส์">
+						<longdesc>ยึดครองแป้นพิมพ์และเมาส์เสมอ แม้จะระบุตัวเลือก -g ในบรรทัดคำสั่ง</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="ปิดการยึดครองแป้นพิมพ์และเมาส์">
+						<longdesc>กำหนดว่าจะปิดการยึดครองแป้นพิมพ์และเมาส์หรือไม่ การปิดนี้จะเป็นการเปิดโอกาสให้โปรแกรม X อื่นดักเหตุการณ์การกดแป้นพิมพ์ได้ ซึ่งจะทำให้ไม่สามารถป้องกันโปรแกรมที่ไม่ประสงค์ดีที่อาจทำงานอยู่ได้</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

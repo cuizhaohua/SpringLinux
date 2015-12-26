@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnm-util2
+/usr/share/doc/libnm-util2/changelog.Debian.gz
+/usr/share/doc/libnm-util2/changelog.gz
+/usr/share/doc/libnm-util2/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnm-util.so.2.6.0
+/usr/lib/arm-linux-gnueabihf/libnm-util.so.2

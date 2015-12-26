@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-files-basic" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="first"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Základní práce se soubory: otevřít, zavřít a uložit</title>
+
+  <p>Pokud jste v používání editoru <app>gedit</app> nováčci, tato kapitola vás seznámí s vytvářením, ukládáním, otevíráním a zavíráním souborů.</p>
+  <links type="topic" groups="first second third fourth fifth sixth" style="2column"/>
+</page>

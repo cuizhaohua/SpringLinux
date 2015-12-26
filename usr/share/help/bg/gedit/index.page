@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="bg">
+
+  <info>
+    <title type="link">gedit — Текстов редактор</title>
+    <title type="text">gedit — Текстов редактор</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>
+    <media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/>
+    gedit Text Editor
+  </title>
+  <p>Добре дошли в ръководството на <app>gedit</app>. За бързо въвеждане в основните възможности на <app>gedit</app>, както и в някои бързи клавиши, посетете страниците <link xref="gedit-quickstart">Първи стъпки в gedit</link> и <link xref="gedit-shortcut-keys">Бързи клавиши</link>.</p>
+
+  <p>Другите теми са групирани в раздели по-долу. Забавлявайте се докато използвате <app>gedit</app>!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Работа с файлове</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>Настройки</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>Приставки</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Печат</title>
+  </section>
+
+</page>

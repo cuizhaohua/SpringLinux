@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-view-open-files-in-sidepane" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+      <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email its:translate="no">dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Melihat daftar berkas di panel sisi</title>
+
+  <p>Melacak sejumlah besar berkas memakai tab bisa sulit. Satu cara untuk mengelola sejumlah besar berkas adalah dengan menilik mereka di panel sisi. Panel sisi memungkinkan Anda menilik lebih banyak berkas pada suatu saat daripada yang dimungkinkan dengan memakai tab saja.</p>
+
+  <p>Untuk melihat daftar dari berkas yang terbuka dalam suatu panel sisi, klik <guiseq><gui style="menu">Tilik</gui> <gui style="menuitem">Panel Sisi</gui></guiseq>. Suatu panel akan muncul di sebelah kiri ruang kerja dengan suatu daftar dari semua berkas yang terbuka. Mengklik suatu berkas pada panel sisi akan menampilkan berkas itu dalam ruang kerja.</p>
+
+  <p>Panel sisi juga memuat suatu tilikan <app>Peramban Berkas</app>. Bila panel menampilkan suatu direktori berkas dan bukan berkas yang kini sedang dibuka, klik <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"><span its:translate="yes">ikon dokumen</span></media> di bagian bawah panel untuk bertukar ke tilikan <app>Dokumen</app>.</p>
+
+  <note>
+    <p>Panel sisi hanya menampilkan berkas yang sedang dibuka di jendela saat ini. Ketika beberapa jendela terbuka, hanya berkas dalam jendela saat ini yang akan ditampilkan di panel sisi.</p>
+  </note>
+</page>

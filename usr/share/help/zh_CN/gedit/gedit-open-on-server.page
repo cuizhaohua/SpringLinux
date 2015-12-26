@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>打开位于服务器上的文件</title>
+
+  <p>要用 <app>gedit</app> 打开存放于服务器上的文件，您首先需要了解服务器的相关技术信息，例如，您需要知道服务器的 IP 地址或 URL，还要知道是哪一种服务器(比如 HTTP、FTP 等等)。</p>
+
+  <p>还有，一些类型的服务器限制了文件存储。例如，您可以打开服务器上的一个文件，但是您只能将修改过的文件存储在本地计算机上。</p>
+
+  <p>了解这些信息后，您可以在 <app>gedit</app> 中，按下列步骤打开服务器上的文件：</p>
+
+    <steps>
+      <item><p>点菜单 <guiseq><gui>文件</gui><gui>打开</gui></guiseq> 命令，显示 <gui>打开文件</gui> 对话框。</p></item>
+      <item><p>在<gui>打开</gui>对话框的左上角，点击<gui>铅笔</gui>图标。</p></item>
+      <item><p>输入服务器的 IP 地址或 URL。</p></item>
+      <item><p>查找并选择您想打开的文件。</p></item>
+      <item><p>在字符编码下拉列表中，选择合适的字符编码。</p></item>
+      <item><p>点 <gui>打开</gui>。</p></item>
+    </steps>
+
+  <p>有效的 URI 包括 http:、ftp:、file: 和所有 <app>gvfs</app> 支持的格式。</p>
+
+  <note>
+    <p>某些类型的 URI 会以只读方式打开，当您更改后必须另存到其他位置。例如， HTTP 只允许读取文件，从 FTP 上打开的文件一般也是只读，因为并不是所有 FTP 服务器能够远程保存文件。</p>
+  </note>
+
+</page>

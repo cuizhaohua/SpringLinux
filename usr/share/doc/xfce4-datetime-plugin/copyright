@@ -1,0 +1,34 @@
+This package was debianized by Andrew Lau <netsnipe@users.sourceforge.net> on
+Wed, 03 Nov 2003 00:39:26 +1100.
+
+It was downloaded from <http://download.berlios.de/xfce-goodies/>
+
+Copyright Holders:
+
+panel-plugin/*:
+  © 2003 Choe Hwanjin	<krisna@people.kldp.org>
+  © 2006 Remco den Breeje <remco@sx.mine.nu>
+  © 2008 Diego Ongaro <ongardie@gmail.com>
+
+po/eu.po
+po/fr.po
+po/hu.po
+po/id.po
+po/lv.po
+po/nl.po
+po/pt_BR.po
+po/pt_PT.po
+po/uk.po:
+  © 2006-2007 Remco den Breeje <remco@sx.mine.nu>
+po/gl.po:
+  © 2008 Leandro Regueiro
+
+Licensing:
+ 
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+ 
+On Debian systems, the complete text of the GNU General Public License can be
+found in the file /usr/share/common-licenses/GPL

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="bg">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Даниел Нийл</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Как се инсталират приставки от трети страни</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Допълнителни приставки за gedit</title>
+
+  <p>Installing third-party plugins gives you extra functionality that isn't 
+  available in default <app>gedit</app> plugins, or even the extra plugins that 
+  are part of the <app>gedit-plugins</app> package. An online list of 
+  third-party plugins is 
+  <link href="https://wiki.gnome.org/Apps/Gedit">kept here</link>.
+  </p>
+  
+  <p>Инсталирането на приставка от трета страна включва изтегляне, поставяне на файловете ѝ в правилната папка и активиране.</p>
+  
+  <steps>
+    <item><p>Обикновено можете да изтеглите приставка от нейния уеб сайт, но може да се наложи да използвате приложение за управление на версиите като <app>git</app>, <app>bazaar</app> или <app>subversion</app>. Прочете ръководството на приставката относно информация как да се сдобиете с нея.</p></item>
+    <item><p>Копирайте файловете на приставката в папката <file>/home/<var>име на потребител</var>/.local/share/gedit/plugins</file></p>
+    <p>Заменете думата <var>име на потребител</var> с вашето собствено потребителско име.</p></item>
+    <item><p>After you have placed the plugin files into the correct directory, 
+    the plugin will appear in the Preferences menu. Select <guiseq><gui>Edit
+    </gui><gui style="menuitem">Preferences</gui><gui>Plugins</gui>
+    <gui>[Name of Plugin]</gui></guiseq> to enable the plugin.</p></item>
+    <item><p>Натиснете <gui>Затваряне</gui>.</p></item>
+  </steps>
+  
+  <p>След като сте включили приставката, тя ще бъде достъпна за използване.</p>
+  
+  <note style="tip">
+    <p>Трябва да се показват скритите файлове, за да видите папката <file>.local</file>. За да я видите, натиснете <guiseq><gui>Изглед</gui><gui>Показване на скритите файлове</gui></guiseq> или натиснете <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Ако папката <file>.local/share/gedit/plugins/</file> я няма на вашата система, ще трябва да я създадете.</p>
+  </note>
+  
+</page>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abrindo um arquivo localizado em um servidor</title>
+
+  <p>Antes de abrir um arquivo localizado em um servidor usando do <app>gedit</app>, você precisa saber algumas informações técnicas sobre o servidor. Por exemplo, você precisa saber o endereço IP ou a URL do servidor, e pode precisar saber que tipo de servidor é (ex.: HTTP, FTP etc.).</p>
+
+  <p>Além disso, alguns tipos de servidor impõem restrições sobre o que se pode fazer nos arquivos armazenados nele. Por exemplo, você pode ser capaz de abrir um arquivo de um servidor, mas pode precisar salvar qualquer mudança no arquivo localmente, no seu computador.</p>
+
+  <p>Com estas ressalvas em mente, execute os seguintes passos para abrir um arquivo de um servidor usando o <app>gedit</app>:</p>
+
+    <steps>
+      <item><p>Escolha <guiseq><gui>Arquivo</gui><gui>Abrir</gui></guiseq> para exibir a janela de <gui>Abrir arquivos</gui>.</p></item>
+      <item><p>Selecione o ícone de <gui>Lápis</gui> próximo ao topo da janela de <gui>Abrir arquivos</gui>.</p></item>
+      <item><p>Digite o endereço IP ou URL do servidor apropriado.</p></item>
+      <item><p>Localize e selecione o arquivo que deseja abrir.</p></item>
+      <item><p>Use a lista suspensa de codificação de caracteres para selecionar a codificação de caracteres apropriada.</p></item>
+      <item><p>Clique em <gui>Abrir</gui>.</p></item>
+    </steps>
+
+  <p>Tipos válidos de URI são http:, ftp:, file: e todos os métodos suportados pelo <app>gvfs</app>.</p>
+
+  <note>
+    <p>Arquivos de alguns tipos de URI são abertos como somente para leitura, e qualquer mudança que você fizer deve ser salva em um local diferente. Por exemplo, o HTTP só permite que os arquivos sejam lidos. Arquivos aberto a partir de FTP são somente para leitura porque nem todos os servidores de FTP trabalham corretamente salvando arquivos remotos.</p>
+  </note>
+
+</page>

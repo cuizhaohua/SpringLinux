@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Atvērt datni vai datņu kopu</title>
+
+  <p>Lai atvērtu datni <app>gedit</app>, veiciet klikšķi uz pogas <gui>Atvērt</gui>, vai nospiediet <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>Tad parādīsies dialoglodziņš <gui>Atvērt</gui>. Izvēlieties atveramo datni, izmantojot peli vai tastatūru, un spiediet pogu <gui>Atvērt</gui>. Izvēlētā datne tiks atvērta jaunā cilnē.</p>
+  <p>Lai aizvērtu dialoglodziņu <gui>Atvērt</gui>, neatverot nevienu datni, spiediet <gui>Atcelt</gui>.</p>
+
+  <note style="tip"><p>Izmantojot <key>Ctrl</key> un <key>Shift</key> taustiņus, var atvērt vairākas datnes vienlaikus. Ja, veicot klikšķi uz katras vajadzīgās datnes, tur nospiestu <key>Ctrl</key> taustiņu, tad, nospiežot pogu <gui>Atvērt</gui>, tiks atvērtas visas izvēlētās datnes.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Ja izvēles laikā pietur <key>Shift</key> taustiņu, tiks atvērta pirmā un pēdējā datne, uz kuriem veikts klikšķis, kā arī visas datnes, kas sarakstā atrodas starp tām.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

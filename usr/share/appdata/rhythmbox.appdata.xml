@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">rhythmbox.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <description>
+    <p>Rhythmbox is a music management application, designed to work well under the GNOME desktop. In addition to music stored on your computer, it supports network shares, podcasts, radio streams, portable music devices (including phones), and internet music services such as Last.fm and Magnatune.</p>
+    <p xml:lang="de">Rhythmbox ist ein Musikverwaltungsprogramm, welches konzipiert ist, um gut innerhalb der GNOME-Arbeitsumgebung zu laufen. Über die Musik hinaus, die auf Ihrem Rechner gespeichert ist, unterstützt es Netzwerkfreigaben, »Podcasts«, Radiosendungen, tragbare Musikgeräte (auch Telefone) und Internet-Musikdienste wie Last.fm und Magnatune.</p>
+    <p xml:lang="el">Το Rhythmbox είναι μια εφαρμογή διαχειρίσης της μουσικής σας, σχεδιασμένη να λειτουργεί άριστα στο GNOME. Εκτός από τη μουσική που είναι αποθηκευμένη στον υπολογιστή σας, υποστηρίζει κοινόχρηστα δικτύου, ραδιοφωνικές ροές, φορητές συσκευές μουσικής (και κινητά τηλέφωνα), και διαδικτυακές υπηρεσίες μουσικής όπως τα Last.fm και Magnatune.</p>
+    <p xml:lang="fr">Rhythmbox est une application de gestion de musique conçue pour s'intégrer harmonieusement au bureau GNOME. En plus de la musique stockée sur votre ordinateur, elle gère les partages réseau, les podcasts, les flux radiophoniques, les lecteurs audios portables (y compris les téléphones), et les services de musique sur Internet comme Last.fm et Magnatune.</p>
+    <p xml:lang="gd">Cuiridh tu rian air a' cheòl agad le Rhythmbox 's a chaidh a dhealbhadh ach an obraich e gu ma air an deasg GNOME. A bharrachd air a' cheòl a tha air a' choimpiutair agad, cuiridh e taic ri co-roinneadh lìonraidh, pod-chraoladh, sruthadh rèidio, uidheaman ciùil so-ghiùlan (a' gabhail a-steach fònaichean) agus seirbheisean ciùil air loidhne mar Last.fm agus Magnatune.</p>
+    <p xml:lang="id">Rhythmbox adalah sebuah aplikasi manajemen musik, dirancang untuk bekerja baik di bawah desktop GNOME. Selain musik yang disimpan pada komputer Anda, itu mendukung berbagi pakai jaringan, podcast, stream radio, perangkat musik portabel (termasuk telepon), dan layanan musik internet seperti Last.fm dan Magnatune.</p>
+    <p xml:lang="pl">Rhythmbox to program do zarządzania muzyką, zaprojektowany do działania w środowisku GNOME. Oprócz muzyki przechowywanej na komputerze obsługuje on także muzykę współdzieloną w sieci, podcasty, radio internetowe, przenośne odtwarzacze muzyki (w tym smartfony) oraz serwisy internetowe Last.fm i Magnatune.</p>
+    <p xml:lang="sv">Rhythmbox är ett program för musikhantering, designat för att fungera bra i skrivbordsmiljön GNOME. Förutom musik lagrad på din dator stöder det nätverksutdelningar, poddsändningar, radioströmmar, portabla musikenheter (inklusive mobiler) och musiktjänster på internet som Last.fm och Magnatune.</p>
+    <p>Rhythmbox is Free software, based on GTK+ and GStreamer, and is extensible via plugins written in Python or C.</p>
+    <p xml:lang="de">Rhythmbox ist freie Software, basierend auf GTK+ und GStreamer. Es ist mit Zusatzmodulen erweiterbar, die in Python oder C geschrieben sind.</p>
+    <p xml:lang="el">Το Rhythmbox είναι ελεύθερο λογισμικό, βασισμένο στο GTK+ και το GStreamer, και είναι επεκτάσιμο με πρόσθετο γραμμένα σε Python ή C.</p>
+    <p xml:lang="fr">Rhythmbox est un logiciel libre basé sur GTK+ et GStreamer ; il est extensible par des greffons écrits en Python ou en C.</p>
+    <p xml:lang="gd">'S e bathar-bog saor a tha sa Rhythmbox 's tha e stèidhichte air GTK+ agus GStreamer. Gabhaidh a leudachadh le plugain a ghabhas sgrìobhadh ann an Python no C.</p>
+    <p xml:lang="id">Rhythmbox adalah Perangkat lunak bebas, berbasis pada GTK+ dan GStreamer, dan dapat dikembangkan melalui pengaya yang ditulis dalam Python atau C.</p>
+    <p xml:lang="pl">Rhythmbox jest wolnym oprogramowaniem, opartym na bibliotekach GTK+ i GStreamer, i jest rozszerzalny dzięki mechanizmowi wtyczek napisanych w językach Python i C.</p>
+    <p xml:lang="sv">Rhythmbox är fri programvara, baserad på GTK+ och GStreamer, och är utökningsbar genom insticksmoduler skrivna i Python eller C.</p>
+  </description>
+  <url type="homepage">https://wiki.gnome.org/Apps/Rhythmbox</url>
+  <screenshots>
+    <screenshot type="default">https://people.gnome.org/~jmatthew/rhythmbox-appdata-screenshot.png</screenshot>
+  </screenshots>
+  <updatecontact>jmatthew@gnome.org</updatecontact>
+</application>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="パスワードの保存のためにKeyringを使用する">
+						<longdesc>gksuが使用するキーリングのの名前を決めます。取りうる値は、パスワードをセッション単位で保存する「セッション」と、タイムアウトなしにパスワードを保存する「デフォルト」です。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="gnome-keyring にパスワードを保存">
+						<longdesc>gksuはパスワードをgnome-keyringに記憶させることを許可し、毎回パスワードを聞かれなくても済むようにすることができます</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="パスワードが必要ないときは情報を表示する">
+						<longdesc>このオプションは、何らかの理由でパスワードの確認が不要な場合、ユーザにパスワード入力なしで権限が取得されたことを知らせるかどうかを決定します。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="占有時のプロンプト">
+						<longdesc>このオプションを有効にすると、パスワードを入力する前に画面をつかむようにユーザに促します。この設定は、強制的に画面を掴む動作が無効な場合にだけ機能します。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Sudo モード">
+						<longdesc>sudoをデフォルトのバックエンドメソッドにしますか？　そうしない場合、 -S スイッチが与えられた場合か、「gksu」の代わりに「gksudo」として起動された場合にのみsudoが利用されます。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="キーボードとマウスの占有を強制する">
+						<longdesc>コマンドラインで-gオプションが与えられた場合はキーボードとマウスを占有する。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="キーボードとマウスの占有を無効化する">
+						<longdesc>キーボードとマウスを「つかむ」設定をオフにしました。他のXアプリケーションがキーボード入力イベントを取得することが可能になります。この結果、万が一悪意あるアプリケーションが存在する場合には身を守ることができません。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

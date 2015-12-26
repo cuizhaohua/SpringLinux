@@ -1,0 +1,25 @@
+#! /bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+    files=$(dpkg -L libpython3.4-stdlib:armhf | sed -n '/^\/usr\/lib\/python3.4\/.*\.py$/p')
+    if [ -n "$files" ]; then
+	python3.4 -E -S /usr/lib/python3.4/py_compile.py $files
+	if grep -sq '^byte-compile[^#]*optimize' /etc/python/debian_config; then
+	    python3.4 -E -S -O /usr/lib/python3.4/py_compile.py $files
+	fi
+    else
+	echo >&2 "python3.4: can't get files for byte-compilation"
+    fi
+esac
+
+# Automatically added by dh_installmenu
+if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
+	update-menus
+fi
+# End automatically added section
+
+
+exit 0

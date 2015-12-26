@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<schema path="/org/gnome/Totem/pythonconsole/" id="org.gnome.totem.plugins.pythonconsole" gettext-domain="totem">
+		<key type="s" name="rpdb2-password">
+			<default>''</default>
+			<summary>rpdb2 password</summary>
+			<description>A password to protect the rpdb2 server for debugging Totem from unauthorized remote access. If this is empty, a default of 'totem' will be used.</description>
+		</key>
+	</schema>
+</schemalist>

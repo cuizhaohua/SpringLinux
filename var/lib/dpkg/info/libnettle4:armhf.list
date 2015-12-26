@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libnettle.so.4.7
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnettle4
+/usr/share/doc/libnettle4/changelog.gz
+/usr/share/doc/libnettle4/README
+/usr/share/doc/libnettle4/NEWS.gz
+/usr/share/doc/libnettle4/changelog.Debian.gz
+/usr/share/doc/libnettle4/copyright
+/usr/lib/arm-linux-gnueabihf/libnettle.so.4

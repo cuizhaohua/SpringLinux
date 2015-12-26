@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libheimntlm0-heimdal
+/usr/share/doc
+/usr/share/doc/libheimntlm0-heimdal
+/usr/share/doc/libheimntlm0-heimdal/copyright
+/usr/share/doc/libheimntlm0-heimdal/changelog.gz
+/usr/share/doc/libheimntlm0-heimdal/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libheimntlm.so.0.1.0
+/usr/lib/arm-linux-gnueabihf/libheimntlm.so.0

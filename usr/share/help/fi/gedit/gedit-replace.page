@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tekstin korvaaminen</title>
+
+  <p>Tekstin muokkaaminen voi välillä olla hidasta. Ajan säästämiseksi <app>gedit</app> sisältää <app>Korvaustoiminnon</app>, joka auttaa tietyn tekstin korvaamisessa toisella.</p>
+
+  <steps>
+    <title>Tekstin korvaaminen <app>geditissä</app></title>
+    <item>
+      <p>Open the <gui>Replace</gui> tool by clicking
+      <guiseq><gui style="menu">Search</gui><gui style="menuitem">Replace…</gui></guiseq>
+      or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Enter the text that you wish to replace into the <gui>Search
+      for:</gui> field.</p>
+    </item>
+    <item>
+      <p>Enter the new, replacement text into the <gui>Replace with:</gui>
+      field.</p>
+    </item>
+    <item>
+      <p>Once you have entered the original and replacement text, you can add
+      extra parameters to the search. You can also choose what you want to
+      replace:</p>
+      <list>
+        <item>
+          <p>To replace <em>only</em> the next match, click
+          <gui>Replace</gui>.</p>
+        </item>
+        <item>
+          <p>Korvataksesi <em>kaikki osumat</em>, napsauta <gui>Korvaa kaikki</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Ole varovainen käyttäessäsi <gui>Korvaa kaikki</gui> -toimintoa. Se vaikuttaa aina koko asiakirjaan eikä se korosta korvattavia tekstinpätkiä etukäteen.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Lisäasetukset</title>
+
+  <p>If you wish, you can add some extra parameters to your search:</p>
+
+  <terms>
+    <item>
+      <title>Huomioi kirjainkoko</title>
+      <p><em>Kirjainkoon huomiointi</em> määrittää, onko kirjainkoolla merkitystä. Jos tämä asetus on valittu, kirjainkoko vaikuttaa haun tuloksiin. Jos ei, kirjainkoolla ei ole merkitystä.</p>
+    </item>
+    <item>
+      <title>Etsi kokonaista sanaa</title>
+      <p>Määritä, etsitäänkö kokonaisia sanoja vai myös sanojen osia. Esimerkiksi, jos hakusana on "ja", sana "ja" täsmäisi hakuun, mutta sanat "kir<em>ja</em>" ja "kir<em>ja</em>in" eivät.</p>
+    </item>
+    <item>
+      <title>Etsi taaksepäin</title>
+      <p>Tämän valinnan ollessa valittuna, haku suoritetaan takaperin eli etsitään edellistä vastaavuutta seuraavan sijasta.</p>
+    </item>
+    <item>
+      <title>Jatka alusta</title>
+      <p>Kun <app>Jatka alusta</app> -asetus on valittuna ja haku- tai korvaustoiminto pääsee asiakirjan loppuun, <app>gedit</app> jatkaa kyseistä toimintoa asiakirjan alusta. Tällä voit varmistaa, että haku tai korvaus suoritetaan aina asiakirjan alusta loppuun saakka.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Using escape sequences</title>
+
+  <p>You can use <em>escape sequences</em> to search for line breaks and
+  tabs.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Newline</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tab</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Carriage return</p>
+    </item>
+  </terms>
+
+  <p>If you actually want to search for a <output>\</output> (backslash) or one
+  of the escape sequences in the text, you need to escape the backslash with an
+  extra backslash. For example, to search for <input>\</input>, you need to
+  enter <input>\\</input> into the search or replace field. You can search for
+  escape sequences in the same way: to search for or replace with a
+  <input>\n</input>, use the <input>\\n</input> term.</p>
+
+</section>
+
+</page>

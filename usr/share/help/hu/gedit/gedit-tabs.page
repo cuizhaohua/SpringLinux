@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="second"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Lapok hozzáadása és eltávolítása</title>
+  <p>A lapok kezelése a <app>geditben</app> lehetővé teszi számos fájl szemmel tartását egyetlen ablakban. A többinél nagyobb lap jelzi a jelenleg nyitott fájlt. A kisebb lapok további fájlokat jeleznek, amelyeken szintén dolgozhat.</p>
+
+  <section id="gedit-adding-tabs">
+    <title>Lapok hozzáadása</title>
+    <p>Új lap hozzáadásához hozzon létre egy új fájlt a <keyseq><key>Ctrl</key><key>T</key></keyseq> billentyűkombinációval. A lap a többi laptól jobbra kerül felvételre.</p>
+  </section>
+
+  <section id="gedit-removing-tabs">
+    <title>Lapok eltávolítása</title>
+    <p>Lap eltávolításához kattintson a lap jobb oldalán lévő <gui style="button">×</gui> gombra. Az összes nyitott lap eltávolításához nyomja meg a <keyseq><key>Ctrl</key> <key>Shift</key><key>W</key></keyseq> kombinációt.</p>
+  </section>
+
+</page>

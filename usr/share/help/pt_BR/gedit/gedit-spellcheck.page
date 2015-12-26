@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="pt-BR">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Habilitar e usar o recurso de verificação ortográfica</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Verificador ortográfico</title>
+  <section id="enable-spell-check">
+    <title>Habilitando o verificador ortográfico</title>
+    <p>A funcionalidade de verificação ortográfica é fornecida como um plug-in no <app>gedit</app>, a qual pode ser habilitada sob demanda. Para habilitar o plug-in:</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferências</gui> <gui style="tab">Plug-ins</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Selecione <gui style="menuitem">Verificador ortográfico</gui> para habilitar o plug-in.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Verificador ortográfico</title>
+
+    <p>Para verificar por palavras com erros de escrita em seu documento:</p>
+
+    <steps>
+      <item>
+        <p>Selecione <guiseq><gui style="menu">Ferramentas</gui> <gui style="menuitem">Verificar ortografia</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Para que <app>gedit</app> destaque automaticamente palavras com erros de escrita em seu documento enquanto você digita, selecione <guiseq><gui style="menu">Ferramentas</gui><gui style="menuitem">Destaque palavras com erros ortográficos</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Usando a verificação ortográfica</title>
+
+    <p>Você pode escolher a substituição correta para palavras com erro de escrita usando o diálogo do Verificador de ortografia. A palavra com erro de escrita sendo verificada pelo verificador de ortografia é exibida em negrito ao lado de <gui>Palavra incorreta:</gui>. Você pode escolher as seguintes ações corretivas:</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Alterar para:</gui> permite que você digite uma palavra e use <gui style="button">Verificar palavra</gui> para verificar a validade da ortografia.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Sugestões:</gui> lista as substituições disponíveis para a palavra.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorar</gui> permite que você ignore a verificação de ortografia para <em>uma</em> instância da palavra atual.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorar todos</gui> permite que você ignore a verificação de ortografia para <em>todas</em> as instâncias da palavra atual.</p>
+      </item>
+      <item>
+        <p><gui style="button">Alterar</gui> substitui a palavra que apresenta erro de ortografia ou palavra não reconhecida com <em>um</em> substituto escolhido da lista <gui style="menuitem">Sugestões:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Alterar todos</gui> substitui <em>todas</em> as palavras que apresentam erro de ortografia ou palavras não reconhecidas com em relação ao substituto escolhido da lista <gui style="menuitem">Sugestões:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Adicionar palavra</gui> permite que você adicione a palavra atual ao <gui>Dicionário do usuário</gui> do <app>gedit</app>. Ao adicionar palavras personalizadas ao <gui>Dicionário de usuário</gui> vai permitir que o <app>gedit</app> reconheça a palavra em documentos e, portanto, não será destacado como palavra com erro ortográfico.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Definindo o idioma a ser usado para a verificação ortográfica</title>
+    <p>Por padrão, o <app>gedit</app> usará seu idioma atual para verificar a ortografia do seu documento. Se você precisar usar outro idioma, escolha <guiseq><gui style="menu">Ferramentas</gui><gui style="menuitem">Definir Idioma...</gui></guiseq> e, então, escolha o idioma que deseja usar.</p>
+  </section>
+
+  <section id="dict">
+    <title>Dicionários</title>
+
+    <p>O <app>gedit</app> usa <link href="http://www.abisource.com/projects/enchant/">Enchant</link>, um pequeno utilitário de sistema, para verificação ortográfica. Enchant pode usar vários dicionários para verificação de ortografia. Duas retaguardas (back-ends) de dicionário são <em>Hunspell</em> e o <em>Aspell</em>.</p>
+
+    <p>Se o idioma que você deseja usar não estiver disponível no <app>gedit</app>, use o instalador de software do seu computador ou o gerenciador de pacotes para instalar a retaguarda (back-end) desejada de dicionário.</p>
+  </section>
+</page>

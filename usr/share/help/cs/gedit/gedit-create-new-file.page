@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-create-new-file" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="first"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vytvoření nového souboru</title>
+
+  <p>Nejjednodušším způsobem, jak vytvořit v editoru <app>gedit</app> nový soubor, je kliknout na tlačítko <gui>Vytvořit nový dokument</gui> na levé straně nástrojové lišty nebo zmáčknout <keyseq><key>Ctrl</key><key>T</key></keyseq>.</p>
+
+  <p>Kterýmkoliv z těchto uvedených způsobů vytvoříte nový soubor v okně <app>gedit</app>. Pokud máte již otevřeny jiné soubory, objeví se nový soubor jako nová karta napravo od ostatních karet se soubory.</p>
+
+</page>

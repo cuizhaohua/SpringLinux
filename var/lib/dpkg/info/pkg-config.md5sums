@@ -1,0 +1,12 @@
+1723bd60d57971815f20efe63a8a6b15  usr/bin/arm-unknown-linux-gnueabihf-pkg-config
+1723bd60d57971815f20efe63a8a6b15  usr/bin/pkg-config
+fe5098ee56016d0c16da7f32298e089c  usr/share/aclocal/pkg.m4
+8ff6019ef7d4da20c4e9f6be484b272a  usr/share/doc/pkg-config/AUTHORS
+815204010421e797371615f72c763b2b  usr/share/doc/pkg-config/NEWS.gz
+0faf68361b46086bd7f87596416f6910  usr/share/doc/pkg-config/README
+d740acb47d8b8c5a9fee2867ed39dcce  usr/share/doc/pkg-config/changelog.Debian.gz
+cafeb1a10c284309d019836a0909ebd7  usr/share/doc/pkg-config/changelog.gz
+17945a01b1007e78511e2a10f3a0d884  usr/share/doc/pkg-config/copyright
+5f3a4e690ef36a237882ac80025255cb  usr/share/doc/pkg-config/pkg-config-guide.html
+ca6655cdf1b1cd123a8ffea7a372c121  usr/share/man/man1/pkg-config.1.gz
+21bae8f477568f667611f938bce451ce  usr/share/pkg-config-crosswrapper

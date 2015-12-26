@@ -1,0 +1,4 @@
+libHalf 6 libilmbase6 (>= 1.0.1)
+libIex 6 libilmbase6 (>= 1.0.1)
+libImath 6 libilmbase6 (>= 1.0.1)
+libIlmThread 6 libilmbase6 (>= 1.0.1)

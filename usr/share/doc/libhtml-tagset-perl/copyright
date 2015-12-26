@@ -1,0 +1,26 @@
+This is Debian GNU/Linux's prepackaged version of HTML::TagSet.  This
+is a perl modules which provides data tables useful when dealing with
+HTML.
+
+It is currently maintained by Debian Perl Group, 
+previously by Kenneth J. Pronovici <pronovic@debian.org>,
+and was originally packaged by Michael Alan Dorman <mdorman@debian.org>.
+
+The original sources should always be available from the Comprehensive Perl
+Archive Network (CPAN):
+http://search.cpan.org/dist/HTML-Tagset/
+
+The HTML::Tree copright is as follows:
+
+   Copyright 1995-2000 Gisle Aas.
+   Copyright 2000-2005 Sean M. Burke.
+   Copyright 2005-2008 Andy Lester.
+
+   This library is free software; you can redistribute it and/or
+   modify it under the same terms as Perl itself.
+
+Perl is distributed under your choice of the GNU General Public License or the
+Artistic License.  On Debian GNU/Linux systems, the complete text of the GNU
+General Public License can be found in `/usr/share/common-licenses/GPL' and the
+Artistic Licence in `/usr/share/common-licenses/Artistic'.
+

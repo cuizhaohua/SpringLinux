@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Даниэль Нил (Daniel Neel)</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Екатерина Герасимова (Ekaterina Gerasimova)</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Замена текста</title>
+
+  <p>Редактирование текста может занять много времени. Для экономиии времени, в <app>gedit</app> есть функция <app>Заменить</app>, которая может находить и заменять часть текста.</p>
+
+  <steps>
+    <title>Замена текста в <app>gedit</app></title>
+    <item>
+      <p>Откройте инструмент <gui>Заменить</gui>, выбрав <guiseq><gui style="menu">Поиск</gui><gui style="menuitem">Заменить…</gui></guiseq>, или нажмите <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Введите текст, который нужно заменить, в поле <gui>Найти:</gui>.</p>
+    </item>
+    <item>
+      <p>Введите заменяющий текст в поле <gui>Заменить на:</gui>.</p>
+    </item>
+    <item>
+      <p>После ввода исходного и заменяющего текста, можно указать дополнительные параметры поиска. Также можно выбрать что заменять:</p>
+      <list>
+        <item>
+          <p>Чтобы заменить <em>только</em> следующее соответствие, нажмите кнопку <gui>Заменить</gui>.</p>
+        </item>
+        <item>
+          <p>Чтобы заменить <em>все совпадения</em> искомого текста, нажмите кнопку <gui>Заменить все</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Используйте функцию <gui>Заменить все</gui> с осторожностью. Функция <gui>Заменить все</gui> действует по всему текстовому файлу, и не позволяет выделять часть текста, в которой функция замены не будет выполняться.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Дополнительные параметры</title>
+
+  <p>Если нужно, можно указать дополнительные параметры поиска:</p>
+
+  <terms>
+    <item>
+      <title>Учитывать регистр</title>
+      <p>Опция <em>Учитывать регистр</em> позволяет выполнять поиск с учётом регистра. Если выбрана эта опция, при поиске будет учитываться регистр. Если нет, поиск будет производиться без учёта регистра.</p>
+    </item>
+    <item>
+      <title>Только полные слова</title>
+      <p>Используйте эту опцию, чтобы найти определённое слово, исключив фрагменты других слов. Например, если при включенной опции искать слово «на», то слово «на» будет соответствовать, а слова «<em>на</em>м» и «Па<em>на</em>ма» нет.</p>
+    </item>
+    <item>
+      <title>Обратный поиск</title>
+      <p>Опция Обратный поиск идентична функции Найти предыдущее. Выберите эту опцию, если нужно выполнять поиск от конца к началу.</p>
+    </item>
+    <item>
+      <title>Автоматически переходить к началу документа</title>
+      <p>Если включена опция <app>Автоматически переходить к началу документа</app>, <app>gedit</app>, при достижения конца документа, продолжит поиск/замену c его начала. Это гарантирует, что функция поиск/замена будет выполнена по всему документу.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Using escape sequences</title>
+
+  <p>You can use <em>escape sequences</em> to search for line breaks and
+  tabs.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Newline</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tab</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Carriage return</p>
+    </item>
+  </terms>
+
+  <p>If you actually want to search for a <output>\</output> (backslash) or one
+  of the escape sequences in the text, you need to escape the backslash with an
+  extra backslash. For example, to search for <input>\</input>, you need to
+  enter <input>\\</input> into the search or replace field. You can search for
+  escape sequences in the same way: to search for or replace with a
+  <input>\n</input>, use the <input>\\n</input> term.</p>
+
+</section>
+
+</page>

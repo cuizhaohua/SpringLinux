@@ -1,0 +1,3 @@
+[Test]
+Type=session
+Exec=/usr/lib/glib2.0/installed-tests/glib/testglib

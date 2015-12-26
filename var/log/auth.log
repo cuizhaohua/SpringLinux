@@ -1,0 +1,990 @@
+Aug 16 09:06:49 cubietruck sshd[2450]: Server listening on 0.0.0.0 port 22.
+Aug 16 09:06:49 cubietruck sshd[2450]: Server listening on :: port 22.
+Aug 16 09:07:18 cubietruck login[2608]: pam_unix(login:auth): check pass; user unknown
+Aug 16 09:07:18 cubietruck login[2608]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/ttyS0 ruser= rhost= 
+Aug 16 09:07:22 cubietruck login[2608]: FAILED LOGIN (1) on '/dev/ttyS0' FOR 'UNKNOWN', Authentication failure
+Aug 16 09:07:25 cubietruck login[2608]: pam_unix(login:account): expired password for user root (root enforced)
+Aug 16 09:07:32 cubietruck login[2608]: pam_unix(login:chauthtok): password changed for root
+Aug 16 09:07:32 cubietruck login[2608]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 09:07:32 cubietruck login[2618]: ROOT LOGIN  on '/dev/ttyS0'
+Aug 16 09:16:00 cubietruck login[2602]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 09:16:00 cubietruck login[2677]: ROOT LOGIN  on '/dev/tty1'
+Aug 16 09:17:01 cubietruck CRON[2724]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 16 09:17:01 cubietruck CRON[2724]: pam_unix(cron:session): session closed for user root
+Aug 16 09:55:53 cubietruck sshd[2450]: Received signal 15; terminating.
+Aug 16 09:55:53 cubietruck sshd[4261]: Server listening on 0.0.0.0 port 22.
+Aug 16 09:55:53 cubietruck sshd[4261]: Server listening on :: port 22.
+Aug 16 09:56:06 cubietruck sshd[4261]: Received signal 15; terminating.
+Aug 16 09:56:07 cubietruck sshd[4339]: Server listening on 0.0.0.0 port 22.
+Aug 16 09:56:07 cubietruck sshd[4339]: Server listening on :: port 22.
+Aug 16 10:03:35 cubietruck sshd[4339]: Received signal 15; terminating.
+Aug 16 10:03:35 cubietruck sshd[4716]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:03:35 cubietruck sshd[4716]: Server listening on :: port 22.
+Aug 16 10:03:42 cubietruck sshd[4716]: Received signal 15; terminating.
+Aug 16 10:03:42 cubietruck sshd[4800]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:03:42 cubietruck sshd[4800]: Server listening on :: port 22.
+Aug 16 10:06:28 cubietruck sshd[4800]: Received signal 15; terminating.
+Aug 16 10:07:09 cubietruck sshd[2120]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:07:09 cubietruck sshd[2120]: Server listening on :: port 22.
+Aug 16 10:07:18 cubietruck login[2247]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/ttyS0 ruser= rhost=  user=root
+Aug 16 10:07:20 cubietruck login[2247]: FAILED LOGIN (1) on '/dev/ttyS0' FOR 'root', Authentication failure
+Aug 16 10:07:35 cubietruck login[2247]: FAILED LOGIN (2) on '/dev/ttyS0' FOR 'root', Authentication failure
+Aug 16 10:07:40 cubietruck login[2247]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 10:07:40 cubietruck login[2248]: ROOT LOGIN  on '/dev/ttyS0'
+Aug 16 10:08:07 cubietruck sshd[2120]: Received signal 15; terminating.
+Aug 16 10:08:07 cubietruck sshd[2425]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:08:07 cubietruck sshd[2425]: Server listening on :: port 22.
+Aug 16 10:08:20 cubietruck sshd[2425]: Received signal 15; terminating.
+Aug 16 10:08:20 cubietruck sshd[2503]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:08:20 cubietruck sshd[2503]: Server listening on :: port 22.
+Aug 16 10:15:25 cubietruck login[2241]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=root
+Aug 16 10:15:27 cubietruck login[2241]: FAILED LOGIN (1) on '/dev/tty1' FOR 'root', Authentication failure
+Aug 16 10:15:35 cubietruck login[2241]: FAILED LOGIN (2) on '/dev/tty1' FOR 'root', Authentication failure
+Aug 16 10:15:39 cubietruck login[2241]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 10:15:39 cubietruck login[2678]: ROOT LOGIN  on '/dev/tty1'
+Aug 16 10:17:01 cubietruck CRON[2726]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug 16 10:17:01 cubietruck CRON[2726]: pam_unix(cron:session): session closed for user root
+Aug 16 10:24:02 cubietruck sshd[2503]: Received signal 15; terminating.
+Aug 16 10:24:02 cubietruck sshd[3083]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:24:02 cubietruck sshd[3083]: Server listening on :: port 22.
+Aug 16 10:24:09 cubietruck sshd[3083]: Received signal 15; terminating.
+Aug 16 10:24:09 cubietruck sshd[3168]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:24:09 cubietruck sshd[3168]: Server listening on :: port 22.
+Aug 16 10:25:12 cubietruck sshd[3168]: Received signal 15; terminating.
+Aug 16 10:25:51 cubietruck sshd[2125]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:25:51 cubietruck sshd[2125]: Server listening on :: port 22.
+Aug 16 10:26:00 cubietruck login[2250]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/ttyS0 ruser= rhost=  user=root
+Aug 16 10:26:04 cubietruck login[2250]: FAILED LOGIN (1) on '/dev/ttyS0' FOR 'root', Authentication failure
+Aug 16 10:26:08 cubietruck login[2250]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 10:26:08 cubietruck login[2251]: ROOT LOGIN  on '/dev/ttyS0'
+Aug 16 10:27:22 cubietruck login[2244]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 10:27:22 cubietruck login[2315]: ROOT LOGIN  on '/dev/tty1'
+Aug 16 10:40:40 cubietruck sshd[2125]: Received signal 15; terminating.
+Aug 16 10:43:51 cubietruck sshd[2239]: Server listening on 0.0.0.0 port 22.
+Aug 16 10:43:51 cubietruck sshd[2239]: Server listening on :: port 22.
+Aug 16 10:43:59 cubietruck login[2394]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/ttyS0 ruser= rhost=  user=root
+Aug 16 10:44:01 cubietruck login[2394]: FAILED LOGIN (1) on '/dev/ttyS0' FOR 'root', Authentication failure
+Aug 16 10:44:04 cubietruck login[2394]: pam_unix(login:auth): check pass; user unknown
+Aug 16 10:44:04 cubietruck login[2394]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/ttyS0 ruser= rhost= 
+Aug 16 10:44:07 cubietruck login[2394]: FAILED LOGIN (2) on '/dev/ttyS0' FOR 'UNKNOWN', Authentication failure
+Aug 16 10:44:10 cubietruck login[2394]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 10:44:10 cubietruck login[2399]: ROOT LOGIN  on '/dev/ttyS0'
+Aug 16 10:44:44 cubietruck login[2388]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=root
+Aug 16 10:44:48 cubietruck login[2388]: FAILED LOGIN (1) on '/dev/tty1' FOR 'root', Authentication failure
+Aug 16 10:44:56 cubietruck login[2388]: FAILED LOGIN (2) on '/dev/tty1' FOR 'root', Authentication failure
+Aug 16 10:45:01 cubietruck login[2388]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 10:45:01 cubietruck login[2447]: ROOT LOGIN  on '/dev/tty1'
+Aug 16 10:47:03 cubietruck sshd[2239]: Received signal 15; terminating.
+Aug 16 11:22:06 cubietruck sshd[2093]: Server listening on 0.0.0.0 port 22.
+Aug 16 11:22:06 cubietruck sshd[2093]: Server listening on :: port 22.
+Aug 16 11:22:17 cubietruck login[2272]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Aug 16 11:22:17 cubietruck login[2273]: ROOT LOGIN  on '/dev/ttyS0'
+Aug 16 11:22:56 cubietruck sshd[2093]: Received signal 15; terminating.
+Sep 23 05:03:40 cubietruck sshd[2212]: Server listening on 0.0.0.0 port 22.
+Sep 23 05:03:40 cubietruck sshd[2212]: Server listening on :: port 22.
+Sep 23 05:11:08 cubietruck login[2348]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep 23 05:11:08 cubietruck login[2382]: ROOT LOGIN  on '/dev/ttyS0'
+Sep 23 05:11:25 cubietruck groupadd[2428]: group added to /etc/group: name=cubie, GID=1000
+Sep 23 05:11:25 cubietruck groupadd[2428]: group added to /etc/gshadow: name=cubie
+Sep 23 05:11:25 cubietruck groupadd[2428]: new group: name=cubie, GID=1000
+Sep 23 05:11:25 cubietruck useradd[2432]: new user: name=cubie, UID=1000, GID=1000, home=/home/cubie, shell=/bin/bash
+Sep 23 05:11:30 cubietruck passwd[2439]: pam_unix(passwd:chauthtok): password changed for cubie
+Sep 23 05:11:35 cubietruck chfn[2440]: changed user 'cubie' information
+Sep 23 05:11:49 cubietruck groupadd[2448]: group added to /etc/group: name=admin, GID=1001
+Sep 23 05:11:50 cubietruck groupadd[2448]: group added to /etc/gshadow: name=admin
+Sep 23 05:11:50 cubietruck groupadd[2448]: new group: name=admin, GID=1001
+Sep 23 05:13:57 cubietruck gpasswd[2465]: user cubie added by root to group admin
+Sep 23 05:17:01 cubietruck CRON[2485]: pam_unix(cron:session): session opened for user root by (uid=0)
+Sep 23 05:17:01 cubietruck CRON[2485]: pam_unix(cron:session): session closed for user root
+Sep 23 05:19:08 cubietruck login[2342]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Sep 23 05:19:08 cubietruck login[2498]: ROOT LOGIN  on '/dev/tty1'
+Sep 23 05:20:04 cubietruck sshd[2212]: Received signal 15; terminating.
+Jan  1 01:01:51 cubietruck sshd[2176]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:01:51 cubietruck sshd[2176]: Server listening on :: port 22.
+Jan  1 01:03:21 cubietruck login[2291]: pam_unix(login:account): account root has password changed in future
+Jan  1 01:03:21 cubietruck login[2291]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 01:03:21 cubietruck login[2308]: ROOT LOGIN  on '/dev/tty1'
+Jan  1 01:03:24 cubietruck passwd[2347]: pam_unix(passwd:chauthtok): account root has password changed in future
+Jan  1 01:03:29 cubietruck passwd[2347]: pam_unix(passwd:chauthtok): account root has password changed in future
+Jan  1 01:03:29 cubietruck passwd[2347]: pam_unix(passwd:chauthtok): password changed for root
+Jan  1 01:04:04 cubietruck login[2291]: pam_unix(login:session): session closed for user root
+Jan  1 01:04:09 cubietruck login[2358]: pam_unix(login:auth): check pass; user unknown
+Jan  1 01:04:09 cubietruck login[2358]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+Jan  1 01:04:13 cubietruck login[2358]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jan  1 01:04:18 cubietruck login[2358]: pam_unix(login:auth): check pass; user unknown
+Jan  1 01:04:21 cubietruck login[2358]: FAILED LOGIN (2) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+Jan  1 01:04:26 cubietruck login[2358]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 01:04:26 cubietruck login[2362]: ROOT LOGIN  on '/dev/tty1'
+Jan  1 01:04:58 cubietruck sshd[2176]: Received signal 15; terminating.
+Jan  1 01:01:23 cubietruck sshd[2238]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:01:23 cubietruck sshd[2238]: Server listening on :: port 22.
+Jan  1 01:01:32 cubietruck login[2356]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 01:01:32 cubietruck login[2363]: ROOT LOGIN  on '/dev/tty1'
+Jan  1 01:03:26 cubietruck sshd[2238]: Received signal 15; terminating.
+Jan  1 01:04:23 cubietruck sshd[2241]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:04:23 cubietruck sshd[2241]: Server listening on :: port 22.
+Jan  1 01:04:34 cubietruck login[2346]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 01:04:34 cubietruck login[2357]: ROOT LOGIN  on '/dev/tty1'
+Jan  1 01:17:01 cubietruck CRON[2532]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 01:17:01 cubietruck CRON[2532]: pam_unix(cron:session): session closed for user root
+Jan  1 01:28:46 cubietruck groupmod[5660]: group changed in /etc/group (group libuuid/101, new name: uuidd)
+Jan  1 01:28:46 cubietruck groupmod[5660]: group changed in /etc/gshadow (group libuuid, new name: uuidd)
+Jan  1 01:28:46 cubietruck usermod[5668]: change user name 'libuuid' to 'uuidd'
+Jan  1 01:28:46 cubietruck usermod[5668]: change user 'uuidd' home from '/var/lib/libuuid' to '/run/uuidd'
+Jan  1 01:28:46 cubietruck usermod[5668]: change user 'uuidd' shell from '/bin/sh' to '/bin/false'
+Jan  1 01:34:20 cubietruck sshd[2241]: Received signal 15; terminating.
+Jan  1 01:34:20 cubietruck sshd[8797]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:34:20 cubietruck sshd[8797]: Server listening on :: port 22.
+Jan  1 02:17:01 cubietruck CRON[23590]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 02:17:01 cubietruck CRON[23590]: pam_unix(cron:session): session closed for user root
+Jan  1 02:24:05 cubietruck groupadd[27840]: group added to /etc/group: name=utempter, GID=109
+Jan  1 02:24:05 cubietruck groupadd[27840]: group added to /etc/gshadow: name=utempter
+Jan  1 02:24:05 cubietruck groupadd[27840]: new group: name=utempter, GID=109
+Jan  1 02:30:47 cubietruck sudo:     root : TTY=tty1 ; PWD=/root ; USER=root ; COMMAND=/usr/lib/arm-linux-gnueabihf/xfce4/session/xfsm-shutdown-helper
+Jan  1 02:30:47 cubietruck sudo: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Jan  1 02:30:49 cubietruck sudo: pam_unix(sudo:session): session closed for user root
+Jan  1 02:30:58 cubietruck sshd[8797]: Received signal 15; terminating.
+Jan  1 02:31:59 cubietruck sshd[2295]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:31:59 cubietruck sshd[2295]: Server listening on :: port 22.
+Jan  1 02:32:08 cubietruck xdm[2055]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 02:32:44 cubietruck login[2336]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 02:32:44 cubietruck login[2402]: ROOT LOGIN  on '/dev/tty3'
+Jan  1 02:39:16 cubietruck sshd[2295]: Received signal 15; terminating.
+Jan  1 02:39:16 cubietruck sshd[2654]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:39:16 cubietruck sshd[2654]: Server listening on :: port 22.
+Jan  1 02:42:13 cubietruck login[2335]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 02:42:13 cubietruck login[2797]: ROOT LOGIN  on '/dev/tty2'
+Jan  1 02:47:15 cubietruck sshd[2654]: Received signal 15; terminating.
+Jan  1 02:47:15 cubietruck sshd[3253]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:47:15 cubietruck sshd[3253]: Server listening on :: port 22.
+Jan  1 02:47:28 cubietruck sshd[3253]: Received signal 15; terminating.
+Jan  1 02:47:28 cubietruck sshd[3330]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:47:28 cubietruck sshd[3330]: Server listening on :: port 22.
+Jan  1 02:50:46 cubietruck sudo:     root : TTY=tty2 ; PWD=/etc/network ; USER=root ; COMMAND=/usr/lib/arm-linux-gnueabihf/xfce4/session/xfsm-shutdown-helper
+Jan  1 02:50:46 cubietruck sudo: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Jan  1 02:50:51 cubietruck sudo: pam_unix(sudo:session): session closed for user root
+Jan  1 02:50:52 cubietruck xdm[2055]: pam_unix(xdm:session): session closed for user root
+Jan  1 02:50:53 cubietruck sshd[3330]: Received signal 15; terminating.
+Jan  1 03:29:54 cubietruck sshd[1820]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:29:54 cubietruck sshd[1820]: Server listening on :: port 22.
+Jan  1 03:29:59 cubietruck xdm[1540]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 03:29:59 cubietruck xdm[1540]: pam_systemd(xdm:session): Failed to create session: Failed to execute program /usr/lib/dbus-1.0/dbus-daemon-launch-helper: Success
+Jan  1 03:31:13 cubietruck sshd[1820]: Received signal 15; terminating.
+Jan  1 03:31:14 cubietruck sshd[2204]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:31:14 cubietruck sshd[2204]: Server listening on :: port 22.
+Jan  1 03:31:44 cubietruck sshd[2204]: Received signal 15; terminating.
+Jan  1 03:31:44 cubietruck sshd[2369]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:31:44 cubietruck sshd[2369]: Server listening on :: port 22.
+Jan  1 03:31:57 cubietruck sshd[2369]: Received signal 15; terminating.
+Jan  1 03:31:57 cubietruck sshd[2446]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:31:57 cubietruck sshd[2446]: Server listening on :: port 22.
+Jan  1 03:35:43 cubietruck sshd[2446]: Received signal 15; terminating.
+Jan  1 03:35:43 cubietruck sshd[2627]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:35:43 cubietruck sshd[2627]: Server listening on :: port 22.
+Jan  1 04:02:47 cubietruck xdm[1540]: pam_unix(xdm:session): session closed for user root
+Jan  1 04:02:47 cubietruck sshd[2627]: Received signal 15; terminating.
+Jan  1 01:02:19 cubietruck sshd[1853]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:02:19 cubietruck sshd[1853]: Server listening on :: port 22.
+Jan  1 01:02:25 cubietruck xdm[1580]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:02:25 cubietruck xdm[1580]: pam_systemd(xdm:session): Failed to create session: Failed to execute program /usr/lib/dbus-1.0/dbus-daemon-launch-helper: Success
+Jan  1 01:04:06 cubietruck sshd[1853]: Received signal 15; terminating.
+Jan  1 01:04:06 cubietruck sshd[2258]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:04:06 cubietruck sshd[2258]: Server listening on :: port 22.
+Jan  1 01:13:19 cubietruck sudo:     root : TTY=unknown ; PWD=/root ; USER=root ; COMMAND=/usr/lib/arm-linux-gnueabihf/xfce4/session/xfsm-shutdown-helper
+Jan  1 01:13:19 cubietruck sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Jan  1 01:13:22 cubietruck sudo: pam_unix(sudo:session): session closed for user root
+Jan  1 01:13:22 cubietruck xdm[1580]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:13:29 cubietruck xdm[2464]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:13:29 cubietruck xdm[2464]: pam_systemd(xdm:session): Failed to create session: Failed to execute program /usr/lib/dbus-1.0/dbus-daemon-launch-helper: Success
+Jan  1 01:17:01 cubietruck CRON[2624]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 01:17:01 cubietruck CRON[2624]: pam_unix(cron:session): session closed for user root
+Jan  1 02:11:01 cubietruck sshd[2258]: Received signal 15; terminating.
+Jan  1 02:11:01 cubietruck sshd[3622]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:11:01 cubietruck sshd[3622]: Server listening on :: port 22.
+Nov 22 03:17:01 cubietruck CRON[4059]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 03:17:01 cubietruck CRON[4059]: pam_unix(cron:session): session closed for user root
+Nov 22 03:41:51 cubietruck xdm[2464]: pam_unix(xdm:session): session closed for user root
+Nov 22 03:41:54 cubietruck sshd[3622]: Received signal 15; terminating.
+Nov 22 03:42:59 cubietruck sshd[1804]: Server listening on 0.0.0.0 port 22.
+Nov 22 03:42:59 cubietruck sshd[1804]: Server listening on :: port 22.
+Nov 22 03:43:03 cubietruck xdm[1490]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 04:17:01 cubietruck CRON[2473]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 04:17:01 cubietruck CRON[2473]: pam_unix(cron:session): session closed for user root
+Nov 22 04:41:06 cubietruck xdm[1490]: pam_unix(xdm:session): session closed for user root
+Nov 22 04:41:07 cubietruck sshd[1804]: Received signal 15; terminating.
+Nov 22 04:42:03 cubietruck sshd[1773]: Server listening on 0.0.0.0 port 22.
+Nov 22 04:42:03 cubietruck sshd[1773]: Server listening on :: port 22.
+Nov 22 04:42:09 cubietruck xdm[1519]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=root
+Nov 22 04:42:11 cubietruck xdm[1519]: LOGIN FAILURE ON :0, root
+Nov 22 04:42:17 cubietruck xdm[1519]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 04:51:29 cubietruck xdm[1519]: pam_unix(xdm:session): session closed for user root
+Nov 22 04:51:34 cubietruck sshd[1773]: Received signal 15; terminating.
+Nov 22 07:09:45 cubietruck sshd[1750]: Server listening on 0.0.0.0 port 22.
+Nov 22 07:09:45 cubietruck sshd[1750]: Server listening on :: port 22.
+Nov 22 07:09:52 cubietruck xdm[1563]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 07:17:01 cubietruck CRON[2184]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 07:17:01 cubietruck CRON[2184]: pam_unix(cron:session): session closed for user root
+Nov 22 07:19:04 cubietruck xdm[1563]: pam_unix(xdm:session): session closed for user root
+Nov 22 07:19:05 cubietruck sshd[1750]: Received signal 15; terminating.
+Nov 22 07:19:54 cubietruck sshd[1793]: Server listening on 0.0.0.0 port 22.
+Nov 22 07:19:54 cubietruck sshd[1793]: Server listening on :: port 22.
+Nov 22 07:20:01 cubietruck xdm[1589]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 07:52:37 cubietruck xdm[1589]: pam_unix(xdm:session): session closed for user root
+Nov 22 07:52:40 cubietruck sshd[1793]: Received signal 15; terminating.
+Nov 22 07:53:35 cubietruck sshd[1654]: Server listening on 0.0.0.0 port 22.
+Nov 22 07:53:35 cubietruck sshd[1654]: Server listening on :: port 22.
+Nov 22 07:53:44 cubietruck xdm[1556]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 08:17:01 cubietruck CRON[2780]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 08:17:01 cubietruck CRON[2780]: pam_unix(cron:session): session closed for user root
+Nov 22 08:22:08 cubietruck xdm[1556]: pam_unix(xdm:session): session closed for user root
+Nov 22 08:22:10 cubietruck sshd[1654]: Received signal 15; terminating.
+Nov 22 08:23:09 cubietruck sshd[1772]: Server listening on 0.0.0.0 port 22.
+Nov 22 08:23:09 cubietruck sshd[1772]: Server listening on :: port 22.
+Nov 22 08:23:14 cubietruck xdm[1595]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 08:35:02 cubietruck login[1867]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Nov 22 08:35:02 cubietruck login[2244]: ROOT LOGIN  on '/dev/tty5'
+Nov 22 08:39:04 cubietruck xdm[1595]: pam_unix(xdm:session): session closed for user root
+Nov 22 08:39:05 cubietruck sshd[1772]: Received signal 15; terminating.
+Nov 22 08:40:02 cubietruck sshd[1778]: Server listening on 0.0.0.0 port 22.
+Nov 22 08:40:02 cubietruck sshd[1778]: Server listening on :: port 22.
+Nov 22 08:42:32 cubietruck xdm[1510]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 09:17:01 cubietruck CRON[4191]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 09:17:01 cubietruck CRON[4191]: pam_unix(cron:session): session closed for user root
+Nov 22 09:26:36 cubietruck xdm[1510]: pam_unix(xdm:session): session closed for user root
+Nov 22 09:26:38 cubietruck sshd[1778]: Received signal 15; terminating.
+Nov 22 09:27:36 cubietruck sshd[1793]: Server listening on 0.0.0.0 port 22.
+Nov 22 09:27:36 cubietruck sshd[1793]: Server listening on :: port 22.
+Nov 22 09:27:56 cubietruck xdm[1581]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 09:41:50 cubietruck sshd[1793]: Received signal 15; terminating.
+Nov 22 09:41:50 cubietruck sshd[2534]: Server listening on 0.0.0.0 port 22.
+Nov 22 09:41:50 cubietruck sshd[2534]: Server listening on :: port 22.
+Nov 22 09:53:28 cubietruck xdm[1581]: pam_unix(xdm:session): session closed for user root
+Nov 22 09:53:29 cubietruck sshd[2534]: Received signal 15; terminating.
+Nov 22 09:54:28 cubietruck sshd[1773]: Server listening on 0.0.0.0 port 22.
+Nov 22 09:54:28 cubietruck sshd[1773]: Server listening on :: port 22.
+Nov 22 09:54:45 cubietruck xdm[1548]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 09:57:15 cubietruck xdm[1548]: pam_unix(xdm:session): session closed for user root
+Nov 22 09:57:16 cubietruck sshd[1773]: Received signal 15; terminating.
+Nov 22 09:58:11 cubietruck sshd[1780]: Server listening on 0.0.0.0 port 22.
+Nov 22 09:58:11 cubietruck sshd[1780]: Server listening on :: port 22.
+Nov 22 09:58:16 cubietruck xdm[1517]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 10:17:03 cubietruck CRON[2812]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 10:17:03 cubietruck CRON[2812]: pam_unix(cron:session): session closed for user root
+Nov 22 10:20:20 cubietruck xdm[1517]: pam_unix(xdm:session): session closed for user root
+Nov 22 10:20:23 cubietruck sshd[1780]: Received signal 15; terminating.
+Nov 22 10:21:23 cubietruck sshd[1796]: Server listening on 0.0.0.0 port 22.
+Nov 22 10:21:23 cubietruck sshd[1796]: Server listening on :: port 22.
+Nov 22 10:21:28 cubietruck xdm[1580]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 10:46:56 cubietruck xdm[1580]: pam_unix(xdm:session): session closed for user root
+Nov 22 10:46:58 cubietruck sshd[1796]: Received signal 15; terminating.
+Nov 22 10:47:57 cubietruck sshd[1764]: Server listening on 0.0.0.0 port 22.
+Nov 22 10:47:57 cubietruck sshd[1764]: Server listening on :: port 22.
+Nov 22 10:48:05 cubietruck xdm[1541]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 11:17:01 cubietruck CRON[4570]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 11:17:01 cubietruck CRON[4570]: pam_unix(cron:session): session closed for user root
+Nov 22 12:17:01 cubietruck CRON[6256]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 12:17:01 cubietruck CRON[6256]: pam_unix(cron:session): session closed for user root
+Nov 22 12:18:09 cubietruck xdm[1541]: pam_unix(xdm:session): session closed for user root
+Nov 22 12:18:11 cubietruck sshd[1764]: Received signal 15; terminating.
+Nov 22 12:19:12 cubietruck sshd[1763]: Server listening on 0.0.0.0 port 22.
+Nov 22 12:19:12 cubietruck sshd[1763]: Server listening on :: port 22.
+Nov 22 12:19:17 cubietruck xdm[1527]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 12:47:46 cubietruck xdm[1527]: pam_unix(xdm:session): session closed for user root
+Nov 22 12:47:47 cubietruck sshd[1763]: Received signal 15; terminating.
+Nov 22 12:48:51 cubietruck sshd[1778]: Server listening on 0.0.0.0 port 22.
+Nov 22 12:48:51 cubietruck sshd[1778]: Server listening on :: port 22.
+Nov 22 12:48:58 cubietruck xdm[1501]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 22 12:55:10 cubietruck xdm[1501]: pam_unix(xdm:session): session closed for user root
+Nov 22 12:55:13 cubietruck sshd[1778]: Received signal 15; terminating.
+Jan  1 01:00:56 cubietruck sshd[1791]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:56 cubietruck sshd[1791]: Server listening on :: port 22.
+Jan  1 01:01:08 cubietruck xdm[1692]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:17:01 cubietruck CRON[3225]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 01:17:01 cubietruck CRON[3225]: pam_unix(cron:session): session closed for user root
+Jan  1 01:33:37 cubietruck http: getaddrinfo*.gaih_getanswer: got type "46"
+Jan  1 01:37:22 cubietruck http: getaddrinfo*.gaih_getanswer: got type "46"
+Nov 29 02:17:01 cubietruck CRON[5044]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 29 02:17:01 cubietruck CRON[5044]: pam_unix(cron:session): session closed for user root
+Nov 29 03:04:32 cubietruck xdm[1692]: pam_unix(xdm:session): session closed for user root
+Nov 29 03:04:33 cubietruck sshd[1791]: Received signal 15; terminating.
+Nov 29 03:05:30 cubietruck sshd[1762]: Server listening on 0.0.0.0 port 22.
+Nov 29 03:05:30 cubietruck sshd[1762]: Server listening on :: port 22.
+Nov 29 03:06:41 cubietruck xdm[1537]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Nov 29 03:17:01 cubietruck CRON[2355]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 29 03:17:01 cubietruck CRON[2355]: pam_unix(cron:session): session closed for user root
+Nov 29 04:16:57 cubietruck xdm[1537]: pam_unix(xdm:session): session closed for user root
+Nov 29 04:16:59 cubietruck sshd[1762]: Received signal 15; terminating.
+Jan  1 01:00:54 cubietruck sshd[1841]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:54 cubietruck sshd[1841]: Server listening on :: port 22.
+Jan  1 01:01:24 cubietruck xdm[1606]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 02:17:01 cubietruck CRON[3619]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec  5 02:17:01 cubietruck CRON[3619]: pam_unix(cron:session): session closed for user root
+Dec  5 03:17:01 cubietruck CRON[3825]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec  5 03:17:01 cubietruck CRON[3825]: pam_unix(cron:session): session closed for user root
+Dec  5 03:40:00 cubietruck xdm[1606]: pam_unix(xdm:session): session closed for user root
+Dec  5 03:40:02 cubietruck sshd[1841]: Received signal 15; terminating.
+Dec  5 07:42:12 cubietruck sshd[1817]: Server listening on 0.0.0.0 port 22.
+Dec  5 07:42:12 cubietruck sshd[1817]: Server listening on :: port 22.
+Dec  5 07:42:18 cubietruck xdm[1590]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 07:50:41 cubietruck xdm[1590]: pam_unix(xdm:session): session closed for user root
+Dec  5 07:50:44 cubietruck sshd[1817]: Received signal 15; terminating.
+Dec  5 07:51:39 cubietruck sshd[1768]: Server listening on 0.0.0.0 port 22.
+Dec  5 07:51:39 cubietruck sshd[1768]: Server listening on :: port 22.
+Dec  5 07:52:30 cubietruck xdm[1543]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 08:14:37 cubietruck xdm[1543]: pam_unix(xdm:session): session closed for user root
+Dec  5 08:14:39 cubietruck sshd[1768]: Received signal 15; terminating.
+Dec  5 08:15:37 cubietruck sshd[1807]: Server listening on 0.0.0.0 port 22.
+Dec  5 08:15:37 cubietruck sshd[1807]: Server listening on :: port 22.
+Dec  5 08:15:44 cubietruck xdm[1534]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 08:17:01 cubietruck CRON[2090]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec  5 08:17:01 cubietruck CRON[2090]: pam_unix(cron:session): session closed for user root
+Dec  5 08:21:07 cubietruck xdm[1534]: pam_unix(xdm:session): session closed for user root
+Dec  5 08:21:08 cubietruck sshd[1807]: Received signal 15; terminating.
+Dec  5 08:22:03 cubietruck sshd[1793]: Server listening on 0.0.0.0 port 22.
+Dec  5 08:22:03 cubietruck sshd[1793]: Server listening on :: port 22.
+Dec  5 08:22:10 cubietruck xdm[1560]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=root
+Dec  5 08:22:12 cubietruck xdm[1560]: LOGIN FAILURE ON :0, root
+Dec  5 08:22:16 cubietruck xdm[1560]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 08:47:04 cubietruck xdm[1560]: pam_unix(xdm:session): session closed for user root
+Dec  5 08:47:06 cubietruck sshd[1793]: Received signal 15; terminating.
+Dec  5 08:48:03 cubietruck sshd[1718]: Server listening on 0.0.0.0 port 22.
+Dec  5 08:48:03 cubietruck sshd[1718]: Server listening on :: port 22.
+Dec  5 08:48:10 cubietruck xdm[1604]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 09:08:39 cubietruck sshd[2363]: Connection closed by 192.168.1.7 [preauth]
+Dec  5 09:08:40 cubietruck sshd[2365]: Connection closed by 192.168.1.7 [preauth]
+Dec  5 09:08:47 cubietruck sshd[2367]: Accepted password for root from 192.168.1.7 port 52679 ssh2
+Dec  5 09:08:47 cubietruck sshd[2367]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Dec  5 09:17:01 cubietruck CRON[2427]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec  5 09:17:01 cubietruck CRON[2427]: pam_unix(cron:session): session closed for user root
+Dec  5 09:23:46 cubietruck sshd[2367]: Received disconnect from 192.168.1.7: 11: disconnected by user
+Dec  5 09:23:46 cubietruck sshd[2367]: pam_unix(sshd:session): session closed for user root
+Dec  5 09:51:20 cubietruck xdm[1604]: pam_unix(xdm:session): session closed for user root
+Dec  5 09:51:23 cubietruck sshd[1718]: Received signal 15; terminating.
+Dec  5 09:52:27 cubietruck sshd[1727]: Server listening on 0.0.0.0 port 22.
+Dec  5 09:52:27 cubietruck sshd[1727]: Server listening on :: port 22.
+Dec  5 09:52:33 cubietruck xdm[1577]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec  5 10:07:07 cubietruck xdm[1577]: pam_unix(xdm:session): session closed for user root
+Dec  5 10:07:08 cubietruck sshd[1727]: Received signal 15; terminating.
+Jan  1 01:00:51 cubietruck sshd[1833]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:51 cubietruck sshd[1833]: Server listening on :: port 22.
+Jan  1 01:01:17 cubietruck xdm[1599]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 12 00:17:01 cubietruck CRON[3084]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 00:17:01 cubietruck CRON[3084]: pam_unix(cron:session): session closed for user root
+Dec 12 01:17:01 cubietruck CRON[9472]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 01:17:01 cubietruck CRON[9472]: pam_unix(cron:session): session closed for user root
+Dec 12 02:17:01 cubietruck CRON[30692]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 02:17:01 cubietruck CRON[30692]: pam_unix(cron:session): session closed for user root
+Dec 12 03:17:01 cubietruck CRON[7757]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 12 03:17:01 cubietruck CRON[7757]: pam_unix(cron:session): session closed for user root
+Dec 12 03:36:39 cubietruck xdm[1599]: pam_unix(xdm:session): session closed for user root
+Dec 12 03:36:47 cubietruck sshd[1833]: Received signal 15; terminating.
+Jan  1 01:00:48 cubietruck sshd[1645]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:48 cubietruck sshd[1645]: Server listening on :: port 22.
+Jan  1 01:00:55 cubietruck xdm[1642]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:03:25 cubietruck xdm[1642]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:03:27 cubietruck sshd[1645]: Received signal 15; terminating.
+Jan  1 01:04:27 cubietruck sshd[1770]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:04:27 cubietruck sshd[1770]: Server listening on :: port 22.
+Jan  1 01:04:43 cubietruck xdm[1528]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:08:36 cubietruck xdm[1528]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:08:39 cubietruck sshd[1770]: Received signal 15; terminating.
+Jan  1 01:09:47 cubietruck sshd[1800]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:09:47 cubietruck sshd[1800]: Server listening on :: port 22.
+Jan  1 01:09:57 cubietruck xdm[1611]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:11:01 cubietruck sshd[1800]: Received signal 15; terminating.
+Jan  1 01:11:01 cubietruck sshd[2146]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:11:01 cubietruck sshd[2146]: Server listening on :: port 22.
+Dec 13 02:52:40 cubietruck xdm[1611]: pam_unix(xdm:session): session closed for user root
+Dec 13 02:52:44 cubietruck sshd[2146]: Received signal 15; terminating.
+Dec 13 02:53:50 cubietruck sshd[1795]: Server listening on 0.0.0.0 port 22.
+Dec 13 02:53:50 cubietruck sshd[1795]: Server listening on :: port 22.
+Dec 13 02:53:57 cubietruck xdm[1583]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 13 02:54:01 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 13 02:55:30 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 13 02:55:30 cubietruck xdm[1583]: pam_unix(xdm:session): session closed for user root
+Dec 13 02:55:32 cubietruck sshd[1795]: Received signal 15; terminating.
+Dec 13 02:56:33 cubietruck sshd[1761]: Server listening on 0.0.0.0 port 22.
+Dec 13 02:56:33 cubietruck sshd[1761]: Server listening on :: port 22.
+Dec 13 02:56:37 cubietruck xdm[1492]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 13 02:56:41 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 13 03:00:24 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 13 03:00:24 cubietruck xdm[1492]: pam_unix(xdm:session): session closed for user root
+Dec 13 03:00:25 cubietruck sshd[1761]: Received signal 15; terminating.
+Dec 13 03:09:36 cubietruck sshd[1777]: Server listening on 0.0.0.0 port 22.
+Dec 13 03:09:36 cubietruck sshd[1777]: Server listening on :: port 22.
+Dec 13 03:17:01 cubietruck CRON[1956]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 13 03:17:01 cubietruck CRON[1956]: pam_unix(cron:session): session closed for user root
+Dec 13 03:28:58 cubietruck xdm[1534]: pam_unix(xdm:auth): check pass; user unknown
+Dec 13 03:28:58 cubietruck xdm[1534]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost= 
+Dec 13 03:29:00 cubietruck xdm[1534]: LOGIN FAILURE ON :0,  root
+Dec 13 03:29:05 cubietruck xdm[1534]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 13 03:29:09 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 13 03:45:57 cubietruck xdm[1534]: pam_unix(xdm:session): session closed for user root
+Dec 13 03:45:57 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 13 03:46:03 cubietruck sshd[1777]: Received signal 15; terminating.
+Jan  1 01:01:15 cubietruck sshd[1800]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:01:15 cubietruck sshd[1800]: Server listening on :: port 22.
+Jan  1 01:01:20 cubietruck xdm[1597]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:01:25 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:02:27 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:02:27 cubietruck xdm[1597]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:02:28 cubietruck sshd[1800]: Received signal 15; terminating.
+Jan  1 01:03:19 cubietruck sshd[1626]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:03:19 cubietruck sshd[1626]: Server listening on :: port 22.
+Jan  1 01:05:42 cubietruck xdm[1396]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:05:46 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:17:01 cubietruck CRON[2089]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 01:17:01 cubietruck CRON[2089]: pam_unix(cron:session): session closed for user root
+Jan  1 02:17:01 cubietruck CRON[2266]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 02:17:01 cubietruck CRON[2266]: pam_unix(cron:session): session closed for user root
+Jan  1 02:41:27 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 02:41:27 cubietruck xdm[1396]: pam_unix(xdm:session): session closed for user root
+Jan  1 02:41:28 cubietruck sshd[1626]: Received signal 15; terminating.
+Jan  1 02:42:10 cubietruck sshd[1655]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:42:10 cubietruck sshd[1655]: Server listening on :: port 22.
+Jan  1 02:43:46 cubietruck xdm[1489]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 02:43:51 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 02:53:41 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 02:53:41 cubietruck xdm[1489]: pam_unix(xdm:session): session closed for user root
+Jan  1 02:53:42 cubietruck sshd[1655]: Received signal 15; terminating.
+Jan  1 02:55:26 cubietruck sshd[1620]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:55:26 cubietruck sshd[1620]: Server listening on :: port 22.
+Jan  1 02:55:32 cubietruck xdm[1389]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 02:55:37 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 02:59:25 cubietruck sshd[1657]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:59:25 cubietruck sshd[1657]: Server listening on :: port 22.
+Jan  1 02:59:37 cubietruck xdm[1396]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 02:59:42 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 03:17:01 cubietruck CRON[2163]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 03:17:01 cubietruck CRON[2163]: pam_unix(cron:session): session closed for user root
+Jan  1 03:40:24 cubietruck login[1760]: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Jan  1 03:40:24 cubietruck login[2325]: ROOT LOGIN  on '/dev/tty2'
+Jan  1 03:40:33 cubietruck passwd[2362]: pam_unix(passwd:chauthtok): password changed for root
+Jan  1 03:40:38 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 03:40:38 cubietruck xdm[1396]: pam_unix(xdm:session): session closed for user root
+Jan  1 03:40:40 cubietruck sshd[1657]: Received signal 15; terminating.
+Jan  1 03:41:10 cubietruck sshd[1661]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:41:10 cubietruck sshd[1661]: Server listening on :: port 22.
+Jan  1 03:41:17 cubietruck xdm[1416]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=root
+Jan  1 03:41:19 cubietruck xdm[1416]: LOGIN FAILURE ON :0, root
+Jan  1 03:41:22 cubietruck xdm[1416]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 03:41:26 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 03:48:15 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 03:48:15 cubietruck xdm[1416]: pam_unix(xdm:session): session closed for user root
+Jan  1 03:48:17 cubietruck sshd[1661]: Received signal 15; terminating.
+Jan  1 03:54:14 cubietruck sshd[1570]: Server listening on 0.0.0.0 port 22.
+Jan  1 03:54:14 cubietruck sshd[1570]: Server listening on :: port 22.
+Jan  1 03:54:20 cubietruck xdm[1487]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 03:54:27 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 03:57:26 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 03:57:26 cubietruck xdm[1487]: pam_unix(xdm:session): session closed for user root
+Jan  1 03:57:27 cubietruck sshd[1570]: Received signal 15; terminating.
+Jan  1 01:00:09 cubietruck sshd[1643]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:09 cubietruck sshd[1643]: Server listening on :: port 22.
+Jan  1 01:00:28 cubietruck xdm[1408]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=root
+Jan  1 01:00:30 cubietruck xdm[1408]: LOGIN FAILURE ON :0, root
+Jan  1 01:00:33 cubietruck xdm[1408]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:00:37 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:07:12 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:07:12 cubietruck xdm[1408]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:07:13 cubietruck sshd[1643]: Received signal 15; terminating.
+Jan  1 01:07:58 cubietruck sshd[1607]: Server listening on :: port 22.
+Jan  1 01:07:58 cubietruck sshd[1607]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:08:45 cubietruck xdm[1341]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:08:52 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:10:02 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:10:02 cubietruck xdm[1341]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:10:03 cubietruck sshd[1607]: Received signal 15; terminating.
+Jan  1 01:10:43 cubietruck sshd[1664]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:10:43 cubietruck sshd[1664]: Server listening on :: port 22.
+Jan  1 01:11:50 cubietruck xdm[1474]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:11:55 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:17:01 cubietruck CRON[2120]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jan  1 01:17:01 cubietruck CRON[2120]: pam_unix(cron:session): session closed for user root
+Jan  1 01:18:50 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:18:50 cubietruck xdm[1474]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:18:52 cubietruck sshd[1664]: Received signal 15; terminating.
+Jan  1 01:19:32 cubietruck sshd[1638]: Server listening on :: port 22.
+Jan  1 01:19:32 cubietruck sshd[1638]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:20:14 cubietruck xdm[1435]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:20:18 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.10 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:28:56 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.10, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:28:56 cubietruck xdm[1435]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:28:58 cubietruck sshd[1638]: Received signal 15; terminating.
+Jan  1 01:29:39 cubietruck sshd[1619]: Server listening on :: port 22.
+Jan  1 01:29:39 cubietruck sshd[1619]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:30:32 cubietruck xdm[1394]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:30:36 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:40:35 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:40:35 cubietruck xdm[1394]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:40:36 cubietruck sshd[1619]: Received signal 15; terminating.
+Jan  1 01:41:19 cubietruck sshd[1715]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:41:19 cubietruck sshd[1715]: Server listening on :: port 22.
+Jan  1 01:41:27 cubietruck sshd[1715]: Received signal 15; terminating.
+Jan  1 01:41:27 cubietruck sshd[1891]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:41:27 cubietruck sshd[1891]: Server listening on :: port 22.
+Jan  1 01:41:43 cubietruck sshd[1891]: Received signal 15; terminating.
+Jan  1 01:41:43 cubietruck sshd[1951]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:41:43 cubietruck sshd[1951]: Server listening on :: port 22.
+Jan  1 01:41:57 cubietruck xdm[1504]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:42:02 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 02:04:57 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 02:04:57 cubietruck xdm[1504]: pam_unix(xdm:session): session closed for user root
+Jan  1 02:04:58 cubietruck sshd[1951]: Received signal 15; terminating.
+Jan  1 02:30:33 cubietruck sshd[1757]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:30:33 cubietruck sshd[1757]: Server listening on :: port 22.
+Jan  1 02:30:37 cubietruck xdm[1491]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 02:30:42 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 02:31:39 cubietruck sshd[1757]: Received signal 15; terminating.
+Jan  1 02:31:39 cubietruck sshd[2133]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:31:39 cubietruck sshd[2133]: Server listening on :: port 22.
+Jan  1 02:32:09 cubietruck sshd[2133]: Received signal 15; terminating.
+Jan  1 02:32:09 cubietruck sshd[2344]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:32:09 cubietruck sshd[2344]: Server listening on :: port 22.
+Jan  1 02:32:23 cubietruck sshd[2344]: Received signal 15; terminating.
+Jan  1 02:32:23 cubietruck sshd[2425]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:32:23 cubietruck sshd[2425]: Server listening on :: port 22.
+Jan  1 02:34:23 cubietruck sshd[2425]: Received signal 15; terminating.
+Jan  1 02:34:23 cubietruck sshd[2648]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:34:23 cubietruck sshd[2648]: Server listening on :: port 22.
+Jan  1 02:38:51 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 02:38:52 cubietruck xdm[1491]: pam_unix(xdm:session): session closed for user root
+Jan  1 02:38:52 cubietruck sshd[2648]: Received signal 15; terminating.
+Jan  1 02:40:01 cubietruck sshd[1734]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:40:01 cubietruck sshd[1734]: Server listening on :: port 22.
+Jan  1 02:40:06 cubietruck xdm[1584]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 02:40:10 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 02:41:20 cubietruck sshd[1734]: Received signal 15; terminating.
+Jan  1 02:41:20 cubietruck sshd[2188]: Server listening on 0.0.0.0 port 22.
+Jan  1 02:41:20 cubietruck sshd[2188]: Server listening on :: port 22.
+Dec 16 13:40:06 cubietruck sshd[2188]: Received signal 15; terminating.
+Dec 16 13:40:06 cubietruck sshd[2872]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:40:06 cubietruck sshd[2872]: Server listening on :: port 22.
+Dec 16 13:41:17 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 13:41:17 cubietruck xdm[1584]: pam_unix(xdm:session): session closed for user root
+Dec 16 13:41:18 cubietruck sshd[2872]: Received signal 15; terminating.
+Dec 16 13:42:05 cubietruck sshd[1697]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:42:05 cubietruck sshd[1697]: Server listening on :: port 22.
+Dec 16 13:42:15 cubietruck xdm[1431]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 13:42:20 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 13:46:23 cubietruck sshd[1697]: Received signal 15; terminating.
+Dec 16 13:46:23 cubietruck sshd[2377]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:46:23 cubietruck sshd[2377]: Server listening on :: port 22.
+Dec 16 13:47:18 cubietruck sshd[2377]: Received signal 15; terminating.
+Dec 16 13:47:18 cubietruck sshd[2627]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:47:18 cubietruck sshd[2627]: Server listening on :: port 22.
+Dec 16 13:47:47 cubietruck sshd[2627]: Received signal 15; terminating.
+Dec 16 13:47:47 cubietruck sshd[2716]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:47:47 cubietruck sshd[2716]: Server listening on :: port 22.
+Dec 16 13:48:12 cubietruck sshd[2716]: Received signal 15; terminating.
+Dec 16 13:48:12 cubietruck sshd[2907]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:48:12 cubietruck sshd[2907]: Server listening on :: port 22.
+Dec 16 13:48:26 cubietruck sshd[2907]: Received signal 15; terminating.
+Dec 16 13:48:26 cubietruck sshd[2988]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:48:26 cubietruck sshd[2988]: Server listening on :: port 22.
+Dec 16 13:48:35 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 13:48:35 cubietruck xdm[1431]: pam_unix(xdm:session): session closed for user root
+Dec 16 13:48:37 cubietruck sshd[2988]: Received signal 15; terminating.
+Dec 16 13:49:47 cubietruck sshd[1704]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:49:47 cubietruck sshd[1704]: Server listening on :: port 22.
+Dec 16 13:49:53 cubietruck xdm[1538]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 13:49:58 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 13:50:46 cubietruck sshd[1704]: Received signal 15; terminating.
+Dec 16 13:50:46 cubietruck sshd[2272]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:50:46 cubietruck sshd[2272]: Server listening on :: port 22.
+Dec 16 13:50:58 cubietruck sshd[2272]: Received signal 15; terminating.
+Dec 16 13:50:58 cubietruck sshd[2353]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:50:58 cubietruck sshd[2353]: Server listening on :: port 22.
+Dec 16 13:51:31 cubietruck sshd[2353]: Received signal 15; terminating.
+Dec 16 13:51:31 cubietruck sshd[2503]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:51:31 cubietruck sshd[2503]: Server listening on :: port 22.
+Dec 16 13:52:25 cubietruck sshd[2503]: Received signal 15; terminating.
+Dec 16 13:52:25 cubietruck sshd[2671]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:52:25 cubietruck sshd[2671]: Server listening on :: port 22.
+Dec 16 13:53:30 cubietruck sshd[2671]: Received signal 15; terminating.
+Dec 16 13:53:30 cubietruck sshd[2894]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:53:30 cubietruck sshd[2894]: Server listening on :: port 22.
+Dec 16 13:53:42 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 13:53:42 cubietruck xdm[1538]: pam_unix(xdm:session): session closed for user root
+Dec 16 13:53:43 cubietruck sshd[2894]: Received signal 15; terminating.
+Dec 16 13:54:53 cubietruck sshd[1707]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:54:53 cubietruck sshd[1707]: Server listening on :: port 22.
+Dec 16 13:54:58 cubietruck xdm[1605]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 13:55:03 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 13:55:52 cubietruck sshd[1707]: Received signal 15; terminating.
+Dec 16 13:55:52 cubietruck sshd[2210]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:55:52 cubietruck sshd[2210]: Server listening on :: port 22.
+Dec 16 13:56:29 cubietruck sshd[2210]: Received signal 15; terminating.
+Dec 16 13:56:29 cubietruck sshd[2374]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:56:29 cubietruck sshd[2374]: Server listening on :: port 22.
+Dec 16 13:58:21 cubietruck sshd[2374]: Received signal 15; terminating.
+Dec 16 13:58:21 cubietruck sshd[2550]: Server listening on 0.0.0.0 port 22.
+Dec 16 13:58:21 cubietruck sshd[2550]: Server listening on :: port 22.
+Dec 16 13:59:27 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 13:59:27 cubietruck xdm[1605]: pam_unix(xdm:session): session closed for user root
+Dec 16 13:59:29 cubietruck sshd[2550]: Received signal 15; terminating.
+Dec 16 14:00:25 cubietruck sshd[1747]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:00:25 cubietruck sshd[1747]: Server listening on :: port 22.
+Dec 16 14:00:30 cubietruck xdm[1637]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 14:00:35 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 14:01:25 cubietruck sshd[1747]: Received signal 15; terminating.
+Dec 16 14:01:25 cubietruck sshd[2174]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:01:25 cubietruck sshd[2174]: Server listening on :: port 22.
+Dec 16 14:01:52 cubietruck sshd[2174]: Received signal 15; terminating.
+Dec 16 14:01:52 cubietruck sshd[2289]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:01:52 cubietruck sshd[2289]: Server listening on :: port 22.
+Dec 16 14:02:32 cubietruck sshd[2289]: Received signal 15; terminating.
+Dec 16 14:02:32 cubietruck sshd[2428]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:02:32 cubietruck sshd[2428]: Server listening on :: port 22.
+Dec 16 14:03:07 cubietruck sshd[2428]: Received signal 15; terminating.
+Dec 16 14:03:08 cubietruck sshd[2597]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:03:08 cubietruck sshd[2597]: Server listening on :: port 22.
+Dec 16 14:03:42 cubietruck sshd[2597]: Received signal 15; terminating.
+Dec 16 14:03:42 cubietruck sshd[2761]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:03:42 cubietruck sshd[2761]: Server listening on :: port 22.
+Dec 16 14:04:07 cubietruck sshd[2761]: Received signal 15; terminating.
+Dec 16 14:04:07 cubietruck sshd[2872]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:04:07 cubietruck sshd[2872]: Server listening on :: port 22.
+Dec 16 14:04:16 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 14:04:17 cubietruck xdm[1637]: pam_unix(xdm:session): session closed for user root
+Dec 16 14:04:18 cubietruck sshd[2872]: Received signal 15; terminating.
+Dec 16 14:05:27 cubietruck sshd[1748]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:05:27 cubietruck sshd[1748]: Server listening on :: port 22.
+Dec 16 14:05:31 cubietruck xdm[1560]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 14:05:35 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 14:06:41 cubietruck sshd[1748]: Received signal 15; terminating.
+Dec 16 14:06:41 cubietruck sshd[2187]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:06:41 cubietruck sshd[2187]: Server listening on :: port 22.
+Dec 16 14:07:24 cubietruck sshd[2187]: Received signal 15; terminating.
+Dec 16 14:07:24 cubietruck sshd[2393]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:07:24 cubietruck sshd[2393]: Server listening on :: port 22.
+Dec 16 14:07:37 cubietruck sshd[2393]: Received signal 15; terminating.
+Dec 16 14:07:37 cubietruck sshd[2474]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:07:37 cubietruck sshd[2474]: Server listening on :: port 22.
+Dec 16 14:08:09 cubietruck sshd[2474]: Received signal 15; terminating.
+Dec 16 14:08:09 cubietruck sshd[2655]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:08:09 cubietruck sshd[2655]: Server listening on :: port 22.
+Dec 16 14:09:05 cubietruck sshd[2655]: Received signal 15; terminating.
+Dec 16 14:09:05 cubietruck sshd[2859]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:09:05 cubietruck sshd[2859]: Server listening on :: port 22.
+Dec 16 14:09:18 cubietruck sshd[2859]: Received signal 15; terminating.
+Dec 16 14:09:18 cubietruck sshd[2940]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:09:18 cubietruck sshd[2940]: Server listening on :: port 22.
+Dec 16 14:17:01 cubietruck sshd[2940]: Received signal 15; terminating.
+Dec 16 14:17:01 cubietruck sshd[3256]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:17:01 cubietruck sshd[3256]: Server listening on :: port 22.
+Dec 16 14:17:01 cubietruck CRON[3255]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 16 14:17:01 cubietruck CRON[3255]: pam_unix(cron:session): session closed for user root
+Dec 16 14:17:14 cubietruck sshd[3256]: Received signal 15; terminating.
+Dec 16 14:17:14 cubietruck sshd[3339]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:17:14 cubietruck sshd[3339]: Server listening on :: port 22.
+Dec 16 14:20:41 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 14:20:42 cubietruck xdm[1560]: pam_unix(xdm:session): session closed for user root
+Dec 16 14:20:44 cubietruck sshd[3339]: Received signal 15; terminating.
+Dec 16 14:21:54 cubietruck sshd[1765]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:21:54 cubietruck sshd[1765]: Server listening on :: port 22.
+Dec 16 14:22:00 cubietruck xdm[1620]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 14:22:05 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 14:22:39 cubietruck sshd[1765]: Received signal 15; terminating.
+Dec 16 14:22:39 cubietruck sshd[2244]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:22:39 cubietruck sshd[2244]: Server listening on :: port 22.
+Dec 16 14:22:54 cubietruck sshd[2244]: Received signal 15; terminating.
+Dec 16 14:22:54 cubietruck sshd[2329]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:22:54 cubietruck sshd[2329]: Server listening on :: port 22.
+Dec 16 14:23:25 cubietruck sshd[2329]: Received signal 15; terminating.
+Dec 16 14:23:25 cubietruck sshd[2478]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:23:25 cubietruck sshd[2478]: Server listening on :: port 22.
+Dec 16 14:24:08 cubietruck sshd[2478]: Received signal 15; terminating.
+Dec 16 14:24:08 cubietruck sshd[2630]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:24:08 cubietruck sshd[2630]: Server listening on :: port 22.
+Dec 16 14:24:57 cubietruck sshd[2630]: Received signal 15; terminating.
+Dec 16 14:24:57 cubietruck sshd[2816]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:24:57 cubietruck sshd[2816]: Server listening on :: port 22.
+Dec 16 14:25:10 cubietruck sshd[2816]: Received signal 15; terminating.
+Dec 16 14:25:10 cubietruck sshd[2897]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:25:10 cubietruck sshd[2897]: Server listening on :: port 22.
+Dec 16 14:27:42 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 14:27:42 cubietruck xdm[1620]: pam_unix(xdm:session): session closed for user root
+Dec 16 14:27:43 cubietruck sshd[2897]: Received signal 15; terminating.
+Dec 16 14:28:38 cubietruck sshd[1751]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:28:38 cubietruck sshd[1751]: Server listening on :: port 22.
+Dec 16 14:28:42 cubietruck xdm[1505]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 16 14:28:47 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 16 14:29:39 cubietruck sshd[1751]: Received signal 15; terminating.
+Dec 16 14:29:39 cubietruck sshd[2198]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:29:39 cubietruck sshd[2198]: Server listening on :: port 22.
+Dec 16 14:29:49 cubietruck sshd[2198]: Received signal 15; terminating.
+Dec 16 14:29:50 cubietruck sshd[2286]: Server listening on 0.0.0.0 port 22.
+Dec 16 14:29:50 cubietruck sshd[2286]: Server listening on :: port 22.
+Dec 16 14:33:03 cubietruck xdm[1505]: pam_unix(xdm:session): session closed for user root
+Dec 16 14:33:03 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 16 14:33:06 cubietruck sshd[2286]: Received signal 15; terminating.
+Jan  1 01:01:03 cubietruck sshd[1769]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:01:03 cubietruck sshd[1769]: Server listening on :: port 22.
+Jan  1 01:01:30 cubietruck xdm[1609]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:01:35 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:03:00 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:03:00 cubietruck xdm[1609]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:03:01 cubietruck sshd[1769]: Received signal 15; terminating.
+Jan  1 01:03:48 cubietruck sshd[1588]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:03:48 cubietruck sshd[1588]: Server listening on :: port 22.
+Jan  1 01:07:37 cubietruck xdm[1486]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:07:41 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.11 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:15:20 cubietruck sshd[1588]: Received signal 15; terminating.
+Jan  1 01:15:20 cubietruck sshd[2141]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:15:20 cubietruck sshd[2141]: Server listening on :: port 22.
+Jan  1 01:15:20 cubietruck sshd[2141]: Received signal 15; terminating.
+Jan  1 01:15:20 cubietruck sshd[2188]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:15:20 cubietruck sshd[2188]: Server listening on :: port 22.
+Jan  1 01:16:25 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.11, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:16:25 cubietruck xdm[1486]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:16:26 cubietruck sshd[2188]: Received signal 15; terminating.
+Jan  1 01:17:15 cubietruck sshd[1645]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:17:15 cubietruck sshd[1645]: Server listening on :: port 22.
+Jan  1 01:17:24 cubietruck sshd[1645]: Received signal 15; terminating.
+Jan  1 01:17:24 cubietruck sshd[1817]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:17:24 cubietruck sshd[1817]: Server listening on :: port 22.
+Jan  1 01:20:59 cubietruck xdm[1445]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:21:04 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 17 12:09:26 cubietruck sshd[1817]: Received signal 15; terminating.
+Dec 17 12:09:27 cubietruck sshd[2212]: Server listening on 0.0.0.0 port 22.
+Dec 17 12:09:27 cubietruck sshd[2212]: Server listening on :: port 22.
+Dec 17 12:17:01 cubietruck CRON[2647]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 17 12:17:01 cubietruck CRON[2647]: pam_unix(cron:session): session closed for user root
+Dec 17 13:01:40 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 17 13:01:40 cubietruck xdm[1445]: pam_unix(xdm:session): session closed for user root
+Dec 17 13:01:41 cubietruck sshd[2212]: Received signal 15; terminating.
+Dec 17 13:02:30 cubietruck sshd[1658]: Server listening on 0.0.0.0 port 22.
+Dec 17 13:02:30 cubietruck sshd[1658]: Server listening on :: port 22.
+Dec 17 13:02:37 cubietruck sshd[1658]: Received signal 15; terminating.
+Dec 17 13:02:37 cubietruck sshd[1820]: Server listening on 0.0.0.0 port 22.
+Dec 17 13:02:37 cubietruck sshd[1820]: Server listening on :: port 22.
+Dec 17 13:02:50 cubietruck xdm[1505]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 17 13:02:54 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 17 13:17:01 cubietruck CRON[2238]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 17 13:17:01 cubietruck CRON[2238]: pam_unix(cron:session): session closed for user root
+Dec 17 13:44:48 cubietruck xdm[1505]: pam_unix(xdm:session): session closed for user root
+Dec 17 13:44:48 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 17 13:44:56 cubietruck sshd[1820]: Received signal 15; terminating.
+Dec 17 13:45:43 cubietruck sshd[1651]: Server listening on 0.0.0.0 port 22.
+Dec 17 13:45:43 cubietruck sshd[1651]: Server listening on :: port 22.
+Dec 17 13:45:51 cubietruck sshd[1651]: Received signal 15; terminating.
+Dec 17 13:45:51 cubietruck sshd[1822]: Server listening on 0.0.0.0 port 22.
+Dec 17 13:45:51 cubietruck sshd[1822]: Server listening on :: port 22.
+Dec 17 13:45:52 cubietruck xdm[1526]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 17 13:45:56 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 17 13:53:46 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 17 13:53:46 cubietruck xdm[1526]: pam_unix(xdm:session): session closed for user root
+Dec 17 13:53:47 cubietruck sshd[1822]: Received signal 15; terminating.
+Jan  1 01:00:10 cubietruck sshd[1647]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:10 cubietruck sshd[1647]: Server listening on :: port 22.
+Jan  1 01:00:18 cubietruck sshd[1647]: Received signal 15; terminating.
+Jan  1 01:00:18 cubietruck sshd[1819]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:18 cubietruck sshd[1819]: Server listening on :: port 22.
+Jan  1 01:01:05 cubietruck xdm[1451]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:01:09 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Jan  1 01:16:19 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Jan  1 01:16:19 cubietruck xdm[1451]: pam_unix(xdm:session): session closed for user root
+Jan  1 01:16:20 cubietruck sshd[1819]: Received signal 15; terminating.
+Jan  1 01:17:11 cubietruck sshd[1634]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:17:11 cubietruck sshd[1634]: Server listening on :: port 22.
+Jan  1 01:17:18 cubietruck sshd[1634]: Received signal 15; terminating.
+Jan  1 01:17:18 cubietruck sshd[1820]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:17:18 cubietruck sshd[1820]: Server listening on :: port 22.
+Dec 18 11:44:48 cubietruck xdm[1405]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 18 11:44:52 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 18 12:00:06 cubietruck groupadd[2728]: group added to /etc/group: name=pulse, GID=116
+Dec 18 12:00:06 cubietruck groupadd[2728]: group added to /etc/gshadow: name=pulse
+Dec 18 12:00:06 cubietruck groupadd[2728]: new group: name=pulse, GID=116
+Dec 18 12:00:06 cubietruck useradd[2732]: new user: name=pulse, UID=108, GID=116, home=/var/run/pulse, shell=/bin/false
+Dec 18 12:00:06 cubietruck usermod[2737]: change user 'pulse' password
+Dec 18 12:00:06 cubietruck chage[2742]: changed password expiry for pulse
+Dec 18 12:00:06 cubietruck chfn[2745]: changed user 'pulse' information
+Dec 18 12:00:07 cubietruck gpasswd[2750]: user pulse added by root to group audio
+Dec 18 12:00:07 cubietruck groupadd[2756]: group added to /etc/group: name=pulse-access, GID=117
+Dec 18 12:00:07 cubietruck groupadd[2756]: group added to /etc/gshadow: name=pulse-access
+Dec 18 12:00:07 cubietruck groupadd[2756]: new group: name=pulse-access, GID=117
+Dec 18 12:09:17 cubietruck useradd[2835]: new user: name=user, UID=1001, GID=29, home=/home/user, shell=/bin/sh
+Dec 18 12:09:26 cubietruck su[2840]: Successful su for user by root
+Dec 18 12:09:26 cubietruck su[2840]: + /dev/pts/0 root:user
+Dec 18 12:09:26 cubietruck su[2840]: pam_unix(su:session): session opened for user user by root(uid=0)
+Dec 18 12:09:48 cubietruck su[2840]: pam_unix(su:session): session closed for user user
+Dec 18 12:09:54 cubietruck passwd[2843]: pam_unix(passwd:chauthtok): password changed for user
+Dec 18 12:10:17 cubietruck xdm[1405]: pam_unix(xdm:session): session closed for user root
+Dec 18 12:10:18 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 18 12:10:22 cubietruck xdm[2856]: pam_unix(xdm:session): session opened for user user by user(uid=0)
+Dec 18 12:10:22 cubietruck xdm[2856]: pam_unix(xdm:session): session closed for user user
+Dec 18 12:10:27 cubietruck xdm[2940]: pam_unix(xdm:session): session opened for user user by user(uid=0)
+Dec 18 12:10:28 cubietruck xdm[2940]: pam_unix(xdm:session): session closed for user user
+Dec 18 12:10:31 cubietruck xdm[3021]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 18 12:10:34 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c4 (system bus name :1.36 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 18 12:12:22 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c4 (system bus name :1.36, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 18 12:12:22 cubietruck xdm[3021]: pam_unix(xdm:session): session closed for user root
+Dec 18 12:12:25 cubietruck sshd[1820]: Received signal 15; terminating.
+Dec 18 12:13:18 cubietruck sshd[1679]: Server listening on 0.0.0.0 port 22.
+Dec 18 12:13:18 cubietruck sshd[1679]: Server listening on :: port 22.
+Dec 18 12:13:24 cubietruck sshd[1679]: Received signal 15; terminating.
+Dec 18 12:13:24 cubietruck sshd[1807]: Server listening on 0.0.0.0 port 22.
+Dec 18 12:13:24 cubietruck sshd[1807]: Server listening on :: port 22.
+Dec 18 12:17:01 cubietruck CRON[1823]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 18 12:17:01 cubietruck CRON[1823]: pam_unix(cron:session): session closed for user root
+Dec 18 12:24:08 cubietruck xdm[1474]: pam_unix(xdm:auth): check pass; user unknown
+Dec 18 12:24:08 cubietruck xdm[1474]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost= 
+Dec 18 12:24:10 cubietruck xdm[1474]: LOGIN FAILURE ON :0, 
+Dec 18 12:24:18 cubietruck xdm[1474]: pam_unix(xdm:auth): check pass; user unknown
+Dec 18 12:24:18 cubietruck xdm[1474]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost= 
+Dec 18 12:24:20 cubietruck xdm[1474]: LOGIN FAILURE ON :0, 
+Dec 18 12:24:20 cubietruck xdm[1474]: pam_unix(xdm:auth): check pass; user unknown
+Dec 18 12:24:20 cubietruck xdm[1474]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost= 
+Dec 18 12:24:23 cubietruck xdm[1474]: LOGIN FAILURE ON :0, r
+Dec 18 12:24:26 cubietruck xdm[1474]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 18 12:24:31 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 18 12:31:46 cubietruck sshd[2176]: Accepted password for root from 192.168.1.8 port 51197 ssh2
+Dec 18 12:31:46 cubietruck sshd[2176]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Dec 18 12:31:50 cubietruck sshd[2176]: Received disconnect from 192.168.1.8: 11: disconnected by user
+Dec 18 12:31:50 cubietruck sshd[2176]: pam_unix(sshd:session): session closed for user root
+Dec 18 12:33:16 cubietruck sshd[2225]: Connection closed by 192.168.1.8 [preauth]
+Dec 18 12:33:23 cubietruck sshd[2228]: Accepted password for root from 192.168.1.8 port 51199 ssh2
+Dec 18 12:33:23 cubietruck sshd[2228]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Dec 18 13:00:03 cubietruck sshd[2228]: Received disconnect from 192.168.1.8: 11: disconnected by user
+Dec 18 13:00:03 cubietruck sshd[2228]: pam_unix(sshd:session): session closed for user root
+Dec 18 13:17:01 cubietruck CRON[3151]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 18 13:17:01 cubietruck CRON[3151]: pam_unix(cron:session): session closed for user root
+Dec 18 13:22:06 cubietruck xdm[1474]: pam_unix(xdm:session): session closed for user root
+Dec 18 13:22:06 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 18 13:22:12 cubietruck sshd[1807]: Received signal 15; terminating.
+Dec 18 13:22:42 cubietruck sshd[1610]: Server listening on 0.0.0.0 port 22.
+Dec 18 13:22:42 cubietruck sshd[1610]: Server listening on :: port 22.
+Dec 18 13:22:53 cubietruck xdm[1462]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 18 13:22:53 cubietruck sshd[1610]: Received signal 15; terminating.
+Dec 18 13:22:53 cubietruck sshd[1826]: Server listening on 0.0.0.0 port 22.
+Dec 18 13:22:53 cubietruck sshd[1826]: Server listening on :: port 22.
+Dec 18 13:22:57 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 18 13:30:26 cubietruck xdm[1462]: pam_unix(xdm:session): session closed for user root
+Dec 18 13:30:26 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 18 13:30:29 cubietruck sshd[1826]: Received signal 15; terminating.
+Jan  1 01:00:10 cubietruck sshd[1602]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:10 cubietruck sshd[1602]: Server listening on :: port 22.
+Jan  1 01:00:18 cubietruck sshd[1602]: Received signal 15; terminating.
+Jan  1 01:00:18 cubietruck sshd[1830]: Server listening on 0.0.0.0 port 22.
+Jan  1 01:00:18 cubietruck sshd[1830]: Server listening on :: port 22.
+Jan  1 01:00:18 cubietruck xdm[1361]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=root
+Jan  1 01:00:20 cubietruck xdm[1361]: LOGIN FAILURE ON :0, root
+Jan  1 01:00:24 cubietruck xdm[1361]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Jan  1 01:00:28 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 01:37:26 cubietruck iceweasel: getaddrinfo*.gaih_getanswer: got type "46"
+Dec 26 02:12:43 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 02:12:43 cubietruck xdm[1361]: pam_unix(xdm:session): session closed for user root
+Dec 26 02:12:47 cubietruck sshd[1830]: Received signal 15; terminating.
+Dec 26 02:13:36 cubietruck sshd[1629]: Server listening on 0.0.0.0 port 22.
+Dec 26 02:13:36 cubietruck sshd[1629]: Server listening on :: port 22.
+Dec 26 02:13:41 cubietruck xdm[1432]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 02:13:44 cubietruck sshd[1629]: Received signal 15; terminating.
+Dec 26 02:13:45 cubietruck sshd[1891]: Server listening on 0.0.0.0 port 22.
+Dec 26 02:13:45 cubietruck sshd[1891]: Server listening on :: port 22.
+Dec 26 02:13:54 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 02:17:01 cubietruck CRON[2031]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 26 02:17:01 cubietruck CRON[2031]: pam_unix(cron:session): session closed for user root
+Dec 26 02:24:08 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 02:24:09 cubietruck xdm[1432]: pam_unix(xdm:session): session closed for user root
+Dec 26 02:24:11 cubietruck sshd[1891]: Received signal 15; terminating.
+Dec 26 02:24:43 cubietruck sshd[1624]: Server listening on 0.0.0.0 port 22.
+Dec 26 02:24:43 cubietruck sshd[1624]: Server listening on :: port 22.
+Dec 26 02:24:51 cubietruck sshd[1624]: Received signal 15; terminating.
+Dec 26 02:24:51 cubietruck sshd[1831]: Server listening on 0.0.0.0 port 22.
+Dec 26 02:24:51 cubietruck sshd[1831]: Server listening on :: port 22.
+Dec 26 02:24:52 cubietruck xdm[1367]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 02:24:56 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 02:38:26 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 02:38:27 cubietruck xdm[1367]: pam_unix(xdm:session): session closed for user root
+Dec 26 02:38:29 cubietruck sshd[1831]: Received signal 15; terminating.
+Dec 26 02:39:21 cubietruck sshd[1606]: Server listening on 0.0.0.0 port 22.
+Dec 26 02:39:21 cubietruck sshd[1606]: Server listening on :: port 22.
+Dec 26 02:39:29 cubietruck sshd[1606]: Received signal 15; terminating.
+Dec 26 02:39:29 cubietruck sshd[1833]: Server listening on 0.0.0.0 port 22.
+Dec 26 02:39:29 cubietruck sshd[1833]: Server listening on :: port 22.
+Dec 26 02:45:13 cubietruck xdm[1482]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 02:45:18 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 03:08:29 cubietruck xdm[1482]: pam_unix(xdm:session): session closed for user root
+Dec 26 03:08:29 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 03:08:42 cubietruck xdm[2205]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 03:08:45 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c2 (system bus name :1.32 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 03:10:41 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c2 (system bus name :1.32, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 03:10:41 cubietruck xdm[2205]: pam_unix(xdm:session): session closed for user root
+Dec 26 03:10:42 cubietruck sshd[1833]: Received signal 15; terminating.
+Dec 26 03:11:30 cubietruck sshd[1570]: Server listening on 0.0.0.0 port 22.
+Dec 26 03:11:30 cubietruck sshd[1570]: Server listening on :: port 22.
+Dec 26 03:11:37 cubietruck xdm[1544]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 03:11:40 cubietruck sshd[1570]: Received signal 15; terminating.
+Dec 26 03:11:41 cubietruck sshd[1858]: Server listening on 0.0.0.0 port 22.
+Dec 26 03:11:41 cubietruck sshd[1858]: Server listening on :: port 22.
+Dec 26 03:11:45 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 03:17:01 cubietruck CRON[2027]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 26 03:17:01 cubietruck CRON[2027]: pam_unix(cron:session): session closed for user root
+Dec 26 03:56:05 cubietruck xdm[1544]: pam_unix(xdm:session): session closed for user root
+Dec 26 03:56:05 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 03:56:08 cubietruck sshd[1858]: Received signal 15; terminating.
+Dec 26 07:45:16 cubietruck sshd[1656]: Server listening on 0.0.0.0 port 22.
+Dec 26 07:45:16 cubietruck sshd[1656]: Server listening on :: port 22.
+Dec 26 07:45:22 cubietruck xdm[1454]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 07:45:26 cubietruck sshd[1656]: Received signal 15; terminating.
+Dec 26 07:45:26 cubietruck sshd[1889]: Server listening on 0.0.0.0 port 22.
+Dec 26 07:45:26 cubietruck sshd[1889]: Server listening on :: port 22.
+Dec 26 07:45:31 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 07:49:26 cubietruck xdm[1454]: pam_unix(xdm:session): session closed for user root
+Dec 26 07:49:26 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 07:49:29 cubietruck sshd[1889]: Received signal 15; terminating.
+Dec 26 07:50:00 cubietruck sshd[1666]: Server listening on 0.0.0.0 port 22.
+Dec 26 07:50:00 cubietruck sshd[1666]: Server listening on :: port 22.
+Dec 26 07:50:07 cubietruck xdm[1505]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 07:50:08 cubietruck sshd[1666]: Received signal 15; terminating.
+Dec 26 07:50:08 cubietruck sshd[1865]: Server listening on 0.0.0.0 port 22.
+Dec 26 07:50:08 cubietruck sshd[1865]: Server listening on :: port 22.
+Dec 26 07:50:12 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 07:51:21 cubietruck userdel[2094]: delete user 'user'
+Dec 26 07:52:01 cubietruck passwd[2102]: pam_unix(passwd:chauthtok): password changed for cubie
+Dec 26 07:52:11 cubietruck userdel[2104]: delete user 'cubie'
+Dec 26 07:52:11 cubietruck userdel[2104]: delete 'cubie' from group 'netdev'
+Dec 26 07:52:11 cubietruck userdel[2104]: delete 'cubie' from group 'admin'
+Dec 26 07:52:11 cubietruck userdel[2104]: removed group 'cubie' owned by 'cubie'
+Dec 26 07:52:11 cubietruck userdel[2104]: removed shadow group 'cubie' owned by 'cubie'
+Dec 26 07:52:11 cubietruck userdel[2104]: delete 'cubie' from shadow group 'netdev'
+Dec 26 07:52:11 cubietruck userdel[2104]: delete 'cubie' from shadow group 'admin'
+Dec 26 08:03:30 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 08:03:30 cubietruck xdm[1505]: pam_unix(xdm:session): session closed for user root
+Dec 26 08:03:31 cubietruck sshd[1865]: Received signal 15; terminating.
+Dec 26 08:04:19 cubietruck sshd[1659]: Server listening on 0.0.0.0 port 22.
+Dec 26 08:04:19 cubietruck sshd[1659]: Server listening on :: port 22.
+Dec 26 08:04:24 cubietruck xdm[1378]: pam_unix(xdm:auth): check pass; user unknown
+Dec 26 08:04:24 cubietruck xdm[1378]: pam_unix(xdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost= 
+Dec 26 08:04:26 cubietruck xdm[1378]: LOGIN FAILURE ON :0, user
+Dec 26 08:04:26 cubietruck sshd[1659]: Received signal 15; terminating.
+Dec 26 08:04:26 cubietruck sshd[1820]: Server listening on 0.0.0.0 port 22.
+Dec 26 08:04:26 cubietruck sshd[1820]: Server listening on :: port 22.
+Dec 26 08:04:34 cubietruck xdm[1378]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 08:04:38 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 08:07:17 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 08:07:18 cubietruck xdm[1378]: pam_unix(xdm:session): session closed for user root
+Dec 26 08:07:18 cubietruck sshd[1820]: Received signal 15; terminating.
+Dec 26 08:08:06 cubietruck sshd[1618]: Server listening on 0.0.0.0 port 22.
+Dec 26 08:08:06 cubietruck sshd[1618]: Server listening on :: port 22.
+Dec 26 08:08:12 cubietruck xdm[1512]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 08:08:15 cubietruck sshd[1618]: Received signal 15; terminating.
+Dec 26 08:08:15 cubietruck sshd[1890]: Server listening on 0.0.0.0 port 22.
+Dec 26 08:08:15 cubietruck sshd[1890]: Server listening on :: port 22.
+Dec 26 08:08:17 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 08:16:58 cubietruck xdm[1512]: pam_unix(xdm:session): session closed for user root
+Dec 26 08:16:58 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 08:17:02 cubietruck CRON[2433]: pam_unix(cron:session): session opened for user root by (uid=0)
+Dec 26 08:17:02 cubietruck CRON[2433]: pam_unix(cron:session): session closed for user root
+Dec 26 08:17:02 cubietruck sshd[1890]: Received signal 15; terminating.
+Dec 26 08:18:14 cubietruck sshd[1638]: Server listening on 0.0.0.0 port 22.
+Dec 26 08:18:14 cubietruck sshd[1638]: Server listening on :: port 22.
+Dec 26 08:18:21 cubietruck xdm[1429]: pam_unix(xdm:session): session opened for user root by root(uid=0)
+Dec 26 08:18:21 cubietruck sshd[1638]: Received signal 15; terminating.
+Dec 26 08:18:21 cubietruck sshd[1858]: Server listening on 0.0.0.0 port 22.
+Dec 26 08:18:21 cubietruck sshd[1858]: Server listening on :: port 22.
+Dec 26 08:18:25 cubietruck polkitd(authority=local): Registered Authentication Agent for unix-session:c1 (system bus name :1.12 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8)
+Dec 26 08:21:11 cubietruck xdm[1429]: pam_unix(xdm:session): session closed for user root
+Dec 26 08:21:12 cubietruck polkitd(authority=local): Unregistered Authentication Agent for unix-session:c1 (system bus name :1.12, object path /org/gnome/PolicyKit1/AuthenticationAgent, locale zh_CN.UTF-8) (disconnected from bus)
+Dec 26 08:21:14 cubietruck sshd[1858]: Received signal 15; terminating.

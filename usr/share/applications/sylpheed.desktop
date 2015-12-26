@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Sylpheed
+Name[ja]=Sylpheed
+Comment=E-Mail client
+Comment[de]=E-Mail Programm
+Comment[es]=Cliente de correo electrónico
+Comment[fr]=Client de messagerie électronique
+Comment[hu]=Grafikus email kliens
+Comment[ja]=電子メールクライアント
+Comment[pl]=Klient poczty elektronicznej
+Comment[tr]=E-Posta İstemcisi
+Comment[ru]=E-Mail клиент
+Comment[uk]=E-Mail клієнт
+Exec=sylpheed %u
+Icon=sylpheed
+MimeType=message/rfc822;x-scheme-handler/mailto;
+Terminal=false
+Type=Application
+Categories=GTK;Network;Email;News;
+Keywords=lightweight;user-friendly;keyboard-oriented;mh;imap;pop3;nntp;japanese;plugins;gpg;

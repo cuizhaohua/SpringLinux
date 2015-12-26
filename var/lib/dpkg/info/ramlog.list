@@ -1,0 +1,16 @@
+/.
+/etc
+/etc/default
+/etc/default/ramlog
+/etc/ramlog.conf.upstart
+/etc/init.d
+/etc/init.d/ramlog
+/etc/logrotate.d
+/etc/logrotate.d/ramlog
+/etc/cron.daily
+/etc/cron.daily/ramlog
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/ramlog
+/usr/share/doc/ramlog/copyright.gz

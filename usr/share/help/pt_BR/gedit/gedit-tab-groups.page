@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Organizando arquivos em abas agrupadas</title>
+
+  <p>Se você está trabalhando em múltiplas abas no  <app>gedit</app> você pode agrupá-las, deixando mais fácil manter organizados os seus arquivos abertos. Adicionar um novo grupo de abas vai dividir a janela do <app>gedit</app> em dois painéis, abrir um novo "Documento não-salvo" no novo painel e vai torná-lo ativo. Você pode abrir arquivos naquele grupo de abas e mover abas de um grupo para o outro.</p>
+
+<section id="open-new-tab-group">
+  <title>Abrindo um novo grupo de abas na janela do gedit</title>
+
+  <p>Para abrir um novo grupo de abas, você pode:</p>
+
+  <list>
+    <item>
+      <p>Vá em <guiseq><gui>Documentos</gui><gui>Novo grupo de abas</gui></guiseq> no menu principal.</p>
+    </item>
+    <item>
+      <p>Use o atalho <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Esta ação vai dividir a janela do <app>gedit</app> em dois painéis e o painel com o novo grupo de abas será substituído à direita com a aba ativa. Você pode mover o separador para a direita ou esquerda para atribuir mais ou menos espaço da janela do <app>gedit</app> entre painéis de acordo com suas necessidades.</p>
+
+  <p>Você pode abrir o máximo de grupos de abas na janela do <app>gedit</app> que a tela permitir, mais você terá que mover o separador para vê-las corretamente.</p>
+
+  <p>Para fechar um grupo de abas, basta fechar todas as abas que estão abertas nele.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Movendo entre grupos de abas</title>
+
+  <p>Para mover para o próximo grupo de abas:</p>
+
+  <list>
+    <item>
+      <p>Vá em <guiseq><gui>Documentos</gui><gui>Próximo grupo de abas</gui></guiseq> no menu principal.</p>
+    </item>
+    <item>
+      <p>Use o atalho <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Para mover para o grupo de abas anterior:</p>
+
+  <list>
+    <item>
+      <p>Vá em <guiseq><gui>Documentos</gui><gui>Grupo de abas anterior</gui></guiseq> no menu principal.</p>
+    </item>
+    <item>
+      <p>Use o atalho <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Movendo uma aba para outro grupo de abas</title>
+
+  <p>Se você deseja mover uma aba de um grupo de abas para outro:</p>
+
+  <steps>
+    <item>
+      <p>Clique na aba e segure o botão do mouse.</p>
+    </item>
+    <item>
+      <p>Arraste a aba para outro painel de grupo de abas.</p>
+    </item>
+    <item>
+      <p>Coloque-a ao lado de outras abas no grupo de abas.</p>
+    </item>
+    <item>
+      <p>Solte o botão do mouse.</p>
+    </item>
+  </steps>
+
+  <p>Veja a tabela <link xref="gedit-shortcut-keys">teclas de atalho relacionadas a abas</link> para tornar mais fácil de gerenciar seu grupo de abas.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-quickstart" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <link type="seealso" xref="gedit-open-files"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>开始使用 gedit</title>
+  <p><app>gedit</app> 具备 GNOME 桌面环境的全部特性，您可以使用它书写简单的便笺和文档，也可以使用它的高级特性，让它成为一个软件开发平台。</p>
+
+  <media type="image" mime="image/png" src="figures/gedit3-screenshot.png"/>
+
+  <p>Once <app>gedit</app> launches, you can start writing right away. To save
+  your text, just click the <gui>Save</gui> icon in the <app>gedit</app>
+  toolbar.</p>
+
+  <p>要学习 <app>gedit</app> 的额外特性，进行别的任务，请访问 <app>gedit</app> 帮助的 <link xref="index">其他部分</link>。</p>
+
+</page>

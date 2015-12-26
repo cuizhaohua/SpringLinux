@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libx264-142
+/usr/share/doc/libx264-142/copyright
+/usr/share/doc/libx264-142/changelog.Debian.gz
+/usr/share/doc/libx264-142/changelog.Debian.armhf.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libx264.so.142
+/usr/lib/arm-linux-gnueabihf/x264-10bit
+/usr/lib/arm-linux-gnueabihf/x264-10bit/libx264.so.142

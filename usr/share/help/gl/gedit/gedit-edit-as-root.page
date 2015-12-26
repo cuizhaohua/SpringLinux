@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-edit-as-root" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Editar un ficheiro como usuario root</title>
+
+  <note style="warning">
+    <p>Editar ficheiros como superusuario é potencialmente perigoso e pode romper o seu sistema. Teña moito coidado ao editar ficheiros como superusuario.</p>
+  </note>
+
+  <p>Para editar ficheiros como superusuario inicie <app>gedit</app> desde o terminal introducindo:</p>
+  <code>sudo gedit</code>
+
+  <p>Usar a orde <cmd>sudo</cmd> deberá introducir correctamente o seu contrasinal antes de que <app>gedit</app> se abra.</p>
+
+  <p>Como alternativa á orde <cmd>sudo</cmd> pode obter privilexios de administración introducindo:</p>
+  <code>su -</code>
+
+  <p>Despois poderá iniciar <app>gedit</app> usando a orde <cmd>gedit</cmd>.</p>
+
+  <note style="tip">
+    <p>Cando teña aberto <app>gedit</app> con privilexios de administración, <app>gedit</app> reterá esos privilexios até que o peche.</p>
+  </note>
+
+</page>

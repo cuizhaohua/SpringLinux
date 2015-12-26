@@ -1,0 +1,189 @@
+Package: clamav
+Binary: clamav-base, clamav-docs, clamav-dbg, clamav, libclamav-dev, libclamav6, clamav-daemon, clamav-testfiles, clamav-freshclam, clamav-milter
+Version: 0.98.7+dfsg-0+deb7u1
+Maintainer: ClamAV Team <pkg-clamav-devel@lists.alioth.debian.org>
+Uploaders: Stephen Gran <sgran@debian.org>, Michael Meskes <meskes@debian.org>, Michael Tautschnig <mt@debian.org>, Scott Kitterman <scott@kitterman.com>, Sebastian Andrzej Siewior <sebastian@breakpoint.cc>, Andreas Cadhalpun <Andreas.Cadhalpun@googlemail.com>
+Build-Depends: automake, bc, check, debhelper (>= 8.9.7), dh-autoreconf, electric-fence, faketime, libbz2-dev, libcurl4-openssl-dev, libjson0-dev, libltdl-dev, libmilter-dev, libncurses5-dev, libssl-dev, libtommath-dev, libxml2-dev, llvm-dev [i386 amd64 powerpc kfreebsd-amd64 kfreebsd-i386], perl, pkg-config, po-debconf, python, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 2794f43800109b40d94322b2e5824fc4 2883 clamav_0.98.7+dfsg-0+deb7u1.dsc
+ 7a012088d4389bd3ac2ac35442b98d37 8322932 clamav_0.98.7+dfsg.orig.tar.xz
+ 4b56dfef2016aab476b25556db565718 852764 clamav_0.98.7+dfsg-0+deb7u1.debian.tar.gz
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-clamav/clamav.git
+Vcs-Git: git://anonscm.debian.org/pkg-clamav/clamav.git
+Checksums-Sha1:
+ 6b755bd27eb547946424c3055b4e431adb374d52 2883 clamav_0.98.7+dfsg-0+deb7u1.dsc
+ d00df0b36ca5ef72518e891e5cb2bdf7ffbf9b9c 8322932 clamav_0.98.7+dfsg.orig.tar.xz
+ 9e9ba6cb4f82cea7b259d5f679cfc9caeac2eab8 852764 clamav_0.98.7+dfsg-0+deb7u1.debian.tar.gz
+Checksums-Sha256:
+ a109d8300ad94c0edf38533889555eb6c2ecdedd5b14d88b69f56ca260c8b7c1 2883 clamav_0.98.7+dfsg-0+deb7u1.dsc
+ 3a153ccdde90702dc175bd251784b66f09431b517da4ca8c99407ecd3e295fa5 8322932 clamav_0.98.7+dfsg.orig.tar.xz
+ a950749d6d13a893abef1d7c2e1594b418a762ed60e516b190152dc2a1ac24e1 852764 clamav_0.98.7+dfsg-0+deb7u1.debian.tar.gz
+Homepage: http://www.clamav.net/
+Package-List: 
+ clamav deb utils optional
+ clamav-base deb utils optional
+ clamav-daemon deb utils optional
+ clamav-dbg deb debug extra
+ clamav-docs deb doc optional
+ clamav-freshclam deb utils optional
+ clamav-milter deb utils extra
+ clamav-testfiles deb utils optional
+ libclamav-dev deb libdevel optional
+ libclamav6 deb libs optional
+Directory: pool/main/c/clamav
+Priority: source
+Section: utils
+
+Package: libdatetime-timezone-perl
+Binary: libdatetime-timezone-perl
+Version: 1:1.58-1+2015g
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Krzysztof Krzyżaniak (eloy) <eloy@debian.org>, gregor herrmann <gregoa@debian.org>, Jonathan Yu <jawnsy@cpan.org>, Ansgar Burchardt <ansgar@debian.org>, Nicholas Bamber <nicholas@periapt.co.uk>
+Build-Depends: debhelper (>= 8)
+Build-Depends-Indep: perl, libclass-load-perl, libclass-singleton-perl, libdatetime-perl, libparams-validate-perl, libtest-output-perl
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ 3862dd38bd8b5f19eae79478e7cc5a1b 2533 libdatetime-timezone-perl_1.58-1+2015g.dsc
+ a815c7a18b3386ff2d2f6bcadab61fb6 852884 libdatetime-timezone-perl_1.58.orig.tar.gz
+ e0ff2612c137237a6d5750a8e913f920 164416 libdatetime-timezone-perl_1.58-1+2015g.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libdatetime-timezone-perl.git
+Vcs-Git: git://git.debian.org/pkg-perl/packages/libdatetime-timezone-perl.git
+Checksums-Sha1:
+ 651c5671bdb10be0d60abaad859d6bef5a7624bb 2533 libdatetime-timezone-perl_1.58-1+2015g.dsc
+ 8c6b6f43885160a8f782b1a6d1036346291a5520 852884 libdatetime-timezone-perl_1.58.orig.tar.gz
+ 86637a920fe4ba809353908e9f29a2ef01d0e05a 164416 libdatetime-timezone-perl_1.58-1+2015g.debian.tar.xz
+Checksums-Sha256:
+ 1c533c9b66823200d2eb126bfca89c1b31964ab21f2ce674c7b510a07c72971f 2533 libdatetime-timezone-perl_1.58-1+2015g.dsc
+ 82c3e94140908af96aca2f46c0334631b1739f8a444b64260814a6974bc44367 852884 libdatetime-timezone-perl_1.58.orig.tar.gz
+ be0440c464c1ea55da0378650a420d09fe76e751db63dbd42d53e38f3492931d 164416 libdatetime-timezone-perl_1.58-1+2015g.debian.tar.xz
+Homepage: http://datetime.perl.org/
+Package-List: 
+ libdatetime-timezone-perl deb perl optional
+Directory: pool/main/libd/libdatetime-timezone-perl
+Priority: source
+Section: perl
+
+Package: open-vm-tools
+Binary: open-vm-tools, open-vm-toolbox, open-vm-tools-dev, open-vm-tools-dbg, open-vm-dkms
+Version: 2:8.8.0+2012.05.21-724730-1+nmu2+deb7u1
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Build-Depends: debhelper (>= 9), autotools-dev, dkms, doxygen, libcunit1-dev, libdumbnet-dev, libfuse-dev, libgtk2.0-dev, libgtkmm-2.4-dev, libicu-dev, libnotify-dev, libpam0g-dev, libprocps0-dev (>= 1:3.3.1), libx11-dev, libxinerama-dev, libxss-dev, libxtst-dev
+Architecture: linux-amd64 linux-i386 kfreebsd-amd64 kfreebsd-i386 all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ ffad98e273380db676d1c7eeda4a066a 2398 open-vm-tools_8.8.0+2012.05.21-724730-1+nmu2+deb7u1.dsc
+ 91affb5b23db8abceff930613845f434 3567582 open-vm-tools_8.8.0+2012.05.21-724730.orig.tar.gz
+ 0712a2f015b7cd47d99dee12e1030c09 21173 open-vm-tools_8.8.0+2012.05.21-724730-1+nmu2+deb7u1.debian.tar.gz
+Checksums-Sha1:
+ b2420f1080937608e97148a5abf8ae1c0d636d7b 2398 open-vm-tools_8.8.0+2012.05.21-724730-1+nmu2+deb7u1.dsc
+ 19c9195eb36e3ad2d6fc3a3ff522a02e0d635ae0 3567582 open-vm-tools_8.8.0+2012.05.21-724730.orig.tar.gz
+ 1a4a092cd00493667dca4364d21f95bb639d0937 21173 open-vm-tools_8.8.0+2012.05.21-724730-1+nmu2+deb7u1.debian.tar.gz
+Checksums-Sha256:
+ 159860a5131c23d62058b26e4b3cb10c3e3d7feeb16019ed59e9542f04d77306 2398 open-vm-tools_8.8.0+2012.05.21-724730-1+nmu2+deb7u1.dsc
+ c7daaaf0ed031cd36295cf10d51dbbdedeb1eb0015e49f0806620792f8dab71b 3567582 open-vm-tools_8.8.0+2012.05.21-724730.orig.tar.gz
+ 3d5f87325c47b3e9f412f4c0d16b6d48cdd2d45dfb161e20a4b038955ee5ed00 21173 open-vm-tools_8.8.0+2012.05.21-724730-1+nmu2+deb7u1.debian.tar.gz
+Homepage: http://open-vm-tools.sourceforge.net/
+Package-List: 
+ open-vm-dkms deb admin extra
+ open-vm-toolbox deb admin extra
+ open-vm-tools deb admin extra
+ open-vm-tools-dbg deb debug extra
+ open-vm-tools-dev deb devel extra
+Directory: pool/main/o/open-vm-tools
+Priority: source
+Section: admin
+
+Package: policyd-weight
+Binary: policyd-weight
+Version: 0.1.15.2-5+wheezy2
+Maintainer: Werner Detter <werner@aloah-from-hell.de>
+Build-Depends: debhelper (>= 7)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 00646e518a18d022eaef5398ad480135 1798 policyd-weight_0.1.15.2-5+wheezy2.dsc
+ 7e62e9f505070ed5aa483a9904a36a6e 55354 policyd-weight_0.1.15.2.orig.tar.gz
+ 0b73c9dc8d2c3a7354816caedc393766 10775 policyd-weight_0.1.15.2-5+wheezy2.debian.tar.gz
+Checksums-Sha1:
+ ae9110a6d6703e91e12fbfce448bbe0ac7532cf5 1798 policyd-weight_0.1.15.2-5+wheezy2.dsc
+ 5efb75bf06e5dadbcae0a52c32b256382f2cf085 55354 policyd-weight_0.1.15.2.orig.tar.gz
+ f5bb85ddac6072234008bb1b6eee038a95a4c516 10775 policyd-weight_0.1.15.2-5+wheezy2.debian.tar.gz
+Checksums-Sha256:
+ bacadf5769e7b6c3200ec40f76dca63c99531fd2774167ade4616089fc22d683 1798 policyd-weight_0.1.15.2-5+wheezy2.dsc
+ b0539020fd11663ebab248b278eafa53afc0810420ac4f28da44b4b49c595967 55354 policyd-weight_0.1.15.2.orig.tar.gz
+ 5ae79193a654845b9b9b316d90afffa533e58034e940c8cc3d866d5687072301 10775 policyd-weight_0.1.15.2-5+wheezy2.debian.tar.gz
+Homepage: http://www.policyd-weight.org/
+Package-List: 
+ policyd-weight deb mail optional
+Directory: pool/main/p/policyd-weight
+Priority: source
+Section: mail
+
+Package: spamassassin
+Binary: spamassassin, spamc
+Version: 3.3.2-5+deb7u3
+Maintainer: Noah Meyerhans <noahm@debian.org>
+Uploaders: Jesus Climent <jesus.climent@hispalinux.es>
+Build-Depends: debhelper (>= 7), perl, libssl-dev, libhtml-parser-perl (>= 3.24), libnet-dns-perl (>= 0.34), libnetaddr-ip-perl, hardening-wrapper
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Files:
+ 6911d5b61706541df7912c834b957759 2114 spamassassin_3.3.2-5+deb7u3.dsc
+ 8b50b18b749f99c3e0c3059a56fcbcd3 1270922 spamassassin_3.3.2.orig.tar.bz2
+ 2f3549b169d6c1e05de80055c2c08722 46347 spamassassin_3.3.2-5+deb7u3.debian.tar.gz
+Vcs-Browser: http://svn.debian.org/viewsvn/collab-maint/deb-maint/spamassassin/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/deb-maint/spamassassin/trunk
+Checksums-Sha1:
+ 7bca2ab003fdf5e9aa942373dd9b0b23dd54072a 2114 spamassassin_3.3.2-5+deb7u3.dsc
+ 76309c5ff324b606ee2cd0d3e1ee390cdd5eeeb3 1270922 spamassassin_3.3.2.orig.tar.bz2
+ 26b399cdc716c13438404d94f143b1cd301c5ae9 46347 spamassassin_3.3.2-5+deb7u3.debian.tar.gz
+Checksums-Sha256:
+ 5d05ea30c815443fed509bd718bd04b31f26c194d406e46292fe58f03e3fa615 2114 spamassassin_3.3.2-5+deb7u3.dsc
+ 3f04c16241d11c77d153802cc1e17bdf5390804f160fe451b968894fa44e5214 1270922 spamassassin_3.3.2.orig.tar.bz2
+ 860db696211be785da892b0704248f88a3a3076e7fde9a1e3b6491bbe8096832 46347 spamassassin_3.3.2-5+deb7u3.debian.tar.gz
+Homepage: http://www.spamassassin.org/
+Package-List: 
+ spamassassin deb mail optional
+ spamc deb mail optional
+Directory: pool/main/s/spamassassin
+Priority: source
+Section: mail
+
+Package: tzdata
+Binary: tzdata, tzdata-java
+Version: 2015g-0+deb7u1
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Uploaders: Clint Adams <clint@debian.org>, Aurelien Jarno <aurel32@debian.org>
+Build-Depends: debhelper (>= 5.0.0)
+Build-Depends-Indep: po-debconf, openjdk-6-jre-headless, fdupes
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 8f83236076c691d02668124b33d7ec8b 1907 tzdata_2015g-0+deb7u1.dsc
+ 8d46e8b225b9a04c75f5c39636435ad6 300363 tzdata_2015g.orig.tar.gz
+ 6371379d9fe5f10621192ab7eb204c28 103872 tzdata_2015g-0+deb7u1.debian.tar.xz
+Checksums-Sha1:
+ 1acc5502c9e22c0aeeab7ad872bf85b55094ba24 1907 tzdata_2015g-0+deb7u1.dsc
+ 96528dcbb790ed181a47db7e4cace4eeaec5728e 300363 tzdata_2015g.orig.tar.gz
+ 568c1d61b18b36122c4335e06927d77410223a26 103872 tzdata_2015g-0+deb7u1.debian.tar.xz
+Checksums-Sha256:
+ 5163ade30d6e42a14fe3912cb8ad6605616a29999216b7111335fda79d3ed852 1907 tzdata_2015g-0+deb7u1.dsc
+ b923cdbf078491696b17bc8d069c74bce73fabc5774629da2f410c9b31576161 300363 tzdata_2015g.orig.tar.gz
+ 3e45bb0244bb3c1cbb35e740a9344d1524cf5c649885cac77ac604fea413f5ef 103872 tzdata_2015g-0+deb7u1.debian.tar.xz
+Homepage: http://www.iana.org/time-zones
+Package-List: 
+ tzdata deb libs required
+ tzdata-java deb java optional
+Directory: pool/main/t/tzdata
+Priority: source
+Section: localization
+

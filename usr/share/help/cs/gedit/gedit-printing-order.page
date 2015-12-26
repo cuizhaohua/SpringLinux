@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Získání kopií vytisknutých ve správném pořadí</title>
+
+  <section id="printing-reverse">
+    <title>Obrátit</title>
+
+    <p>Tiskárny obvykle tisknou první stránku jako první a poslední jako poslední, takže stránky ve výstupním zásobníku končí v opačném pořadí, než byste chtěli. Tohle pořadí ale můžete změnit:</p>
+
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">Soubor</gui> <gui style="menuitem">Tisk</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Na kartě <gui style="tab">Obecné</gui> v dialogovém okně Tisk v části <gui style="group">Kopie</gui> zaškrtněte <gui style="checkbox">Obrátit</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Poslední stránka se vytiskne jako první atd.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Setřídit</title>
+    
+    <p>Pokud tisknete více kopií dokumentu, budou standardně na výstupu stránky seskupeny podle čísel. (Tj. nejdříve vyjedou všechny stránky jedna, pak všechny stránky dva atd.) Setříděním získáte seskupené jednotlivé sady dokumentu.</p>
+
+    <p>Setřídění se provede následovně:</p>
+    <steps>
+      <item>
+        <p>Klikněte na <guiseq><gui style="menu">Soubor</gui> <gui style="menuitem">Tisk</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Na kartě <gui style="tab">Obecné</gui> v dialogovém okně Tisk v části <gui style="group">Kopie</gui> zaškrtněte <gui style="checkbox">Setřídit</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="gl">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Como instalar engadidos de terceiras partes</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Engadidos adicionais de gedit</title>
+
+  <p>Installing third-party plugins gives you extra functionality that isn't 
+  available in default <app>gedit</app> plugins, or even the extra plugins that 
+  are part of the <app>gedit-plugins</app> package. An online list of 
+  third-party plugins is 
+  <link href="https://wiki.gnome.org/Apps/Gedit">kept here</link>.
+  </p>
+  
+  <p>Instalar un engadido de terceiras partes implica descargar o engadido, copiar os ficheiros do engadido no cartafol correcto e activalo.</p>
+  
+  <steps>
+    <item><p>Xeralmente pode descargar o engadido da súa páxina web, pero pode precisar un programa de control de versións como <app>git</app>, <app>bazaar</app> ou <app>subversion</app> para copiar o repositorio de software dun engadido desde Internet. Consulte a documentación do engadido para obter máis información.</p></item>
+    <item><p>Copie o engadido no cartafol <file>/home/<var>nome_de_usuario</var>/.local/share/gedit/plugisn</file>.</p>
+    <p>Por suposto, substitúa a palabra <var>nome_de_usuario</var> co seu nome de usuario.</p></item>
+    <item><p>Despois de mover o engadido ao cartafol correcto, aparecerá no menú «Preferencias». Seleccione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferencias</gui><gui>Engadidos</gui><gui>[Nome do engadido]</gui></guiseq> para activalo.</p></item>
+    <item><p>Prema <gui>Pechar</gui>.</p></item>
+  </steps>
+  
+  <p>Despois de activar o engadido, debería estar dispoñíbel para usarse.</p>
+  
+  <note style="tip">
+    <p>O cartafol <file>.local</file> está oculto de maneira predeterminada. Para mostrar os ficheiros ocultos, seleccione <guiseq><gui>Ver</gui><gui>Mostrar ficheiros ocultos</gui></guiseq> ou prema <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Se o cartafol <file>.local/share/gedit/plugins/</file> non está presente no seu sistema, deberá crealo.</p>
+  </note>
+  
+</page>

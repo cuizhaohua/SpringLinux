@@ -1,0 +1,7 @@
+f5903bbd6a1a7496d1ed22b8bd41708a  usr/lib/arm-linux-gnueabihf/girepository-1.0/IBus-1.0.typelib
+2889d9aad569fdc7615a8875327f4691  usr/lib/python2.7/dist-packages/gi/overrides/IBus.py
+2889d9aad569fdc7615a8875327f4691  usr/lib/python3/dist-packages/gi/overrides/IBus.py
+ba6c74dde049f7d3f44322ef416bceb6  usr/share/doc/gir1.2-ibus-1.0/changelog.Debian.gz
+9f5592cf8829f208f9e5db56b601b1e7  usr/share/doc/gir1.2-ibus-1.0/changelog.gz
+5a793ca5cffd5a7ff0271dd9236bc9be  usr/share/doc/gir1.2-ibus-1.0/copyright
+132d18ad24989c0585cfd7af510c7dfd  usr/share/lintian/overrides/gir1.2-ibus-1.0

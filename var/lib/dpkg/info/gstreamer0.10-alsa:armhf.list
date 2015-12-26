@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/gstreamer-0.10
+/usr/lib/arm-linux-gnueabihf/gstreamer-0.10/libgstalsa.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/gstreamer0.10-alsa
+/usr/share/doc/gstreamer0.10-alsa/README.Debian
+/usr/share/doc/gstreamer0.10-alsa/changelog.gz
+/usr/share/doc/gstreamer0.10-alsa/README.gz
+/usr/share/doc/gstreamer0.10-alsa/NEWS.gz
+/usr/share/doc/gstreamer0.10-alsa/AUTHORS
+/usr/share/doc/gstreamer0.10-alsa/changelog.Debian.gz
+/usr/share/doc/gstreamer0.10-alsa/copyright

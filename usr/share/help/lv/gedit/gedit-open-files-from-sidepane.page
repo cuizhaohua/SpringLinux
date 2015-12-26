@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Skatīt un atvērt datnes, izmantojot sānu rūti</title>
+  <p>Parastākais veids, kā pārslēgties starp datnēm <app>gedit</app>, ir ar cilnēm <app>gedit</app> loga augšā. Tomēr dažkārt, it īpaši strādājot ar lielu atvērtu datņu skaitu, var būt ērtāk izmantot <app>sānu rūti</app>.</p> 
+
+  <p>Lai ieslēgtu <app>sānu rūti</app>, izvēlieties <guiseq><gui>Skats</gui> <gui>Sānu rūts</gui></guiseq> vai nospiediet <key>F9</key> taustiņu.</p>
+
+  <note style="note">
+    <p><gui>Sānu rūti</gui> var atvērt vai aizvērt jebkurā brīdī, nospiežot <key>F9</key> taustiņu.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Datņu atvēršana no sānu rūts</title>
+    <p>Lai atvērtu datnes no <app>sānu rūts</app>, vispirms atveriet <app>sānu rūti</app>, izvēloties <guiseq><gui>Skats</gui><gui>Sānu rūts</gui></guiseq>, tad veiciet klikšķi uz <gui>datņu pārlūka</gui> ikonas rūts apakšā.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Tas ieslēgs  <app>sānu rūts</app> <em>datņu pārlūka</em> režīmu. Izmantojot navigācijas pogas rūts augšā, var atrast un atvērt vēlamās datnes.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Pārslēgties starp atvērtajām datnēm, izmantojot sānu rūti</title>
+    <p>Kad atvērtas vairākas datnes, starp tām var pārslēgties ar sānu rūti. Lai ieslēgtu <app>sānu rūts</app> datņu pārlūka daļu, veiciet klikšķi uz <gui>datnes</gui> ikonas <gui>sānu rūts</gui> apakšā.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Klikšķis uz jebkuras datnes nosaukuma <gui>sānu rūtī</gui> atvērs šo datni rediģēšanai.</p>
+  </section>
+ 
+ </page>

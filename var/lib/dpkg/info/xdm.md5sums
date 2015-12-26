@@ -1,0 +1,15 @@
+cae2bac8c8cfdd550f0b01fb5f17031d  usr/bin/xdm
+f9c86b7e8792f94b468e768bbb4c8222  usr/lib/X11/xdm/chooser
+50c849d3bdf78e421effaea1d3122f22  usr/lib/X11/xdm/libXdmGreet.so
+8bd89d6976e41f6598ab61fda364505e  usr/share/X11/xdm/pixmaps/debian.xpm
+c90b32c82b91d0c8c69ba5a69594a21f  usr/share/X11/xdm/pixmaps/debianbw.xpm
+30e3a8767640924d5025b6995c74d8fd  usr/share/X11/xdm/pixmaps/xorg-bw.xpm
+97e00d725c718298a23395d11abd00a2  usr/share/X11/xdm/pixmaps/xorg.xpm
+50d4269bb3b3b39a8b88cb56fc20469b  usr/share/doc/xdm/NEWS.Debian.gz
+f59339cdd53b5206f5e07654785dcbc6  usr/share/doc/xdm/README.Debian
+3a06f0f12acee59f6e5452cb12671599  usr/share/doc/xdm/TODO.Debian
+85c2f3940dfbbf0a00b70f453ec90e5b  usr/share/doc/xdm/changelog.Debian.gz
+4d5802921b363e8a7a33c5bb46acb0dc  usr/share/doc/xdm/changelog.gz
+dbba206a043cabe3cd28199ad67e9cdc  usr/share/doc/xdm/copyright
+1c4bb9fc05570a4f3955e1d5fd6b5f08  usr/share/man/man1/xdm.1.gz
+d1c7e5d434e35d336066bbe47a9a9408  usr/share/man/man5/xdm.options.5.gz

@@ -1,0 +1,37 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xfce4-weather-plugin
+Upstream-Contact: Harald Judt <h.judt@gmx.at>
+Source: http://goodies.xfce.org/projects/panel-plugins/xfce4-weather-plugin
+
+Files: panel-plugin/weather-config.c
+ panel-plugin/weather-config.h
+ panel-plugin/weather-data.c
+ panel-plugin/weather-data.h
+ panel-plugin/weather-debug.c
+ panel-plugin/weather-debug.h
+ panel-plugin/weather-icon.c
+ panel-plugin/weather-icon.h
+ panel-plugin/weather-parsers.c
+ panel-plugin/weather-parsers.h
+ panel-plugin/weather-scrollbox.c
+ panel-plugin/weather-scrollbox.h
+ panel-plugin/weather-search.c
+ panel-plugin/weather-search.h
+ panel-plugin/weather-summary.c
+ panel-plugin/weather-summary.h
+ panel-plugin/weather-translate.c
+ panel-plugin/weather-translate.h
+ panel-plugin/weather.c
+ panel-plugin/weather.h
+Copyright: 2003-2013, Xfce Development Team
+License: GPL-2+
+
+Files: ltmain.sh
+Copyright: 1996-2001, 2003-2006
+License: GPL-2+
+
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 or later can be found in
+ `/usr/share/common-licenses/GPL'.
+

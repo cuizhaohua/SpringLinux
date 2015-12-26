@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian Menu System</title>
+
+<link href="index.html" rel="start">
+<link href="ch8.html" rel="prev">
+<link href="ch1.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch1.html" rel="chapter" title="1 Introduction">
+<link href="ch2.html" rel="chapter" title="2 Menu from the viewpoint of a user">
+<link href="ch3.html" rel="chapter" title="3 The menu file">
+<link href="ch4.html" rel="chapter" title="4 What packages with applications should do">
+<link href="ch5.html" rel="chapter" title="5 What packages with menu managers should do">
+<link href="ch6.html" rel="chapter" title="6 How a user can override the menus">
+<link href="ch7.html" rel="chapter" title="7 The internals of the menu package">
+<link href="ch8.html" rel="chapter" title="8 Variables and functions in the install-menu scripts">
+<link href="ch2.html#s2.1" rel="section" title="2.1 How/when do the window manager startup files get created?">
+<link href="ch2.html#s2.2" rel="section" title="2.2 Tuning of the generated window manager startup files">
+<link href="ch2.html#s2.3" rel="section" title="2.3 Optimization of menu tree: hints">
+<link href="ch3.html#s3.1" rel="section" title="3.1 Location">
+<link href="ch3.html#s3.2" rel="section" title="3.2 Syntax">
+<link href="ch3.html#s3.3" rel="section" title="3.3 The title field">
+<link href="ch3.html#s3.4" rel="section" title="3.4 The needs field">
+<link href="ch3.html#s3.5" rel="section" title="3.5 The section field">
+<link href="ch3.html#s3.6" rel="section" title="3.6 The command field">
+<link href="ch3.html#s3.7" rel="section" title="3.7 The icon field">
+<link href="ch3.html#s3.8" rel="section" title="3.8 The hints field">
+<link href="ch3.html#s3.9" rel="section" title="3.9 Entries for menu sections.">
+<link href="ch3.html#s3.10" rel="section" title="3.10 Fvwm's task and title bars">
+<link href="ch4.html#s4.1" rel="section" title="4.1 Providing a menu file">
+<link href="ch4.html#s4.2" rel="section" title="4.2 Adding a hook for dpkg in your packages">
+<link href="ch6.html#s6.1" rel="section" title="6.1 Configuring the menus">
+<link href="ch6.html#s6.2" rel="section" title="6.2 Specifying that a menu entry should not be displayed">
+<link href="ch6.html#s6.3" rel="section" title="6.3 Including other files">
+<link href="ch7.html#s7.1" rel="section" title="7.1 The update-menus program">
+<link href="ch7.html#s7.2" rel="section" title="7.2 The install-menu program">
+<link href="ch7.html#s7.3" rel="section" title="7.3 The install-menu config script definitions">
+<link href="ch7.html#s7.4" rel="section" title="7.4 Hints, tree optimization">
+<link href="ch8.html#s8.1" rel="section" title="8.1 String constants">
+<link href="ch8.html#s8.2" rel="section" title="8.2 Variables">
+<link href="ch8.html#s8.3" rel="section" title="8.3 Functions">
+<link href="ch8.html#s8.2.1" rel="subsection" title="8.2.1 Special variables">
+<link href="ch8.html#s8.2.2" rel="subsection" title="8.2.2 Preferred variables">
+<link href="ch8.html#s8.2.3" rel="subsection" title="8.2.3 Suggested variables">
+
+</head>
+
+<body>
+
+<p><a name="index"></a></p>
+<hr>
+
+<p>
+[ <a href="ch8.html">previous</a> ]
+[ <a href="#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch1.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian Menu System
+<br></h1>
+
+<hr>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>
+The <samp>menu</samp> package was inspired by the
+<code>install-fvwm2-menu</code> program from the old <code>fvwm2</code>
+package.  However, <samp>menu</samp> tries to provide a more general interface
+for menu building.  With the <code>update-menus</code> command from this
+package, no package needs to be modified for every X window manager again, and
+it provides a unified interface for both text- and X-oriented programs.
+</p>
+
+<hr>
+
+<h2 id="copyright">Copyright Notice</h2>
+
+<p>
+Copyright &copy;1997 Joost Witteveen, Joey Hess, Christian Schwarz. &copy;2002-2005 Bill Allombert.
+</p>
+
+<p>
+This manual is free software; you may redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2, or (at your option) any later version.
+</p>
+
+<p>
+This is distributed in the hope that it will be useful, but <em>without any
+warranty</em>; without even the implied warranty of merchantability or fitness
+for a particular purpose.  See the GNU General Public License for more details.
+</p>
+
+<p>
+A copy of the GNU General Public License is available as
+<code>/usr/share/common-licenses/GPL</code> in the Debian GNU/Linux
+distribution or on the World Wide Web at
+<samp>http://www.gnu.org/copyleft/gpl.html</samp>.  You can also obtain it by
+writing to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+Boston, MA 02110-1301 USA
+</p>
+
+<hr>
+
+<h2 id="contents">Contents</h2>
+
+<ul>
+<li><a href="ch1.html">1 Introduction</a><li><a href="ch2.html">2 Menu from the viewpoint of a user</a>
+  <ul>
+  <li><a href="ch2.html#s2.1">2.1 How/when do the window manager startup files get created?</a></li>
+  <li><a href="ch2.html#s2.2">2.2 Tuning of the generated window manager startup files</a></li>
+  <li><a href="ch2.html#s2.3">2.3 Optimization of menu tree: hints</a>
+  </ul></li>
+<li><a href="ch3.html">3 The menu file</a>
+  <ul>
+  <li><a href="ch3.html#s3.1">3.1 Location</a></li>
+  <li><a href="ch3.html#s3.2">3.2 Syntax</a></li>
+  <li><a href="ch3.html#s3.3">3.3 The <samp>title</samp> field</a></li>
+  <li><a href="ch3.html#s3.4">3.4 The <samp>needs</samp> field</a></li>
+  <li><a href="ch3.html#s3.5">3.5 The <samp>section</samp> field</a></li>
+  <li><a href="ch3.html#s3.6">3.6 The <samp>command</samp> field</a></li>
+  <li><a href="ch3.html#s3.7">3.7 The <samp>icon</samp> field</a></li>
+  <li><a href="ch3.html#s3.8">3.8 The <samp>hints</samp> field</a></li>
+  <li><a href="ch3.html#s3.9">3.9 Entries for menu sections.</a></li>
+  <li><a href="ch3.html#s3.10">3.10 Fvwm's task and title bars</a>
+  </ul></li>
+<li><a href="ch4.html">4 What packages with applications should do</a>
+  <ul>
+  <li><a href="ch4.html#s4.1">4.1 Providing a menu file</a></li>
+  <li><a href="ch4.html#s4.2">4.2 Adding a hook for dpkg in your packages</a>
+  </ul></li>
+<li><a href="ch5.html">5 What packages with menu managers should do</a><li><a href="ch6.html">6 How a user can override the menus</a>
+  <ul>
+  <li><a href="ch6.html#s6.1">6.1 Configuring the menus</a></li>
+  <li><a href="ch6.html#s6.2">6.2 Specifying that a menu entry should not be displayed</a></li>
+  <li><a href="ch6.html#s6.3">6.3 Including other files</a>
+  </ul></li>
+<li><a href="ch7.html">7 The internals of the menu package</a>
+  <ul>
+  <li><a href="ch7.html#s7.1">7.1 The update-menus program</a></li>
+  <li><a href="ch7.html#s7.2">7.2 The install-menu program</a></li>
+  <li><a href="ch7.html#s7.3">7.3 The install-menu config script definitions</a></li>
+  <li><a href="ch7.html#s7.4">7.4 Hints, tree optimization</a>
+  </ul></li>
+<li><a href="ch8.html">8 Variables and functions in the install-menu scripts</a>
+  <ul>
+  <li><a href="ch8.html#s8.1">8.1 String constants</a></li>
+  <li><a href="ch8.html#s8.2">8.2 Variables</a></li>
+  <li><a href="ch8.html#s8.3">8.3 Functions</a></li>
+  </ul></li>
+</ul>
+
+<hr>
+
+<p>
+[ <a href="ch8.html">previous</a> ]
+[ <a href="#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch1.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian Menu System
+</p>
+
+<address>
+version 1.4, 4 June 2014<br>
+<br>
+Joost Witteveen <code><a href="mailto:joostje@debian.org">mailto:joostje@debian.org</a></code><br>
+Joey Hess <code><a href="mailto:joeyh@debian.org">mailto:joeyh@debian.org</a></code><br>
+Christian Schwarz <code><a href="mailto:schwarz@debian.org">mailto:schwarz@debian.org</a></code><br>
+Bill Allombert <code><a href="mailto:ballombe@debian.org">mailto:ballombe@debian.org</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Zavření souboru</title>
+
+  <p>Když chcete v editoru <app>gedit</app> zavřít soubor, vyberte <guiseq><gui>Soubor</gui> <gui>Zavřít</gui></guiseq>. Případně můžete kliknout na malý křížek „×“, který je vidět na pravé straně karty, nebo zmáčknout <keyseq><key>Ctrl</key> <key>W</key></keyseq>.</p>
+  <p>Libovolná z těchto činností povede k zavření souboru. Pokud soubor obsahuje neuložené změny, <app>gedit</app> se dotáže, ještli chcete před zavřením soubor uložit.</p>
+
+</page>

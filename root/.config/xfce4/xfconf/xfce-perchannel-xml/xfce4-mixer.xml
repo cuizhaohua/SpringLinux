@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-mixer" version="1.0">
+  <property name="sound-card" type="string" value="sunxiCODECAlsamixer"/>
+  <property name="sound-cards" type="empty">
+    <property name="sunxiCODECAlsamixer" type="array">
+      <value type="string" value="Master"/>
+      <value type="string" value="LineL"/>
+      <value type="string" value="LineR"/>
+      <value type="string" value="Mic Input Mux"/>
+      <value type="string" value="Playback"/>
+      <value type="string" value="Fm output"/>
+      <value type="string" value="FmL"/>
+      <value type="string" value="FmR"/>
+      <value type="string" value="Ldac Left Mixer"/>
+      <value type="string" value="Ldac Right Mixer"/>
+      <value type="string" value="MIC output volume"/>
+      <value type="string" value="Rdac Right Mixer"/>
+    </property>
+  </property>
+  <property name="window-height" type="int" value="746"/>
+  <property name="window-width" type="int" value="1024"/>
+</channel>

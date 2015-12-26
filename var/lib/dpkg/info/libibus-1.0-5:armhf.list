@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libibus-1.0-5
+/usr/share/doc
+/usr/share/doc/libibus-1.0-5
+/usr/share/doc/libibus-1.0-5/changelog.Debian.gz
+/usr/share/doc/libibus-1.0-5/changelog.gz
+/usr/share/doc/libibus-1.0-5/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libibus-1.0.so.5.0.509
+/usr/lib/arm-linux-gnueabihf/libibus-1.0.so.5

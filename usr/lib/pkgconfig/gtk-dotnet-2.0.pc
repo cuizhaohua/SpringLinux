@@ -1,0 +1,10 @@
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+
+Name: Gtk.DotNet
+Description: .NET Extensions for Gtk
+Version: 2.12.10
+Requires:gtk-sharp-2.0
+Libs: -r:${libdir}/cli/gtk-dotnet-2.0/gtk-dotnet.dll

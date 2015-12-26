@@ -1,0 +1,159 @@
+﻿a, a:visited, a:link, a:hover {
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.store-header {
+    position: relative;
+    text-align: center;
+    height: 76px;
+    background-color: #574f5b;
+    display: block;
+    -webkit-user-select: none;
+}
+
+.logo-container {
+    width: 90px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    margin-top: -18px; /* Center vertically using negative margin of half the height */
+}
+
+.menuText {
+    text-align: center;
+    font: 10px "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Lucida Grande", sans-serif;
+    -webkit-user-select: none;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 61px;
+    line-height: 76px;
+    margin: 0;
+    max-width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: white;
+    height: 100%;
+    text-decoration: none;
+}
+
+.menu {
+    width: 61px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-image: url("ico_dropdown_icon.png");
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+.notional-settings-button {
+    width: 8px;
+    height: 7px;
+    margin-left: 8px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+}
+
+#userMenuBtn {
+    -ms-opacity: 0.6;
+    opacity:0.6;
+}
+
+#userMenuBtn:hover {
+    -ms-opacity: 1;
+    opacity:1;
+}
+
+.messageBox {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+
+.messageBoxTitle {
+    -webkit-user-select: none;
+    color: rgb(236, 80, 38);
+    display: block;
+    font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 27px;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.messageBoxText {
+    -webkit-user-select: none;
+    color: rgb(102, 102, 102);
+    display: block;
+    font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 15px;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.messageBoxAction {
+    -webkit-user-select: none;
+    color: rgb(204, 204, 204);
+    display: block;
+    height: 52px;
+    padding-top: 15px;
+    width: 287px;
+    word-wrap: break-word;
+    margin: auto;
+}
+
+.messageBoxAction a {
+    -webkit-user-select: none;
+    background-color: rgb(2, 161, 193);
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    height: 44px;
+    line-height: 44px;
+    margin-top: 8px;
+    min-width: 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 287px;
+    word-wrap: break-word;
+}

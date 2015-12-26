@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsunpinyin3
+/usr/share/doc/libsunpinyin3/changelog.Debian.gz
+/usr/share/doc/libsunpinyin3/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libsunpinyin.so.3.0
+/usr/lib/arm-linux-gnueabihf/libsunpinyin.so.3

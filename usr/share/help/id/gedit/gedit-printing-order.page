@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Membuat Salinan Dicetak Dalam Urutan Yang Benar</title>
+
+  <section id="printing-reverse">
+    <title>Balikkan</title>
+
+    <p>Pencetak biasanya mencetak halaman pertama di awal, dan halaman terakhir di akhir, sehingga halaman-halaman tersusun terbalik ketika Anda memungutnya. Untuk membalik urutan:</p>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">Berkas</gui> <gui style="menuitem">Cetak</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Dalam tab <gui style="tab">Umum</gui> dari dialog Cetak di bawah <gui style="group">Salinan</gui> contreng <gui style="checkbox">Balik</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Halaman terakhir akan dicetak pertama, dan seterusnya.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Kolasi</title>
+    
+    <p>Bila Anda mencetak lebih dari satu salinan dokumen, secara baku cetakan akan dikelompokkan menurut nomor halamannya. (yaitu, cetakan dari halaman pertama keluar, lalu cetakan halaman kedua, dst). Kolasi akan membuat setiap salinan keluar dengan halaman-halamannya dikelompokkan bersama.</p>
+
+    <p>Melakukan Kolasi:</p>
+    <steps>
+      <item>
+        <p>Klik <guiseq><gui style="menu">Berkas</gui> <gui style="menuitem">Cetak</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Dalam tab <gui style="tab">Umum</gui> dari dialog Cetak di bawah <gui style="group">Salinan</gui> contreng <gui style="checkbox">Kolasi</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

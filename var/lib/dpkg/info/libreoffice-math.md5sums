@@ -1,0 +1,15 @@
+71c0d623fb28754c8c953d4381047fa7  usr/bin/lomath
+762507ed3b681b4366b559d22e1c48cd  usr/lib/libreoffice/program/libsmdlo.so
+9440c4b6929381d0e9827da3d8256223  usr/lib/libreoffice/program/libsmlo.so
+605730cb51aee94339b73cae22631f0c  usr/lib/libreoffice/program/smath
+8f16c305c401da29ccb57513ff104667  usr/lib/libreoffice/share/registry/math.xcd
+3ba201d2f5ad240424e844b9415d4bf8  usr/lib/libreoffice/share/xdg/math.desktop
+2169376a161d6505f5d24dd0be706841  usr/lib/mime/packages/libreoffice-math
+eb4a7f851c1b0924f69cb6ca2907ace1  usr/share/bug/libreoffice-math/control
+4583c119b7c148a61e54ddbbdc1917a9  usr/share/bug/libreoffice-math/presubj
+a3cf53c9e43e48197b24775a36fbc526  usr/share/doc/libreoffice-math/README.gz
+f5d4ce7cab9cd10633b968c54b02838a  usr/share/doc/libreoffice-math/changelog.Debian.gz
+4f5a64bd948f53e6afd60cc926b84fb8  usr/share/doc/libreoffice-math/copyright
+7cda970577e0236b3d56e61c65d13355  usr/share/lintian/overrides/libreoffice-math
+57fd0a6637b28abad9f5cc4b897b5ee3  usr/share/man/man1/lomath.1.gz
+9671e8221f655dd25581597a1b68322a  usr/share/menu/libreoffice-math

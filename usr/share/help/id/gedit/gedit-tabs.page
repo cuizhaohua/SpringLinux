@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="second"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Menambah dan menghapus tab</title>
+  <p>Bekerja dengan tab dalam <app>gedit</app> memungkinkan Anda mengamati beberapa berkas dalam suatu jendela tunggal. Tab yang lebih besar daripada tab lain mengindikasikan berkas yang sedang dibuka. Tab-tab yang lebih kecil menandakan berkas lain yang tersedia untuk dikerjakan.</p>
+
+  <section id="gedit-adding-tabs">
+    <title>Menambah tab</title>
+    <p>Untuk menambah suatu tab baru, buat suatu berkas baru dengan <keyseq><key>Ctrl</key> <key>T</key></keyseq>. Tab akan ditambahkan di sisi kanan sebarang tab lain.</p>
+  </section>
+
+  <section id="gedit-removing-tabs">
+    <title>Menghapus tab</title>
+    <p>Untuk menghapus suatu tab, klik <gui style="button">×</gui> pada sisi kanan tab. Untuk menghapus semua tab yang terbuka, tekan <keyseq><key>Ctrl</key> <key>Shift</key><key>W</key></keyseq>.</p>
+  </section>
+
+</page>

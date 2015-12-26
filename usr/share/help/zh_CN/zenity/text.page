@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--text-info</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>文本信息框</title>
+    <p>使用 <cmd>--text-info</cmd> 选项来创建一个文本信息框。</p>
+	
+    <p>文本信息框支持以下选项：</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>文件名</var></title>
+	<p>指定一个加载到文本信息框里的文件。</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>显示的文本允许编辑，当对话框关闭后，编辑后的文本显示到显示器上。</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>字体</var></title>
+	<p>指定文本字体。</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>文本</var></title>
+	<p>启用复选框，如“我已阅读并接受该条款。”</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>启用 html 支持。</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>网址</var></title>
+	<p>设置一个网址，而不是文件。只有当您使用 --html 选项时才有效。</p>
+      </item>
+
+    </terms>
+
+    <p>下面的脚本示范了如何创建一个文本信息对话框：</p>
+
+<code>
+#!/bin/sh
+
+# You must place file "COPYING" in same folder of this script.
+FILE=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="License" \
+       --filename=$FILE \
+       --checkbox="I read and accept the terms."
+
+case $? in
+    0)
+        echo "Start installation!"
+	# next step
+	;;
+    1)
+        echo "Stop installation!"
+	;;
+    -1)
+        echo "An unexpected error has occurred."
+	;;
+esac
+</code>
+
+    <figure id="zenity-text-screenshot">
+      <title>文本信息框范例</title>
+      <desc><app>Zenity</app> 文本信息对话框范例</desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

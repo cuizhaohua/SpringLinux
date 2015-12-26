@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Преглед и отваряне на файлове от страничният панел</title>
+  <p>Най-използваният начин за превключване между файлове в <app>gedit</app> е чрез раздели в горната част на прозореца на <app>gedit</app>. В някои случаи, особено когато работите с много файлове, може да ви е по-удобно да използвате <app>Страничния панел</app>.</p> 
+
+  <p>
+    To activate the <app>side pane</app>, select <guiseq><gui>View</gui>
+    <gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key.
+  </p>
+
+  <note style="note">
+    <p>Можете да отворите или затворите <app>страничния панел</app> по всяко време като натиснете клавиша <key>F9</key>.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Отваряне на файлове от страничния панел</title>
+    <p>
+      To open files from the <app>side pane</app>, first open the
+      <app>side pane</app> by selecting <guiseq><gui>View</gui>
+      <gui>Side Pane</gui></guiseq>, then click on the <gui>file-browser</gui>
+      icon at the bottom of the pane.
+    </p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Това ще активира режима <em>файлов браузър</em> в <app>страничния панел</app>. После можете да използвате бутоните за навигация в горната част на панела, за да намерите и отворите вашите файлове.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Използване на страничния панел за превключване между отворени файлове</title>
+    <p>Щом имате отворени няколко файла, можете да използвате страничния панел за превключване между тях. За да активирате прегледа на документи в <app>страничния панел</app>, натиснете иконата <gui>файл</gui> в долната част на <app>страничния панел</app>.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Щракването върху файл в <app>страничния панел</app> ще го отвори за редактиране.</p>
+  </section>
+ 
+ </page>

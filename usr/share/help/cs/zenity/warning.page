@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="warning" xml:lang="cs">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Použití přepínače <cmd>--warning</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s varovným hlášením</title>
+      <p>K vytvoření dialogového okna s varovným hlášením použijte přepínač <cmd>--warning</cmd>.</p>
+
+      <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s varovným hlášením:</p>
+
+<code>
+#!/bin/bash
+
+zenity --warning \
+--text="Odpojte kabel napájení, abyste předešli poškození."
+</code>
+
+
+      <figure id="zenity-warning-screenshot">
+        <title>Příklad dialogového okna s varovným hlášením</title>
+	<desc>Ukázka dialogového okna <app>Zenity</app> s varovným hlášením</desc>
+        <media type="image" mime="image/png" src="figures/zenity-warning-screenshot.png"/>
+      </figure>
+</page>

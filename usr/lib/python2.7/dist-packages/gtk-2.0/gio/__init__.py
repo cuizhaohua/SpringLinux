@@ -1,0 +1,1 @@
+../../../../../share/pyshared/gtk-2.0/gio/__init__.py

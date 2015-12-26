@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/gstreamer-1.0
+/usr/lib/arm-linux-gnueabihf/gstreamer-1.0/libgstclutter.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/gstreamer1.0-clutter
+/usr/share/doc/gstreamer1.0-clutter/NEWS.gz
+/usr/share/doc/gstreamer1.0-clutter/AUTHORS
+/usr/share/doc/gstreamer1.0-clutter/changelog.Debian.gz
+/usr/share/doc/gstreamer1.0-clutter/copyright
+/usr/share/doc/gstreamer1.0-clutter/README

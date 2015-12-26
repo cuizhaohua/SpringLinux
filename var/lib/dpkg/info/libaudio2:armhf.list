@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libaudio2
+/usr/share/doc/libaudio2/TODO
+/usr/share/doc/libaudio2/copyright
+/usr/share/doc/libaudio2/README.gz
+/usr/share/doc/libaudio2/changelog.gz
+/usr/share/doc/libaudio2/changelog.Debian.gz
+/usr/share/doc/libaudio2/FAQ
+/usr/share/libaudio2
+/usr/share/libaudio2/AuErrorDB
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libaudio.so.2.4
+/usr/lib/arm-linux-gnueabihf/libaudio.so.2

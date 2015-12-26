@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Totem Reference Manual" link="index.html" author="" name="totem" version="2" language="c">
+  <chapters>
+    <sub name="Tutorials" link="tutorials.html">
+      <sub name="Writing Totem Plugins" link="totem-plugins.html"/>
+    </sub>
+    <sub name="Core API" link="core-api.html">
+      <sub name="TotemObject" link="TotemObject.html"/>
+      <sub name="Interface" link="totem-Interface.html"/>
+      <sub name="TotemPlugin" link="totem-TotemPlugin.html"/>
+      <sub name="BaconVideoWidget" link="BaconVideoWidget.html"/>
+    </sub>
+    <sub name="Index of all symbols" link="api-index-full.html"/>
+    <sub name="Index of new symbols in 2.90.0" link="ix02.html"/>
+    <sub name="Index of new symbols in 2.90.6" link="ix03.html"/>
+    <sub name="Index of new symbols in 3.0" link="ix04.html"/>
+    <sub name="Index of new symbols in 3.1.5" link="ix05.html"/>
+    <sub name="Index of deprecated symbols" link="api-index-deprecated.html"/>
+    <sub name="Annotation glossary" link="annotation-glossary.html">
+      <sub name="Annotation Glossary" link="annotation-glossary.html#annotation-glossary"/>
+    </sub>
+  </chapters>
+  <functions>
+    <keyword type="" name="Locations" link="totem-plugins.html#id-1.2.2.3.3"/>
+    <keyword type="" name="The .plugin File" link="totem-plugins.html#id-1.2.2.3.4"/>
+    <keyword type="" name="Writing a Plugin" link="totem-plugins.html#id-1.2.2.3.5"/>
+    <keyword type="function" name="totem_object_show_error ()" link="TotemObject.html#totem-object-show-error"/>
+    <keyword type="function" name="totem_object_exit ()" link="TotemObject.html#totem-object-exit"/>
+    <keyword type="function" name="totem_object_play ()" link="TotemObject.html#totem-object-play"/>
+    <keyword type="function" name="totem_object_play_pause ()" link="TotemObject.html#totem-object-play-pause"/>
+    <keyword type="function" name="totem_object_stop ()" link="TotemObject.html#totem-object-stop"/>
+    <keyword type="function" name="totem_object_seek_next ()" link="TotemObject.html#totem-object-seek-next"/>
+    <keyword type="function" name="totem_object_seek_previous ()" link="TotemObject.html#totem-object-seek-previous"/>
+    <keyword type="function" name="totem_object_remote_get_setting ()" link="TotemObject.html#totem-object-remote-get-setting"/>
+    <keyword type="function" name="totem_object_remote_set_setting ()" link="TotemObject.html#totem-object-remote-set-setting"/>
+    <keyword type="function" name="totem_object_seek_time ()" link="TotemObject.html#totem-object-seek-time"/>
+    <keyword type="function" name="totem_object_seek_relative ()" link="TotemObject.html#totem-object-seek-relative"/>
+    <keyword type="function" name="totem_object_set_volume ()" link="TotemObject.html#totem-object-set-volume"/>
+    <keyword type="function" name="totem_object_remote_command ()" link="TotemObject.html#totem-object-remote-command"/>
+    <keyword type="function" name="totem_object_is_playing ()" link="TotemObject.html#totem-object-is-playing"/>
+    <keyword type="function" name="totem_object_is_paused ()" link="TotemObject.html#totem-object-is-paused"/>
+    <keyword type="function" name="totem_object_is_seekable ()" link="TotemObject.html#totem-object-is-seekable"/>
+    <keyword type="function" name="totem_object_get_main_window ()" link="TotemObject.html#totem-object-get-main-window"/>
+    <keyword type="function" name="totem_object_get_current_mrl ()" link="TotemObject.html#totem-object-get-current-mrl"/>
+    <keyword type="function" name="totem_object_get_video_widget ()" link="TotemObject.html#totem-object-get-video-widget"/>
+    <keyword type="function" name="totem_object_set_current_subtitle ()" link="TotemObject.html#totem-object-set-current-subtitle"/>
+    <keyword type="function" name="totem_object_get_playlist_length ()" link="TotemObject.html#totem-object-get-playlist-length"/>
+    <keyword type="function" name="totem_object_get_playlist_pos ()" link="TotemObject.html#totem-object-get-playlist-pos"/>
+    <keyword type="function" name="totem_object_get_title_at_playlist_pos ()" link="TotemObject.html#totem-object-get-title-at-playlist-pos"/>
+    <keyword type="function" name="totem_object_get_volume ()" link="TotemObject.html#totem-object-get-volume"/>
+    <keyword type="function" name="totem_object_add_sidebar_page ()" link="TotemObject.html#totem-object-add-sidebar-page"/>
+    <keyword type="function" name="totem_object_remove_sidebar_page ()" link="TotemObject.html#totem-object-remove-sidebar-page"/>
+    <keyword type="function" name="totem_object_get_supported_content_types ()" link="TotemObject.html#totem-object-get-supported-content-types" since="3.1.5"/>
+    <keyword type="function" name="totem_object_get_supported_uri_schemes ()" link="TotemObject.html#totem-object-get-supported-uri-schemes" since="3.1.5"/>
+    <keyword type="typedef" name="Totem" link="TotemObject.html#Totem"/>
+    <keyword type="struct" name="TotemObject" link="TotemObject.html#TotemObject-struct"/>
+    <keyword type="enum" name="enum TotemRemoteCommand" link="TotemObject.html#TotemRemoteCommand"/>
+    <keyword type="enum" name="enum TotemRemoteSetting" link="TotemObject.html#TotemRemoteSetting"/>
+    <keyword type="macro" name="TOTEM_GSETTINGS_SCHEMA" link="TotemObject.html#TOTEM-GSETTINGS-SCHEMA:CAPS"/>
+    <keyword type="property" name="The “current-content-type” property" link="TotemObject.html#TotemObject--current-content-type"/>
+    <keyword type="property" name="The “current-display-name” property" link="TotemObject.html#TotemObject--current-display-name"/>
+    <keyword type="property" name="The “current-mrl” property" link="TotemObject.html#TotemObject--current-mrl"/>
+    <keyword type="property" name="The “current-time” property" link="TotemObject.html#TotemObject--current-time"/>
+    <keyword type="property" name="The “fullscreen” property" link="TotemObject.html#TotemObject--fullscreen"/>
+    <keyword type="property" name="The “playing” property" link="TotemObject.html#TotemObject--playing"/>
+    <keyword type="property" name="The “seekable” property" link="TotemObject.html#TotemObject--seekable"/>
+    <keyword type="property" name="The “stream-length” property" link="TotemObject.html#TotemObject--stream-length"/>
+    <keyword type="signal" name="The “file-closed” signal" link="TotemObject.html#TotemObject-file-closed"/>
+    <keyword type="signal" name="The “file-has-played” signal" link="TotemObject.html#TotemObject-file-has-played"/>
+    <keyword type="signal" name="The “file-opened” signal" link="TotemObject.html#TotemObject-file-opened"/>
+    <keyword type="signal" name="The “get-text-subtitle” signal" link="TotemObject.html#TotemObject-get-text-subtitle"/>
+    <keyword type="signal" name="The “get-user-agent” signal" link="TotemObject.html#TotemObject-get-user-agent"/>
+    <keyword type="signal" name="The “metadata-updated” signal" link="TotemObject.html#TotemObject-metadata-updated"/>
+    <keyword type="function" name="totem_interface_error ()" link="totem-Interface.html#totem-interface-error"/>
+    <keyword type="function" name="totem_interface_error_blocking ()" link="totem-Interface.html#totem-interface-error-blocking"/>
+    <keyword type="function" name="totem_interface_error_with_link ()" link="totem-Interface.html#totem-interface-error-with-link"/>
+    <keyword type="macro" name="TOTEM_PLUGIN_REGISTER()" link="totem-TotemPlugin.html#TOTEM-PLUGIN-REGISTER:CAPS"/>
+    <keyword type="macro" name="TOTEM_PLUGIN_REGISTER_CONFIGURABLE()" link="totem-TotemPlugin.html#TOTEM-PLUGIN-REGISTER-CONFIGURABLE:CAPS"/>
+    <keyword type="function" name="totem_plugin_find_file ()" link="totem-TotemPlugin.html#totem-plugin-find-file"/>
+    <keyword type="function" name="totem_plugin_load_interface ()" link="totem-TotemPlugin.html#totem-plugin-load-interface"/>
+    <keyword type="function" name="totem_get_plugin_paths ()" link="totem-TotemPlugin.html#totem-get-plugin-paths" since="2.90.0"/>
+    <keyword type="function" name="bacon_video_widget_new ()" link="BaconVideoWidget.html#bacon-video-widget-new"/>
+    <keyword type="function" name="bacon_video_widget_open ()" link="BaconVideoWidget.html#bacon-video-widget-open"/>
+    <keyword type="function" name="bacon_video_widget_play ()" link="BaconVideoWidget.html#bacon-video-widget-play"/>
+    <keyword type="function" name="bacon_video_widget_pause ()" link="BaconVideoWidget.html#bacon-video-widget-pause"/>
+    <keyword type="function" name="bacon_video_widget_seek ()" link="BaconVideoWidget.html#bacon-video-widget-seek"/>
+    <keyword type="function" name="bacon_video_widget_seek_time ()" link="BaconVideoWidget.html#bacon-video-widget-seek-time"/>
+    <keyword type="function" name="bacon_video_widget_stop ()" link="BaconVideoWidget.html#bacon-video-widget-stop"/>
+    <keyword type="function" name="bacon_video_widget_close ()" link="BaconVideoWidget.html#bacon-video-widget-close"/>
+    <keyword type="function" name="bacon_video_widget_can_direct_seek ()" link="BaconVideoWidget.html#bacon-video-widget-can-direct-seek"/>
+    <keyword type="function" name="bacon_video_widget_can_get_frames ()" link="BaconVideoWidget.html#bacon-video-widget-can-get-frames"/>
+    <keyword type="function" name="bacon_video_widget_can_set_volume ()" link="BaconVideoWidget.html#bacon-video-widget-can-set-volume"/>
+    <keyword type="function" name="bacon_video_widget_dvd_event ()" link="BaconVideoWidget.html#bacon-video-widget-dvd-event"/>
+    <keyword type="function" name="bacon_video_widget_has_menus ()" link="BaconVideoWidget.html#bacon-video-widget-has-menus"/>
+    <keyword type="function" name="bacon_video_widget_get_aspect_ratio ()" link="BaconVideoWidget.html#bacon-video-widget-get-aspect-ratio"/>
+    <keyword type="function" name="bacon_video_widget_set_aspect_ratio ()" link="BaconVideoWidget.html#bacon-video-widget-set-aspect-ratio"/>
+    <keyword type="function" name="bacon_video_widget_get_audio_output_type ()" link="BaconVideoWidget.html#bacon-video-widget-get-audio-output-type"/>
+    <keyword type="function" name="bacon_video_widget_set_audio_output_type ()" link="BaconVideoWidget.html#bacon-video-widget-set-audio-output-type"/>
+    <keyword type="function" name="bacon_video_widget_get_current_frame ()" link="BaconVideoWidget.html#bacon-video-widget-get-current-frame"/>
+    <keyword type="function" name="bacon_video_widget_get_current_time ()" link="BaconVideoWidget.html#bacon-video-widget-get-current-time"/>
+    <keyword type="function" name="bacon_video_widget_get_deinterlacing ()" link="BaconVideoWidget.html#bacon-video-widget-get-deinterlacing"/>
+    <keyword type="function" name="bacon_video_widget_set_deinterlacing ()" link="BaconVideoWidget.html#bacon-video-widget-set-deinterlacing"/>
+    <keyword type="function" name="bacon_video_widget_get_languages ()" link="BaconVideoWidget.html#bacon-video-widget-get-languages"/>
+    <keyword type="function" name="bacon_video_widget_get_language ()" link="BaconVideoWidget.html#bacon-video-widget-get-language"/>
+    <keyword type="function" name="bacon_video_widget_set_language ()" link="BaconVideoWidget.html#bacon-video-widget-set-language"/>
+    <keyword type="function" name="bacon_video_widget_set_logo ()" link="BaconVideoWidget.html#bacon-video-widget-set-logo"/>
+    <keyword type="function" name="bacon_video_widget_get_logo_mode ()" link="BaconVideoWidget.html#bacon-video-widget-get-logo-mode"/>
+    <keyword type="function" name="bacon_video_widget_set_logo_mode ()" link="BaconVideoWidget.html#bacon-video-widget-set-logo-mode"/>
+    <keyword type="function" name="bacon_video_widget_get_metadata ()" link="BaconVideoWidget.html#bacon-video-widget-get-metadata"/>
+    <keyword type="function" name="bacon_video_widget_get_option_group ()" link="BaconVideoWidget.html#bacon-video-widget-get-option-group"/>
+    <keyword type="function" name="bacon_video_widget_get_position ()" link="BaconVideoWidget.html#bacon-video-widget-get-position"/>
+    <keyword type="function" name="bacon_video_widget_set_referrer ()" link="BaconVideoWidget.html#bacon-video-widget-set-referrer"/>
+    <keyword type="function" name="bacon_video_widget_get_rotation ()" link="BaconVideoWidget.html#bacon-video-widget-get-rotation"/>
+    <keyword type="function" name="bacon_video_widget_set_rotation ()" link="BaconVideoWidget.html#bacon-video-widget-set-rotation"/>
+    <keyword type="function" name="bacon_video_widget_get_stream_length ()" link="BaconVideoWidget.html#bacon-video-widget-get-stream-length"/>
+    <keyword type="function" name="bacon_video_widget_get_subtitles ()" link="BaconVideoWidget.html#bacon-video-widget-get-subtitles"/>
+    <keyword type="function" name="bacon_video_widget_get_subtitle ()" link="BaconVideoWidget.html#bacon-video-widget-get-subtitle"/>
+    <keyword type="function" name="bacon_video_widget_set_subtitle ()" link="BaconVideoWidget.html#bacon-video-widget-set-subtitle"/>
+    <keyword type="function" name="bacon_video_widget_set_text_subtitle ()" link="BaconVideoWidget.html#bacon-video-widget-set-text-subtitle"/>
+    <keyword type="function" name="bacon_video_widget_set_subtitle_encoding ()" link="BaconVideoWidget.html#bacon-video-widget-set-subtitle-encoding"/>
+    <keyword type="function" name="bacon_video_widget_set_subtitle_font ()" link="BaconVideoWidget.html#bacon-video-widget-set-subtitle-font"/>
+    <keyword type="function" name="bacon_video_widget_set_user_agent ()" link="BaconVideoWidget.html#bacon-video-widget-set-user-agent"/>
+    <keyword type="function" name="bacon_video_widget_get_video_property ()" link="BaconVideoWidget.html#bacon-video-widget-get-video-property"/>
+    <keyword type="function" name="bacon_video_widget_set_video_property ()" link="BaconVideoWidget.html#bacon-video-widget-set-video-property"/>
+    <keyword type="function" name="bacon_video_widget_get_volume ()" link="BaconVideoWidget.html#bacon-video-widget-get-volume"/>
+    <keyword type="function" name="bacon_video_widget_set_volume ()" link="BaconVideoWidget.html#bacon-video-widget-set-volume"/>
+    <keyword type="function" name="bacon_video_widget_get_zoom ()" link="BaconVideoWidget.html#bacon-video-widget-get-zoom"/>
+    <keyword type="function" name="bacon_video_widget_set_zoom ()" link="BaconVideoWidget.html#bacon-video-widget-set-zoom"/>
+    <keyword type="function" name="bacon_video_widget_has_angles ()" link="BaconVideoWidget.html#bacon-video-widget-has-angles"/>
+    <keyword type="function" name="bacon_video_widget_set_next_angle ()" link="BaconVideoWidget.html#bacon-video-widget-set-next-angle"/>
+    <keyword type="function" name="bacon_video_widget_has_next_track ()" link="BaconVideoWidget.html#bacon-video-widget-has-next-track"/>
+    <keyword type="function" name="bacon_video_widget_has_previous_track ()" link="BaconVideoWidget.html#bacon-video-widget-has-previous-track"/>
+    <keyword type="function" name="bacon_video_widget_is_playing ()" link="BaconVideoWidget.html#bacon-video-widget-is-playing"/>
+    <keyword type="function" name="bacon_video_widget_is_seekable ()" link="BaconVideoWidget.html#bacon-video-widget-is-seekable"/>
+    <keyword type="function" name="bacon_video_widget_get_rate ()" link="BaconVideoWidget.html#bacon-video-widget-get-rate"/>
+    <keyword type="function" name="bacon_video_widget_set_rate ()" link="BaconVideoWidget.html#bacon-video-widget-set-rate"/>
+    <keyword type="function" name="bacon_video_widget_step ()" link="BaconVideoWidget.html#bacon-video-widget-step"/>
+    <keyword type="struct" name="BaconVideoWidget" link="BaconVideoWidget.html#BaconVideoWidget-struct"/>
+    <keyword type="struct" name="BaconVideoWidgetClass" link="BaconVideoWidget.html#BaconVideoWidgetClass"/>
+    <keyword type="enum" name="enum BvwAspectRatio" link="BaconVideoWidget.html#BvwAspectRatio"/>
+    <keyword type="enum" name="enum BvwAudioOutputType" link="BaconVideoWidget.html#BvwAudioOutputType"/>
+    <keyword type="enum" name="enum BvwDVDEvent" link="BaconVideoWidget.html#BvwDVDEvent"/>
+    <keyword type="enum" name="enum BvwMetadataType" link="BaconVideoWidget.html#BvwMetadataType"/>
+    <keyword type="enum" name="enum BvwRotation" link="BaconVideoWidget.html#BvwRotation"/>
+    <keyword type="enum" name="enum BvwVideoProperty" link="BaconVideoWidget.html#BvwVideoProperty"/>
+    <keyword type="enum" name="enum BvwZoomMode" link="BaconVideoWidget.html#BvwZoomMode"/>
+    <keyword type="enum" name="enum BvwError" link="BaconVideoWidget.html#BvwError"/>
+    <keyword type="property" name="The “audio-output-type” property" link="BaconVideoWidget.html#BaconVideoWidget--audio-output-type"/>
+    <keyword type="property" name="The “av-offset” property" link="BaconVideoWidget.html#BaconVideoWidget--av-offset"/>
+    <keyword type="property" name="The “brightness” property" link="BaconVideoWidget.html#BaconVideoWidget--brightness"/>
+    <keyword type="property" name="The “contrast” property" link="BaconVideoWidget.html#BaconVideoWidget--contrast"/>
+    <keyword type="property" name="The “deinterlacing” property" link="BaconVideoWidget.html#BaconVideoWidget--deinterlacing"/>
+    <keyword type="property" name="The “download-filename” property" link="BaconVideoWidget.html#BaconVideoWidget--download-filename"/>
+    <keyword type="property" name="The “hue” property" link="BaconVideoWidget.html#BaconVideoWidget--hue"/>
+    <keyword type="property" name="The “logo-mode” property" link="BaconVideoWidget.html#BaconVideoWidget--logo-mode"/>
+    <keyword type="property" name="The “playing” property" link="BaconVideoWidget.html#BaconVideoWidget--playing"/>
+    <keyword type="property" name="The “position” property" link="BaconVideoWidget.html#BaconVideoWidget--position"/>
+    <keyword type="property" name="The “referrer” property" link="BaconVideoWidget.html#BaconVideoWidget--referrer"/>
+    <keyword type="property" name="The “reveal-controls” property" link="BaconVideoWidget.html#BaconVideoWidget--reveal-controls"/>
+    <keyword type="property" name="The “saturation” property" link="BaconVideoWidget.html#BaconVideoWidget--saturation"/>
+    <keyword type="property" name="The “seekable” property" link="BaconVideoWidget.html#BaconVideoWidget--seekable"/>
+    <keyword type="property" name="The “stream-length” property" link="BaconVideoWidget.html#BaconVideoWidget--stream-length"/>
+    <keyword type="property" name="The “user-agent” property" link="BaconVideoWidget.html#BaconVideoWidget--user-agent"/>
+    <keyword type="property" name="The “volume” property" link="BaconVideoWidget.html#BaconVideoWidget--volume"/>
+    <keyword type="signal" name="The “buffering” signal" link="BaconVideoWidget.html#BaconVideoWidget-buffering"/>
+    <keyword type="signal" name="The “channels-change” signal" link="BaconVideoWidget.html#BaconVideoWidget-channels-change"/>
+    <keyword type="signal" name="The “download-buffering” signal" link="BaconVideoWidget.html#BaconVideoWidget-download-buffering"/>
+    <keyword type="signal" name="The “eos” signal" link="BaconVideoWidget.html#BaconVideoWidget-eos"/>
+    <keyword type="signal" name="The “error” signal" link="BaconVideoWidget.html#BaconVideoWidget-error"/>
+    <keyword type="signal" name="The “got-metadata” signal" link="BaconVideoWidget.html#BaconVideoWidget-got-metadata"/>
+    <keyword type="signal" name="The “got-redirect” signal" link="BaconVideoWidget.html#BaconVideoWidget-got-redirect"/>
+    <keyword type="signal" name="The “missing-plugins” signal" link="BaconVideoWidget.html#BaconVideoWidget-missing-plugins"/>
+    <keyword type="signal" name="The “seek-requested” signal" link="BaconVideoWidget.html#BaconVideoWidget-seek-requested"/>
+    <keyword type="signal" name="The “tick” signal" link="BaconVideoWidget.html#BaconVideoWidget-tick"/>
+    <keyword type="signal" name="The “volume-change-requested” signal" link="BaconVideoWidget.html#BaconVideoWidget-volume-change-requested"/>
+  </functions>
+</book>

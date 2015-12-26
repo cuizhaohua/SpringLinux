@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Οργάνωση αρχείων σε ομαδοποιημένες καρτέλες</title>
+
+  <p>Αν δουλεύετε με πολλαπλές καρτέλες στο <app>gedit</app>, μπορείτε να τις ομαδοποιήσετε, διευκολύνοντας τη διατήρηση των ανοικτών αρχείων σας οργανωμένων. Η προσθήκη μιας νέας ομάδας καρτών θα διαιρέσει το παράθυρο <app>gedit</app> σε δύο στήλες, ανοίξτε ένα νέο "άτιτλο έγγραφο" στη νέα στήλη και κάντε την ενεργή. Μπορείτε να ανοίξετε αρχεία σε αυτήν την ομάδα καρτελών και να μετακινήσετε καρτέλες από μια ομάδα καρτελών σε άλλη.</p>
+
+<section id="open-new-tab-group">
+  <title>Ανοίξτε μια νέα ομάδα καρτελών στο παράθυρο gedit</title>
+
+  <p>Για να ανοίξετε μια νέα ομάδα καρτελών μπορείτε:</p>
+
+  <list>
+    <item>
+      <p>Πηγαίνετε στο <guiseq><gui>Έγγραφα</gui><gui>Νέα ομάδα καρτελών</gui></guiseq> στο κυρίως μενού.</p>
+    </item>
+    <item>
+      <p>Χρησιμοποιήστε τη συντόμευση <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Αυτή η ενέργεια θα διαιρέσει το παράθυρο <app>gedit</app> σε δύο στήλες και η στήλη με τη νέα ομάδα καρτελών θα τοποθετηθεί στα δεξιά της ενεργής καρτέλας. Μπορείτε να μετακινήσετε τη λαβή δεξιά ή αριστερά αναθέτοντας περισσότερο ή λιγότερο χώρο του παραθύρου <app>gedit</app> μεταξύ στηλών σύμφωνα με τις ανάγκες σας.</p>
+
+  <p>Μπορείτε να ανοίξετε όσες ομάδες καρτελών στο παράθυρο του <app>gedit</app> όσες επιτρέπει η οθόνη σας, αλλά θα πρέπει να μετακινήσετε τη λαβή για να τις δείτε σωστά.</p>
+
+  <p>Για να κλείσετε μια στήλη ομάδας καρτελών, κλείστε απλά όλες τις καρτέλες που ανοίξατε μέσα της.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Μετακινηθείτε μέσα από τις ομάδες καρτελών</title>
+
+  <p>Για να μετακινηθείτε μπροστά (στην επόμενη) ομάδα καρτελών:</p>
+
+  <list>
+    <item>
+      <p>Πηγαίνετε στο <guiseq><gui>Έγγραφα</gui><gui>Επόμενη ομάδα καρτελών</gui></guiseq> στο κυρίως μενού.</p>
+    </item>
+    <item>
+      <p>Χρησιμοποιήστε τη συντόμευση <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Για να μετακινηθείτε πίσω (στην προηγούμενη) ομάδα καρτελών:</p>
+
+  <list>
+    <item>
+      <p>Πηγαίνετε στο <guiseq><gui>Έγγραφα</gui><gui>Προηγούμενη ομάδα καρτελών</gui></guiseq> στο κυρίως μενού.</p>
+    </item>
+    <item>
+      <p>Χρησιμοποιήστε τη συντόμευση <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Μετακίνηση καρτέλας σε άλλη ομάδα καρτελών</title>
+
+  <p>Αν θέλετε να μετακινήσετε μια καρτέλα από μια ομάδα καρτελών σε μια άλλη:</p>
+
+  <steps>
+    <item>
+      <p>Πατήστε και κρατήστε το κουμπί του ποντικιού στην καρτέλα.</p>
+    </item>
+    <item>
+      <p>Μεταφορά της καρτέλας σε μια άλλη στήλη ομάδας καρτελών.</p>
+    </item>
+    <item>
+      <p>Τοποθετήστε την δίπλα στις άλλες καρτέλες στο νέα ομάδα καρτελών.</p>
+    </item>
+    <item>
+      <p>Απελευθερώστε το κουμπί του ποντικιού.</p>
+    </item>
+  </steps>
+
+  <p>Δείτε τον πίνακα <link xref="gedit-shortcut-keys">καρτέλα-σχετικά πλήκτρα συντομεύσεων</link> για διευκόλυνση της διαχείρισης των ομάδων καρτελών σας.</p>
+
+</section>
+
+</page>

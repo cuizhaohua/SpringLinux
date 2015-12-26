@@ -1,0 +1,1078 @@
+#!/bin/sh
+#
+# ramlog	daemon script that moves moves /var/log into ramdisk
+#		(c) 2001,2010 Jan Andrejkovic, Licence GNU 3 or any newer GNU licence
+#
+# chkconfig: 2345 02 99
+#
+# description:	ramlog daemon moves /var/log to ramdisk on startup and copies it\
+#		back to harddrive on shutdown or restart\
+#		\
+#		Visit ramlog homepage http://www.tremende.com/ramlog
+
+### BEGIN INIT INFO
+# Provides: ramlog
+# Required-Start:
+# Should-Start: $local_fs
+# Required-Stop:
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: moves /var/log into ramdisk
+# Description: ramlog daemon moves /var/log to ramdisk on startup and copies it back to harddrive on shutdown or restart
+### END INIT INFO
+
+############################################################
+# Ramlog default variables - please change variables in 
+# /etc/sysconfig/ramlog on Fedora/CentOS systems and in
+# /etc/default/ramlog on Ubuntu/Debian systems
+
+RAMDISKTYPE=0
+TMPFS_RAMFS_SIZE=
+KERNEL_RAMDISK_SIZE=MAX
+LOGGING=1
+LOGNAME=ramlog
+VERBOSE=1
+CONFIGFILE=/etc/init.d/ramlog
+
+# Load source config to override above defaults
+if [ -f /etc/default/ramlog ] ; then
+	. /etc/default/ramlog
+	CONFIGFILE=/etc/default/ramlog
+fi
+
+if [ -f /etc/sysconfig/ramlog ] ; then
+	. /etc/sysconfig/ramlog
+	CONFIGFILE=/etc/sysconfig/ramlog
+fi
+
+############################################################
+# Ramlog internal variables
+
+VERSION='2.0.0'
+#REVISION=09
+LOG=/var/log
+LOGHDD=/var/log.hdd
+VAR=/var
+prog="ramlog"
+DAEMONDIR=/etc/init.d
+UNINSTALL_FLAG_FILE=/var/tmp/ramlog_uninstall_flag_file	#If exists, ramlog will be uninstalled during shutdown or startup
+DISABLE_FLAG_FILE=/var/tmp/ramlog_disable_flag_file	#If exists, ramlog will be disabled during shutdown or startup
+UPGRADE_FLAG_FILE=/var/tmp/ramlog_upgrade_flag_file	#Created during install 
+SHUTDOWN_FLAG_FILE=/var/tmp/ramlog_shutdown_flag_file	#It is created on start and deleted on stop attempt. If it exists on startup, it indicated unclean shutdown
+UPSTART_FLAG_FILE=/var/log/ramlog_upstart_flag_file	#It is created when ramlog start before filesystem is mounted read-write, but only of read-only mount was successful
+LOGFILE=$LOG/$LOGNAME
+#LOGFILE=/root/ramlog.log
+LOGDATEFORMAT="+%b %d %H:%M:%S"
+RMDSKDEVNAME=/dev/ram9		#Device used for kernel ramdisk - RAMDISKYPE 3, it has only effect if RAMDISKTYPE=2
+TMPFSDEVNAME=ramlog-tmpfs
+RAMFSDEVNAME=ramlog-ramfs
+UPSTARTDIR=/etc/init
+UPSTARTCONFINS=/etc/ramlog.conf.upstart
+UPSTARTCONF=/etc/init/ramlog.conf
+UPSTARTCONFDIS=/etc/init/ramlog.conf.disable
+HOLDLOGS_F=0			#Both of these are used to postpone writing to log file if /var/log is mounted read-only
+LOGSTORAGE=
+SESTATUS=/selinux/enforce
+
+############################################################
+# Preparation - system check, files check:
+
+# Avoid using root's TMPDIR
+unset TMPDIR
+# Don't use PATH - only for debugging
+#unset PATH
+
+#RAMDISKTYPE check:
+case "$RAMDISKTYPE" in
+	0) RAMDISKNAME=tmpfs;;
+	1) RAMDISKNAME=ramfs;;
+	2) RAMDISKNAME=ramdisk;;
+	*) RAMDISKNAME=;;
+esac
+
+
+if [ -d /var/lock/subsys ]; then RAMLOGLOCK=/var/lock/subsys/$prog
+elif [ -d /var/run ]; then RAMLOGLOCK=/var/run/$prog.lock
+else { echo "$prog err: your platform is not supported - lockpath not found" > /dev/stderr; exit 254; }
+fi
+
+tfdv() { #test file def var (type could be incorporated here in the future)
+	local ERR_F; ERR_F=0
+	[ "$1" = "--optional" ] && shift || ERR_F=1
+	local COMM; COMM=$1
+	[ -z "$2" ] && { echo "$prog err: tfdv $1 requires at least two arguments!"; exit 253; }
+	shift
+	local LIST; LIST="$@"
+
+	unalias $COMM 2>/dev/null
+	while [ -n "$1" ]; do
+		( [ -f "$1" ] && [ -x "$1" ] ) && { alias $COMM=$1; ERR_F=0; break; }
+		shift
+	done
+
+	[ $ERR_F -eq 1 ] && { echo "$prog err in tfdv: $COMM - Wrong path or file(s) $LIST not found!"; exit 252; }
+}
+
+tfdv cp /bin/cp
+tfdv dd /bin/dd
+tfdv mke2fs /sbin/mke2fs
+tfdv mkdir /bin/mkdir
+tfdv rm /bin/rm
+tfdv rmdir /bin/rmdir
+tfdv mount /bin/mount
+tfdv umount /bin/umount
+tfdv lsof /usr/sbin/lsof /usr/bin/lsof
+tfdv grep /bin/grep
+tfdv wc /usr/bin/wc
+tfdv du /usr/bin/du
+tfdv tail /usr/bin/tail
+tfdv awk /bin/awk /usr/bin/awk
+tfdv touch /bin/touch
+tfdv whoami /usr/bin/whoami
+tfdv rsync /usr/bin/rsync
+tfdv sleep /bin/sleep
+[ "$LOGGING" = "1" ] && tfdv date /bin/date
+
+#Init script check:
+if [ -f /usr/sbin/update-rc.d ]; then			# Update script for /etc/init.d for Ubuntu:
+	tfdv update-rc.d /usr/sbin/update-rc.d
+	INITDUPDATE_TYPE=2
+elif [ -f /sbin/chkconfig ]; then			# Update script for /etc/init.d for Fedora/RH/CentOS
+	tfdv chkconfig /sbin/chkconfig
+	INITDUPDATE_TYPE=1
+else
+	INITDUPDATE_TYPE=0
+fi
+
+#SELINUX check:
+if [ -f /selinux/enforce ]; then
+	selinuxF=1;
+	alias cp='cp -c'
+	tfdv chcon /usr/bin/chcon
+	tfdv setsebool /usr/sbin/setsebool
+	tfdv getsebool /usr/sbin/getsebool
+	tfdv selinuxenabled /usr/sbin/selinuxenabled
+
+	#CentOS bash bug? - alias for selinuxenabled does not work, so using whole path:
+	/usr/sbin/selinuxenabled && grep 1 /selinux/enforce >/dev/null && sersyncF=`getsebool rsync_disable_trans 2>/dev/null | grep off | wc -l`
+else
+	selinuxF=0;
+	sersyncF=0;
+fi
+
+####################
+#Logging scripts:
+MLT_CH () { local L; L=0; alias RMLG_=$1=\${$1}$3; eval $1=""; while [ "$L" -lt "$2" ]; do eval RMLG_; L=$(($L+1)); done; unalias RMLG_; };
+
+# Echo tweak for Fedora and Ubuntu:
+[ "`echo -e`" = "-e" ] || alias echo='echo -e'
+# Universal echo -n definition:
+echon () { echo "$@\\c"; }
+
+if [ "$LOGGING" = "0" ]; then
+	alias ECHO=echo
+	ECHON () { echo "$@\\c"; } # Echo -n equivalent (works under dash, bash and sh
+else
+	_LOG_BUFF_=""
+	_TABS_F_=0
+
+	#LOG only alternatives:
+	ECHO_LOG () {
+		local TABS
+		[ -z "$_LOG_BUFF_" ] && _LOG_BUFF_="`date "$LOGDATEFORMAT"` "
+
+		TABS=; 
+		[ $_TABS_F_ -eq 1 ] && MLT_CH TABS $((9-${#_LOG_BUFF_}/8)) '\\t'  #prepend 9 tabs
+
+		if [ "$HOLDLOGS_F" = "0" ]; then
+			echo "$LOGSTORAGE$_LOG_BUFF_$TABS$@" >> $LOGFILE
+			LOGSTORAGE=
+		else
+			LOGSTORAGE="$LOGSTORAGE$_LOG_BUFF_$TABS$@\n"
+		fi
+		_LOG_BUFF_=""
+	}
+
+	ECHO_LOGT () {		#write echo to log with tabs
+		_TABS_F_=1
+		ECHO_LOG "$@"
+		_TABS_F_=0
+	}
+
+	ECHON_LOG () {
+		[ -z "$_LOG_BUFF_" ] && _LOG_BUFF_="`date "$LOGDATEFORMAT"` "
+		_LOG_BUFF_="$_LOG_BUFF_$@"
+	}
+
+	#Displays to screen and log:
+	ECHO () { echo "$@"; ECHO_LOG "$@"; } 
+	ECHON () { echo "$@\\c"; ECHON_LOG "$@"; }
+fi
+
+FLUSHLOGS () {
+	[ -n "$LOGSTORAGE$_LOG_BUFF_" ] && echon "$LOGSTORAGE$_LOG_BUFF_" >> $LOGFILE
+}
+
+if [ "$LOGGING" != "1" ]; then
+	# Test system startup script type:
+	if [ -f /etc/init.d/functions ]; then
+		# Fedora/CentOS style:	(Fedora has /lib/lsb/init-functions as well...)
+		. /etc/init.d/functions
+		alias START_DAEMON=daemon
+		alias LOG_BEG_MSG=ECHON
+		alias LOG_MID_MSG=ECHON
+		LOG_END_MSG () { daemon exit $1; echo; }
+		alias LOG_SUCCESS='success; echo;'
+		alias LOG_FAILURE='failure; echo;'
+		LOG_WARNING_MSG () { ECHON "$@"; warning; echo; }
+		#alias LOG_PASSED=passed
+		STARTUP_TYPE=1
+	elif [ -f /lib/lsb/init-functions ]; then
+		# Debian/Ubuntu style:
+		. /lib/lsb/init-functions
+		alias START_DAEMON=start_daemon
+		LOG_BEG_MSG () { PARS="$@"; TABN_=$((${#PARS}/8 + 1)); log_begin_msg "$@"; };
+		LOG_MID_MSG () { MLT_CH TABS $TABN_ '\\t'; [ "$TABN_" -ne "0"  ] && TABS="\r$TABS" ;ECHON "$TABS$@"; TABN_=0; }
+		alias LOG_END_MSG=log_end_msg
+		alias LOG_SUCCESS='log_end_msg 0;'
+		alias LOG_FAILURE='log_end_msg 1;'
+		alias LOG_WARNING_MSG=log_warning_msg
+		STARTUP_TYPE=2
+	else
+		# Uknown style:
+		#alias START_DAEMON=daemon    #- I do not need it for ramlog, otherwise it should be defined
+		alias LOG_BEG_MSG=ECHON
+		alias LOG_MID_MSG=ECHON
+		LOG_END_MSG () { [ "$1" = "0" ] && LOG_SUCCESS || LOG_FAILURE ; }
+		alias LOG_SUCCESS='echo "  [ OK ]";'
+		alias LOG_FAILURE='echo "  [failed]";'
+		LOG_WARNING_MSG () { echo "$@  [warning]"; }
+		#echo "$prog err: your platform is not supported" > /dev/stderr; exit 255
+		STARTUP_TYPE=0
+	fi
+else 
+	#Now the same but with logging:
+	# Test system startup script type:
+	if [ -f /etc/init.d/functions ]; then
+		# Fedora/CentOS style:	(Fedora has /lib/lsb/init-functions as well...)
+		. /etc/init.d/functions
+		alias START_DAEMON=daemon
+		alias LOG_BEG_MSG=ECHON
+		alias LOG_MID_MSG=ECHON
+		LOG_END_MSG () { if [ "$1" = "0" ]; then LOG_SUCCESS; else LOG_FAILURE; fi }
+		LOG_SUCCESS () { success; echo; ECHO_LOGT " [  OK  ]"; }
+		LOG_FAILURE () { failure; echo; ECHO_LOGT " [FAILED]"; }
+		LOG_WARNING_MSG () { ECHON "$@"; warning; echo; ECHO_LOGT " [WARNING]"; }
+		#alias LOG_PASSED=passed
+		STARTUP_TYPE=1
+	elif [ -f /lib/lsb/init-functions ]; then
+		# Debian/Ubuntu style:
+		. /lib/lsb/init-functions
+		alias START_DAEMON=start_daemon
+		LOG_BEG_MSG () { PARS="$@"; TABN_=$((${#PARS}/8 + 1)); log_begin_msg "$@"; ECHON_LOG "$@"; };
+		LOG_MID_MSG () { MLT_CH TABS $TABN_ '\\t'; \
+				 [ "$TABN_" -ne "0"  ] && TABS="\r$TABS"; echon "$TABS$@"; TABN_=0; ECHON_LOG "$@"; }
+		LOG_END_MSG () { if [ "$1" = "0" ]; then LOG_SUCCESS; else LOG_FAILURE; fi }
+		LOG_SUCCESS () { log_end_msg 0; ECHO_LOGT " [ OK ]"; }
+		LOG_FAILURE () { log_end_msg 1; ECHO_LOGT " [fail]"; }
+		LOG_WARNING_MSG () { log_warning_msg "$@"; ECHON "$@"; ECHO_LOGT " [warning]"; }
+		STARTUP_TYPE=2
+	else
+		# Uknown style:
+		#alias START_DAEMON=daemon    #- I do not need it for ramlog, otherwise it should be defined
+		alias LOG_BEG_MSG=ECHON
+		alias LOG_MID_MSG=ECHON
+		LOG_END_MSG () { [ "$1" = "0" ] && LOG_SUCCESS || LOG_FAILURE ; }
+		LOG_SUCCESS () { ECHO "  [ OK ]"; }
+		LOG_FAILURE () { ECHO "  [failed]"; }
+		LOG_WARNING_MSG () { ECHO "$@  [warning]"; }
+		#echo "$prog err: your platform is not supported" > /dev/stderr; exit 255
+		STARTUP_TYPE=0
+	fi
+
+fi
+
+####################
+#Mount file:
+MOUNTFILE=/proc/mounts
+[ -f $MOUNTFILE ] || MOUNTFILE=/etc/mtab
+
+#Aliases:
+#alias SYNC='cp -rfup'
+alias IS_INIT='[ -z "$HOME" ] || [ "$HOME" = "/" ]'
+_SYNC_='rsync -aXW --delete --links'
+_SYNC_NODEL_='rsync -aXWu --links'
+
+if [ $sersyncF -eq 0 ]; then
+	alias SYNC="$_SYNC_"
+	alias SYNC_NODEL="$_SYNC_NODEL_"
+else
+	#SELinux workaround for CentOS and older Fedoras:
+	SYNC () {
+		local RET
+		setsebool rsync_disable_trans=on
+		$_SYNC_ "$@"; RET=$?
+		setsebool rsync_disable_trans=off
+		return $RET
+	}
+
+	SYNC_NODEL () {
+		local RET
+		setsebool rsync_disable_trans=on
+		$_SYNC_NODEL_ "$@"; RET=$?
+		setsebool rsync_disable_trans=off
+		return $RET
+	}
+fi
+
+####################
+if [ "$1" = 'PLYMOUTH_HACK' ]; then
+	#Input: PLYMOUTH_HACK PID file1 file2 file3 ...
+	#tfdv sleep /bin/sleep
+	tfdv basename /bin/basename /usr/bin/basename
+
+	P_INTERVAL=4
+	P_RETVAL=0
+	P_MAX=300				#300*4=20 minutes
+	P_TIME=0
+
+	#sleep $P_INTERVAL
+
+	while [ $P_RETVAL -eq 0 ]; do
+		sleep $P_INTERVAL
+		P_TIME=$(($P_TIME+$P_INTERVAL))
+		if [ $P_TIME -gt $P_MAX ]; then
+			LOG_BEG_MSG "$prog: Plymouth didn't stop in 20 mins, exiting"; LOG_FAILURE;
+			exit 1
+		fi
+		kill -0 $2 2>/dev/null
+		P_RETVAL=$?
+	done
+
+	shift
+	while [ -n "$2" ]; do
+		shift
+		NAME=`basename $1`
+		cp -afu $LOGHDD/$NAME $LOG
+		LOG_BEG_MSG "$prog: Syncing $LOG/$NAME after plymouth stopped"; LOG_SUCCESS;
+	done
+	exit 0
+fi
+
+#####################
+#Ramlog sub-routinnes:
+
+alias UPD_RETVAL='RETVAL=$(($RETVAL+$?))'
+
+defstop_global_counter=1
+DEFSTOP () {
+	eval daemB$defstop_global_counter="$1"
+	eval pathB$defstop_global_counter="$2"
+	defstop_global_counter=$(($defstop_global_counter+1))
+}
+
+#filterout="grep -v "^\(plymouthd\|COMMAND\)"" - does not work in variable
+daemH="-e ^COMMAND"			#header daemon
+daemA1="-e ^plymouthd"			#daemon start 1
+DEFSTOP rsyslogd /etc/init.d/rsyslog
+DEFSTOP acpid /etc/init.d/acpid
+DEFSTOP syslogd /etc/init.d/sysklogd
+DEFSTOP cupsd /etc/init.d/cups
+DEFSTOP gdm-simpl /etc/init.d/gdm
+DEFSTOP Xorg SLEEP
+
+open_list_global=
+
+number_of_open_files2 () {
+	[ -z "$open_list_global" ] && open_list_global=`lsof 2>/dev/null +D /var/log`;
+	
+	case "$1" in
+	START)
+		local a PID_FILES_;
+		a=`echo "$open_list_global" | grep $daemA1`
+		PID_FILES_="`echo $a | awk '{print $2}'` `echo "$a" | awk '{print $9}'`"
+		eval $2='$PID_FILES_'
+		return `echon "$open_list_global" | grep -v $daemH $daemA1 | wc -l`
+		;;
+	STOP)
+		local i daem path daemB PID PIDS S_RET S_CNT
+
+		if IS_INIT; then		#Ramlog will auto-stop daemons only if started by init, not if started manually
+		i=0;
+		while [ 1 ]; do
+			i=$(($i+1))
+			eval daem='"$'"daemB$i"'"'
+			[ -z "$daem" ] && break
+			daemB="$daemB -e ^$daem"
+		done
+
+		if [ -n "`echon "$open_list_global" | grep -v $daemH`" ]; then
+			if [ -z "`echon "$open_list_global" | grep -v $daemH $daemB`" ]; then
+				i=0;
+				while [ 1 ]; do
+					i=$(($i+1))
+					eval daem='"$'"daemB$i"'"'
+					[ -z "$daem" ] && break
+					if [ -n "`echon "$open_list_global" | grep -e ^$daem`" ]; then
+						eval path='"$'"pathB$i"'"'
+						if [ "$path" != "SLEEP" ]; then
+							LOG_WARNING_MSG "$prog: Stopping $daem as it hasn't stopped..."
+							$path stop
+						else
+							PIDS=`echon "$open_list_global" | grep -e ^$daem | awk '{print $2}'`
+							S_CNT=0
+							S_RET=1
+
+							while [ $S_RET -eq 1 ]; do
+								S_RET=0
+								for PID in $PIDS; do
+									kill -0 $PID 2>/dev/null
+									if [ $? -eq 0 ]; then
+										LOG_WARNING_MSG "$prog: Waiting for $daem($PID) to stop...";
+										sleep 1;
+										S_RET=1;
+									fi
+									S_CNT=$(($S_CNT+1))
+								done
+								[ $S_CNT -gt 5 ] && break; #We wait for 5 secs max
+							done
+
+						fi
+					fi
+				done
+				open_list_global=`lsof 2>/dev/null +D /var/log`
+			fi
+		fi
+		fi #IS_INIT
+		;;
+	LIST)
+		eval $2='$open_list_global'
+		;;
+	NORM)
+		;;
+	*)
+	       LOG_BEG_MSG "$prog: Internal error in number_of_open_files2."; LOG_FAILURE;
+	       return 151
+	       ;;
+	esac
+	return `echon "$open_list_global" | grep -v $daemH | wc -l`
+}
+
+get_state () {
+	local mcount
+	mcount=`grep -e "^$RMDSKDEVNAME\|^$TMPFSDEVNAME\|^$RAMFSDEVNAME" $MOUNTFILE | wc -l`
+
+	if [ -f $RAMLOGLOCK ]; then
+		[ $mcount -eq 1 ] && return 1	#running properly
+		[ $mcount -eq 0 ] && return 10	#stopped but lockfile exists
+	else
+		[ $mcount -eq 0 ] && return 0	#stopped properly
+	nfo coreutils 'sync invocation'	[ $mcount -eq 1 ] && return 11	#running but lockfile deleted
+	fi
+
+	#internal error (more then one device appears to be mounted)
+	LOG_BEG_MSG "$prog: get_state error: Multiple devices running at the same time."; LOG_FAILURE;
+	exit 152
+}
+
+savelogs_core () {
+	local RETVAL=$RETVAL qF #verbose flag - 0=quiet, 1=custom message, 2=display all
+	qF=2
+	[ "$1" = "QUIET" ] && qF=0
+	[ "$1" = "CUSTOM_MSG" ] && qF=1
+
+	#init --version
+	if [ -d $UPSTARTDIR ]; then
+		touch $LOGHDD 2>/dev/null
+		if [ $? -ne 0 ]; then
+			[ $qF -ge 1 ] && HOLDLOGS_F=1
+			[ $qF -ge 1 ] && LOG_BEG_MSG "Remounting $LOGHDD to read-write: "
+			mount -o remount,rw $LOGHDD
+			UPD_RETVAL
+			[ $qF -ge 1 ] && HOLDLOGS_F=0
+			[ $qF -ge 1 ] && LOG_END_MSG $RETVAL
+		fi
+	fi
+
+	[ $qF -ge 2 ] && LOG_BEG_MSG "Restarting $prog = saving logs to hdd: "
+	[ $qF -eq 1 ] && LOG_BEG_MSG "$2"
+
+	if [ $RETVAL -eq 0 ]; then
+		SYNC $LOG/. $LOGHDD
+		UPD_RETVAL
+		touch $RAMLOGLOCK
+	fi
+
+	[ $qF -ge 1 ] && LOG_END_MSG $RETVAL
+
+	# Copy ramlog log file from to log.hdd to preserve result of this action:
+	[ "$LOGGING" = "1" ] && [ -f $LOGFILE ] && [ -d $LOGHDD ] && cp -afu $LOGFILE $LOGHDD
+
+	return $RETVAL	
+}
+
+disable_core () {
+	LOG_BEG_MSG "Disabling $prog..."
+	case "$INITDUPDATE_TYPE" in
+	2)
+		update-rc.d -f $prog remove >/dev/null
+		UPD_RETVAL
+		;;
+	1)
+		chkconfig $prog off
+		UPD_RETVAL
+		;;
+	*)
+		LOG_MID_MSG "Internal error in disable_core"; 
+		LOG_FAILURE;
+		return 150
+		;;
+	esac
+
+	[ -f $UPSTARTCONF ] && mv $UPSTARTCONF $UPSTARTCONFDIS
+	[ -f $DISABLE_FLAG_FILE ] && { rm -f $DISABLE_FLAG_FILE; UPD_RETVAL; }
+
+	rmdir $LOGHDD 2>/dev/null
+	if ([ $? -ne 0 ] && [ $RETVAL -eq 0 ]); then
+		SYNC_NODEL $LOGHDD/. $LOG	#save what's left in LOGHDD
+		UPD_RETVAL
+		rm -rf $LOGHDD			#and delete it
+		UPD_RETVAL
+	fi
+
+	#Display status:
+	LOG_END_MSG $RETVAL; 
+}
+
+uninstall_core () {
+	case "$INITDUPDATE_TYPE" in
+	2)
+		update-rc.d -f $prog remove >/dev/null
+		UPD_RETVAL
+		;;
+	1)
+		chkconfig $prog off
+		UPD_RETVAL
+		chkconfig --del $prog
+		UPD_RETVAL
+		;;
+	*)
+		LOG_BEG_MSG "$prog: Internal error in uninstall_core."; LOG_FAILURE;
+		return 150
+		;;
+	esac
+
+	[ -f $RAMLOGLOCK ] && { rm -f $RAMLOGLOCK; UPD_RETVAL; }
+	[ -f $UNINSTALL_FLAG_FILE ] && { rm -f $UNINSTALL_FLAG_FILE; UPD_RETVAL; }
+	[ -f $DISABLE_FLAG_FILE ] && { rm -f $DISABLE_FLAG_FILE; UPD_RETVAL; }
+	[ -f $UPGRADE_FLAG_FILE ] && { rm -f $UPGRADE_FLAG_FILE; UPD_RETVAL; }
+
+	if [ -d $LOGHDD ]; then
+		rmdir $LOGHDD 2>/dev/null
+		if ([ $? -ne 0 ] && [ $RETVAL -eq 0 ]); then
+			SYNC_NODEL $LOGHDD/. $LOG	#save what's left in LOGHDD
+			UPD_RETVAL
+			rm -rf $LOGHDD			#and delete it
+			UPD_RETVAL
+		fi
+	fi
+
+	#Delete itself:
+	[ -f $DAEMONDIR/$prog ] && { rm -f $DAEMONDIR/$prog; UPD_RETVAL; }
+	[ -f $DAEMONDIR/$prog.uninst ] && { rm -f $DAEMONDIR/$prog.uninst; UPD_RETVAL; }
+
+	#Display status:
+	[ $RETVAL -eq 0 ] && { LOG_BEG_MSG "$prog: program has been uninstalled successfully"; LOG_SUCCESS; }
+	[ $RETVAL -ne 0 ] && { LOG_BEG_MSG "$prog: program has not been uninstalled successfully"; LOG_FAILURE; }
+}
+
+stop_core () {		#saves logs and performs stop
+	local UF RETVAL=$RETVAL
+	UF=0
+	[ "$1" = "NO_UPDATE" ] && UF=1 #Update flag: 0=normal operation, 1=do not update logs and RETVAL, NO_UPDATE is used to tidy up in case of error and no logs are updated
+	if [ $UF -eq 0 ]; then
+		savelogs_core "CUSTOM_MSG" "Saving logs to hdd: "
+		UPD_RETVAL
+		LOG_BEG_MSG "Stopping $prog: "
+	fi
+	
+	[ "$LOGGING" = "1" ] && [ -f $LOGFILE ] && [ -d $LOGHDD ] && cp -afu $LOGFILE $LOGHDD
+
+	umount $LOG 2>/dev/null			#lazy umount -l
+	UPD_RETVAL
+
+	[ $RETVAL -eq 0 ] && rm -f $RAMLOGLOCK	#once /var/log is unmounted, ramlog is considered to be stopped
+
+	umount $LOGHDD 2>/dev/null
+	[ $RETVAL -eq 0 ] && UPD_RETVAL
+
+	#rmdir $LOGHDD 2>/dev/null
+	#if ([ $? -ne 0 ] && [ $RETVAL2 -eq 0 ]); then
+	#	SYNC_NODEL $LOGHDD/. $LOG	#save what's left in LOGHDD
+	#	rm -rf $LOGHDD			#and delete it
+	#fi
+
+	if [ $UF -eq 0 ]; then
+		LOG_END_MSG $RETVAL
+		return $RETVAL
+	fi
+	
+	return 0
+}
+
+start () {
+	# Uninstallation after host crashed and it is booting again:
+	if [ -f $UNINSTALL_FLAG_FILE ]; then
+		uninstall_core
+		return $RETVAL
+	fi
+
+	# Disable after host crashed and it is booting again:
+	if [ -f $DISABLE_FLAG_FILE ]; then
+		disable_core
+		return $RETVAL
+	fi
+
+	if [ -f $UPSTART_FLAG_FILE ]; then	#Upstart flag file is created only if r/o start was 100% error free
+		touch $RAMLOGLOCK
+		touch $SHUTDOWN_FLAG_FILE
+		rm -f $UPSTART_FLAG_FILE
+		return 0
+	fi
+
+	get_state; case $? in
+		1)
+			LOG_WARNING_MSG "Starting $prog: Warning: $prog is already started"
+			return 100
+			;;
+		11)
+			touch $RAMLOGLOCK
+			LOG_WARNING_MSG "Starting $prog: Warning: already started, lock restored"
+			return 101
+			;;
+	esac
+
+	IS_INIT && [ -f $SHUTDOWN_FLAG_FILE ] && LOG_WARNING_MSG "$prog: Previous shutdown/restart was unclean, some logs may be lost."
+
+	if [ ! -d $LOGHDD ]; then
+		_RO_FLAG=0
+		LOG_WARNING_MSG "$prog: Creation of $LOGHDD: "
+		if [ -f $UPSTARTCONF ]; then
+			touch $LOG
+			_RO_FLAG=$?
+			if [ $_RO_FLAG -ne 0 ]; then
+				_MOUNT_POINT_="`grep -v -E '^#' /etc/fstab | awk '{print $2}' | grep -E '^/var$'`"
+				[ -z $_MOUNT_POINT_ ] && _MOUNT_POINT_=/
+
+				LOG_BEG_MSG " Remounting $_MOUNT_POINT_ to read-write: "
+				mount -o remount,rw $_MOUNT_POINT_
+				UPD_RETVAL
+				LOG_END_MSG $RETVAL
+			fi			
+		fi
+
+		LOG_BEG_MSG " Creating $LOGHDD... "
+		mkdir $LOGHDD
+		LOG_END_MSG $?
+
+		if [ $_RO_FLAG -ne 0 ]; then
+			LOG_BEG_MSG " Remounting $_MOUNT_POINT_ to read-only: "
+			mount -o remount,ro $_MOUNT_POINT_
+			UPD_RETVAL
+			LOG_END_MSG $RETVAL
+		fi
+	elif [ "`echo $LOGHDD/.* $LOGHDD/*`" != "$LOGHDD/. $LOGHDD/.. $LOGHDD/*" ]; then
+		_RO_FLAG=0
+		LOG_WARNING_MSG "$prog: Migration from ramlog 1.x: "
+		if [ -f $UPSTARTCONF ]; then
+			touch $LOGHDD
+			_RO_FLAG=$?
+			if [ $_RO_FLAG -ne 0 ]; then
+				_MOUNT_POINT_="`grep -v -E '^#' /etc/fstab | awk '{print $2}' | grep -E '^/var$'`"
+				[ -z $_MOUNT_POINT_ ] && _MOUNT_POINT_=/
+
+				LOG_BEG_MSG " Remounting $_MOUNT_POINT_ to read-write: "
+				mount -o remount,rw $_MOUNT_POINT_
+				UPD_RETVAL
+				LOG_END_MSG $RETVAL
+			fi			
+		fi
+
+		LOG_BEG_MSG " Syncing files from $LOGHDD to $LOG... "
+		SYNC_NODEL $LOGHDD/. $LOG
+		LOG_END_MSG $?
+		rm -rf $LOGHDD/* $LOGHDD/.* 2>/dev/null
+
+		if [ $_RO_FLAG -ne 0 ]; then
+			LOG_BEG_MSG " Remounting $_MOUNT_POINT_ to read-only: "
+			mount -o remount,ro $_MOUNT_POINT_
+			UPD_RETVAL
+			LOG_END_MSG $RETVAL
+		fi
+	fi
+
+	if ([ "$RAMDISKTYPE" = "1" ] && [ "$selinuxF" = "1" ]); then
+		LOG_WARNING_MSG "$prog: ramfs won't work with SELINUX, using tmpfs instead"
+		RAMDISKTYPE=0
+		RAMDISKNAME=tmpfs
+	fi
+
+	#RAMDISKTYPE check:
+	if [ -z "$RAMDISKNAME" ]; then
+		LOG_BEG_MSG "Starting $ramlog: RAMDISKTYPE in $CONFIGFILE is incorrect!";
+		LOG_FAILURE
+		return 251;
+	fi
+
+	LOG_BEG_MSG "Starting $prog-$RAMDISKNAME $VERSION: "
+
+	if ! number_of_open_files2 "START" PLYMOUTH_PID_FILES; then
+		LOG_MID_MSG "Error: /var/log is in use..."
+		LOG_FAILURE
+		[ $VERBOSE -ge 1 ] && teststartstop
+		return 102
+	fi
+
+	[ $RETVAL -eq 0 ] && { mkdir -p $LOGHDD; UPD_RETVAL; }
+	[ $RETVAL -eq 0 ] && [ "$selinuxF" = "1" ] && { chcon --reference=$LOG $LOGHDD; UPD_RETVAL; }
+	[ $RETVAL -eq 0 ] && { mount --bind $LOG $LOGHDD; UPD_RETVAL; }
+
+	RDPAR1=				#size parameter for mount -o for tmpfs and ramfs
+	RDPAR2=				#block size parameter for dd
+	RDPAR3=				#parameter for mke2fs
+
+	[ -n "$TMPFS_RAMFS_SIZE" ] && RDPAR1="-o size=$TMPFS_RAMFS_SIZE"
+
+	if ([ "$KERNEL_RAMDISK_SIZE" != "MAX" ] && [ "$KERNEL_RAMDISK_SIZE" != "max" ]); then
+		RDPAR2="count=$KERNEL_RAMDISK_SIZE"
+		RDPAR3="$KERNEL_RAMDISK_SIZE"
+	fi
+
+	case "$RAMDISKTYPE" in
+	0)	#tmpfs:
+		[ $RETVAL -eq 0 ] && { mount -t tmpfs $RDPAR1 $TMPFSDEVNAME $LOG; UPD_RETVAL; }
+		;;
+	1)	#ramfs:
+		[ $RETVAL -eq 0 ] && { mount -t ramfs $RDPAR1 $RAMFSDEVNAME $LOG; UPD_RETVAL; }
+		;;
+	2)	#kernel ramdisk:
+		[ $RETVAL -eq 0 ] && { dd if=/dev/zero of=$RMDSKDEVNAME bs=1024 $RDPAR2 2>/dev/null; [ -n $RDPAR2 ] && UPD_RETVAL; }
+		#^^^Without "count=" we always end with "No space left on device", therefore we do not update UPD_RETVAL
+		[ $RETVAL -eq 0 ] && { mke2fs -b 1024 $RMDSKDEVNAME $RDPAR3 >/dev/null 2>/dev/null; UPD_RETVAL; }
+		[ $RETVAL -eq 0 ] && { mount $RMDSKDEVNAME $LOG; UPD_RETVAL; }
+		;;
+	esac
+
+	[ $RETVAL -eq 0 ] && [ "$selinuxF" = "1" ] && { chcon --reference=$LOGHDD $LOG; UPD_RETVAL; }
+
+	RETVALCP=0
+	[ $RETVAL -eq 0 ] && { cp -afr $LOGHDD/. $LOG; RETVALCP=$?; }
+	#If problem during copying occured - possibly disk is full -
+	# - we remove all copied files so truncated files are not copied back:
+	[ $RETVALCP -ne 0 ] && { rm -rf $LOG >/dev/null 2>/dev/null; RETVAL=$(($RETVAL+$RETVALCP)); }
+	[ $RETVAL -ne 0 ] && stop_core "NO_UPDATE"
+
+	LOG_END_MSG $RETVAL	#$optIONS
+	[ $RETVAL -eq 0 ] && touch $RAMLOGLOCK 2>/dev/null	#Suppress error on R/O filesystem (it is created later)
+	[ $RETVAL -eq 0 ] && touch $SHUTDOWN_FLAG_FILE 2>/dev/null # -||-
+
+	[ -n "$PLYMOUTH_PID_FILES" ] && $DAEMONDIR/$prog PLYMOUTH_HACK $PLYMOUTH_PID_FILES&
+
+	return $RETVAL
+}
+
+upstart () {
+	( [ -f $UNINSTALL_FLAG_FILE ] || [ -f $DISABLE_FLAG_FILE ] ) && return 0	#Don't do anything if these flags are set in upstart
+
+	HOLDLOGS_F=1
+	start
+	HOLDLOGS_F=0
+	FLUSHLOGS
+	[ $RETVAL -eq 0 ] && touch $UPSTART_FLAG_FILE
+}
+
+stop () {
+	#set >> /root/set.ramlog.txt
+	local state
+	get_state; state=$?
+
+	[ ! -f $SHUTDOWN_FLAG_FILE ] && LOG_WARNING_MSG "$prog: Cannot find shutdown flag file."
+	IS_INIT && rm -f $SHUTDOWN_FLAG_FILE	#indicate unclean shutdown
+
+	if [ $state -eq 10 ]; then
+			rm -f $RAMLOGLOCK
+			LOG_WARNING_MSG "Stopping $prog: Lock existed and was removed."
+			state=0
+	fi
+
+	if [ $state -ne 0 ]; then
+		if ! number_of_open_files2 "STOP"; then
+			LOG_BEG_MSG "Stopping $prog: Error: /var/log is still in use..."
+			LOG_FAILURE
+			[ $VERBOSE -ge 1 ] && teststartstop
+			savelogs_core "QUIET"	#Even if stop is not successful we will sync
+			return 103
+		fi
+
+		#killproc $prog
+		stop_core
+
+		#Uninstallation and disable:
+		if [ -f $UNINSTALL_FLAG_FILE ]; then
+			uninstall_core
+		else
+			[ -f $DISABLE_FLAG_FILE ] && disable_core
+		fi
+
+	else
+		# Uninstallation flag was set but ramlog is not running (should not really happen):
+		if [ -f $UNINSTALL_FLAG_FILE ]; then
+			uninstall_core
+			return $RETVAL
+		fi
+
+		# Disable flag was set but ramlog is not running (should not really happen):
+		if [ -f $DISABLE_FLAG_FILE ]; then
+			disable_core
+			return $RETVAL
+		fi
+
+		LOG_BEG_MSG "Stopping $prog: Error: $prog is not running"
+		LOG_FAILURE
+	fi
+
+	return $RETVAL
+}
+
+savelogs () {
+	if [ ! -f $RAMLOGLOCK ]; then
+		LOG_BEG_MSG "Error: $prog is not running..."
+		LOG_FAILURE
+		RETVAL=110
+	else
+		savelogs_core
+		UPD_RETVAL
+	fi
+	
+	return $RETVAL
+}
+
+enable () {
+	if [ $INITDUPDATE_TYPE -eq 0 ]; then
+		LOG_BEG_MSG "$prog: Error: enable option is not supported on your platform.";
+		LOG_FAILURE
+		return 120
+	fi
+
+	LOG_BEG_MSG "Enabling $prog..."
+
+	case "$INITDUPDATE_TYPE" in
+	2)
+		update-rc.d $prog start 2 2 3 4 5 . stop 99 0 1 6 . >/dev/null
+		UPD_RETVAL
+		;;
+	1)
+		chkconfig --add $prog
+		UPD_RETVAL
+		chkconfig $prog on
+		UPD_RETVAL
+		;;
+	esac
+
+	[ -f $UPSTARTCONFINS ] && [ -d $UPSTARTDIR ] && { mv $UPSTARTCONFINS $UPSTARTCONF; UPD_RETVAL; }
+	[ -f $UPSTARTCONFDIS ] && { mv $UPSTARTCONFDIS $UPSTARTCONF; UPD_RETVAL; }
+
+	[ -f $DISABLE_FLAG_FILE ] && { rm -f $DISABLE_FLAG_FILE; UPD_RETVAL; LOG_MID_MSG " (disable cancelled) "; }
+	[ ! -d $LOGHDD ] && { mkdir -p $LOGHDD; UPD_RETVAL; }
+
+	LOG_END_MSG $RETVAL
+	touch $SHUTDOWN_FLAG_FILE
+}
+
+disable () {
+	if [ $INITDUPDATE_TYPE -eq 0 ]; then
+		LOG_BEG_MSG "$prog: Error: disable option is not supported on your platform.";
+		LOG_FAILURE
+		return 121
+	fi
+
+	local state
+	get_state; state=$?
+
+	[ $state -eq 10 ] && state=0;		    #Ignore when program is stopped but lock flag is set
+	[ $state -eq 11 ] && touch $RAMLOGLOCK;     #fix ramlog lock
+
+	if [ $state -eq 0 ]; then
+		#ramlog is not started:
+		disable_core
+	else
+		#ramlog is started:
+		if ! number_of_open_files2 "NORM"; then
+			#ramlog will be uninstalled during the next shutdown - during the stop process:
+
+			touch $DISABLE_FLAG_FILE
+			UPD_RETVAL
+
+			[ $RETVAL -eq 0 ] && (LOG_BEG_MSG "$prog will be disabled during the next shutdown"; LOG_SUCCESS )
+			[ $RETVAL -ne 0 ] && (LOG_BEG_MSG "$prog: Disable failed: Problem to touch files..."; LOG_FAILURE )
+
+		else
+			#ramlog will be disabled now:
+			disable_core
+		fi
+	fi
+
+	return $RETVAL
+	
+}
+
+uninstall () {
+	if [ $INITDUPDATE_TYPE -eq 0 ]; then
+		LOG_BEG_MSG "$prog: Error: uninstall option is not supported on your platform."; 
+		LOG_FAILURE
+		return 122
+	fi
+
+	local state
+	get_state; state=$?
+
+	[ $state -eq 10 ] && state=0;		#Ignore when program is stopped but lock flag is set
+	[ $state -eq 11 ] && touch $RAMLOGLOCK;	#fix ramlog lock
+
+	if [ $state -eq 0 ]; then
+		#ramlog is not started:
+		uninstall_core
+		
+	else
+		#ramlog is started:
+		if ! number_of_open_files2 "NORM"; then
+			#ramlog will be uninstalled during the next shutdown - during the stop process:
+
+			touch $UNINSTALL_FLAG_FILE
+			UPD_RETVAL
+
+			[ $RETVAL -eq 0 ] && (LOG_BEG_MSG "$prog will be uninstalled during the next shutdown"; LOG_SUCCESS )
+			[ $RETVAL -ne 0 ] && (LOG_BEG_MSG "$prog: Uninstall failed: Problem to touch files..."; LOG_FAILURE )
+
+		else
+			#ramlog will be uninstalled now:
+			stop_core
+			uninstall_core
+		fi
+	fi
+
+	return $RETVAL
+}
+
+uninstflagcheck () {
+	if [ -f $UNINSTALL_FLAG_FILE ]; then
+		LOG_BEG_MSG "$prog: Program was set to be uninstalled"
+		LOG_FAILURE
+		exit 128
+	fi
+}
+
+teststartstop () {
+	number_of_open_files2 "LIST" OUTPUT
+
+	if [ -z "$OUTPUT" ]; then
+		disp_var="No open files in /var/log"
+	else
+		disp_var="The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)\n\n$OUTPUT"
+	fi
+
+	[ $VERBOSE -eq 0 ] && echo "$disp_var"
+	[ $VERBOSE -ge 1 ] && ECHO "$disp_var"
+
+	echo
+	if [ -z "$OUTPUT" ] && [ -z "$slogF" ]; then
+		ECHO Test result: $prog can be started or stopped.
+	else
+		ECHO Test result: $prog cannot be started or stopped at the moment.
+	fi
+
+	return $RETVAL
+}
+
+status () {
+	[ -f $RAMLOGLOCK ] && ( ECHO "$prog is running..." 2>/dev/null; exit 0; ) || ECHO "$prog is stopped" 2>/dev/null
+	RETVAL=0
+}
+
+############################################################
+# Main body:
+
+# Check if you are root:
+if [ "$1" != "status" ] && [ "$1" != "version" ] && [ "$1" != "" ]; then
+	if [ `whoami` != root ]; then
+		echo "$prog error: $prog requires superuser privilege. Run it as root or use sudo."
+		exit 254
+	fi
+fi
+
+# Any of below wars cannot be empty, otherwise get_state won't work
+if ([ -z "$RMDSKDEVNAME" ] || [ -z "$TMPFSDEVNAME" ] || [ -z "$RAMFSDEVNAME" ]); then
+	LOG_BEG_MSG "$prog: Internal error: RMDSKDEVNAME, TMPFSDEVNAME or RAMFSDEVNAME is empty"
+	LOG_FAILURE
+	exit 153
+fi
+
+# See how we were called:
+RETVAL=0
+
+case "$1" in
+  upstart)
+	upstart
+	;;
+  start)
+	start
+	;;
+  stop)
+	stop
+	;;
+  status)
+	status
+	;;
+  restart|reload)
+	uninstflagcheck
+	savelogs
+	;;
+  enable)
+	uninstflagcheck
+	enable
+	;;
+  disable)
+	uninstflagcheck
+	disable
+	;;
+  getlogsize)
+	ECHO "Ramlog: Size of /var/log is: `du -c /var/log 2>/dev/null | tail -1 | awk {'print $1" kbytes"'}`"
+	RETVAL=0
+	;;
+  teststartstop)
+	uninstflagcheck
+	teststartstop
+	;;
+  version)
+	echo "$prog $VERSION (c) 2001,2010 Jan Andrejkovic, Licence GNU 3 or any newer GNU licence"
+	echo
+	echo "Visit ramlog homepage at http://www.tremende.com/ramlog"
+	RETVAL=0
+	;;
+  uninstall2)
+	uninstall
+	;;
+  uninstall)
+	#Workaround for v1. upgrade
+	[ -f $UPGRADE_FLAG_FILE ] && rm -f $UPGRADE_FLAG_FILE;
+	;;
+  *)
+	echo "Usage: $0 {start|stop|status|restart|reload|enable|disable|getlogsize|teststartstop|version}"
+	[ "$LOGGING" = "1" ] && ECHO_LOG "$prog is called with wrong argument(s): '$@'" 2>/dev/null
+	RETVAL=111
+esac
+
+#sleep 30
+
+exit $?
+

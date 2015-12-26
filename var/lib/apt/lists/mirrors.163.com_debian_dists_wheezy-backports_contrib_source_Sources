@@ -1,0 +1,542 @@
+Package: astromenace
+Binary: astromenace
+Version: 1.3.2+repack-3~bpo70+1
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Dmitry Smirnov <onlyjob@debian.org>, Boris Pek <tehnick@debian.org>
+Build-Depends: debhelper (>= 9), imagemagick, cmake, libalut-dev, libfreetype6-dev, libjpeg-dev, libogg-dev, libopenal-dev, libsdl1.2-dev, libvorbis-dev, libxinerama-dev, libfontconfig1-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 0aa20728a16c0babf670cfc73e519a1b 2235 astromenace_1.3.2+repack-3~bpo70+1.dsc
+ 1f3d2bee17e7667238053274d3ca1e6c 424896 astromenace_1.3.2+repack.orig.tar.xz
+ fb72a0447e50f3cea603c5c6048565a1 6416 astromenace_1.3.2+repack-3~bpo70+1.debian.tar.xz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-games/astromenace.git
+Vcs-Git: git://anonscm.debian.org/pkg-games/astromenace.git
+Checksums-Sha1:
+ 72bfbbbeefa4ec8362801966729b0512dc60f39f 2235 astromenace_1.3.2+repack-3~bpo70+1.dsc
+ 28abc20ebb6fb1c55418aac228f3896c1ff98b30 424896 astromenace_1.3.2+repack.orig.tar.xz
+ d92444371f7d61af63a8ea2865597d5d1a58afa6 6416 astromenace_1.3.2+repack-3~bpo70+1.debian.tar.xz
+Checksums-Sha256:
+ ab2f905b809eb4be1b1e03abf4581c144fd07e9c2a92187f80e4e0398f8f8500 2235 astromenace_1.3.2+repack-3~bpo70+1.dsc
+ 89c24714961087e63fedb9190af422432f7813c65da1db0b1dbd93838bd04b20 424896 astromenace_1.3.2+repack.orig.tar.xz
+ 80eae1e6db240db0e822cbdbde60dab891ae4547e96b34481e86e7387d7b9cfb 6416 astromenace_1.3.2+repack-3~bpo70+1.debian.tar.xz
+Homepage: http://www.viewizard.com/astromenace/index_linux.php
+Package-List: 
+ astromenace deb contrib/games optional
+Directory: pool/contrib/a/astromenace
+Priority: extra
+Section: contrib/misc
+
+Package: glx-alternatives
+Binary: glx-diversions, glx-alternative-mesa, glx-alternative-nvidia, glx-alternative-fglrx
+Version: 0.5.1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>,
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64 armhf
+Standards-Version: 3.9.6
+Format: 3.0 (native)
+Files:
+ 1b446aade99260de2595782b89cdd45d 1961 glx-alternatives_0.5.1~bpo70+1.dsc
+ a93232c882b0af41afeeb21ea5fcaf77 11252 glx-alternatives_0.5.1~bpo70+1.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/glx-alternatives/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/glx-alternatives/trunk
+Checksums-Sha1:
+ b6d73837b8510391cd65c5faeafaf5add4b1dafa 1961 glx-alternatives_0.5.1~bpo70+1.dsc
+ c18977c694fee64724d658cd2089a8b174d2d19c 11252 glx-alternatives_0.5.1~bpo70+1.tar.gz
+Checksums-Sha256:
+ 98fa60e8656e41d80538fba5c288c10e3ebbd212004bdd6c73f68587425ce6e3 1961 glx-alternatives_0.5.1~bpo70+1.dsc
+ d5f769efdcce525d133a7745ebd9dbe425ce5778a1efc2bec9c344c8ce01ca67 11252 glx-alternatives_0.5.1~bpo70+1.tar.gz
+Package-List: 
+ glx-alternative-fglrx deb contrib/libs optional
+ glx-alternative-mesa deb contrib/libs optional
+ glx-alternative-nvidia deb contrib/libs optional
+ glx-diversions deb contrib/libs optional
+Directory: pool/contrib/g/glx-alternatives
+Priority: extra
+Section: contrib/misc
+
+Package: gns3
+Binary: gns3
+Version: 0.8.6-3~bpo70+1
+Maintainer: Daniel Lintott <daniel@serverb.co.uk>
+Build-Depends: debhelper (>= 9), python, qt4-linguist-tools
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ b59addbbd2a70b43aa495f588c19ca99 1475 gns3_0.8.6-3~bpo70+1.dsc
+ 3f6f0f4836564a8348159ec945b151de 6404995 gns3_0.8.6.orig.tar.gz
+ c581d6fceccd593deb368b5b2aa8256d 17594 gns3_0.8.6-3~bpo70+1.debian.tar.gz
+Vcs-Browser: https://github.com/dlintott/gns3
+Vcs-Git: https://github.com/dlintott/gns3.git
+Checksums-Sha1:
+ 9f92e7ba258c4d9a56711f7b05070dbe04698854 1475 gns3_0.8.6-3~bpo70+1.dsc
+ d5e75bd88a7de1c8f85b4be9ed464c2804dc85b1 6404995 gns3_0.8.6.orig.tar.gz
+ d69ebb6f806164d89dac6b03ae9fdf0bca13cc05 17594 gns3_0.8.6-3~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ 8efaa2fb56e5f552cca6e75593555bffca8105f80d10f1d0de5b317336885105 1475 gns3_0.8.6-3~bpo70+1.dsc
+ b0314ae059d0690003c78833f2b05e4bd377779abdaf3f1d6632160352f0afc8 6404995 gns3_0.8.6.orig.tar.gz
+ d22d08119cf52669bc74c9f0d996c45c16667b7f54e55457752cbda15bff0ee5 17594 gns3_0.8.6-3~bpo70+1.debian.tar.gz
+Homepage: http://www.gns3.net/
+Package-List: 
+ gns3 deb contrib/net optional
+Directory: pool/contrib/g/gns3
+Priority: extra
+Section: contrib/misc
+
+Package: iucode-tool
+Binary: iucode-tool
+Version: 1.1.1-1~bpo70+1
+Maintainer: Henrique de Moraes Holschuh <hmh@debian.org>
+Build-Depends: debhelper (>= 7), autotools-dev, automake (>= 1:1.10), autoconf (>= 2.61)
+Architecture: i386 amd64
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ fecce4516d518ec7444a8426bf9485e3 1990 iucode-tool_1.1.1-1~bpo70+1.dsc
+ ad95b80b1961886a74ac6c71895c7c9b 124560 iucode-tool_1.1.1.orig.tar.xz
+ 79ecb95ded656d2e178306347098e3c5 5181 iucode-tool_1.1.1-1~bpo70+1.debian.tar.gz
+Vcs-Browser: https://gitorious.org/iucode-tool/iucode-tool
+Vcs-Git: git://gitorious.org/iucode-tool/iucode-tool.git -b debian/master
+Checksums-Sha1:
+ 23dcefb61e2b792e1ce58939e84552da61403975 1990 iucode-tool_1.1.1-1~bpo70+1.dsc
+ f7e427885462186e9a5a701e78e2e600c2b922dd 124560 iucode-tool_1.1.1.orig.tar.xz
+ 10a9f619292770619155f95efa21b15895ef12b8 5181 iucode-tool_1.1.1-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ fdba266577dc77e3421674b301ae2ee78f8bc2df8a0322ee1a87bafe47c364b7 1990 iucode-tool_1.1.1-1~bpo70+1.dsc
+ e6e22d3904d067581d79a5c4f919e7e178fb7dc416d5730699eb75adcf824599 124560 iucode-tool_1.1.1.orig.tar.xz
+ aef76325a71e67c140f12fd73323c4e83ceb399f976cecd488786b746900bacf 5181 iucode-tool_1.1.1-1~bpo70+1.debian.tar.gz
+Homepage: https://gitorious.org/iucode-tool/pages/Home
+Package-List: 
+ iucode-tool deb contrib/utils optional
+Directory: pool/contrib/i/iucode-tool
+Priority: extra
+Section: contrib/misc
+
+Package: java-package
+Binary: java-package
+Version: 0.53~bpo70+1
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Pineau <cedric.pineau@gmail.com>
+Build-Depends: debhelper (>= 7)
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Files:
+ 386a3d92edf3ecdb5493e2b5ef54451c 1034 java-package_0.53~bpo70+1.dsc
+ f6e0f692cf51577a3b172c41f0b02f29 19847 java-package_0.53~bpo70+1.tar.gz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-java/java-package.git
+Vcs-Git: git://anonscm.debian.org/pkg-java/java-package.git
+Checksums-Sha1:
+ 6051f8bb73b32076976d27ed7fbba4d8c338d5f0 1034 java-package_0.53~bpo70+1.dsc
+ 1825ad375a0217ef1bb4007d2c42d8555dec421e 19847 java-package_0.53~bpo70+1.tar.gz
+Checksums-Sha256:
+ 6d9c530e59c71a283c70def0f4e80cee70ff4752bbccb68d67e0dbee89c2ee21 1034 java-package_0.53~bpo70+1.dsc
+ f7e4c913253a4cd9108e5c1865610a9d592aca65a9ffdff7832bd9055cbd48ba 19847 java-package_0.53~bpo70+1.tar.gz
+Package-List: 
+ java-package deb contrib/misc optional
+Directory: pool/contrib/j/java-package
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-modprobe
+Binary: nvidia-modprobe
+Version: 334.16-1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Andreas Beckmann <anbe@debian.org>
+Build-Depends: debhelper (>= 9), m4
+Architecture: i386 amd64 armhf
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ cb13d3fb4615e3314628ad535daf154c 2074 nvidia-modprobe_334.16-1~bpo70+1.dsc
+ 1b2d19c12db3784495d03ffe7599c9e6 29373 nvidia-modprobe_334.16.orig.tar.bz2
+ 2f33a396c18daadfc5b3deb37a5e726f 2355 nvidia-modprobe_334.16-1~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-nvidia/nvidia-modprobe.git
+Vcs-Git: git://anonscm.debian.org/pkg-nvidia/nvidia-modprobe.git
+Checksums-Sha1:
+ 79d829558a67791ba6223108cd00c87da713435a 2074 nvidia-modprobe_334.16-1~bpo70+1.dsc
+ 9d2884c6a61cf83bf2db48d0bf0157f0b1d6e364 29373 nvidia-modprobe_334.16.orig.tar.bz2
+ cde297ad52644a62dc1180ab0b9480278e43a4a6 2355 nvidia-modprobe_334.16-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ 4d3f0fc10f240089f5e351e0bd7a900a0b07a77584209e2cf7ac59155ec7cb4d 2074 nvidia-modprobe_334.16-1~bpo70+1.dsc
+ 573d146a766b7c32291e42b9a68c1fa79c5437504564d877c931ffe7aeb6a866 29373 nvidia-modprobe_334.16.orig.tar.bz2
+ ad71fef16a24c4617f4574511d0b2a446e889683a76e805659cd59c6cf6e669f 2355 nvidia-modprobe_334.16-1~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-modprobe/
+Package-List: 
+ nvidia-modprobe deb contrib/utils optional
+Directory: pool/contrib/n/nvidia-modprobe
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-settings
+Binary: nvidia-settings, libxnvctrl0, libxnvctrl-dev
+Version: 319.72-1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Andreas Beckmann <anbe@debian.org>, Russ Allbery <rra@debian.org>,
+Build-Depends: debhelper (>= 9), m4, libgl1-mesa-dev | libgl-dev, libgtk2.0-dev, libvdpau-dev, libxext-dev, libxv-dev, libxxf86vm-dev, pkg-config
+Build-Conflicts: libxnvctrl-dev
+Architecture: i386 amd64 armhf
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ c94071564f35f745a2b5c1fe501461a5 2416 nvidia-settings_319.72-1~bpo70+1.dsc
+ 87939ef0fbc5e8b13b616f5074934422 1538404 nvidia-settings_319.72.orig.tar.bz2
+ 41691bb9daec9ea16c43c3b95c9a0f4b 18060 nvidia-settings_319.72-1~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-settings/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-settings/trunk
+Checksums-Sha1:
+ 3569c5c7ada48286c30f5198d7dadf2788b26bb4 2416 nvidia-settings_319.72-1~bpo70+1.dsc
+ 9f01e78ec28e1099512e8ce5f788d67022abf564 1538404 nvidia-settings_319.72.orig.tar.bz2
+ c0baec9aff57319b3f0e5fd25fc1be847fd2243b 18060 nvidia-settings_319.72-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ 5357fdc96f23edb3f00428bc4094d14433705feb67f5c1b7f613c7a52c848a75 2416 nvidia-settings_319.72-1~bpo70+1.dsc
+ 718afe95284b7489d43448580e418ff19f31da6d805f3fe02d61fc7f3c4bf7a0 1538404 nvidia-settings_319.72.orig.tar.bz2
+ 9541deb286c3a20df7b685f1dcc91c9875b81fdd8819454620ef20b227e83192 18060 nvidia-settings_319.72-1~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-settings/
+Package-List: 
+ libxnvctrl-dev deb contrib/libdevel optional
+ libxnvctrl0 deb contrib/libs optional
+ nvidia-settings deb contrib/x11 optional
+Directory: pool/contrib/n/nvidia-settings
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-settings-legacy-173xx
+Binary: nvidia-settings-legacy-173xx
+Version: 173.14.39-1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Andreas Beckmann <anbe@debian.org>, Russ Allbery <rra@debian.org>,
+Build-Depends: debhelper (>= 9), m4, libgl1-mesa-dev | libgl-dev, libgtk2.0-dev, libxext-dev, libxv-dev, libxxf86vm-dev, pkg-config
+Build-Conflicts: libxnvctrl-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ f7d5f98995746a4270b1a4731b6c2476 2443 nvidia-settings-legacy-173xx_173.14.39-1~bpo70+1.dsc
+ 436046765d3eca529561162bbff5501b 1301427 nvidia-settings-legacy-173xx_173.14.39.orig.tar.gz
+ a72af1cb36519e7e99aad792f02806df 25801 nvidia-settings-legacy-173xx_173.14.39-1~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-settings-legacy-173xx/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-settings-legacy-173xx/trunk
+Checksums-Sha1:
+ 62752667bbfe9eeccd05e77ff1222ee20d888a93 2443 nvidia-settings-legacy-173xx_173.14.39-1~bpo70+1.dsc
+ 0031ab3f425c88a37a326375d414d3a85cde5396 1301427 nvidia-settings-legacy-173xx_173.14.39.orig.tar.gz
+ 8f25c6f67d9c9a91a403558dfffd1efbbc652206 25801 nvidia-settings-legacy-173xx_173.14.39-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ 929376b69bde4a60b414944c8eb9d6902d2e5cb22226a2d3c57c3733a8437fd3 2443 nvidia-settings-legacy-173xx_173.14.39-1~bpo70+1.dsc
+ 6541a231f4dbde7abe20154db5bd866f3aac49b1fa4c8ca705cf246199d93326 1301427 nvidia-settings-legacy-173xx_173.14.39.orig.tar.gz
+ 53b8f2bb63a527b1bfe2c713b56a4de3a0bab4580ae31a422588c38a5017a9c5 25801 nvidia-settings-legacy-173xx_173.14.39-1~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-settings/
+Package-List: 
+ nvidia-settings-legacy-173xx deb contrib/x11 optional
+Directory: pool/contrib/n/nvidia-settings-legacy-173xx
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-settings-legacy-304xx
+Binary: nvidia-settings-legacy-304xx
+Version: 304.116-1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Andreas Beckmann <anbe@debian.org>, Russ Allbery <rra@debian.org>,
+Build-Depends: debhelper (>= 9), m4, libgl1-mesa-dev | libgl-dev, libgtk2.0-dev, libxext-dev, libxv-dev, libxxf86vm-dev, pkg-config
+Build-Conflicts: libxnvctrl-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 58524596a3591f272af968bf50a07468 2432 nvidia-settings-legacy-304xx_304.116-1~bpo70+1.dsc
+ 3a1efc69edd559a54f66d12dad6e7da9 1480811 nvidia-settings-legacy-304xx_304.116.orig.tar.bz2
+ d6f8fc8725dd7ea299c5b6321ba89dd2 16797 nvidia-settings-legacy-304xx_304.116-1~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-settings-legacy-304xx/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-settings-legacy-304xx/trunk
+Checksums-Sha1:
+ 38b1ce4e1f695564004360e8a9199ab262f9eeb2 2432 nvidia-settings-legacy-304xx_304.116-1~bpo70+1.dsc
+ 14ee2eec1d73fa41a9c741bc353a856ec6727c66 1480811 nvidia-settings-legacy-304xx_304.116.orig.tar.bz2
+ d6843d86874a4f33043d4e50e5e516869c324c58 16797 nvidia-settings-legacy-304xx_304.116-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ 3a64dc35570bc9a38751e64ada09e265f5131b7a64d0a69abd3aaf380aafb533 2432 nvidia-settings-legacy-304xx_304.116-1~bpo70+1.dsc
+ 72062f0e003e699e1317a01395bce351ccb54620736d667fc40d7d018ba44fc7 1480811 nvidia-settings-legacy-304xx_304.116.orig.tar.bz2
+ e14a98b177946af1207f251d31ac3e3eacf1247eeca4fef457c273a6f29cf9c0 16797 nvidia-settings-legacy-304xx_304.116-1~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-settings/
+Package-List: 
+ nvidia-settings-legacy-304xx deb contrib/x11 optional
+Directory: pool/contrib/n/nvidia-settings-legacy-304xx
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-settings-legacy-96xx
+Binary: nvidia-settings-legacy-96xx
+Version: 96.43.20-2~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>, Andreas Beckmann <anbe@debian.org>, Russ Allbery <rra@debian.org>,
+Build-Depends: debhelper (>= 9), m4, libgl1-mesa-dev | libgl-dev, libgtk2.0-dev, libxext-dev, libxv-dev, libxxf86vm-dev, pkg-config
+Build-Conflicts: libxnvctrl-dev
+Architecture: i386 amd64
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Files:
+ 093bc629541dc5fd26b754d1d9017353 2425 nvidia-settings-legacy-96xx_96.43.20-2~bpo70+1.dsc
+ c27decb2951a393620bb469757314c19 1235379 nvidia-settings-legacy-96xx_96.43.20.orig.tar.gz
+ ef28d19f6e2dfe8ead9f01d51cbdc3bc 26337 nvidia-settings-legacy-96xx_96.43.20-2~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-settings-legacy-96xx/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-settings-legacy-96xx/trunk
+Checksums-Sha1:
+ 4f42484ad3ce9089d012abc28a8fad8672e5aff1 2425 nvidia-settings-legacy-96xx_96.43.20-2~bpo70+1.dsc
+ 2790ad913633f9c9ccc4f2be0c24ff418abe326f 1235379 nvidia-settings-legacy-96xx_96.43.20.orig.tar.gz
+ 87a5f1403e78d26b44019db3a9bc6c5f262d383b 26337 nvidia-settings-legacy-96xx_96.43.20-2~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ a0f3f8e909348af69acf160c7d0d040995e42f55d15d17fb819fbc3969182722 2425 nvidia-settings-legacy-96xx_96.43.20-2~bpo70+1.dsc
+ 327f399c45d98cbca1b1694743e351dcf5037e8e9c915218b4c98f4153c9e875 1235379 nvidia-settings-legacy-96xx_96.43.20.orig.tar.gz
+ f1b647d64fefe5cfff60152260254a26bb67a0faec138872abc76eeae8bab9cf 26337 nvidia-settings-legacy-96xx_96.43.20-2~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-settings/
+Package-List: 
+ nvidia-settings-legacy-96xx deb contrib/x11 optional
+Directory: pool/contrib/n/nvidia-settings-legacy-96xx
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-support
+Binary: nvidia-support, nvidia-installer-cleanup, nvidia-kernel-common
+Version: 20131102+1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>,
+Build-Depends: debhelper (>= 9), po-debconf
+Architecture: amd64 i386 armhf
+Standards-Version: 3.9.5
+Format: 3.0 (native)
+Files:
+ e0b423f691b91829b1ef446878c94ccd 1932 nvidia-support_20131102+1~bpo70+1.dsc
+ 9d433d828125a2190e844d58ebfb4d8b 38079 nvidia-support_20131102+1~bpo70+1.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-support/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-support/trunk
+Checksums-Sha1:
+ c74a7d5f074413bbba93b7697a3e1acbee8aa6a0 1932 nvidia-support_20131102+1~bpo70+1.dsc
+ 76813a2858226c818761e29648b89ba643b807c9 38079 nvidia-support_20131102+1~bpo70+1.tar.gz
+Checksums-Sha256:
+ c1107e252597910911bd2642d9a431c44bdc9781c01fd179b1c80d11679b0eb3 1932 nvidia-support_20131102+1~bpo70+1.dsc
+ ec71f52f29b99201c9155b56cc19350e47453fc64d05678244f2d314f53f55d5 38079 nvidia-support_20131102+1~bpo70+1.tar.gz
+Package-List: 
+ nvidia-installer-cleanup deb contrib/misc optional
+ nvidia-kernel-common deb contrib/kernel optional
+ nvidia-support deb contrib/misc optional
+Directory: pool/contrib/n/nvidia-support
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-xconfig
+Binary: nvidia-xconfig
+Version: 319.72-1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>,
+Build-Depends: debhelper (>= 9), m4
+Architecture: i386 amd64 armhf
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ 7546faeb84d11d84627d171192e96157 2106 nvidia-xconfig_319.72-1~bpo70+1.dsc
+ 8317cb694f1659f45949dc25d8af3fef 101999 nvidia-xconfig_319.72.orig.tar.bz2
+ d67f5e1571a7781d5e1f210dd2bfb005 6328 nvidia-xconfig_319.72-1~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-xconfig/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-xconfig/trunk
+Checksums-Sha1:
+ dc5e071af9a3be4d83b2d011d25ca176a3998faf 2106 nvidia-xconfig_319.72-1~bpo70+1.dsc
+ 00894ccb00de76900cc1ab3cdb19a1a4207ca0ff 101999 nvidia-xconfig_319.72.orig.tar.bz2
+ abae42490371357965e84555a8b68af8ad30e60d 6328 nvidia-xconfig_319.72-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ e8bde8f50480b4ea2d834cf5d60babd3487823f5827eceb4688dc62aa3a3a878 2106 nvidia-xconfig_319.72-1~bpo70+1.dsc
+ 55c8d63e1c5367c806e76e0a1e0275cb2ede3e45adc756d41b63e8c3ae442300 101999 nvidia-xconfig_319.72.orig.tar.bz2
+ c8961a6d62a4e31af6764812eca8738e40a9e5d50db43999c241a47a9da5f01a 6328 nvidia-xconfig_319.72-1~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-xconfig/
+Package-List: 
+ nvidia-xconfig deb contrib/x11 extra
+Directory: pool/contrib/n/nvidia-xconfig
+Priority: extra
+Section: contrib/misc
+
+Package: nvidia-xconfig
+Binary: nvidia-xconfig
+Version: 340.46-1~bpo70+1
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Uploaders: Russ Allbery <rra@debian.org>, Andreas Beckmann <anbe@debian.org>, Vincent Cheng <vcheng@debian.org>
+Build-Depends: debhelper (>= 9), m4
+Architecture: i386 amd64 armhf
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 5ed60871c9f0ed9409c6c1ede10a6ffa 2123 nvidia-xconfig_340.46-1~bpo70+1.dsc
+ a1fd357b66184a691e241b258f039c68 105584 nvidia-xconfig_340.46.orig.tar.bz2
+ 1cb2114c211cb506336d1d8721e5901a 6554 nvidia-xconfig_340.46-1~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-nvidia/packages/nvidia-xconfig/
+Vcs-Svn: svn://anonscm.debian.org/pkg-nvidia/packages/nvidia-xconfig/trunk
+Checksums-Sha1:
+ e492390e9d20f01d5715e836e0df2aeca34910d6 2123 nvidia-xconfig_340.46-1~bpo70+1.dsc
+ a1c871c786b6dfe1e828d0227416c0e1342884a1 105584 nvidia-xconfig_340.46.orig.tar.bz2
+ 7764a834f12c0408c44f002f77fc342196d4bb4b 6554 nvidia-xconfig_340.46-1~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ dd0b3f7f756713b78c7db2aea9a7f58053c5482dd4a6b39cb8486f52e3ad0fbf 2123 nvidia-xconfig_340.46-1~bpo70+1.dsc
+ d3dd13420ef13432d7460cc3b4a4ade5220ea7fa82ec550f0aa65357e31f9b83 105584 nvidia-xconfig_340.46.orig.tar.bz2
+ edad4b81e5d4d0ece29f5bf4152a2a2c9912608ccb526634de6f44705db90a38 6554 nvidia-xconfig_340.46-1~bpo70+1.debian.tar.gz
+Homepage: ftp://download.nvidia.com/XFree86/nvidia-xconfig/
+Package-List: 
+ nvidia-xconfig deb contrib/x11 extra
+Directory: pool/contrib/n/nvidia-xconfig
+Priority: extra
+Section: contrib/misc
+
+Package: onionshare
+Binary: onionshare
+Version: 0.6-3~bpo70+1
+Maintainer: Anonymity Tools Debian Maintainers <pkg-anonymity-tools@lists.alioth.debian.org>
+Uploaders: Ulrike Uhlig <u@451f.org>
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9.20120909~)
+Architecture: all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ 11cd1103f84a7c678203150d7533319d 2016 onionshare_0.6-3~bpo70+1.dsc
+ 45c3eb4e2af8b27115df1a65ce4640c8 296758 onionshare_0.6.orig.tar.gz
+ b6602d920ddd2c1ee3c917ee488cfc25 3985 onionshare_0.6-3~bpo70+1.debian.tar.gz
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/onionshare.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/onionshare.git
+Checksums-Sha1:
+ 937d366b3074ccb7d14a8b35a0da86d80ff70082 2016 onionshare_0.6-3~bpo70+1.dsc
+ d99ea887a3c0bf0c24f118a0d12c6b6d89c433cf 296758 onionshare_0.6.orig.tar.gz
+ 06ae004c1d3f1b2736b52ba2f4a27c791edfa79b 3985 onionshare_0.6-3~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ c946018b9af06f2e0d0b4954cb5a8f25fbacadf023a784a167394e8e55f2502b 2016 onionshare_0.6-3~bpo70+1.dsc
+ 54116bdd78b722ef255e1262b776fa766b51584caf5ea3707e0809d52fe081ad 296758 onionshare_0.6.orig.tar.gz
+ 65bbb3d8e87c36533886b4380074f909b552d1def8e3857bc6c60653b4f4f911 3985 onionshare_0.6-3~bpo70+1.debian.tar.gz
+Homepage: https://onionshare.org
+Package-List: 
+ onionshare deb contrib/net optional
+Directory: pool/contrib/o/onionshare
+Priority: extra
+Section: contrib/misc
+
+Package: pepperflashplugin-nonfree
+Binary: pepperflashplugin-nonfree
+Version: 1.4~bpo60+1
+Maintainer: Bart Martens <bartm@debian.org>
+Build-Depends: debhelper (>= 9)
+Architecture: i386 amd64
+Standards-Version: 3.9.5
+Format: 3.0 (native)
+Files:
+ a3a241670ceae2571deebe2fe47441bb 1557 pepperflashplugin-nonfree_1.4~bpo60+1.dsc
+ ee04237d5f2f51ae3034d79a0f991c94 9674 pepperflashplugin-nonfree_1.4~bpo60+1.tar.gz
+Checksums-Sha1:
+ c87803ffeecce9157e09a1b59f482280c268bf26 1557 pepperflashplugin-nonfree_1.4~bpo60+1.dsc
+ 983b1ee1b3913475d32d4bcda82f3d19b6d5c1d9 9674 pepperflashplugin-nonfree_1.4~bpo60+1.tar.gz
+Checksums-Sha256:
+ 3b3d3d4b3a9cd929e8327082637f7905cad3495e6e13938c93f216046863c5b8 1557 pepperflashplugin-nonfree_1.4~bpo60+1.dsc
+ b82dd82153b1e6f3f2d2ab8227a35372470d60f82218a1e91c4e93d8797d9749 9674 pepperflashplugin-nonfree_1.4~bpo60+1.tar.gz
+Homepage: http://wiki.debian.org/PepperFlashPlayer
+Package-List: 
+ pepperflashplugin-nonfree deb contrib/web optional
+Directory: pool/contrib/p/pepperflashplugin-nonfree
+Priority: extra
+Section: contrib/misc
+
+Package: redeclipse
+Binary: redeclipse, redeclipse-dbg, redeclipse-server, redeclipse-server-dbg
+Version: 1.4-5~bpo70+1
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Martin Erik Werner <martinerikwerner@gmail.com>
+Build-Depends: debhelper (>= 9), libenet-dev, libgl1-mesa-dev | libgl-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev, libsdl1.2-dev | libsdl-dev, libx11-dev, zlib1g-dev | libz-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Files:
+ cfdb123fc736cc75706a439d8cd0eb54 2282 redeclipse_1.4-5~bpo70+1.dsc
+ 2edc23efab7984aa5c4fbaf2124895a5 700568 redeclipse_1.4.orig.tar.xz
+ 5acfa6583433ddd92dbefabd045437be 17805 redeclipse_1.4-5~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-games/redeclipse.git
+Vcs-Git: git://anonscm.debian.org/pkg-games/redeclipse.git
+Checksums-Sha1:
+ ffcd63a16282ed2d5a415eddef535b2dc367f3a7 2282 redeclipse_1.4-5~bpo70+1.dsc
+ 02245ab0482c761f1f85d343b688d0cdecba8c68 700568 redeclipse_1.4.orig.tar.xz
+ e2ff90b76972f485822a828fe01f9980e9004c7d 17805 redeclipse_1.4-5~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ efe75196a0a40019405b68677210a85758d55b054bcaf0b7c1690e99a1d62ddb 2282 redeclipse_1.4-5~bpo70+1.dsc
+ 5667b07d19b35f849e1e5973163d7c836c854b390312b7c54fa26bd6cf28407b 700568 redeclipse_1.4.orig.tar.xz
+ a21503d4a54e2dfb490f94da89c78a37f0a73baf0cdd604adc80b94592be2c98 17805 redeclipse_1.4-5~bpo70+1.debian.tar.gz
+Homepage: http://www.redeclipse.net
+Package-List: 
+ redeclipse deb contrib/games optional
+ redeclipse-dbg deb contrib/debug extra
+ redeclipse-server deb contrib/games optional
+ redeclipse-server-dbg deb contrib/debug extra
+Directory: pool/contrib/r/redeclipse
+Priority: extra
+Section: contrib/misc
+
+Package: torbrowser-launcher
+Binary: torbrowser-launcher
+Version: 0.1.9-1+deb8u1~bpo70+1
+Maintainer: Anonymity Tools Debian Maintainers <pkg-anonymity-tools@lists.alioth.debian.org>
+Uploaders: Jacob Appelbaum <jacob@appelbaum.net>, Ulrike Uhlig <u@451f.org>, Holger Levsen <holger@debian.org>
+Build-Depends: python-all (>= 2.7.3-4), debhelper (>= 9.20120909~), dh-apparmor, lsb-release
+Architecture: i386 amd64
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ e60846e032f0ba2990f73e7e0082f961 2264 torbrowser-launcher_0.1.9-1+deb8u1~bpo70+1.dsc
+ 1e0b5c07ac51a72ca13f8e10baaad777 309216 torbrowser-launcher_0.1.9.orig.tar.xz
+ cff6c220039cb0c3c17a30e66ee1bed3 8224 torbrowser-launcher_0.1.9-1+deb8u1~bpo70+1.debian.tar.xz
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/torbrowser-launcher.git
+Vcs-Git: git://anonscm.debian.org/collab-maint/torbrowser-launcher.git
+Checksums-Sha1:
+ 7147d07f53d8875906b44dea28dce394b1ecd4f1 2264 torbrowser-launcher_0.1.9-1+deb8u1~bpo70+1.dsc
+ f0cdf6d466b5636253b60abe70cc2488c8ba3307 309216 torbrowser-launcher_0.1.9.orig.tar.xz
+ d161e5fd6e7138e5c066bc1bcb8e4466d8729599 8224 torbrowser-launcher_0.1.9-1+deb8u1~bpo70+1.debian.tar.xz
+Checksums-Sha256:
+ c25d018f38938ceabcb7c1c949a883624f4083b5c3c9434acc4e86dd374b0ef3 2264 torbrowser-launcher_0.1.9-1+deb8u1~bpo70+1.dsc
+ b5e345ef7017719f916e753a7ec97eca20e88dc3490ec08aa87b356182abfe39 309216 torbrowser-launcher_0.1.9.orig.tar.xz
+ 3dea7cb22834963779da804a131ec5cebb451b679aaa6529e8a247878d94ffea 8224 torbrowser-launcher_0.1.9-1+deb8u1~bpo70+1.debian.tar.xz
+Homepage: https://micahflee.com/torbrowser-launcher/
+Package-List: 
+ torbrowser-launcher deb contrib/python optional arch=i386,amd64
+Directory: pool/contrib/t/torbrowser-launcher
+Priority: extra
+Section: contrib/misc
+
+Package: virtualbox
+Binary: virtualbox-qt, virtualbox, virtualbox-dbg, virtualbox-dkms, virtualbox-source, virtualbox-guest-dkms, virtualbox-guest-source, virtualbox-guest-x11, virtualbox-guest-utils
+Version: 4.3.18-dfsg-2~bpo70+1
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Uploaders: Michael Meskes <meskes@debian.org>, Ritesh Raj Sarraf <rrs@debian.org>, Gianfranco Costamagna <costamagnagianfranco@yahoo.it>
+Build-Depends: bzip2, debhelper (>= 9), default-jdk, dkms (>= 2.1.1.1), docbook-xml, docbook-xsl, dpkg-dev (>= 1.15.6~), g++-multilib [amd64], genisoimage, gsoap (>= 2.8.16), iasl, imagemagick, kbuild (>= 1:0.1.9998svn2695), libasound2-dev, libcap-dev, libcurl4-openssl-dev, libdevmapper-dev, libdrm-dev, libgl1-mesa-dev, libglu1-mesa-dev, libidl-dev, libpam0g-dev, libpixman-1-dev, libpng-dev, libpulse-dev, libqt4-dev (>= 4.4.0), libqt4-network (>= 4.4.0), libqt4-opengl-dev (>= 4.4.0), libsdl1.2-dev, libssl-dev, libvncserver-dev, libvpx-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxi-dev, libxinerama-dev, libxml2-dev, libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, libxt-dev, lsb-release, lynx-cur, makeself, module-assistant, python-dev (>= 2.6.6-3~), texlive-fonts-extra, texlive-fonts-recommended, texlive-latex-extra, texlive-latex-recommended, uuid-dev, x11proto-gl-dev, x11proto-xf86dri-dev, xserver-xorg-dev, xsltproc, yasm (>= 0.7.0), zlib1g-dev
+Architecture: amd64 i386 all
+Standards-Version: 3.9.6
+Format: 3.0 (quilt)
+Files:
+ a78aeaf43fd7762db9cfce34f85e0b64 3281 virtualbox_4.3.18-dfsg-2~bpo70+1.dsc
+ b95045bc205c8ae718ef901092db1edf 43452624 virtualbox_4.3.18-dfsg.orig.tar.xz
+ 926d2d84e8a6e5494282112b46f45636 92241 virtualbox_4.3.18-dfsg-2~bpo70+1.debian.tar.gz
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-virtualbox/virtualbox.git
+Vcs-Git: git://anonscm.debian.org/pkg-virtualbox/virtualbox.git
+Checksums-Sha1:
+ 2a5e953af52181f8404d26a8f4e876c59e830c98 3281 virtualbox_4.3.18-dfsg-2~bpo70+1.dsc
+ eb620e523134903bc466bacaf7c66a80abddaabf 43452624 virtualbox_4.3.18-dfsg.orig.tar.xz
+ f8889f7ee62954bb41711951a836f035d851124b 92241 virtualbox_4.3.18-dfsg-2~bpo70+1.debian.tar.gz
+Checksums-Sha256:
+ e7348eabbec4064ad58462bd7f9c199d3c72da3b94daa2399745d9e31c8a0ba5 3281 virtualbox_4.3.18-dfsg-2~bpo70+1.dsc
+ 9759c0ebb88a408bee603023e888362185ea5e9dce31cd5d90550b240d3864a1 43452624 virtualbox_4.3.18-dfsg.orig.tar.xz
+ 8025cf0fb2ba4b7059c473e291742b04ec47ccbd34566fb5008a67b184a12f5d 92241 virtualbox_4.3.18-dfsg-2~bpo70+1.debian.tar.gz
+Homepage: http://www.virtualbox.org/
+Package-List: 
+ virtualbox deb contrib/misc optional
+ virtualbox-dbg deb contrib/debug extra
+ virtualbox-dkms deb contrib/kernel optional
+ virtualbox-guest-dkms deb contrib/kernel optional
+ virtualbox-guest-source deb contrib/kernel optional
+ virtualbox-guest-utils deb contrib/misc optional
+ virtualbox-guest-x11 deb contrib/x11 optional
+ virtualbox-qt deb contrib/misc optional
+ virtualbox-source deb contrib/kernel optional
+Directory: pool/contrib/v/virtualbox
+Priority: extra
+Section: contrib/misc
+

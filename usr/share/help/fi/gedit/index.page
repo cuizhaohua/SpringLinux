@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="fi">
+
+  <info>
+    <title type="link">gedit Tekstimuokkain</title>
+    <title type="text">gedit Tekstimuokkain</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>
+    <media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/>
+    gedit Text Editor
+  </title>
+  <p>Tervetuloa <app>gedit</app>-ohjeen pariin.  Pikainen katsaus <app>geditin</app> perusominaisuuksiin sekä hyödyllisiin pikanäppäimiin löytyy <link xref="gedit-quickstart">geditin pikaoppaasta</link> ja <link xref="gedit-shortcut-keys">pikanäppäinlistasta</link>.</p>
+
+  <p>Ohjeen muut aiheet ovat ryhmitelty alla oleviin osioihin. Nautinnollisia hetkiä <app>geditin</app> parissa!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Tiedostojen hallinta</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>geditin mukauttaminen</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>geditin lisäosat</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Tiedostojen tulostaminen</title>
+  </section>
+
+</page>

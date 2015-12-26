@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-plugins-file-browser" xml:lang="es">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2011-08-17" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email its:translate="no">dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email its:translate="no">jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Use el panel lateral para examinar y abrir archivos</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Panel del examinador de archivos</title>
+
+  <p>Dependiendo de cómo use <app>gedit</app>, puede resultarle útil usar el complemento <app>Panel del examinador de archivos</app>. Este complemento empotra un <app>examinador de archivos</app> en el panel lateral, proporcionándole un acceso fácil a sus archivos usados frecuentemente.</p>
+  
+  <p>Puede activar el <gui>Panel lateral</gui> seleccionando <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferencias</gui> <gui>Complementos</gui><gui>Panel del examinador de archivos</gui></guiseq>.</p>
+
+  <section id="sidepane-open">
+    <title>Abrir archivos desde el panel lateral</title>
+    <p>Para activar y usar el <gui>Panel lateral</gui>, seleccione <guiseq><gui>Ver</gui><gui>Panel lateral</gui></guiseq> (o pulse<key>F9</key>), y pulse el icono <gui>examinador de archivos</gui> en la parte inferior del panel.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Esto activará el modo <em>examinador de archivos</em> del <app>panel lateral</app>. Entonces podrá usar los botones de navegación en la parte superior del panel para ubicar y abrir los archivos que quiera.</p>
+  </section>
+
+</page>

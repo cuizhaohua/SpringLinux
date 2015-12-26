@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-selection" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Utiliser l'option <cmd>--file-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>cbliard@gmail.com</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Boîte de dialogue de sélection de fichiers</title>
+    <p>L'option <cmd>--file-selection</cmd> crée une boîte de dialogue de sélection de fichiers. <app>Zenity</app> retourne les fichiers ou les dossiers sélectionnés sur le flux de sortie standard. Par défaut, la boîte de dialogue de sélection de fichiers est en mode ouverture.</p>
+    <p>Options de la boîte de dialogue de sélection de fichiers :</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>nomdefichier</var></title>
+	<p>Spécifier le fichier ou le dossier sélectionné au premier affichage de la boîte de dialogue de sélection de fichiers.</p>
+      </item>
+
+      <item>
+	<title><cmd>--multiple</cmd></title>
+	<p>Permettre la sélection de plusieurs fichiers.</p>
+      </item>
+
+      <item>
+	<title><cmd>--directory</cmd></title>
+	<p>Permettre uniquement la sélection de dossiers.</p>
+      </item>
+
+      <item>
+	<title><cmd>--save</cmd></title>
+	<p>Mettre la boîte de dialogue de sélection de fichiers en mode sauvegarde.</p>
+      </item>
+
+      <item>
+	<title><cmd>--separator</cmd>=<var>séparateur</var></title>
+	<p>Spécifier le texte utilisé comme séparateur pour diviser la liste des noms de fichiers retournée.</p>
+      </item>
+
+    </terms>
+
+    <p>Le script d'exemple suivant montre comment créer une boîte de dialogue de sélection de fichiers :</p>
+
+<code>
+#!/bin/sh
+
+FILE=`zenity --file-selection --title="Sélectionnez un fichier"`
+
+case $? in
+        0)
+              echo "\"$FILE\" est sélectionné.";;
+        1)
+              echo "Aucun fichier sélectionné.";;
+        -1)
+              echo "Une erreur inattendue est survenue.";;
+esac
+</code>
+
+    <figure id="zenity-fileselection-screenshot">
+      <title>Exemple de boîte de dialogue de sélection de fichiers</title>
+      <desc>Exemple de boîte de dialogue de sélection de fichiers <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-fileselection-screenshot.png"/>
+    </figure>
+</page>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian CLI Policy - DotGNU Portable.NET Packaging help</title>
+
+<link href="index.html" rel="start">
+<link href="ch-mono.html" rel="prev">
+<link href="ch-appendix.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch-history.html" rel="chapter" title="1 Policy History">
+<link href="ch-terms.html" rel="chapter" title="2 Used Terms">
+<link href="ch-packaging.html" rel="chapter" title="3 Packaging Policy">
+<link href="ch-mono.html" rel="chapter" title="4 Mono Specific Packaging help">
+<link href="ch-pnet.html" rel="chapter" title="5 DotGNU Portable.NET Packaging help">
+<link href="ch-appendix.html" rel="chapter" title="6 Appendix">
+<link href="ch-terms.html#s-CLI" rel="section" title="2.1 CLI - Common Language Infrastructure">
+<link href="ch-terms.html#s-CLR" rel="section" title="2.2 CLR - Common Language Runtime">
+<link href="ch-terms.html#s-CIL" rel="section" title="2.3 CIL - Common Intermediate Language">
+<link href="ch-terms.html#s-.NET" rel="section" title="2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;">
+<link href="ch-terms.html#s-GAC" rel="section" title="2.5 GAC - Global Assembly Cache">
+<link href="ch-terms.html#s-package-names" rel="section" title="2.6 Package Names">
+<link href="ch-packaging.html#s-general-packaging" rel="section" title="3.1 General Packaging">
+<link href="ch-packaging.html#s-gac-library-packaging" rel="section" title="3.2 GAC Library Packaging">
+<link href="ch-packaging.html#s-non-gac-library-packaging" rel="section" title="3.3 non-GAC Library Packaging">
+<link href="ch-mono.html#s4.1" rel="section" title="4.1 Naming">
+<link href="ch-mono.html#s4.2" rel="section" title="4.2 DLL Maps">
+<link href="ch-mono.html#s-mono-disable-shm" rel="section" title="4.3 MONO_DISABLE_SHM">
+<link href="ch-pnet.html#s5.1" rel="section" title="5.1 Naming">
+<link href="ch-appendix.html#s-cli-common-dev" rel="section" title="6.1 Helper Scripts: cli-common-dev">
+<link href="ch-appendix.html#s-examples" rel="section" title="6.2 Examples">
+<link href="ch-appendix.html#s-migrating" rel="section" title="6.3 Migrating Existing Packages">
+<link href="ch-packaging.html#s-architecture" rel="subsection" title="3.1.1 Architecture">
+<link href="ch-packaging.html#s-file-locations" rel="subsection" title="3.1.2 File Locations">
+<link href="ch-packaging.html#s-file-perms" rel="subsection" title="3.1.3 File Permissions">
+<link href="ch-packaging.html#s-build-deps" rel="subsection" title="3.1.4 Build Dependencies">
+<link href="ch-packaging.html#s-gac-naming-versioning" rel="subsection" title="3.2.1 Naming &amp; Versioning">
+<link href="ch-packaging.html#s-gac-policy-files" rel="subsection" title="3.2.2 Policy Files">
+<link href="ch-packaging.html#s-clilibs-control-file" rel="subsection" title="3.2.3 clilibs Control File">
+<link href="ch-packaging.html#s-pkg-config-file" rel="subsection" title="3.2.4 pkg-config File">
+<link href="ch-packaging.html#s-signing" rel="subsection" title="3.2.5 Signing">
+<link href="ch-packaging.html#s-non-gac-naming" rel="subsection" title="3.3.1 Naming">
+<link href="ch-mono.html#s-dll-maps-intro" rel="subsection" title="4.2.1 Introduction">
+<link href="ch-mono.html#s4.2.2" rel="subsection" title="4.2.2 Solution: DLL map config file">
+<link href="ch-appendix.html#s-dh_makeclilibs" rel="subsection" title="6.1.1 dh_makeclilibs">
+<link href="ch-appendix.html#s-dh_clideps" rel="subsection" title="6.1.2 dh_clideps">
+<link href="ch-appendix.html#s-dh_installcligac" rel="subsection" title="6.1.3 dh_installcligac">
+<link href="ch-appendix.html#s-debhelper-example" rel="subsection" title="6.2.1 debhelper 5/6 Example">
+<link href="ch-appendix.html#s-debhelper7-example" rel="subsection" title="6.2.2 debhelper 7 Example">
+<link href="ch-appendix.html#s-cdbs-example" rel="subsection" title="6.2.3 cdbs Example">
+<link href="ch-appendix.html#s-wrapper-script-example" rel="subsection" title="6.2.4 Executable Wrapper Script Example">
+<link href="ch-appendix.html#s-api-compat-example" rel="subsection" title="6.2.5 API Compatibility Check Example">
+<link href="ch-appendix.html#s-gac-policy-file-example" rel="subsection" title="6.2.6 GAC Policy File Example">
+
+</head>
+
+<body>
+
+<p><a name="ch-pnet"></a></p>
+<hr>
+
+<p>
+[ <a href="ch-mono.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ 5 ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-appendix.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian CLI Policy
+<br>Chapter 5 - DotGNU Portable.NET Packaging help
+</h1>
+
+<hr>
+
+<p>
+This section offers help to common problems encountered when packaging DotGNU
+Portable.NET-specific applications for Debian.
+</p>
+
+<hr>
+
+<h2 id="s5.1">5.1 Naming</h2>
+
+<p>
+The official name of the DotGNU Portable.NET project is exactly that.  To keep
+this consistent for users, it should be <em>always</em> called &quot;DotGNU
+Portable.NET&quot; (not pnet or Portable.NET).  The explanation of what DotGNU
+Portable.NET is, should be in the package <em>long</em> description.
+</p>
+
+<hr>
+
+<p>
+[ <a href="ch-mono.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ 5 ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-appendix.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian CLI Policy
+</p>
+
+<address>
+Version 0.7<br>
+<br>
+Mirco Bauer <code><a href="mailto:meebey@debian.org">mailto:meebey@debian.org</a></code><br>
+Brandon Hale <code><a href="mailto:brandon@smarterits.com">mailto:brandon@smarterits.com</a></code><br>
+Sebastian Dr&ouml;ge <code><a href="mailto:slomo@debian.org">mailto:slomo@debian.org</a></code><br>
+Dylan R. E. Moonfire <code><a href="mailto:debian@mfgames.com">mailto:debian@mfgames.com</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

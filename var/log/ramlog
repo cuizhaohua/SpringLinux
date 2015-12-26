@@ -1,0 +1,350 @@
+Aug 01 20:27:05 Enabling ramlog...					 [ OK ]
+Jan 01 01:01:53 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 01:18:01 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Aug 16 09:06:47 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Aug 16 09:06:47 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Aug 16 10:06:29 Saving logs to hdd: 					 [ OK ]
+Aug 16 10:06:30 Stopping ramlog: 					 [ OK ]
+Aug 16 10:07:07 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Aug 16 10:25:13 Saving logs to hdd: 					 [ OK ]
+Aug 16 10:25:14 Stopping ramlog: 					 [ OK ]
+Aug 16 10:25:49 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Aug 16 10:40:40 Saving logs to hdd: 					 [ OK ]
+Aug 16 10:40:41 Stopping ramlog: 					 [ OK ]
+Aug 16 10:43:50 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Aug 16 10:43:50 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Aug 16 10:47:04 Saving logs to hdd: 					 [ OK ]
+Aug 16 10:47:04 Stopping ramlog: 					 [ OK ]
+Aug 16 11:22:04 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Aug 16 11:22:04 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Aug 16 11:22:58 Saving logs to hdd: 					 [ OK ]
+Aug 16 11:22:58 Stopping ramlog: 					 [ OK ]
+Aug 16 11:26:30 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Aug 16 11:51:09 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Sep 23 05:00:08 Stopping ramlog: Error: ramlog is not running		 [fail]
+Sep 23 05:03:38 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Sep 23 05:03:38 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Sep 23 05:20:06 Saving logs to hdd: 					 [ OK ]
+Sep 23 05:20:06 Stopping ramlog: 					 [ OK ]
+Jan 01 01:01:04 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 01:01:49 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:04:58 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:04:59 Stopping ramlog: 					 [ OK ]
+Jan 01 01:01:21 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:03:26 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:03:27 Stopping ramlog: 					 [ OK ]
+Jan 01 01:04:21 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 02:30:59 Saving logs to hdd: 					 [ OK ]
+Jan 01 02:31:03 Stopping ramlog: 					 [ OK ]
+Jan 01 02:31:55 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 02:46:45 ramlog is running...
+Jan 01 02:50:55 Saving logs to hdd: 					 [ OK ]
+Jan 01 02:50:57 Stopping ramlog: 					 [ OK ]
+Jan 01 03:29:50 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 04:02:49 Saving logs to hdd: 					 [ OK ]
+Jan 01 04:02:51 Stopping ramlog: 					 [ OK ]
+Jan 01 01:02:15 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 03:41:55 Saving logs to hdd: 					 [ OK ]
+Nov 22 03:41:58 Stopping ramlog: 					 [ OK ]
+Nov 22 03:42:54 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 04:41:08 Saving logs to hdd: 					 [ OK ]
+Nov 22 04:41:10 Stopping ramlog: 					 [ OK ]
+Nov 22 04:42:00 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 04:51:34 Saving logs to hdd: 					 [ OK ]
+Nov 22 04:51:39 Stopping ramlog: 					 [ OK ]
+Nov 22 07:09:40 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Nov 22 07:09:40 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Nov 22 07:09:41 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1290 root    2w   REG  179,2     7770  575 /var/log/xdm.log
+Xorg    1300 root    2w   REG  179,2     7770  575 /var/log/xdm.log
+Nov 22 07:09:41 Test result: ramlog cannot be started or stopped at the moment.
+Nov 22 07:19:06 Stopping ramlog: Error: ramlog is not running		 [fail]
+Nov 22 07:19:50 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 07:52:40 Saving logs to hdd: 					 [ OK ]
+Nov 22 07:52:44 Stopping ramlog: 					 [ OK ]
+Nov 22 07:53:32 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 08:22:11 Saving logs to hdd: 					 [ OK ]
+Nov 22 08:22:18 Stopping ramlog: 					 [ OK ]
+Nov 22 08:23:05 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 08:39:05 Saving logs to hdd: 					 [ OK ]
+Nov 22 08:39:08 Stopping ramlog: 					 [ OK ]
+Nov 22 08:39:58 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+11月 22 09:07:17 ramlog is running...
+Nov 22 09:26:38 Saving logs to hdd: 					 [ OK ]
+Nov 22 09:26:42 Stopping ramlog: 					 [ OK ]
+Nov 22 09:27:31 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 09:53:30 Saving logs to hdd: 					 [ OK ]
+Nov 22 09:53:37 Stopping ramlog: 					 [ OK ]
+Nov 22 09:54:24 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 09:57:17 Saving logs to hdd: 					 [ OK ]
+Nov 22 09:57:20 Stopping ramlog: 					 [ OK ]
+Nov 22 09:58:06 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 10:20:23 Saving logs to hdd: 					 [ OK ]
+Nov 22 10:20:27 Stopping ramlog: 					 [ OK ]
+Nov 22 10:21:19 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 10:46:58 Saving logs to hdd: 					 [ OK ]
+Nov 22 10:47:02 Stopping ramlog: 					 [ OK ]
+Nov 22 10:47:53 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 12:18:12 Saving logs to hdd: 					 [ OK ]
+Nov 22 12:18:16 Stopping ramlog: 					 [ OK ]
+Nov 22 12:19:08 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 12:47:48 Saving logs to hdd: 					 [ OK ]
+Nov 22 12:47:57 Stopping ramlog: 					 [ OK ]
+Nov 22 12:48:47 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 22 12:55:13 Saving logs to hdd: 					 [ OK ]
+Nov 22 12:55:19 Stopping ramlog: 					 [ OK ]
+Jan 01 01:00:51 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Jan 01 01:00:51 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Jan 01 01:00:51 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1307 root    2w   REG  179,2    24492  479 /var/log/xdm.log
+Xorg    1319 root    2w   REG  179,2    24492  479 /var/log/xdm.log
+Jan 01 01:00:51 Test result: ramlog cannot be started or stopped at the moment.
+Nov 29 03:04:34 Stopping ramlog: Error: ramlog is not running		 [fail]
+Nov 29 03:05:25 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Nov 29 04:17:00 Saving logs to hdd: 					 [ OK ]
+Nov 29 04:17:09 Stopping ramlog: 					 [ OK ]
+Jan 01 01:00:50 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 03:40:02 Saving logs to hdd: 					 [ OK ]
+Dec 05 03:40:09 Stopping ramlog: 					 [ OK ]
+Dec 05 07:42:08 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 07:50:45 Saving logs to hdd: 					 [ OK ]
+Dec 05 07:50:49 Stopping ramlog: 					 [ OK ]
+Dec 05 07:51:36 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 08:14:40 Saving logs to hdd: 					 [ OK ]
+Dec 05 08:14:44 Stopping ramlog: 					 [ OK ]
+Dec 05 08:15:33 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 08:21:09 Saving logs to hdd: 					 [ OK ]
+Dec 05 08:21:13 Stopping ramlog: 					 [ OK ]
+Dec 05 08:21:59 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 08:47:06 Saving logs to hdd: 					 [ OK ]
+Dec 05 08:47:17 Stopping ramlog: 					 [ OK ]
+Dec 05 08:48:00 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 09:51:24 Saving logs to hdd: 					 [ OK ]
+Dec 05 09:51:34 Stopping ramlog: 					 [ OK ]
+Dec 05 09:52:23 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 05 10:07:08 Saving logs to hdd: 					 [ OK ]
+Dec 05 10:07:12 Stopping ramlog: 					 [ OK ]
+Jan 01 01:00:46 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 12 03:36:48 Saving logs to hdd: 					 [ OK ]
+Dec 12 03:36:51 Stopping ramlog: 					 [ OK ]
+Jan 01 01:00:45 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Jan 01 01:00:45 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Jan 01 01:00:45 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1327 root    2w   REG  179,2    33149   64 /var/log/xdm.log
+Jan 01 01:00:45 Test result: ramlog cannot be started or stopped at the moment.
+Jan 01 01:03:27 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 01:04:23 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:08:39 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:08:45 Stopping ramlog: 					 [ OK ]
+Jan 01 01:09:43 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 13 02:52:44 Saving logs to hdd: 					 [ OK ]
+Dec 13 02:52:50 Stopping ramlog: 					 [ OK ]
+Dec 13 02:53:45 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 13 02:55:33 Saving logs to hdd: 					 [ OK ]
+Dec 13 02:55:35 Stopping ramlog: 					 [ OK ]
+Dec 13 02:56:28 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 13 03:00:25 Saving logs to hdd: 					 [ OK ]
+Dec 13 03:00:29 Stopping ramlog: 					 [ OK ]
+Dec 13 03:09:30 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Dec 13 03:09:30 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 13 03:09:31 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1285 root    2w   REG  179,2    37902  385 /var/log/xdm.log
+Xorg    1297 root    2w   REG  179,2    37902  385 /var/log/xdm.log
+Dec 13 03:09:31 Test result: ramlog cannot be started or stopped at the moment.
+Dec 13 03:46:04 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 01:01:11 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:02:39 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:02:43 Stopping ramlog: 					 [ OK ]
+Jan 01 01:03:15 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 02:41:30 Saving logs to hdd: 					 [ OK ]
+Jan 01 02:41:34 Stopping ramlog: 					 [fail]
+Jan 01 02:42:05 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 02:53:43 Saving logs to hdd: 					 [ OK ]
+Jan 01 02:53:47 Stopping ramlog: 					 [fail]
+Jan 01 02:55:23 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Jan 01 02:55:23 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Jan 01 02:55:24 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1197 root    2w   REG  179,2    42683  626 /var/log/xdm.log
+Xorg    1207 root    2w   REG  179,2    42683  626 /var/log/xdm.log
+Jan 01 02:55:24 Test result: ramlog cannot be started or stopped at the moment.
+Jan 01 02:59:21 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Jan 01 02:59:21 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Jan 01 02:59:22 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1189 root    2w   REG  179,2    45232  626 /var/log/xdm.log
+Xorg    1201 root    0w   REG  179,2     1757  513 /var/log/Xorg.0.log.old
+Xorg    1201 root    2w   REG  179,2    45232  626 /var/log/xdm.log
+Jan 01 02:59:22 Test result: ramlog cannot be started or stopped at the moment.
+Jan 01 03:40:40 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 03:41:06 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 03:48:18 Saving logs to hdd: 					 [ OK ]
+Jan 01 03:48:22 Stopping ramlog: 					 [fail]
+Jan 01 03:54:11 ramlog: Previous shutdown/restart was unclean, some logs may be lost. [warning]
+Jan 01 03:54:11 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Jan 01 03:54:12 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1200 root    2w   REG  179,2    48517  686 /var/log/xdm.log
+Xorg    1213 root    2w   REG  179,2    48517  686 /var/log/xdm.log
+Jan 01 03:54:12 Test result: ramlog cannot be started or stopped at the moment.
+Jan 01 03:57:28 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 01:00:05 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:07:15 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:07:20 Stopping ramlog: 					 [ OK ]
+Jan 01 01:07:54 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:10:03 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:10:12 Stopping ramlog: 					 [ OK ]
+Jan 01 01:10:39 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:18:52 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:18:56 Stopping ramlog: 					 [ OK ]
+Jan 01 01:19:27 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:28:59 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:29:03 Stopping ramlog: 					 [fail]
+Jan 01 01:29:34 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:40:37 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:40:42 Stopping ramlog: 					 [ OK ]
+Jan 01 01:41:15 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 02:04:58 Saving logs to hdd: 					 [ OK ]
+Jan 01 02:30:28 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 02:38:53 Saving logs to hdd: 					 [ OK ]
+Jan 01 02:39:04 Stopping ramlog: 					 [ OK ]
+Jan 01 02:39:57 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 16 13:41:19 Saving logs to hdd: 					 [ OK ]
+Dec 16 13:41:30 Stopping ramlog: 					 [ OK ]
+Dec 16 13:42:00 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 16 13:48:38 Saving logs to hdd: 					 [ OK ]
+Dec 16 13:48:47 Stopping ramlog: 					 [ OK ]
+Dec 16 13:49:42 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 16 13:53:57 Stopping ramlog: 					 [ OK ]
+Dec 16 13:54:50 ramlog: Migration from ramlog 1.x: 			 [warning]
+Dec 16 13:54:50  Syncing files from /var/log.hdd to /var/log... 	 [ OK ]
+Dec 16 13:54:50 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 16 13:54:51 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1305 root    2w   REG  179,2    62401   62 /var/log/xdm.log
+Xorg    1316 root    0w   REG  179,2     2742  123 /var/log/Xorg.0.log
+Xorg    1316 root    2w   REG  179,2    62401   62 /var/log/xdm.log
+Dec 16 13:54:51 Test result: ramlog cannot be started or stopped at the moment.
+Dec 16 13:59:31 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 16 13:59:31 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 16 14:00:20 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 16 14:04:18 Saving logs to hdd: 					 [ OK ]
+Dec 16 14:04:26 Stopping ramlog: 					 [ OK ]
+Dec 16 14:05:22 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 16 14:20:55 Stopping ramlog: 					 [ OK ]
+Dec 16 14:21:48 ramlog: Migration from ramlog 1.x: 			 [warning]
+Dec 16 14:21:48  Syncing files from /var/log.hdd to /var/log... 	 [ OK ]
+Dec 16 14:21:49 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 16 14:21:49 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1288 root    2w   REG  179,2    65448  513 /var/log/xdm.log
+Xorg    1302 root    0w   REG  179,2     2742  385 /var/log/Xorg.0.log
+Xorg    1302 root    2w   REG  179,2    65448  513 /var/log/xdm.log
+Dec 16 14:21:49 Test result: ramlog cannot be started or stopped at the moment.
+Dec 16 14:27:43 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 16 14:27:43 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 16 14:28:32 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 16 14:33:06 Saving logs to hdd: 					 [ OK ]
+Dec 16 14:33:14 Stopping ramlog: 					 [ OK ]
+Jan 01 01:00:58 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:03:02 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:03:13 Stopping ramlog: 					 [ OK ]
+Jan 01 01:03:43 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:16:28 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:16:39 Stopping ramlog: 					 [ OK ]
+Jan 01 01:17:10 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 17 13:01:42 Saving logs to hdd: 					 [ OK ]
+Dec 17 13:01:47 Stopping ramlog: 					 [ OK ]
+Dec 17 13:02:25 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 17 13:44:57 Saving logs to hdd: 					 [ OK ]
+Dec 17 13:45:02 Stopping ramlog: 					 [ OK ]
+Dec 17 13:45:38 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 17 13:53:48 Saving logs to hdd: 					 [ OK ]
+Dec 17 13:53:57 Stopping ramlog: 					 [ OK ]
+Jan 01 01:00:05 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Jan 01 01:16:22 Saving logs to hdd: 					 [ OK ]
+Jan 01 01:16:35 Stopping ramlog: 					 [ OK ]
+Jan 01 01:17:05 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 18 12:12:26 Saving logs to hdd: 					 [ OK ]
+Dec 18 12:12:43 Stopping ramlog: 					 [ OK ]
+Dec 18 12:13:13 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 18 12:13:13 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1182 root    2w   REG  179,2    74710  478 /var/log/xdm.log
+Dec 18 12:13:13 Test result: ramlog cannot be started or stopped at the moment.
+Dec 18 13:22:14 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 18 13:22:14 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 18 13:22:38 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 18 13:22:39 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1180 root    2w   REG  179,2    76847  478 /var/log/xdm.log
+Dec 18 13:22:39 Test result: ramlog cannot be started or stopped at the moment.
+Dec 18 13:30:30 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 18 13:30:30 Stopping ramlog: Error: ramlog is not running		 [fail]
+Jan 01 01:00:05 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 26 02:12:48 Saving logs to hdd: 					 [ OK ]
+Dec 26 02:13:00 Stopping ramlog: 					 [ OK ]
+Dec 26 02:13:32 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 26 02:13:33 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1181 root    2w   REG  179,2    79914  123 /var/log/xdm.log
+Dec 26 02:13:33 Test result: ramlog cannot be started or stopped at the moment.
+Dec 26 02:24:13 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 26 02:24:13 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 26 02:24:38 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 26 02:38:31 Saving logs to hdd: 					 [ OK ]
+Dec 26 02:38:34 Stopping ramlog: 					 [ OK ]
+Dec 26 02:39:17 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 26 03:10:44 Saving logs to hdd: 					 [ OK ]
+Dec 26 03:10:59 Stopping ramlog: 					 [ OK ]
+Dec 26 03:11:27 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 26 03:11:27 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1182 root    2w   REG  179,2    84054  383 /var/log/xdm.log
+Dec 26 03:11:27 Test result: ramlog cannot be started or stopped at the moment.
+Dec 26 03:56:10 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 26 03:56:10 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 26 07:45:12 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 26 07:45:13 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1176 root    2w   REG  179,1    85978 6179 /var/log/xdm.log
+Xorg    1189 root    2w   REG  179,1    85978 6179 /var/log/xdm.log
+Dec 26 07:45:13 Test result: ramlog cannot be started or stopped at the moment.
+Dec 26 07:49:30 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 26 07:49:30 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 26 07:49:55 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 26 08:03:33 Saving logs to hdd: 					 [ OK ]
+Dec 26 08:03:38 Stopping ramlog: 					 [ OK ]
+Dec 26 08:04:13 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 26 08:07:20 Saving logs to hdd: 					 [ OK ]
+Dec 26 08:07:23 Stopping ramlog: 					 [ OK ]
+Dec 26 08:08:02 Starting ramlog-tmpfs 2.0.0: Error: /var/log is in use... [fail]
+Dec 26 08:08:02 The list of open files: (You need to close below daemons if you want to start/stop ramlog manually)
+
+COMMAND  PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+xdm     1185 root    2w   REG  179,1    90338 6165 /var/log/xdm.log
+Xorg    1191 root    2w   REG  179,1    90338 6165 /var/log/xdm.log
+Dec 26 08:08:02 Test result: ramlog cannot be started or stopped at the moment.
+Dec 26 08:17:04 ramlog: Cannot find shutdown flag file.			 [warning]
+Dec 26 08:17:04 Stopping ramlog: Error: ramlog is not running		 [fail]
+Dec 26 08:18:09 Starting ramlog-tmpfs 2.0.0: 				 [ OK ]
+Dec 26 08:21:15 Saving logs to hdd: 					 [ OK ]
+Dec 26 08:21:18 Stopping ramlog: 					 [ OK ]

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--progress</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>进度框</title>
+    <p>使用 <cmd>--progress</cmd> 选项创建一个进度对话框。</p>
+
+    <p><app>Zenity</app> 从标准输入一行行读取数据。如果某一行以 # 开头，进度框里的文本会被那一行上的文本替换，如果某一行只是一个数字，数字会被换成进度条的百分比。</p>
+	
+    <p>进度框支持以下选项：</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>文本</var></title>
+	  <p>指定显示在进度框里的文本。</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>百分比</var></title>
+	  <p>指定进度框开始时的百分比设定。</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>当达到 100% 时自动关闭对话框。</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>指定进度条跳动，直到从标准输入读到一个 EOF 文件结束符。</p>
+      </item>
+
+    </terms>
+
+    <p>下面的脚本示范了如何创建一个进度对话框：</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# 更新邮件日志" ; sleep 1
+echo "20" ; sleep 1
+echo "# 复位定时计划任务" ; sleep 1
+echo "50" ; sleep 1
+echo "该行会被忽略" ; sleep 1
+echo "75" ; sleep 1
+echo "# 重启系统" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="更新系统日志" \
+  --text="扫描邮件日志..." \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="更新被取消。"
+fi
+</code>
+
+
+    <figure id="zenity-progress-screenshot">
+      <title>进度框范例</title>
+      <desc><app>Zenity</app> 进度对话框范例</desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

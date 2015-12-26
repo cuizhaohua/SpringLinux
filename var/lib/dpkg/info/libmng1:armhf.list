@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmng1
+/usr/share/doc/libmng1/copyright
+/usr/share/doc/libmng1/changelog.gz
+/usr/share/doc/libmng1/changelog.Debian.gz
+/usr/share/doc/libmng1/changelog.Debian.armhf.gz
+/usr/share/doc/libmng1/README
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libmng.so.1.1.0.10
+/usr/lib/arm-linux-gnueabihf/libmng.so.1

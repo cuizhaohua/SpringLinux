@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Syntaksivärityksen käyttäminen</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Syntaksiväritys</title>
+    <p><app>gedit</app> tarjoaa syntaksiväritykset laajalle valikoimalle merkki-, ohjelmointi- ja tieteiskieliä. Jos <app>gedit</app> tunnistaa tiedoston muodon , syntaksiväritys suoritetaan automaattisesti.</p>
+
+    <p>If your syntax or language is not highlighted upon startup, you can
+    select the appropriate syntax or language by clicking
+    <guiseq><gui style="menu">View</gui>
+    <gui style="menuitem">Highlight Mode</gui></guiseq>,
+    and then choosing the desired syntax. Alternately, you can select the syntax
+    name from a list at the bottom of the <app>gedit</app> window.</p>
+  </section>
+
+</page>

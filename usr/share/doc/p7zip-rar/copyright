@@ -1,0 +1,83 @@
+This package was debianized by Mohammed Adnène Trojette
+<adn+deb@diwi.org> on Sun, 12 Dec 2004 14:28:27 +0200.
+
+It was downloaded from http://p7zip.sourceforge.net/.
+
+7zip is Copyright (C) 1999-2005 Igor Pavlov.
+p7zip is ported from 7zip by my space <myspace@users.sourceforge.net>
+
+Most of 7-Zip source code is under GNU LGPL.
+
+Files in folders
+  CPP/7zip/Compress/Rar/
+are licensed under "unRAR license + GNU LGPL" license.
+Source code files in all other folders of this package are under GNU LGPL.
+
+"unRAR license + GNU LGPL" means that you must follow 
+GNU LGPL in all aspects while it is in agreement 
+with unRAR license. But you can not break unRAR license rules.
+It means that unRAR license is main license in that pair.
+
+=========================================================================
+
+      GNU LESSER GENERAL PUBLIC LICENSE
+           Version 2.1, February 1999
+
+ Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+     51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+On Debian GNU/Linux systems, the complete text of the GNU Lesser General
+Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+=========================================================================
+
+ ******    *****   ******   unRAR - free utility for RAR archives
+ **   **  **   **  **   **  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ ******   *******  ******    License for use and distribution of
+ **   **  **   **  **   **   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ **   **  **   **  **   **         FREE portable version
+                                   ~~~~~~~~~~~~~~~~~~~~~
+
+      The source code of unRAR utility is freeware. This means:
+
+   1. All copyrights to RAR and the utility unRAR are exclusively
+      owned by the author - Alexander Roshal.
+
+   2. The unRAR sources may be used in any software to handle RAR
+      archives without limitations free of charge, but cannot be used
+      to re-create the RAR compression algorithm, which is proprietary.
+      Distribution of modified unRAR sources in separate form or as a
+      part of other software is permitted, provided that it is clearly
+      stated in the documentation and source comments that the code may
+      not be used to develop a RAR (WinRAR) compatible archiver.
+
+   3. The unRAR utility may be freely distributed. No person or company 
+      may charge a fee for the distribution of unRAR without written
+      permission from the copyright holder.
+
+   4. THE RAR ARCHIVER AND THE UNRAR UTILITY ARE DISTRIBUTED "AS IS".
+      NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED.  YOU USE AT 
+      YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, 
+      DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING
+      OR MISUSING THIS SOFTWARE.
+
+   5. Installing and using the unRAR utility signifies acceptance of
+      these terms and conditions of the license.
+
+   6. If you don't agree with terms of the license you must remove
+      unRAR files from your storage devices and cease to use the
+      utility.
+
+      Thank you for your interest in RAR and unRAR.
+
+
+                                            Alexander L. Roshal
+
+=========================================================================
+
+The current Debian packaging is (C) 2004-2007, Mohammed Adnène
+Trojette <adn+deb@diwi.org> and is licensed under the GPL, see
+/usr/share/common-licenses/GPL-2 on Debian systems.
+

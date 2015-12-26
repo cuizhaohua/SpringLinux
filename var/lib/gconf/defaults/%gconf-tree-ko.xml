@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="열쇠글을 저장할 키 모음">
+						<longdesc>gksu가 사용할 키 모음의 이름. 보통 사용하는 값은 &quot;session&quot;으로 현재 세션에 대해 열쇠글을 저장합니다. 그리고 &quot;default&quot;는 시간 제한 없이 열쇠글을 저장합니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="열쇠글을 그놈 키모음에 저장">
+						<longdesc>gksu에서 입력하는 열쇠글을 그놈 키 모음에 저장해서 매번 물어보지 않게 합니다</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="열쇠글이 필요 없을 때 정보 메세지 표시">
+						<longdesc>이 옵션에 따라 (무언가의 이유로) 열쇠글 입력 없이 프로그램을 실행한다는 사실을 알리는 메세지 창을 표시할 지 여부를 결정합니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="고정할 때 물어보기">
+						<longdesc>이 옵션을 켜면 gksu에서 열쇠글을 입력할 때 화면을 고정할 지 여부를 물어봅니다 이 옵션은 force-grab 옵션을 껐을 때만 효과가 있습니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="sudo 모드">
+						<longdesc>sudo를 기본 벡엔드로 할 지 여부. 이 방법은 -S 옵션을 사용하거나 (&apos;gksu&apos; 대신) &apos;gksudo&apos;를 실행해도 사용할 수 있습니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="키보드 및 마우스 강제로 고정">
+						<longdesc>명령행에 -g 옵션을 넘겼을 경우에도 키보드와 마우스 고정.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="키보드 및 마우스 고정 사용하지 않기">
+						<longdesc>키보드 및 마우스 고정 기능을 끌 지 여부. 이 옵션을 사용하면 다른 X 프로그램이 키보드 입력 이벤트를 가로챌 수 있습니다. 즉 실행 중일 지도 모르는 의심스러운 프로그램을 막을 수 없게 됩니다.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

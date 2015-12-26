@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = purge ]; then
+	rm -f /etc/wifi-radar.conf
+fi
+
+dpkg-maintscript-helper rm_conffile \
+               /etc/init.d/wifi-radar -- "$@"
+
+# Automatically added by dh_installmenu
+if [ -x "`which update-menus 2>/dev/null`" ]; then update-menus ; fi
+# End automatically added section
+# Automatically added by dh_installdebconf
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+	. /usr/share/debconf/confmodule
+	db_purge
+fi
+# End automatically added section
+

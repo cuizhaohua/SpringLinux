@@ -1,0 +1,35 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installudev
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/udev/rules.d/z60_libpisock9.rules" ]; then
+		if [ "`md5sum \"/etc/udev/rules.d/z60_libpisock9.rules\" | sed -e \"s/ .*//\"`" = \
+		     "`dpkg-query -W -f='${Conffiles}' libpisock9 | sed -n -e \"\\\\' /etc/udev/rules.d/z60_libpisock9.rules '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			rm -f "/etc/udev/rules.d/z60_libpisock9.rules"
+		fi
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installmodules
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/modprobe.d/libpisock9" ]; then
+		if [ "`md5sum \"/etc/modprobe.d/libpisock9\" | sed -e \"s/ .*//\"`" = \
+		     "`dpkg-query -W -f='${Conffiles}' libpisock9 | sed -n -e \"\\\\' /etc/modprobe.d/libpisock9 '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			rm -f "/etc/modprobe.d/libpisock9"
+		fi
+	fi
+fi
+# End automatically added section
+# Automatically added by dh_installmodules
+if [ "$1" = install ] || [ "$1" = upgrade ]; then
+	if [ -e "/etc/modprobe.d/libpisock9" ]; then
+		if [ "`md5sum \"/etc/modprobe.d/libpisock9\" | sed -e \"s/ .*//\"`" = \
+		     "`dpkg-query -W -f='${Conffiles}' libpisock9 | sed -n -e \"\\\\' /etc/modprobe.d/libpisock9 '{s/ obsolete$//;s/.* //p}\"`" ]
+		then
+			rm -f "/etc/modprobe.d/libpisock9"
+		fi
+	fi
+fi
+# End automatically added section

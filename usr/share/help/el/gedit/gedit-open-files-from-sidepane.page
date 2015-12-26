@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προβολή και άνοιγμα αρχείων από την πλευρική μπάρα</title>
+  <p>Ο πιο συνηθισμένος τρόπος για να αλλάξετε μεταξύ αρχείων στο <app>gedit</app> είναι χρησιμοποιώντας τις καρτέλες στο πάνω μέρος του παραθύρου του <app>gedit</app>. Σε μερικές περιπτώσεις, ωστόσο, ειδικά όταν δουλεύετε με μεγάλο αριθμό ανοιχτών αρχείων, μπορεί να το βρείτε πιο χρήσιμο να χρησιμοποιείτε την <app>πλευρική μπάρα</app>.</p> 
+
+  <p>Για να ενεργοποιήσετε την <app>πλευρική στήλη</app>, επιλέξτε <guiseq><gui>Προβολή</gui><gui>Πλευρική στήλη</gui></guiseq>,ή πατήστε το πλήκτρο <key>F9</key>.</p>
+
+  <note style="note">
+    <p>Μπορείτε να εναλλάξετε την <gui>πλευρική στήλη</gui> σε ανοιχτή ή κλειστή πατώντας <key>F9</key> οποιαδήποτε στιγμή.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Άνοιγμα αρχείων από την πλευρική μπάρα</title>
+    <p>Για να ανοίξετε αρχεία μέσα από την <app>Πλευρική στήλη</app>, αρχικά ανοίξτε την <app>Πλευρική στήλη</app> επιλέγοντας <guiseq><gui>Προβολή</gui><gui>Πλευρική στήλη</gui></guiseq>, έπειτα πατήστε στο εικονίδιο <gui>Περιηγητής αρχείων</gui> στο κάτω μέρος του παραθύρου.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Αυτό θα ενεργοποιήσει την λειτουργία <em>περιηγητής-αρχείων</em> της <app>Πλευρικής μπάρας</app>. Έπειτα μπορείτε τα χρησιμοποιήσετε τα πλήκτρα πλοήγησης στο πάνω μέρος της μπάρας για να εντοπίσετε και να ανοίξετε τα αρχεία που επιθυμείτε.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Χρησιμοποιώντας την πλευρική μπάρα για να αλλάξετε μεταξύ ανοιχτών αρχείων</title>
+    <p>Μόλις έχετε αρκετά αρχεία ανοιχτά, μπορείτε να χρησιμοποιήσετε την πλευρική μπάρα για να αλλάξετε μεταξύ ανοιχτών αρχείων. Για να ενεργοποιήσετε τον περιηγητή αρχείων της <app>πλευρικής μπάρας</app>, πατήστε στο εικονίδιο <gui>αρχείο</gui> στο κάτω μέρος της <gui>πλευρικής στήλης</gui>.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Πατώντας σε οποιοδήποτε όνομα αρχείου στην <gui>πλευρική μπάρα</gui> θα ανοίξει το αρχείο αυτό για επεξεργασία.</p>
+  </section>
+ 
+ </page>

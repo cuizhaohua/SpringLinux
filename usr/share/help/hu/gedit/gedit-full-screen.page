@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Teljes képernyős mód használata</title>
+
+  <p>Nagy dokumentumok kezelésekor hasznos lehet a <app>gedit</app> teljes képernyős módja. A teljes képernyős mód használata elrejti a <gui>menüsávot</gui>, a <gui>lapsávot</gui> és az <gui>eszköztárat</gui>, így a szöveg nagyobb részét láthatja, és jobban koncentrálhat feladataira.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Teljes képernyős mód bekapcsolása</title>
+    <p>A teljes képernyős mód bekapcsolásához nyomja meg az <key>F11</key> billentyűt. A <app>gedit</app> menüje, címe és lapsávjai eltűnnek, és csak az aktuális fájl szövegét fogja látni.</p>
+    <p>Ha a <app>gedit</app> egyik menüjéből szeretne végrehajtani egy műveletet, mialatt teljes képernyős módban van, akkor mozgassa az egérmutatót a képernyő tetejére. A <app>gedit</app> menüsávja újra megjelenik, és kiválaszthatja a kívánt menüpontot.</p>
+
+    <note>
+      <p>A nyitott lapok közti váltáshoz teljes képernyős módban nyomja meg a <keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> vagy a <keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq> kombinációt.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Teljes képernyős mód kikapcsolása</title>
+    <p>A teljes képernyős mód kikapcsolásához, és a normál <app>gedit</app> ablakhoz való visszatéréshez nyomja meg az <key>F11</key> billentyűt.</p>
+    <p>Ezen kívül kurzorát a képernyő tetejére is mozgathatja, és megvárhatja, amíg megjelenik a <gui>menüsáv</gui>. Amikor megjelenik a <gui>menüsáv</gui>, nyomja meg a <gui>Teljes képernyő elhagyása</gui> gombot.</p>
+  </section>
+
+</page>

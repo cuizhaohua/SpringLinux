@@ -1,0 +1,420 @@
+[    0.000000] Booting Linux on physical CPU 0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.4.79 (allen@cubieboard) (gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) ) #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014
+[    0.000000] CPU: ARMv7 Processor [410fc074] revision 4 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: sun7i
+[    0.000000] Memory Reserved:
+[    0.000000] 	SYS  : 0x43000000 - 0x4300ffff  (  64 kB)
+[    0.000000] 	LCD  : 0x44000000 - 0x44ffffff  (  16 MB)
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] sunxi: Allwinner A20 (AW1651/sun7i) detected.
+[    0.000000] On node 0 totalpages: 524288
+[    0.000000] free_area_init_node: node 0, pgdat c09f2680, node_mem_map d0000000
+[    0.000000]   DMA zone: 512 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 65024 pages, LIFO batch:15
+[    0.000000]   Normal zone: 1008 pages used for memmap
+[    0.000000]   Normal zone: 128016 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 2576 pages used for memmap
+[    0.000000]   HighMem zone: 327152 pages, LIFO batch:31
+[    0.000000] PERCPU: Embedded 7 pages/cpu @d100e000 s7232 r8192 d13248 u32768
+[    0.000000] pcpu-alloc: s7232 r8192 d13248 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 520192
+[    0.000000] Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] allocated 4194304 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 2048MB = 2048MB total
+[    0.000000] Memory: 2047276k/2047276k available, 49876k reserved, 1318912K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xf0000000 - 0xff000000   ( 240 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xef800000   ( 760 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc092d22c   (9365 kB)
+[    0.000000]       .init : 0xc092e000 - 0xc0962c40   ( 212 kB)
+[    0.000000]       .data : 0xc0964000 - 0xc09fb938   ( 607 kB)
+[    0.000000]        .bss : 0xc09fb95c - 0xc0bba178   (1787 kB)
+[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000] 	Additional per-CPU info printed with stalls.
+[    0.000000] NR_IRQS:192
+[    0.000000] Architected local timer running at 24.00MHz.
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] start_kernel(): bug: interrupts were enabled early
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] Calibrating delay loop... 1908.73 BogoMIPS (lpj=9543680)
+[    0.000000] pid_max: default: 32768 minimum: 301
+[    0.000000] Mount-cache hash table entries: 512
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Initializing cgroup subsys memory
+[    0.000000] Initializing cgroup subsys devices
+[    0.000000] Initializing cgroup subsys freezer
+[    0.000000] Initializing cgroup subsys blkio
+[    0.000000] Initializing cgroup subsys perf_event
+[    0.000000] CPU: Testing write buffer coherency: ok
+[    0.000000] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.000000] hw perfevents: enabled with ARMv7 Cortex-A7 PMU driver, 5 counters available
+[    0.000000] Setting up static identity map for 0x405d2760 - 0x405d27b8
+[    0.000000] CPU1: Booted secondary processor
+[    0.000000] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.000000] Brought up 2 CPUs
+[    0.000000] SMP: Total of 2 processors activated (3824.02 BogoMIPS).
+[    0.000000] devtmpfs: initialized
+[    0.000000] dummy: 
+[    0.000000] NET: Registered protocol family 16
+[    0.000000] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.000000] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.000000] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.000000] [ccu-inf] aw clock manager init
+[    0.000000] [ccu-inf] aw_ccu_init
+[    0.000000] [ccu-inf] script config pll3 to 297MHz
+[    0.000000] [ccu-inf] script config pll4 to 300MHz
+[    0.000000] [ccu-inf] script config pll6 to 600MHz
+[    0.000000] [ccu-inf] script config pll7 to 297MHz
+[    0.000000] [ccu-inf] script config pll8 to 336MHz
+[    0.000000] Init eGon pin module V2.0
+[    0.000000] bio: create slab <bio-0> at 0
+[    0.000000] sunxi_gpio driver init ver 1.3
+[    0.000000] gpiochip_add: registered GPIOs 1 to 2 on device: A1X_GPIO
+[    0.000000] SCSI subsystem initialized
+[    0.000000] libata version 3.00 loaded.
+[    0.000000] usbcore: registered new interface driver usbfs
+[    0.000000] usbcore: registered new interface driver hub
+[    0.000000] usbcore: registered new device driver usb
+[    0.000000] Linux media interface: v0.10
+[    0.000000] Linux video capture interface: v2.00
+[    0.000000] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[    0.000000] cfg80211: Calling CRDA to update world regulatory domain
+[    0.000000] Switching to clocksource arch_sys_counter
+[    0.000000] FS-Cache: Loaded
+[    0.000000] CacheFiles: Loaded
+[    0.000000] sw_hcd_host0 sw_hcd_host0: sw_hcd host driver
+[    0.000000] sw_hcd_host0 sw_hcd_host0: new USB bus registered, assigned bus number 1
+[    0.000000] hub 1-0:1.0: USB hub found
+[    0.000000] hub 1-0:1.0: 1 port detected
+[    0.000000] config i2c gpio with gpio_config api 
+[    0.000000] axp_mfd 0-0034: AXP (CHIP ID: 0x41) detected
+[    0.000000] I2C: i2c-0: AW16XX I2C adapter
+[    0.000000] I2C: i2c-1: AW16XX I2C adapter
+[    0.000000] NET: Registered protocol family 2
+[    0.000000] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.000000] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+[    0.000000] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.000000] TCP: reno registered
+[    0.000000] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.000000] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.000000] NET: Registered protocol family 1
+[    0.000000] RPC: Registered named UNIX socket transport module.
+[    0.000000] RPC: Registered udp transport module.
+[    0.000000] RPC: Registered tcp transport module.
+[    0.000000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.000000] pm: select wifi: ap6210
+[    0.000000] ap6xxx: config 32k clock
+[    0.000000] [wifi_pm]: wifi gpio init is OK !!
+[    0.000000] [rfkill]: rfkill set power 0
+[    0.000000] audit: initializing netlink socket (disabled)
+[    0.000000] type=2000 audit(0.550:1): initialized
+[    0.000000] highmem bounce pool size: 64 pages
+[    0.000000] VFS: Disk quotas dquot_6.5.2
+[    0.000000] Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.000000] NFS: Registering the id_resolver key type
+[    0.000000] NTFS driver 2.1.30 [Flags: R/W].
+[    0.000000] fuse init (API version 7.18)
+[    0.000000] msgmni has been set to 1422
+[    0.000000] alg: comp: Compression test 1 failed for lzo-generic: output len = 57
+[    0.000000] alg: No test for stdrng (krng)
+[    0.000000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.000000] io scheduler noop registered
+[    0.000000] io scheduler deadline registered
+[    0.000000] io scheduler cfq registered (default)
+[    0.000000] sunxi disp driver loaded (/dev/disp api 1.0)
+[    0.000000] Serial: 8250/16550 driver, 8 ports, IRQ sharing disabled
+[    0.000000] [uart]: used uart info.: 0x9d
+[    0.000000] [uart]: serial probe 0 irq 33 mapbase 0x01c28000
+[    0.000000] sunxi-uart.0: ttyS0 at MMIO 0x1c28000 (irq = 33) is a U6_16550A
+[    0.000000] console [ttyS0] enabled
+[    0.000000] [uart]: serial probe 2 irq 35 mapbase 0x01c28800
+[    0.000000] sunxi-uart.2: ttyS1 at MMIO 0x1c28800 (irq = 35) is a U6_16550A
+[    0.000000] [uart]: serial probe 3 irq 36 mapbase 0x01c28c00
+[    0.000000] sunxi-uart.3: ttyS2 at MMIO 0x1c28c00 (irq = 36) is a U6_16550A
+[    0.000000] [uart]: serial probe 4 irq 49 mapbase 0x01c29000
+[    0.000000] sunxi-uart.4: ttyS3 at MMIO 0x1c29000 (irq = 49) is a U6_16550A
+[    0.000000] [uart]: serial probe 7 irq 52 mapbase 0x01c29c00
+[    0.000000] sunxi-uart.7: ttyS4 at MMIO 0x1c29c00 (irq = 52) is a U6_16550A
+[    0.000000] G2D: drv_g2d_init
+[    0.000000] G2D: Module initialized.major:250
+[    0.000000] brd: module loaded
+[    0.000000] loop: module loaded
+[    0.000000] [NAND] nand driver version: 0x2 0x9 
+[    0.000000] otp copy 0 is ok!
+[    0.000000] Dev Sunxi softw311 nand magic does not match for MBR 1: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw311 nand magic does not match for MBR 2: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw311 nand magic does not match for MBR 3: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw311 nand magic does not match for MBR 4: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw311 nand header bad for all MBR copies, MBR corrupted or not present.
+[    0.000000] Dev Sunxi softw411 nand magic does not match for MBR 1: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw411 nand magic does not match for MBR 2: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw411 nand magic does not match for MBR 3: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw411 nand magic does not match for MBR 4: \xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff\xffffffff
+[    0.000000] Dev Sunxi softw411 nand header bad for all MBR copies, MBR corrupted or not present.
+[    0.000000]  nand: unknown partition table
+[    0.000000] [NAND]nand driver, ok.
+[    0.000000] sw_ahci sw_ahci.0: controller can't do PMP, turning off CAP_PMP
+[    0.000000] sw_ahci sw_ahci.0: forcing PORTS_IMPL to 0x1
+[    0.000000] sw_ahci sw_ahci.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl platform mode
+[    0.000000] sw_ahci sw_ahci.0: flags: ncq sntf pm led clo only pio slum part ccc 
+[    0.000000] scsi0 : sw_ahci_platform
+[    0.000000] ata1: SATA max UDMA/133 mmio [mem 0x01c18000-0x01c18fff] port 0x100 irq 88
+[    0.000000] bonding: Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[    0.000000] PPP generic driver version 2.4.2
+[    0.000000] PPP BSD Compression module registered
+[    0.000000] PPP Deflate Compression module registered
+[    0.000000] PPP MPPE Compression module registered
+[    0.000000] NET: Registered protocol family 24
+[    0.000000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.000000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.000000] [sw-ehci1]: open clock
+[    0.000000] [sw-ehci1]: Set USB Power ON
+[    0.000000] sw-ehci sw-ehci.1: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.000000] sw-ehci sw-ehci.1: new USB bus registered, assigned bus number 2
+[    0.000000] sw-ehci sw-ehci.1: irq 71, io mem 0x01c14000
+[    0.000000] sw-ehci sw-ehci.1: USB 2.0 started, EHCI 1.00
+[    0.000000] hub 2-0:1.0: USB hub found
+[    0.000000] hub 2-0:1.0: 1 port detected
+[    0.000000] [sw-ohci1]: open clock
+[    0.000000] sw-ohci sw-ohci.1: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    0.000000] sw-ohci sw-ohci.1: new USB bus registered, assigned bus number 3
+[    0.000000] sw-ohci sw-ohci.1: irq 96, io mem 0x01c14400
+[    0.000000] hub 3-0:1.0: USB hub found
+[    0.000000] hub 3-0:1.0: 1 port detected
+[    0.000000] [sw-ehci2]: open clock
+[    0.000000] [sw-ehci2]: Set USB Power ON
+[    0.000000] sw-ehci sw-ehci.2: SW USB2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.000000] sw-ehci sw-ehci.2: new USB bus registered, assigned bus number 4
+[    0.000000] sw-ehci sw-ehci.2: irq 72, io mem 0x01c1c000
+[    0.000000] ata1: SATA link down (SStatus 0 SControl 300)
+[    0.000000] sw-ehci sw-ehci.2: USB 2.0 started, EHCI 1.00
+[    0.000000] ehci_irq: port change detect
+[    0.000000] hub 4-0:1.0: USB hub found
+[    0.000000] hub 4-0:1.0: 1 port detected
+[    0.000000] [sw-ohci2]: open clock
+[    0.000000] sw-ohci sw-ohci.2: SW USB2.0 'Open' Host Controller (OHCI) Driver
+[    0.000000] sw-ohci sw-ohci.2: new USB bus registered, assigned bus number 5
+[    0.000000] sw-ohci sw-ohci.2: irq 97, io mem 0x01c1c400
+[    0.000000] hub 5-0:1.0: USB hub found
+[    0.000000] hub 5-0:1.0: 1 port detected
+[    0.000000] mousedev: PS/2 mouse device common for all mice
+[    0.000000] input: sunxi-ir as /devices/virtual/input/input0
+[    0.000000] IR Initial OK
+[    0.000000] usbcore: registered new interface driver synaptics_usb
+[    0.000000] usbcore: registered new interface driver usbtouchscreen
+[    0.000000] i2c-core: driver [synaptics-rmi-ts] using legacy suspend method
+[    0.000000] i2c-core: driver [synaptics-rmi-ts] using legacy resume method
+[    0.000000] rtc: enable pmu backup
+[    0.000000] sunxi-rtc sunxi-rtc: rtc core: registered rtc as rtc0
+[    0.000000] i2c /dev entries driver
+[    0.000000] [ace_drv] start!!!
+[    0.000000] [ace_drv] init end!!!
+[    0.000000] [pa_drv] start!!!
+[    0.000000] [pa_drv] init end!!!
+[    0.000000] axp20_ldo1: 1300 mV 
+[    0.000000] axp20_ldo2: 1800 <--> 3300 mV at 3000 mV 
+[    0.000000] axp20_ldo3: 700 <--> 3500 mV at 2800 mV 
+[    0.000000] axp20_ldo4: 1250 <--> 3300 mV at 2800 mV 
+[    0.000000] axp20_buck2: 700 <--> 2275 mV at 1450 mV 
+[    0.000000] axp20_buck3: 700 <--> 3500 mV at 1300 mV 
+[    0.000000] axp20_ldoio0: 1800 <--> 3300 mV at 2800 mV 
+[    0.000000] input: axp20-supplyer as /devices/platform/sunxi-i2c.0/i2c-0/0-0034/axp20-supplyer.28/input/input1
+[    0.000000] usb 4-1: new high-speed USB device number 2 using sw-ehci
+[    0.000000] axp20_ldo2: Failed to create debugfs directory
+[    0.000000] device-mapper: uevent: version 1.0.3
+[    0.000000] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+[    0.000000] device-mapper: multipath: version 1.3.0 loaded
+[    0.000000] device-mapper: multipath round-robin: version 1.0.0 loaded
+[    0.000000] device-mapper: multipath queue-length: version 0.1.0 loaded
+[    0.000000] device-mapper: multipath service-time: version 0.2.0 loaded
+[    0.000000] cpuidle: using governor ladder
+[    0.000000] cpuidle: using governor menu
+[    0.000000] [mmc-msg] sw_mci_init
+[    0.000000] [mmc-msg] MMC host used card: 0x9, boot card: 0x0, io_card 8
+[    0.000000] [mmc-msg] sdc0 set round clock 400000, src 24000000
+[    0.000000] [mmc-msg] sdc0 set ios: clk 0Hz bm OD pm OFF vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc0 Probe: base:0xf014c000 irq:64 sg_cpu:f014e000(4fc00000) ret 0.
+[    0.000000] [mmc-msg] sdc3 set round clock 400000, src 24000000
+[    0.000000] [mmc-msg] sdc3 set ios: clk 0Hz bm OD pm OFF vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc3 Probe: base:0xf0150000 irq:67 sg_cpu:f0152000(4fc01000) ret 0.
+[    0.000000] [mmc_pm]: failed to fetch sdio card configuration!
+[    0.000000] sunxi_leds driver init
+[    0.000000] Registered led device: blue:ph21:led1
+[    0.000000] Registered led device: orange:ph20:led2
+[    0.000000] Registered led device: white:ph11:led3
+[    0.000000] Registered led device: green:ph07:led4
+[    0.000000] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.000000] hub 4-1:1.0: USB hub found
+[    0.000000] usbcore: registered new interface driver usbhid
+[    0.000000] usbhid: USB HID core driver
+[    0.000000] i2c-core: driver [cptm1217] using legacy suspend method
+[    0.000000] i2c-core: driver [cptm1217] using legacy resume method
+[    0.000000] ashmem: initialized
+[    0.000000] logger: created 256K log 'log_main'
+[    0.000000] logger: created 256K log 'log_events'
+[    0.000000] logger: created 256K log 'log_radio'
+[    0.000000] logger: created 256K log 'log_system'
+[    0.000000] hub 4-1:1.0: 4 ports detected
+[    0.000000] asoc: sndspdif <-> sunxi-spdif.0 mapping ok
+[    0.000000] IPv4 over IPv4 tunneling driver
+[    0.000000] TCP: bic registered
+[    0.000000] TCP: cubic registered
+[    0.000000] TCP: westwood registered
+[    0.000000] TCP: highspeed registered
+[    0.000000] TCP: hybla registered
+[    0.000000] TCP: htcp registered
+[    0.000000] TCP: vegas registered
+[    0.000000] TCP: veno registered
+[    0.000000] TCP: scalable registered
+[    0.000000] TCP: lp registered
+[    0.000000] TCP: yeah registered
+[    0.000000] TCP: illinois registered
+[    0.000000] Initializing XFRM netlink socket
+[    0.000000] NET: Registered protocol family 10
+[    0.000000] NET: Registered protocol family 17
+[    0.000000] NET: Registered protocol family 15
+[    0.000000] [mmc_pm]: No sdio card, please check your config !!
+[    0.000000] Registering the dns_resolver key type
+[    0.000000] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 4
+[    0.000000] Registering SWP/SWPB emulation handler
+[    0.000000] axp20_buck2: Failed to create debugfs directory
+[    0.000000] [cpu_freq] INF:-------------------V-F Table-------------------
+[    0.000000] [cpu_freq] INF:	voltage = 1450mv 	frequency = 1008MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1425mv 	frequency =  912MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1350mv 	frequency =  864MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1250mv 	frequency =  720MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1150mv 	frequency =  528MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1100mv 	frequency =  312MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1050mv 	frequency =  144MHz
+[    0.000000] [cpu_freq] INF:	voltage = 1000mv 	frequency =    0MHz
+[    0.000000] [cpu_freq] INF:-----------------------------------------------
+[    0.000000] [cpu_freq] INF:sunxi_cpufreq_initcall, get cpu frequency from sysconfig, max freq: 1008MHz, min freq: 720MHz
+[    0.000000] registered taskstats version 1
+[    0.000000] [DISP] Invalid mode string: EDID:1600x900p60, ignoring
+[    0.000000] usb 4-1.1: new low-speed USB device number 3 using sw-ehci
+[    0.000000] input: SIGMACHIP USB Keyboard as /devices/platform/sw-ehci.2/usb4/4-1/4-1.1/4-1.1:1.0/input/input2
+[    0.000000] generic-usb 0003:1C4F:0002.0001: input: USB HID v1.10 Keyboard [SIGMACHIP USB Keyboard] on usb-sw-ehci-1.1/input0
+[    0.000000] input: SIGMACHIP USB Keyboard as /devices/platform/sw-ehci.2/usb4/4-1/4-1.1/4-1.1:1.1/input/input3
+[    0.000000] generic-usb 0003:1C4F:0002.0002: input: USB HID v1.10 Device [SIGMACHIP USB Keyboard] on usb-sw-ehci-1.1/input1
+[    0.000000] [mmc-msg] mmc 0 detect change, present 1
+[    0.000000] usb 4-1.2: new low-speed USB device number 4 using sw-ehci
+[    0.000000] input: PixArt USB Optical Mouse as /devices/platform/sw-ehci.2/usb4/4-1/4-1.2/4-1.2:1.0/input/input4
+[    0.000000] generic-usb 0003:093A:2510.0003: input: USB HID v1.11 Mouse [PixArt USB Optical Mouse] on usb-sw-ehci-1.2/input0
+[    0.000000] [mmc-msg] sdc0 set ios: clk 0Hz bm PP pm UP vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc0 power on
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc0 set round clock 400000, src 24000000
+[    0.000000] Console: switching to colour frame buffer device 210x65
+[    0.000000] [mmc-err] smc 0 err, cmd 52,  RTO
+[    0.000000] [mmc-err] smc 0 err, cmd 52,  RTO
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] I2C: i2c-2: HDMI I2C adapter
+[    0.000000] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.000000] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.000000] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.000000] [mmc-err] smc 0 err, cmd 5,  RTO
+[    0.000000] axp20_buck3: incomplete constraints, leaving on
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] axp20_buck2: incomplete constraints, leaving on
+[    0.000000] axp20_ldo4: incomplete constraints, leaving on
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] axp20_ldo3: incomplete constraints, leaving on
+[    0.000000] axp20_ldo2: incomplete constraints, leaving on
+[    0.000000] axp20_ldo1: incomplete constraints, leaving on
+[    0.000000] console [netcon0] enabled
+[    0.000000] netconsole: network logging started
+[    0.000000] sunxi-rtc sunxi-rtc: setting system clock to 2015-12-26 06:44:59 UTC (1451112299)
+[    0.000000] ALSA device list:
+[    0.000000]   #0: sunxi-CODEC  Audio Codec
+[    0.000000]   #1: sunxi-sndspdif
+[    0.000000] Waiting for root device /dev/mmcblk0p1...
+[    0.000000] [mmc-msg] sdc0 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing SD-HS(SDR25) dt B
+[    0.000000] [mmc-msg] sdc0 set ios: clk 50000000Hz bm PP pm ON vdd 3.3V width 1 timing SD-HS(SDR25) dt B
+[    0.000000] [mmc-msg] sdc0 set round clock 42857143, src 600000000
+[    0.000000] [mmc-msg] sdc0 set ios: clk 50000000Hz bm PP pm ON vdd 3.3V width 4 timing SD-HS(SDR25) dt B
+[    0.000000] mmc0: new high speed SDHC card at address e624
+[    0.000000] mmcblk0: mmc0:e624 SU08G 7.40 GiB 
+[    0.000000]  mmcblk0: p1
+[    0.000000] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[    0.000000] VFS: Mounted root (ext4 filesystem) on device 179:1.
+[    0.000000] devtmpfs: mounted
+[    0.000000] Freeing init memory: 208K
+[    0.000000] Write protecting the kernel text section c0008000 - c08fd000
+[    0.000000] systemd-udevd[166]: starting version 215
+[    0.000000] /work/sdk/linux-sunxi/drivers/rtc/rtc-sun4i.c sunxi_rtc_alarmirq 169
+[    0.000000] /work/sdk/linux-sunxi/drivers/rtc/rtc-sun4i.c sunxi_rtc_alarmirq 169
+[    0.000000] EXT4-fs (mmcblk0p1): Cannot change data mode on remount
+[    0.000000] EXT4-fs (mmcblk0p1): Cannot change data mode on remount
+[    0.000000] pwm-sunxi: pwm0 configured - period: 20, duty_percent: 50, duty: 10
+[    0.000000] gmac: use mac address from chipid
+[    0.000000] eth%d: device MAC address 02:0f:06:02:13:18
+[    0.000000] [gmac]: sun6i_gmac platform driver registration completed
+[    0.000000] UMP<2>: Inserting UMP device driver. Compiled: Sep 24 2014, time: 10:22:12
+[    0.000000] UMP<2>: Using OS memory backend, allocation limit: 134217728
+[    0.000000] UMP: UMP device driver  loaded
+[    0.000000] Mali: permit MALI_IOC_MEM_MAP_EXT ioctl for framebuffer (paddr=0x44000000, size=16777216)
+[    0.000000] mali: use config clk_div 1
+[    0.000000] mali: clk_div 1
+[    0.000000] Mali: mali clock set completed, clock is  312000000 Hz
+[    0.000000] mali: use config clk_div 1
+[    0.000000] mali: clk_div 1
+[    0.000000] Mali: mali clock set completed, clock is  312000000 Hz
+[    0.000000] Mali: Mali device driver loaded
+[    0.000000] bcmdhd: got gpio2, mapped to irqno170
+[    0.000000] dhd_customer_gpio_wlan_ctrl: call customer specific GPIO to turn on WL_REG_ON
+[    0.000000] sdio wifi power state: on
+[    0.000000] [mmc-msg] sdc3 set ios: clk 0Hz bm PP pm UP vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] =========== WLAN placed in POWER ON ========
+[    0.000000] [mmc-msg] sdc3 power on
+[    0.000000] [mmc-msg] sdc3 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc3 set round clock 400000, src 24000000
+[    0.000000] [mmc-err] smc 3 err, cmd 52,  RTO
+[    0.000000] [mmc-err] smc 3 err, cmd 52,  RTO
+[    0.000000] [mmc-msg] sdc3 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-msg] sdc3 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] [mmc-err] smc 3 err, cmd 8,  RTO
+[    0.000000] [mmc-msg] sdc3 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing LEGACY(SDR12) dt B
+[    0.000000] mmc1: queuing unknown CIS tuple 0x80 (2 bytes)
+[    0.000000] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    0.000000] mmc1: queuing unknown CIS tuple 0x80 (3 bytes)
+[    0.000000] mmc1: queuing unknown CIS tuple 0x80 (7 bytes)
+[    0.000000] [mmc-msg] sdc3 set ios: clk 400000Hz bm PP pm ON vdd 3.3V width 1 timing SD-HS(SDR25) dt B
+[    0.000000] [mmc-msg] sdc3 set ios: clk 50000000Hz bm PP pm ON vdd 3.3V width 1 timing SD-HS(SDR25) dt B
+[    0.000000] [mmc-msg] sdc3 set round clock 42857143, src 600000000
+[    0.000000] [mmc-msg] sdc3 set ios: clk 50000000Hz bm PP pm ON vdd 3.3V width 4 timing SD-HS(SDR25) dt B
+[    0.000000] mmc1: new high speed SDIO card at address 0001
+[    0.000000] Linux Kernel SDIO/MMC Driver
+[    0.000000] dhd_conf_set_hw_oob_intr: Enable HW OOB for 43362
+[    0.000000] F1 signature OK, socitype:0x1 chip:0xa962 rev:0x1 pkg:0x9
+[    0.000000] DHD: dongle ram size is set to 245760(orig 245760) at 0x0
+[    0.000000] wl_create_event_handler(): thread:wl_event_handler:2b9 started
+[    0.000000] tsk Enter, tsk = 0xee6c13d8
+[    0.000000] p2p0: P2P Interface Registered
+[    0.000000] dhd_attach(): thread:dhd_watchdog_thread:2ba started
+[    0.000000] dhd_attach(): thread:dhd_dpc:2bb started
+[    0.000000] dhd_attach(): thread:dhd_sysioc:2bc started
+[    0.000000] Broadcom Dongle Host Driver: register interface [wlan0] MAC: 00:90:4c:11:22:33
+
+[    0.000000] Dongle Host Driver, version 1.88.45.3 (r420671)
+[    0.000000] Compiled in drivers/net/wireless/bcmdhd on Sep 24 2014 at 10:26:45
+[    0.000000] dhd_customer_gpio_wlan_ctrl: call customer specific GPIO to insert WLAN RESET
+[    0.000000] sdio wifi power state: off
+[    0.000000] =========== WLAN placed in RESET ========

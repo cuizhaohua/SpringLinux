@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Színséma megváltoztatása</title>
+
+  <p>A <app>gedit</app> számos színsémát tartalmaz, amelyek lehetővé teszik a fő szövegablak megjelenésének módosítását.</p>
+
+  <p>A színséma megváltoztatásához tegye a következőket:</p>
+  <steps>
+    <item><p>Válassza a <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Beállítások</gui> <gui>Betűk és színek</gui></guiseq> lehetőséget.</p></item>
+    <item><p>Válassza ki a kívánt színsémát.</p></item>
+  </steps>
+
+  <p>Az új színséma azonnal alkalmazásra kerül.</p>
+
+  <section id="custom-color-scheme">
+    <title>Egyéni színséma használata</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Mások által készített színsémákat is használhat, vagy létrehozhatja saját színsémáit.</p>
+    <p>Az egyéni színsémák telepítésével kapcsolatos utasításokért, valamint a letölthető és használható színsémákra példák a <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">gedit wikiben</link> érhetők el.</p>
+  </section>
+
+</page>

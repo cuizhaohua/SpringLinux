@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libcogl-path.so.20.2.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcogl-path20
+/usr/share/doc/libcogl-path20/changelog.gz
+/usr/share/doc/libcogl-path20/README.gz
+/usr/share/doc/libcogl-path20/NEWS.gz
+/usr/share/doc/libcogl-path20/changelog.Debian.gz
+/usr/share/doc/libcogl-path20/copyright
+/usr/lib/arm-linux-gnueabihf/libcogl-path.so.20

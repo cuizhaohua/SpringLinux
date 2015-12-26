@@ -1,0 +1,11 @@
+ccabbec79c1309b8c52b17ddaf23878d  usr/lib/arm-linux-gnueabihf/libHalf.so.6.0.0
+3cc99ebba88e7cd96f32a9c424f173eb  usr/lib/arm-linux-gnueabihf/libIex.so.6.0.0
+7e0d50aad7ccf57e9bd3b7a0f2cf8016  usr/lib/arm-linux-gnueabihf/libIlmThread.so.6.0.0
+269f13ff363248c7fcaa39eda5be3742  usr/lib/arm-linux-gnueabihf/libImath.so.6.0.0
+e551d87ef60232c390e47c6625fdaf20  usr/share/doc/libilmbase6/AUTHORS
+e6a2d9074413620b2e679491667a5743  usr/share/doc/libilmbase6/NEWS.gz
+f68247cecb1795110dcbb0d74f0b03cd  usr/share/doc/libilmbase6/README
+96f1ca2e63cd7a5acfef0afae2b2b53c  usr/share/doc/libilmbase6/changelog.Debian.gz
+c19d269335bbb9f664edfbadb827ef77  usr/share/doc/libilmbase6/changelog.gz
+35e16ea7b71f289f1e2b957710c179a5  usr/share/doc/libilmbase6/copyright
+fdc9ce7ea0c2033f8287983e06ed906a  usr/share/lintian/overrides/libilmbase6

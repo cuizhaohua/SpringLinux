@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Die Option <cmd>--forms</cmd> verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Formulardialog</title>
+    <p>Verwenden Sie die Option <cmd>--forms</cmd>, um einen Formulardialog zu erzeugen.</p>
+	
+    <p>Der Formulardialog unterstützt die folgenden Optionen:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>Feldname</var></title>
+	<p>Einen neuen Eintrag im Formulardialog hinzufügen.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>Feldname</var></title>
+	<p>Einen neuen Passworteintrag im Formulardialog hinzufügen (Text verbergen).</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>Feldname</var></title>
+	<p>Einen neuen Kalender im Formulardialog hinzufügen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXT</var></title>
+	<p>Den Dialogtext festlegen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>TRENNER</var></title>
+	<p>Das Trennungszeichen für die Ausgabe festlegen (Vorgabe: |).</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>MUSTER</var></title>
+	<p>Damit legen Sie das Format fest, das vom Kalenderdialog nach der Auswahl des Datums zurückgegeben wird. Format muss ein Format sein, das von der <cmd>strftime</cmd>-Funktion unterstützt wird, zum Beispiel <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Das folgende Beispielskript zeigt, wie Sie einen Formulardialog erzeugen:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Freund hinzufügen" \
+	--text="Geben Sie Informationen über den Freund ein." \
+	--separator="," \
+	--add-entry="Vorname" \
+	--add-entry="Nachname" \
+	--add-entry="E-Mail" \
+	--add-calendar="Geburtstag" &gt;&gt; addr.csv
+
+case $? in
+    0)
+        echo "Freund hinzugefügt.";;
+    1)
+        echo "Freund nicht hinzugefügt."
+	;;
+    -1)
+        echo "Ein unerwarteter Fehler ist aufgetreten."
+	;;
+esac
+</code>
+
+    <figure id="zenity-forms-screenshot">
+      <title>Beispiel für einen Formulardialog</title>
+      <desc>Beispiel für einen Formulardialog in <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

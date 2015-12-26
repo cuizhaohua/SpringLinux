@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Брелок, в котором будут храниться пароли">
+						<longdesc>gksu использует названия брелока для своей работы. Обычно встречается название «session», такой брелок хранит пароли на время открытого сеанса. Также применяется брелок «default», в нём хранятся пароли в независимости от продолжительности сеанса.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Сохранить пароль в gnome-keyring">
+						<longdesc>gksu может сохранить набранный пароль в gnome-keyring, таким образом пользователю не надо будет вводить его каждый раз.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Вывести сообщение, если не требуется ввод пароля">
+						<longdesc>Этот параметр определяет будет ли показано диалоговое окно, информирующее пользователя о том, что программа выполнятся без запроса пароля по некоторой причине.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Запрос на захват">
+						<longdesc>Этот параметр заставит gksu вывести пользователю запрос о захвате экрана перед вводом пароля. Заметим, что это происходит только если не указан параметр принудительного захвата (force-grab).</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Режим sudo">
+						<longdesc>Определяет, будет ли sudo использоваться как метод аутентификации по умолчанию. Также метод можно задать с помощью параметра -S или запустив «gksudo» вместо «gksu».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Принудительно захватить клавиатуру и мышь">
+						<longdesc>Захватывать клавиатуру и мышь, даже если в командной строке присутствует аргумент «-g».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Отключить захват клавиатуры и мыши">
+						<longdesc>Определяет, будет ли отключён захват клавиатуры и мыши. Это может привести к несанкционированному получению вводимых с клавиатуры данных другими графическими приложениями, что приведёт к невозможности защиты от вредоносных программ, которые могут быть запущены в этот момент.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

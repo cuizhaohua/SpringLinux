@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-printing-select" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Imprimir só certas páxinas</title>
+
+  <p>Pode imprimir selectivamente só certas páxinas do documento. Por exemplo, pode escribir os números de páxina "1,3,5-7,9", polo que só se imprimirán as páxinas 1, 3, 5, 7 e 9. Para imprimir páxinas da súa elección:</p>
+
+  <steps>
+   <item>
+    <p>Seleccione <guiseq><gui style="menu">Ficheiro</gui> <gui style="menuitem">Imprimir…</gui></guiseq>.</p>
+   </item>
+   <item>
+    <p>Na lapela <gui style="tab">Xeral</gui> do diálogo Imprimir seleccione <gui style="radiobutton">Páxinas</gui> desde a sección <gui style="group">Rango</gui>.</p></item>
+   <item>
+    <p>Type the numbers of the pages you want to print from the document,
+    separated by commas. Use a dash to specify a range of pages.</p>
+   </item>
+  </steps>
+
+  <!--TODO: Fix this <media type="image" src="print-select.png"/> -->
+</page>

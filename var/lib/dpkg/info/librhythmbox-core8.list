@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/librhythmbox-core8
+/usr/share/doc/librhythmbox-core8/changelog.gz
+/usr/share/doc/librhythmbox-core8/NEWS.Debian.gz
+/usr/share/doc/librhythmbox-core8/THANKS
+/usr/share/doc/librhythmbox-core8/NEWS.gz
+/usr/share/doc/librhythmbox-core8/changelog.Debian.gz
+/usr/share/doc/librhythmbox-core8/copyright
+/usr/share/doc/librhythmbox-core8/README
+/usr/share/doc/librhythmbox-core8/AUTHORS
+/usr/lib
+/usr/lib/librhythmbox-core.so.8.0.0
+/usr/lib/librhythmbox-core.so.8

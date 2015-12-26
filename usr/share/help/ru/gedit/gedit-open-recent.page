@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Повторное открытие недавно использованного файла</title>
+
+  <p>По умолчанию, <app>gedit</app> обеспечивает лёгкий доступ к пяти последним недавно использованным файлам. Чтобы открыть недавно использовавшийся файл выполните следующие действия:</p>
+  <list type="numbered">
+    <item><p>Справа от кнопки <gui>Открыть</gui> нажмите на обращенную вниз стрелку.</p></item>
+    <item><p>Текстовый редактор <app>gedit</app> отобразит список из пяти последних недавно использованных файлов.</p></item>
+    <item><p>Выберите нужный файл, и он откроется в новой вкладке.</p></item>
+  </list>
+
+  <note style="advanced"><p>Используя <app>dconf-editor</app> можно настроить количество отображаемых в gedit недавно использованных файлов.</p>
+    <list>
+      <item><p>Запустите <app>dconf-editor</app> и выберите <guiseq><gui>org</gui> <gui>gnome</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui> <gui>max-recents</gui></guiseq>.</p></item>
+      <item><p>Дважды нажмите на цифру рядом с <gui>max-recents</gui> и измените количество до нужного значения.</p></item>
+    </list>
+  </note>
+
+</page>

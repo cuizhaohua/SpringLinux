@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libblas3
+/usr/share/doc/libblas3/README.Debian.gz
+/usr/share/doc/libblas3/test_results.gz
+/usr/share/doc/libblas3/changelog.Debian.gz
+/usr/share/doc/libblas3/copyright
+/usr/share/doc/libblas3/blas.patch.gz
+/usr/lib
+/usr/lib/libblas
+/usr/lib/libblas/libblas.so.3.0
+/usr/lib/libblas/libblas.so.3

@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian CLI Policy - Appendix</title>
+
+<link href="index.html" rel="start">
+<link href="ch-pnet.html" rel="prev">
+<link href="index.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch-history.html" rel="chapter" title="1 Policy History">
+<link href="ch-terms.html" rel="chapter" title="2 Used Terms">
+<link href="ch-packaging.html" rel="chapter" title="3 Packaging Policy">
+<link href="ch-mono.html" rel="chapter" title="4 Mono Specific Packaging help">
+<link href="ch-pnet.html" rel="chapter" title="5 DotGNU Portable.NET Packaging help">
+<link href="ch-appendix.html" rel="chapter" title="6 Appendix">
+<link href="ch-terms.html#s-CLI" rel="section" title="2.1 CLI - Common Language Infrastructure">
+<link href="ch-terms.html#s-CLR" rel="section" title="2.2 CLR - Common Language Runtime">
+<link href="ch-terms.html#s-CIL" rel="section" title="2.3 CIL - Common Intermediate Language">
+<link href="ch-terms.html#s-.NET" rel="section" title="2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;">
+<link href="ch-terms.html#s-GAC" rel="section" title="2.5 GAC - Global Assembly Cache">
+<link href="ch-terms.html#s-package-names" rel="section" title="2.6 Package Names">
+<link href="ch-packaging.html#s-general-packaging" rel="section" title="3.1 General Packaging">
+<link href="ch-packaging.html#s-gac-library-packaging" rel="section" title="3.2 GAC Library Packaging">
+<link href="ch-packaging.html#s-non-gac-library-packaging" rel="section" title="3.3 non-GAC Library Packaging">
+<link href="ch-mono.html#s4.1" rel="section" title="4.1 Naming">
+<link href="ch-mono.html#s4.2" rel="section" title="4.2 DLL Maps">
+<link href="ch-mono.html#s-mono-disable-shm" rel="section" title="4.3 MONO_DISABLE_SHM">
+<link href="ch-pnet.html#s5.1" rel="section" title="5.1 Naming">
+<link href="ch-appendix.html#s-cli-common-dev" rel="section" title="6.1 Helper Scripts: cli-common-dev">
+<link href="ch-appendix.html#s-examples" rel="section" title="6.2 Examples">
+<link href="ch-appendix.html#s-migrating" rel="section" title="6.3 Migrating Existing Packages">
+<link href="ch-packaging.html#s-architecture" rel="subsection" title="3.1.1 Architecture">
+<link href="ch-packaging.html#s-file-locations" rel="subsection" title="3.1.2 File Locations">
+<link href="ch-packaging.html#s-file-perms" rel="subsection" title="3.1.3 File Permissions">
+<link href="ch-packaging.html#s-build-deps" rel="subsection" title="3.1.4 Build Dependencies">
+<link href="ch-packaging.html#s-gac-naming-versioning" rel="subsection" title="3.2.1 Naming &amp; Versioning">
+<link href="ch-packaging.html#s-gac-policy-files" rel="subsection" title="3.2.2 Policy Files">
+<link href="ch-packaging.html#s-clilibs-control-file" rel="subsection" title="3.2.3 clilibs Control File">
+<link href="ch-packaging.html#s-pkg-config-file" rel="subsection" title="3.2.4 pkg-config File">
+<link href="ch-packaging.html#s-signing" rel="subsection" title="3.2.5 Signing">
+<link href="ch-packaging.html#s-non-gac-naming" rel="subsection" title="3.3.1 Naming">
+<link href="ch-mono.html#s-dll-maps-intro" rel="subsection" title="4.2.1 Introduction">
+<link href="ch-mono.html#s4.2.2" rel="subsection" title="4.2.2 Solution: DLL map config file">
+<link href="ch-appendix.html#s-dh_makeclilibs" rel="subsection" title="6.1.1 dh_makeclilibs">
+<link href="ch-appendix.html#s-dh_clideps" rel="subsection" title="6.1.2 dh_clideps">
+<link href="ch-appendix.html#s-dh_installcligac" rel="subsection" title="6.1.3 dh_installcligac">
+<link href="ch-appendix.html#s-debhelper-example" rel="subsection" title="6.2.1 debhelper 5/6 Example">
+<link href="ch-appendix.html#s-debhelper7-example" rel="subsection" title="6.2.2 debhelper 7 Example">
+<link href="ch-appendix.html#s-cdbs-example" rel="subsection" title="6.2.3 cdbs Example">
+<link href="ch-appendix.html#s-wrapper-script-example" rel="subsection" title="6.2.4 Executable Wrapper Script Example">
+<link href="ch-appendix.html#s-api-compat-example" rel="subsection" title="6.2.5 API Compatibility Check Example">
+<link href="ch-appendix.html#s-gac-policy-file-example" rel="subsection" title="6.2.6 GAC Policy File Example">
+
+</head>
+
+<body>
+
+<p><a name="ch-appendix"></a></p>
+<hr>
+
+<p>
+[ <a href="ch-pnet.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ 6 ]
+[ <a href="index.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian CLI Policy
+<br>Chapter 6 - Appendix
+</h1>
+
+<hr>
+
+<h2 id="s-cli-common-dev">6.1 Helper Scripts: cli-common-dev</h2>
+
+<p>
+When using cli-common-dev and the included dh_* scripts packages <em>must</em>
+Build-Depends on <code>cli-common-dev</code> (&gt;= 0.7) (this version may
+change later, when cli-common-dev has changes which are required to be used by
+all CLI packages, the CLI Policy version will represent such changes).
+</p>
+
+<hr>
+
+<h3 id="s-dh_makeclilibs">6.1.1 dh_makeclilibs</h3>
+
+<p>
+dh_makeclilibs is used to create the <a
+href="ch-packaging.html#s-clilibs-control-file">clilibs control files</a> which
+are used later by <code>dh_clideps</code> for this or other packages.  It
+<em>must</em> only be used when your package contains libraries that other
+packages may link against.
+</p>
+
+<p>
+It has the same use (and very similar parameters) to
+<code>dh_makeshlibs</code>.  You should always use the most minimal version
+necessary.
+</p>
+
+<p>
+<em>This program <em>must</em> be called before <code>dh_clideps</code>.</em>
+</p>
+
+<p>
+See <code>dh_makeclilibs(1)</code> for details.
+</p>
+
+<hr>
+
+<h3 id="s-dh_clideps">6.1.2 dh_clideps</h3>
+
+<p>
+<code>dh_clideps</code> is used to discover the native and managed dependencies
+of the packages.  It uses the <a
+href="ch-packaging.html#s-clilibs-control-file">clilibs control files</a>, the
+<code>.config</code> of assemblies and the <code>shlibs</code> files created by
+<code>dh_makeshlibs</code>.  The discovered dependencies are written into the
+${cli:Depends} variable.
+</p>
+
+<p>
+<em><code>dh_shlibdeps</code> must be run before <code>dh_clideps</code>.
+<code>dh_makeshlibs</code> and <code>dh_makeclilibs</code> must be run before
+<code>dh_clideps</code></em>.  If not, when two binary packages from the same
+source package depend on one another, <code>dh_clideps</code> will not be able
+to determine the dependencies.
+</p>
+
+<p>
+<code>dh_clideps</code> can remove duplicate dependencies created by running
+<code>dh_clideps</code> and <code>dh_shlibsdeps</code> when run given the -d
+parameter.
+</p>
+
+<p>
+See <code>dh_clideps(1)</code> for details.
+</p>
+
+<hr>
+
+<h3 id="s-dh_installcligac">6.1.3 dh_installcligac</h3>
+
+<p>
+<code>dh_installcligac</code> is used to facilitate the installation of
+strong-named assemblies into the various caches installed on the user's
+machine.  Its primary purpose is to install the assemblies at the point of
+installation instead of pre-packing them inside the Debian package; this is
+also known as late-GAC install.
+</p>
+
+<p>
+To identify which assemblies need to be installed into the GAC,
+<code>dh_installcligac</code> uses the <code>debian/installcligac</code> or the
+<code>debian/packagename.installcligac</code> to list the assemblies to install
+or uninstall at installation or removal respectivly.
+</p>
+
+<p>
+The file format of the <code>installcligac</code> is simple: the full installed
+path of every assembly to install into the <a
+href="ch-terms.html#s-GAC">GAC</a>.  For example, the liblog4net1.2-cil package
+would have this in the <code>debian/installcligac</code> file:
+</p>
+
+<pre>
+     /usr/lib/cli/log4net-1.2/log4net.dll
+</pre>
+
+<p>
+<code>dh_installcligac</code> needs to be called after <code>dh_install</code>
+and before <code>dh_clideps</code>.  See <code>dh_installcligac(1)</code> for
+details.
+</p>
+
+<hr>
+
+<h2 id="s-examples">6.2 Examples</h2>
+
+<hr>
+
+<h3 id="s-debhelper-example">6.2.1 debhelper 5/6 Example</h3>
+
+<p>
+For binary-arch packages:
+</p>
+
+<pre>
+     binary-arch: build install
+     	...
+     	dh_shlibdeps -a
+     	dh_makeclilibs -a -V
+     	dh_installcligac -a
+     	dh_clideps -a
+     	...
+</pre>
+
+<p>
+For binary-indep packages:
+</p>
+
+<pre>
+     binary-indep: build install
+     	...
+     	dh_makeclilibs -i -V
+     	dh_installcligac -i
+     	dh_clideps -i
+     	...
+</pre>
+
+<hr>
+
+<h3 id="s-debhelper7-example">6.2.2 debhelper 7 Example</h3>
+
+<p>
+With debhelper's 7 <code>/usr/bin/dh</code> you don't need to add any extra
+commands to <code>debian/rules</code> yourself as debhelper has an API that
+allows to extend it.  <code>cli-common-dev</code> as of version 0.5.7 can
+extend debhelper 7 with all commands that are needed.  You can enable this by
+including the <code>cli.make</code> file in <code>debain/rules</code> like
+this:
+</p>
+
+<pre>
+     include /usr/share/cli-common/cli.make
+</pre>
+
+<p>
+That's it, you are done!  :-)
+</p>
+
+<hr>
+
+<h3 id="s-cdbs-example">6.2.3 cdbs Example</h3>
+
+<pre>
+     common-binary-predeb-arch common-binary-predeb-indep::
+     	dh_shlibdeps
+     	dh_makeclilibs -V
+     	dh_installcligac
+     	dh_clideps
+</pre>
+
+<hr>
+
+<h3 id="s-wrapper-script-example">6.2.4 Executable Wrapper Script Example</h3>
+
+<pre>
+     #!/bin/sh
+     exec /usr/bin/cli /usr/lib/package/package.exe &quot;$@&quot;
+</pre>
+
+<hr>
+
+<h3 id="s-api-compat-example">6.2.5 API Compatibility Check Example</h3>
+
+<p>
+You need to install following packages for this example: mono-devel
+libmono-sharpzip0.6-cil libmono-sharpzip0.84-cil
+</p>
+
+<pre>
+     mono-api-check /usr/lib/mono/gac/ICSharpCode.SharpZipLib/0.6.0.0__1b03e6acf1164f73/ICSharpCode.SharpZipLib.dll \
+        /usr/lib/mono/gac/ICSharpCode.SharpZipLib/0.84.0.0__1b03e6acf1164f73/ICSharpCode.SharpZipLib.dll
+     CLI API Check
+     Assembly Name:          ICSharpCode.SharpZipLib
+     Missing Interfaces:     44
+     Additional Interfaces:  79
+     
+     The two assemblies you compared are not API compatible!
+     You must use a new package name!
+     
+     The new assembly has additional interfaces. You must raise
+     the minimal version in clilibs!
+</pre>
+
+<p>
+The mono-api-check wrapper script checks whether there are new public/protected
+interfaces (where interface in this context means namespace, class, method,
+interface, delegate, etc) or any missing ones.  When an interface is changed it
+will show up as missing and additional.  You should follow the instructions, in
+this case you must create a new versioned package for the library and raise the
+minimal version number for the <a href="#s-dh_makeclilibs">dh_makeclilibs</a>
+call.
+</p>
+
+<hr>
+
+<h3 id="s-gac-policy-file-example">6.2.6 GAC Policy File Example</h3>
+
+<pre>
+     &lt;configuration&gt;
+        &lt;runtime&gt;
+           &lt;assemblyBinding xmlns=&quot;urn:schemas-microsoft-com:asm.v1&quot;&gt;
+            &lt;dependentAssembly&gt;
+              &lt;assemblyIdentity name=&quot;foo&quot; publicKeyToken=&quot;35e10195dab3c99f&quot; /&gt;
+              &lt;bindingRedirect oldVersion=&quot;1.2.0.0-1.2.10.0&quot; newVersion=&quot;1.3.0.0&quot;/&gt;
+            &lt;/dependentAssembly&gt;
+           &lt;/assemblyBinding&gt;
+        &lt;/runtime&gt;
+     &lt;/configuration&gt;
+</pre>
+
+<p>
+The above example would be used for a policy file for the &quot;foo&quot;
+assembly and would tell the <a href="ch-terms.html#s-GAC">GAC</a> that version
+1.3.0.0 is compatible with versions 1.2.0.0 to 1.2.10.0.  You have to compile
+and install it with
+</p>
+
+<pre>
+     al -link:policy.1.2.foo.config -out:policy.1.2.foo.dll -keyfile:path/to/keyfile
+     gacutil /i policy.1.2.foo.dll
+</pre>
+
+<p>
+Keep in mind that the filenames <em>must</em> be policy.X.Y.foo.config and
+policy.X.Y.foo.dll where foo is the assembly name and X.Y is the major and
+minor version number you want to be compatible with.
+</p>
+
+<hr>
+
+<h2 id="s-migrating">6.3 Migrating Existing Packages</h2>
+
+<p>
+Many CLI packages already exist in Debian, or are in ITP, and conform to the
+deprecated <code><a href="http://wiki.debian.org/?MonoConventions">Mono
+Conventions</a></code>.
+</p>
+
+<p>
+Any <code>debian/rules</code> hacks or patches that exist to redirect files to
+<code>/usr/share/dotnet</code> should be removed, and adjusted according to
+upstream file locations (<code>/usr/lib</code>).  See <code><a
+href="http://wiki.debian.org/?MonoDebianPlan">Mono Debian Plan</a></code> for
+the rationale behind this change.
+</p>
+
+<p>
+Also, be sure to replace references to dh_netdepends, dh_makenetlibs, and
+${net:Depends} with the newer names described in the policy above.
+</p>
+
+<p>
+Please remove any build-deps on <code>mono-jit</code>, <code>mono-mint</code>,
+<code>mono-utils</code> (this one had the dh_* helper scripts which are now in
+<code>cli-common-dev</code>) and <code>libmono-dev</code> (use this one only if
+the package really links against <code>mono</code> or requires the mono.pc
+file).
+</p>
+
+<hr>
+
+<p>
+[ <a href="ch-pnet.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ 6 ]
+[ <a href="index.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian CLI Policy
+</p>
+
+<address>
+Version 0.7<br>
+<br>
+Mirco Bauer <code><a href="mailto:meebey@debian.org">mailto:meebey@debian.org</a></code><br>
+Brandon Hale <code><a href="mailto:brandon@smarterits.com">mailto:brandon@smarterits.com</a></code><br>
+Sebastian Dr&ouml;ge <code><a href="mailto:slomo@debian.org">mailto:slomo@debian.org</a></code><br>
+Dylan R. E. Moonfire <code><a href="mailto:debian@mfgames.com">mailto:debian@mfgames.com</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Синдху С (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Печать документов</title>
+
+    <note style="important">
+      <p>Для печати с помощью <app>gedit</app> требуется подключенный и настроенный принтер. Если это не сделано, обратитесь к руководству <link href="help:gnome-help/printing">Печать в среде GNOME</link>.</p>
+    </note>
+  
+  <p><app>gedit</app> позволяет выводить документ на печать на бумаге, а также печатать в файл.</p>
+
+  <section id="print-preview">
+    <title>Предварительный просмотр печати</title>
+
+  <p>Перед печатью документа, с помощью функции <gui>Просмотр печати</gui>, можно увидеть, как будет выглядеть распечатанный документ. Для предварительного просмотра документа:</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Файл</gui> <gui style="menuitem">Просмотр печати</gui></guiseq>, или нажмите <keyseq><key>Shift</key><key>Ctrl</key> <key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Предварительный просмотр документа откроется в той же вкладке, что и файл. По предварительному просмотру можно перемещаться с помощью кнопок навигации и панели инструментов в верхней части вкладки предварительного просмотра документа. Чтобы закрыть предварительный просмотр и вернуться к документу, нажмите кнопку <gui style="button">Закрыть просмотр печати</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Печать на бумаге</title>
+
+  <p>Можно печатать документы на бумаге на локальном или удаленном принтере. Чтобы распечатать файл:</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Файл</gui> <gui style="menuitem">Печать</gui> <gui style="tab">Общие</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Выберите нужный принтер из списка доступных принтеров.</p>
+    </item>
+    <item>
+      <p>Можно просмотреть файл, нажав кнопку <gui style="button">Просмотр печати</gui>. Если параметры печати соответствуют вашим ожиданиям, нажмите кнопку <gui style="button">Печать</gui>, чтобы отправить файл на принтер.</p>
+    </item>
+  </steps>
+
+  <p>Дополнительно, на вкладке <gui style="tab">Параметры страницы</gui>, можно выбрать параметры <gui style="group">Размещения</gui> и <gui style="group">Бумаги</gui>. Так как данные настройки доступны во всех приложениях GNOME, обратитесь к руководству <link href="help:gnome-help/printing#paper">Параметры размещения и бумаги</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Печать нескольких копий и указанного диапазона страниц</title>
+
+    <p>Можно указать <gui style="group">Диапазон</gui> и количество <gui style="group">Копий</gui>:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Печать в файл</title>
+
+  <p>Также можно использовать <app>gedit</app> для печати документа в файл. Чтобы распечатать документ в файл:</p>
+
+  <steps>
+    <item>
+      <p>Выберите <guiseq><gui style="menu">Файл</gui> <gui style="menuitem">Печать</gui> <gui style="menuitem">Печатать в файл</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Печать возможна в файлы следующих форматов, на выбор:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Для печати документа в файл, нажмите <gui style="button">Печать</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

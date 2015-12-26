@@ -1,0 +1,13 @@
+2958f547d5134725bcbfc2fc1b8b5c98  usr/lib/arm-linux-gnueabihf/gconf/2/libgconfbackend-evoldap.so
+3d40f1bb559148b23a65d446e81f260b  usr/lib/arm-linux-gnueabihf/gconf/2/libgconfbackend-oldxml.so
+665813f01462d1632fc7d0411d753c0e  usr/lib/arm-linux-gnueabihf/gconf/2/libgconfbackend-xml.so
+b0b22292a50bb63792002ecf80de3a85  usr/lib/arm-linux-gnueabihf/gconf/gconfd-2
+5e83000772b6ea846feeaeff7d107a41  usr/share/dbus-1/services/org.gnome.GConf.service
+4507c7b209896c38b6866b601c93fb21  usr/share/doc/gconf-service/AUTHORS
+fd0052eebfd8ccbba0002506050cccc1  usr/share/doc/gconf-service/NEWS.Debian.gz
+7245327ef95276adf832a856042616b6  usr/share/doc/gconf-service/NEWS.gz
+a0c92dea68d9e57cdfa4a6a336387c83  usr/share/doc/gconf-service/README
+173cf1c644baa2dbba589fef018a13cb  usr/share/doc/gconf-service/TODO
+d746b43245fe641cf567e5ec17fdc119  usr/share/doc/gconf-service/changelog.Debian.gz
+e72f8c28b113a269c5a3f4f66d98b3f5  usr/share/doc/gconf-service/changelog.gz
+616b3703117a9f12548cc7257f95ad24  usr/share/doc/gconf-service/copyright

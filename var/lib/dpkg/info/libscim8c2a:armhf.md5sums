@@ -1,0 +1,7 @@
+b986fc4441a72118119efe093ebc590a  usr/lib/arm-linux-gnueabihf/libscim-1.0.so.8.2.6
+bf29764eee74218f26ea39dd4bb88d71  usr/lib/arm-linux-gnueabihf/libscim-gtkutils-1.0.so.8.2.6
+199d6b5309cdb053b042a8a03ae00640  usr/lib/arm-linux-gnueabihf/libscim-x11utils-1.0.so.8.2.6
+8ad3d29198d5282d926f8f0d402930e0  usr/share/doc/libscim8c2a/changelog.Debian.gz
+0986c42d1643d681f5e4f2c99fc29389  usr/share/doc/libscim8c2a/changelog.gz
+a3be960964f921d6769e3e30944c7640  usr/share/doc/libscim8c2a/copyright
+e5a20a7d2ee6851e3d4bd6c74aa9b3ba  usr/share/lintian/overrides/libscim8c2a

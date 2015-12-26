@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="es">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Activar y usar la característica de comprobación de ortografía</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Comprobar la ortografía de su documento</title>
+  <section id="enable-spell-check">
+    <title>Activar la comprobación de ortografía</title>
+    <p>La característica de corrección ortográfica es un complemento de <app>gedit</app> que se puede activar si lo necesita. Para activar el complemento:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferencias</gui> <gui style="tab">Complementos</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="menuitem">Corrector ortográfico</gui> para activar el complemento.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Comprobar la ortografía de su documento</title>
+
+    <p>Para comprobar si hay palabras mal escritas en su documento:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Herramientas</gui> <gui style="menuitem">Comprobar ortografía</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Para hacer que <app>gedit</app> resalte automáticamente las palabras mal escritas en su documento a medida que escribe, seleccione <guiseq><gui style="menu">Herramientas</gui><gui style="menuitem">Resaltar palabras mal escritas</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Usar la corrección ortográfica</title>
+
+    <p>Puede elegir sustituir las palabras mal escritas usando el diálogo del corrector ortográfico. La palabra mal escrita analizada por el corrector se muestra en negrita junto a <gui>Palabra mal escrita:</gui>. Puede elegir entre las siguientes opciones del corrector:</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Cambiar a:</gui> le permite escribir una palabra y usar la opción <gui style="button">Comprobar palabra</gui> para verificar su ortografía.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Sugerencias:</gui> lista las sustituciones disponibles para la palabra.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorar todo</gui> le permite omitir la corrección ortográfica para <em>una</em> instancia de la palabra actual.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorar todo</gui> le permite omitir la corrección ortográfica para <em>todas</em> las instancias de la palabra actual.</p>
+      </item>
+      <item>
+        <p><gui style="button">Cambiar</gui> sustituye la palabra mal escrita o no reconocida por <em>una</em> palabra elegida de la lista de <gui style="menuitem">Sugerencias:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Cambiar todo</gui> sustituye <em>todas</em> las palabras mal escritas o no reconocidas con la palabra elegida de la lista de <gui style="menuitem">Sugerencias:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Añadir palabra</gui> le permite añadir la palabra actual al <gui>Diccionario del usuario</gui> de <app>gedit</app>. Añadir una palabra personalizada al <gui>Diccionario del usuario</gui> permitirá a <app>gedit</app> reconocer la palabra en los documentos y, por lo tanto, no se resaltará como una palabra mal escrita.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Definir el idioma que usar para la comprobación de la ortografía</title>
+    <p>De manera predeterminada, <app>gedit</app> usará su idioma actual para comprobar la ortografía del documento. Si necesita usar otro idioma, elija <guiseq><gui style="menu">Herramientas</gui><gui style="menuitem">Establecer idioma…</gui></guiseq>, y elija el idioma que quiere usar.</p>
+  </section>
+
+  <section id="dict">
+    <title>Diccionarios</title>
+
+    <p><app>gedit</app> usa <link href="http://www.abisource.com/projects/enchant/">Enchant</link>, una pequeña utilidad del sistema para comprobar la ortografía. Enchant puede usar varios diccionarios diferentes para comprobar la ortografía. Dos posibles «backend» de diccionario son <em>Hunspell</em> y <em>Aspell</em>.</p>
+
+    <p>Si el idioma que quiere usar no está disponible en <app>gedit</app>, use el instalador o el gestor de paquetes de su equipo para instalar el «backend» del diccionario que quiere.</p>
+  </section>
+</page>

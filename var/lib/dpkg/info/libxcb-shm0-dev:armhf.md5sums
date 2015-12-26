@@ -1,0 +1,6 @@
+c08ce20dcf6f29a72597b3f7783350d3  usr/include/xcb/shm.h
+551f4c68cbb0522d832cc7f773276b0e  usr/lib/arm-linux-gnueabihf/libxcb-shm.a
+d213073f3b7fc61f6a656bf99221da14  usr/lib/arm-linux-gnueabihf/pkgconfig/xcb-shm.pc
+cab2b583a1ebc78b6609dce48f948646  usr/share/doc/libxcb-shm0-dev/changelog.Debian.armhf.gz
+6b9a2dbb0f848de8eb0b138ef4066d09  usr/share/doc/libxcb-shm0-dev/changelog.Debian.gz
+360fadb0d222af6607a189d435e3a9f3  usr/share/doc/libxcb-shm0-dev/copyright

@@ -1,0 +1,32 @@
+#!/usr/bin/install-menu
+#   -*- mode: shell-script; -*-
+#I need menu-1!
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/bin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/share/doc/menu/html.
+#
+compat="menu-1"
+
+!include menu.h
+function f($com)="  echo '\"" title() ":"  esc($com,"\"") "\"'\n"
+supported
+  wm=  f(":9wm exit;" $command)
+  x11= f($command)
+  text=f(term())
+#  wm  ="  echo '\"" $title ":9wm exit;" esc($command,"\"") "\"'\n"
+#  x11 ="  echo '\"" $title ":"          esc($command,"\"") "\"'\n"
+#  text="  echo '\"" $title ":xterm -title '\\'"\
+#		       $title "\\'' -e " esc($command,"\"") "\"'\n"
+endsupported
+startmenu=   "function " $section "() {\n"
+endmenu=     "}\n"
+#  echo "\"MainMenu:$config --menu MainMenu\""
+submenutitle="  echo \"\\\"" title() ":$config --menu " $section "\\\"\"\n"
+genmenu=      "menudefs.hook"
+rcfile=       "system.9wmrc"
+examplercfile="system.9wmrc-menu"
+rootprefix=   "/etc/X11/9wm/"
+userprefix=   "/.9wm/"

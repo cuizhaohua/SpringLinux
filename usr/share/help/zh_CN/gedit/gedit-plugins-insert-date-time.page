@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-insert-date-time" xml:lang="zh-CN">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>在光标位置插入当前日期/时间</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>插入日期/时间</title>
+
+  <p>根据插件名称就可以知道，<gui>插入日期/时间</gui>插件可以在光标处插入日期和/或时间。要启用此插件，点菜单 <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">首选项</gui><gui>插件</gui> <gui>插入日期/时间</gui></guiseq>。要使用此插件，点菜单 <guiseq> <gui style="menu">编辑</gui><gui>插入日期和时间</gui></guiseq>。</p>
+
+  <p>默认情况下，<gui>插入日期/时间</gui>插件会提示您选择一种日期/时间格式。当然，您也可以在 <guiseq><gui style="menu">gedit</gui><gui style="menuitem">首选项</gui> <gui>插件</gui><gui>插入日期/时间</gui><gui>配置</gui></guiseq> 中，选择一个默认日期和时间格式。</p>
+
+</page>

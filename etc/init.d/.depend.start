@@ -1,0 +1,20 @@
+TARGETS = cgmanager ramlog brcm40183-patch xdm hostapd killprocs motd sudo cgproxy rsyslog bootlogs dbus lirc hddtemp single loadcpufreq rsync ssh cron ntp bluetooth network-manager cpufrequtils sysfsutils rmnologin rc.local
+INTERACTIVE =
+cgproxy: cgmanager
+rsyslog: ramlog
+bootlogs: xdm
+dbus: rsyslog
+lirc: rsyslog
+hddtemp: rsyslog
+single: killprocs bootlogs motd
+loadcpufreq: rsyslog
+rsync: rsyslog
+ssh: rsyslog
+cron: rsyslog
+ntp: rsyslog
+bluetooth: brcm40183-patch rsyslog dbus
+network-manager: dbus rsyslog
+cpufrequtils: loadcpufreq
+sysfsutils: cpufrequtils
+rmnologin: sudo cgmanager ramlog cgproxy brcm40183-patch bluetooth xdm rsyslog hostapd network-manager dbus lirc hddtemp bootlogs motd cpufrequtils loadcpufreq sysfsutils rsync ssh cron ntp
+rc.local: cgmanager ramlog cgproxy brcm40183-patch bluetooth xdm rsyslog hostapd network-manager dbus lirc hddtemp bootlogs motd sudo cpufrequtils loadcpufreq sysfsutils rsync ssh cron ntp

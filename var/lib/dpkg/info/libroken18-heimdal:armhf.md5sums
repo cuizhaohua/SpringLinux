@@ -1,0 +1,5 @@
+204345ae6946c5531b6c60f771e7d75c  usr/lib/arm-linux-gnueabihf/libroken.so.18.1.0
+d06038f3fec0d50e491f3f60c2556851  usr/share/doc/libroken18-heimdal/changelog.Debian.gz
+7d76383cd395f305ee8a98b55ffc26da  usr/share/doc/libroken18-heimdal/changelog.gz
+f932bf346a38dc8820bde606a033564b  usr/share/doc/libroken18-heimdal/copyright
+4c8c72b927c3b6d985e7183dbe70e5e4  usr/share/lintian/overrides/libroken18-heimdal

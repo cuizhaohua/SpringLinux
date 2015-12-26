@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="info" xml:lang="fr">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Utiliser l'option <cmd>--info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>cbliard@gmail.com</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Boîte de dialogue d'information</title>
+      <p>Utilisez l'option <cmd>--info</cmd> pour créer une boîte de dialogue d'information.</p>
+
+      <p>Le script d'exemple suivant montre comment créer une boîte de dialogue d'information :</p>
+
+<code>
+#!/bin/bash
+
+zenity --info \
+  --text="Fusion effectuée. 3 fichiers sur 10 mis à jour."
+</code>
+
+
+      <figure id="zenity-information-screenshot">
+        <title>Exemple de boîte de dialogue d'information</title>
+        <desc>Exemple de boîte de dialogue d'information <app>Zenity</app></desc>
+        <media type="image" mime="image/png" src="figures/zenity-information-screenshot.png"/>
+      </figure>
+</page>

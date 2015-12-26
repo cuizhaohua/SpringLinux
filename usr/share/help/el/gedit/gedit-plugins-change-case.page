@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-change-case" xml:lang="el">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Αλλαγή του επιλεγμένου κειμένου σε κεφαλαία-πεζά</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Αλλαγή τύπου</title>
+
+  <p>Το πρόσθετο αυτό σας βοηθάει να αλλάξετε τα κεφαλαία-πεζά σε επιλεγμένα μέρη του κειμένου. Μπορείτε να το χρησιμοποιήσετε για να αλλάξετε το κείμενο σε όλα πεζά, όλα κεφαλαία, ή να αντιστρέψετε τα πεζά-κεφαλαία, ή να εφαρμόσετε κεφαλαία-πεζά στον τίτλο. Για να ενεργοποιήσετε αυτό το πρόσθετο, επιλέξτε <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Προτιμήσεις</gui> <gui>Πρόσθετα</gui><gui>Αλλαγή κεφαλαίων-πεζών</gui></guiseq>.</p>
+
+  <p>Αφού ενεργοποιηθεί το πρόσθετο <em>Διάκριση κεφαλαίων-πεζών</em>, μπορείτε να το χρησιμοποιήσετε ολοκληρώνοντας τα παρακάτω βήματα:</p>
+
+  <steps>
+    <item><p>Επιλέξτε τις γραμμές κειμένου που θέλετε να αλλάξετε.</p></item>
+    <item><p>Επιλέξτε <guiseq><gui style="menu">gedit</gui><gui>Αλλαγή πεζών-κεφαλαίων</gui></guiseq></p>
+    </item>
+    <item><p>Επιλέξτε την επιθυμητή επιλογή σας μορφοποίησης-κειμένου.</p></item> 
+  </steps>
+
+  <p>Οι ενημερώσεις στην μορφοποίηση του κειμένου θα πραγματοποιηθούν άμεσα.</p>
+
+  <note style="tip">
+    <p>Η επιλογή <gui>Αντιστροφή πεζών-κεφαλαίων</gui> θα μετατρέψει όλα τα πεζά γράμματα σε κεφαλαία, και τα κεφαλαία σε πεζά.</p>
+    <p>Η επιλογή <gui>Διάκριση κεφαλαίων-πεζών Τίτλου</gui> θα μετατρέψει το πρώτο γράμμα κάθε λέξης σε κεφαλαίο. Όλα τα υπόλοιπα γράμματα θα μετατραπούν σε πεζά.</p>
+  </note>
+
+  <note>
+    <p>Αν δεν έχετε επισημάνει κανένα κείμενο, η λειτουργία <em>Διάκριση κεφαλαίων-πεζών</em> δεν θα λειτουργήσει. Πρέπει να επιλέξετε ένα κομμάτι του κειμένου πριν χρησιμοποιήσετε την λειτουργία <em>Διάκριση κεφαλαίων-πεζών</em>.</p>
+  </note>
+
+</page>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tiedostojen selaaminen ja avaaminen sivupaneelista</title>
+  <p>Välilehdet <app>geditin</app> ikkunan yläreunassa ovat yleisin tapa avoimien tiedostojen hallintaan. Jos tiedostoja kuitenkin on useita kymmeniä, <app>sivupaneelin</app> käyttäminen saattaa olla parempi vaihtoehto avoimien tiedostojen hallitsemiseen.</p> 
+
+  <p>
+    To activate the <app>side pane</app>, select <guiseq><gui>View</gui>
+    <gui>Side Pane</gui></guiseq>, or just press the <key>F9</key> key.
+  </p>
+
+  <note style="note">
+    <p><gui>Sivupaneelin</gui> avaaminen tai sulkeminen onnistuu milloin tahansa <key>F9</key>-näppäimellä.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Tiedoston avaaminen sivupalkista</title>
+    <p>
+      To open files from the <app>side pane</app>, first open the
+      <app>side pane</app> by selecting <guiseq><gui>View</gui>
+      <gui>Side Pane</gui></guiseq>, then click on the <gui>file-browser</gui>
+      icon at the bottom of the pane.
+    </p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Tämä avaa <app>sivupaneeliin</app> <em>tiedostoselaimen</em>, jota voit käyttää tiedostojen etsimiseen ja avaamiseen. Tiedostoselainta hallitaan sivupaneelin yläosasta löytyvien painikkeiden avulla.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Avoimien tiedostojen hallinta sivupaneelista</title>
+    <p>Sivupaneelia voidaan käyttää myös avoimien asiakirjojen hallintaan. <app>Sivupaneelin</app> asiakirjaselaimen avaaminen onnistuu napsauttamalla <gui>tyhjän asiakirjan</gui> kuvaketta <gui>sivupaneelin</gui> alareunassa.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Tiedosto avautuu muokattavaksi napsauttamalla sen nimeä <gui>sivupaneelissa</gui>.</p>
+  </section>
+ 
+ </page>

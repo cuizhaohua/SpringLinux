@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-view-open-files-in-sidepane" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+      <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email its:translate="no">dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προβολή μιας λίστας ανοιχτών αρχείων στην πλευρική στήλη</title>
+
+  <p>Η παρακολούθηση μεγάλου αριθμού αρχείων με τη χρήση καρτελών μπορεί να είναι δύσκολη. Ένας τρόπος για τη διαχείριση πολλών αρχείων είναι η προβολή τους στην πλευρική στήλη. Οι πλευρικές στήλες σάς επιτρέπουν να προβάλετε ταυτόχρονα περισσότερα αρχεία από ότι είναι δυνατόν με τη χρήση μόνο καρτελών.</p>
+
+  <p>Για να προβάλετε μια λίστα ανοιχτών αρχείων στην πλευρική στήλη, πατήστε στο <guiseq><gui style="menu">Προβολή</gui> <gui style="menuitem">Πλευρική στήλη</gui></guiseq>. Θα εμφανιστεί μια στήλη στα αριστερά του χώρου εργασίας με μια λίστα όλων των ανοιχτών τρεχόντων αρχείων. Πατώντας σε ένα αρχείο στην πλευρική στήλη θα προβάλλει αυτό το αρχείο στον χώρο εργασίας.</p>
+
+  <p>Η πλευρική στήλη περιλαμβάνει επίσης μια προβολή <app>Περιήγηση αρχείων</app>. Αν η στήλη προβάλλει έναν κατάλογο αρχείων αντί για τα τωρινά ανοιχτά αρχεία, πατήστε <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"><span its:translate="yes">εικονίδιο εγγράφων</span></media> στο κάτω μέρος της στήλης για να αλλάξετε στην προβολή <app>Έγγραφα</app>.</p>
+
+  <note>
+    <p>Η πλευρική στήλη προβάλει μόνο αρχεία που είναι ανοιχτά στο τρέχων παράθυρο. Όταν πολλαπλά παράθυρα είναι ανοιχτά, μόνο τα αρχεία στο τρέχον παράθυρο θα εμφανίζονται στην πλευρική στήλη.</p>
+  </note>
+</page>

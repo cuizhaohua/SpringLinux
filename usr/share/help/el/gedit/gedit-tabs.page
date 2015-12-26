@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="second"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προσθήκη και αφαίρεση καρτελών</title>
+  <p>Η εργασία με καρτέλες στο <app>gedit</app> επιτρέπει να ρίχνετε μια ματιά σε αρκετά αρχεία σε ένα ενιαίο παράθυρο. Η καρτέλα που είναι μεγαλύτερη από τις άλλες υποδεικνύει το τρέχον αρχείο που είναι ανοιχτό. Οι μικρότερες καρτέλες υποδεικνύουν άλλα αρχεία που είναι διαθέσιμα για να εργαστείτε πάνω τους.</p>
+
+  <section id="gedit-adding-tabs">
+    <title>Προσθήκη καρτελών</title>
+    <p>Για να προσθέσετε μια νέα καρτέλα, δημιουργήστε ένα νέο αρχείο πατώντας <keyseq><key>Ctrl</key> <key>T</key></keyseq>.. Η καρτέλα θα προστεθεί στην δεξιά πλευρά οποιασδήποτε άλλης καρτέλας.</p>
+  </section>
+
+  <section id="gedit-removing-tabs">
+    <title>Αφαίρεση καρτελών</title>
+    <p>Για να αφαιρέσετε μια καρτέλα, πατήστε στο <gui style="button">×</gui> στην δεξιά πλευρά της καρτέλας. Για να αφαιρέσετε όλες τις ανοιχτές καρτέλες, πατήστε <keyseq><key>Ctrl</key> <key>Shift</key><key>W</key></keyseq>.</p>
+  </section>
+
+</page>

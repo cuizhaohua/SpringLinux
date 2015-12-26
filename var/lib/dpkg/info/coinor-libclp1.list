@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/coinor-libclp1
+/usr/share/doc
+/usr/share/doc/coinor-libclp1
+/usr/share/doc/coinor-libclp1/changelog.Debian.gz
+/usr/share/doc/coinor-libclp1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libClp.so.1.12.10
+/usr/lib/arm-linux-gnueabihf/libOsiClp.so.1.12.10
+/usr/lib/arm-linux-gnueabihf/libOsiClp.so.1
+/usr/lib/arm-linux-gnueabihf/libClp.so.1

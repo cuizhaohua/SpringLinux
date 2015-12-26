@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-doc-stats" xml:lang="ru">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Даниэль Нил (Daniel Neel)</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Джим Кэмпбелл (Jim Campbell)</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Просмотр статистики документа</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Статистика документа</title>
+
+  <p>Модуль <em>Статистика документа</em> показывает различные статистические данные о текущем документе. Чтобы включить модуль, выберите <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Параметры</gui><gui>Модули</gui><gui>Статистика документа</gui></guiseq>.</p>
+
+<section id="using-doc-stats">
+  <title>Использование статистики документа</title>
+
+  <p>После включения модуля, можно использовать его, выбрав <guiseq><gui>Сервис</gui> <gui>Статистика документа</gui></guiseq>. В открывшемся окне будет отображаться статистическая информация документа, включающая количество слов, строк, символов, символов без пробелов, и размер файла в байтах.</p>
+
+  <p>Также можно использовать модуль <em>Статистика документа</em> для отображения информации только о части документа. Для этого, используя указатель мыши, выделите часть текста, которую нужно проверить, затем выберите <guiseq><gui>Сервис</gui><gui>Статистика документа</gui></guiseq>. <app>Gedit</app> отобразит информацию о выделенной части текста, а также о документе полностью.</p>
+</section>
+
+</page>

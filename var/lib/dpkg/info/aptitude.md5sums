@@ -1,0 +1,17 @@
+3e17fa7e279a57c472461a771f4a4de4  usr/bin/aptitude-curses
+ba55bb6d2d964cff782484c2948127c2  usr/share/bug/aptitude
+c1d7bbe690b50ac7756ffb4b5c6397a0  usr/share/doc/aptitude/NEWS.Debian.gz
+e1150908177f783248436d9e8fbc1c92  usr/share/doc/aptitude/changelog.Debian.gz
+410471542f8934dedd9b51b132d99dee  usr/share/doc/aptitude/changelog.gz
+0078222a4f08302692fc1d64cc5a2f17  usr/share/doc/aptitude/copyright
+42d72aca9dad028087acba8bca7555cd  usr/share/man/cs/man8/aptitude-curses.8.gz
+89ad441f693cd1b5d75370e4fe0cf978  usr/share/man/de/man8/aptitude-curses.8.gz
+e50e6445d88c3e90f974838cc65deb0b  usr/share/man/es/man8/aptitude-curses.8.gz
+9de654931c0fcd7fd03e8575f899944a  usr/share/man/fi/man8/aptitude-curses.8.gz
+2ac1f8b556b488bee0eec2e1adc9c52f  usr/share/man/fr/man8/aptitude-curses.8.gz
+34bfb40b406f36ea0319f408e64ec2d2  usr/share/man/gl/man8/aptitude-curses.8.gz
+8733a822df1f9b56960e4e9577d52f6c  usr/share/man/it/man8/aptitude-curses.8.gz
+076183b5eab0982002764f556af1f3f2  usr/share/man/ja/man8/aptitude-curses.8.gz
+f5010088df4304bad0d2337a94a45e3b  usr/share/man/man8/aptitude-curses.8.gz
+5e38e51d8681e93b4d6d199d7c5a544f  usr/share/man/pl/man8/aptitude-curses.8.gz
+17e8c8717893ba948091690e14125013  usr/share/menu/aptitude

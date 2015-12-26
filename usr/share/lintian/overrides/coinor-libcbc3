@@ -1,0 +1,2 @@
+coinor-libcbc3: package-name-doesnt-match-sonames libCbc3 libCbcSolver3 libOsiCbc3
+

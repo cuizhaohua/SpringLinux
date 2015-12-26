@@ -1,0 +1,9 @@
+1.2.15.11.8
+- added 'compact' version with slightly slimmer titlebar
+
+1.1.15.11.7
+- added 'title_horizontal_offset=4'
+- changed 'maximized_offset' to 3 (was 1)
+
+1.0.2015.11.7
+- first release

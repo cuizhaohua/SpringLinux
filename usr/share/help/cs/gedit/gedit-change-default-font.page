@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Změna výchozího písma</title>
+
+  <p>Ve výchozím stavu používá <app>gedit</app> systémové písmo s pevnou šířkou, ale máte možnost si ho změnit, aby lépe vyhovovalo vašim potřebám.</p>
+  
+  <steps>
+    <title>Pokud chcete výchozí písmo v editoru <app>gedit</app> změnit:</title>
+      <item><p>Vyberte <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Předvolby</gui> <gui>Písmo a barvy</gui></guiseq>.</p></item>
+      <item><p>Zruště zaškrtnutí vedle popisku „Použít systémové písmo s pevnou šířkou“</p></item>
+      <item><p>Klikněte na název aktuálního písma. <app>gedit</app> otevře okno pro výběr písma, takže uvidíte dostupná písma a to požadované si můžete zvolit.</p></item>
+      <item><p>Až si vyberete nové písmo, použijte <gui>táhlo</gui> pod seznamem písem k nastavení výchozí velikosti písma.</p></item>
+      <item><p>Klikněte na <gui>Vybrat</gui> a pak na <gui>Zavřít</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

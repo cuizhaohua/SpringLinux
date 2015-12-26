@@ -1,0 +1,1825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.11.5">
+<!ENTITY manrevision "2.0.3">
+<!ENTITY date "May 2008">
+<!ENTITY app "Rhythmbox Music Player">
+<!ENTITY mdash "&#8212;">
+]>
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.2
+  Last modified: October 02, 2002
+  Maintainers:
+               Mark Finlay <sisob@eircom.net>
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.3
+  Last modified: August 08, 2003
+  Maintainers:
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.4
+  Last modified: October 01, 2005
+  Maintainers:
+	       Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Reproductor de música Rhythmbox</title>
+	<copyright><year>2002</year> <holder>Mark Finlay</holder></copyright>
+        <copyright><year>2002</year> <year>2002</year> <holder>Mark Humphreys</holder></copyright>
+	<copyright><year>2005</year> <year>2006</year> <holder>Baptiste Mille-Mathias</holder></copyright>
+	<copyright><year>2006</year> <holder>Victor Osadci</holder></copyright>
+	<copyright><year>2008</year> <holder>Dean Sas</holder></copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	<publisher>
+	 	<publishername>Projecte de documentació del GNOME</publishername>
+	</publisher>
+
+   
+
+  <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para lang="en"> This manual is part of a collection of GNOME manuals
+          distributed under the GFDL.  If you want to distribute this
+          manual separately from the collection, you can do so by
+          adding a copy of the license to the manual, as described in
+          section 6 of the license.
+	</para>
+
+	<para lang="en">
+	  Many of the names used by companies to distinguish their
+	  products and services are claimed as trademarks. Where those
+	  names appear in any GNOME documentation, and the members of
+	  the GNOME Documentation Project are made aware of those
+	  trademarks, then the names are in capital letters or initial
+	  capital letters.
+	</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+   other legal stuff such as "NO WARRANTY" statement. Please do not change
+   any of this. -->
+   <authorgroup>
+   		<author><firstname>Mark</firstname> <surname>Finlay</surname> <affiliation> <orgname>Projecte de documentació del GNOME</orgname> <address><email>sisob@eircom.net</email></address> </affiliation></author>
+		<author><firstname>Mark</firstname> <surname>Humphreys</surname> <affiliation> <orgname>Projecte de documentació del GNOME</orgname> <address><email>marquee@users.sourceforge.net</email></address> </affiliation></author>		
+		<author role="maintainer"><firstname>Baptiste</firstname> <surname>Mille-Mathias</surname> <affiliation> <orgname>Projecte de documentació del GNOME</orgname> <address><email>baptiste.millemathias@gmail.com</email></address> </affiliation></author>
+		<author><firstname>Victor</firstname> <surname>Osadci</surname> <affiliation> <orgname>Projecte de documentació del GNOME</orgname> <address><email>Victor.Osadci.GNOME@xhtml.md</email></address> </affiliation></author>
+		<author><firstname>Dean</firstname> <surname>Sas</surname> <affiliation> <orgname>Projecte de documentació d'Ubuntu</orgname> <address><email>dean@deansas.org</email></address> </affiliation></author>
+   </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+   <revhistory>
+      <revision><revnumber>Manual del reproductor de música Rhythmbox versió 0.0.2</revnumber> <date>Octubre de 2002</date> <revdescription> 
+	  		<para role="author">Mark Finlay</para>
+	  		<para role="publisher">Projecte de documentació del GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Manual del reproductor de música Rhythmbox versió 0.0.3</revnumber> <date>Agost de 2003</date> <revdescription> 
+	  		<para role="author">Mark Humphreys</para>
+	  		<para role="publisher">Projecte de documentació del GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Manual del reproductor de música Rhythmbox versió 0.0.4</revnumber> <date>Octubre de 2005</date> <revdescription> 
+	  		<para role="author">Baptiste Mille-Mathias</para>
+	  		<para role="publisher">Projecte de documentació del GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Manual del reproductor de música Rhythmbox versió 2.0.2</revnumber> <date>Abril de 2006</date> <revdescription> 
+	  		<para role="author">Luca Ferretti</para>
+	  		<para role="publisher">Projecte de documentació del GNOME</para>
+		</revdescription></revision> 
+	  <revision><revnumber>Manual del reproductor de música Rhythmbox versió 2.0.3</revnumber> <date>Maig de 2008</date> <revdescription>
+			<para role="author">Dean Sas</para>
+			<para role="publisher">Projecte de documentació del GNOME</para>
+        </revdescription></revision>
+    </revhistory> 
+
+    <releaseinfo>Aquest manual descriu la versió 0.11.5 del reproductor de música Rhythmbox.</releaseinfo> 
+    <legalnotice> 
+      <title>Comentaris</title> 
+      <para>Per a informar d'un error o fer un suggeriment en relació al reproductor de música Rhythmbox, l'aplicació o aquest manual, seguiu les direccions a la <ulink url="ghelp:gnome-feedback" type="help">Pàgina de comentaris de GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+   <abstract role="description">
+     <para>El Rhythmbox és el reproductor de música per l'escriptori GNOME.</para>
+   </abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Javi Ribera</firstname>
+      </personname>
+      <email>javiribera@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2013</year>
+      
+      <holder>Javi Ribera</holder>
+    </copyright>
+  </articleinfo> 
+
+
+  <indexterm zone="index"><primary>Rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>Reproductor de música</primary></indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="introduction">
+    <title>Introducció</title>
+      <para>El <application>Reproductor de música Rhythmbox</application> és un reproductor de música i una biblioteca de fitxers etiquetats que admet diversos formats de música.</para>
+      <para>Les característiques actuals del <application>Reproductor de música Rhythmbox</application> inclouen:</para>
+      	<itemizedlist>
+          <listitem>
+            <para lang="en">Play various format music files from your tagged organized
+	    Library.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Display information on the songs through meta-data reading.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Display songs in an organized view.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Create static playlists by dragging and dropping from the
+            Library view.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Create automatic playlists from criterias.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Search for songs in the sources list like Library or
+            Playlists.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Listen to Internet radio stations.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Read Audio CDs, and retrieve information like track title from
+            the Internet.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Burn Audio CDs from playlists.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">Transfer music to iPod, MTP and USB Mass Storage music players
+            .</para>
+          </listitem>
+        </itemizedlist>
+  </sect1>
+  <sect1 id="rb-getting-started">
+  	<title lang="en">Getting Started</title>
+	
+		<sect2 id="rb-launch">
+			<title lang="en">To Launch the <application>Rhythmbox Music Player</application></title>
+			<para lang="en">
+				You can launch the <application>Rhythmbox Music Player</application> in the following ways:
+				<variablelist>
+					<varlistentry>
+						<term lang="en"><guimenu>Applications</guimenu> menu</term>
+						<listitem>
+							<para lang="en">
+						 		Choose
+								<menuchoice><guisubmenu>Sound &amp; Video</guisubmenu>
+								<guimenuitem>Rhythmbox Music
+								Player</guimenuitem></menuchoice>.
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term lang="en">Command Line</term>
+						<listitem>
+							<para lang="en">
+								Type <command>rhythmbox</command>, then press
+								<keycap>Return</keycap>.
+							</para>
+						</listitem>
+					</varlistentry>
+				</variablelist>
+			</para>
+		</sect2>
+		<sect2 id="rb">
+			<title lang="en">Running the Assistant</title>
+			<para lang="en">
+				The first time you launch the <application>Rhythmbox Music Player</application>, an 
+				assistant will help you import your music. On the second panel
+				of the assistant, press the <guibutton>Browse</guibutton> button and
+				select the folder where your music is stored.
+			</para>
+		</sect2>
+  </sect1>
+  <sect1 id="rb-window">
+    <title lang="en">Rhythmbox Music Player Window</title>
+    <sect2 id="rb-window-intro">
+      <title lang="en">Overview</title>
+      	<para lang="en">
+			The <application>Rhythmbox Music Player</application> window enables you to browse and play 
+			your favorite music. <xref linkend="fig-rb-window"/> shows the interface of
+			the <application>Rhythmbox Music Player</application> with its main components.
+		</para>
+      	<figure id="fig-rb-window">
+        <title lang="en">The <application>Rhythmbox Music Player</application> Window</title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/rb-window.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase>Show the <application>Rhythmbox Music Player</application> window showing 
+                the different parts on the <application>Rhythmbox Music Player</application> interface.
+                Callouts: Menubar, Player area, Browser, Side pane, Statusbar.
+              </phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para lang="en">Table 1 describes the components of <application>Rhythmbox Music Player</application> window.</para>
+      <table frame="topbot" id="table-rb-window">
+        <title lang="en"><application>Rhythmbox Music Player</application> Window Components</title>
+        <tgroup cols="3" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <colspec colname="COLSPEC2"/>
+          <thead>
+            <row rowsep="1">
+              <entry valign="top" lang="en">Id</entry>
+              <entry valign="top">Component</entry>
+              <entry valign="top">Descripció</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry valign="top">1</entry>
+              <entry valign="top" lang="en">Menubar</entry>
+              <entry valign="top" lang="en">Contains menus that you use to perform
+							tasks in <application>Rhythmbox Music Player</application> window.</entry>
+            </row>
+            <row>
+              <entry valign="top">2</entry>
+              <entry valign="top">Barra d'eines</entry>
+              <entry valign="top" lang="en">Provides access to player
+							functions and details about the	currently playing track.</entry>
+            </row>
+            <row>
+              <entry valign="top">3</entry>
+              <entry valign="top" lang="en">Time Slider</entry>
+              <entry valign="top" lang="en">Displays the position of the read of a track; 
+							it enables to jump to another part of a track.</entry>
+            </row>
+            <row>
+              <entry valign="top">4</entry>
+              <entry valign="top" lang="en">Side Pane</entry>
+              <entry valign="top" lang="en">Displays a list of available
+							sources.</entry>
+
+            </row>
+            <row>
+              <entry valign="top">5</entry>
+              <entry valign="top">Navegador</entry>
+              <entry valign="top" lang="en">Allows to browse and filter the
+							Library tracks by Genre, Artist or Album name. The
+							Browser also provides a search function to display only
+							tracks that match your criteria.</entry>
+            </row>
+            <row>
+              <entry valign="top">6</entry>
+              <entry valign="top" lang="en">Tracks list</entry>
+              <entry valign="top" lang="en">Lists the tracks that belong to
+							the selected source.</entry>
+            </row>
+            <row>
+              <entry valign="top">7</entry>
+              <entry valign="top" lang="en">Statusbar</entry>
+              <entry valign="top" lang="en">Displays informations about the
+							source selected in the side pane.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="intro-sourcelist">
+      <title lang="en">The Side Pane</title>
+      <para lang="en">The side pane is where you can access your music library,
+			internet radio,	your playlists and audio CDs. The side pane can contain
+			the following sources:
+				<itemizedlist>
+				  <listitem><para lang="en">The <application>Rhythmbox Music Player</application> library, where 
+				  all of the imported tracks will appear.</para></listitem>
+				  <listitem><para lang="en">The iRadio source, with all internet radio stations.
+				  </para></listitem>
+				  <listitem><para lang="en">Podcasts.</para></listitem>
+				  <listitem><para lang="en">All playlists (normal and smart).</para></listitem>
+				  <listitem><para lang="en">Audio CD's inserted into the computer's CD drives.
+				  </para></listitem>
+				  <listitem><para lang="en">Portable players like iPod plugged to your computer.
+				  </para></listitem>
+				  <listitem><para lang="en">The DAAP Music shares discovered on the local network.
+				  </para></listitem>
+				  <listitem><para lang="en">Music stores like Jamendo and Magnatune.
+				  </para></listitem>
+				</itemizedlist>
+		</para>
+      	<para lang="en">
+				The display of the side pane can be toggled on or off by selecting
+				<menuchoice><guimenu>View</guimenu><guimenuitem>Side Pane</guimenuitem>
+				</menuchoice>.
+			</para>
+    </sect2>
+    <sect2 id="player-toolbar">
+      <title lang="en">The Player Toolbar</title>
+      <para lang="en">
+				The toolbar area provides access to details about the
+				currently playing track. When no track is being played, this
+				area shows no information. When a track is played, the track name
+				is displayed, and underneath, the artist and the album names.
+			</para>
+      <para lang="en">
+				A tracker is also displayed, showing the progress of the
+				playing track. When the tracker has focus, the arrow keys can be used to
+				Fast-Forward or Rewind the playing track.
+			</para>
+      <screenshot>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-toolbar.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Shows player area</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+      <tip>
+        <para lang="en">
+					If you are using a mouse with a scroll wheel, you can 
+					adjust the volume by scrolling up or down while the mouse pointer 
+					is over the volume button.
+				</para>
+      </tip>
+    </sect2>
+    <sect2 id="status-area">
+      <title lang="en">The Statusbar</title>
+      <para lang="en">
+				The statusbar contains additional information about the number
+				of songs and the duration of the source selected. The display of the 
+				statusbar can be toggled on or off by selecting <menuchoice>
+				<guimenu>View</guimenu><guimenuitem>Statusbar</guimenuitem></menuchoice>.
+			</para>
+      <screenshot>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-statusbar.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Shows statusbar</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </sect2>
+    <sect2 id="rb-window-small">
+      <title lang="en"><application>Rhythmbox Music Player</application> Minimized Window</title>
+      <para lang="en">
+				<application>Rhythmbox Music Player</application> comes with a minimized mode. This mode 
+				enables access only to the menubar and the player function of 
+				<application>Rhythmbox Music Player</application>.
+			</para>
+      <para lang="en">
+				To switch to the small display, select <menuchoice><guimenu>View</guimenu>
+				<guimenuitem>Small Display</guimenuitem></menuchoice>. 
+			</para>
+      <screenshot>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-window-small.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Shows the <application>Rhythmbox Music Player</application> in small display mode</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </sect2>
+  </sect1>
+  <sect1 id="Usage">
+    <title lang="en">Using Rhythmbox Music Player</title>
+    <sect2 id="Playing">
+      <title lang="en">Playing Music</title>
+      <para lang="en">To play a track, choose <menuchoice><guimenu>Control</guimenu>
+      <guimenuitem>Play</guimenuitem></menuchoice>, or select the track and 
+      press the <guibutton>Play</guibutton> button on the toolbar, or simply 
+      double-click on the track to start playing.
+		</para>
+      <para lang="en">When the track ends, <application>Rhythmbox Music Player</application> jumps to play the next
+      track in the list showed in view pane.
+		</para>
+      <para lang="en">In the Library you can play all songs from an artist or a single 
+      album simply selecting <guilabel>Album</guilabel> or <guilabel>Artist</guilabel> 
+      entry in the <link linkend="library-filter-browser">library browser</link>.
+		</para>
+      <sect3 id="next-previous">
+        <title lang="en">Next/Play/Previous</title>
+        <para lang="en">The <guibutton>Next</guibutton> and <guibutton>Previous</guibutton> 
+        buttons can be used to skip between tracks while playing. If a track is 
+        currently playing, the previous button will restart the	track. Pressing 
+        the <guibutton>Play</guibutton> button will start playing the current track. 
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/rb-toolbar-prevplaynext.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows buttons <guibutton>Previous</guibutton>,
+						<guibutton>Play</guibutton> and <guibutton>Next</guibutton> in toolbar.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</para>
+      </sect3>
+      <sect3 id="repeat">
+        <title lang="en">Repeat</title>
+        <para lang="en">The option <guibutton>Repeat</guibutton> makes the 
+        <application>Rhythmbox Music Player</application> restart to play tracks from the 
+        beginning of the list when it reach the last track.</para>
+        <para lang="en">To activate repeat, choose <menuchoice><guimenu>Control</guimenu>
+        <guimenuitem>Repeat</guimenuitem></menuchoice>, or press the button 
+        <guibutton>Repeat</guibutton> on the toolbar.
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/rb-toolbar-repeat.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows repeat button in the statusbar.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</para>
+      </sect3>
+      <sect3 id="shuffle">
+        <title lang="en">Shuffle</title>
+        <para lang="en">The option <guibutton>Shuffle</guibutton> makes the 
+        <application>Rhythmbox Music Player</application> play tracks in a random order.</para>
+        <para lang="en">To activate shuffle, choose <menuchoice><guimenu>Control</guimenu>
+        <guimenuitem>Shuffle</guimenuitem></menuchoice>, or press the button 
+        <guibutton>Shuffle</guibutton> on the toolbar.
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/rb-toolbar-shuffle.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows shuffle button in the statusbar.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</para>
+      </sect3>
+      <sect3 id="volume">
+        <title lang="en">Volume Control</title>
+        <para lang="en">
+				The volume control is located in the right hand of the toolbar.
+				Pressing the loudspeaker icon will show the volume slider.
+				Sliding this up and down will increase and decrease the volume.
+				The loudspeaker icon will change to reflect the relative volume.
+			<screenshot><mediaobject lang="en"><imageobject><imagedata fileref="figures/rb-volume-changer.png" format="PNG"/></imageobject><textobject><phrase>Shows volume slider in toolbar.
+				</phrase></textobject></mediaobject></screenshot>
+
+			</para>
+        <tip>
+          <para lang="en">You can adjust the volume by using the mouse scroll wheel over 
+          the loudspeaker icon.</para>
+        </tip>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="library">
+    <title lang="en">Library Source</title>
+    	<para lang="en">
+			The Library is the main source available in the
+			<application>Rhythmbox Music Player</application>, it is the
+			database that contains all the music files that you import in the 
+			<application>Rhythmbox Music Player</application> (The Library stores the path to access 
+			your music files, not the files themself).
+		</para>
+    	<para lang="en">
+			The Library can not only contains music files which are physically 
+			on your computer (in your HOME Directory for instance), but it can
+			also contains music files available over remote network services. 
+			Some examples of supported network services are :
+			<itemizedlist>
+				<listitem>
+					<para lang="en">Public FTP</para>
+				</listitem>
+				<listitem>
+					<para lang="en">Authenticated FTP</para>
+				</listitem>
+				<listitem>
+					<para lang="en">NFS</para>
+				</listitem>
+				<listitem>
+					<para lang="en">Windows Share</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+    	<para lang="en">
+			The files imported in the Library are displayed in the track list
+			with the information (like the Artist name or the Album name) stored 
+			in the tags embedded on the tracks. <application>Rhythmbox Music Player</application> uses 
+			these tags to display the tracks in an organized manner.
+			<tip>
+				<para lang="en">Tags can be modified by choosing <menuchoice><guimenu>
+				Music</guimenu><guimenuitem>Properties</guimenuitem>
+				</menuchoice> and filling in the details on the window that appears.</para>
+			</tip>
+		</para>
+    <sect2 id="library-tracks-add">
+      <title lang="en">Add tracks in the Library</title>
+      		<para lang="en">
+				To add tracks to the Library, you can follow these different
+				methods:
+				<itemizedlist>
+					<listitem>
+						<para lang="en">
+							To import only one track, choose 
+							<menuchoice><guimenu>Music</guimenu><guimenuitem>Import File
+							</guimenuitem></menuchoice> from the menu, then select the file
+							in the file selector and press the <guibutton>Open</guibutton> button.
+						</para>
+					</listitem>
+					<listitem>
+						<para lang="en">
+							If you want to import several music files located in a
+							folder, choose <menuchoice><guimenu>Music</guimenu><guimenuitem>Import
+							Folder</guimenuitem></menuchoice> from the menu, then select the
+							folder in the file selector and press the 
+							<guibutton>Open</guibutton> button. All the music files located
+							in the folder and its sub-folders will be imported.
+						</para>
+					</listitem>
+					<listitem>
+						<para lang="en">
+							Drag and drop files from the file manager (like
+							<application>Nautilus</application>) over the Rhythmbox window.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+      	<tip>
+       		<para lang="en">
+			If you have enabled the watch directory function (see <xref linkend="prefs-library"/>), all the music files
+			stored under the chosen directory will be added to the Library. New
+			files added later will be also added.
+			</para>
+      	</tip>
+    </sect2>
+    <sect2 id="library-tracks-del">
+    	<title lang="en">Remove tracks from the Library</title>
+      	<para lang="en">
+			To remove a track from the library but leave it on the disk, choose menu
+			<menuchoice><guimenu>Edit</guimenu><guimenu>Remove</guimenu></menuchoice>.
+			The track and its properties (like rating or the play count) are
+			removed from the Rhythmbox database.
+		</para>
+      	<para lang="en">
+			To delete a track from the Library and also from your disk, choose
+			<menuchoice><guimenu>Edit</guimenu><guimenuitem>Move to
+			Trash</guimenuitem></menuchoice>. The track will be removed in the
+			same way as previous, but the file will be moved in to the file
+			manager Trash.
+		</para>
+    </sect2>
+    <sect2 id="library-filter-search">
+    	<title lang="en">Find tracks using Search</title>
+      	<para lang="en">
+			Rhythmbox comes with a search function, which enables you to find
+			and filter tracks by using a search term.
+		</para>
+      	<para lang="en">
+			Enter some text in the search entry, and as you type, only
+			the tracks that match the text entered will be displayed. The search
+			function does the lookup in all of the tags of the tracks stored in
+			the Library.
+		</para>
+		<para lang="en">
+			To perform a more precise search, you can choose to lookup only
+			in specific tags <guilabel>Artists</guilabel>,
+			<guilabel>Albums</guilabel> or <guilabel>Titles</guilabel>.
+		</para>
+    </sect2>
+    <sect2 id="library-filter-browser">
+    	<title lang="en">Find tracks using the Browser</title>
+      	<para lang="en">
+			The Browser is another convenient way to find tracks. The Browser
+			is a two or three pane view which enable to navigate among music genres,
+			artists and albums and display tracks that match the chosen criteria.
+		</para>
+      	<para lang="en">
+			First, to display the Browser, select <menuchoice><guimenu>View</guimenu>
+			<guimenuitem>Browser</guimenuitem></menuchoice>. Select artist, album 
+			and genre, and as you choose, only the tracks that match your choice will 
+			be displayed in the track list. The criteria on the columns apply
+			from the left to the right.
+		</para>
+      	<tip>
+        	<para lang="en">
+				You can choose several criteria of the same category by using the
+				key <keycombo><keycap>Ctrl</keycap></keycombo>.
+			</para>
+      	</tip>
+      		<para lang="en">
+				You can also find from a selected track in the track list, all
+				of the tracks with the same genre, artist or album name. Select
+				a track in the track list, right-click on it, and choose
+				<guilabel>Browse this Genre/Artist/Album</guilabel>. Then the
+				browser will filter the tracks using the criteria chosen.
+			</para>
+  	</sect2>
+  </sect1>
+  <sect1 id="radio">
+  	<title lang="en">Radio Source</title>
+    <para lang="en">
+		The Internet Radio tuner can be used to listen to streamed audio files over a network, local or Internet.
+	</para>
+    <figure id="fig-iradio">
+      <title lang="en">Internet Radio in <application>Rhythmbox Music Player</application></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+	    <imagedata format="PNG" fileref="figures/rb-iradio-main.png"/>
+	  </imageobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+    <sect2 id="iradio-adding">
+      	<title lang="en">Adding a station</title>
+      	<para lang="en">
+			To add a new station to the Internet Radio tuner, choose <menuchoice><guimenu>Music</guimenu>
+			<guimenuitem>New Internet Radio Station</guimenuitem></menuchoice>, then enter the URL of
+			the Internet radio, then press the button <guibutton>Add</guibutton>.
+		</para>
+    </sect2>
+    <sect2 id="iradio-modify">
+      	<title lang="en">Viewing and Changing the settings of a station</title>
+      	<para lang="en">
+			You can view and edit the settings of an Internet Radio station using the menu
+			<menuchoice><guimenu>Music</guimenu><guimenuitem>Properties</guimenuitem></menuchoice>.
+		</para>
+      	<para lang="en">
+			You can also change the properties of a station by selecting the
+			station and right-click, then choose <guimenuitem>Properties</guimenuitem>.
+		</para>
+      	<para lang="en">
+			When you access the properties of a radio stream, you can modify its title, its genre; you can 
+			also modify the stream location, and set a rating to it.
+		</para>
+    </sect2>
+    <sect2 id="iradio-delete">
+    	<title lang="en">Removing a station</title>
+      	<para lang="en">
+			To remove a radio station from the radio stations list, choose <menuchoice><guimenu>Edit</guimenu>
+			<guimenuitem>Remove</guimenuitem></menuchoice>; you can also right-click on the station and select
+			<guimenuitem>Remove</guimenuitem>.
+		</para>
+    </sect2>
+  </sect1>
+  <sect1 id="podcast">
+  	<title lang="en">Podcast Source</title>
+    <para lang="en">
+		Podcasting is a new way to broadcast audio content over the web; when an
+		author publishes an episode, podcast suscribers are informed, through an
+		XML feed.
+	</para>
+    <para lang="en">
+		Rhythmbox Music Player enables you to subscribe to podcast feeds, so when a new episode
+		is available you'll be informed, it will download this episode and it
+		will play it.
+	</para>
+    <tip>
+      	<para lang="en">
+		You can find more information about podcasts and podcasting by visiting the
+		definition of <ulink url="http://en.wikipedia.org/wiki/Podcast">Podcast</ulink> on the 
+		site <ulink url="http://en.wikipedia.org/">Wikipedia</ulink>.
+		</para>
+    </tip>
+    <para>
+      <figure>
+        <title lang="en">The Podcast interface</title>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-podcast-main.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>The Podcast interface with some registered podcasts</phrase>
+          </textobject>
+        </mediaobject>
+      </figure>
+    </para>
+    <sect2 id="podcast-management">
+      <title lang="en">Podcast Management</title>
+      <sect3 id="podcast-feed-add">
+        <title lang="en">Add a podcast</title>
+        <para lang="en">
+			To register to a podcast, choose 
+			<menuchoice><guimenu>Music</guimenu><guimenuitem>New Podcast
+			Feed</guimenuitem></menuchoice>, then in the new window, enter the URL of
+			the podcast feed. Rhythmbox will retrieve the list of episodes and the 
+			latest episode will be downloaded on your hard disk.
+			</para>
+        <para lang="en">
+			To add a new podcast feed, you can also right-click over the
+			<guimenuitem>Podcasts</guimenuitem>
+			source, and select <guimenuitem>New Podcast Feed</guimenuitem>.
+			</para>
+      </sect3>
+      <sect3 id="podcast-feed-del">
+        <title lang="en">Delete a podcast</title>
+        <para lang="en">
+			To delete a podcast, right-click on the podcast feed's name in the browser, and choose
+			<menuchoice><guimenuitem>Delete Podcast
+			Feed</guimenuitem></menuchoice>, then choose
+			<menuchoice><guimenuitem>Delete Feed Only</guimenuitem></menuchoice> if you want to keep the
+			podcast's episodes, or choose <menuchoice><guimenuitem>Delete Feed And
+			Item</guimenuitem></menuchoice> if you want to delete the feed and all its
+			related episodes.
+			</para>
+      </sect3>
+      <sect3 id="podcast-feed-update">
+        <title lang="en">Update feeds</title>
+        <para lang="en">
+			To know if new episodes have been published for a podcast,
+			right-click over the podcast name in the browser and choose
+			<menuchoice><guimenuitem>Update Podcast	Feed</guimenuitem></menuchoice>. If new episodes
+			were published, they will appear in the episode list.
+			</para>
+        <tip>
+          <para lang="en">
+			Rhythmbox Music Player checks regularly, on its own, the podcast feeds list
+			to find out if they were updated.
+			</para>
+        </tip>
+        <para lang="en">
+			You can also check all podcasts, by right-clicking over the 
+			<menuchoice><guimenuitem>Podcasts</guimenuitem></menuchoice> source and choose
+			<menuchoice><guimenuitem>Update All Feeds</guimenuitem></menuchoice>.
+			</para>
+      </sect3>
+      <sect3 id="podcast-feed-show">
+        <title lang="en">Access Podcast Feed properties</title>
+        <para lang="en">
+			To access to the Feed properties, right-click on the Feed name, and
+			choose
+			<menuchoice><guimenuitem>Properties</guimenuitem></menuchoice>.
+			<itemizedlist><listitem><para lang="en">
+					On the <guilabel>Basic</guilabel> tab you can view the
+					podcast <guilabel>Title</guilabel>, <guilabel>Author
+					</guilabel>, the <guilabel>Last Updated</guilabel>
+					date and the <guilabel>Description</guilabel>.
+				</para></listitem><listitem><para lang="en">
+					On the <guilabel>Details</guilabel> tab you can view the
+					feed <guilabel>Source</guilabel>, <guilabel>Language
+					</guilabel>and the <guilabel>Copyright</guilabel>
+					properties.
+				</para></listitem></itemizedlist>
+			You can view the properties, and also edit the rating.
+			</para>
+      </sect3>
+    </sect2>
+    <sect2 id="episode-management">
+      <title lang="en">Episode Management</title>
+      <sect3 id="podcast-episode-download">
+        <title lang="en">Download a podcast episode</title>
+        <para lang="en">
+			To download an episode on your disk, right-click on the episode, and 
+			choose <menuchoice><guimenuitem>Download Post</guimenuitem></menuchoice>,
+			Rhythmbox will start to download the episode in the location defined in
+			the preferences. You can see the download progress of an episode in
+			the column <guilabel>Status</guilabel>.
+			</para>
+        <tip>
+          <para lang="en">
+			By default, podcasts are downloaded in folder <filename class="directory">Podcasts/</filename> in your home directory. To change location, 
+			see <xref linkend="prefs-podscast"/>.
+			</para>
+        </tip>
+      </sect3>
+      <sect3 id="podcast-episode-read">
+        <title lang="en">Read a podcast episode</title>
+        <para lang="en">
+			To play a podcast episode, select the episode you want to read, and
+			choose
+			<menuchoice><guimenu>Control</guimenu><guimenuitem>Play</guimenuitem></menuchoice>;
+			you can also press the button <guibutton>Play</guibutton>.</para>
+        <para lang="en">
+			The episode have to downloaded before to read it, see <xref linkend="podcast-episode-download"/> to know how to download a
+			podcast episode.
+			</para>
+      </sect3>
+      <sect3 id="podcast-episode-delete">
+        <title lang="en">Delete a podcast episode</title>
+        <para lang="en">
+			To delete an episode from a podcast, right-click on the episode, and
+			choose <menuchoice><guimenuitem>Delete</guimenuitem></menuchoice>,
+			then choose <menuchoice><guimenuitem>Delete Episode
+			Only</guimenuitem></menuchoice> if you to keep the episode file on
+			your disk, or choose <guibutton>Delete Episode And File</guibutton>
+			if you want to remove the episode from the list and delete the file from your disk.
+			</para>
+        <warning>
+          <para lang="en">
+			After you delete an episode, it will no longer be available in the
+			list of episodes, even if you update the podcast.
+			</para>
+        </warning>
+      </sect3>
+      <sect3>
+        <title lang="en">Display Podcast Episode properties</title>
+        <para lang="en">
+			To access to the episode properties, right-click on the episode, and
+			choose
+			<menuchoice><guimenuitem>Properties</guimenuitem></menuchoice>.
+			<itemizedlist><listitem><para lang="en">
+					On the <guilabel>Basic</guilabel> tab you can view the podcast
+					<guilabel>Title</guilabel>, <guilabel>Feed</guilabel>, the
+					publication <guilabel>Data</guilabel> and the
+					<guilabel>Description</guilabel>.
+				</para></listitem><listitem><para lang="en">
+					On the <guilabel>Details</guilabel> tab you can view the podcast
+					<guilabel>Source</guilabel>, <guilabel>Duration</guilabel>, the
+					<guilabel>Bitrate</guilabel>, the <guilabel>Last Played
+					Date</guilabel>, the <guilabel>Play count</guilabel> and
+					the <guilabel>Rating</guilabel>.
+				</para></listitem></itemizedlist>
+			</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="playqueue">
+  	<title lang="en">Play Queue Source</title>
+	<para lang="en">
+		Play queue is a source designed to temporarily store the next tracks you
+		want to play. When you add a track to the Play Queue,
+		<application>Rhythmbox Music Player</application> will automatically switch to this
+		source, after the track has played.
+	</para>
+	<para lang="en">
+		Once a track has been played, it will be automatically removed from the
+		Play Queue Source.
+		Once the Play Queue is empty, <application>Rhythmbox Music Player</application> will play the source which was
+		played before.
+	</para>
+		<sect2 id="playqueue-track-add">
+			<title lang="en">Add a track to the Play Queue</title>
+			<para lang="en">To add a track:
+				<orderedlist>
+					<listitem>
+						<para lang="en">
+							Select the track you want to play, in any
+							source.
+						</para>
+					</listitem>
+					<listitem>
+						<para lang="en">Choose
+						<menuchoice><guimenu>Edit</guimenu><guimenuitem>Add to
+						playqueue</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist>
+			</para>
+		</sect2>
+		<sect2 id="playqueue-track-del">
+			<title lang="en">Remove a track in Play Queue</title>
+			<para lang="en">To remove a track stored in Play Queue:
+				<orderedlist>
+					<listitem>
+						<para lang="en">Select the track you want to remove in Play Queue
+						source.</para>
+					</listitem>
+					<listitem>
+						<para lang="en">Choose
+							<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem>
+							</menuchoice>.
+						</para>
+					</listitem>
+				</orderedlist>
+			</para>
+		</sect2>
+  </sect1>
+  
+  <sect1 id="playlist">
+  	<title lang="en">Playlists Source</title>
+    <para lang="en">
+			Playlists are sources which are created from the tracks available in
+			the Library source. They enable you to gather tracks following a
+			particular 'genre', a specific group of artists, or even tracks that 
+			are of a particular 'mood', or whatever you want.
+	</para>
+    <para lang="en">
+			Rhythmbox Music Player has 2 kinds of playlists:
+			<itemizedlist>
+				<listitem>
+					<para lang="en">Static Playlists</para>
+				</listitem>
+				<listitem>
+					<para lang="en">Smart Playlists</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+    <para lang="en">
+			Rhythmbox lets you burn the tracks of your playlists to an Audio CD.
+		</para>
+    <sect2 id="playlist-static">
+    	<title lang="en">Static Playlists</title>
+      	<para lang="en">
+			Static playlists are playlists built from tracks dropped from the Library.
+		</para>
+      <sect3 id="playlist-static-new">
+        <title lang="en">Create a static playlist</title>
+        <para lang="en">
+			To create a new playlist, choose
+			<menuchoice><guimenu>Music</guimenu><guisubmenu>Playlist</guisubmenu><guimenuitem>New
+			Playlist</guimenuitem></menuchoice>. An empty playlist without name 
+			appears in the side pane. Enter a name for the playlist and press
+			<keycombo><keycap>Enter</keycap></keycombo>.
+		</para>
+      </sect3>
+      <sect3 id="playlist-static-tracks-add">
+        <title lang="en">Add tracks to a playlist</title>
+        <para lang="en">
+					To add tracks to a playlist, select tracks from the track
+					list from the library and drag and drop your selection over the
+					playlist icon in the side pane.
+				</para>
+        <para lang="en">
+					You can also drop over a playlist a genre, an artist, or an
+					album name from the	browser, and all the tracks that belongs 
+					to the chosen category will be added to the playlist.
+				</para>
+        <tip>
+          <para lang="en">You can create a playlist with tracks in one action. Select tracks from
+            the <guilabel>Tracks List</guilabel>, or directly one or more categories from
+            the browser (<guilabel>Genre</guilabel>, <guilabel>Artist</guilabel> or
+            <guilabel>Album</guilabel>) and drop the selection over the <guilabel>Side
+            pane</guilabel>. It will automatically create a named playlist.</para>
+        </tip>
+      </sect3>
+      <sect3 id="playlist-static-tracks-del">
+        <title lang="en">Remove tracks from a playlist</title>
+        <para lang="en">
+					To remove tracks from a playlist, first select the tracks to
+					remove, and then you have two methods:
+					<itemizedlist><listitem><para lang="en">
+								Choose
+								<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Right-click over the selection and choose <guimenuitem>Delete</guimenuitem>.
+							</para></listitem></itemizedlist>
+					This operation deletes the track only from playlist and not
+					from the Library.
+				</para>
+      </sect3>
+      <sect3 id="playlist-static-del">
+        <title lang="en">Delete a static playlist</title>
+        <para lang="en">
+					To delete a static playlist, select the playlist to delete,
+					then you have two ways to delete it:
+					<itemizedlist><listitem><para lang="en">
+								Choose
+								<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Right-click over the playlist and choose <guimenuitem>Delete</guimenuitem>.
+							</para></listitem></itemizedlist>
+					This operation deletes only the playlist and not the tracks
+					stored in the playlist deleted.
+				</para>
+      </sect3>
+    </sect2>
+    <sect2 id="playlist-smart">
+      <title lang="en">Smart Playlists</title>
+      <para lang="en">
+				Smart Playlists are playlists built from criteria, so tracks
+				are added to it dynamically; all of the tracks matching the
+				criteria will be added to the playlist.
+			</para>
+      <sect3 id="playlist-smart-new">
+        <title lang="en">Create a smart playlist</title>
+        <para lang="en">
+					To create a new playlist:
+					<orderedlist><listitem><para lang="en">
+								Choose <menuchoice><guimenu>Music</guimenu><guisubmenu>Playlist</guisubmenu><guimenuitem>New
+								Automatic Playlist</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Edit the playlist criteria through the query editor.
+							</para></listitem><listitem><para lang="en">
+								Once your criteria have been chosen, click <guibutton>New</guibutton> to create the
+								query.
+							</para></listitem></orderedlist>
+				</para>
+      </sect3>
+      <sect3 id="playlist-smart-edit">
+        <title lang="en">Edit a smart playlist</title>
+        <para lang="en">
+					Editing a smart playlist lets you modify the criteria set
+					for this playlist. To edit a smart playlist, select the
+					smart playlist, choose
+					<menuchoice><guimenu>Music</guimenu><guisubmenu>Playlist</guisubmenu><guimenuitem>Edit</guimenuitem></menuchoice>, and edit the criteria.
+					Once done, choose <guibutton>Close</guibutton>.
+				</para>
+      </sect3>
+      <sect3 id="playlist-smart-del">
+        <title lang="en">Delete a smart playlist</title>
+        <para lang="en">
+					To delete a smart playlist, select the playlist to delete,
+					then you have two ways to delete it:
+					<itemizedlist><listitem><para lang="en">
+								Choose
+								<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Right-click over the playlist and choose <guimenuitem>Delete</guimenuitem>.
+							</para></listitem></itemizedlist>
+				</para>
+      </sect3>
+      <sect3 id="playlist-smart-query-use">
+        <title lang="en">Use the query editor</title>
+        <para lang="en">
+		Choose the criteria to apply to the rule. If you need one
+		more criteria click on the button
+		<guibutton>Add</guibutton>, a new line appears, and you can
+		set a new criteria.
+		</para>
+        <para lang="en">
+		If you want to limit the number of tracks in the playlist,
+		tick <guilabel>Limit to:</guilabel>, and choose how to
+		limit. You can limit by tracks, by total size (in
+		<guilabel>MB</guilabel> or <guilabel>GB</guilabel>), or by
+		duration (expressed in <guilabel>Minutes</guilabel>).
+		</para>
+        <para lang="en">
+		Once you finish setting the criteria for the playlist, choose
+		<guibutton>New</guibutton>; the playlist query editor window
+		will close, and the playlist will display the tracks matched by your
+		criteria.
+		</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="AudioCD">
+    <title lang="en">Audio CD Source</title>
+	<para lang="en"><application>Rhythmbox Music Player</application> can also handle Audio CDs; it can
+	play CDs and also let you burn your own.</para>
+    <sect2 id="cd-playing">
+      <title lang="en">Playing</title>
+      <para lang="en">When an Audio CD is inserted, it will appear in the
+	  side pane, and the tracks on it can be displayed in
+	  <application>Rhythmbox Music Player</application>'s main window. If you are connected to
+	  the Internet, the CD details will be retrieved and displayed.
+			</para>
+      <para lang="en">To play and pause playback, or to skip forward or backwards,
+			use the same controls as used for playing from the library.
+			</para>
+    </sect2>
+    <sect2 id="cd-import">
+      <title lang="en">Importing Audio CD</title>
+      <para lang="en">If you wish to keep the tracks of your Audio CDs on your computer,
+			you can import them.</para>
+      <para lang="en">To import Audio CD tracks, choose <menuchoice><guimenu>Music</guimenu>
+	  <guimenuitem>Import Audio CD</guimenuitem></menuchoice>, it will start <application>Sound-Juicer</application>,
+			an application dedicated to importing Audio CDs. To know more about <application>Sound-Juicer</application>,
+			you can read the <ulink url="ghelp:sound-juicer">Sound-Juicer manual</ulink>.</para>
+      <tip>
+        <para lang="en">To get imported tracks from Sound-Juicer automatically added to you Rhythmbox Library,
+		you will have to configure Sound-Juicer to extract tracks into your Rhythmbox Library location
+		and the Rhythmbox watch library feature has to be activated; refer to 
+		<ulink url="ghelp:sound-juicer#preferences">Sound-Juicer preferences</ulink> and 
+		<link linkend="prefs-library">Rhythmbox Library preferences</link>.
+		</para>
+      </tip>
+    </sect2>
+    <sect2 id="cd-burning">
+      <title lang="en">Creating Audio CD</title>
+      <para lang="en">Rhythmbox enables you to create you own Audio CDs with the music stored in the Rhythmbox Library.</para>
+      <para lang="en">To create an Audio CD: 
+				<orderedlist><listitem><para lang="en">Create a playlist, static or smart
+				(see <xref linkend="playlist"/>) and add tracks.</para></listitem>
+                <listitem><para lang="en">Choose <menuchoice><guimenu>Music</guimenu><guisubmenu>Playlist</guisubmenu><guimenuitem>Create Audio CD</guimenuitem></menuchoice></para></listitem>
+                <listitem><para lang="en">Insert a blank CD.</para></listitem>
+                <listitem><para lang="en">Click the button <guibutton>Create</guibutton>, the burning process starts.</para></listitem>
+                </orderedlist>
+			</para>
+    </sect2>
+  </sect1>
+  <sect1 id="portable-audio-player">
+    <title lang="en">Portable Audio Player Source</title>
+    <para lang="en"><application>Rhythmbox</application> can detect when an portable audio player is plugged to your
+	computer, and is able to read tracks stored on it.
+	<application>Rhythmbox Music Player</application> should be able to deal with most
+	portable audio players including Apple iPod, MTP players and Mass Storage
+	players.</para>
+    <para lang="en">When you plug in a portable audio player, an icon for the Portable Audio Player
+        is added to the side pane. This source works in the same way as the Library
+        source.</para>
+	<tip><para lang="en">If <application>Rhythmbox Music Player</application> does not detect your device
+	as a portable audio player, you can create an empty file named
+	<filename>.is_audio_player</filename> at the top level hierarchy of the
+	filesystem of your player.</para></tip>
+  </sect1>
+  <sect1 id="daap">
+    <title lang="en">DAAP Share Source</title>
+    <para lang="en">DAAP is a network protocol that allows you to share the music stored in Rhythmbox.
+	DAAP stands for Digital Audio Access Protocol.</para>
+    <para lang="en">As DAAP is a standard protocol for music sharing, you can listen and share music
+	not only with other Rhythmbox users, but also with other users who use DAAP compatible
+	software, like iTunes.</para>
+    <para lang="en">When you start Rhythmbox, it will look for all DAAP shares published on
+        your local network (your home or your office, not the whole Internet) by other
+        users and will display them in the side pane. If sharing
+        is enabled, at the same time Rhythmbox will publish your library and your
+        playlists. In this way, you can listen to music stored on your friend's
+        computers and they can listen your music.</para>
+    <para lang="en">To disable the Rhythmbox DAAP sharing feature, see <xref linkend="prefs-sharing"/> in the preferences.</para>
+  </sect1>
+  <sect1 id="notification">
+    <title lang="en">Notification Area</title>
+    <sect2 id="notification-overview">
+      <title lang="en">Overview</title>
+      <para lang="en">The Notification Area is a GNOME feature that adds a small icon to 
+      the panel while the program is running; this allows you to control 
+      <application>Rhythmbox Music Player</application> from your tray, and receive information 
+      when the <application>Rhythmbox Music Player</application> interface is not visible.
+		</para>
+      <figure id="fig-notification-zone">
+        <title lang="en"><application>Rhythmbox Music Player</application> in the Notification Area</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-zone.png"/>
+	    </imageobject>
+	  </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+    <sect2 id="notification-info-receive">
+      <title lang="en">Get information</title>
+      <sect3 id="notification-info-tooltip">
+        <title lang="en">Tooltip information</title>
+        <para lang="en">When you move the mouse cursor over the 
+        <application>Rhythmbox Music Player</application> icon, you can see the track artist, 
+        the track name and the time position.</para>
+      </sect3>
+      <sect3 id="notification-info-window">
+        <title lang="en">Notification window</title>
+        <para lang="en">Each time the track has changed or a podcast episode was downloaded, 
+        the <application>Rhythmbox Music Player</application> can inform you; it displays a 
+        notification window on the desktop, containing the information.</para>
+        <figure id="fig-notification-window">
+          <title lang="en">The notification window of <application>Rhythmbox Music Player</application></title>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata format="PNG" fileref="figures/rb-notification-window.png"/>
+	      </imageobject>
+	    </mediaobject>
+          </screenshot>
+        </figure>
+        <tip>
+          <para lang="en">The notification window can be disabled by deselecting the 
+          <guilabel>Show Notifications</guilabel> option from the context menu of 
+          the icon in the notification area.
+	  </para>
+        </tip>
+      </sect3>
+    </sect2>
+    <sect2 id="notification-control">
+      <title lang="en">Control Rhythmbox</title>
+      <para lang="en">Using the <application>Rhythmbox Music Player</application> icon in the notification 
+      area, the following commands can be sent to the application: 
+		</para>
+      <figure id="fig-notification-menu">
+        <title lang="en">Notification Area (showing menu)</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-area-menu.png"/>
+            </imageobject>
+           </mediaobject>
+        </screenshot>
+      </figure>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para lang="en"><guibutton>Play</guibutton> — If selected, plays the 
+            currently selected song.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Previous</guibutton> — Skip to previous song 
+            in the selected source.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Next</guibutton> — Skip to next song in the 
+            selected source.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Show Window Player</guibutton> — Choose whether 
+            or not the <application>Rhythmbox Music Player</application>	window is visible or not 
+            on the desktop.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Show Notifications</guibutton> — Choose whether
+            or not the <application>Rhythmbox Music Player</application> will notify you about 
+            track changes and various information.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Quit</guibutton> — Quit the 
+            <application>Rhythmbox Music Player</application>.</para>
+          </listitem>
+        </itemizedlist>
+        <tip>
+        	<para lang="en">If you are using a mouse with a scroll wheel, you can adjust 
+        	the volume by scrolling up or down while the mouse pointer is over 
+        	the panel applet.
+			</para>
+          <para lang="en">You can quickly toggle Play/Pause by pressing the middle mouse button.</para>
+        </tip>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="customize">
+    <title lang="en">Customizing Rhythmbox Music Player</title>
+    <para lang="en">
+	This section describes how to customize <application>Rhythmbox Music Player</application> to
+	suit your requirements and preferences.
+	</para>
+    <sect2 id="prefs">
+      <title lang="en">Setting Your Preferences</title>
+      <para lang="en">
+		Using the <guilabel>Preferences</guilabel> dialog you can customize how
+		you want <application>Rhythmbox Music Player</application> to look and behave. To display
+		the <guilabel>Preferences</guilabel> dialog, choose
+		<menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice>.
+		</para>
+      <sect3 id="prefs-general">
+      	<title lang="en">General</title>
+		<para lang="en">Choose the way the <guilabel>Browser View</guilabel> will be displayed.
+		You can choose to use three or two panes and what the panes should display.
+		</para>
+      	<para lang="en">
+			Choose the <guilabel>Visible Columns</guilabel> you want to
+			display in <application>Rhythmbox Music Player</application>. This option affects
+			the following sources:
+			<itemizedlist>
+				<listitem><para lang="en">Library</para></listitem>
+				<listitem><para lang="en">Audio CD</para></listitem>
+				<listitem><para lang="en">Portable Players</para></listitem>
+				<listitem><para lang="en">Playlists</para></listitem>
+				<listitem><para lang="en">DAAP Music shares</para></listitem>
+			</itemizedlist>
+		</para>
+      </sect3>
+      <sect3 id="prefs-library">
+        <title lang="en">Music</title>
+        <itemizedlist>
+          <listitem>
+            <para lang="en">
+				The <guilabel>Library Location</guilabel> is a folder
+				that <application>Rhythmbox Music Player</application> will monitor to find new songs. 
+				When you add new audio files in this folder or its sub-folders with the 
+				file browser (like Nautilus), <application>Rhythmbox Music Player</application> 
+				will detect them and they will be added automatically in the Library.
+			</para>
+            <warning>
+            	<para lang="en">
+					Avoid to set your <filename class="directory">Home</filename> folder 
+					as library location because this feature is CPU consuming.
+				</para>
+            </warning>
+            <para lang="en">
+				To disable the watch functionality deselect 
+				<guilabel>Watch my library for new files</guilabel>.
+			</para>
+            <tip>
+            	<para lang="en">If you want to add more than one folder to watch, 
+            	use <application>gconf-editor</application> and add it to the list
+            	/app/rhythmbox/library_locations
+				</para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-podscast">
+        <title lang="en">Podcasts</title>
+        <itemizedlist>
+          <listitem>
+            <para lang="en">
+				The <guilabel>Download Location</guilabel> of Podcasts is defined 
+				by default to the <filename class="directory">Podcasts/
+				</filename> folder in your home directory.
+			</para>
+            <para lang="en">
+				If this location doesn't fit your needs, select another folder
+				in the drop-down list or choose <guilabel>Other</guilabel>
+				to make the File Selector appear.
+			</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+				Choose the frequency that <application>Rhythmbox Music Player</application> will check for new
+				podcast episodes.
+			</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-sharing">
+        <title lang="en">Sharing</title>
+        <para lang="en">The <application>Rhythmbox Music Player</application> can share your Library 
+        contents over your Local Area Network, to other 
+        <application>Rhythmbox Music Player</application> and Apple iTunes users.</para>
+        <itemizedlist>
+          <listitem>
+            <para lang="en">Select <guilabel>Share my music</guilabel> to enable
+					the users of your network to see and read your songs.</para>
+          </listitem>
+          <listitem>
+            <para lang="en">
+				Enter the name of you want to appear of the network in
+				the field <guilabel>Shared music name</guilabel>.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-lastfm">
+        <title lang="en">Last.fm profile</title>
+        <para lang="en">
+			The Last.fm profile plugin collects information about the songs you listen to
+			and sends it to the <ulink url="http://www.last.fm/">Last.fm</ulink> website,
+			building up a profile of your listening habits.  With this profile, you can:
+			<itemizedlist>
+				<listitem>
+					<para lang="en">consult statistics, such as most played songs or most played artists.</para>
+				</listitem>
+				<listitem>
+					<para lang="en">receive recommendations about artists that you might like.</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+        <warning>
+          <para lang="en">
+		    In order to use the Last.fm profile plugin, you must have a Last.fm account.  
+			If you don't already have one, use the 
+			<ulink url="http://www.last.fm/signup.php">Last.fm signup page</ulink> to 
+			create one.  Enter your Last.fm account details in the <guilabel>Username</guilabel>
+			and <guilabel>Password</guilabel> fields in the Last.fm profile plugin 
+			configuration window.
+		  </para>
+        </warning>
+		<para lang="en">
+		    The configuration window for the Last.fm profile plugin also displays 
+			status information.  If your Last.fm profile page shows that your 
+			profile is not being updated, the information displayed here may 
+			help you to diagnose the problem.
+		</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="shortcuts">
+    <title lang="en">Shortcuts</title>
+    <sect2 id="keyboard-keys">
+      <title lang="en">Keyboard Shortcuts</title>
+      <table frame="topbot" id="rb-shorcuts-1">
+	  	<title lang="en">Player Shortcuts</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry lang="en">Shortcuts</entry>
+              <entry lang="en">Actions</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>p</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Play / Pause</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Left</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Jump to the Previous Track / Back to the beginning of the track</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Right</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Jump to the Next Track</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Up</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Increase playback volume</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Down</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Decrease playback volume</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>R</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Enable / Disable Repeat play</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>U</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Enable / Disable Shuffle play</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-2">
+	  	<title lang="en">General Shortcuts</title>
+		<tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry lang="en">Shortcuts</entry>
+              <entry lang="en">Actions</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>A</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Select All</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Shift</keycap>
+                  <keycap>Ctrl</keycap>
+                  <keycap>A</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Deselect All</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>J</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Jump to playing song</para>
+              </entry>
+	    </row>
+	    <!--
+            <row>
+              <entry>
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Y</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Clear the search field text and remove all filters in the browser</para>
+              </entry>
+	    </row>
+            -->
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Alt</keycap>
+                  <keycap>S</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Jump to search field</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Alt</keycap>
+                  <keycap>Return</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Display the Track Properties</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-3">
+	  	<title lang="en">Window Shortcuts</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry lang="en">Shortcuts</entry>
+              <entry lang="en">Actions</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Q</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Quit the <application>Rhythmbox Music Player</application></para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>B</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Show / Hide the browser</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>F9</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Show / Hide the side pane</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>K</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Show / Hide the Queue Sidebar</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>F11</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Toggle / Untoggle the Full Screen mode</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="multimedia-keys">
+      <title lang="en">Multimedia Keys</title>
+      <para lang="en"><application>Rhythmbox Music Player</application> supports the keys on multimedia 
+      keyboards, if configured in your desktop environment.</para>
+      <table frame="none">
+	  	<title lang="en">Window Shortcuts</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry lang="en">Shortcuts</entry>
+              <entry lang="en">Actions</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycap>Stop</keycap>
+              </entry>
+              <entry>
+                <para lang="en">Stop</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycap>Pause / Play</keycap>
+              </entry>
+              <entry>
+                <para lang="en">Pause / Play</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycap>Prev</keycap>
+              </entry>
+              <entry>
+                <para lang="en">Previous Played Track</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycap>Next</keycap>
+              </entry>
+              <entry>
+                <para lang="en">Next Track</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="lirc">
+      <title lang="en">Linux Infrared Remote Control</title>
+      <para lang="en">The <application>Rhythmbox Music Player</application> includes a plugin for Linux 
+      Infrared Remote Control (LIRC) support. The following command strings are 
+      supported, using the program name 'rhythmbox': </para>
+      <table frame="none">
+	  	<title lang="en">Window Shortcuts</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry lang="en">Command string</entry>
+              <entry lang="en">Action</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en"> <keycap>play</keycap> </entry>
+              <entry> <para lang="en">Start playback</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>pause</keycap> </entry>
+              <entry> <para lang="en">Pause playback</para> </entry>
+            </row>
+	    <row>
+	      <entry lang="en"> <keycap>playpause</keycap> </entry>
+	      <entry> <para lang="en">Toggle between playing and paused</para> </entry>
+	    </row>
+            <row>
+              <entry lang="en"> <keycap>shuffle</keycap> </entry>
+              <entry> <para lang="en">Toggle the shuffle play order</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>repeat</keycap> </entry>
+              <entry> <para lang="en">Toggle the repeat play order</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>next</keycap> </entry>
+              <entry> <para lang="en">Skip to the next track</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>previous</keycap> </entry>
+              <entry> <para lang="en">Skip to the previous track</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>seek_forward</keycap> </entry>
+              <entry> <para lang="en">Skip 10 seconds forward in the playing track</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>seek_backward</keycap> </entry>
+              <entry> <para lang="en">Skip 10 seconds backward in the playing track</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>volume_up</keycap> </entry>
+              <entry> <para lang="en">Increase the playback volume by 10%</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>volume_down</keycap> </entry>
+              <entry> <para lang="en">Decrease the playback volume by 10%</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>mute</keycap> </entry>
+              <entry> <para lang="en">Mute the playback</para> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+  </sect1>
+</article>

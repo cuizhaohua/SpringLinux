@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Atvērt nesen lietotu datni</title>
+
+  <p>Pēc noklusējuma <app>gedit</app> nodrošina ērtu pieeju pieciem nesen lietotām datnēm. Lai atvērtu nesen lietotu datni:</p>
+  <list type="numbered">
+    <item><p>Nospiediet lejupvērsto bultiņu pa labi no pogas <gui>Atvērt</gui>.</p></item>
+    <item><p><app>gedit</app> parādīs piecu pēdējo lietoto datņu sarakstu.</p></item>
+    <item><p>Izvēlieties vajadzīgo datni, un tās tiks atvērta jaunā cilnē.</p></item>
+  </list>
+
+  <note style="advanced"><p>Lai mainītu nesen lietoto datņu skaitu sarakstā, jāizmanto lietotne <app>dconf-editor</app>.</p>
+    <list>
+      <item><p>Palaidiet <app>dconf-editor</app> un izvēlieties <guiseq><gui>org</gui> <gui>gnome</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui> <gui>max-recents</gui></guiseq>.</p></item>
+      <item><p>Izpildiet dubultklikšķi uz skaitļa līdzās <gui>max-recents</gui> un ierakstiet vēlamo vērtību.</p></item>
+    </list>
+  </note>
+
+</page>

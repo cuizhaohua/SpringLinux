@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="question" xml:lang="cs">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Použití přepínače <cmd>--question</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s dotazem</title>
+      <p>K vytvoření dialogového okna s dotazem použijte přepínač <cmd>--question</cmd>.</p>
+
+      <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s dotazem:</p>
+
+<code>
+#!/bin/bash
+
+zenity --question \
+--text="Opravdu chcete pokračovat?"
+</code>
+
+
+      <figure id="zenity-question-screenshot">
+        <title>Příklad dialogového okna s dotazem</title>
+	<desc>Ukázka dialogového okna <app>Zenity</app> s dotazem</desc>
+        <media type="image" mime="image/png" src="figures/zenity-question-screenshot.png"/>
+      </figure>
+</page>

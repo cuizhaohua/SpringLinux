@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fájlok rendszerezése csoportosított lapokon</title>
+
+  <p>Ha a <app>gedit</app> alkalmazásban több lappal dolgozik, ezeket csoportokba szervezheti, így a megnyitott fájlokat átláthatóbban kezelheti. Az új lapcsoport hozzáadásakor a <app>gedit</app> ablaka két ablaktáblára lesz osztva, az új ablaktáblán megnyílik egy új „Névtelen dokumentum” és az aktív lesz. Egy lapcsoportban fájlokat is megnyithat, ezen kívül a lapokat áthelyezheti egyik lapcsoportból a másikba.</p>
+
+<section id="open-new-tab-group">
+  <title>Új lapcsoport nyitása a gedit ablakban</title>
+
+  <p>Új lapcsoport nyitásához tegye a következők egyikét:</p>
+
+  <list>
+    <item>
+      <p>A főmenüben válassza a <guiseq><gui>Dokumentumok</gui><gui>Új lapcsoport</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Nyomja le a <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq> billentyűkombinációt.</p>
+    </item>
+  </list>
+
+  <p>Ez a művelet két részre osztja a <app>gedit</app> ablakát, és az új lapcsoportot tartalmazó ablaktábla az aktív lap jobb széléhez lesz helyezve. Ezután a fogantyút szükség szerint balra és jobbra mozgathatja a hely felosztásához a <app>gedit</app> ablaktáblái között.</p>
+
+  <p>A képernyőmérettől függően több lapcsoportot is megnyithat a <app>gedit</app> alkalmazásban, de a megfelelő láthatósághoz mozgatnia kell a fogantyút.</p>
+
+  <p>Egy lapcsoport ablaktábla bezárásához csak zárja be az összes benne nyitott lapot.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Mozgás a lapcsoportok között</title>
+
+  <p>A következő lapcsoportra ugráshoz tegye a következők egyikét:</p>
+
+  <list>
+    <item>
+      <p>A főmenüben válassza a <guiseq><gui>Dokumentumok</gui><gui>Következő lapcsoport</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Használja a <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq> billentyűkombinációt.</p>
+    </item>
+  </list>
+
+  <p>Az előző lapcsoportra ugráshoz tegye a következők egyikét:</p>
+
+  <list>
+    <item>
+      <p>A főmenüben válassza a <guiseq><gui>Dokumentumok</gui><gui>Előző lapcsoport</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Használja a <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq> billentyűkombinációt.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Egy lap áthelyezése másik lapcsoportba</title>
+
+  <p>Ha egy lapot az egyik lapcsoportból a másikba szeretné mozgatni, tegye a következők egyikét:</p>
+
+  <steps>
+    <item>
+      <p>Kattintson, és tartsa lenyomva az egérgombot a lapon.</p>
+    </item>
+    <item>
+      <p>Húzza a lapot egy másik lapcsoport-ablaktáblába.</p>
+    </item>
+    <item>
+      <p>Helyezze az új lapcsoportban lévő lapok mellé.</p>
+    </item>
+    <item>
+      <p>Engedje fel az egérgombot.</p>
+    </item>
+  </steps>
+
+  <p>A lapcsoportok kezelésének megkönnyítéséhez nézze meg a <link xref="gedit-shortcut-keys">lapokkal kapcsolatos gyorsbillentyűk</link> táblázatát.</p>
+
+</section>
+
+</page>

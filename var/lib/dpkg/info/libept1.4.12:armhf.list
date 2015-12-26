@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libept1.4.12
+/usr/share/doc/libept1.4.12/buildinfo_armhf.gz
+/usr/share/doc/libept1.4.12/changelog.gz
+/usr/share/doc/libept1.4.12/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libept.so.1.aptpkg4.12
+/usr/lib/libept.so.1.0.5.4.12

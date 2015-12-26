@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libclucene-shared.so.2.3.3.4
+/usr/lib/arm-linux-gnueabihf/libclucene-core.so.2.3.3.4
+/usr/share
+/usr/share/doc
+/usr/share/doc/libclucene-core1
+/usr/share/doc/libclucene-core1/changelog.Debian.gz
+/usr/share/doc/libclucene-core1/README
+/usr/share/doc/libclucene-core1/changelog.gz
+/usr/share/doc/libclucene-core1/copyright
+/usr/lib/arm-linux-gnueabihf/libclucene-core.so.1
+/usr/lib/arm-linux-gnueabihf/libclucene-shared.so.1

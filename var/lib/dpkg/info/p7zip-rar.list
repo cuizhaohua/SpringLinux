@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/p7zip-rar
+/usr/share/doc/p7zip-rar/changelog.Debian.gz
+/usr/share/doc/p7zip-rar/changelog.gz
+/usr/share/doc/p7zip-rar/copyright
+/usr/lib
+/usr/lib/p7zip
+/usr/lib/p7zip/Codecs
+/usr/lib/p7zip/Codecs/Rar29.so

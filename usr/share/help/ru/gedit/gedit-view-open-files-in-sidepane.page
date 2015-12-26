@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-view-open-files-in-sidepane" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+      <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Даниэль Нил (Daniel Neel)</name>
+      <email its:translate="no">dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С (Sindhu S)</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Просмотр списка файлов в боковой панели</title>
+
+  <p>Отслеживание большого количества файлов с помощью вкладок может быть затруднительным. Один из способов управления большим количеством файлов — это их отображение в боковой панели. Боковые панели позволяют одновременно просматривать больше файлов, чем при использовании только вкладок.</p>
+
+  <p>Для просмотра списка открытых файлов в боковой панели, выберите <guiseq><gui style="menu">Вид</gui> <gui style="menuitem">Боковая панель</gui></guiseq>. Панель, с перечнем всех открытых файлов, появится слева от рабочей области. Нажатие на файл в боковой панели отобразит этот файл в рабочей области.</p>
+
+  <p>Боковая панель также содержит режим <app>обозревателя файлов</app>. Если панель отображает каталог файлов вместо открытых на данный момент файлов, нажмите на <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"><span its:translate="yes">значок документа</span></media> в нижней части панели, чтобы перейти в режим <app>обзора открытых документов</app>.</p>
+
+  <note>
+    <p>Боковая панель отображает файлы только текущего окна. Когда открыто несколько окон, в боковой панели будут отображены только открытые в выбранном окне файлы.</p>
+  </note>
+</page>

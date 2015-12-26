@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>搜索文本</title>
+  
+    <p>搜索工具可以帮您查找文档中指定的文本。</p>
+
+    <steps>
+      <title>查找文本</title>
+      <item>
+        <p>Open the <gui>search window</gui> by clicking 
+        <guiseq><gui style="menu">Search</gui>
+        <gui style="menuitem">Find</gui> </guiseq> or
+        pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move
+        your cursor to the start of the <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>在 <gui>搜索窗口</gui> 中输入您想要查找的文本。</p>
+      </item>
+      <item>
+        <p>在您输入的同时，<app>gedit</app> 就会高亮显示文档中的匹配项。</p>
+      </item>
+    </steps>
+    
+    <p>To scroll through the search results, do any of the following:</p>
+    <list>
+      <item>
+        <p>点击<gui>搜索窗口</gui>旁的<gui style="button">上</gui><gui style="button">下</gui>的箭头。</p>
+      </item>
+      <item>
+        <p>按键盘上的<key>↑</key>或<key>↓</key>键。</p>
+      </item>
+      <item>
+        <p>Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or
+        <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Press the <key>Ctrl</key> and use your mouse or touchpad's
+        <key>scroll</key> feature to move up or down through the text.</p>
+      </item>
+    </list>
+
+  <p>To close the <gui>search window</gui>, press either <key>Esc</key> or
+  <key>Enter</key>. Pressing <key>Esc</key> will return the cursor to where it
+  was before you began your search. Pressing <key>Enter</key> will return the
+  cursor to the current position in the search results.</p>
+
+  <list>
+    <title>搜索技巧</title>
+    <item>
+      <p>If you highlight a portion of text with your mouse, and then press
+      <keyseq><key>Ctrl</key><key>F</key></keyseq>, the text you've highlighted
+      will appear in the search window.</p>
+    </item>
+    <item>
+      <p>For more search options, click on the
+      <gui style="button">Magnifying Glass</gui> icon in the search window,
+      or right-click anywhere in the search window. You can select one or more
+      of the following search options:</p>
+      <list>
+        <item>
+          <p>Select <gui>Match Case</gui> to make the search case sensitive.</p>
+        </item>
+        <item>
+          <p>Select <gui>Match Entire Word Only</gui> to search only complete
+          words.</p>
+        </item>
+        <item>
+          <p>Select <gui>Wrap Around</gui> to search text from top to bottom
+          and cycle back again.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>您搜索的文本会保持高亮状态，甚至搜索完毕还会高亮。要取消高亮状态，点菜单 <guiseq><gui>搜索</gui><gui>清除突出显示</gui></guiseq>，或者按组合键 <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>。</p>
+    </item>
+  </list>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="backdrop" type="empty">
+    <property name="screen0" type="empty">
+      <property name="monitor0" type="empty">
+        <property name="image-path" type="string" value="/usr/share/bg1.jpg"/>
+        <property name="last-image" type="string" value="/root/Downloads/5475a7000e2b15b95d3f8e2b13a044f2.jpg"/>
+        <property name="last-single-image" type="string" value="/usr/share/xfce4/backdrops/opole-sky.jpg"/>
+        <property name="image-show" type="bool" value="true"/>
+        <property name="image-style" type="int" value="0"/>
+      </property>
+    </property>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="icon-size" type="uint" value="32"/>
+  </property>
+</channel>

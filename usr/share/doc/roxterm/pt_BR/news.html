@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-US" lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Adrian Sampson" />
+	<meta name="description" content="ROXTerm, a full-featured VTE terminal emulator" />
+	<title>ROXTerm</title>
+	<link rel="stylesheet" type="text/css" href="../lib/roxterm.css" />
+	
+	<!--[if lte IE 7]>
+
+	<link rel="stylesheet" type="text/css" href="../lib/roxterm_ie.css" />
+	<![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../lib/favicon.ico" />
+</head>
+<body>
+	<div id="Container">
+		<div id="Header">
+			<div>
+				<a id="Logo" href="index.html">
+					<img src="../lib/logo_text.png" alt="ROXTerm" />
+				</a>
+
+				<ul>
+					<li><a id="MainNav_Home" href="index.html">Início</a></li>
+					<li><a id="MainNav_News" class="active" href="#">Notícias</a></li>
+					<li><a id="MainNav_Installation" href="installation.html">Instalação</a></li>
+					<li><a id="MainNav_UserGuide" href="guide.html">Guia do Usuário</a></li>
+					<li><a id="MainNav_Forums"
+href="https://sourceforge.net/projects/roxterm/forums">Fóruns</a></li>
+				</ul>
+			</div>
+			
+		<!-- PHP PLACEHOLDER -->
+</div>
+
+		<div id="Middle" class='clear'>
+			<div id="Content">
+				<h1>Notícias</h1>
+
+				
+
+				<!--<hr />
+-->
+<div class="newsItem">
+					<span class="newsItemHeader">2014-07-31</span> <span
+class="newsItemSubHeader">Version 2.9.1</span>
+					<ul>
+                      <li><span>Supports launching of SSH sessions from matched URIs or hostnames,
+while common VCS URIs are matched for copying to the clipboard.</span></li>
+                      <li><span>Allows Shortcuts profiles to be edited as text for GTK+ 3.10 and
+newer.</span></li>
+                      <li><span>Fixed background transparency support for recent versions of VTE/GTK
+(compositing window manager required?).</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">16-01-2014</span> <span
+class="newsItemSubHeader">Versão 2.8.1</span>
+					<ul>
+                      <li><span>Opções de fundo do terminal são desativadas quando usando uma versão
+recente do VTE os ignora.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">29-03-2013</span> <span
+class="newsItemSubHeader">Versão 2.7.1</span>
+					<ul>
+                      <li><span>Traduções estarão agora habilitadas.</span></li>
+                      <li><span>Projeto SF foi atualizado com novo repositório git.</span></li>
+                      <li><span>Novo comportamento para -e (consulte a página principal).</span></li>
+                      <li><span>Vários novos recursos e correções de bugs.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">24-02-2012</span> <span
+class="newsItemSubHeader">Versão 2.5.1</span>
+					<ul>
+                      <li><span>Pacotes Debian agora são gerenciados por git-buildpackage.</span></li>
+                      <li><span>Suporte autoconf removido.</span></li>
+                      <li><span>Suporte a opções de fechar aba/janela melhorado.</span></li>
+                      <li><span>Implementada a opção de tema escuro.</span></li>
+                      <li><span>--tab só reutiliza janelas em espaço de trabalho atual .</span></li>
+                      <li><span>Gráficos gerados estão incluídos nos arquivos tar.</span></li>
+                      <li><span>PPA Ubuntu movida para <a
+href="https://launchpad.net/~h-realh/+archive/roxterm">
+https://launchpad.net/~h-realh/+archive/roxterm</a></span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">24-11-2011</span> <span
+class="newsItemSubHeader">Versão 2.3.1</span>
+					<ul>
+						<li><span>Novo sistema de compilação sobe medida, maitch.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">21-08-2011</span> <span
+class="newsItemSubHeader">Versão 2.0.1</span>
+					<ul>
+						<li><span>Utiliza GTK+3 por padrão, suporte ao GTK+2 ainda está
+disponível.</span></li>
+						<li><span>Funcionalidade de pesquisa adicionada.</span></li>
+						<li><span>Adicionado suporte para URIs de arquivos.</span></li>
+						<li><span>Melhorado o suporte a barra de abas.</span></li>
+						<li><span>Utilize o GtkBuilder em vez do libglade.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">02-06-2011</span> <span
+class="newsItemSubHeader">Versão 1.22.1</span>
+					<ul>
+						<li><span>Suporte de composição melhorado.</span></li>
+						<li><span>Adicionado a opção --role.</span></li>
+						<li><span>Removida as opções --xclass e --xname.  --name e/ou --class são
+alternativas, mas não devem ser usadas em conjunção com --separate.  Use
+--role se você precisa de um identificador por janelas.</span></li>
+						<li><span>Tente evitar criar arquivos de sessão redundantes. Considere executar
+'rm ~/.config/roxterm.sourceforge.net/Sessions/*' para limpar os arquivos
+obsoletos criados antes dessa versão.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">12-02-2011</span> <span
+class="newsItemSubHeader">Versão 1.21.1</span>
+					<ul>
+						<li><span>Suporte as opções TERM com vte >=0.26</span></li>
+						<li><span>Opções de linha de comando pera definir avisos de janela.</span></li>
+						<li><span>Título da janela pode ser configurado em perfis.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">17-11-2010</span> <span
+class="newsItemSubHeader">Versão 1.20.0</span>
+					<ul>
+						<li><span>Melhorou geometria do gerenciamento de terminal.</span></li>
+						<li><span>Mudanças na manipulação de janelas/abas.</span></li>
+					</ul>
+				</div>
+
+				
+
+				<!--<hr />
+-->
+<div class="newsItem">
+					<span class="newsItemHeader">21-09-2010</span> <span
+class="newsItemSubHeader">Versão 1.19.1</span>
+					<ul>
+						<li><span>Novo design do site por Cameron Sampson.</span></li>
+						<li><span>Tradução do Espanhol F&eacute;lix Medrano Sanz.</span></li>
+						<li><span>Se substitui subversion (svn) por git como sistema de controle de
+versões.</span></li>
+						<li><span>Reescrito o código para múltiplo gerenciamento de abas.</span></li>
+					</ul>
+				</div>
+
+				
+
+				<!--<hr />
+-->
+<div class="newsItem">
+					<span class="newsItemHeader">23-03-2010</span> <span
+class="newsItemSubHeader">Versão 1.18.1</span>
+					<ul>
+						<li><span>Suporte ao gerente de sessão X.</span></li>
+						<li><span>Suporte ssh rudimentar.</span></li>
+						<li><span>Editor de perfil redesenhada, incluindo nova opção de tela cheia &amp;
+maximizar.</span></li>
+						<li><span>Novos itens de menu para abrir um terminal com um perfil
+especifico.</span></li>
+						<li><span>Capacidade de reiniciar um comando.</span></li>
+						<li><span>As abas se mostram sempre por padrão e as abas individuais só ocupam
+espaços que necessitam.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">13-09-2008</span> <span
+class="newsItemSubHeader">Versão 1.13.0</span>
+
+					<ul>
+						<li><span>Opções para avisar antes de fechar janelas</span></li>
+						<li><span>Use T em lugar do -t para mudar o título (para emulador de terminal
+X)</span></li>
+						<li><span>Nova opção --tab</span></li>
+						<li><span>As páginas de manual estão na distribuição principal em vez de Debian
+somente</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">20-05-2008</span> <span
+class="newsItemSubHeader">Versão 1.12.0</span>
+					<ul>
+						<li><span>suporte i18n</span></li>
+						<li><span>Análises da linha de comando corrigida</span></li>
+						<li><span>Opções de abas "ocultar"</span></li>
+						<li><span>opção --title</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">27-03-2008</span> <span
+class="newsItemSubHeader">Versão 1.11.0</span>
+
+					<ul>
+						<li><span>Corrigido e melhorado diálogo de esquema de cores</span></li>
+						<li><span>Título de texto barra de terminal pode ser personalizado</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">31-12-2007</span> <span
+class="newsItemSubHeader">Versão 1.9.0</span>
+
+					<ul>
+						<li><span>Opções de abas aprimorada (obrigado principalmente a Sven
+Schnelle)</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">11-09-2007</span> <span
+class="newsItemSubHeader">Versão 1.7.0</span>
+
+					<ul>
+						<li><span>Adicionado as opções de zoom e tela cheia</span></li>
+						<li><span>Novas janelas/abas tem o mesmo diretório atual de trabalho com o
+terminal que esta aberto a partir</span></li>
+						<li><span>Pacotes oficiais do Debian estão disponíveis para 1.5.2 em diante, no
+lugar dos não oficiais</span></li>
+						<li><span>Opções de linhas de comando mudou</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">22-08-2007</span> <span
+class="newsItemSubHeader">Versão 1.6.0</span>
+
+					<ul>
+						<li><span>Pacotes Debian alheios removidos</span></li>
+						<li><span>Muitas mensagens agora são mostradas em caixa de diálogo em vez de
+logado no console</span></li>
+						<li><span>Adicionado a opção envolver, quando mudar as abas</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">23-03-2007</span> <span
+class="newsItemSubHeader">Versão 1.5.1</span>
+
+					<ul>
+						<li><span>Debianizado</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">05-07-2006</span> <span
+class="newsItemSubHeader">Versão 1.2.0</span>
+
+					<ul>
+						<li><span>As codificações são uma família distinta de configurações, em vez de
+ser parte de um perfil</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<!-- Several changes: -->
+<span class="newsItemHeader">20-06-2006</span> <span
+class="newsItemSubHeader">Versão 1.1.0</span>
+					
+
+					<ul>
+						<li><span>Melhorou muito o suporte de arrastar e soltar</span></li>
+						<li><span>roxterm-capplet renomeado para roxterm-config</span></li>
+						<li><span>Executa todos os terminais em um único processo por padrão</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">30-05-2006</span> <span
+class="newsItemSubHeader">Versão 1.0.3</span>
+
+					<ul>
+						<li><span>Poder arrastar e soltar a janela do terminal e controle de imagem de
+fundo no aplicativo de configuração.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">29-04-2006</span>
+
+					<ul>
+						<li><span>Primeira versão completa publicada.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">27-02-2006</span>
+
+					<ul>
+						<li><span>CVS descontinuado. Use subversion (svn) a partir de agora.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">27-02-2006</span> <span
+class="newsItemSubHeader">Versão 0.11.0</span>
+
+					<ul>
+						<li><span>Migração para arquivos de opções com chaves completa! Certifique-se de
+ler arquivo README caso esteja usando uma versão antiga.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">26-02-2006</span> <span
+class="newsItemSubHeader">Versão 0.10.14</span>
+
+					<ul>
+						<li><span>Tudo agora aparentemente trabalhando, exceto a documentação. Vou usar
+os arquivos chaves em vez do XML antes de publicar a versão.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">25-02-2006</span> <span
+class="newsItemSubHeader">Versão 0.10.11</span>
+
+					<ul>
+						<li><span>Quase tudo agora funciona (ou parece!) para roxterm salvar tomando
+medidas apropriadas quando um esquema de atalhos é renomeado ou
+excluído.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">07-07-2005</span> <span
+class="newsItemSubHeader">Versão 0.9.7</span>
+
+					<ul>
+						<li><span>O dialogo de edição de perfil está quase completo, incluindo atalhos
+de teclado, mas sem ajuda emergente (amanhã)</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">05-06-2006</span>
+
+					<ul>
+						<li><span>Adicionado aba de fundo funcional para editor de perfil</span></li>
+						<li><span>Eu não posso me incomodar em manter um changelog completamente
+detalhado por mais tempo. E Alexandro, que escreve esta tradução esta de
+acordo.  Ninguém possivelmente poderia estar interessado, e se eles forem
+utilizar o CVS em todo o caso. Isso poderá ter uma repercussão nas NOTÌCIAS
+e o limite de publicações completas e coisas relacionadas diretamente com as
+mudanças do código.</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">06-04-2005</span>
+
+					<ul>
+						<li><span>Agora se instala corretamente quando não se usa ROX</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">06-04-2005</span>
+
+					<ul>
+						<li><span>Terminal agora pode executar o aplicativo de configuração para editar
+o perfil atual</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">05-04-2005</span>
+
+					<ul>
+						<li><span>Arrumado o sistema de compilação</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">04-04-2005</span>
+
+					<ul>
+						<li><span>Suporte a endereço de e-mail e execução de cliente de e-mail</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">02-04-2005</span>
+
+					<ul>
+						<li><span>Um aplicativo de configuração que funciona, mas incompleto, usando
+dbus 0.22</span></li>
+					</ul>
+				</div>
+
+				<div class="newsItem">
+					<span class="newsItemHeader">28-11-2004</span>
+
+					<ul>
+						<li><span>Atalhos de aquivos XML foram alterados para usar atributos a conter o
+nome da tecla</span></li>
+						<li><span>Eu tenho começado a construir um aplicativo de configuração. Ele abre
+caixas de diálogo, mas não dá para fazer muito com ele ainda</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="Footer">
+			<div id="FooterButtons">
+				<a id="SourceforgeLink" href="http://sourceforge.net/projects/roxterm"
+title="RoxTerm Sourceforge"> roxterm @ sourceforge </a>
+
+				<br />
+
+				<a id="DonationLink" class="spriteLink"
+href="http://sourceforge.net/donate/index.php?group_id=124080">Doar</a> <a
+id="ValidMarkupLink" class="spriteLink"
+href="http://validator.w3.org/check?uri=referer">XHTML Válido</a>
+			</div>
+
+			<p>ROXTerm está licenciado sob a <a
+href="http://www.gnu.org/licenses/gpl-3.0-standalone.html">GPL</a> | Design
+do site por Adrian Sampson | Tradução do Português Brasileiro por Alexandro
+Casanova</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-selection" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--file-selection</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος επιλογής αρχείου</title>
+    <p>Με την χρήση της επιλογής <cmd>--file-selection</cmd> δημιουργείτε ένα διάλογο επιλογής αρχείου. Το <app>Zenity</app> αποδίδει τα επιλεγμένα αρχεία ή καταλόγους σαν κανονική έξοδο. Η προεπιλεγμένη κατάσταση λειτουργίας του διαλόγου επιλογής αρχείου είναι άνοιγμα.</p>
+    <p>Ο διάλογος επιλογής αρχείου υποστηρίζει τις παρακάτω επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>όνομα αρχείου</var></title>
+	<p>Καθορίζει το αρχείο ή τον κατάλογο που είναι επιλεγμένος στον διάλογο επιλογής αρχείου όταν ανοίγει.</p>
+      </item>
+
+      <item>
+	<title><cmd>--multiple</cmd></title>
+	<p>Επιτρέπει την επιλογή πολλών ονομάτων αρχείου στον διάλογο επιλογής αρχείου.</p>
+      </item>
+
+      <item>
+	<title><cmd>--directory</cmd></title>
+	<p>Επιτρέπει μόνο την επιλογή καταλόγων στον διάλογο επιλογής αρχείου.</p>
+      </item>
+
+      <item>
+	<title><cmd>--save</cmd></title>
+	<p>Ρύθμιση του διαλόγου επιλογής αρχείου σε κατάσταση λειτουργίας αποθήκευσης.</p>
+      </item>
+
+      <item>
+	<title><cmd>--separator</cmd>=<var>διαχωριστικό</var></title>
+	<p>Καθορίζει την συμβολοσειρά που χρησιμοποιείται για να διαχωρίσει την αποδοθείσα λίστα ονομάτων.</p>
+      </item>
+
+    </terms>
+
+    <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως δημιουργείτε έναν διάλογο επιλογής αρχείου:</p>
+
+<code>
+#!/bin/sh
+
+FILE=`zenity --file-selection --title="Επιλέξτε ένα αρχείο"`
+
+case $? in
+         0)
+                echo "\"$FILE\" επιλέχθηκε.";;
+         1)
+                echo "Δεν επιλέχθηκε αρχείο.";;
+        -1)
+                echo "Προέκυψε ένα σφάλμα.";;
+esac
+</code>
+
+    <figure id="zenity-fileselection-screenshot">
+      <title>Παράδειγμα διαλόγου επιλογής αρχείου</title>
+      <desc>Παράδειγμα διαλόγου επιλογής αρχείου του <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-fileselection-screenshot.png"/>
+    </figure>
+</page>

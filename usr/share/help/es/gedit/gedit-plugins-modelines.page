@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="es">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Soporte para gedit para los estilos de los modos de líneas de Emacs, Kate y Vim.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Modos de líneas</title>
+
+  <p>El complemento <app>Modos de líneas</app> permite a <app>gedit</app> analizar las líneas de texto del principio y del final de un documento,y aplicar un conjunto de preferencias del documento al archivo. El complemento <app>Modos de líneas</app> soporta un subconjunto de las opciones usadas por los editores de texto <app>Emacs</app>, <app>Kate</app> y <app>Vim</app>.</p>
+
+  <p>Para activar el complemento <app>Modos de líneas</app> seleccione <guiseq><gui style="menu">gedit</gui><gui> Preferencias</gui><gui>Complementos</gui><gui>Modos de líneas</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Opciones generales de los modos de líneas</title>
+  <p>Se pueden configurar las siguientes opciones usando los modos de líneas de <app>gedit</app>:</p>
+  <list>
+    <item><p>Ancho de tabulación</p></item>
+    <item><p>Anchura de la sangría</p></item>
+    <item><p>Insertar espacios en lugar de tabuladores</p></item>
+    <item><p>Ajuste de texto</p></item>
+    <item><p>Anchura del margen derecho</p></item>
+  </list>
+
+  <note>
+    <p>Las preferencias establecidas para usar líneas de modo tienen preferencia sobre las especificadas en el diálogo de preferencias.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Líneas de modo Emacs</title>
+
+  <p>Las primeras dos líneas de un documento se analizan buscando líneas de modos <app>Emacs</app>, y <app>gedit</app> soporta las siguientes opciones de líneas de modos <app>Emacs</app>:</p>
+  <list>
+    <item><p>Tab-width</p></item>
+    <item><p>Indent-offset</p></item>
+    <item><p>Indent-tabs-mode</p></item>
+    <item><p>Text auto-wrap</p></item>
+  </list>
+  <p>Para obtener más información sobre los modos de líneas de <app>Emacs</app>, visite el <link href="http://www.gnu.org/software/emacs/manual/emacs.html">Manual de GNU Emacs</link>.</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Líneas de modo Kate</title>
+
+  <p>La primera y las diez últimas líneas de un documento se analizan buscando líneas de modo <application>Kate</application>, y <app>gedit</app> soporta las siguientes opciones de líneas de modos <app>Kate</app>:</p>
+
+  <list>
+    <item><p>tab-width</p></item>
+    <item><p>indent-width</p></item>
+    <item><p>space-indent</p></item>
+    <item><p>word-wrap</p></item>
+    <item><p>word-wrap-column</p></item>
+  </list>
+
+  <p>Para obtener más información sobre los modos de líneas de <app>Kate</app>, visite la <link href="http://kate-editor.org/">página web de Kate</link>.</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Líneas de modo Vim</title>
+  <p>La primera y las 3 últimas líneas de un documento se analizan buscando líneas de modo <application>Vim</application>, y <app>gedit</app> soporta las siguientes opciones de líneas de modos <app>Vim</app>:</p>
+
+  <list>
+    <item><p>et (expandir tabulador)</p></item>
+    <item><p>ts (detener tabulador)</p></item>
+    <item><p>sw (cambiar anchura)</p></item>
+    <item><p>wrap</p></item>
+    <item><p>textwidth</p></item>
+  </list>
+
+  <p>Para obtener más información acerca de <app>Vim</app> visite el <link href="http://www.vim.org/">sitio web de Vim</link>.</p>
+</section>
+</page>

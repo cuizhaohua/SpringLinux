@@ -1,0 +1,12 @@
+ID_VERSION=13.2.1.328635
+DISP_VERSION=13.2.1
+CHANGE_NO=328635
+ID_PRODUCT_NAME=CitrixICAClient
+DISP_PRODUCT_NAME=Citrix Receiver for Linux
+uname=Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l GNU/Linux
+PORT=linuxarmhf
+LANGUAGE=*
+date=20100101013935 CET
+INFO_FILE=Debian_installation
+DATA_FILE=Debian_package
+BROWSER_DIR=/usr/lib/mozilla

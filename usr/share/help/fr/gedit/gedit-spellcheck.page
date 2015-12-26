@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="fr">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Activer et utiliser les fonctions du vérificateur orthographique</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Vérification orthographique du document</title>
+  <section id="enable-spell-check">
+    <title>Activation du vérificateur orthographique</title>
+    <p>La fonction de vérification orthographique est fournie, dans <app>gedit</app>, sous forme d'un greffon qui peut être activé en fonction des nécessités. Pour activer ce greffon :</p>
+
+    <steps>
+      <item>
+        <p>Choisissez <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Préférences</gui><gui style="tab">Greffons</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Choisissez <gui style="menuitem">Vérification orthographique</gui> pour activer ce greffon.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Vérification orthographique du document</title>
+
+    <p>Pour rechercher les mots mal orthographiés dans le document :</p>
+
+    <steps>
+      <item>
+        <p>Choisissez <guiseq><gui style="menu">Outils</gui><gui style="menuitem">Vérification orthographique</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Pour que <app>gedit</app> surligne automatiquement les mots mal orthographiés dans le document au fur et à mesure que vous saisissez le texte, choisissez <guiseq><gui style="menu">Outils</gui><gui style="menuitem">Mettre en évidence les mots mal orthographiés</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Utilisation du vérificateur orthographique</title>
+
+    <p>Vous pouvez choisir de substituer la forme correcte au mot mal orthographié grâce à la boîte de dialogue Vérifier l'orthographe. Le mot mal orthographié détecté par le vérificateur orthographique est affiché près de l'étiquette <gui>Mot mal orthographié :</gui>. Vous avez le choix entre les actions correctives suivantes :</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Remplacer par :</gui> vous permet de saisir un mot et de vérifier sa validité en cliquant sur le bouton <gui style="button">Vérifier le mot</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Suggestions :</gui> donne la liste des substitutions possible pour le mot.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorer</gui> vous permet de passer la correction orthographique pour l'instance présente du mot en cours d'étude.</p>
+      </item>
+      <item>
+        <p><gui style="button">Toujours ignorer</gui> vous permet de passer la correction orthographique de <em>toutes</em> les instances du mot étudié.</p>
+      </item>
+      <item>
+        <p><gui style="button">Remplacer</gui> substitue, à l'instance actuelle du mot mal orthographié ou inconnu, un mot choisi dans la liste des <gui style="menuitem">Suggestions :</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Tout remplacer</gui> substitue, à toutes les instances du mot dans le texte, le mot choisi dans la liste des <gui style="menuitem">Suggestions :</gui></p>
+      </item>
+      <item>
+        <p><gui style="button">Ajouter le mot</gui> vous permet d'ajouter le mot actuel dans le <gui>Dictionnaire de l'utilisateur</gui> de <app>gedit</app>. Ainsi, ce mot ne sera désormais plus désigné comme mal orthographié, quel que soit le document traité.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Choix de la langue pour la vérification orthographique</title>
+    <p>Par défaut, <app>gedit</app> utilise votre langue actuelle pour effectuer la vérification de votre document. Si vous souhaitez utiliser une autre langue, allez dans <guiseq><gui style="menu">Outils</gui><gui style="menuitem">Définir la langue…</gui></guiseq> et choisissez celle que vous voulez.</p>
+  </section>
+
+  <section id="dict">
+    <title>Dictionnaires</title>
+
+    <p><app>gedit</app> utilise <link href="http://www.abisource.com/projects/enchant/">Enchant</link>, un petit utilitaire, pour vérifier l'orthographe. Enchant est susceptible de mettre en œuvre plusieurs dictionnaires différents pour cette vérification. <em>Hunspell</em> et <em>Aspell</em> sont deux moteurs de ces dictionnaires.</p>
+
+    <p>Si la langue que vous voulez utiliser n'est pas disponible dans <app>gedit</app>, servez-vous de l'installateur de logiciels ou de paquets de votre système pour installer le moteur du dictionnaire dont vous avez besoin.</p>
+  </section>
+</page>

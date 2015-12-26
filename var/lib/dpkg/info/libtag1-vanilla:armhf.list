@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libtag1-vanilla
+/usr/share/doc
+/usr/share/doc/libtag1-vanilla
+/usr/share/doc/libtag1-vanilla/copyright
+/usr/share/doc/libtag1-vanilla/changelog.Debian.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libtag.so.1.14.0
+/usr/lib/arm-linux-gnueabihf/libtag.so.1

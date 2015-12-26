@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian Menu System - Menu from the viewpoint of a user</title>
+
+<link href="index.html" rel="start">
+<link href="ch1.html" rel="prev">
+<link href="ch3.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch1.html" rel="chapter" title="1 Introduction">
+<link href="ch2.html" rel="chapter" title="2 Menu from the viewpoint of a user">
+<link href="ch3.html" rel="chapter" title="3 The menu file">
+<link href="ch4.html" rel="chapter" title="4 What packages with applications should do">
+<link href="ch5.html" rel="chapter" title="5 What packages with menu managers should do">
+<link href="ch6.html" rel="chapter" title="6 How a user can override the menus">
+<link href="ch7.html" rel="chapter" title="7 The internals of the menu package">
+<link href="ch8.html" rel="chapter" title="8 Variables and functions in the install-menu scripts">
+<link href="ch2.html#s2.1" rel="section" title="2.1 How/when do the window manager startup files get created?">
+<link href="ch2.html#s2.2" rel="section" title="2.2 Tuning of the generated window manager startup files">
+<link href="ch2.html#s2.3" rel="section" title="2.3 Optimization of menu tree: hints">
+<link href="ch3.html#s3.1" rel="section" title="3.1 Location">
+<link href="ch3.html#s3.2" rel="section" title="3.2 Syntax">
+<link href="ch3.html#s3.3" rel="section" title="3.3 The title field">
+<link href="ch3.html#s3.4" rel="section" title="3.4 The needs field">
+<link href="ch3.html#s3.5" rel="section" title="3.5 The section field">
+<link href="ch3.html#s3.6" rel="section" title="3.6 The command field">
+<link href="ch3.html#s3.7" rel="section" title="3.7 The icon field">
+<link href="ch3.html#s3.8" rel="section" title="3.8 The hints field">
+<link href="ch3.html#s3.9" rel="section" title="3.9 Entries for menu sections.">
+<link href="ch3.html#s3.10" rel="section" title="3.10 Fvwm's task and title bars">
+<link href="ch4.html#s4.1" rel="section" title="4.1 Providing a menu file">
+<link href="ch4.html#s4.2" rel="section" title="4.2 Adding a hook for dpkg in your packages">
+<link href="ch6.html#s6.1" rel="section" title="6.1 Configuring the menus">
+<link href="ch6.html#s6.2" rel="section" title="6.2 Specifying that a menu entry should not be displayed">
+<link href="ch6.html#s6.3" rel="section" title="6.3 Including other files">
+<link href="ch7.html#s7.1" rel="section" title="7.1 The update-menus program">
+<link href="ch7.html#s7.2" rel="section" title="7.2 The install-menu program">
+<link href="ch7.html#s7.3" rel="section" title="7.3 The install-menu config script definitions">
+<link href="ch7.html#s7.4" rel="section" title="7.4 Hints, tree optimization">
+<link href="ch8.html#s8.1" rel="section" title="8.1 String constants">
+<link href="ch8.html#s8.2" rel="section" title="8.2 Variables">
+<link href="ch8.html#s8.3" rel="section" title="8.3 Functions">
+<link href="ch8.html#s8.2.1" rel="subsection" title="8.2.1 Special variables">
+<link href="ch8.html#s8.2.2" rel="subsection" title="8.2.2 Preferred variables">
+<link href="ch8.html#s8.2.3" rel="subsection" title="8.2.3 Suggested variables">
+
+</head>
+
+<body>
+
+<p><a name="ch2"></a></p>
+<hr>
+
+<p>
+[ <a href="ch1.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ 2 ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch3.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian Menu System
+<br>Chapter 2 - Menu from the viewpoint of a user
+</h1>
+
+<hr>
+
+<hr>
+
+<h2 id="s2.1">2.1 How/when do the window manager startup files get created?</h2>
+
+<p>
+Basically, users don't need to know any of how and when the startup files are
+created, but they might be interested to know anyway.
+</p>
+
+<p>
+When a package that wants to add something to the menu tree gets installed, it
+will run <code>update-menus</code> in its <code>postinst</code> script.
+Update-menus then reads in all menu files in <code>/etc/menu/</code>,
+<code>/usr/lib/menu</code>, <code>/usr/share/menu</code> and
+<code>/usr/share/menu/default</code>, and stores the menu entries of all
+installed packages in memory.  Once that has been done, it will run the
+menu-methods in <code>/etc/menu-methods/*</code>, and pipe the information
+about the menu entries to the menu-methods on stdout, so that the menu-methods
+can read this.  Each window-manager or other program that wants to have the
+Debian menu tree, will supply a menu-method script in
+<code>/etc/menu-methods/</code>.  This menu-method then knows how to generate
+the startup-file for that window manager.  To facilitate this task for the
+window-manager maintainers, menu provides a <code>install-menu</code> program.
+This program can generate the startupfiles for just about every window manager.
+</p>
+
+<hr>
+
+<h2 id="s2.2">2.2 Tuning of the generated window manager startup files</h2>
+
+<p>
+In principle this is a very window-manager specific business.  But for all
+window managers (and others) applies:
+</p>
+
+<p>
+The file to attack is the menu-method in <code>/etc/menu-methods/$wm</code>,
+with <samp>$wm</samp> the name of your window manager.  However, if this
+menu-method <samp>!include</samp>-s the <code>menu.h</code> file (as it
+should), you can also edit that file, to make your changes work for every
+installed window manager.
+</p>
+
+<p>
+If the menu-method file of your window manager does <samp>!include</samp> the
+<code>menu.h</code> file, and makes proper use of the definitions in there,
+then you can look at the comments in that <code>menu.h</code> file to see how
+you can make minor adjustments to the look of your menus in your window
+manager.
+</p>
+
+<p>
+To generally change the menu tree, see the next section.
+</p>
+
+<hr>
+
+<h2 id="s2.3">2.3 Optimization of menu tree: hints</h2>
+
+<p>
+If <samp>hint_optimize=true</samp> has been set in a menu-method script
+(actually, that definition should appear in the <samp>!include</samp>-ed
+<samp>menu.h</samp> file), then install-menu will try to alter the menu tree,
+to make every submenu have about the optimum number of menu entries (as
+specified by <samp>hints_nentry=...</samp>).  It will do that by removing
+under-full submenus (only if the `parent' of that submenu isn't itself already
+overfull), and by possibly creating new submenus, using hints.  Note, however,
+that the optimization of the tree takes in principle exponential time, so menu
+speeds up the process, at the expense of occasionally not finding the best
+tree.  So, the tree you are presented with may not be optimal.  For tuning
+variables, see the hint_* variables in the last chapter.
+</p>
+
+<hr>
+
+<p>
+[ <a href="ch1.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ 2 ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch3.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian Menu System
+</p>
+
+<address>
+version 1.4, 4 June 2014<br>
+<br>
+Joost Witteveen <code><a href="mailto:joostje@debian.org">mailto:joostje@debian.org</a></code><br>
+Joey Hess <code><a href="mailto:joeyh@debian.org">mailto:joeyh@debian.org</a></code><br>
+Christian Schwarz <code><a href="mailto:schwarz@debian.org">mailto:schwarz@debian.org</a></code><br>
+Bill Allombert <code><a href="mailto:ballombe@debian.org">mailto:ballombe@debian.org</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

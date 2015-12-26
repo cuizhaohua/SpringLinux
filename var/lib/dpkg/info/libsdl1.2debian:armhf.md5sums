@@ -1,0 +1,9 @@
+e50bd2c222e47d4c473843e7f374355e  usr/lib/arm-linux-gnueabihf/libSDL-1.2.so.0.11.4
+bfc8628edd385d63314a3e479b5430ef  usr/share/doc/libsdl1.2debian/BUGS
+f46d0c003330f2efa067f2b96c5da57d  usr/share/doc/libsdl1.2debian/CREDITS
+108de8ec7d5d8bea0b98005d5c5e1822  usr/share/doc/libsdl1.2debian/README
+13911ca3c926fc64780f9b8b7777a322  usr/share/doc/libsdl1.2debian/README-SDL.txt
+be98f9e725ddbd22883007810f8a9958  usr/share/doc/libsdl1.2debian/changelog.Debian.armhf.gz
+85b71197a1183d15cb0103ca1a6a0047  usr/share/doc/libsdl1.2debian/changelog.Debian.gz
+1e1c5170a0f2360dc08771476afbe3ea  usr/share/doc/libsdl1.2debian/copyright
+5610d2094cbf4a333ed3615d9a0b8fc7  usr/share/lintian/overrides/libsdl1.2debian

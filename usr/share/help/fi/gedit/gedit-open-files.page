@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Avaa yksi tai useampi tiedosto</title>
+
+  <p>Tiedoston avaaminen <app>geditissä</app> onnistuu napsauttamalla <gui>Avaa</gui>-painiketta tai käyttämällä näppäinyhdistelmää <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>This will cause the <gui>Open</gui> dialog to appear. Use your mouse
+  or keyboard to select the file that you wish to open, and then click
+  <gui>Open</gui>. The file that you've selected will open in a new tab.</p>
+  <p>To close the <gui>Open</gui> dialog without opening a file, click
+  <gui>Cancel</gui>.</p>
+
+  <note style="tip"><p>Useiden tiedostojen avaaminen kerralla onnistuu <key>Ctrl</key>- ja <key>Vaihto</key>-näppäimillä. Jos <key>Ctrl</key>-näppäin on painettu pohjaan tiedostoja valittaessa, kaikki valitut tiedostot avautuvat <gui>Avaa</gui>-painikkeella.</p>
+
+  <!-- Insert Image Here -->
+
+  <p><key>Vaihto</key>-näppäimen painaminen tiedostojen avaamisen yhteydessä avaa ensimmäisen ja viimeisen valitun tiedoston sekä kaikki niiden välissä olevat tiedostot.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

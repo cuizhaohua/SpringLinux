@@ -1,0 +1,58 @@
+#!/usr/bin/install-menu
+#
+#More info: /usr/share/doc/menu/
+#
+
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+
+function sup($com)="+ \"" escfirst(title(), $hotkey, "&")
+           cond_surr(icon(), "%", "%") "\" " $com "\n";
+
+supported;
+  fvwm2module= sup(           $command);
+  fvwmmodule=  sup("Exec "    $command);
+  wm=          sup("Restart " $command);
+  x11fvwm2=    sup("Exec "    $command);
+  x11=         sup("Exec "    $command);
+  text=        sup(term()             );
+endsupported;
+
+# Ok, "startmenu" is a little wacky, and comes in 4 parts:
+#  1. If this is running for a user, then we do a DestroyMenu to
+# clear out the system one. Furthermore, if we're dealing with the
+# top-level /Debian menu, then add a title for it (normally done in
+# system.fvwm2rc), and re-read the main-menu-pre.hooks whose results
+# we merrily blew away earlier.  This is so that the
+# main-menu-pre.hooks work for users as well as system-wide.  Of
+# course, none of this happens if we're running as root to produce the
+# system-wide menudef.hook file.
+#  2. We spit out an "AddToMenu /Foo/Bar/Baz" to start this menu.
+#  3. We add the title to the menu if this isn't the /Debian menu
+# (since that title comes from the system.fvwm2rc).
+#  4. We add a trailing newline to the lot.
+startmenu=   ifroot("", 
+               "DestroyMenu \"" $section "\"\n" 
+               ifeq($section, "/Debian", 
+                 "AddToMenu \"/Debian\" \"Main Menu\" Title\n" 
+                 "Read /etc/X11/fvwm2/main-menu-pre.hook\n" 
+                 "Read .fvwm2/main-menu-pre.hook\n")) 
+             "AddToMenu \"" $section "\"  "
+             ifnempty($title, " \"" $title "\" Title") 
+             "\n";
+
+endmenu=     "\n";
+submenutitle= "+ \"" escfirst($title,$hotkey,"&")
+           cond_surr($icon,"%","%") "\" PopUp " $section "\n";
+genmenu=   "menudefs.hook";
+rootprefix="/etc/X11/fvwm2/";
+userprefix="/.fvwm2/";
+treewalk="c(m)";
+
+# This is just as an example of what is possible. It causes all
+# running fvwm2's to restart.  Uncomment the following line if you
+# want this to happen.
+#postrun="killall -USR1 /usr/X11R6/bin/fvwm2";

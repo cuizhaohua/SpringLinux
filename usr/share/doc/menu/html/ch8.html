@@ -1,0 +1,665 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian Menu System - Variables and functions in the install-menu scripts</title>
+
+<link href="index.html" rel="start">
+<link href="ch7.html" rel="prev">
+<link href="index.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch1.html" rel="chapter" title="1 Introduction">
+<link href="ch2.html" rel="chapter" title="2 Menu from the viewpoint of a user">
+<link href="ch3.html" rel="chapter" title="3 The menu file">
+<link href="ch4.html" rel="chapter" title="4 What packages with applications should do">
+<link href="ch5.html" rel="chapter" title="5 What packages with menu managers should do">
+<link href="ch6.html" rel="chapter" title="6 How a user can override the menus">
+<link href="ch7.html" rel="chapter" title="7 The internals of the menu package">
+<link href="ch8.html" rel="chapter" title="8 Variables and functions in the install-menu scripts">
+<link href="ch2.html#s2.1" rel="section" title="2.1 How/when do the window manager startup files get created?">
+<link href="ch2.html#s2.2" rel="section" title="2.2 Tuning of the generated window manager startup files">
+<link href="ch2.html#s2.3" rel="section" title="2.3 Optimization of menu tree: hints">
+<link href="ch3.html#s3.1" rel="section" title="3.1 Location">
+<link href="ch3.html#s3.2" rel="section" title="3.2 Syntax">
+<link href="ch3.html#s3.3" rel="section" title="3.3 The title field">
+<link href="ch3.html#s3.4" rel="section" title="3.4 The needs field">
+<link href="ch3.html#s3.5" rel="section" title="3.5 The section field">
+<link href="ch3.html#s3.6" rel="section" title="3.6 The command field">
+<link href="ch3.html#s3.7" rel="section" title="3.7 The icon field">
+<link href="ch3.html#s3.8" rel="section" title="3.8 The hints field">
+<link href="ch3.html#s3.9" rel="section" title="3.9 Entries for menu sections.">
+<link href="ch3.html#s3.10" rel="section" title="3.10 Fvwm's task and title bars">
+<link href="ch4.html#s4.1" rel="section" title="4.1 Providing a menu file">
+<link href="ch4.html#s4.2" rel="section" title="4.2 Adding a hook for dpkg in your packages">
+<link href="ch6.html#s6.1" rel="section" title="6.1 Configuring the menus">
+<link href="ch6.html#s6.2" rel="section" title="6.2 Specifying that a menu entry should not be displayed">
+<link href="ch6.html#s6.3" rel="section" title="6.3 Including other files">
+<link href="ch7.html#s7.1" rel="section" title="7.1 The update-menus program">
+<link href="ch7.html#s7.2" rel="section" title="7.2 The install-menu program">
+<link href="ch7.html#s7.3" rel="section" title="7.3 The install-menu config script definitions">
+<link href="ch7.html#s7.4" rel="section" title="7.4 Hints, tree optimization">
+<link href="ch8.html#s8.1" rel="section" title="8.1 String constants">
+<link href="ch8.html#s8.2" rel="section" title="8.2 Variables">
+<link href="ch8.html#s8.3" rel="section" title="8.3 Functions">
+<link href="ch8.html#s8.2.1" rel="subsection" title="8.2.1 Special variables">
+<link href="ch8.html#s8.2.2" rel="subsection" title="8.2.2 Preferred variables">
+<link href="ch8.html#s8.2.3" rel="subsection" title="8.2.3 Suggested variables">
+
+</head>
+
+<body>
+
+<p><a name="ch8"></a></p>
+<hr>
+
+<p>
+[ <a href="ch7.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ 8 ]
+[ <a href="index.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian Menu System
+<br>Chapter 8 - Variables and functions in the install-menu scripts
+</h1>
+
+<hr>
+
+<p>
+The supported &quot;needs&quot; definitions and &quot;startmenu=&quot;,
+&quot;endmenu=&quot; and &quot;submenutitle=&quot; are interpreted as follows:
+</p>
+
+<hr>
+
+<h2 id="s8.1">8.1 String constants</h2>
+
+<p>
+Anything inside double quotes (&quot;&quot;) is interpreted as a string, and is
+written verbatim to the output file.  Escape sequences like \n, \t, ...  will
+be replaced with their C expansions (but currently \0xx octal escape sequences
+are not supported).
+</p>
+
+<hr>
+
+<h2 id="s8.2">8.2 Variables</h2>
+
+<p>
+Anything matching $[a-z,A-Z,_]* is interpreted as a variable, and the
+corresponding definition from the menu entry is substituted.
+</p>
+
+<hr>
+
+<h3 id="s8.2.1">8.2.1 Special variables</h3>
+
+<p>
+The following variables are treated in a special way by install-menus, either
+because they are used for other purposes too, or because they are modified by
+install-menus (the ones marked with a &quot;!&quot; are modified by
+install-menus).
+</p>
+<dl>
+<dt>needs:</dt>
+<dd>
+<p>
+Used to determine whether the window manager supports this menu entry.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>command:</dt>
+<dd>
+<p>
+If this is undefined, this menu entry is taken as defining a sub-menu.  This
+way you can specify icons of sub-menus.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>title!:</dt>
+<dd>
+<p>
+Used for sorting (see section).  For sub-menu entries (those with empty
+command), this is initialised to the last part of the section.  Please, keep
+the title short (two words at maximum).  The title is for people who already
+know what program they want to start.  See &quot;longtitle&quot; and
+&quot;description&quot; below for longer descriptions.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>sort:</dt>
+<dd>
+<p>
+Used for sorting (see section).  To make sure an entry is at the beginning, use
+something with a low ASCII number, like &quot;$&quot;.  For sorting at the end,
+use &quot;|&quot;
+</p>
+</dd>
+</dl>
+<dl>
+<dt>section!:</dt>
+<dd>
+<p>
+Used to determine the section of the menu entry.  The menu entries that have a
+empty $command, ie those that define a submenu, have $title added to the end of
+$section The menu entries that have a non-empty $command have their $section
+modified to $section/$title, or $section/$sort:$title if $sort is defined.  The
+menu entries within one submenu are sorted according to $section.  If you want
+to retrieve the real section name, see the $basesection variable.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>basesection!:</dt>
+<dd>
+<p>
+Used to contain the *real* section name.  This is useful because $section will
+be changed to $section/$title in special cases (see above).  This causes a
+problem when you want to do parent($section) because you won't get the real
+parent section.  Instead you can use $basesection, which will never contain the
+title.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>hotkey!:</dt>
+<dd>
+<p>
+Modified to reflect what install-menus thinks is the most suitable hotkey for
+this menu entry.  The hotkey= in the menu entry file is taken as a suggestion,
+that could be overwritten if there is another entry with the same hotkey=.  To
+suggest two possible hotkeys for an entry use hotkey=&quot;ab&quot;, with
+&quot;a&quot; being the most preferred hotkey.
+</p>
+</dd>
+</dl>
+
+<hr>
+
+<h3 id="s8.2.2">8.2.2 Preferred variables</h3>
+
+<p>
+The following aren't special for install-menus, but it's nice (read: essential)
+to use the same variables for the same things.  So, I'll suggest some here.  If
+you want to invent new ones, please do so and mail them to me so that I can
+include them here.
+</p>
+<dl>
+<dt>icon:</dt>
+<dd>
+<p>
+The location of the icon file for this menu entry.  If you don't have an icon
+file, just leave out the icon= in the menu entry.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>icon32x32:</dt>
+<dd>
+<p>
+The location of a 32x32 icon file for this menu entry.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>icon16x16:</dt>
+<dd>
+<p>
+The location of a 16x16 icon file for this menu entry.  This allows users to
+choose between 16x16 and 32x32 icon.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>longtitle:</dt>
+<dd>
+<p>
+For people that like descriptive titles (about one line) It is probably best to
+include this in your menu entries, while the window-managers don't (by default)
+put it in the menus.  That way, people who want descriptive titles can turn
+them on, but others don't need to use them.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>description:</dt>
+<dd>
+<p>
+An even longer description (about 5 lines).  For example, a description of the
+documentation in the dwww generated html pages.
+</p>
+</dd>
+</dl>
+
+<hr>
+
+<h3 id="s8.2.3">8.2.3 Suggested variables</h3>
+
+<p>
+The following variables probably shouldn't appear often (or at all) in the menu
+files supplied with packages.  They are mostly intended for use by local system
+managers.  Nevertheless, it is advised that all Debian systems use the
+following variable names:
+</p>
+<dl>
+<dt>visible</dt>
+<dd>
+<p>
+Some apps add entries to utmp the utmp file, so that &quot;who&quot; and
+friends know they are running (this is especially true for xterms etc).  If
+$visible set (to anything other than &quot;&quot; or &quot;none&quot;), xterms
+etc will not write logging info to utmp.  (may not work for your window
+manager).
+</p>
+</dd>
+</dl>
+<dl>
+<dt>geometry</dt>
+<dd>
+<p>
+For X apps, this will be the size of the (main) window that will be created
+(units in either chars or pixels, depending on type of main window (xterm or
+graphic)).  If you as package maintainer want to use this, you should probably
+think about setting this variable somewhere in an Xresources file.
+</p>
+</dd>
+</dl>
+
+<hr>
+
+<h2 id="s8.3">8.3 Functions</h2>
+
+<p>
+Anything matching <samp>[a-zA-Z_]+</samp> is taken as a function name, and an
+error is generated if the function doesn't exist.  The arguments of the
+functions can be other functions, string constants or variables.
+</p>
+<dl>
+<dt>prefix()</dt>
+<dd>
+<p>
+returns the current prefix dir: either $rootprefix, or $HOME/$userprefix,
+depending on who runs install-menu
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifroot($rootarg, $userarg)</dt>
+<dd>
+<p>
+if(getuid()==0) print $rootarg, else print $userarg
+</p>
+</dd>
+</dl>
+<dl>
+<dt>print($arg)</dt>
+<dd>
+<p>
+Same as just $arg; if $arg is empty, generate an error.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>nstring($n, $string)</dt>
+<dd>
+<p>
+write $string $n times.  So, nstring(3,&quot;Aa&quot;) writes
+&quot;AaAaAa&quot;.  (Useful in combination with level()).
+</p>
+</dd>
+</dl>
+<dl>
+<dt>esc($arg1,$arg2)</dt>
+<dd>
+<p>
+Print $arg1, but escape all occurrences of characters in $arg2 with a '\'
+(thus, if arg1=&quot;hello&quot;, arg2=&quot;lo&quot;, print
+&quot;he\l\l\o&quot;).
+</p>
+</dd>
+</dl>
+<dl>
+<dt>escwith($arg1, $arg2, $arg3)</dt>
+<dd>
+<p>
+Same as esc, but use $arg3 as escape sequence.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>escfirst($arg1, $arg2, $arg3)</dt>
+<dd>
+<p>
+Same as escwith, but only escapes first occurrence of $arg2.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>cppesc($arg1)</dt>
+<dd>
+<p>
+Escape anything that isn't a letter, number or _ with $&lt;hex-ascii-code&gt;.
+So, for example, a '-' is replaced by '$2D'.  This way, $arg1 can be used as a
+#define in cpp.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>tolower($arg)</dt>
+<dt>toupper($arg)</dt>
+<dd>
+<p>
+Returns the argument set in lowercases resp uppercases.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>replacewith($s, $replace, $with)</dt>
+<dd>
+<p>
+Search $s for occurrences of characters from string replace, and replace them
+by the corresponding character in $with.  Example: replacewith(&quot;hello
+$world, %dir&quot;, &quot;$% &quot;, &quot;123&quot;) returns:
+&quot;hello31world,32dir&quot;
+</p>
+</dd>
+</dl>
+<dl>
+<dt>replace($s, $replace, $with)</dt>
+<dd>
+<p>
+Search $s for occurences of $replace and replace them with $with.  Note that
+the behaviour of this function is quite different than the replacewith()
+function.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifempty($arg1, $arg2)</dt>
+<dd>
+<p>
+If $arg1 is empty, print $arg2, otherwise print nothing.  For compatibility,
+$arg1=&quot;none&quot; is interpreted as empty.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifnempty($arg1, $arg2)</dt>
+<dd>
+<p>
+If $arg1 is not empty, print $arg2.  For compatibility, the string
+&quot;none&quot; is seen as empty.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifelse($arg1,$arg2,$arg3)</dt>
+<dd>
+<p>
+If $arg1 is non-empty, print $arg2, otherwise $arg3.  For compatibility, the
+string &quot;none&quot; is seen as empty.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifeq($arg1, $arg2, $arg3)</dt>
+<dd>
+<p>
+If ($arg1==$arg2) then print $arg3
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifneq($arg1, $arg2, $arg3)</dt>
+<dd>
+<p>
+If ($arg1!=$arg2) then print $arg3
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifeqelse($arg1, $arg2, $arg3, $arg4)</dt>
+<dd>
+<p>
+If ($arg1==$arg2) then print $arg3 else print $arg4
+</p>
+</dd>
+</dl>
+<dl>
+<dt>cond_surr($arg1, $arg2, $arg3)</dt>
+<dd>
+<p>
+If $arg1 is non-empty print $arg2$arg1$arg3, otherwise print nothing.  For
+compatibility, $arg1=&quot;none&quot; is interpreted as empty.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>iffile($arg1, $arg2)</dt>
+<dd>
+<p>
+If file $arg1 exists, and can be opened for reading by whoever started the
+current process, return $arg2, otherwise return nothing.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>ifelsefile($arg1, $arg2, $arg3)</dt>
+<dd>
+<p>
+If file $arg1 exists, and can be opened for reading by whoever started the
+current process, return $arg2, otherwise return $arg3.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>catfile($arg1)</dt>
+<dd>
+<p>
+Return the contents of file $arg1.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>shell($arg1)</dt>
+<dd>
+<p>
+Return the output of the shell command $arg1.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>forall($array, &quot;var&quot;, $exec)</dt>
+<dd>
+<p>
+For each element of the column separated array $array, set $var to that
+element, and print $exec.  Example:
+</p>
+
+<pre>
+           !include lang.h
+           forall(sections_translations(), &quot;lang&quot;, \ 
+              &quot; section[&quot; $lang &quot;]=&quot; translate($lang, title()) &quot;\n&quot;)
+</pre>
+</dd>
+</dl>
+<dl>
+<dt>parent($arg)</dt>
+<dd>
+<p>
+for $arg a &quot;directory&quot;, return parent directory:
+parent(&quot;/Debian/Applications/Editors&quot;) =
+&quot;/Debian/Applications&quot;.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>basename($arg)</dt>
+<dd>
+<p>
+return the last part of the parent directory:
+basename(&quot;/Debian/Applications/Editors&quot;) = &quot;Applications&quot;.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>stripdir($arg)</dt>
+<dd>
+<p>
+everything after the last slash, i.e.  what basename() should have returned:
+stripdir(&quot;/Debian/Applications/Editors&quot;) = &quot;Editors&quot;.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>entrycount()</dt>
+<dd>
+<p>
+the number of entries in this menu.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>entryindex()</dt>
+<dd>
+<p>
+returns relative position of this entry.  Start with 0, last entry is
+entrycount() - 1.  BUG: if sort= anything other than $title, then this
+entryindex() will return incorrect values.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>firstentry($arg)</dt>
+<dd>
+<p>
+return $arg if this is the first entry of this menu (that is, entryindex() =
+0).  Else, return nothing.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>lastentry()</dt>
+<dd>
+<p>
+return $arg if this is the last entry in this menu (that is, entryindex() =
+entrycount() -1).  Else, return nothing.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>level()</dt>
+<dd>
+<p>
+return nesting of this menu in the total menu tree.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>add($arg1,$arg2)</dt>
+<dt>sub($arg1,$arg2)</dt>
+<dt>mult($arg1,$arg2)</dt>
+<dt>div($arg1,$arg2)</dt>
+<dd>
+<p>
+returns the sum, difference, product or quotient of $arg1 and $arg2.  Note that
+the arguments are strings, that are converted to integers.  example:
+mult(&quot;24&quot;, entryindex())
+</p>
+</dd>
+</dl>
+<dl>
+<dt>rcfile()</dt>
+<dt>examplercfile()</dt>
+<dt>mainmenutitle()</dt>
+<dt>rootsection()</dt>
+<dt>rootprefix()</dt>
+<dt>userprefix()</dt>
+<dt>treewalk()</dt>
+<dt>postoutput()</dt>
+<dt>preoutput()</dt>
+<dd>
+<p>
+These functions all output whatever they were defined to be in the menu-method
+file.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>translate($lang, $text)</dt>
+<dd>
+<p>
+Translate $text into $lang using gettext, see <samp>forall</samp> for an
+example.  Note that currently outputlanguage must be set to &quot;C&quot;.  If
+$lang is the empty string, $text will be translated in the current locale
+language.  See sections_translations() for a list of available translations.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>implicit concatenation</dt>
+<dd>
+<p>
+String constants, variables and functions can be concatenated by placing them
+after each other with a space in between, like: &quot;hello&quot;
+ifelse($comma, $comma, &quot; sorry&quot; $period &quot; comma not
+defined&quot;) &quot; world&quot;
+</p>
+</dd>
+</dl>
+
+<hr>
+
+<p>
+[ <a href="ch7.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ <a href="ch3.html">3</a> ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ 8 ]
+[ <a href="index.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian Menu System
+</p>
+
+<address>
+version 1.4, 4 June 2014<br>
+<br>
+Joost Witteveen <code><a href="mailto:joostje@debian.org">mailto:joostje@debian.org</a></code><br>
+Joey Hess <code><a href="mailto:joeyh@debian.org">mailto:joeyh@debian.org</a></code><br>
+Christian Schwarz <code><a href="mailto:schwarz@debian.org">mailto:schwarz@debian.org</a></code><br>
+Bill Allombert <code><a href="mailto:ballombe@debian.org">mailto:ballombe@debian.org</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

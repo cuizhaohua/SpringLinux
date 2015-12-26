@@ -1,0 +1,8 @@
+08f8554b5aa76678880afb4d4d832cff  usr/include/X11/Xft/Xft.h
+0acc042178c68b30be218b5a58377d36  usr/include/X11/Xft/XftCompat.h
+4668b27b8560108431032b2ae6caaeaf  usr/lib/arm-linux-gnueabihf/libXft.a
+69c67446d3a9fac91e0709735bfa6ab4  usr/lib/arm-linux-gnueabihf/pkgconfig/xft.pc
+a3be3c19274084374f747adb0978bdb5  usr/share/doc/libxft-dev/changelog.Debian.gz
+e9d0908c902e7b4191e0fdf77b3563bd  usr/share/doc/libxft-dev/changelog.gz
+46a31477b69ef550bd7d3fa0429854f3  usr/share/doc/libxft-dev/copyright
+efce6ff31d509e59b84cef5b6e4b44ce  usr/share/man/man3/Xft.3.gz

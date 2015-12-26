@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="el">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Ενεργοποίηση και χρήση του ελέγχου ορθογραφίας</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Έλεγχος ορθογραφίας εγγράφου</title>
+  <section id="enable-spell-check">
+    <title>Ενεργοποίηση του ορθογραφικού ελέγχου</title>
+    <p>Το γνώρισμα ελέγχου ορθογραφίας παρέχεται ως πρόσθετο στο <app>gedit</app> που μπορεί να ενεργοποιηθεί όπως απαιτείται. Για ενεργοποίηση του προσθέτου:</p>
+
+    <steps>
+      <item>
+        <p>Επιλέξτε <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Προτιμήσεις</gui> <gui style="tab">Πρόσθετα</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Επιλέξτε <gui style="menuitem">Έλεγχος ορθογραφίας</gui> για την ενεργοποίηση του προσθέτου.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Έλεγχος ορθογραφίας εγγράφου</title>
+
+    <p>Για έλεγχο ανορθόγραφων λέξεων στο έγγραφό σας:</p>
+
+    <steps>
+      <item>
+        <p>Επιλέξτε <guiseq><gui style="menu">Εργαλεία</gui> <gui style="menuitem">Έλεγχος ορθογραφίας</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Για να επισημαίνει αυτόματα το <app>gedit</app> ανορθόγραφες λέξεις στο έγγραφό σας καθώς πληκτρολογείτε, επιλέξτε <guiseq><gui style="menu">Εργαλεία</gui><gui style="menuitem">Επισήμανση ανορθόγραφων λέξεων</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Χρήση ελέγχου ορθογραφίας</title>
+
+    <p>Μπορείτε να επιλέξετε τη σωστή αντικατάσταση για ανορθόγραφες λέξεις χρησιμοποιώντας τον διάλογο ελέγχου ορθογραφίας. Η ανορθόγραφη λέξη που ελέγχεται από τον έλεγχο ορθογραφίας εμφανίζεται με έντονη τεχνοτροπία δίπλα στο <gui>Ανορθόγραφη λέξη:</gui>. Μπορείτε να επιλέξετε από τις ακόλουθες διορθωτικές ενέργειες:</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Αλλαγή σε:</gui> επιτρέπει την εισαγωγή μιας λέξης και χρήση του <gui style="button">Ελέγχου λέξης</gui> για τον έλεγχο της εγκυρότητας της ορθογραφίας.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Προτάσεις:</gui> που δίνει τις διαθέσιμες αντικαταστάσεις για τη λέξη.</p>
+      </item>
+      <item>
+        <p><gui style="button">Παράβλεψη</gui> που επιτρέπει την παράκαμψη του ελέγχου ορθογραφίας <em>ενός</em> στιγμιότυπου της τρέχουσας λέξης.</p>
+      </item>
+      <item>
+        <p><gui style="button">Παράβλεψη όλων</gui> που επιτρέπει την παράκαμψη του ελέγχου ορθογραφίας για <em>όλα</em> τα στιγμιότυπα της τρέχουσας λέξης.</p>
+      </item>
+      <item>
+        <p><gui style="button">Αλλαγή</gui> που αντικαθιστά την ανορθόγραφη ή μη αναγνωρισμένη λέξη με <em>μια</em> επιλεγμένη αντικατάσταση από τη λίστα <gui style="menuitem">Προτάσεις:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Αλλαγή όλων</gui> που αντικαθιστά <em>όλες</em> τις ανορθόγραφες ή μη αναγνωρισμένες λέξεις με την επιλεγμένη αντικατάσταση από τη λίστα <gui style="menuitem">Προτάσεις:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Προσθήκη λέξης</gui> που επιτρέπει στο <app>gedit</app> την προσθήκη της τρέχουσας λέξης στο <gui>λεξικό χρήστη</gui>. Η προσθήκη προσαρμοσμένων λέξεων στο <gui>λεξικό χρήστη</gui> θα επιτρέψει στο <app>gedit</app> να αναγνωρίσει τη λέξη σε έγγραφα και έτσι δεν θα επισημαίνεται ως ανορθόγραφη λέξη.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Ορίστε τη γλώσσα που θα χρησιμοποιηθεί για τον ορθογραφικό έλεγχο</title>
+    <p>Από προεπιλογή, το <app>gedit</app> θα χρησιμοποιήσει την τρέχουσα γλώσσα για ορθογραφικό έλεγχο του εγγράφου σας. Εάν χρειάζεστε να χρησιμοποιήσετε μια άλλη γλώσσα, επιλέξτε <guiseq><gui style="menu">Εργαλεία</gui><gui style="menuitem">Ορισμός γλώσσας…</gui></guiseq>, έπειτα επιλέξτε την επιθυμητή γλώσσα.</p>
+  </section>
+
+  <section id="dict">
+    <title>Λεξικά</title>
+
+    <p>Το <app>gedit</app> χρησιμοποιεί <link href="http://www.abisource.com/projects/enchant/">Enchant</link>, ένα μικρό βοήθημα συστήματος, για ορθογραφικό έλεγχο. Το Enchant μπορεί να χρησιμοποιεί αρκετά διαφορετικά λεξικά για να ελέγξει την ορθογραφία. Δύο τέτοιες υποστηρίξεις λεξικών είναι οι <em>Hunspell</em> και <em>Aspell</em>.</p>
+
+    <p>Αν η γλώσσα που θέλετε να χρησιμοποιήσετε δεν είναι διαθέσιμη στο <app>gedit</app>, χρησιμοποιήστε τον εγκαταστάτη λογισμικού του υπολογιστή σας ή τον διαχειριστή πακέτων για να εγκαταστήσετε την υποστήριξη λεξικού που θέλετε.</p>
+  </section>
+</page>

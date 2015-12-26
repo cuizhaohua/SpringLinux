@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libspandsp2
+/usr/share/doc/libspandsp2/copyright
+/usr/share/doc/libspandsp2/changelog.gz
+/usr/share/doc/libspandsp2/changelog.Debian.gz
+/usr/share/doc/libspandsp2/changelog.Debian.armhf.gz
+/usr/share/doc/libspandsp2/DueDiligence
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libspandsp.so.2.0.0
+/usr/lib/arm-linux-gnueabihf/libspandsp.so.2

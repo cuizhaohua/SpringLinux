@@ -1,0 +1,6 @@
+86649e7f4b0635a54572df583de77ca5  usr/lib/libblas/libblas.so.3.0
+581cfb0a39af2a16a6db1365ec8cd975  usr/share/doc/libblas3/README.Debian.gz
+b34f865eff19b65f14b251e137339c90  usr/share/doc/libblas3/blas.patch.gz
+8b847397687b7acf0dd01ce722931db4  usr/share/doc/libblas3/changelog.Debian.gz
+0cf7bd4df41a4a156cf09e34fb75d46e  usr/share/doc/libblas3/copyright
+a36ec14cfd9feb8dcd24dcb33be7073d  usr/share/doc/libblas3/test_results.gz

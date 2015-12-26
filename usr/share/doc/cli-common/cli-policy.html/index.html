@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian CLI Policy</title>
+
+<link href="index.html" rel="start">
+<link href="ch-appendix.html" rel="prev">
+<link href="ch-history.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch-history.html" rel="chapter" title="1 Policy History">
+<link href="ch-terms.html" rel="chapter" title="2 Used Terms">
+<link href="ch-packaging.html" rel="chapter" title="3 Packaging Policy">
+<link href="ch-mono.html" rel="chapter" title="4 Mono Specific Packaging help">
+<link href="ch-pnet.html" rel="chapter" title="5 DotGNU Portable.NET Packaging help">
+<link href="ch-appendix.html" rel="chapter" title="6 Appendix">
+<link href="ch-terms.html#s-CLI" rel="section" title="2.1 CLI - Common Language Infrastructure">
+<link href="ch-terms.html#s-CLR" rel="section" title="2.2 CLR - Common Language Runtime">
+<link href="ch-terms.html#s-CIL" rel="section" title="2.3 CIL - Common Intermediate Language">
+<link href="ch-terms.html#s-.NET" rel="section" title="2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;">
+<link href="ch-terms.html#s-GAC" rel="section" title="2.5 GAC - Global Assembly Cache">
+<link href="ch-terms.html#s-package-names" rel="section" title="2.6 Package Names">
+<link href="ch-packaging.html#s-general-packaging" rel="section" title="3.1 General Packaging">
+<link href="ch-packaging.html#s-gac-library-packaging" rel="section" title="3.2 GAC Library Packaging">
+<link href="ch-packaging.html#s-non-gac-library-packaging" rel="section" title="3.3 non-GAC Library Packaging">
+<link href="ch-mono.html#s4.1" rel="section" title="4.1 Naming">
+<link href="ch-mono.html#s4.2" rel="section" title="4.2 DLL Maps">
+<link href="ch-mono.html#s-mono-disable-shm" rel="section" title="4.3 MONO_DISABLE_SHM">
+<link href="ch-pnet.html#s5.1" rel="section" title="5.1 Naming">
+<link href="ch-appendix.html#s-cli-common-dev" rel="section" title="6.1 Helper Scripts: cli-common-dev">
+<link href="ch-appendix.html#s-examples" rel="section" title="6.2 Examples">
+<link href="ch-appendix.html#s-migrating" rel="section" title="6.3 Migrating Existing Packages">
+<link href="ch-packaging.html#s-architecture" rel="subsection" title="3.1.1 Architecture">
+<link href="ch-packaging.html#s-file-locations" rel="subsection" title="3.1.2 File Locations">
+<link href="ch-packaging.html#s-file-perms" rel="subsection" title="3.1.3 File Permissions">
+<link href="ch-packaging.html#s-build-deps" rel="subsection" title="3.1.4 Build Dependencies">
+<link href="ch-packaging.html#s-gac-naming-versioning" rel="subsection" title="3.2.1 Naming &amp; Versioning">
+<link href="ch-packaging.html#s-gac-policy-files" rel="subsection" title="3.2.2 Policy Files">
+<link href="ch-packaging.html#s-clilibs-control-file" rel="subsection" title="3.2.3 clilibs Control File">
+<link href="ch-packaging.html#s-pkg-config-file" rel="subsection" title="3.2.4 pkg-config File">
+<link href="ch-packaging.html#s-signing" rel="subsection" title="3.2.5 Signing">
+<link href="ch-packaging.html#s-non-gac-naming" rel="subsection" title="3.3.1 Naming">
+<link href="ch-mono.html#s-dll-maps-intro" rel="subsection" title="4.2.1 Introduction">
+<link href="ch-mono.html#s4.2.2" rel="subsection" title="4.2.2 Solution: DLL map config file">
+<link href="ch-appendix.html#s-dh_makeclilibs" rel="subsection" title="6.1.1 dh_makeclilibs">
+<link href="ch-appendix.html#s-dh_clideps" rel="subsection" title="6.1.2 dh_clideps">
+<link href="ch-appendix.html#s-dh_installcligac" rel="subsection" title="6.1.3 dh_installcligac">
+<link href="ch-appendix.html#s-debhelper-example" rel="subsection" title="6.2.1 debhelper 5/6 Example">
+<link href="ch-appendix.html#s-debhelper7-example" rel="subsection" title="6.2.2 debhelper 7 Example">
+<link href="ch-appendix.html#s-cdbs-example" rel="subsection" title="6.2.3 cdbs Example">
+<link href="ch-appendix.html#s-wrapper-script-example" rel="subsection" title="6.2.4 Executable Wrapper Script Example">
+<link href="ch-appendix.html#s-api-compat-example" rel="subsection" title="6.2.5 API Compatibility Check Example">
+<link href="ch-appendix.html#s-gac-policy-file-example" rel="subsection" title="6.2.6 GAC Policy File Example">
+
+</head>
+
+<body>
+
+<p><a name="index"></a></p>
+<hr>
+
+<p>
+[ <a href="ch-appendix.html">previous</a> ]
+[ <a href="#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-history.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian CLI Policy
+<br></h1>
+
+<hr>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>
+This document lays out basic policies regarding packaging Mono, other <a
+href="ch-terms.html#s-CLR">CLRs</a> and <a href="ch-terms.html#s-CLI">CLI</a>
+based applications/libraries on Debian GNU/Linux.
+</p>
+
+<hr>
+
+<h2 id="copyright">Copyright Notice</h2>
+
+<p>
+Copyright &copy; 2005-2009 Mirco Bauer Copyright &copy; 2005 Brandon Hale Copyright &copy; 2006 Sebastian Dr&ouml;ge Copyright &copy; 2006 Dylan R. E. Moonfire.
+</p>
+
+<p>
+This manual is free software; you may redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2, or (at your option) any later version.
+</p>
+
+<p>
+This is distributed in the hope that it will be useful, but without any
+warranty; without even the implied warranty of merchantability or fitness for a
+particular purpose.  See the GNU General Public License for more details.
+</p>
+
+<p>
+A copy of the GNU General Public License is available as
+/usr/share/common-licenses/GPL in the Debian GNU/Linux distribution or on the
+World Wide Web at the GNU General Public Licence.  You can also obtain it by
+writing to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+Boston, MA 02111-1307, USA.
+</p>
+
+<hr>
+
+<h2 id="contents">Contents</h2>
+
+<ul>
+<li><a href="ch-history.html">1 Policy History</a><li><a href="ch-terms.html">2 Used Terms</a>
+  <ul>
+  <li><a href="ch-terms.html#s-CLI">2.1 CLI - Common Language Infrastructure</a></li>
+  <li><a href="ch-terms.html#s-CLR">2.2 CLR - Common Language Runtime</a></li>
+  <li><a href="ch-terms.html#s-CIL">2.3 CIL - Common Intermediate Language</a></li>
+  <li><a href="ch-terms.html#s-.NET">2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;</a></li>
+  <li><a href="ch-terms.html#s-GAC">2.5 GAC - Global Assembly Cache</a></li>
+  <li><a href="ch-terms.html#s-package-names">2.6 Package Names</a>
+  </ul></li>
+<li><a href="ch-packaging.html">3 Packaging Policy</a>
+  <ul>
+  <li><a href="ch-packaging.html#s-general-packaging">3.1 General Packaging</a>
+    <ul>
+    <li><a href="ch-packaging.html#s-architecture">3.1.1 Architecture</a></li>
+    <li><a href="ch-packaging.html#s-file-locations">3.1.2 File Locations</a></li>
+    <li><a href="ch-packaging.html#s-file-perms">3.1.3 File Permissions</a></li>
+    <li><a href="ch-packaging.html#s-build-deps">3.1.4 Build Dependencies</a>
+    </ul></li>
+  <li><a href="ch-packaging.html#s-gac-library-packaging">3.2 GAC Library Packaging</a>
+    <ul>
+    <li><a href="ch-packaging.html#s-gac-naming-versioning">3.2.1 Naming &amp; Versioning</a></li>
+    <li><a href="ch-packaging.html#s-gac-policy-files">3.2.2 Policy Files</a></li>
+    <li><a href="ch-packaging.html#s-clilibs-control-file">3.2.3 clilibs Control File</a></li>
+    <li><a href="ch-packaging.html#s-pkg-config-file">3.2.4 pkg-config File</a></li>
+    <li><a href="ch-packaging.html#s-signing">3.2.5 Signing</a>
+    </ul></li>
+  <li><a href="ch-packaging.html#s-non-gac-library-packaging">3.3 non-GAC Library Packaging</a>
+    <ul>
+    <li><a href="ch-packaging.html#s-non-gac-naming">3.3.1 Naming</a>
+    </ul></li>
+  </ul></li>
+<li><a href="ch-mono.html">4 Mono Specific Packaging help</a>
+  <ul>
+  <li><a href="ch-mono.html#s4.1">4.1 Naming</a></li>
+  <li><a href="ch-mono.html#s4.2">4.2 DLL Maps</a>
+    <ul>
+    <li><a href="ch-mono.html#s-dll-maps-intro">4.2.1 Introduction</a></li>
+    <li><a href="ch-mono.html#s4.2.2">4.2.2 Solution: DLL map config file</a>
+    </ul></li>
+  <li><a href="ch-mono.html#s-mono-disable-shm">4.3 MONO_DISABLE_SHM</a>
+  </ul></li>
+<li><a href="ch-pnet.html">5 DotGNU Portable.NET Packaging help</a>
+  <ul>
+  <li><a href="ch-pnet.html#s5.1">5.1 Naming</a>
+  </ul></li>
+<li><a href="ch-appendix.html">6 Appendix</a>
+  <ul>
+  <li><a href="ch-appendix.html#s-cli-common-dev">6.1 Helper Scripts: cli-common-dev</a>
+    <ul>
+    <li><a href="ch-appendix.html#s-dh_makeclilibs">6.1.1 dh_makeclilibs</a></li>
+    <li><a href="ch-appendix.html#s-dh_clideps">6.1.2 dh_clideps</a></li>
+    <li><a href="ch-appendix.html#s-dh_installcligac">6.1.3 dh_installcligac</a>
+    </ul></li>
+  <li><a href="ch-appendix.html#s-examples">6.2 Examples</a>
+    <ul>
+    <li><a href="ch-appendix.html#s-debhelper-example">6.2.1 debhelper 5/6 Example</a></li>
+    <li><a href="ch-appendix.html#s-debhelper7-example">6.2.2 debhelper 7 Example</a></li>
+    <li><a href="ch-appendix.html#s-cdbs-example">6.2.3 cdbs Example</a></li>
+    <li><a href="ch-appendix.html#s-wrapper-script-example">6.2.4 Executable Wrapper Script Example</a></li>
+    <li><a href="ch-appendix.html#s-api-compat-example">6.2.5 API Compatibility Check Example</a></li>
+    <li><a href="ch-appendix.html#s-gac-policy-file-example">6.2.6 GAC Policy File Example</a>
+    </ul></li>
+  <li><a href="ch-appendix.html#s-migrating">6.3 Migrating Existing Packages</a></li>
+  </ul></li>
+</ul>
+
+<hr>
+
+<p>
+[ <a href="ch-appendix.html">previous</a> ]
+[ <a href="#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-history.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian CLI Policy
+</p>
+
+<address>
+Version 0.7<br>
+<br>
+Mirco Bauer <code><a href="mailto:meebey@debian.org">mailto:meebey@debian.org</a></code><br>
+Brandon Hale <code><a href="mailto:brandon@smarterits.com">mailto:brandon@smarterits.com</a></code><br>
+Sebastian Dr&ouml;ge <code><a href="mailto:slomo@debian.org">mailto:slomo@debian.org</a></code><br>
+Dylan R. E. Moonfire <code><a href="mailto:debian@mfgames.com">mailto:debian@mfgames.com</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

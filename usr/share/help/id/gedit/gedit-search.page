@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mencari teks</title>
+  
+    <p>Alat Pencarian bisa membantu Anda mencari urutan teks tertentu dalam berkas Anda.</p>
+
+    <steps>
+      <title>Menemukan teks</title>
+      <item>
+        <p>Buka <gui>jendela pencarian</gui> dengan mengklik <guiseq><gui style="menu">Cari</gui> <gui style="menuitem">Temukan</gui> </guiseq> atau menekan <keyseq><key>Ctrl</key><key>F</key></keyseq>. Ini akan memindahkan kursor Anda ke awal <gui>jendela pencarian</gui>.</p>
+      </item>
+      <item>
+        <p>Ketikkan teks yang hendak Anda cari dalam <gui>jendela pencarian</gui>.</p>
+      </item>
+      <item>
+        <p>Sembari Anda mengetik, <app>gedit</app> akan mulai menyorot bagian teks yang cocok dengan apa yang telah Anda masukkan.</p>
+      </item>
+    </steps>
+    
+    <p>Untuk menggulung melalui hasil pencarian, lakukan sebarang dari yang berikut:</p>
+    <list>
+      <item>
+        <p>Klik pada panah arah <gui style="button">naik</gui> atau <gui style="button">turun</gui> di sebelah <gui>jendela pencarian</gui>.</p>
+      </item>
+      <item>
+        <p>Tekan tombol <key>panah atas</key> atau <key>panah bawah</key> pada papan tik Anda.</p>
+      </item>
+      <item>
+        <p>Tekan <keyseq><key>Ctrl</key><key>G</key></keyseq> atau <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Tekan <key>Ctrl</key> dan gunakan fitur <key>gulir</key> tetikus atau touchpad Anda untuk berpindah naik atau turun sepanjang teks.</p>
+      </item>
+    </list>
+
+  <p>Untuk menutup <gui>jendela pencarian</gui>, tekan <key>Esc</key> atau <key>Enter</key>. Menekan <key>Esc</key> akan mengembalikan kursor ke tempat dimana Anda memulai pencarian. Menekan <key>Enter</key> akan mengembalikan kursor ke posisi saat ini dari hasil pencarian.</p>
+
+  <list>
+    <title>Tips pencarian</title>
+    <item>
+      <p>Bila Anda menyorot suatu bagian teks dengan tetikus Anda, lalu menekan <keyseq><key>Ctrl</key><key>F</key></keyseq>, teks yang telah Anda sorot akan muncul dalam jendela pencarian.</p>
+    </item>
+    <item>
+      <p>Untuk lebih banyak opsi pencarian, klik pada ikon <gui style="button">Kaca Pembesar</gui> dalam jendela pencarian, atau klik kanan di manapun dalam jendela pencarian. Anda dapat memilih satu atau lebih opsi pencarian berikut:</p>
+      <list>
+        <item>
+          <p>Pilih <gui>Cocok Huruf Besar/Kecil</gui> untuk membuat pencarian membedakan huruf besar/kecil.</p>
+        </item>
+        <item>
+          <p>Pilih <gui>Cocok Seluruh Kata</gui> untuk mencari hanya kata lengkap.</p>
+        </item>
+        <item>
+          <p>Pilih <gui>Putar Balik</gui> untuk mencari teks dari puncak ke dasar dan kembali lagi ke atas.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Teks yang telah Anda cari akan tetap disorot oleh gedit, bahkan setelah Anda telah menyelesaikan pencarian Anda. Untuk menghapus penyorotan, klik <guiseq><gui>Cari</gui><gui>Bersihkan Penyorotan</gui></guiseq>, atau tekan <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

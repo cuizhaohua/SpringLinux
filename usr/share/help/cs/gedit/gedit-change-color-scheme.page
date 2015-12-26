@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Změna barevného schématu</title>
+
+  <p>Součástí aplikace <app>gedit</app> je několik různých schémat barev, díky kterým můžete měnit vzhled hlavního okna s textem.</p>
+
+  <p>Když chcete schéma barev změnit, postupujte v následujících krocích:</p>
+  <steps>
+    <item><p>Vyberte <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Předvolby</gui> <gui>Písmo a barvy</gui></guiseq>.</p></item>
+    <item><p>Zvolte požadované schéma barev.</p></item>
+  </steps>
+
+  <p>Nové schéma barev se okamžitě použije.</p>
+
+  <section id="custom-color-scheme">
+    <title>Použití vlastního schématu barev</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Můžete také použít schéma barev, které vytvořil někdo jiný, nebo si vytvořit své vlastní.</p>
+    <p>Návod, jak si nainstalovat vlastní schéma barev, stejně jako ukázka schématu barev, kterou si můžete stáhnout a použít, jsou dostupné na <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">wiki editoru gedit</link> (odkazovaný text je v angličtině).</p>
+  </section>
+
+</page>

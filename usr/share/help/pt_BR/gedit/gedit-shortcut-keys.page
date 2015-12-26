@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Teclas de atalho</title>
+
+  <p>Use as <gui>teclas de atalho</gui> para realizar as tarefas mais comuns mais rapidamente que com o mouse e menus. As seguintes tabelas listam todas as teclas de atalho do <app>gedit</app>.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Teclas de atalho relacionadas a abas</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Muda para a próxima aba à esquerda</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Muda para a próxima aba à direita</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Fecha a aba</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Salva todas as abas</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Fecha todas as abas</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reabre a aba mais recentemente fechada</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pula para a aba de número <var>n</var></p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Novo grupo de abas</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Grupo de abas anterior</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Próximo grupo de abas</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Teclas de atalho para trabalhar com arquivos</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Cria um novo documento</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Abre um documento</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Salva o documento atual</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Salva o documento atual com um novo nome</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Imprime o documento atual</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Visualiza a impressão</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Fecha o documento atual</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Sai do gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Teclas de atalho para edição de documentos</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Move para o início da linha atual</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move para o fim da linha atual</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move para o começo do documento</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move para o fim do documento</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move a palavra selecionada uma palavra para direita</p></td>
+          <td><p><keyseq><key>Alt</key><key>Seta para direita</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move a palavra selecionada uma palavra para esquerda</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Seta para esquerda</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Desfaz a última ação</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Refaz a última ação desfeita</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Corta o texto selecionado ou região e mandar para a área de transferência</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Copia o texto selecionado ou região para a área de transferência</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Cola o conteúdo da área de transferência</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Seleciona todo o texto no arquivo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Exclui a linha atual</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move a linha selecionada uma linha para cima</p></td>
+          <td><p><keyseq><key>Alt</key><key>Seta para cima</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move a linha selecionada uma linha para baixo</p></td>
+          <td><p><keyseq><key>Alt</key><key>Seta para baixo</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Adicionando paradas de tabulação</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Removendo paradas de tabulação</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Converte o texto selecionado para maiúsculo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Converte o texto selecionado para minúsculo</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Alterna entre maiúsculo e minúsculo o texto selecionado</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Teclas de atalhos para mostrar e ocultar painéis</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Mostra / oculta o painel lateral</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Mostra / oculta o painel inferior</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Teclas de atalhos para pesquisas</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Localiza um texto</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Localiza a próxima instância do texto</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Localiza a instância anterior do texto</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pesquisa e substitui</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Limpa destaque</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vai para a linha</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Teclas de atalho para ferramentas</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Verifica ortografia</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Remove espaços à direita (com plug-in)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Executa "make" no diretório atual (com plug-in)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Lista diretórios (com plug-in)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Teclas de atalho para ajuda</title>
+      <thead>
+        <tr>
+          <td><p>Para fazer isso</p></td>
+          <td><p>Pressione isso</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Abre o manual do usuário do gedit</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

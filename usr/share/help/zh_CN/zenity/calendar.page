@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--calendar</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>日历对话框</title>
+    <p>使用 <cmd>--calendar</cmd> 选项来创建日历对话框。Zenity 在标准输出中返回选定的日期。如果没有在命令行指定日期，就使用当前日期。</p>
+    <p>日历对话框支持以下选项：</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>文本</var></title>
+	<p>指定日历对话框里显示的文本。</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>天</var></title>
+	<p>指定日历对话框中的日子。天必须是介于 1~31 之间的数字。</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>月份</var></title>
+	<p>指定日历对话框中的月份。月份必须是介于 1~12 之间的数字。</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>年</var></title>
+	<p>指定日历对话框中的年份。</p>
+      </item>
+
+      <item>
+        <title><cmd>--date-format</cmd>=<var>格式</var></title>
+	<p>指定选定的日期返回时的样式。默认的格式取决于您的区域设置。格式必须可以被 <cmd>strftime</cmd> 函数接受，例如 <var>%A %d/%m/%y</var>。</p>
+      </item>
+
+    </terms>
+
+    <p>下面的脚本示范了如何创建一个日历对话框：</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="选择日期" \
+--text="通过点击选择日期。" \
+--day=10 --month=8 --year=2004
+  then echo $?
+  else echo "没有选择日期"
+fi
+</code>
+
+
+    <figure id="zenity-calendar-screenshot">
+      <title>日历对话框范例</title>
+      <desc>Zenity 日历对话框范例</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

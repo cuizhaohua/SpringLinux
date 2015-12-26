@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libexempi3
+/usr/share/doc/libexempi3/TODO
+/usr/share/doc/libexempi3/copyright
+/usr/share/doc/libexempi3/changelog.gz
+/usr/share/doc/libexempi3/changelog.Debian.gz
+/usr/share/doc/libexempi3/NEWS.gz
+/usr/share/doc/libexempi3/README
+/usr/share/doc/libexempi3/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libexempi.so.3.2.3
+/usr/lib/arm-linux-gnueabihf/libexempi.so.3

@@ -1,0 +1,17 @@
+68cf2e8b1c4a1cb6a7d6734ecaaba2a4  usr/bin/pacat
+a0e7444c55e01a1feb270e722b8571d6  usr/bin/pacmd
+d6cbf6e29f56b53b860283cc502d48ca  usr/bin/pactl
+684a09ce040ddcf77213f2171568cdde  usr/bin/padsp
+d8db06adc2139aa5ad2a48bdbaa44d4b  usr/bin/pasuspender
+c2be40f0b5efd39d9fe509c621876112  usr/bin/pax11publish
+5ecec95df7745f71e65b54a1f66ea678  usr/share/doc/pulseaudio-utils/NEWS.gz
+a17c7bf6f9b9321f4cf389682cf0d058  usr/share/doc/pulseaudio-utils/README
+3ecdbdde1f84cad4ec6f8284f17f106a  usr/share/doc/pulseaudio-utils/changelog.Debian.gz
+1a70969fd317243739e917dee33e532a  usr/share/doc/pulseaudio-utils/copyright
+55ae65fcbd98e2d144f74020878a12c1  usr/share/man/man1/pacat.1.gz
+548be77d1d1d05ef7a1e4270bff8ba9b  usr/share/man/man1/pacmd.1.gz
+48693f5f6d2a0ff2feb353441cf204c8  usr/share/man/man1/pactl.1.gz
+88c34f3c907754e03ae7cb815c46ca7c  usr/share/man/man1/padsp.1.gz
+cb36b2e058a44a9626a3ca348ef7902c  usr/share/man/man1/paplay.1.gz
+8daa032e13d1dc5c715959bd52710633  usr/share/man/man1/pasuspender.1.gz
+9bd8174a18a4e60e0fa561177a6ecc1a  usr/share/man/man1/pax11publish.1.gz

@@ -1,0 +1,15 @@
+ 
+======================================================
+===   Citrix Auth Manager - Logging starting
+======================================================
+
+
+
+Time: 1 Jan 2010 02:44:47 UTC
+LocalTime: 1 Jan 2010 02:44:47
+Type: Information
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: Citrix Authentication Manager starting.

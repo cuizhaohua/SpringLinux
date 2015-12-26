@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dokumentumok nyomtatása</title>
+
+    <note style="important">
+      <p>A <app>geditből</app> való nyomtatáshoz csatlakoztatnia kell nyomtatóját, és be kell azt állítania. Ha ezt még nem tette meg, nézze meg a <link href="help:gnome-help/printing">GNOME nyomtatással kapcsolatos dokumentációját</link>.</p>
+    </note>
+  
+  <p>A <app>gedit</app> lehetővé teszi a fájlba és a papírra való nyomtatást is.</p>
+
+  <section id="print-preview">
+    <title>Nyomtatási kép</title>
+
+  <p>A dokumentum nyomtatása előtt az <gui>Előnézet</gui> segítségével megjelenítheti, hogy hogyan fog a kinyomtatott dokumentum kinézni. Az előnézet megjelenítéséhez:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Fájl</gui> <gui style="menuitem">Nyomtatási kép</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>Ctrl</key> <key>P</key></keyseq> billentyűkombinációt.</p>
+    </item>
+  </steps>
+
+  <p>A dokumentum előnézete ugyanazon a lapon nyílik meg, mint a fájl. Ezt az előnézetet az előnézet lap tetején lévő eszköztár navigációs gombjai és eszközei segítségével tallózhatja. A bezárásához és a dokumentumhoz való visszatéréshez nyomja meg a <gui style="button">Nyomtatási kép bezárása</gui> gombot.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Nyomtatás papírra</title>
+
+  <p>Dokumentumait helyi vagy távoli nyomtatón is kinyomtathatja. Egy fájl nyomtatásához:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Fájl</gui> <gui style="menuitem">Nyomtatás</gui> <gui style="tab">Általános</gui></guiseq> lapot.</p>
+    </item>
+    <item>
+      <p>Válassza ki a kívánt nyomtatót az elérhető nyomtatók listából.</p>
+    </item>
+    <item>
+      <p>A fájl nyomtatási képét megjelenítheti a <gui style="button">Nyomtatási kép</gui> megnyomásával, és ha elégedett a beállításokkal, akkor a <gui style="button">Nyomtatás</gui> gombbal megkezdheti a nyomtatást.</p>
+    </item>
+  </steps>
+
+  <p>Ezen kívül az <gui style="tab">Oldalbeállítás</gui> lapon: kiválaszthatja az <gui style="group">Elrendezés</gui> és <gui style="group">Papír</gui> beállításait. Mivel ezek a beállítások minden <app>GNOME</app> programban megegyezők, nézze meg az <link href="help:gnome-help/printing#paper">Elrendezés- és papírbeállítások</link> súgóját.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Több példány és adott tartományok nyomtatása</title>
+
+    <p>Megadhatja a <gui style="group">Tartomány</gui> és <gui style="group">Példányszám</gui> beállításait:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Nyomtatás fájlba</title>
+
+  <p>A <app>gedittel</app> fájlba is nyomtathat. A dokumentum másik formátumú fájlba nyomtatásához:</p>
+
+  <steps>
+    <item>
+      <p>Válassza a <guiseq><gui style="menu">Fájl</gui> <gui style="menuitem">Nyomtatás</gui> <gui style="menuitem">Nyomtatás fájlba</gui></guiseq> lehetőséget.</p>
+    </item>
+    <item>
+      <p>A nyomtatás a következő fájlformátumokba engedélyezett:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>A dokumentum fájlba nyomtatásához nyomja meg a <gui style="button">Nyomtatás</gui> gombot.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

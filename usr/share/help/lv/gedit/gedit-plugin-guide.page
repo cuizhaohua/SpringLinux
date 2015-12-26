@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Konfigurēt un lietot gedit spraudņus</title>
+  <p>Ar <app>gedit</app> var paveikt vairāk, lietojot spraudņus. Daži spraudņi jau ir instalēti, bet daudzi citi ir pieejami papildus.</p>
+  
+  <note><p>Daudzas Linux distribūcijas piedāvā vairākus <app>gedit</app> spraudņus <app>gedit-plugins</app> pakotnē. Instalējiet pakotni <app>gedit-plugins</app>, lai padarītu šos spraudņus pieejamus <app>gedit</app>.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Noklusētie gedit spraudņi</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Papildu gedit spraudņi</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

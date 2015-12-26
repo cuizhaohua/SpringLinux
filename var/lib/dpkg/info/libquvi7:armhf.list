@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libquvi7
+/usr/share/doc/libquvi7/changelog.Debian.gz
+/usr/share/doc/libquvi7/changelog.gz
+/usr/share/doc/libquvi7/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libquvi.so.7.0.1
+/usr/lib/arm-linux-gnueabihf/libquvi.so.7

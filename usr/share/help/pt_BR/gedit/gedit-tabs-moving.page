@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Movendo e reordenando abas</title>
+  <p>Abas no <app>gedit</app> podem ser movidas, tornando mais fácil trabalhar com seus arquivos. Elas podem ser reordenadas dentro da mesma janela, movidas para fora do <app>gedit</app> (criando uma nova janela do <app>gedit</app>) e movidas de uma janela para outra.</p>
+
+  <section id="tabs-change-order">
+    <title>Mudando a ordem das abas da janela do gedit</title>
+
+    <p>Para mudar a ordenação das abas em uma janela:</p>
+
+    <steps>
+      <item>
+        <p>Clique na aba e segure o botão do mouse.</p>
+      </item>
+      <item>
+        <p>Mova a aba para a posição desejada entre as outras abas.</p>
+      </item>
+      <item>
+        <p>Solte o botão do mouse.</p>
+      </item>
+    </steps>
+
+    <p>A aba será colocada na posição mais próxima de onde você soltar a guia, imediatamente ao lado de outras abas abertas.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Movendo uma aba, criando uma nova janela gedit</title>
+    <p>Para criar um nova janela a partir de uma aba existente:</p>
+
+    <steps>
+      <item>
+        <p>Clique na aba e segure o botão do mouse.</p>
+      </item>
+      <item>
+        <p>Arraste a aba para fora da janela do <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Solte o botão do mouse.</p>
+      </item>
+    </steps>
+
+    <p>ou, enquanto a aba movida é aberta, escolha <guiseq><gui>Documentos</gui><gui>Mover para nova janela</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Para mover a aba para uma nova janela quando o <app>gedit</app> está maximizado, arraste a aba até a barra superior no canto superior da tela.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Movendo uma aba para outra janela do gedit</title>
+
+    <p>Se você deseja mover uma aba de uma janela para outra:</p>
+
+    <steps>
+      <item>
+        <p>Clique na aba e segure o botão do mouse.</p>
+      </item>
+      <item>
+        <p>Arraste a aba para a nova janela.</p>
+      </item>
+      <item>
+        <p>Coloque-a ao lado de outras abas na nova janela.</p>
+      </item>
+      <item>
+        <p>Solte o botão do mouse.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Talvez você ache mais fácil mover uma aba de uma janela para outra arrastando a guia para o canto de <gui>Atividades</gui> do <gui>GNOME Shell</gui>. Isto irá revelar cada um das janelas abertas do <app>gedit</app>. Você pode, então, soltar a aba no janela desejada do <app>gedit</app>.</p>
+    </note>
+
+    <p>Veja a tabela em <link xref="gedit-shortcut-keys">teclas de atalho relacionadas a abas</link> para tornar mais fácil de gerenciar suas abas.</p>
+
+  </section>
+
+</page>

@@ -1,0 +1,24 @@
+In this directory, each individual package should install its
+menu files. Although changing them in this directory to change
+the menus on your local system may work, the sysadmin (you?)
+is best advised to put the local menufiles in /etc/menu, as, 
+otherwise your changes are deleted when you upgrade the corresponding
+packages. Users may override the system-wide defaults by putting
+their menuentry files in ~/.menu.
+
+
+For the package maintainer that wants to include menu files in his
+package:
+
+The files should have the name of the package that's installing it,
+and may contain as many lines (menu entries) as is necessary.
+
+For examples, please look in /usr/share/menu/default
+
+
+Also, in your postinst you should check for the availability of
+the update-menus command, and if available, execute it (no
+parameters needed).
+
+For more info, please read /usr/share/doc/menu/html
+

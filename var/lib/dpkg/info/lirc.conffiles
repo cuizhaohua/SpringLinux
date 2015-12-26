@@ -1,0 +1,7 @@
+/etc/init.d/lirc
+/etc/lirc/hardware.conf
+/etc/lirc/lircd.conf
+/etc/lirc/lircmd.conf
+/etc/logcheck/ignore.d.paranoid/lirc
+/etc/logcheck/ignore.d.server/lirc
+/etc/logcheck/ignore.d.workstation/lirc

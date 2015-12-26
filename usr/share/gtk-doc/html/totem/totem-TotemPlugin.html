@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Totem Reference Manual: TotemPlugin</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Totem Reference Manual">
+<link rel="up" href="core-api.html" title="Core API">
+<link rel="prev" href="totem-Interface.html" title="Interface">
+<link rel="next" href="BaconVideoWidget.html" title="BaconVideoWidget">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#totem-TotemPlugin.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="core-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="totem-Interface.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="BaconVideoWidget.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="totem-TotemPlugin"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="totem-TotemPlugin.top_of_page"></a>TotemPlugin</span></h2>
+<p>TotemPlugin — base plugin class and loading/unloading functions</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="totem-TotemPlugin.stability-level"></a><h2>Stability Level</h2>
+<acronym title="Unstable interfaces are experimental or transitional. They are typically used to
+give outside developers early access to new or rapidly changing technology, or
+to provide an interim solution to a problem where a more general solution is
+anticipated. No claims are made about either source or binary compatibility from
+one minor release to the next.
+
+The Unstable interface level is a warning that these interfaces are  subject to
+change without warning and should not be used in unbundled products.
+
+Given such caveats, customer impact need not be a factor when considering
+incompatible changes to an Unstable interface in a major or minor release.
+Nonetheless, when such changes are introduced, the changes should still be
+mentioned in the release notes for the affected release.
+"><span class="acronym">Unstable</span></acronym>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="totem-TotemPlugin.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="totem-TotemPlugin.html#TOTEM-PLUGIN-REGISTER:CAPS" title="TOTEM_PLUGIN_REGISTER()">TOTEM_PLUGIN_REGISTER</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="totem-TotemPlugin.html#TOTEM-PLUGIN-REGISTER-CONFIGURABLE:CAPS" title="TOTEM_PLUGIN_REGISTER_CONFIGURABLE()">TOTEM_PLUGIN_REGISTER_CONFIGURABLE</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="totem-TotemPlugin.html#totem-plugin-find-file" title="totem_plugin_find_file ()">totem_plugin_find_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="returnvalue">GtkBuilder</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="totem-TotemPlugin.html#totem-plugin-load-interface" title="totem_plugin_load_interface ()">totem_plugin_load_interface</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">char</span> **
+</td>
+<td class="function_name">
+<a class="link" href="totem-TotemPlugin.html#totem-get-plugin-paths" title="totem_get_plugin_paths ()">totem_get_plugin_paths</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="totem-TotemPlugin.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;totem-dirs.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="totem-TotemPlugin.description"></a><h2>Description</h2>
+<p>libpeas is used as a general-purpose architecture for adding plugins to Totem, with
+derived support for different programming languages.</p>
+<p>The functions in totem-dirs.h are used to allow plugins to find and load files installed alongside the plugins, such as UI files.</p>
+</div>
+<div class="refsect1">
+<a name="totem-TotemPlugin.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="TOTEM-PLUGIN-REGISTER:CAPS"></a><h3>TOTEM_PLUGIN_REGISTER()</h3>
+<pre class="programlisting">#define             TOTEM_PLUGIN_REGISTER(TYPE_NAME, TypeName, type_name)</pre>
+<p>Registers a plugin with the Totem plugin system, including registering the type specified in the parameters and declaring its activate and
+deactivate functions.</p>
+<div class="refsect3">
+<a name="id-1.3.4.7.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>TYPE_NAME</p></td>
+<td class="parameter_description"><p>the name of the plugin type, in UPPER_CASE</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>TypeName</p></td>
+<td class="parameter_description"><p>the name of the plugin type, in CamelCase</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type_name</p></td>
+<td class="parameter_description"><p>the name of the plugin type, in lower_case</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="TOTEM-PLUGIN-REGISTER-CONFIGURABLE:CAPS"></a><h3>TOTEM_PLUGIN_REGISTER_CONFIGURABLE()</h3>
+<pre class="programlisting">#define             TOTEM_PLUGIN_REGISTER_CONFIGURABLE(TYPE_NAME, TypeName, type_name)</pre>
+<p>Registers a configurable plugin with the Totem plugin system, including registering the type specified in the parameters and declaring its activate
+and deactivate and widget creation functions.</p>
+<div class="refsect3">
+<a name="id-1.3.4.7.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>TYPE_NAME</p></td>
+<td class="parameter_description"><p>the name of the plugin type, in UPPER_CASE</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>TypeName</p></td>
+<td class="parameter_description"><p>the name of the plugin type, in CamelCase</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type_name</p></td>
+<td class="parameter_description"><p>the name of the plugin type, in lower_case</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="totem-plugin-find-file"></a><h3>totem_plugin_find_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> *
+totem_plugin_find_file (<em class="parameter"><code>const <span class="type">char</span> *plugin_name</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *file</code></em>);</pre>
+<p>Finds the specified <em class="parameter"><code>file</code></em>
+ by looking in the plugin paths
+listed by <a class="link" href="totem-TotemPlugin.html#totem-get-plugin-paths" title="totem_get_plugin_paths ()"><code class="function">totem_get_plugin_paths()</code></a> and then in the system
+Totem data directory.</p>
+<p>This should be used by plugins to find plugin-specific
+resource files.</p>
+<div class="refsect3">
+<a name="id-1.3.4.7.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_name</p></td>
+<td class="parameter_description"><p>the plugin name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>the file to find</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.7.4.7"></a><h4>Returns</h4>
+<p> a newly-allocated absolute path for the file, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="totem-plugin-load-interface"></a><h3>totem_plugin_load_interface ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="returnvalue">GtkBuilder</span></a> *
+totem_plugin_load_interface (<em class="parameter"><code>const <span class="type">char</span> *plugin_name</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> fatal</code></em>,
+                             <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a> *parent</code></em>,
+                             <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Loads an interface file (GtkBuilder UI file) for a plugin, given its filename and
+assuming it's installed in the plugin's data directory.</p>
+<p>This should be used instead of attempting to load interfaces manually in plugins.</p>
+<div class="refsect3">
+<a name="id-1.3.4.7.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_name</p></td>
+<td class="parameter_description"><p>the plugin name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>interface filename</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fatal</p></td>
+<td class="parameter_description"><p><a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if it's a fatal error if the interface can't be loaded</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p> the interface's parent <a href="http://developer.gnome.org/gtk2/GtkWindow.html"><span class="type">GtkWindow</span></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p> a pointer to be passed to each signal handler in the interface when they're called. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.4.7.5.7"></a><h4>Returns</h4>
+<p> the <a href="http://developer.gnome.org/gtk2/GtkBuilder.html"><span class="type">GtkBuilder</span></a> instance for the interface. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="totem-get-plugin-paths"></a><h3>totem_get_plugin_paths ()</h3>
+<pre class="programlisting"><span class="returnvalue">char</span> **
+totem_get_plugin_paths (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Return a <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of paths to directories which can contain Totem plugins. This respects the GSettings disable_user_plugins setting.</p>
+<div class="refsect3">
+<a name="id-1.3.4.7.6.5"></a><h4>Returns</h4>
+<p> a <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>-terminated array of paths to plugin directories. </p>
+<p><span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span></p>
+</div>
+<p class="since">Since 2.90.0</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="totem-TotemPlugin.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

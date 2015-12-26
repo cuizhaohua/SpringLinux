@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Déplacement et réorganisation des onglets</title>
+  <p>Les onglets dans <app>gedit</app> peuvent être déplacés pour faciliter votre travail avec les fichiers. Les onglets peuvent être réorganisés dans la même fenêtre, déplacés à l'extérieur de <app>gedit</app> (en créant une nouvelle fenêtre <app>gedit</app>) et déplacés d'une fenêtre à une autre.</p>
+
+  <section id="tabs-change-order">
+    <title>Modification de l'ordre des onglets dans la fenêtre gedit</title>
+
+    <p>Pour changer l'ordre des onglets dans une fenêtre :</p>
+
+    <steps>
+      <item>
+        <p>cliquez sur l'onglet sans relâcher le bouton de la souris,</p>
+      </item>
+      <item>
+        <p>déplacez l'onglet à la position souhaitée parmi les autres onglets,</p>
+      </item>
+      <item>
+        <p>relâchez le bouton de la souris.</p>
+      </item>
+    </steps>
+
+    <p>L'onglet se positionne à la position la plus proche de l'endroit où vous l'avez relâché, immédiatement à côté d'un des autres onglets présents.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Déplacement d'un onglet en créant une nouvelle fenêtre</title>
+    <p>Pour créer une nouvelle fenêtre à partir d'un onglet existant :</p>
+
+    <steps>
+      <item>
+        <p>cliquez sur l'onglet sans relâcher le bouton de la souris,</p>
+      </item>
+      <item>
+        <p>faites glisser l'onglet en dehors de la fenêtre <app>gedit</app>,</p>
+      </item>
+      <item>
+        <p>relâchez le bouton de la souris.</p>
+      </item>
+    </steps>
+
+    <p>ou, si l'onglet à déplacer est ouvert, vous pouvez aussi sélectionner <guiseq><gui>Documents</gui><gui>Déplacer dans une nouvelle fenêtre</gui></guiseq>.</p>
+
+    <note style="tip">
+      <p>Pour déplacer un onglet dans une nouvelle fenêtre lorsque <app>gedit</app> est maximisé, déplacez l'onglet sur la barre supérieure en haut de l'écran.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Déplacement d'un onglet dans une autre fenêtre gedit</title>
+
+    <p>Si vous voulez déplacer un onglet d'une fenêtre vers une autre :</p>
+
+    <steps>
+      <item>
+        <p>cliquez sur l'onglet sans relâcher le bouton de la souris,</p>
+      </item>
+      <item>
+        <p>faites glisser l'onglet vers la nouvelle fenêtre,</p>
+      </item>
+      <item>
+        <p>positionnez-le à côté d'un des autres onglets de la nouvelle fenêtre.</p>
+      </item>
+      <item>
+        <p>relâchez le bouton de la souris.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Il est cependant plus aisé de déplacer un onglet d'une fenêtre à une autre en le glissant dans le coin <gui>Activités</gui> de <gui>GNOME Shell</gui>, car cette action affiche toutes les fenêtres actives de <app>gedit</app>. Il suffit ensuite de relâcher l'onglet dans la fenêtre choisie de <app>gedit</app>.</p>
+    </note>
+
+    <p>Consultez le tableau des <link xref="gedit-shortcut-keys">Raccourcis clavier</link> pour des raccourcis facilitant la gestion de vos onglets.</p>
+
+  </section>
+
+</page>

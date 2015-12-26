@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<legalnotice id="legalnotice">
+	<para>
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Acest manual este parte dintr-o colecție de manuale GNOME distribuit sub GFDL. Dacă doriți să distribuiți acest manual separat de colecție, puteți face acest lucru adăugând manualului o copie a licenței, conform descrierii din secțiunea 6 a licenței.</para>
+
+	<para>Multe dintre numele utilizate de companii pentru a distinge produsele și serviciile lor sunt revendicate ca mărci comerciale. Atunci când aceste nume apar în orice documentație GNOME, și membrii proiectului de documentare GNOME sunt informați despre aceste mărci comerciale, ele sunt scrise cu majuscule sau cu majusculă inițială.</para>
+
+	<para>ACEST DOCUMENT ȘI VERSIUNILE MODIFICATE ALE ACESTUI DOCUMENT SUNT FURNIZATE ÎN CONFORMITATE CU TERMENII GNU FREE DOCUMENTATION LICENSE CU ÎNȚELEGEREA CĂ: <orderedlist>
+		<listitem>
+		  <para>DOCUMENTUL ESTE OFERIT "CA ATARE", FĂRĂ NICIUN FEL DE GARANȚIE, FIE EXPLICITĂ SAU IMPLICITĂ, INCLUSIVĂ, FĂRĂ LIMITARE, GARANȚIILE CĂ DOCUMENTUL SAU O VERSIUNE MODIFICATĂ A LUI ESTE FĂRĂ DEFECTE VANDABILE, PENTRU UN ANUMIT SCOP ANUME SAU NEÎNCĂLCABILĂ. RISCUL PENTRU CALITATEA, PRECIZIA, ȘI PERFORMANȚA DOCUMENTULUI SAU A VERSIUNILOR MODIFICATE VA FI AL DUMNEAVOASTRĂ. AR TREBUI CA ORICE DOCUMENT SAU VERSIUNE MODIFICATĂ A LUI SĂ SE DOVEDEASCĂ A FI INCOMPLET ÎN ORICE PRIVINȚĂ, TU (NU AUTORUL INIȚIAL SAU ORICE ALT CONTRIBUITOR) ASUMĂ-ȚI COSTUL ORICĂRUI SERVICIU NECESAR, REPARAȚII SAU CORECTĂRI. ACEASTĂ RESPONSABILITATE DE GARANȚIE CONSTITUIE O PARTE ESENȚIALĂ A ACESTEI LICENȚE. NU ESTE AUTORIZAT NICI UN FOLOS AL ORICĂRUI ALT DOCUMENT SAU VERSIUNE MODIFICATĂ A LUI ÎN ACEST SCOP CU EXCEPȚIA RESPECTĂRII ACESTOR TERMENI; ȘI</para>
+		</listitem>
+		<listitem>
+		  <para>ÎN NICIO CIRCUMSTANȚĂ ȘI ÎN NICI O TEORIE LEGALĂ, DACĂ ÎN PREJUDICIUL (INCLUSIV NEGLIJENȚA), CONTRACTUL, SAU ÎN CAZ CONTRAR, ESTE AUTORUL, SCRIITORUL INIȚIAL, ORICE CONTRIBUITOR SAU ORICE DISTRIBUITOR AL DOCUMENTULUI SAU VERSIUNEA MODIFICATĂ A ACESTUIA SAU ORICE FURNIZOR AL UNEIA DINTRE PĂRȚI, RĂSPUNZĂTOR PENTRU ORICE PERSOANĂ PENTRU ORICE DIRECTE, INDIRECTE, SPECIALE, INCIDENTALE SAU PAGUBE SUBSECVENȚE DE ORICE CARACTER INCLUSIV, FĂRĂ LIMITARE, DESPĂGUBIRI PENTRU PIERDERILE DE BUNĂVOINȚĂ, ÎNTRERUPERE A ACTIVITĂȚII, DEFECȚIUNE DE CALCULATOR, SAU ORICE ALTCEVA ȘI TOATE CELELALTE DAUNE SAU PIERDERI REZULTATE DIN SAU LEGATE DE UTILIZAREA DOCUMENTULUI ȘI VERSIUNILOR MODIFICATE ALE ACESTUIA, CHIAR DACĂ ACESTE PĂRȚI AU FOST INFORMATE DE POSIBILITATEA UNOR ASTFEL DE DAUNE.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>

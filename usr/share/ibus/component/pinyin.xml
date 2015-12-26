@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- filename: pinyin.xml -->
+<component>
+	<name>org.freedesktop.IBus.Pinyin</name>
+	<description>Pinyin Component</description>
+	<exec>/usr/lib/ibus/ibus-engine-pinyin --ibus</exec>
+	<version>1.5.0</version>
+	<author>Peng Huang &lt;shawn.p.huang@gmail.com&gt;</author>
+	<license>GPL</license>
+	<homepage>http://code.google.com/p/ibus</homepage>
+	<textdomain>ibus-pinyin</textdomain>
+
+	<engines>
+		<engine>
+			<name>pinyin</name>
+			<language>zh</language>
+			<license>GPL</license>
+			<author>Peng Huang &lt;shawn.p.huang@gmail.com&gt;
+BYVoid &lt;byvoid1@gmail.com&gt;
+Peng Wu &lt;alexepico@gmail.com&gt;</author>
+			<icon>/usr/share/ibus-pinyin/icons/ibus-pinyin.svg</icon>
+			<layout>default</layout>
+			<longname>Pinyin</longname>
+			<description>Pinyin input method</description>
+			<rank>99</rank>
+			<symbol>&#x62FC;</symbol>
+			<setup>/usr/lib/ibus/ibus-setup-pinyin pinyin</setup>
+		</engine>
+		<engine>
+			<name>bopomofo</name>
+			<language>zh</language>
+			<license>GPL</license>
+			<author>BYVoid &lt;byvoid1@gmail.com&gt;
+Peng Huang &lt;shawn.p.huang@gmail.com&gt;
+Peng Wu &lt;alexepico@gmail.com&gt;</author>
+			<icon>/usr/share/ibus-pinyin/icons/ibus-bopomofo.svg</icon>
+			<layout>default</layout>
+			<longname>Bopomofo</longname>
+			<description>Bopomofo input method</description>
+			<rank>98</rank>
+			<symbol>&#x3109;</symbol>
+			<setup>/usr/lib/ibus/ibus-setup-pinyin bopomofo</setup>
+		</engine>
+	</engines>
+
+</component>

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/mime
+/usr/lib/mime/packages
+/usr/lib/mime/packages/mplayer2
+/usr/bin
+/usr/bin/mplayer
+/usr/share
+/usr/share/doc
+/usr/share/doc/mplayer2
+/usr/share/doc/mplayer2/changelog.Debian.armhf.gz
+/usr/share/doc/mplayer2/changelog.Debian.gz
+/usr/share/doc/mplayer2/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/mplayer.1.gz

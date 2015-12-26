@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Alterando a fonte padrão</title>
+
+  <p>O <app>gedit</app> usará a fonte largura fixa do sistema por padrão, mas você pode mudar a fonte padrão do <app>gedit</app> para que se adéque às suas preferências.</p>
+  
+  <steps>
+    <title>Para alterar a fonte padrão no <app>gedit</app>:</title>
+      <item><p>Selecione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferências</gui> <gui>Fontes &amp; cores</gui></guiseq>.</p></item>
+      <item><p>Desmarque a caixa próxima à frase "Usar a fonte de largura fixa padrão".</p></item>
+      <item><p>Clique no nome da fonte atual. <app>gedit</app> vai abrir uma janela de seleção de fontes, permitindo que você veja as fontes disponíveis e escolha aquela que você preferir.</p></item>
+      <item><p>Escolha sua fonte desejada e use a <gui>barra deslizante</gui> para definir o tamanho da fonte padrão.</p></item>
+      <item><p>Clique <gui>Selecionar</gui> e então clique <gui>Fechar</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

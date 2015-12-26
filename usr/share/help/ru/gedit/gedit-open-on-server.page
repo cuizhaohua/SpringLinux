@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Открытие файла, который находится на сервере</title>
+
+  <p>Для открытия файла, который находится на сервере, из <app>gedit</app>, нужно знать некоторую техническую информацию о сервере. Например, IP-адрес или URL сервера, а также, возможно, тип сервера (HTTP, FTP и т.д.).</p>
+
+  <p>Некоторые типы серверов накладывают ограничения на то, что можно делать с файлами, которые находятся на сервере. Например, можно открыть файл с сервера, но, возможно, изменения файла потребуется сохранять на компьютере локально.</p>
+
+  <p>Чтобы открыть файл, который находится на сервере, используя <app>gedit</app>, выполните следующие действия:</p>
+
+    <steps>
+      <item><p>Выберите <guiseq><gui>Файл</gui><gui>Открыть</gui></guiseq>, появится диалоговое окно <gui>Открыть файлы</gui>.</p></item>
+      <item><p>Нажмите на значок <gui>Карандаш</gui> в верхней части диалогового окна <gui>Открыть файлы</gui>.</p></item>
+      <item><p>Введите IP-адрес или URL соответствующего сервера.</p></item>
+      <item><p>Найдите и выберите файл, который нужно открыть.</p></item>
+      <item><p>Используя выпадающий список кодировки символов, выберите подходящую кодировку.</p></item>
+      <item><p>Нажмите кнопку <gui>Открыть</gui>.</p></item>
+    </steps>
+
+  <p>Допустимые типы URI могут содержать http:, ftp:, file:, и все протоколы, поддерживаемые <app>gvfs</app>.</p>
+
+  <note>
+    <p>Файлы с некоторых типов URI могут быть открыты только для чтения, поэтому изменения в таких файлах должны быть сохранены в другое место. Например, HTTP позволяет открывать файлы лишь для чтения. Файлы открытые с FTP тоже могут оказаться недоступными для записи, поскольку не все FTP-серверы умеют правильно работать с записью таких файлов.</p>
+  </note>
+
+</page>

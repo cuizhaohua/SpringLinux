@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mover e reordenar lapelas</title>
+  <p>As lapelas en <app>gedit</app> poden moverse, facendo máis sinxelo traballar cos seus ficheiros. As lapelas poden reordenarse na mesma xanela, movelas fora de <app>gedit</app> (creando unha nova xanela de <app>gedit</app>) e movelas dunha xanela a outra.</p>
+
+  <section id="tabs-change-order">
+    <title>Cambie a orde das lapelas na xanela de gedit</title>
+
+    <p>Para cambiar a orde das lapelas nunha xanela:</p>
+
+    <steps>
+      <item>
+        <p>Prema e manteña o botón do rato na lapela.</p>
+      </item>
+      <item>
+        <p>Move the tab to the desired position among the other tab.</p>
+      </item>
+      <item>
+        <p>Solte o botón do rato.</p>
+      </item>
+    </steps>
+
+    <p>A lapela posicionarase no lugar máis cercano a onde solte a lapela, xunto a outras lapelas abertas.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Mover unha lapela, creando unha xanela nova de gedit</title>
+    <p>Para crear unha nova xanela desde a lapela existente:</p>
+
+    <steps>
+      <item>
+        <p>Prema e manteña o botón do rato na lapela.</p>
+      </item>
+      <item>
+        <p>Arrastre a lapela fóra da xanela de <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Solte o botón do rato.</p>
+      </item>
+    </steps>
+
+    <p>ou, mentres a lapela se move seleccione <guiseq><gui>Documentos</gui><gui>Mover a unha nova xanela</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Para mover unha lapela a unha xanela nova cando <app>gedit</app> está maximizado, arrastre a lapela á barra superior da pantalla.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Mover unha lapela a outra xanela de gedit</title>
+
+    <p>Se quere mover unha lapela dunha xanela a outra:</p>
+
+    <steps>
+      <item>
+        <p>Prema e manteña o botón do rato na lapela.</p>
+      </item>
+      <item>
+        <p>Drag the tab to the new window.</p>
+      </item>
+      <item>
+        <p>Posiciónea xunto a outras lapelas, na nova xanela..</p>
+      </item>
+      <item>
+        <p>Solte o botón do rato.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>You may find it easier to move a tab from one window to another by
+      dragging the tab to the <gui>Activities</gui> hot-corner of
+      <gui>GNOME Shell</gui>. This will reveal each of the open
+      <app>gedit</app> windows. You can then release the tab on the
+      desired <app>gedit</app> window.</p>
+    </note>
+
+    <p>See the <link xref="gedit-shortcut-keys">tab-related shortcut
+    keys</link> table to make it easier to manage your tabs.</p>
+
+  </section>
+
+</page>

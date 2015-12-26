@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+
+# This example was contributed by Marc Haber <zugschlus@debian.org>
+# This script can be put into ~/.menu to create a menu of hosts to ssh to.
+
+# Build icons hash to determine which icon file to use for a given menu
+# entry. This basically allows a shorthand notation for the icon, avoiding
+# the need to give the full path to the icon in the data list.
+my %icons;
+$icons{"Debian"}="/usr/share/pixmaps/other/Debian-Swirl.png";
+$icons{"FreeBSD"}="/usr/share/pixmaps/other/Daemon.png";
+$icons{"Redhat"}="/usr/share/pixmaps/other/RedHat.png";
+
+# Loop over the data lines given at the end of this file.
+while( <DATA> ) {
+  # Split data line into data fields
+  my ($host, $hints, $icon) = split;
+  # print menu line using the information read from the data field.
+  print "?package(local.ssh):command=\"ssh $host\" ";
+  print "title=\"$host\" hints=\"$hints\" section=\"local/ssh\" ";
+  print "needs=\"text\" icon=\"$icons{$icon}\"\n";
+}
+
+# This is the list of hosts. Each line corresponds to a single host
+# and menu entry in the format "host hint icon". The host is taken
+# as the target to ssh to and the window title. The hint is given verbatim
+# to the hint option, and the icon is an index into the icons hash to
+# determine which icon file to use for the menu entry.
+__DATA__
+torres Zg2 Debian
+q Zg2 Debian
+7o9 Zg2 Debian
+lefler Zg2 Debian
+darren Zg2 Debian
+vash Zg2 Debian
+gonzo Shell Redhat
+raven Shell FreeBSD
+crystalball Shell Debian
+iris Burda Debian
+ella Burda Debian
+francis Burda Debian
+bianca Burda Debian
+banshee Burda Debian

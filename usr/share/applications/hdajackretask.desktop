@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=HDAJackRetask
+GenericName=
+Comment=Retask jacks on Intel HDA sound cards
+Icon=alsa-tools
+Exec=hdajackretask
+Terminal=false
+Categories=AudioVideo;Audio;

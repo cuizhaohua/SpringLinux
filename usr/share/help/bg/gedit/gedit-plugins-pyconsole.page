@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-pyconsole" xml:lang="bg">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Джим Къмпбел</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Интерактивна конзола на Питон в долния панел</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Конзола на Питон</title>
+
+  <p>You can add a Python console to the bottom pane, allowing you to test
+  Python scripts without leaving <app>gedit</app>. To enable the Python
+  console, select <guiseq><gui style="menu">gedit</gui>
+  <gui style="menuitem">Preferences</gui><gui>Plugins</gui>
+  <gui>Python Console</gui></guiseq>.</p>
+
+  <p>Щом конзолата на Питон е включена, можете да я отворите като натиснете <guiseq><gui>Изглед</gui><gui>Долен панел</gui></guiseq> или просто като натиснете  <keyseq><key>Shift</key><key>F9</key></keyseq>.</p>
+
+  <note style="tip"><p>Ако също сте включили приставката <gui>Вграден терминал</gui>, <gui>Вграден терминал</gui> ще се покаже в отделен раздел в долния панел.</p></note>
+</page>

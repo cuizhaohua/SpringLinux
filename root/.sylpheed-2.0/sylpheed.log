@@ -1,0 +1,2 @@
+[13:29:11] ** Sylpheed-WARNING: Couldn't execute curl
+[13:29:11] ** Sylpheed-WARNING: g_spawn_async_with_pipes: Failed to execute child process "curl" (No such file or directory)

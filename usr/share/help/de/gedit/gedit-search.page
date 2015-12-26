@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nach Text suchen</title>
+  
+    <p>Das Suchwerkzeug hilft Ihnen beim Auffinden bestimmter Textteile in Ihrer Datei.</p>
+
+    <steps>
+      <title>Text finden</title>
+      <item>
+        <p>Öffnen Sie das <gui>Suchfenster</gui>, indem Sie <guiseq><gui style="menu">Suchen</gui> <gui style="menuitem">Suchen</gui></guiseq> wählen oder <keyseq><key>Strg</key><key>F</key></keyseq> drücken. Dadurch wird die Eingabemarke an den Beginn der Eingabezeile im <gui>Suchfenster</gui> verschoben.</p>
+      </item>
+      <item>
+        <p>Geben Sie den zu suchenden Text im <gui>Suchfenster</gui> ein.</p>
+      </item>
+      <item>
+        <p>Bei der Eingabe beginnt <app>gedit</app>, die Textteile hervorzuheben, die mit dem eingegebenen Text übereinstimmen.</p>
+      </item>
+    </steps>
+    
+    <p>Um die Suchergebnisse zu durchsuchen, gehen Sie wie folgt vor:</p>
+    <list>
+      <item>
+        <p>Klicken Sie auf die nach <gui style="button">unten</gui> oder <gui style="button">oben</gui> weisenden Pfeile neben dem <gui>Suchfenster</gui> oder</p>
+      </item>
+      <item>
+        <p>Drücken Sie die <key>↑</key>-Taste oder <key>↓</key>-Taste auf Ihrer Tastatur</p>
+      </item>
+      <item>
+        <p>Drücken Sie <keyseq><key>Strg</key><key>G</key></keyseq> oder <keyseq><key>Strg</key><key>Umschalttaste</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Drücken Sie die <key>Strg</key>-Taste und verwenden Sie die <key>Bildlauf</key>-Funktion der Maus oder des Touchpads, um sich nach oben oder unten durch den Text zu bewegen.</p>
+      </item>
+    </list>
+
+  <p>Um das <gui>Suchen-Fenster</gui> zu schließen, können Sie entweder die <key>Esc</key>- oder <key>Eingabe</key>-Taste drücken. Wenn Sie <key>Esc</key> drücken, wird der Cursor wieder an der Stelle platziert, wo er vor dem Beginn Ihrer Suche war. Nach dem Drücken von <key>Eingabe</key> wird der Cursor an der aktuellen Position der Suchergebnisse platziert.</p>
+
+  <list>
+    <title>Suchtipps</title>
+    <item>
+      <p>Wenn Sie einen Textabschnitt mit Ihrer Maus markieren und anschließend <keyseq><key>Strg</key><key>F</key></keyseq> drücken, erscheint der hervorgehobene Text im Suchfenster.</p>
+    </item>
+    <item>
+      <p>Erweiterte Suchoptionen erreichen Sie, indem Sie auf das <gui style="button">Lupensymbol</gui> im Suchfenster klicken oder einen Klick mit der rechten Maustaste auf einer beliebigen Stelle des Suchfensters ausführen. Sie haben die Wahl zwischen einer oder mehrerer der folgenden Suchoptionen:</p>
+      <list>
+        <item>
+          <p>Wählen Sie <gui>Groß-/Kleinschreibung berücksichtigen</gui>, um die bei der Suche die Groß- und Kleinschreibung zu berücksichtigen.</p>
+        </item>
+        <item>
+          <p>Wählen Sie <gui>Nur vollständige Wörter berücksichtigen</gui>, um nach vollständigen Wörtern zu suchen.</p>
+        </item>
+        <item>
+          <p>Wählen Sie <gui>Suche beim Erreichen des Endes am Anfang fortsetzen</gui>, um die Suche beim Erreichen des Endes am Anfang fortzusetzen.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Der von Ihnen gesuchte Text wird weiterhin in <app>gedit</app> hervorgehoben, auch nachdem die Suche abgeschlossen ist. Um die Hervorhebung zu entfernen, klicken Sie auf <guiseq><gui>Suchen</gui><gui>Hervorhebung zurücksetzen</gui></guiseq> oder drücken Sie <keyseq><key>Strg</key><key>Umschalttaste</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

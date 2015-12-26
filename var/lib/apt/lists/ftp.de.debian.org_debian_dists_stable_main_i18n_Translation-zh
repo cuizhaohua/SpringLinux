@@ -1,0 +1,41 @@
+Package: base-passwd
+Description-md5: aad0cc52ee72b2469af5552851e49f03
+Description-zh: Debian 基本系统的主密码及用户组文件
+ 本软件包包含了典型的用户数据文件(/etc/passwd 和 /etc/group)，其中有 Debian 系统分配的用户及用户组 ID。 提供了用于同步系统数据库和这些主文件的 update-passwd 工具。
+
+Package: debconf
+Description-md5: 85b82bf406dfc9a635114f44ab7fb66d
+Description-zh: Debian 配置管理系统
+ Debconf 是用于 Debian 软件包的配置管理系统，软件包在安装时会通过 Debconf 提出请求。
+
+Package: debconf-i18n
+Description-md5: 3f303f9083a6c63ddcfd70b4738cca54
+Description-zh: 完整的 Debconf 国际化语言支持
+ 本软件包包含了完整的 Debconf 国际化语言支持，包括所有现有的语言翻译，支持已翻译的 debconf 模板，以及支持多字节字符的显示。
+
+Package: grep
+Description-md5: f9188c5583d41955f3b3fe60b9d445f1
+Description-zh: GNU 文件搜索工具(grep, egrep 和 fgrep)
+ 'grep' 是一个用于搜索文本文件的程序，它可以通过命令行调用，也可以从脚本中调用。也许你并不直接使用它，但是你系统中的其它程序很可能会用到它。
+ .
+ GNU 家族的 grep 系列工具可能是"西方最快的 grep"。GNU grep 基于一种快速 lazy-state 判决器(大约是 Unix egrep 的两倍快)，并且融合了用于固定字符串搜索的 Boyer-Moore-Gosper 方法，在使用到完整的正则表达式判决器之前就预先排除完全不可能的文字，而无需逐字搜索。因此速度一般比 Unix grep 或者 egrep 要快许多倍。(但是包含了反向索引的正则表达式要处理得慢一些。)
+
+Package: login
+Description-md5: a9c42fe48288d1e8b7d3d34463d0f485
+Description-zh: 系统登录工具
+ 本软件包提供了为您登录及使用系统的工具。 login 程序激活您使用的 shell 然后允许命令行控制。 newgrp 程序用于更改您的有效组 ID(在工作组环境下时非常有用)。 su 程序用于临时更改用户 ID(允许您以其它用户的身份运行程序)。
+
+Package: passwd
+Description-md5: 5bbd70e421ed3367a8299e53bd7afed4
+Description-zh: 更改及管理密码和用户组信息
+ 本软件包包含了 passwd， chsh， chfn 及其它一些用于管理密码和用户组信息的程序。
+ .
+ 支持隐密码管理，请参见/usr/share/doc/passwd/README.Debian
+
+Package: sysvinit-core
+Description-md5: 33be387f0c3f6dc398cbbfb9bd97351d
+Description-zh: 类系统V启动程序
+ 本软件包包含了用于启动 Debian 系统以及进行基本进程管理的程序。
+ .
+ 本软件包中最重要的文件是 /sbin/init。它是启动时第一个运行的程序，并且以进程号1继续运行直到关机。所有其它的进程都是它启动的。
+

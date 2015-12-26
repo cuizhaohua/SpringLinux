@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εκτύπωση εγγράφων</title>
+
+    <note style="important">
+      <p>Η εκτύπωση με το <app>gedit</app> απαιτεί να έχετε συνδεδεμένο και ρυθμισμένο τον εκτυπωτή σας. Εάν το έχετε κάνει, παρακαλώ συμβουλευτείτε την <link href="help:gnome-help/printing">βοήθεια εκτύπωσης του GNOME</link>.</p>
+    </note>
+  
+  <p>Το <app>gedit</app> επιτρέπει την εκτύπωση και σε αρχείο και σε χαρτί.</p>
+
+  <section id="print-preview">
+    <title>Προεπισκόπηση εκτύπωσης</title>
+
+  <p>Πριν εκτυπώσετε το έγγραφο σας, μπορείτε επίσης να προεπισκοπήσετε πώς θα φαίνεται το εκτυπωμένο έγγραφο με την χρήση του <gui>Προεπισκόπηση εκτύπωσης</gui>. Για προεπισκόπηση του εγγράφου:</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε <guiseq><gui style="menu">Αρχείο</gui> <gui style="menuitem">Προεπισκόπηση εκτύπωσης</gui></guiseq>. Εναλλακτικά, μπορείτε να πατήστε <keyseq><key>Shift</key><key>Ctrl</key> <key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Μια προεπισκόπηση του εγγράφου σας θα ανοίξει στην ίδια καρτέλα όπως το αρχείο. Μπορείτε να περιηγηθείτε σε αυτήν την προεπισκόπηση με την βοήθεια των πλήκτρων περιήγησης και των εργαλείων στην εργαλειοθήκη στην κορυφή της καρτέλας προεπισκόπησης εγγράφου. Για να κλείσετε και να επιστρέψετε στο έγγραφο πατήστε <gui style="button">Κλείσιμο προεπισκόπησης</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Εκτύπωση σε χαρτί</title>
+
+  <p>Μπορείτε να εκτυπώσετε τα έγγραφά σας σε χαρτί χρησιμοποιώντας έναν τοπικό ή έναν απομακρυσμένο εκτυπωτή. Για να τυπώσετε ένα αρχείο:</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε <guiseq><gui style="menu">Αρχείο</gui> <gui style="menuitem">Εκτύπωση</gui> <gui style="tab">Γενικά</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε τον επιθυμητό εκτυπωτή από τη λίστα των διαθέσιμων εκτυπωτών.</p>
+    </item>
+    <item>
+      <p>Μπορείτε να προεπισκοπήσετε το αρχείο χρησιμοποιώντας <gui style="button">Προεπισκόπηση εκτύπωσης</gui> και μόλις είσαστε ικανοποιημένος με τις ρυθμίσεις, πατήστε <gui style="button">Εκτύπωση</gui> για να στείλετε το αρχείο στον εκτυπωτή.</p>
+    </item>
+  </steps>
+
+  <p>Επιπλέον, από την καρτέλα <gui style="tab">Διαμόρφωση σελίδας</gui>: μπορείτε να επιλέξετε τις επιλογές <gui style="group">Διάταξη</gui> και <gui style="group">Χαρτί</gui>. Καθώς αυτές οι ρυθμίσεις είναι διαθέσιμες κατά τη διάρκεια των προγραμμάτων του <app>GNOME</app>, συμβουλευτείτε τη βοήθεια <link href="help:gnome-help/printing#paper">Επιλογές διάταξης και χαρτιού</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Εκτύπωση πολλαπλών αντιγράφων και μεταξύ συγκεκριμένων περιοχών</title>
+
+    <p>Μπορείτε να ορίσετε επιλογές <gui style="group">Περιοχής</gui> και <gui style="group">Αντιγράφων</gui> για να σας βοηθήσουν:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Εκτύπωση σε χαρτί</title>
+
+  <p>Μπορείτε επίσης να χρησιμοποιήσετε το <app>gedit</app> για εκτύπωση σε αρχείο. Για εκτύπωση του εγγράφου σας σε διαφορετική μορφή:</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε <guiseq><gui style="menu">Αρχείο</gui> <gui style="menuitem">Εκτύπωση</gui> <gui style="menuitem">Εκτύπωση σε αρχείο</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Η εκτύπωση επιτρέπεται για τους παρακάτω τύπους εγγράφων, από τους οποίους μπορείτε να επιλέξετε:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Για εκτύπωση εγγράφου σε αρχείο, πατήστε <gui style="button">Εκτύπωση</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

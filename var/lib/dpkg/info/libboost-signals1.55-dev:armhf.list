@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libboost-signals1.55-dev
+/usr/share/doc/libboost-signals1.55-dev/changelog.Debian.gz
+/usr/share/doc/libboost-signals1.55-dev/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libboost_signals.a
+/usr/lib/arm-linux-gnueabihf/libboost_signals.so

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Make sure the GAC file exists
+if [ ! -x /usr/share/cli-common/runtimes.d/$1 ]; then
+    echo ! Cannot install framework $1
+    exit 1
+fi
+
+for file in /usr/share/cli-common/packages.d/*.installcliframework
+do
+  if [ -f $file ]; then
+      /usr/share/cli-common/framework-package-install \
+	  $(basename $file .installcliframework) \
+	  $1
+  fi
+done

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-view-open-files-in-sidepane" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+      <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email its:translate="no">dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vendo uma lista de arquivos no painel lateral</title>
+
+  <p>Manter o controle de um grande número de arquivos usando abas pode ser difícil. Uma maneira de gerenciar um grande número de arquivos é vê-las em um painel lateral. Painéis laterais permitem que você visualize arquivos mais de uma vez do que é possível usando apenas abas.</p>
+
+  <p>Para ver uma lista dos arquivos abertos em um painel lateral, clique em <guiseq><gui style="menu">Ver</gui><gui style="menuitem">Painel lateral</gui></guiseq>. Um painel lateral aparecerá ao lado esquerdo do ambiente de trabalho com uma lista do arquivos abertos atualmente. Clicando em um arquivo no painel lateral irá exibir aquele arquivo no espaço de trabalho.</p>
+
+  <p>O painel lateral também contém uma visualização do <app>Navegador de arquivos</app>. Se o painel lateral exibir um diretório de arquivos ao invés dos arquivos abertos atualmente, clique no <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"><span its:translate="yes">ícone de documentos</span></media> no canto inferior do painel para alternar para a visualização de <app>Documentos</app>.</p>
+
+  <note>
+    <p>O painel lateral apenas exibe os arquivos que estão abertos na janela atual. Quando várias janelas estão abertas, apenas os arquivos da janela atual serão exibidos no painel lateral.</p>
+  </note>
+</page>

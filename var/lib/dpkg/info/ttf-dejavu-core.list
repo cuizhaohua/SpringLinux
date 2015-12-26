@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/ttf-dejavu-core
+/usr/share/doc/ttf-dejavu-core/changelog.Debian.gz
+/usr/share/doc/ttf-dejavu-core/copyright
+/usr/share/doc/ttf-dejavu-core/changelog.gz
+/usr/share/fonts
+/usr/share/fonts/truetype
+/usr/share/fonts/truetype/ttf-dejavu
+/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans-Bold.ttf
+/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf
+/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif.ttf
+/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf
+/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf
+/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono-Bold.ttf

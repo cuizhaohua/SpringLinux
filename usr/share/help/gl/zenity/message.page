@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="message" xml:lang="gl">
+  <info>
+    <link type="guide" xref="index#dialogs" group="message"/>
+    <desc><link xref="error">Erro</link>, <link xref="info">Información</link>, <link xref="question">Pregunta</link>, <link xref="warning">Advertencia</link></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de mensaxe</title>
+  <p>Para cada tipo, use a opción <cmd>--text</cmd> para especificar o texto que se mostra no diálogo.</p>
+  <links type="topic" style="2column"/>
+</page>

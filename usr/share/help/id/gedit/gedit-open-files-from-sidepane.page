@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tilik dan buka berkas dari panel sisi</title>
+  <p>Cara paling umum untuk bertukar antar berkas dalam <app>gedit</app> adalah dengan memakai tab pada puncak jendela <app>gedit</app>. Dalam beberapa kasus, khususnya ketika Anda bekerja dengan sejumlah besar berkas yang terbuka, Anda mungkin merasakan lebih mudah memakai <app>panel sisi</app>.</p> 
+
+  <p>Untuk mengaktifkan <app>panel sisi</app>, pilih <guiseq><gui>Tilikan</gui> <gui>Panel Sisi</gui></guiseq>, atau cukup tekan tombol <key>F9</key>.</p>
+
+  <note style="note">
+    <p>Anda dapat membuka atau menutup <gui>panel sisi</gui> dengan menekan <key>F9</key> kapanpun.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Membuka berkas dari panel sisi</title>
+    <p>Untuk membuka berkas dari <app>panel sisi</app>, pertama buka <app>panel sisi</app> dengan memilih <guiseq><gui>Tilikan</gui> <gui>Panel Sisi</gui></guiseq>, lalu klik ikon <gui>file-browser</gui> di dasar panel.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Ini akan mengaktifkan mode <em>peramban-berkas</em> dari <app>panel sisi</app>. Anda kemudian dapat memakai tombol navigasi di puncak panel untuk mencari dan membuka berkas yang Anda inginkan.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Menggunakan panel sisi untuk bertukar antara berkas yang terbuka</title>
+    <p>Sekali Anda memiliki beberapa berkas yang terbuka, Anda dapat memakai panel sisi untuk berpindah antara berkas yang terbuka. Untuk mengaktifkan bagian peramban berkas dari <app>panel sisi</app>, klik pada ikon <gui>berkas</gui> di dasar <gui>panel sisi</gui>.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Mengklik pada sebarang nama berkas pada <gui>panel sisi</gui> akan membuka berkas tersebut untuk penyuntingan.</p>
+  </section>
+ 
+ </page>

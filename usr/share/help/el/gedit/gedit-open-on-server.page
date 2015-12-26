@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Άνοιγμα αρχείου που βρίσκεται σε διακομιστή</title>
+
+  <p>Πριν ανοίξετε ένα αρχείο σε έναν διακομιστή μέσα από το <app>gedit</app>, πρέπει να ξέρετε μερικές τεχνικές πληροφορίες για τον διακομιστή. Για παράδειγμα, Θα πρέπει να ξέρετε την διεύθυνση IP ή το URL του διακομιστή, και μπορεί να χρειαστεί να γνωρίζετε τι είδους διακομιστής είναι (π.χ., HTTP, FTP, κτλ.).</p>
+
+  <p>Επιπλέον, κάποιοι τύποι διακομιστών επιβάλλουν περιορισμούς στο τι μπορείτε να κάνετε με τα αρχεία που είναι αποθηκευμένα στον διακομιστή. Για παράδειγμα, μπορεί να έχετε την δυνατότητα να ανοίξετε ένα αρχείο από έναν διακομιστή, αλλά μπορεί να χρειαστεί να αποθηκεύσετε οτιδήποτε αλλαγές στο αρχείο τοπικά, στον δικό σας υπολογιστή.</p>
+
+  <p>Με αυτές τις προειδοποιήσεις κατά νου, εκτελέστε τα ακόλουθα βήματα για να ανοίξετε ένα αρχείο από έναν διακομιστή χρησιμοποιώντας το <app>gedit</app>:</p>
+
+    <steps>
+      <item><p>Επιλέξτε <guiseq><gui>Αρχείο</gui><gui>Άνοιγμα τοποθεσίας</gui></guiseq> για να εμφανίσετε το διάλογο <gui>Άνοιγμα αρχείων</gui>.</p></item>
+      <item><p>Επιλέξτε το εικονίδιο <gui>Μολύβι</gui> κοντά στο πάνω μέρος του διαλόγου <gui>Άνοιγμα Αρχείων</gui>.</p></item>
+      <item><p>Πληκτρολογήστε τη διεύθυνση IP ή το URL του κατάλληλου διακομιστή.</p></item>
+      <item><p>Πληκτρολογήστε την τοποθεσία του αρχείου που θέλετε να ανοίξετε.</p></item>
+      <item><p>Χρησιμοποιήστε την αναδιπλούμενη λίστα κωδικοποίησης χαρακτήρων για να διαλέξετε την κατάλληλη κωδικοποίηση.</p></item>
+      <item><p>Πατήστε <gui>Άνοιγμα</gui>.</p></item>
+    </steps>
+
+  <p>Έγκυροι τύποι URI περιλαμβάνουν τα http:, ftp:, file:, και όλες τις μεθόδους που υποστηρίζονται από το <app>gvfs</app>.</p>
+
+  <note>
+    <p>Αρχεία από μερικούς τύπους URI ανοίγονται μόνο για ανάγνωση, και ό,τι αλλαγές κάνετε θα πρέπει να αποθηκευτούν σε μια διαφορετική τοποθεσία. Για παράδειγμα, το HTTP επιτρέπει μόνο την ανάγνωση αρχείων. Αρχεία που ανοίγονται από FTP είναι μόνο για ανάγνωση γιατί δεν υποστηρίζουν όλοι οι εξυπηρετητές FTP την αποθήκευση απομακρυσμένων αρχείων.</p>
+  </note>
+
+</page>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Iskanje besedila</title>
+  
+    <p>Orodje iskanje vam lahko pomaga pri iskanju določenih zaporedij besedila v vaši datoteki.</p>
+
+    <steps>
+      <title>Iskanje besedila</title>
+      <item>
+        <p>Open the <gui>search window</gui> by clicking 
+        <guiseq><gui style="menu">Search</gui>
+        <gui style="menuitem">Find</gui> </guiseq> or
+        pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move
+        your cursor to the start of the <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Vnesite besedilo, ki ga želite zamenjati, v <gui>iskalno okno</gui>.</p>
+      </item>
+      <item>
+        <p>Medtem ko tipkate bo <app>gedit</app> začel poudarjati dele besedila, ki se ujemajo z vnesenim.</p>
+      </item>
+    </steps>
+    
+    <p>Za drsanje med rezultati naredite nekaj od naslednjega:</p>
+    <list>
+      <item>
+        <p>Click on the <gui style="button">up</gui> or
+        <gui style="button">down</gui> facing arrows next to the
+        <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Press the <key>up arrow</key> or <key>down arrow</key> keys on your
+        keyboard.</p>
+      </item>
+      <item>
+        <p>Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or
+        <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Pritisnite <key>Ctrl</key> in uporabite zmožnost <key>drsenja</key> svoje miške ali drsne ploščice za premik navzgor ali navzdol po besedilu.</p>
+      </item>
+    </list>
+
+  <p>Za zaprtje <gui>okna iskanja</gui>, pritisnite <key>Esc</key> ali <key>Enter</key>. Pritisk na <key>Esc</key> bo vrnil kazalko kjer je bila, preden ste začeli iskanje. Pritisk na <key>Enter</key> bo kazalko vrnil na trenutno mesto med rezultati iskanja.</p>
+
+  <list>
+    <title>Iskalni namigi</title>
+    <item>
+      <p>Če z miško poudarite del besedila in pritisnete <keyseq><key>Ctrl</key><key>F</key></keyseq>, se bo poudarjeno besedilo pojavilo v iskalnem oknu.</p>
+    </item>
+    <item>
+      <p>For more search options, click on the
+      <gui style="button">Magnifying Glass</gui> icon in the search window,
+      or right-click anywhere in the search window. You can select one or more
+      of the following search options:</p>
+      <list>
+        <item>
+          <p>Select <gui>Match Case</gui> to make the search case sensitive.</p>
+        </item>
+        <item>
+          <p>Select <gui>Match Entire Word Only</gui> to search only complete
+          words.</p>
+        </item>
+        <item>
+          <p>Select <gui>Wrap Around</gui> to search text from top to bottom
+          and cycle back again.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Besedilo, ki ste ga iskali, bo ostalo poudarjeno, tudi ko ste dokončali svoje iskanje. Za odstranitev poudarjanja kliknite <guiseq><gui>Išči</gui><gui>Počisti poudarjanje</gui></guiseq> ali pritisnite <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Den Vollbildmodus verwenden</title>
+
+  <p>Beim Arbeiten mit großen Dokumenten ist es möglicherweise sinnvoll, im Vollbildmodus zu arbeiten. Im Vollbildmodus werden die <gui>Menüleiste</gui>, die <gui>Reiterleiste</gui> und die <gui>Werkzeugleiste</gui> nicht angezeigt. Auf diese Weise ist mehr Text sichtbar und Sie können sich besser auf Ihre Aufgaben konzentrieren.</p>
+
+  <section id="turn-on-full-screen">
+    <title>In den Vollbildmodus schalten</title>
+    <p>Um den Vollbildmodus einzuschalten, drücken Sie <key>F11</key>. Das Menü, der Titel und die Reiterleisten von <app>gedit</app> werden verborgen und nur der Text der aktuell geöffneten Datei bleibt sichtbar.</p>
+    <p>Falls Sie eine Aktion ausführen wollen, während sich <app>gedit</app> im Vollbildmodus befindet, bewegen Sie den Mauszeiger an den oberen Rand des Bildschirms. Daraufhin erscheint die Menüleiste von <app>gedit</app>, in welcher Sie die gewünschte Aktion auswählen können.</p>
+
+    <note>
+      <p>Um im Vollbildmodus zwischen geöffneten Reitern umzuschalten, drücken Sie entweder <keyseq><key>Strg</key><key>Alt</key><key>Bild auf</key></keyseq> oder <keyseq><key>Strg</key><key>Alt</key><key>Bild ab</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Den Vollbildmodus ausschalten</title>
+    <p>Um den Vollbildmodus zu verlassen und zum normalen <app>gedit</app>-Fenster zurückzukehren, drücken Sie <key>F11</key>.</p>
+    <p>Sie können auch den Mauszeiger an den oberen Rand des Bildschirms bewegen, um die <gui>Menüleiste</gui> anzuzeigen. Klicken Sie dann auf <gui>Vollbild verlassen</gui>.</p>
+  </section>
+
+</page>

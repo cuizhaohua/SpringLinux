@@ -1,0 +1,45 @@
+ 
+======================================================
+===   Citrix Auth Manager - Logging starting
+======================================================
+
+
+
+Time: 1 Jan 2010 01:39:51 UTC
+LocalTime: 1 Jan 2010 01:39:51
+Type: Information
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: Citrix Authentication Manager starting.
+
+Time: 1 Jan 2010 01:40:14 UTC
+LocalTime: 1 Jan 2010 01:40:14
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem accessing the HTTP server.
+Exception type: HTTP exception
+Detail: CheckedSendAndReceive(); error code: 35; url: 'https-url-withheld'
+Context:
+	During CServerProbe::Execute while probing https-url-withheld
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.
+
+Time: 1 Jan 2010 01:40:25 UTC
+LocalTime: 1 Jan 2010 01:40:25
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem accessing the HTTP server.
+Exception type: HTTP exception
+Detail: Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https-url-withheld'
+Context:
+	CAuthHttpRequestImpl::SendAndReceive
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.

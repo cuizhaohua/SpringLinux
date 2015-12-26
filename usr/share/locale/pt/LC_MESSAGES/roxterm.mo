@@ -1,0 +1,1 @@
+../../pt_BR/LC_MESSAGES/roxterm.mo

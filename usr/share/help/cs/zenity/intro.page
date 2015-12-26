@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="intro" xml:lang="cs">
+<info>
+  <link type="guide" xref="index"/>
+  <desc>Aplikace <app>Zenity</app> umožňuje vytvářet různé typy jednoduchých dialogových oken.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+<title>Úvod</title>
+<p>Aplikace <app>Zenity</app> vám umožňuje vytvářet následující typy jednoduchých dialogových oken:</p>
+
+<list>
+    <item><p>Kalendář</p></item>
+    <item><p>Výběr souboru</p></item>
+    <item><p>Formuláře</p></item>
+    <item><p>Seznam</p></item>
+    <item><p>Oznamovací ikona</p></item>
+    <item><p>Zpráva</p>
+        <list>
+            <item><p>Chybové hlášení</p></item>
+    	<item><p>Informační hlášení</p></item>
+    	<item><p>Dotaz</p></item>
+    	<item><p>Varovné hlášení</p></item>
+        </list>
+    </item>
+    <item><p>Vstup pro heslo</p></item>
+    <item><p>Ukazatel průběhu</p></item>
+    <item><p>Textový vstup</p></item>
+    <item><p>Textová informace</p></item>
+    <item><p>Stupnice</p></item>
+    <item><p>Výběr barvy</p></item>
+</list>
+</page>

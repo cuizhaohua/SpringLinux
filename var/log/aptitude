@@ -1,0 +1,120 @@
+Aptitude 0.6.8.2: log report
+Sat, Aug 16 2014 10:20:57 +0200
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 1 packages, and remove 0 packages.
+47.1 kB of disk space will be used
+===============================================================================
+[HOLD, DEPENDENCIES] libgssapi-krb5-2:armhf
+[HOLD, DEPENDENCIES] libk5crypto3:armhf
+[HOLD, DEPENDENCIES] libkrb5-3:armhf
+[HOLD, DEPENDENCIES] libkrb5support0:armhf
+[HOLD, DEPENDENCIES] openssl:armhf
+[HOLD] libssl1.0.0:armhf
+[HOLD] multiarch-support:armhf
+[INSTALL] rfkill:armhf
+===============================================================================
+
+Log complete.
+Aptitude 0.6.8.2: log report
+日, 12月 13 2015 02:29:10 +0100
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 0 packages, and remove 3 packages.
+761 kB of disk space will be freed
+===============================================================================
+[REMOVE, NOT USED] python-dbus:armhf
+[REMOVE, NOT USED] python-dbus-dev:armhf
+[REMOVE, NOT USED] python-wicd:armhf
+[HOLD, DEPENDENCIES] libasound2:armhf
+[HOLD, DEPENDENCIES] libblas3:armhf
+[HOLD, DEPENDENCIES] libcurl3-gnutls:armhf
+[HOLD, DEPENDENCIES] libjasper1:armhf
+[HOLD, DEPENDENCIES] libsasl2-2:armhf
+[HOLD, DEPENDENCIES] openssh-client:armhf
+[HOLD] alsa-utils:armhf
+[HOLD] aptitude:armhf
+[HOLD] aptitude-common:armhf
+[HOLD] base-passwd:armhf
+[HOLD] iproute:armhf
+[HOLD] iptables:armhf
+[HOLD] iputils-ping:armhf
+[HOLD] isc-dhcp-client:armhf
+[HOLD] isc-dhcp-common:armhf
+[HOLD] openssh-server:armhf
+[HOLD] parted:armhf
+[HOLD] procps:armhf
+[HOLD] rsyslog:armhf
+[HOLD] sysvinit:armhf
+[HOLD] wget:armhf
+===============================================================================
+
+Log complete.
+Aptitude 0.6.8.2: log report
+日, 12月 13 2015 02:30:01 +0100
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 0 packages, and remove 0 packages.
+===============================================================================
+[HOLD, DEPENDENCIES] libasound2:armhf
+[HOLD, DEPENDENCIES] libblas3:armhf
+[HOLD, DEPENDENCIES] libcurl3-gnutls:armhf
+[HOLD, DEPENDENCIES] libjasper1:armhf
+[HOLD, DEPENDENCIES] libsasl2-2:armhf
+[HOLD, DEPENDENCIES] openssh-client:armhf
+[HOLD] alsa-utils:armhf
+[HOLD] aptitude:armhf
+[HOLD] aptitude-common:armhf
+[HOLD] base-passwd:armhf
+[HOLD] iproute:armhf
+[HOLD] iptables:armhf
+[HOLD] iputils-ping:armhf
+[HOLD] isc-dhcp-client:armhf
+[HOLD] isc-dhcp-common:armhf
+[HOLD] openssh-server:armhf
+[HOLD] parted:armhf
+[HOLD] procps:armhf
+[HOLD] rsyslog:armhf
+[HOLD] sysvinit:armhf
+[HOLD] wget:armhf
+===============================================================================
+
+Log complete.
+Aptitude 0.6.8.2: log report
+日, 12月 13 2015 02:31:11 +0100
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 0 packages, and remove 0 packages.
+===============================================================================
+[HOLD, DEPENDENCIES] libasound2:armhf
+[HOLD, DEPENDENCIES] libblas3:armhf
+[HOLD, DEPENDENCIES] libcurl3-gnutls:armhf
+[HOLD, DEPENDENCIES] libjasper1:armhf
+[HOLD, DEPENDENCIES] libsasl2-2:armhf
+[HOLD, DEPENDENCIES] openssh-client:armhf
+[HOLD] alsa-utils:armhf
+[HOLD] aptitude:armhf
+[HOLD] aptitude-common:armhf
+[HOLD] base-passwd:armhf
+[HOLD] iproute:armhf
+[HOLD] iptables:armhf
+[HOLD] iputils-ping:armhf
+[HOLD] isc-dhcp-client:armhf
+[HOLD] isc-dhcp-common:armhf
+[HOLD] openssh-server:armhf
+[HOLD] parted:armhf
+[HOLD] procps:armhf
+[HOLD] rsyslog:armhf
+[HOLD] sysvinit:armhf
+[HOLD] wget:armhf
+===============================================================================
+
+Log complete.

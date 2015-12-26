@@ -1,0 +1,48 @@
+#!/usr/bin/install-menu
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+
+function findicon($filename)= 
+       ifelsefile($filename, $filename, 
+        iffile("/usr/X11R6/include/X11/pixmaps/" $filename, 
+                   "/usr/X11R6/include/X11/pixmaps/" $filename));
+
+function AppEntry($var)= 
+       "[Desktop Entry]\n" 
+        "Name=" title() "\n" 
+        "Comment=" ifelse($longtitle,$longtitle,$title) "\n" 
+       "Exec=" $command "\n" 
+        $var  
+        ifnempty($icon,"Icon=" findicon($icon) "\n") 
+        "Type=Application\n" ;
+
+function SubmenuEntry()= 
+       "[Desktop Entry]\n" 
+       "Name=" $title "\n" 
+       "Icon=gnome-folder.png\n" 
+       "Type=Directory\n";
+
+supported;
+  x11=  AppEntry("Terminal=false\n");
+  text= AppEntry("Terminal=true\n");
+endsupported;
+
+genmenu=parent($section) "/" $title ifeqelse($needs, "", "/.directory", ".desktop") "";
+startmenu="";
+endmenu="";
+
+rootsection="";
+
+rootprefix="/var/lib/gnome/Debian/";
+userprefix=".gnome/Debian";
+
+treewalk="M";
+#submenutitle="SUBMENUTITLE section=[" $section "] title=[" $title "]";
+submenutitle=SubmenuEntry();
+
+prerun="rm -rf " prefix() "/*";
+
+preoutput="";

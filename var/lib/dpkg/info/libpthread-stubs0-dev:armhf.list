@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpthread-stubs0-dev
+/usr/share/doc/libpthread-stubs0-dev/README
+/usr/share/doc/libpthread-stubs0-dev/changelog.Debian.gz
+/usr/share/doc/libpthread-stubs0-dev/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/pkgconfig
+/usr/lib/arm-linux-gnueabihf/pkgconfig/pthread-stubs.pc

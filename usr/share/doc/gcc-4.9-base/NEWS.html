@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!DOCTYPE html
+            PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+     <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+  
+   <head>
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rev="made" href="mailto:gcc@gcc.gnu.org" />
+    <link rel="shortcut icon" href="http://gcc.gnu.org/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="http://gcc.gnu.org/gcc.css" />
+  
+ <title>
+GCC 4.9 Release Series &mdash; Changes, New Features, and Fixes
+- GNU Project - Free Software Foundation (FSF)</title>
+   </head>
+ 
+
+<!-- GCC maintainers, please do not hesitate to update/contribute entries
+     concerning those part of GCC you maintain!  2002-03-23, Gerald.
+-->
+
+<body>
+
+
+
+<h1>GCC 4.9 Release Series<br />Changes, New Features, and Fixes</h1>
+
+
+<h2>Caveats</h2>
+
+  <ul>
+    <li><p>The mudflap run time checker has been removed.  The mudflap
+    options remain, but do nothing.</p></li>
+
+    <li><p>Support for a number of older systems and recently
+    unmaintained or untested target ports of GCC has been declared
+    obsolete in GCC 4.9.  Unless there is activity to revive them, the
+    next release of GCC will have their sources permanently
+    <strong>removed</strong>.</p>
+
+    <p>The following ports for individual systems on
+    particular architectures have been obsoleted:</p>
+
+    <ul>
+	  <li>Solaris 9 (*-*-solaris2.9).  Details can be found in the
+	  <a href="http://gcc.gnu.org/ml/gcc-patches/2013-05/msg00728.html">
+	      announcement</a>.</li>
+    </ul>
+    </li>
+  </ul>
+
+  <p>
+    More information on porting to GCC 4.9 from previous versions
+    of GCC can be found in
+    the <a href="http://gcc.gnu.org/gcc-4.9/porting_to.html">porting
+    guide</a> for this release.
+  </p>
+
+
+<h2>General Optimizer Improvements</h2>
+
+  <ul>
+    <li>AddressSanitizer, a fast memory error detector, is now available on ARM.
+    </li>
+    <li>UndefinedBehaviorSanitizer (ubsan), a fast undefined behavior detector,
+        has been added and can be enabled via <code>-fsanitize=undefined</code>.
+	Various computations will be instrumented to detect undefined behavior
+	at runtime.  UndefinedBehaviorSanitizer is currently available for the C
+	and C++ languages.
+    </li>
+    <li>Link-time optimization (LTO) improvements:
+    <ul>
+      <li>Type merging was rewritten. The new implementation is significantly faster
+      and uses less memory.</li>
+      <li>Better partitioning algorithm resulting in less streaming during
+	  link time.</li>
+      <li>Early removal of virtual methods reduces the size of object files and
+	  improves link-time memory usage and compile time.</li>
+      <li>Function bodies are now loaded on-demand and released early improving
+	  overall memory usage at link time.</li>
+      <li>C++ hidden keyed methods can now be optimized out.</li>
+      <li>When using a linker plugin, compiling with the <code>-flto</code>
+          option now generates slim objects files (<code>.o</code>) which only
+          contain intermediate language representation for LTO. Use
+          <code>-ffat-lto-objects</code> to create files which contain
+          additionally the object code.  To generate static libraries suitable
+          for LTO processing, use <code>gcc-ar</code> and
+         <code>gcc-ranlib</code>; to list symbols from a slim object file use
+         <code>gcc-nm</code>. (Requires that <code>ar</code>,
+         <code>ranlib</code> and <code>nm</code> have been compiled with
+         plugin support.)</li>
+    </ul>
+    Memory usage building Firefox with debug enabled was reduced from 15GB to
+    3.5GB; link time from 1700 seconds to 350 seconds.
+    </li>
+    <li>Inter-procedural optimization improvements:
+    <ul>
+      <li>New type inheritance analysis module improving devirtualization.
+	  Devirtualization now takes into account anonymous name-spaces and the
+	  C++11 <code>final</code> keyword.</li>
+      <li>New speculative devirtualization pass (controlled by
+	  <code>-fdevirtualize-speculatively</code>.</li>
+      <li>Calls that were speculatively made direct are turned back to indirect
+	  where direct call is not cheaper.</li>
+      <li>Local aliases are introduced for symbols that are known to be
+	  semantically equivalent across shared libraries improving dynamic
+	  linking times.</li>
+    </ul></li>
+    <li>Feedback directed optimization improvements:
+    <ul>
+      <li>Profiling of programs using C++ inline functions is now more reliable.</li>
+      <li>New time profiling determines typical order in which functions are
+	  executed.</li>
+      <li>A new function reordering pass (controlled by
+	  <code>-freorder-functions</code>) significantly reduces
+	  startup time of large applications.  Until binutils support is
+ 	  completed, it is effective only with link-time optimization.</li>
+      <li>Feedback driven indirect call removal and devirtualization now handle
+	  cross-module calls when link-time optimization is enabled.</li>
+    </ul></li>
+  </ul>
+
+<h2 id="languages">New Languages and Language specific improvements</h2>
+
+  <ul>
+    <li>Version 4.0 of the <a href="http://openmp.org/wp/openmp-specifications/"
+	>OpenMP specification</a> is now supported for the C and C++ compilers.
+	The new <code>-fopenmp-simd</code> option can be used to enable OpenMP's
+	SIMD directives, while ignoring other OpenMP directives. The new <a
+	href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gcc/Optimize-Options.html#index-fsimd-cost-model-908"
+	><code>-fsimd-cost-model=</code></a> option permits to tune the
+	vectorization cost model for loops annotated with OpenMP and Cilk
+	Plus <code>simd</code> directives; <code>-Wopenmp-simd</code> warns when
+	the current costmodel overrides simd directives set by the user.</li>
+    <li>The <code>-Wdate-time</code> option has been added for the C, C++ and
+	Fortran compilers, which warns when the <code>__DATE__</code>,
+	<code>__TIME__</code> or <code>__TIMESTAMP__</code> macros are used.
+	Those macros might prevent bit-wise-identical reproducible
+	compilations.</li>
+  </ul>
+
+<h3 id="ada">Ada</h3>
+
+  <ul>
+    <li>GNAT switched to Ada 2012 instead of Ada 2005 by default.</li>
+  </ul>
+
+<h3 id="c-family">C family</h3>
+
+  <ul>
+    <li>Support for colorizing diagnostics emitted by GCC has been added.
+    The <code><a
+    href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gcc/Language-Independent-Options.html#index-fdiagnostics-color-252"
+    >-fdiagnostics-color=auto</a></code> will enable it when
+    outputting to terminals, <code>-fdiagnostics-color=always</code>
+    unconditionally.  The <code>GCC_COLORS</code> environment variable
+    can be used to customize the colors or disable coloring.
+    If <code>GCC_COLORS</code> variable is present in the environment,
+    the default is <code>-fdiagnostics-color=auto</code>, otherwise
+    <code>-fdiagnostics-color=never</code>.<br/>
+    Sample diagnostics output:<br/>
+    <pre>
+    $ g++ -fdiagnostics-color=always -S -Wall test.C
+    <b>test.C:</b> In function &lsquo;<b>int foo()</b>&rsquo;:
+    <b>test.C:1:14:</b> <b style='color:magenta'>warning:</b> no return statement in function returning non-void [-Wreturn-type]
+     int foo () { }
+                  <b style='color:lime'>^</b>
+    <b>test.C:2:46:</b> <b style='color:red'>error:</b> template instantiation depth exceeds maximum of 900 (use -ftemplate-depth= to increase the maximum) instantiating &lsquo;<b>struct X&lt;100&gt;</b>&rsquo;
+     template &lt;int N&gt; struct X { static const int value = X&lt;N-1&gt;::value; }; template struct X&lt;1000&gt;;
+                                                  <b style='color:lime'>^</b>
+    <b>test.C:2:46:</b>   recursively required from &lsquo;<b>const int X&lt;999&gt;::value</b>&rsquo;
+    <b>test.C:2:46:</b>   required from &lsquo;<b>const int X&lt;1000&gt;::value</b>&rsquo;
+    <b>test.C:2:88:</b>   required from here
+
+    <b>test.C:2:46:</b> <b style='color:red'>error:</b> incomplete type &lsquo;<b>X&lt;100&gt;</b>&rsquo; used in nested name specifier
+    </pre></li>
+
+    <li>With the new <a
+    href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gcc/Loop-Specific-Pragmas.html"
+    ><code>#pragma GCC ivdep</code></a>, the user can assert that there are no
+    loop-carried dependencies which would prevent concurrent execution of
+    consecutive iterations using SIMD (single instruction multiple data)
+    instructions.</li>
+
+    <li>Support for <a href="https://www.cilkplus.org/">Cilk Plus</a> has been
+    added and can be enabled with the <code>-fcilkplus</code> option.  Cilk Plus
+    is an extension to the C and C++ languages to support data and task
+    parallelism.  The present implementation follows ABI version 1.2; all
+    features but <code>_Cilk_for</code> have been implemented.</li>
+  </ul>           
+
+<h3>C</h3>
+<ul>
+  <li>ISO C11 atomics (the <code>_Atomic</code> type specifier and
+  qualifier and the <code>&lt;stdatomic.h&gt;</code> header) are now
+  supported.</li>
+
+  <li>ISO C11 generic selections (<code>_Generic</code> keyword) are
+  now supported.</li>
+
+  <li>ISO C11 thread-local storage (<code>_Thread_local</code>,
+  similar to GNU C <code>__thread</code>) is now supported.</li>
+
+  <li>ISO C11 support is now at a similar level of completeness to ISO
+  C99 support: substantially complete modulo bugs, extended
+  identifiers (supported except for corner cases
+  when <code>-fextended-identifiers</code> is used), floating-point
+  issues (mainly but not entirely relating to optional C99 features
+  from Annexes F and G) and the optional Annexes K (Bounds-checking
+  interfaces) and L (Analyzability).</li>
+
+  <li>A new C extension <code>__auto_type</code> provides a subset of
+  the functionality of C++11 <code>auto</code> in GNU C.</li>
+</ul>
+
+<h3 id="cxx">C++</h3>
+<ul>
+  <li>
+    The G++ implementation of <a href="../projects/cxx1y.html">C++1y</a> return type deduction for normal
+    functions has been updated to conform to
+    <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3638.html">N3638</a>, 
+    the proposal accepted into the working paper.  Most notably, it adds <tt>decltype(auto)</tt> for
+    getting <tt>decltype</tt> semantics rather than the template argument deduction semantics of plain <tt>auto</tt>:
+<blockquote><pre>
+int&amp; f();
+         auto  i1 = f(); // int
+decltype(auto) i2 = f(); // int&amp;
+</pre></blockquote>
+  </li>
+  <li>
+    G++ supports <a href="../projects/cxx1y.html">C++1y</a> lambda capture initializers:
+<blockquote><pre>
+[x = 42]{ ... };
+</pre></blockquote>
+Actually, they have been accepted since GCC 4.5, but now the compiler doesn't
+warn about them with <tt>-std=c++1y</tt>, and supports parenthesized and
+brace-enclosed initializers as well.
+  </li>
+  <li>
+    G++ supports <a href="../projects/cxx1y.html">C++1y</a> variable length
+    arrays.  G++ has supported GNU/C99-style VLAs for a long time, but now
+    additionally supports initializers and lambda capture by reference.  In
+    C++1y mode G++ will complain about VLA uses that are not permitted by
+    the draft standard, such as forming a pointer to VLA type or
+    applying <tt>sizeof</tt> to a VLA variable.  Note that it now appears
+    that VLAs will not be part of C++14, but will be part of a separate
+    document and then perhaps C++17.
+<blockquote><pre>
+void f(int n) {
+  int a[n] = { 1, 2, 3 }; // throws std::bad_array_length if n &lt; 3
+  [&amp;a]{ for (int i : a) { cout &lt;&lt; i &lt;&lt; endl; } }();
+  &amp;a; // error, taking address of VLA
+}
+</pre></blockquote>
+  </li>
+  <li>
+    G++ supports the <a href="../projects/cxx1y.html">C++1y</a> [[deprecated]]
+    attribute modulo bugs in the underlying [[gnu::deprecated]] attribute.  Classes
+    and functions can be marked deprecated and a diagnostic message added:
+<blockquote><pre>
+class A;
+int bar(int n);
+#if __cplusplus &gt; 201103
+class [[deprecated("A is deprecated in C++14; Use B instead")]] A;
+[[deprecated("bar is unsafe; use foo() instead")]]
+int bar(int n);
+
+int foo(int n);
+class B;
+#endif
+A aa; // warning: 'A' is deprecated : A is deprecated in C++14; Use B instead
+int j = bar(2); // warning: 'int bar(int)' is deprecated : bar is unsafe; use foo() instead
+</pre></blockquote>
+  </li>
+  <li>
+    G++ supports <a href="../projects/cxx1y.html">C++1y</a> digit separators.
+    Long numeric literals can be subdivided with a single quote ' to enhance readability:
+<blockquote><pre>
+int i = 1048576;
+int j = 1'048'576;
+int k = 0x10'0000;
+int m = 0'004'000'000;
+int n = 0b0001'0000'0000'0000'0000'0000;
+
+double x = 1.602'176'565e-19;
+double y = 1.602'176'565e-1'9;
+</pre></blockquote>
+  </li>
+  <li>
+    G++ supports <a href="../projects/cxx1y.html">C++1y</a> polymorphic lambdas.
+<blockquote><pre>
+// a functional object that will increment any type
+auto incr = [](auto x) { return x++; };
+</pre></blockquote>
+  </li>
+</ul>
+
+  <h4>Runtime Library (libstdc++)</h4>
+
+  <ul>
+    <li><a href="http://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2011">
+       Improved support for C++11</a>, including:
+       <ul>
+         <li> support for <code>&lt;regex&gt;</code>;</li>
+         <li> The associative containers in <code>&lt;map&gt;</code> and
+              <code>&lt;set&gt;</code> and the unordered associative containers
+              in <code>&lt;unordered_map&gt;</code> and <code>&lt;unordered_set&gt;</code>
+              meet the allocator-aware container requirements; </li>
+       </ul>
+    </li>
+    <li><a href="http://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2014">
+       Improved experimental support for the upcoming ISO C++ standard, C++14</a>,
+       including:
+      <ul>
+        <li> fixing <code>constexpr</code> member functions without <code>const</code>; </li>
+        <li> implementation of the <code>std::exchange()</code> utility function; </li>
+        <li> addressing tuples by type; </li>
+        <li> implemention of <code>std::make_unique</code>; </li>
+        <li> implemention of <code>std::shared_lock</code>; </li>
+        <li> making <code>std::result_of</code> SFINAE-friendly; </li>
+        <li> adding <code>operator()</code> to <code>integral_constant</code>; </li>
+        <li> adding user-defined literals for standard library types
+             <code>std::basic_string</code>, <code>std::chrono::duration</code>,
+             and <code>std::complex</code>; </li>
+        <li> adding two range overloads to non-modifying sequence oprations
+             <code>std::equal</code> and <code>std::mismatch</code>; </li>
+        <li> adding IO manipulators for quoted strings; </li>
+        <li> adding <code>constexpr</code> members to <code>&lt;utility&gt;</code>,
+             <code>&lt;complex&gt;</code>, <code>&lt;chrono&gt;</code>, and some containers; </li>
+        <li> adding compile-time <code>std::integer_sequence</code>; </li>
+        <li> adding cleaner transformation traits; </li>
+        <li> making <code>&lt;functional&gt;</code>s operator functors easier to use
+             and more generic; </li>
+      </ul>
+    </li>
+    <li>An implementation of <code>std::experimental::optional</code>.</li>
+    <li>An implementation of <code>std::experimental::string_view</code>.</li>
+    <li>The non-standard function <code>std::copy_exception</code> has been deprecated
+        and will be removed in a future version. <code>std::make_exception_ptr</code>
+        should be used instead.
+    </li>
+  </ul>
+
+<h3 id="fortran">Fortran</h3>
+  <ul>
+    <li>Compatibility notice:
+    <ul>
+      <li>Module files: The version of the module files (<code>.mod</code>)
+        has been incremented; additionally, module files are now compressed.
+        Fortran <code>MODULE</code>s compiled by earlier GCC versions have
+        to be recompiled, when they are <code>USE</code>d by files compiled
+        with GCC 4.9, because GCC 4.9 is not able to read <code>.mod</code>
+        files of earlier GCC versions; attempting to do so gives an error
+        message. Note: The ABI of the produced assembler data itself has not
+        changed: object files and libraries are fully compatible to older
+        versions. (Except for the next items.)</li>
+      <li>ABI changes:
+      <ul>
+        <li>Note that the <a
+          href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gfortran/Argument-passing-conventions.html"
+          >argument passing ABI</a> has changed for scalar dummy
+  	  arguments of type <code>INTEGER</code>, <code>REAL</code>,
+	  <code>COMPLEX</code> and <code>LOGICAL</code>, which have
+	  <em>both</em> the <code>VALUE</code> and the <code>OPTIONAL</code>
+	  attribute.</li>
+        <li>Due to the support of finalization, the virtual table associated
+          with polymorphic variables has changed. Therefore, code containing
+          <code>CLASS</code> should be recompiled, including all files which
+          define derived types involved in the type definition used by
+          polymorphic variables. (Note: Due to the incremented module version,
+          trying to mix old code with new code will usually give an error
+          message.)</li>
+      </ul></li>
+      <li>GNU Fortran no longer deallocates allocatable variables or
+        allocatable components of variables declared in the main program. Since
+        Fortran 2008, the standard explicitly states that variables declared
+        in the Fortran main program automatically have the <code>SAVE</code>
+        attribute.</li>
+      <li>When opening files, the close-on-exec flag is set if the system
+        supports such a feature. This is generally considered good practice
+        these days, but if there is a need to pass file descriptors to child
+        processes the parent process must now remember to clear the
+        close-on-exec flag by calling <code>fcntl()</code>, e.g. via
+        <code>ISO_C_BINDING</code>, before executing the child process.</li>
+    </ul></li>
+    <li>The deprecated command-line option <code>-fno-whole-file</code>
+      has been removed. (<code>-fwhole-file</code> is the default since
+      GCC 4.6.) <code>-fwhole-file</code>/<code>-fno-whole-file</code>
+      continue to be accepted but do not influence the code generation.</li>
+    <li>The compiler no longer unconditionally warns
+      about <code>DO</code> loops with zero iterations.  This warning is now
+      controlled by the <code>-Wzerotrips</code> option, which is implied by
+      <code>-Wall</code>.</li>
+    <li>The new <code>NO_ARG_CHECK</code> attribute of the <a
+      href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gfortran/GNU-Fortran-Compiler-Directives.html"
+      ><code>!GCC$</code> directive</a> can be used to disable the
+      type-kind-rank (TKR) argument check for a dummy argument. The feature
+      is similar to ISO/IEC TS 29133:2012's <code>TYPE(*)</code>, except that
+      it additionally also disables the rank check. Variables with
+      <code>NO_ARG_CHECK</code> have to be dummy arguments and may only be
+      used as argument to <code>ISO_C_BINDING</code>'s <code>C_LOC</code>
+      and as actual argument to another <code>NO_ARG_CHECK</code> dummy
+      argument; also the other constraints of <code>TYPE(*)</code> apply.
+      The dummy arguments should be declared as scalar or assumed-size
+      variable of type <code>type(*)</code> (recommended) &ndash; or of
+      type <code>integer</code>, <code>real</code>, <code>complex</code>
+      or <code>logical</code>. With <code>NO_ARG_CHECK</code>, a pointer
+      to the data without further type or shape information is passed,
+      similar to C's <code>void*</code>. Note that also TS 29113's
+      <code>type(*),dimension(..)</code> accepts arguments of any type and
+      rank; contrary to <code>NO_ARG_CHECK</code> assumed-rank arguments
+      pass an array descriptor which contains the array shape and stride
+      of the argument.</li>
+    <li><a href="http://gcc.gnu.org/wiki/Fortran2003Status">Fortran 2003</a>:
+    <ul>
+      <li>Finalization is now supported. Note that finalization is currently
+        only done for a subset of the situations in which it should occur.</li>
+      <li>Experimental support for <em>scalar</em> character components with
+        deferred length (i.e. allocatable string length) in derived types has
+        been added. (Deferred-length character variables are supported since
+        GCC 4.6.)</li>
+    </ul></li>
+    <li><a href="http://gcc.gnu.org/wiki/Fortran2008Status">Fortran 2008</a>:
+    <ul>
+      <li>When <code>STOP</code> or <code>ERROR STOP</code> is used to terminate
+        the execution and any exception (but inexact) is signaling, a warning is
+        printed to <code>ERROR_UNIT</code>, indicating which exceptions are
+        signaling. The <code><a
+        href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gfortran/Debugging-Options.html"
+        >-ffpe-summary=</a></code> command-line option can be used to fine-tune
+        for which exception the warning should be shown.</li>
+      <li>Rounding on input (<code>READ</code>) is now handled on systems where
+        <code>strtod</code> honours the rounding mode. (For output, rounding is
+        supported since GCC 4.5.) Note that for input, the
+        <code>compatible</code> rounding mode is handled as <code>nearest</code>
+        (i.e., for a tie, rounding to an even last significant
+        [cf. IEC 60559:1989] &ndash; while <code>compatible</code> rounds away
+        from zero for a tie).</li>
+    </ul></li>
+  </ul>
+
+<h3 id="go">Go</h3>
+  <ul>
+    <li>GCC 4.9 provides a complete implementation of the Go 1.2.1
+      release.</li>
+  </ul>
+
+<!--
+<h3>Java (GCJ)</h3>
+-->
+
+<h2 id="targets">New Targets and Target Specific Improvements</h2>
+
+<h3 id="aarch64">AArch64</h3>
+   <ul>
+     <li> The ARMv8-A crypto and CRC instructions are now supported through
+       intrinsics. These are enabled when the architecture supports these
+       and are available through the <code>-march=armv8-a+crc</code>
+       and <code>-march=armv8-a+crypto</code> options.
+     </li>
+     <li> Initial support for ILP32 has now been added to the
+       compiler. This is now available through the command line option
+       <code>-mabi=ilp32</code>. Support for ILP32 is
+       considered experimental as the ABI specification is still beta.
+     </li>
+     <li> Coverage of more of the ISA including the SIMD extensions has
+       been added. The Advanced SIMD intrinsics have also been improved.
+     </li>
+     <li> The new local register allocator (LRA) is now on by default
+       for the AArch64 backend.
+     </li>
+     <li> The REE (Redundant extension elimination) pass has now been enabled
+       by default for the AArch64 backend.
+     </li>
+     <li> Tuning for the Cortex-A53 and Cortex-A57 has been improved.
+     </li>
+     <li> Initial big.LITTLE tuning support for the combination of Cortex-A57
+       and Cortex-A53 was added through the <code>-mcpu=cortex-a57.cortex-a53
+       </code> option.
+     </li>
+     <li> A number of structural changes have been made to both the ARM
+       and AArch64 backends to facilitate improved code-generation.
+     </li>
+   </ul>
+
+<h3 id="arm">ARM</h3>
+     <ul>
+      <li> Use of Advanced SIMD (Neon) for 64-bit scalar computations has been
+	disabled by default. This was found to generate better code in only
+	a small number of cases. It can be turned back on with the
+	<code>-mneon-for-64bits</code> option.
+      </li>
+     <li> Further support for the ARMv8-A architecture, notably implementing
+       the restriction around IT blocks in the Thumb32 instruction set has
+       been added. The <code>-mrestrict-it</code> option can be used with
+       <code>-march=armv7-a</code> or the <code>-march=armv7ve</code> options
+       to make code generation fully compatible with the deprecated instructions
+       in ARMv8-A.
+     </li>
+     <li> Support has now been added for the ARMv7ve variant of the
+       architecture. This can be used by the <code>-march=armv7ve</code> option.
+     </li>
+     <li> The ARMv8-A crypto and CRC instructions are now supported through
+       intrinsics and are available through the <code>-march=armv8-a+crc</code>
+       and <code>mfpu=crypto-neon-fp-armv8</code> options.
+     </li>
+     <li> LRA is now on by default for the ARM target. This can be turned off
+       using the <code>-mno-lra</code> option. This option is purely
+       transitionary command line option and will be removed in a future
+       release. We are interested in any bug reports regarding functional and
+       performance regressions with LRA.
+     </li>
+     <li> A new option <code>-mslow-flash-data</code> to improve performance
+       of programs fetching data on slow flash memory has now been
+       introduced for the ARMv7-M profile cores.
+     </li>
+     <li> A new option <code>-mpic-data-is-text-relative</code> for targets
+       that allows data segments to be relative to text segments has
+       been added. This is on by default for all targets except VxWorks RTP.
+     </li>
+     <li> A number of infrastructural changes have been made to both the ARM
+       and AArch64 backends to facilitate improved code-generation.
+     </li>
+     <li> GCC now supports Cortex-A12 and the Cortex-R7 through the
+       <code>-mcpu=cortex-a12</code> and <code>-mcpu=cortex-r7</code> options.
+     </li>
+     <li> GCC now has tuning for the Cortex-A57 and Cortex-A53
+       through the <code>-mcpu=cortex-a57</code> and <code>-mcpu=cortex-a53
+       </code> options.
+     </li>
+     <li> Initial big.LITTLE tuning support for the combination of Cortex-A57
+       and Cortex-A53 was added through the <code>-mcpu=cortex-a57.cortex-a53
+       </code> option. Similar support was added for the combination of
+       Cortex-A15 and Cortex-A7 through the <code>-mcpu=cortex-a15.cortex-a7
+       </code> option.
+     </li>
+     <li> Further performance optimizations for the Cortex-A15 and the
+       Cortex-M4 have been added.
+     </li>
+     <li>A number of code generation improvements for Thumb2 to reduce code
+       size when compiling for the M-profile processors.
+     </li>
+     </ul>
+<h3 id="x86">IA-32/x86-64</h3>
+  <ul>
+    <li><code>-mfpmath=sse</code> is now implied by <code>-ffast-math</code>
+	on all targets where SSE2 is supported.</li>
+    <li>Intel AVX-512 support was added to GCC.  That includes inline
+      assembly support, new registers and extending existing ones,
+      new intrinsics (covered by corresponding testsuite), and basic
+      autovectorization.  AVX-512 instructions are available via
+      the following GCC switches: AVX-512 foundation instructions:
+      <code>-mavx512f</code>, AVX-512 prefetch instructions: <code>-mavx512pf</code>,
+      AVX-512 exponential and reciprocal instructions: <code>-mavx512er</code>,
+      AVX-512 conflict detection instructions: <code>-mavx512cd</code>.
+    </li>
+    <li> It is now possible to call x86 intrinsics from select functions in
+      a file that are tagged with the corresponding target attribute without
+      having to compile the entire file with the <code>-mxxx</code> option.
+      This improves the usability of x86 intrinsics and is particularly useful
+      when doing <a
+      href="http://gcc.gnu.org/onlinedocs/gcc-4.9.0/gcc/Function-Multiversioning.html"
+      >Function Multiversioning</a>.
+    </li>
+    <li>GCC now supports the new Intel microarchitecture named Silvermont
+      through <code>-march=silvermont</code>.
+    </li>
+    <li>GCC now supports the new Intel microarchitecture named Broadwell 
+      through <code>-march=broadwell</code>.
+    </li>
+    <li>Optimizing for other Intel microarchitectures have been renamed
+      to <code>-march=nehalem</code>, <code>westmere</code>,
+      <code>sandybridge</code>, <code>ivybridge</code>,
+      <code>haswell</code>, <code>bonnell</code>.
+    </li>
+    <li><code>-march=generic</code> has been retuned for better support of
+      Intel core and AMD Bulldozer architectures.  Performance of AMD K7, K8,
+      Intel Pentium-M, and Pentium4 based CPUs is no longer considered important
+      for generic.
+    </li>
+    <li><code>-mtune=intel</code> can now be used to generate code running
+      well on the most current Intel processors, which are Haswell
+      and Silvermont for GCC 4.9.
+    </li>
+    <li>Support to encode 32-bit assembly instructions in 16-bit format
+      is now available through the <code>-m16</code> command-line option.
+    </li>
+    <li>Better inlining of <code>memcpy</code> and <code>memset</code> 
+	that is aware of value ranges and produces shorter alignment prologues.
+    </li>
+    <li><code>-mno-accumulate-outgoing-args</code> is now honored when unwind
+      information is output.  Argument accumulation is also now turned off
+      for portions of programs optimized for size.</li>
+    <li>Support for new AMD family 15h processors (Excavator core)
+        is now available through the <code>-march=bdver4</code> and
+        <code>-mtune=bdver4</code> options.</li>
+  </ul>
+<h3 id="msp430">MSP430</h3>
+  <ul>
+    <li>A new command-line option <code>-mcpu=</code> has been added to the MSP430 backend.
+    This option is used to specify the ISA to be used.  Accepted values are
+    <code>msp430</code> (the default), <code>msp430x</code> and <code>msp430xv2</code>.  The ISA is no longer deduced
+    from the <code>-mmcu=</code> option as there are far too many different MCU names.  The
+    <code>-mmcu=</code> option is still supported, and this is still used to select linker
+    scripts and generate a C preprocessor symbol that will be recognised by the
+    <code>msp430.h</code> header file.</li>
+  </ul>
+<h3 id="nds32">NDS32</h3>
+  <ul>
+    <li> A new nds32 port supports the 32-bit architecture from Andes
+      Technology Corporation.</li>
+    <li> The port provides initial support for the V2, V3, V3m
+      instruction set architectures.</li>
+  </ul>
+<h3 id="nios2">Nios II</h3>
+  <ul>
+    <li> A port for the Altera Nios II has been contributed by
+      Mentor Graphics.</li>
+  </ul>
+<h3 id="powerpc">PowerPC / PowerPC64 / RS6000</h3>
+  <ul>
+    <li>GCC now supports Power ISA 2.07, which includes support for Hardware
+    Transactional Memory (HTM), Quadword atomics and several VMX and VSX
+    additions, including Crypto, 64-bit integer, 128-bit integer and
+    decimal integer operations.</li>
+    <li>Support for the POWER8 processor is now available through the
+    <code>-mcpu=power8</code> and <code>-mtune=power8</code> options.</li>
+    <li>The libitm library has been modified to add a HTM fastpath that
+    automatically uses POWER's HTM hardware instructions when it is
+    executing on a HTM enabled processor.</li>
+    <li>Support for the new powerpc64le-linux platform has been added.
+    It defaults to generating code that conforms to the ELFV2 ABI.</li>
+</ul>
+<h3>S/390, System z</h3>
+  <ul>
+    <li>Support for the Transactional Execution Facility included with
+      the IBM zEnterprise zEC12 processor has been added.  A set of
+      GCC style builtins as well as XLC style builtins are provided.
+      The builtins are enabled by default when using
+      the <code>-march=zEC12</code> option but can explicitly be
+      disabled with <code>-mno-htm</code>.
+      Using the GCC builtins also libitm supports hardware
+      transactions on S/390.</li>
+    <li>The hotpatch features allows to prepare functions for
+      hotpatching.  A certain amount of bytes is reserved before the
+      function entry label plus a NOP is inserted at its very
+      beginning to implement a backward jump when applying a patch.
+      The feature can either be enabled via command line
+      option <code>-mhotpatch</code> for a compilation unit or can be
+      enabled per function using the <code>hotpatch</code>
+      attribute.</li>
+    <li>The shrink wrap optimization is now supported on S/390 and
+      enabled by default.</li>
+    <li>A major rework of the routines to determine which registers
+      need to be saved and restored in function prologue/epilogue now
+      allow to use floating point registers as save slots.  This will
+      happen for certain leaf function with <code>-march=z10</code>
+      or higher.</li>
+    <li>The LRA rtl pass replaces reload by default on S/390.</li>
+  </ul>
+<h3 id="rx">RX</h3>
+  <ul>
+    <li> The port now allows to specify the RX100, RX200, and RX600 processors
+      with the command line options -mcpu=rx100, -mcpu=rx200 and -mcpu=rx600.
+    </li>
+  </ul>
+
+<h3 id="sh">SH</h3>
+  <ul>
+    <li>Minor improvements to code generated for integer arithmetic and code
+    that involves the T bit.</li>
+
+    <li>Added support for the SH2A <code>clips</code> and <code>clipu</code>
+    instructions.  The compiler will now try to utilize them for min/max
+    expressions such as <code>max (-128, min (127, x))</code>.</li>
+
+    <li>Added support for the <code>cmp/str</code> instruction through built-in
+    functions such as <code>__builtin_strlen</code>.  When not optimizing for
+    size, the compiler will now expand calls to e.g. <code>strlen</code> as an
+    inlined sequences which utilize the <code>cmp/str</code> instruction.</li>
+
+    <li>Improved code generated around volatile memory loads and stores.</li>
+
+    <li>The option <code>-mcbranchdi</code> has been deprecated.  Specifying it
+    will result in a warning and will not influence code generation.</li> 
+
+    <li>The option <code>-mcmpeqdi</code> has been deprecated.  Specifying it
+    will result in a warning and will not influence code generation.</li> 
+  </ul>
+
+<!--
+<h2>Documentation improvements</h2>
+-->
+
+
+<!--
+<h2>Other significant improvements</h2>
+
+-->
+
+
+
+
+<!-- ==================================================================== -->
+
+<div class="copyright">
+
+<address style="margin-top:0;">For questions related to the use of GCC,
+please consult these web pages and the
+<a href="http://gcc.gnu.org/onlinedocs/">GCC manuals</a>. If that fails,
+the <a href="mailto:gcc-help@gcc.gnu.org">gcc-help@gcc.gnu.org</a>
+mailing list might help.
+Comments on these web pages and the development of GCC are welcome on our
+developer list at <a href="mailto:gcc@gcc.gnu.org">gcc@gcc.gnu.org</a>.
+All of <a href="http://gcc.gnu.org/lists.html">our lists</a>
+have public archives.
+</address>
+
+<p>Copyright (C)
+<a href="http://www.fsf.org">Free Software Foundation, Inc.</a>
+Verbatim copying and distribution of this entire article is
+permitted in any medium, provided this notice is preserved.</p>
+
+<p style="margin-bottom:0;">These pages are
+<a href="http://gcc.gnu.org/about.html">maintained by the GCC team</a>.
+Last modified 2014-04-22<!-- IGNORE DIFF
+--><a href="http://validator.w3.org/check/referer">.</a></p>
+
+</div>
+
+<!-- ==================================================================== -->
+
+</body>
+     </html>
+  
+ 

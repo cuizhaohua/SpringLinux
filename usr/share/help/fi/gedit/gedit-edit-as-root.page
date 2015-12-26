@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-edit-as-root" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Edit a file as the root user</title>
+
+  <note style="warning">
+    <p>Tiedostojen muokkaaminen pääkäyttäjänä voi olla vaarallista ja saattaa aiheuttaa pahoja järjestelmäongelmia. Noudata erityistä varovaisuutta muokatessasi tiedostoja pääkäyttäjänä.</p>
+  </note>
+
+  <p>Tiedostojen muokkaaminen pääkäyttäjänä onnistuu käynnistämällä <app>gedit</app> päätteestä komennolla:</p>
+  <code>sudo gedit</code>
+
+  <p>Koska <cmd>sudo</cmd>-komennon käyttäminen vaatii tunnistautumista, <app>gedit</app> käynnistyy vasta, kun olet syöttänyt salasanasi onnistuneesti.</p>
+
+  <p>Vaihtoehtona <cmd>sudo</cmd>-komennolle pääkäyttäjän oikeudet voidaan hankkia kirjoittamalla:</p>
+  <code>su -</code>
+
+  <p>Tämän jälkeen <app>geditin</app> käynnistäminen onnistuu <cmd>gedit</cmd> komennolla.</p>
+
+  <note style="tip">
+    <p>Once you have opened <app>gedit</app> with administrative privileges,
+    <app>gedit</app> will keep those privileges until you close it.</p>
+  </note>
+
+</page>

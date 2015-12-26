@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Memakai mode layar penuh</title>
+
+  <p>Ketika bekerja dengan suatu dokumen besar, mungkin Anda rasakan membantu untuk bekerja dalam <app>gedit</app> mode layar penuh. Memakai mode layar penuh akan menyembunyikan <gui>bilah menu</gui> <gui>bilah tab</gui>, dan <gui>bilah alat</gui>, menyajikan lebih banyak teks Anda dan memungkinkan Anda fokus lebih baik ke tugas Anda.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Menyalakan mode layar penuh</title>
+    <p>Untuk menyalakan mode layar penuh, tekan <key>F11</key>. Menu, judul, dan bilah tab <app>gedit</app>, akan tersembunyi dan Anda akan mendapat penyajian hanya teks dari berkas saat ini.</p>
+    <p>Bila Anda perlu melakukan suatu aksi dari menu <app>gedit</app> ketika bekerja dalam mode layar penuh, gerakkan penunjuk tetikus Anda ke puncak layar. Bilah menu <app>gedit</app> akan muncul kembali, dan Anda dapat memilih aksi yang Anda inginkan.</p>
+
+    <note>
+      <p>Untuk bertukar antara tab yang terbuka dalam mode layar penuh, tekan <keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> atau <keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Matikan mode layar penuh</title>
+    <p>Untuk mematika mode layar penuh dan kembalik ke jendela <app>gedit</app> standar, tekan <key>F11</key>.</p>
+    <p>Anda juga dapat menggerakkan kursor tetikus Anda ke puncak layar, dan menunggu <gui>bilah menu</gui> muncul. Ketika <gui>bilah menu</gui> muncul, pilih <gui>Tinggalkan Layar Penuh</gui>.</p>
+  </section>
+
+</page>

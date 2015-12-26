@@ -1,0 +1,6 @@
+785264aae34a2ecb2f944c5badd03519  usr/lib/arm-linux-gnueabihf/libxerces-c-3.1.so
+b31d2a7984c110d611da0584f9ea12d6  usr/share/doc/libxerces-c3.1/CREDITS
+3eb16ecb328f5e337bffa5fec1cfe8e7  usr/share/doc/libxerces-c3.1/README
+9389fba3cbcbe5688a9410fb3804b833  usr/share/doc/libxerces-c3.1/changelog.Debian.gz
+a8cd682e55bc96f1d5941a3d28bb5ff5  usr/share/doc/libxerces-c3.1/copyright
+f40b1f6bb36a81af64928d21fb281da9  usr/share/lintian/overrides/libxerces-c3.1

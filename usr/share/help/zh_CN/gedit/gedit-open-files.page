@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>打开一个文件或一组文件。</title>
+
+  <p>要在 <app>gedit</app> 中打开一个文件，点击 <gui>打开</gui>按钮，或者按组合键 <keyseq><key>Ctrl</key><key>O</key></keyseq>。</p>
+  <p>This will cause the <gui>Open</gui> dialog to appear. Use your mouse
+  or keyboard to select the file that you wish to open, and then click
+  <gui>Open</gui>. The file that you've selected will open in a new tab.</p>
+  <p>To close the <gui>Open</gui> dialog without opening a file, click
+  <gui>Cancel</gui>.</p>
+
+  <note style="tip"><p>您也可以用 <key>Ctrl</key> 和 <key>Shift</key> 键，一次选择打开多个文件，如果按住 <key>Ctrl</key> 键选择多个文件，点<gui>打开</gui>会打开所有点过的文件。</p>
+
+  <!-- Insert Image Here -->
+
+  <p>按住 <key>Shift</key> 键选择多个文件，会打开从第一个到最后一个之间连续的所有文件。</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

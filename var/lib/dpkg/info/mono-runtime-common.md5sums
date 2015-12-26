@@ -1,0 +1,17 @@
+d5a740903a1b79e2565ce70da5ed2665  usr/lib/libMonoPosixHelper.so
+69c4aae72561c3bf261bcbc62b595b69  usr/lib/libMonoSupportW.so
+7b748f8bf9d4ded557e7c0c51c67b076  usr/share/applications/mono-runtime-common.desktop
+f252dc31e6356123db6045ce2ebe8c56  usr/share/applications/mono-runtime-terminal.desktop
+37a3258b6c2228800d4e2955da02d777  usr/share/doc/mono-runtime-common/AUTHORS
+2c24466c3eebacb5ca9087c6c0368936  usr/share/doc/mono-runtime-common/NEWS.Debian.gz
+a75f1e2151eabb59176bb7bc457939ce  usr/share/doc/mono-runtime-common/NEWS.gz
+912c33e0fca69c891d6b84f64496755f  usr/share/doc/mono-runtime-common/README.Debian
+2b184ff5d3020fb17ae140163f00cf54  usr/share/doc/mono-runtime-common/README.md.gz
+aa7240b61fcda0a52d3d7353a93f4fb2  usr/share/doc/mono-runtime-common/changelog.1.gz
+5f00f0acf16e72cf33c285b3fa9ccc2f  usr/share/doc/mono-runtime-common/changelog.Debian.gz
+3c6c30f3052643d1490b2bdc82f8e50a  usr/share/doc/mono-runtime-common/copyright
+3b2af9d47593381e6263b815f38d8905  usr/share/man/man1/cli-wrapper.1.gz
+09e4ebf4b3cea1b9c940fd1d91ca0c28  usr/share/man/man1/mono.1.gz
+e1c764475f3d824fe2c93012b7c03140  usr/share/man/man5/mono-config.5.gz
+9489a3fdb13bcf8fdb49644253e4d653  usr/share/mono-2.0/mono/cil/cil-opcodes.xml
+67b371a677a7dc2d21b1e41da476961a  usr/share/pixmaps/mono-runtime-common.png

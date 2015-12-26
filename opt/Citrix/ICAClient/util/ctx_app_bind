@@ -1,0 +1,120 @@
+#!/bin/sh
+# This script binds a MIME type to a Citrix Published Application.
+#
+# $Id: //icaclient/unix13.2/client/unix/installer/scripts/ctx_app_bind#1 $
+#
+#  Copyright 2015 Citrix Systems, Inc. All rights reserved.
+
+Usage="Usage: $0 [-p] example_file|MIME-type published-application [server|server-URI]"
+
+# '-p' option means use pnabrowse rather than storebrowse.
+
+[ "$1" = "-p" ] && { UsePNA=yes; shift; }
+
+[ "$1" = "" -o "$2" = "" ] && { echo $Usage ; exit 1; }
+
+# Determine ICAROOT
+
+if [ "$ICAROOT" = "" ] ; then
+    for i in $HOME/linuxx86 $HOME/linuxx64 $HOME/linuxarm $HOME/linuxarmhf /opt/Citrix /usr/lib
+    do
+	if [ -x $i/ICAClient/wfica ] ; then
+	    ICAROOT=$i/ICAClient
+	    break
+	fi
+    done
+fi
+
+if [ "$ICAROOT" = "" ] ; then
+    echo Can not find Receiver installation.
+    echo Please set ICAROOT environment variable and try again.
+    exit 1
+fi
+
+#echo ICAROOT is $ICAROOT
+
+# If the first argument is a file, try to get a MIME type.
+
+if [ -f "$1" ] ; then
+    Mime=`file -b --mime-type "$1"`
+    [ $? -ne 0 -o -z "$Mime" ] && {
+        echo "Can not determine MIME type of $1" ;
+        exit 2;
+    }
+#   echo Mime type of $1 is: ${Mime}
+else
+#   echo Using Mime type: $1
+    Mime=$1
+fi
+
+# Is there an existing icon for this MIME type?
+
+UDesk=$HOME/.local/share/applications
+Desk=/usr/share/applications
+
+Ofile=`xdg-mime query default $Mime`
+
+
+[ "Ofile" ] || (
+# Try again in generic environment.
+
+  unset XDG_CURRENT_DESKTOP ; unset  DESKTOP_SESSION ;
+  Ofile=`xdg-mime query default $Mime`
+)
+
+if [ -n "$Ofile" ] ; then
+    if [ -f "$Desk/$Ofile" ] ; then
+	Ofile="$Desk/$Ofile"
+    elif [ -f "$UDesk/$Ofile" ] ; then
+	Ofile="$UDesk/$Ofile"
+    else
+	# Give up.
+	Ofile=
+    fi
+fi
+
+if [ "$Ofile" ] ; then
+#   echo DT file for Mime-type $Mime is $Ofile
+    Icon=`grep 'Icon *=' "$Ofile"`
+else
+    Icon=`sed -e "\\%${Mime}%s/^.*://" $HOME/.local/share/mime/icons`
+    [ "$Icon" ] || Icon=`sed "\\%${Mime}%s/^.*://" /usr/share/mime/icons`
+    if [ "$Icon" ] ; then
+	Icon="Icon=$Icon"
+    else
+	Icon="Icon=$ICAROOT/icons/manager.png"
+    fi    
+fi
+
+# Now write a desktop file.
+
+Name=`echo $Mime | tr '/' ':'`
+File=$UDesk/${Name}.desktop
+if [ -z "$UsePNA" ] ; then
+    Launcher=storebrowse
+else
+    # pnabrowse usually needs a wrapper to pass user credentials.
+
+    echo Session launch with pnabrowse may require a locally-configured launcher.
+    Launcher=pnabrowse_launch
+fi
+
+#echo Creating $File
+
+cat > $File <<EOF
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Launcher for $Mime
+StartupWMClass=Wfica
+NoDisplay=true
+MimeType=$Mime
+$Icon
+TryExec=/opt/Citrix/ICAClient/$Launcher
+Exec=env WFICA_OPTS="-icaroot $ICAROOT -fileparam %f" $ICAROOT/util/$Launcher -L "$2" "$3"
+EOF
+
+# Register as the Mime-type handler
+
+xdg-mime default ${Name}.desktop $Mime

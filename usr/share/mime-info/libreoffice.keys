@@ -1,0 +1,438 @@
+application/vnd.sun.xml.writer
+	description=OpenOffice.org 1.0 Text Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=text
+
+application/vnd.sun.xml.writer.template
+	description=OpenOffice.org 1.0 Text Document Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=text-template
+application/vnd.sun.xml.calc
+	description=OpenOffice.org 1.0 Spreadsheet
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=spreadsheet
+
+application/vnd.sun.xml.calc.template
+	description=OpenOffice.org 1.0 Spreadsheet Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=spreadsheet-template
+
+application/vnd.sun.xml.draw
+	description=OpenOffice.org 1.0 Drawing
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents
+	use_category_default=no
+	icon_filename=drawing
+
+application/vnd.sun.xml.draw.template
+	description=OpenOffice.org 1.0 Drawing Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents
+	use_category_default=no
+	icon_filename=drawing-template
+
+application/vnd.sun.xml.impress
+	description=OpenOffice.org 1.0 Presentation
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=presentation
+
+application/vnd.sun.xml.impress.template
+	description=OpenOffice.org 1.0 Presentation Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=presentation-template
+
+application/vnd.sun.xml.math
+	description=OpenOffice.org 1.0 Formula
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents
+	use_category_default=no
+	icon_filename=formula
+
+application/vnd.sun.xml.writer.global
+	description=OpenOffice.org 1.0 Master Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=master-document
+
+application/vnd.oasis.opendocument.text
+	description=OpenDocument Text
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=oasis-text
+
+application/vnd.oasis.opendocument.text-template
+	description=OpenDocument Text Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=oasis-text-template
+application/vnd.oasis.opendocument.text-flat-xml
+	description=OpenDocument Text (Flat XML)
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=oasis-text
+
+application/vnd.oasis.opendocument.spreadsheet
+	description=OpenDocument Spreadsheet
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=oasis-spreadsheet
+
+application/vnd.oasis.opendocument.spreadsheet-template
+	description=OpenDocument Spreadsheet Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=oasis-spreadsheet-template
+
+application/vnd.oasis.opendocument.spreadsheet-flat-xml
+	description=OpenDocument Spreadsheet (Flat XML)
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=oasis-spreadsheet
+
+application/vnd.oasis.opendocument.graphics
+	description=OpenDocument Drawing
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents
+	use_category_default=no
+	icon_filename=oasis-drawing
+
+application/vnd.oasis.opendocument.graphics-template
+	description=OpenDocument Drawing Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents
+	use_category_default=no
+	icon_filename=oasis-drawing-template
+
+application/vnd.oasis.opendocument.graphics-flat-xml
+	description=OpenDocument Drawing (Flat XML)
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents
+	use_category_default=no
+	icon_filename=oasis-drawing
+
+application/vnd.oasis.opendocument.presentation
+	description=OpenDocument Presentation
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=oasis-presentation
+
+application/vnd.oasis.opendocument.presentation-template
+	description=OpenDocument Presentation Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=oasis-presentation-template
+
+application/vnd.oasis.opendocument.presentation-flat-xml
+	description=OpenDocument Presentation (Flat XML)
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=oasis-presentation
+
+application/vnd.oasis.opendocument.formula
+	description=OpenDocument Formula
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents
+	use_category_default=no
+	icon_filename=oasis-formula
+
+application/vnd.oasis.opendocument.text-master
+	description=OpenDocument Master Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=oasis-master-document
+
+application/vnd.sun.xml.base
+	description=OpenDocument Database
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents
+	use_category_default=no
+	icon_filename=oasis-database
+
+application/vnd.oasis.opendocument.text-web
+	description=HTML Document Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=oasis-web-template
+
+application/vnd.ms-excel.sheet.macroenabled.12
+	description=Microsoft Excel Worksheet
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-excel
+	description=Microsoft Excel Worksheet
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-excel.template.macroenabled.12
+	description=Microsoft Excel Worksheet Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-powerpoint.presentation.macroenabled.12
+	description=Microsoft PowerPoint Presentation
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-powerpoint
+	description=Microsoft PowerPoint Presentation
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-powerpoint.template.macroenabled.12
+	description=Microsoft PowerPoint Presentation Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-word.document.macroenabled.12
+	description=Microsoft Word Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=
+
+application/msword
+	description=Microsoft Word Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-word
+	description=Microsoft Word Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-word.template.macroenabled.12
+	description=Microsoft Word Document Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openxmlformats-officedocument.presentationml.presentation
+	description=Microsoft PowerPoint Presentation
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openxmlformats-officedocument.presentationml.template
+	description=Microsoft PowerPoint Presentation Template
+    default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Presentation
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+	description=Microsoft Excel Worksheet
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openxmlformats-officedocument.spreadsheetml.template
+	description=Microsoft Excel Worksheet Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+	description=Microsoft Word Document
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openxmlformats-officedocument.wordprocessingml.template
+	description=Microsoft Word Document Template
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Word Processor
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.ms-excel.sheet.binary.macroenabled.12
+	description=Microsoft Excel Worksheet
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=
+	short_list_application_ids_for_intermediate_user_level=
+	short_list_application_ids_for_advanced_user_level=
+	category=Documents/Spreadsheet
+	use_category_default=yes
+	icon_filename=
+
+application/vnd.openofficeorg.extension
+	description=Extension
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_intermediate_user_level=openoffice,staroffice,starsuite
+	short_list_application_ids_for_advanced_user_level=openoffice,staroffice,starsuite
+	category=Documents/Word Processor
+	use_category_default=no
+	icon_filename=extension
+

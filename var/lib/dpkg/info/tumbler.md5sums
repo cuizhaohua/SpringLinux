@@ -1,0 +1,14 @@
+4002c047bcb2a16364b4e5c90036b8c2  usr/lib/arm-linux-gnueabihf/tumbler-1/plugins/cache/tumbler-xdg-cache.so
+5e9e289622d89417c24dea3861d1d9fc  usr/lib/arm-linux-gnueabihf/tumbler-1/plugins/tumbler-font-thumbnailer.so
+7faab5ed5d9049cd87ef41b57b937ab4  usr/lib/arm-linux-gnueabihf/tumbler-1/plugins/tumbler-gst-thumbnailer.so
+5c460524bf848dac0a896f4f4cdb4cc6  usr/lib/arm-linux-gnueabihf/tumbler-1/plugins/tumbler-jpeg-thumbnailer.so
+b9a270552921787b273b17ea83b38288  usr/lib/arm-linux-gnueabihf/tumbler-1/plugins/tumbler-pixbuf-thumbnailer.so
+e2c3742a72ba82c3c034eb64e5cdc969  usr/lib/arm-linux-gnueabihf/tumbler-1/plugins/tumbler-poppler-thumbnailer.so
+03e3953259f56a4cdcf59eaf7a185f07  usr/lib/arm-linux-gnueabihf/tumbler-1/tumblerd
+d6269684aaf221f17249f3c76758842b  usr/share/dbus-1/services/org.xfce.Tumbler.Cache1.service
+2f666346d3c6aa0ae386871769df5543  usr/share/dbus-1/services/org.xfce.Tumbler.Manager1.service
+1e8efcbe6fd053604d37ab4bf5910f2f  usr/share/dbus-1/services/org.xfce.Tumbler.Thumbnailer1.service
+e37ce2aece97a77c12638002251367a3  usr/share/doc/tumbler/changelog.Debian.armhf.gz
+642b3a389ea7cf4ff0cff25345ef5541  usr/share/doc/tumbler/changelog.Debian.gz
+4dfe3816f73aa1605f9727450417f1c3  usr/share/doc/tumbler/changelog.gz
+1e08cf8330e68e0404b1b7f907446d03  usr/share/doc/tumbler/copyright

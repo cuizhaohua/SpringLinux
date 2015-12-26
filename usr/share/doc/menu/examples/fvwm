@@ -1,0 +1,37 @@
+#!/usr/bin/install-menu
+#   -*- mode: shell-script; -*-
+#I need menu-1.4!
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/bin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/share/doc/menu/html.
+#
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+
+function ex($com)=" Exec \""               title() "\" exec " $com "\n";
+function mod($var,$com)    =" " $var " \"" title() "\" exec " $com "\n";
+
+supported;
+  fvwmmodule= mod("Exec",   $command);
+  wm=         mod("Restart",$command);
+  x11fvwm=    ex($command);
+  x11=        ex($command);
+  text=       ex(term());
+endsupported;
+
+startmenu=   "PopUp \"" $section "\"\n";
+endmenu=     "EndPopUp\n";
+submenutitle="  Popup \"" title() cond_surr(icon(),"%","%") "\""
+              $section "\n";
+genmenu=      "menudefs.hook";
+rcfile=       "system.fvwmrc";
+examplercfile="system.fvwmrc-menu";
+rootprefix="/etc/X11/fvwm/";
+userprefix=".fvwm/";
+mainmenutitle="DebianMenu";

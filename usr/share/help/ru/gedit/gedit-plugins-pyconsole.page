@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-pyconsole" xml:lang="ru">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Джим Кэмпбелл (Jim Campbell)</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Добавление интерактивной консоли Python на нижнюю панель</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Консоль Python</title>
+
+  <p>На нижнюю панель можно добавить консоль Python, позволяющую проверять скрипты Python, не выходя из <app>gedit</app>. Чтобы включить консоль Python, выберите <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Параметры</gui><gui>Модули</gui> <gui>Консоль Python</gui></guiseq>.</p>
+
+  <p>После включения консоли Python, можно её отрыть, выбрав <guiseq><gui>Вид</gui><gui>Нижняя панель</gui></guiseq>, или нажав <keyseq><key>Shift</key><key>F9</key></keyseq>.</p>
+
+  <note style="tip"><p>Если также включён модуль <gui>Встроенный терминал</gui>, консоль Python будет отображена в нижней панели в виде отдельной вкладки.</p></note>
+</page>

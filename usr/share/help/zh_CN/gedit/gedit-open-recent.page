@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>重新打开最近使用的文件</title>
+
+  <p>默认情况下，<app>gedit</app> 提供快速访问最近使用的五个文件，用这个方法可以打开最近使用的文件：</p>
+  <list type="numbered">
+    <item><p>点击<gui>打开</gui>按钮旁边的下拉箭头按钮。</p></item>
+    <item><p><app>gedit</app> 会列出最近访问的五个文件。</p></item>
+    <item><p>选择想要打开的文件，然后就会在新标签中打开它。</p></item>
+  </list>
+
+  <note style="advanced"><p>要更改显示最近访问的文件数，您需要使用 <app>gconf-editor</app> 程序。</p>
+    <list>
+      <item><p>启动 <app>dconf-editor</app> 并选择 <guiseq><gui>org</gui> <gui>gnome</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui> <gui>max-recents</gui></guiseq></p></item>
+      <item><p>双击 <gui>max_recents</gui> 旁边的数字，然后输入想要的数字。</p></item>
+    </list>
+  </note>
+
+</page>

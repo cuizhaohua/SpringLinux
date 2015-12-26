@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Изменение цветовой схемы</title>
+
+  <p>Текстовый редактор <app>gedit</app> включает в себя несколько различных цветовых схем, что позволяет изменять внешний вид главного окна.</p>
+
+  <p>Чтобы изменить цветовую схему выполните следующие действия:</p>
+  <steps>
+    <item><p>Выберите <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Параметры</gui> <gui>Шрифты и цвета</gui></guiseq>.</p></item>
+    <item><p>Выберите нужную цветовую схему.</p></item>
+  </steps>
+
+  <p>Новая цветовая схема будет сразу применена.</p>
+
+  <section id="custom-color-scheme">
+    <title>Использование собственной цветовой схемы</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Можно создавать и использовать собственные цветовые схемы, а также использовать цветовые схемы, созданные другими.</p>
+    <p>Инструкции по установке собственных цветовых схем, а также примеры цветовых схем, которые можно загрузить и использовать, доступны в <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">gedit wiki</link>.</p>
+  </section>
+
+</page>

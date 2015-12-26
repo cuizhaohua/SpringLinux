@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="id">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ubah fonta baku</title>
+
+  <p><app>gedit</app> akan memakai fonta lebar tetap sistem secara baku, tapi Anda bisa mengubah fonta baku <app>gedit</app> agar sesuai dengan kesukaan Anda.</p>
+  
+  <steps>
+    <title>Untuk mengubah fonta baku dalam <app>gedit</app>:</title>
+      <item><p>Pilih <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferensi</gui> <gui>Fonta &amp; Warna</gui></guiseq>.</p></item>
+      <item><p>Jangan contreng kotak di sebelah frasa "Pakai fonta lebar tetap sistem".</p></item>
+      <item><p>Klik pada nama fonta kini. <app>gedit</app> akan membuka suatu jendela pemilih fonta, memungkinkan Anda melihat fonta yang tersedia dan memilih satu yang Anda suka.</p></item>
+      <item><p>Setelah Anda memilih fonta baru, gunakan <gui>penggeser</gui> di bawh daftar fonta untuk menata ukuran fonta baku.</p></item>
+      <item><p>Klik <gui>Pilih</gui>, lalu klik <gui>Tutup</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

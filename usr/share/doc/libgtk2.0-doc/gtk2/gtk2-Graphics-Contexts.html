@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GTK+ 2 Reference Manual: Graphics Contexts</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
+<link rel="up" href="gtkbase.html" title="Part II. GTK+ Core Reference">
+<link rel="prev" href="gtk2-Standard-Enumerations.html" title="Standard Enumerations">
+<link rel="next" href="GtkStyle.html" title="Styles">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gtk2-Graphics-Contexts.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gtkbase.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gtk2-Standard-Enumerations.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GtkStyle.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gtk2-Graphics-Contexts"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gtk2-Graphics-Contexts.top_of_page"></a>Graphics Contexts</span></h2>
+<p>Graphics Contexts — A shared pool of GdkGC objects</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gtk2-Graphics-Contexts.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="returnvalue">GdkGC</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="gtk2-Graphics-Contexts.html#gtk-gc-get" title="gtk_gc_get ()">gtk_gc_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="gtk2-Graphics-Contexts.html#gtk-gc-release" title="gtk_gc_release ()">gtk_gc_release</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gtk2-Graphics-Contexts.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gtk/gtk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="gtk2-Graphics-Contexts.description"></a><h2>Description</h2>
+<p>
+These functions provide access to a shared pool of <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> objects.
+When a new <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> is needed, <a class="link" href="gtk2-Graphics-Contexts.html#gtk-gc-get" title="gtk_gc_get ()"><code class="function">gtk_gc_get()</code></a> is called with the required depth,
+colormap and <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGCValues"><span class="type">GdkGCValues</span></a>. If a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> with the required properties already
+exists then that is returned. If not, a new <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> is created.
+When the <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> is no longer needed, <a class="link" href="gtk2-Graphics-Contexts.html#gtk-gc-release" title="gtk_gc_release ()"><code class="function">gtk_gc_release()</code></a> should be called.
+</p>
+</div>
+<div class="refsect1">
+<a name="gtk2-Graphics-Contexts.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gtk-gc-get"></a><h3>gtk_gc_get ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="returnvalue">GdkGC</span></a> *
+gtk_gc_get (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> depth</code></em>,
+            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *colormap</code></em>,
+            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGCValues"><span class="type">GdkGCValues</span></a> *values</code></em>,
+            <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGCValuesMask"><span class="type">GdkGCValuesMask</span></a> values_mask</code></em>);</pre>
+<p>
+Gets a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> with the given depth, colormap and <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGCValues"><span class="type">GdkGCValues</span></a>.
+If a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> with the given properties already exists then it is returned,
+otherwise a new <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> is created.
+The returned <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> should be released with <a class="link" href="gtk2-Graphics-Contexts.html#gtk-gc-release" title="gtk_gc_release ()"><code class="function">gtk_gc_release()</code></a> when it is no
+longer needed.
+</p>
+<div class="refsect3">
+<a name="id-1.3.14.6.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>depth</p></td>
+<td class="parameter_description"><p>the depth of the <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> to create.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>colormap</p></td>
+<td class="parameter_description"><p>the <a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> (FIXME: I don't know why this is needed).</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGCValues"><span class="type">GdkGCValues</span></a> struct containing settings for the <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>values_mask</p></td>
+<td class="parameter_description"><p>a set of flags indicating which of the fields in <em class="parameter"><code>values</code></em>
+has
+been set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.3.14.6.2.6"></a><h4>Returns</h4>
+<p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-gc-release"></a><h3>gtk_gc_release ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_gc_release (<em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>);</pre>
+<p>
+Releases a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> allocated using <a class="link" href="gtk2-Graphics-Contexts.html#gtk-gc-get" title="gtk_gc_get ()"><code class="function">gtk_gc_get()</code></a>.
+</p>
+<div class="refsect3">
+<a name="id-1.3.14.6.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>a <a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gtk2-Graphics-Contexts.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

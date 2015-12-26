@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian CLI Policy - Used Terms</title>
+
+<link href="index.html" rel="start">
+<link href="ch-history.html" rel="prev">
+<link href="ch-packaging.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch-history.html" rel="chapter" title="1 Policy History">
+<link href="ch-terms.html" rel="chapter" title="2 Used Terms">
+<link href="ch-packaging.html" rel="chapter" title="3 Packaging Policy">
+<link href="ch-mono.html" rel="chapter" title="4 Mono Specific Packaging help">
+<link href="ch-pnet.html" rel="chapter" title="5 DotGNU Portable.NET Packaging help">
+<link href="ch-appendix.html" rel="chapter" title="6 Appendix">
+<link href="ch-terms.html#s-CLI" rel="section" title="2.1 CLI - Common Language Infrastructure">
+<link href="ch-terms.html#s-CLR" rel="section" title="2.2 CLR - Common Language Runtime">
+<link href="ch-terms.html#s-CIL" rel="section" title="2.3 CIL - Common Intermediate Language">
+<link href="ch-terms.html#s-.NET" rel="section" title="2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;">
+<link href="ch-terms.html#s-GAC" rel="section" title="2.5 GAC - Global Assembly Cache">
+<link href="ch-terms.html#s-package-names" rel="section" title="2.6 Package Names">
+<link href="ch-packaging.html#s-general-packaging" rel="section" title="3.1 General Packaging">
+<link href="ch-packaging.html#s-gac-library-packaging" rel="section" title="3.2 GAC Library Packaging">
+<link href="ch-packaging.html#s-non-gac-library-packaging" rel="section" title="3.3 non-GAC Library Packaging">
+<link href="ch-mono.html#s4.1" rel="section" title="4.1 Naming">
+<link href="ch-mono.html#s4.2" rel="section" title="4.2 DLL Maps">
+<link href="ch-mono.html#s-mono-disable-shm" rel="section" title="4.3 MONO_DISABLE_SHM">
+<link href="ch-pnet.html#s5.1" rel="section" title="5.1 Naming">
+<link href="ch-appendix.html#s-cli-common-dev" rel="section" title="6.1 Helper Scripts: cli-common-dev">
+<link href="ch-appendix.html#s-examples" rel="section" title="6.2 Examples">
+<link href="ch-appendix.html#s-migrating" rel="section" title="6.3 Migrating Existing Packages">
+<link href="ch-packaging.html#s-architecture" rel="subsection" title="3.1.1 Architecture">
+<link href="ch-packaging.html#s-file-locations" rel="subsection" title="3.1.2 File Locations">
+<link href="ch-packaging.html#s-file-perms" rel="subsection" title="3.1.3 File Permissions">
+<link href="ch-packaging.html#s-build-deps" rel="subsection" title="3.1.4 Build Dependencies">
+<link href="ch-packaging.html#s-gac-naming-versioning" rel="subsection" title="3.2.1 Naming &amp; Versioning">
+<link href="ch-packaging.html#s-gac-policy-files" rel="subsection" title="3.2.2 Policy Files">
+<link href="ch-packaging.html#s-clilibs-control-file" rel="subsection" title="3.2.3 clilibs Control File">
+<link href="ch-packaging.html#s-pkg-config-file" rel="subsection" title="3.2.4 pkg-config File">
+<link href="ch-packaging.html#s-signing" rel="subsection" title="3.2.5 Signing">
+<link href="ch-packaging.html#s-non-gac-naming" rel="subsection" title="3.3.1 Naming">
+<link href="ch-mono.html#s-dll-maps-intro" rel="subsection" title="4.2.1 Introduction">
+<link href="ch-mono.html#s4.2.2" rel="subsection" title="4.2.2 Solution: DLL map config file">
+<link href="ch-appendix.html#s-dh_makeclilibs" rel="subsection" title="6.1.1 dh_makeclilibs">
+<link href="ch-appendix.html#s-dh_clideps" rel="subsection" title="6.1.2 dh_clideps">
+<link href="ch-appendix.html#s-dh_installcligac" rel="subsection" title="6.1.3 dh_installcligac">
+<link href="ch-appendix.html#s-debhelper-example" rel="subsection" title="6.2.1 debhelper 5/6 Example">
+<link href="ch-appendix.html#s-debhelper7-example" rel="subsection" title="6.2.2 debhelper 7 Example">
+<link href="ch-appendix.html#s-cdbs-example" rel="subsection" title="6.2.3 cdbs Example">
+<link href="ch-appendix.html#s-wrapper-script-example" rel="subsection" title="6.2.4 Executable Wrapper Script Example">
+<link href="ch-appendix.html#s-api-compat-example" rel="subsection" title="6.2.5 API Compatibility Check Example">
+<link href="ch-appendix.html#s-gac-policy-file-example" rel="subsection" title="6.2.6 GAC Policy File Example">
+
+</head>
+
+<body>
+
+<p><a name="ch-terms"></a></p>
+<hr>
+
+<p>
+[ <a href="ch-history.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ 2 ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-packaging.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian CLI Policy
+<br>Chapter 2 - Used Terms
+</h1>
+
+<hr>
+
+<p>
+The &quot;.NET&quot; area uses its own set of abbreviations, which can look
+confusing to other people.  This chapter lists some of the terms along with
+their explanations:
+</p>
+
+<hr>
+
+<h2 id="s-CLI">2.1 CLI - Common Language Infrastructure</h2>
+
+<p>
+This is what most people mean when they say &quot;.NET&quot;.  The CLI defines
+mainly the virtual machine, the bytecode and how everything works together.  It
+is both an <code><a
+href="http://www.iso.org/iso/en/CatalogueDetailPage.CatalogueDetail?CSNUMBER=36769">ISO</a></code>
+and <code><a
+href="http://www.ecma-international.org/publications/standards/Ecma-335.htm">ECMA</a></code>
+standard.
+</p>
+
+<hr>
+
+<h2 id="s-CLR">2.2 CLR - Common Language Runtime</h2>
+
+<p>
+The CLR is an implementation of the <a href="#s-CLI">CLI</a> (often with a lot
+of add-ons or tools for developers).  Mono and Microsoft .NET Framework are
+CLRs.
+</p>
+
+<hr>
+
+<h2 id="s-CIL">2.3 CIL - Common Intermediate Language</h2>
+
+<p>
+The CIL is the format of the bytecode for binaries and libraries used by the <a
+href="#s-CLI">CLI</a>.
+</p>
+
+<hr>
+
+<h2 id="s-.NET">2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;</h2>
+
+<p>
+The &quot;.NET&quot; word is a Microsoft marketing phrase and mostly is a CLR
+with added Microsoft technologies like: ASP.NET, VB.NET, System.Windows.Forms,
+Passport plus a lot of other things.
+</p>
+
+<p>
+<strong>We highly discourage from using any form of the word &quot;.NET&quot;,
+it is burdened by copyright and marketing.</strong> We advice to use the
+correct term instead, which is usually <a href="#s-CLI">CLI</a>.
+</p>
+
+<p>
+If you really want to use the &quot;.NET&quot; term in a correct form please
+refer to the <code><a
+href="http://www.microsoft.com/about/legal/trademarks/usage/net.mspx">Microsoft
+.NET Guidelines</a></code>.
+</p>
+
+<hr>
+
+<h2 id="s-GAC">2.5 GAC - Global Assembly Cache</h2>
+
+<p>
+The GAC contains and manages the libraries for the <a href="#s-CLR">CLR</a>.
+It allows users to install multiple versions of the same library and enables
+loading of the right version when an application is executed.
+</p>
+
+<p>
+Mono stores the GAC at <code>/usr/lib/mono/gac</code>
+</p>
+
+<p>
+DotGNU Portable.NET stores the GAC at <code>/usr/lib/cscc/lib</code>
+</p>
+
+<hr>
+
+<h2 id="s-package-names">2.6 Package Names</h2>
+
+<p>
+There are different set of package names we refer in this policy to.  Here a
+list of examples for the different names:
+</p>
+<ul>
+<li>
+<p>
+assembly (file) names:
+</p>
+
+<pre>
+     gtk-sharp.dll
+</pre>
+
+<pre>
+     log4net.dll
+</pre>
+
+<pre>
+     FlickrNet.dll
+</pre>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+(debian) source package names:
+</p>
+
+<pre>
+     gtk-sharp2
+</pre>
+
+<pre>
+     log4net
+</pre>
+
+<pre>
+     libflickrnet
+</pre>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+(debian) binary package names:
+</p>
+
+<pre>
+     libgtk2.0-cil
+</pre>
+
+<pre>
+     libgnome2.0-cil
+</pre>
+
+<pre>
+     liblog4net1.2-cil
+</pre>
+
+<pre>
+     libflickrnet2.1.5-cil
+</pre>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+upstream package names (a good indicator is the pkg-config file name):
+</p>
+
+<pre>
+     gtk-sharp-2.0
+</pre>
+
+<pre>
+     log4net
+</pre>
+
+<pre>
+     flickrnet
+</pre>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+upstream tarball names (without version and file extension):
+</p>
+
+<pre>
+     gtk-sharp-2.12.9.tar.gz -&gt; gtk-sharp
+</pre>
+
+<pre>
+     log4net-1.2.0-beta8.zip -&gt; log4net
+</pre>
+
+<pre>
+     FlickrNet-25207.zip -&gt; FlickrNet
+</pre>
+</li>
+</ul>
+
+<hr>
+
+<p>
+[ <a href="ch-history.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ 2 ]
+[ <a href="ch-packaging.html">3</a> ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-packaging.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian CLI Policy
+</p>
+
+<address>
+Version 0.7<br>
+<br>
+Mirco Bauer <code><a href="mailto:meebey@debian.org">mailto:meebey@debian.org</a></code><br>
+Brandon Hale <code><a href="mailto:brandon@smarterits.com">mailto:brandon@smarterits.com</a></code><br>
+Sebastian Dr&ouml;ge <code><a href="mailto:slomo@debian.org">mailto:slomo@debian.org</a></code><br>
+Dylan R. E. Moonfire <code><a href="mailto:debian@mfgames.com">mailto:debian@mfgames.com</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

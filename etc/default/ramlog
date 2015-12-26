@@ -1,0 +1,23 @@
+#Ramlog service configuration
+
+RAMDISKTYPE=0		#0 = tmpfs (can be swapped)
+			#1 = ramfs (no max size in older kernels, cannot be swapped, not SELinux friendly)
+			#2 = old kernel ramdisk
+			# (kernel ramdisk needs kernel parameter "ramdisk_size=" in kilobytes as default kernel ramdisk size
+			#  is usually lower than the size of the /var/log)
+
+TMPFS_RAMFS_SIZE=256m	#Maximum size of memory to be used by tmpfs or ramfs. 
+			# The value can be percentage of total RAM or size in megabytes - for example:
+			# TMPFS_RAMFS_SIZE=256m40%
+			# TMPFS_RAMFS_SIZE=256m100m
+			# Empty value means default tmpfs/ramfs size: TMPFS_RAMFS_SIZE=256m
+			# For more options please check 'man mount', section 'Mount options for tmpfs' 
+			# (by the way - ramfs supports size limit in newer kernels as well despite man says there are no mount options)
+			# It has only effect if RAMDISKTYPE=0 or 1
+
+KERNEL_RAMDISK_SIZE=MAX #Kernel ramdisk size in kilobytes or MAX to use entire ramdisk. It has only effect if RAMDISKTYPE=2
+
+LOGGING=1		#0=off, 1=on
+LOGNAME=ramlog		#name of the ramlog log file (makes sense if LOGGING=1)
+
+VERBOSE=1		#0=off, 1=on (if 1, teststartstop puts detials to the logs and it is called after start or stop fails)

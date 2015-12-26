@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kopioiden tulostaminen oikeassa järjestyksessä</title>
+
+  <section id="printing-reverse">
+    <title>Käänteinen</title>
+
+    <p>Printers usually print the first page first, and the last page last, so
+    the pages end up in reverse order when you pick them up. To reverse the
+    order:</p>
+
+    <steps>
+      <item>
+        <p>Select <guiseq><gui style="menu">File</gui>
+        <gui style="menuitem">Print</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>In the <gui style="tab">General</gui> tab of the Print dialog under
+        <gui style="group">Copies</gui>, check
+        <gui style="checkbox">Reverse</gui>.</p>
+      </item>
+    </steps>
+
+    <p>The last page will be printed first, and so on.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Kerää</title>
+    
+    <p>Jos asiakirjasta tulostetaan useampia kopioita, tulosteet ryhmitellään automaattisesti sivunumeron mukaan eli ensin tulostetaan kaikki kopiot ensimmäisestä sivusta, seuraavaksi kaikki kopiot toisesta sivusta ja niin edelleen. Kerääminen tulostaa kaikki asiakirjan sivut peräkkäin ennen seuraavan kopion tulostamista.</p>
+
+    <p>Tulosteiden kerääminen</p>
+    <steps>
+      <item>
+        <p>Click <guiseq><gui style="menu">File</gui>
+        <gui style="menuitem">Print</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>In the <gui style="tab">General</gui> tab of the Print dialog under
+        <gui style="group">Copies</gui> check
+        <gui style="checkbox">Collate</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

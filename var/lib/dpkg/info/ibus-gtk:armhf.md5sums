@@ -1,0 +1,5 @@
+a145f6b59c6f484660df6e6303e517c1  usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0/immodules/im-ibus.so
+ba6c74dde049f7d3f44322ef416bceb6  usr/share/doc/ibus-gtk/changelog.Debian.gz
+9f5592cf8829f208f9e5db56b601b1e7  usr/share/doc/ibus-gtk/changelog.gz
+5a793ca5cffd5a7ff0271dd9236bc9be  usr/share/doc/ibus-gtk/copyright
+132d18ad24989c0585cfd7af510c7dfd  usr/share/lintian/overrides/ibus-gtk

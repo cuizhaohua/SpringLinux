@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-quick-open" xml:lang="lv">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision version="3.4" date="2013-02-24" status="review"/>
+    <revision version="3.8" date="2013-04-23" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <desc>Ātri atvērt vienu vai vairākas datnes</desc>
+  </info>
+
+  <title>Ātrā atvēršana</title>
+
+  <p>Kā ļauj nojaust tā nosaukums, spraudnis <app>Ātrā atvēršana</app> palīdz atvērt datnes ātrāk nekā parasti. Lai ieslēgtu šo spraudni, izvēlieties <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Iestatījumi</gui><gui>Spraudņi</gui><gui>Ātrā atvēršana</gui></guiseq>.</p>
+    
+  <p>Kad esat aktivējis <app>Ātrās atvēršanas</app> spraudni, jūs to varat izmantot šādi:</p>
+
+  <steps>
+    <item><p>Atveriet <app>Ātrās atvēršanas</app> dialoglodziņu, nospiežot <keyseq><key>Ctrl</key><key>Alt</key><key>O</key></keyseq> vai izvēloties <guiseq> <gui>Datne</gui><gui>Ātri atvērt</gui></guiseq>.</p>
+    <p>Parādīsies <gui>ātrās atvēršanas</gui> dialogs.</p></item>
+    <item><p>Izmantojot peli, izvēlēties datni vai datnes, kuras vēlaties atvērt.</p>
+    <p>Lai izvēlētos vairākas atsevišķas datnes, turiet <key>Ctrl</key> taustiņu, veicot pa klikšķim uz katras datnes.</p>
+    <p>Lai izvēlētos datņu grupu, veiciet klikšķi uz pirmās datnes, ko vēlaties atvērt, turiet nospiestu <key>Shift</key> taustiņu un veiciet klikšķi uz pēdējās datnes, ko vēlaties atvērt, datņu sarakstā.</p></item>
+    <item><p>Spiediet pogu <gui>Atvērt</gui>.</p></item>
+  </steps>
+
+  <p><app>Ātrā atvēršana</app> meklēs datnes šeit:</p>
+
+  <list>
+    <item><p>Pašlaik atvērtā dokumenta direktorija</p></item>
+    <item><p>Spraudņa <app xref="gedit-plugins-file-browser">Datņu pārlūka rūts</app> saknes direktorija</p></item>
+    <item><p>Nesenie dokumenti, kas ir arī parādīti mapē <file>Nesenie</file> lietotnē<app>Datnes</app></p></item>
+    <item><p>Direktorijas, kas ir grāmatzīmēs lietotnē <app>Datnes</app></p></item>
+    <item><p>Jūsu <file>Darbvirsmas</file> direktorija</p></item>
+    <item><p>Jūs <file>Mājas</file> direktorija</p></item>
+  </list>
+
+  <note style="tip">
+    <p><app>Ātrā atvēršana</app> rāda datnes jebkura no augstāk minētajām vietām, neskatoties uz to, vai esat tās iepriekš atvēris.</p>
+  </note>
+
+</page>

@@ -1,0 +1,367 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mplayer2
+Upstream-Contact: The mplayer and mplayer2 Developers <mplayer2-dev@mplayer2.org>
+Source: http://mplayer2.org
+Copyright: GPL-3+
+
+Files: *
+Copyright:
+ 2000-2011 The mplayer and mplayer2 Developers
+ 1995-1999 by Michael Hipp
+ 2006 Zuxy MENG <zuxy.meng@gmail.com>
+License: GPL-2+
+
+Files: mplayer/talloc.*
+Copyright:
+ 2004-2005 Andrew Tridgell
+ 2006 Stefan Metzmacher
+License: LGPL-3+
+
+Files: debian/*
+Copyright: 2011 Reinhard Tartler <siretart@tauware.de>
+License: GPL-2+
+
+Files: ffmpeg-mt/*
+Copyright:
+ 2010 Zhentan Feng <spyfeng at gmail dot com>
+ 2010 Tomas Härdin
+ 2010 Sebastian Vater <cdgs.basty@googlemail.com>
+ 2010 Rafael Carre
+ 2010 Nolan Lum <nol888@gmail.com>
+ 2010 Mohamed Naufal Basheer <naufal11@gmail.com>
+ 2010 Michele Orrù
+ 2010 Michael Chinen
+ 2010 Martin Storsjo
+ 2010 Marcelo Galvao Povoa
+ 2010 Laurent Aimar
+ 2010 Josh Allmann
+ 2010 Jason Garrett-Glaser <darkshikari@gmail.com>
+ 2010 Janne Grunau <janne-ffmpeg@jannau.net>
+ 2010, Google, Inc
+ 2010 Francesco Lavra <francescolavra@interfree.it>
+ 2010 Eli Friedman
+ 2010 Daniel G. Taylor <dan@programmer-art.org>
+ 2010 Carl Eugen Hoyos
+ 2010 Anton Khirnov
+ 2010 Anatoly Nenashev
+ 2010 Amanda, Y.N. Wu <amanda11192003@gmail.com>
+ 2010 Alex Converse <alex.converse@gmail.com>
+ 2010 Adrian Daerr and Nicolas George
+ 2009 Tobias Bindhammer
+ 2009 Thomas P. Higdon <thomas.p.higdon@gmail.com>
+ 2009 Thilo Borgmann <thilo.borgmann _at_ googlemail.com>
+ 2009 Stephen Backway
+ 2009 Samalyse
+ 2009 Ronald S. Bultje <rsbultje@gmail.com>
+ 2009 Nathan Caldwell <saintdev (at) gmail.com>
+ 2009 Michael Tison
+ 2009 Maxim Poliakovski
+ 2009 Kostya Shishkov
+ 2009 Kenan Gillet
+ 2009 Kenan Gillet
+ 2009 Jimmy Christensen
+ 2009 James Darnley
+ 2009 Ivan Schreter
+ 2009 Dylan Yudaken
+ 2009 Daniel Verkamp <daniel at drv.nu>
+ 2009 Colin McQuillan
+ 2009 Christian Schmidt
+ 2009 Bjorn Axelsson
+ 2009-2010 Stefano Sabatini
+ 2008 vmrsss
+ 2008 Vladimir Voroshilov
+ 2008 Victor Paesa
+ 2008 Sisir Koppaka
+ 2008 Robert Marston
+ 2008 NVIDIA
+ 2008 Jaikrishnan Menon <realityman@gmx.net>
+ 2008 Jaikrishnan Menon <realityman@gmx.net>
+ 2008 GUCAS, Zhentan Feng <spyfeng at gmail dot com>
+ 2008 Alessandro Sappia
+ 2008 Affine Systems, Inc (Michael Sullivan, Bobby Impollonia)
+ 2008-2010 Vitor Sessak
+ 2008-2010 Paul Kendall <paul@kcbbs.gen.nz>
+ 2008-2010 David Conrad
+ 2008-2010 Alexander Strange <astrange@ithinksw.com>
+ 2008-2009 Splitted-Desktop Systems
+ 2007 Nicholas Tung
+ 2007 Marco Gerards <marco@gnu.org>
+ 2007 Marc Hoffman <marc.hoffman@analog.com>
+ 2007 Luca Barbato <lu_zero@gentoo.org>
+ 2007 Denes Balatoni <dbalatoni@programozo.hu>
+ 2007 Bobby Bingham
+ 2007 Bj<F6>rn Axelsson
+ 2007 Benoit Fouet ( benoit fouet free fr )
+ 2007 Anssi Hannula <anssi.hannula@gmail.com>
+ 2007-2010 Baptiste Coudurier <baptiste dot coudurier at smartjog dot com>
+ 2007-2009 Loren Merritt <lorenm@u.washignton.edu>
+ 2007-2009 Bartlomiej Wolowiec <bartek.wolowiec@gmail.com>
+ 2007-2008 Siarhei Siamashka <ssvb@users.sourceforge.net>
+ 2007-2008 Ian Caulfield
+ 2006 Thijs Vermeir <thijs.vermeir@barco.com>
+ 2006 Steve Lhomme
+ 2006 Stefan Gehrer <stefan.gehrer@gmx.de>
+ 2006 Paul Richards <paul.richards@gmail.com>
+ 2006 Patrick Guimond
+ 2006 Kartikey Mahendra BHATT (bhattkm at gmail dot com)
+ 2006 Julian Hall
+ 2006 Guillaume Poirier <gpoirier@mplayerhq.hu>
+ 2006 Expertisecentrum Digitale Media, UHasselt
+ 2006 Daniel Maas <dmaas@maasdigital.com>
+ 2006 Corey Hickey
+ 2006 Benjamin Larsson
+ 2006-2010 Reimar Döffinger <Reimar.Doeffinger@gmx.de>
+ 2006-2010 Prakash Punnoor <prakash@punnoor.de>
+ 2006-2010 Justin Ruggles <justin.ruggles@gmail.com>
+ 2006-2010 Aurelien Jacobs <aurel@gnuage.org>
+ 2006-2009 Robert Swain ( rob opendot cl )
+ 2006-2009 Ramiro Polla <ramiro@lisha.ufsc.br>
+ 2006-2009 Baptiste Coudurier
+ 2006-2008 Zuxy MENG Jie, Loren Merritt
+ 2006-2008 Ivo van Poorten
+ 2006-2008 Gregory Montoir (cyx@users.sourceforge.net)
+ 2006-2008 BBC, Anuradha Suraparaju <asuraparaju at gmail dot com >
+ 2006-2007 SmartJog S.A., Baptiste Coudurier <baptiste dot coudurier at smartjog dot com>
+ 2006-2007 Ryan Martell <rdm4@martellventures.com>
+ 2006-2007 Reynaldo H. Verdejo Pinochet
+ 2006, 2007 Michel Bardiaux <mbardiaux@mediaxim.be>
+ 2006-2007 Maxim Gavrilov ( maxim.gavrilov gmail com )
+ 2006-2007 Luca Abeni ( lucabe72 email it )
+ 2005 Vidar Madsen
+ 2005 Steve Underwood <steveu at coppice.org>
+ 2005 Ole Andr<E9> Vadla Ravn<E5>s <oleavr@gmail.com>
+ 2005 Matthieu CASTET, Alex Beregszaszi
+ 2005 Luca Barbato <lu_zero@gentoo.org>
+ 2005 Jeff Muizelaar
+ 2005 BBC, Andrew Kennedy <dirac at rd dot bbc dot co dot uk>
+ 2005 Anonymous, Alex Beregszaszi, Michael Niedermayer
+ 2005 Alban Bedel <albeu@free.fr>
+ 2005-2010 Mans Rullgard <mans@mansr.com>
+ 2005-2008 Konstantin Shishkov
+ 2005-2007 Wolfram Gloger
+ 2005-2006 Robert Edele <yartrebo@earthlink.net>
+ 2005-2006 Oded Shimon <ods15@ods15.dyndns.org>
+ 2005-2006 DivX, Inc
+ 2004 Maarten Daniels
+ 2004 Gildas Bazin <gbazin at videolan dot org>
+ 2004 AGAWA Koji
+ 2004 Adam Thayer <krevnik@comcast.net>
+ 2004-2007 Eric Lasota
+ 2004-2007 Denes Balatoni < dbalatoni XatX interware XdotX hu >
+ 2004-2007 Benjamin Zores
+ 2004-2005 Michael Niedermayer, Loren Merritt
+ 2003 Tinic Uro
+ 2003 Thomas Raivio
+ 2003 Sascha Sommer
+ 2003 Pascal Massimino <skal@planet-d.net>
+ 2003 Nick Kurshev
+ 2003 Michel Bardiaux
+ 2003 Max Krasnyansky <maxk@qualcomm.com>
+ 2003 James Klicman <james@klicman.org>
+ 2003 Ivan Kalvachev
+ 2003 Dr. Tim Ferguson
+ 2003 David S. Miller <davem@redhat.com>
+ 2003 Daniel Moreno <comac AT comac DOT darktech DOT org>
+ 2003, 2007 Mike Melanson
+ 2003-2004 Roman Shaposhnik
+ 2003-2004 Romain Dolbeau <romain@dolbeau.org>
+ 2002 the xine project
+ 2002 Steve O'Hara-Smith
+ 2002 Remi Guyomarch <rguyom@pobox.com>]
+ 2002 Laszlo Torok <torokl@alpha.dfmk.hu>
+ 2002 Francois Revol
+ 2002 Falk Hueffner <falk@debian.org>
+ 2002 Dieter Shirley
+ 2002 by Leon van Stuivenberg
+ 2002 Brian Foley
+ 2002 A'rpi
+ 2002-2009 Maxim Poliakovski
+ 2002-2007 the ffmpeg project
+ 2002-2006 Alex Beregszaszi
+ 2002-2004 Roberto Togni
+ 2002-2003 Brian J. Murrell
+ 2001 Tim Ferguson
+ 2001 Lionel Ulmer
+ 2001 Juan J. Sierralta P
+ 2001-2010 Michael Niedermayer <michaelni@gmx.at>
+ 2001, 2006-2010 Peter Ross <pross@xvid.org>
+ 2001-2003 BERO <bero@geocities.co.jp>
+ 2000 Michel Lespinasse <walken@zoy.org>
+ 2000-2011 The FFmpeg developers
+ 2000-2003 Fabrice Bellard
+ 2000-2001 Peter Gubanov <peter@elecard.net.ru>
+ 2000-2001 Michel Lespinasse <walken@zoy.org>
+ 1999 Roger Hardiman
+ 1999 Intel Corporation
+ 1999,2000 Sebastien Rougeaux <sebastien.rougeaux@anu.edu.au>
+ 1994-1996, Thomas G. Lane
+License: LGPL-2.1+
+
+Files: ffmpeg-mt/ffmpeg.c
+ ffmpeg-mt/libavcodec/dtsdec.c
+ ffmpeg-mt/libavcodec/i386/idct_mmx.c
+ ffmpeg-mt/libavcodec/liba52/*.[ch]
+ ffmpeg-mt/libavformat/x11grab.c
+ ffmpeg-mt/libavformat/gxfenc.c
+ ffmpeg-mt/libpostproc/postprocess_internal.h
+ ffmpeg-mt/libpostproc/postprocess_altivec_template.c
+ ffmpeg-mt/libpostproc/postprocess.h
+ ffmpeg-mt/libpostproc/postprocess_template.c
+ ffmpeg-mt/libpostproc/postprocess.c
+ ffmpeg-mt/libpostproc/mangle.h
+ ffmpeg-mt/libswscale/swscale.c
+ ffmpeg-mt/libswscale/swscale-example.c
+ ffmpeg-mt/libswscale/yuv2rgb_template.c
+ ffmpeg-mt/libswscale/swscale_altivec_template.c
+ ffmpeg-mt/libswscale/yuv2rgb_altivec.c
+ ffmpeg-mt/libswscale/swscale_template.c
+ ffmpeg-mt/libswscale/rgb2rgb_template.c
+ ffmpeg-mt/libswscale/rgb2rgb.c
+ ffmpeg-mt/libswscale/cs_test.c
+ ffmpeg-mt/libswscale/yuv2rgb_mlib.c
+ ffmpeg-mt/libswscale/yuv2rgb.c
+Copyright:
+ 2000-2011 The FFmpeg developers
+ 2006 Clemens Fruhwirth <clemens@endorphin.org>
+ 1999-2001 Aaron Holtzman <aholtzma@ess.engr.uvic.ca>
+ 2000-2001 Fabrice Bellard
+ 1997-1998 Rasca, Berlin
+License: GPL-2+
+
+Files: ffmpeg-mt/libavcodec/x86/vc1dsp_mmx.c
+ ffmpeg-mt/libavcodec/nellymoser.*
+ ffmpeg-mt/libavcodec/nellymoserdec.c
+ ffmpeg-mt/libavformat/oggdec.*
+ ffmpeg-mt/libavformat/oggparseogm.c
+ ffmpeg-mt/libavformat/oggparsevorbis.c
+Copyright:
+ 2007 Christophe GISQUET <christophe.gisquet@free.fr>
+ 2007 Loic Minier <lool at dooz.org>, Benjamin Larsson
+ 2005 Michael Ahlberg, Måns Rullgård
+License: Expat
+
+Files:
+ mplayer/ffmpeg_files/arm/bswap.h
+ mplayer/ffmpeg_files/sh4/bswap.h
+ mplayer/ffmpeg_files/taglists.c
+ mplayer/ffmpeg_files/bswap.h
+ mplayer/ffmpeg_files/bfin/bswap.h
+ mplayer/ffmpeg_files/taglists.h
+ mplayer/ffmpeg_files/x86/bswap.h
+ mplayer/ffmpeg_files/x86_cpu.h
+Copyright:
+ 2004 Romain Dolbeau <romain@dolbeau.org>
+ 2000-2011 The FFmpeg developers
+ 1995-1999 by Michael Hipp
+License: LGPL-2.1+
+
+Files: libass/*
+Copyright:
+ 2009-2010 Grigori Goronzy <greg@geekmind.org>
+ 2006 Evgeniy Stepanov <eugeni.stepanov@gmail.com>
+ 1988-1993 The Regents of the University of California.
+ 1994 Sun Microsystems, Inc.
+License: ISC
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+Comment:
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+Comment:
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License can be found in "/usr/share/common-licenses/GPL-3".
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+Comment:
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License version can be found in "/usr/share/common-licenses/LGPL-2.1".
+
+License: LGPL-3+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+Comment:
+ You should have received a copy of the GNU Lesser General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public
+ License version can be found in "/usr/share/common-licenses/LGPL-3".
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+
+License: ISC
+ Permission to use, copy, modify, and/or distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.

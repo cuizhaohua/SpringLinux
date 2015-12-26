@@ -1,0 +1,22 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.17:$
+Arch:arm-eabi-gcc3:$
+
+[PLUGINS]
+npica.so:$
+/opt/Citrix/ICAClient/npica.so:$
+:$
+1439989563000:0:0:0:$
+Citrix HDX Plugin (LinuxArmHF) Version 13.2.1.328635:$
+Citrix Receiver for LinuxArmHF:$
+2
+0:application/x-ica:Citrix ICA connection parameters:ica,ICA:$
+1:application/vnd.citrix.receiver.configure:Citrix Service configuration:cr:$
+
+[INVALID]
+/root/.mozilla/plugins/libflashplayer.so:$
+1448189047000:$
+/usr/lib/mozilla/plugins/libflashplayer.so:$
+1448188974000:$

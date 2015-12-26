@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Die Option <cmd>--progress</cmd> verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Fortschrittsanzeige-Dialog</title>
+    <p>Verwenden Sie die Option <cmd>--progress</cmd>, um einen Fortschrittsanzeige-Dialog zu erzeugen.</p>
+
+    <p><app>Zenity</app> liest die Daten aus der Standardeingabe zeilenweise. Wenn einer Zeile ein Raute-Zeichen (#) vorangestellt ist, wird der angezeigte Text durch den Text in dieser Zeile aktualisiert, bei einem angezeigten Prozentsatz durch die angegebene Zahl.</p>
+	
+    <p>Der Fortschrittsanzeige-Dialog unterstützt die folgenden Optionen:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>Text</var></title>
+	  <p>Legt den Text fest, der im Fortschrittsanzeige-Dialog angezeigt wird.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>Prozentsatz</var></title>
+	  <p>Legt den anfänglich im Fortschrittsanzeige-Dialog angezeigten Prozentsatz fest.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Schließt den Fortschrittsanzeige-Dialog, wenn 100% erreicht sind.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Legt fest, dass die Fortschrittsleiste pulsiert, bis ein EOF-Zeichen von der Standardeingabe gelesen wird.</p>
+      </item>
+
+    </terms>
+
+    <p>Das folgende Beispielskript zeigt, wie Sie einen Fortschrittsanzeige-Dialog erzeugen:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Mail-Logs werden aktualisiert" ; sleep 1
+echo "20" ; sleep 1
+echo "# cron-jobs werden zurückgesetzt" ; sleep 1
+echo "50" ; sleep 1
+echo "Diese Zeile wird einfach ignoriert" ; sleep 1
+echo "75" ; sleep 1
+echo "# System wird neu gestartet" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="System-Logs aktualisieren" \
+  --text="Mail-Logs werden eingelesen ..." \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Aktualisierung abgebrochen."
+fi
+</code>
+
+
+    <figure id="zenity-progress-screenshot">
+      <title>Beispiel für einen Fortschrittsanzeige-Dialog</title>
+      <desc>Beispiel für einen Fortschrittsanzeige-Dialog in <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="zh-CN">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>快捷键</title>
+
+  <p>使用<gui>快捷键</gui>执行常用任务，比用鼠标和菜单要快。下表列出了 <app>gedit</app> 的常用快捷键。</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>标签相关的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>切换到左边的标签</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>切换到右边的标签</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>关闭标签</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>保存全部标签</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>关闭全部标签</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reopen the most recently closed tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>跳到第 <var>n</var> 个标签</p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>New tab group</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Previous tab group</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Next tab group</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>文件操作的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>创建新文档</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>打开文档</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>保存当前文档</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>文件另存为</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>打印当前文档</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>打印预览</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>关闭当前文档</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>退出 gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>编辑文档的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Move to the beginning of the current line</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the end of the current line</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the beginning of the document</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the end of the document</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move the selected word right one word</p></td>
+          <td><p><keyseq><key>Alt</key><key>→</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move the selected word left one word</p></td>
+          <td><p><keyseq><key>Alt</key><key>←</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>撤销上一次操作</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>重做上一次撤销的操作</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>剪切选中的文本或文本块，并放到剪贴板中</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>复制选中的文本或文本块，并放到剪贴板中</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>从剪贴板中粘贴内容</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>全部选中</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>删除当前行</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>将选中的行上移一行</p></td>
+          <td><p><keyseq><key>Alt</key><key>↑</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>将选中的行下移一行</p></td>
+          <td><p><keyseq><key>Alt</key><key>↓</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>添加制表符</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>删除制表符</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to upper case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to lower case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Toggle case of the selected text</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>显示和隐藏面板的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>显示/隐藏侧边栏</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>显示/隐藏底部面板。</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>搜索的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>查找字符串</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>查找下一个匹配的字符串</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Find the previous instance of the string</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>查找和替换</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Clear highlight</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>跳转到行</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>使用工具的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>检查拼写</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>删除尾部空格(使用插件)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>在当前文件夹运行“make”命令(用插件)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>文件夹列表(使用插件)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>帮助的快捷键</title>
+      <thead>
+        <tr>
+          <td><p>操作</p></td>
+          <td><p>快捷键</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>打开使用指南</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

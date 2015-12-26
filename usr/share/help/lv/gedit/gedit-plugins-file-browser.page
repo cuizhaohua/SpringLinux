@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-plugins-file-browser" xml:lang="lv">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2011-08-17" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email its:translate="no">dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email its:translate="no">jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Izmantot sānu rūti, lai pārlūkotu un atvērtu datnes</desc>
+</info>
+
+<title>Datņu pārlūka rūts</title>
+
+  <p>Atkarībā, kā jūs lietojat <app>gedit</app>, jums varētu noderēt <app>Datņu pārlūka rūts</app> spraudnis. Šis spraudnis iekļauj <app>datņu pārlūku</app> sānu rūtī, ļaujot viegli piekļūt bieži izmantotajām datnēm.</p>
+  
+  <p>Jūs varat ieslēgt šo <gui>sānu rūti</gui>, izvēloties  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Iestatījumi</gui><gui>Spraudņi</gui><gui>Datņu pārlūka rūts</gui></guiseq>.</p>
+
+  <section id="sidepane-open">
+    <title>Datņu atvēršana no sānu rūts</title>
+    <p>Lai aktivizētu un izmantotu <gui>sānu rūti</gui>, izvēlieties <guiseq><gui>Skats</gui><gui>Sānu rūts</gui></guiseq> (vai nospiediet <key>F9</key>), un tad veiciet klikšķi uz <gui>datņu pārlūka</gui> ikonas rūts apakšā.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Tas ieslēgs  <app>sānu rūts</app> <em>datņu pārlūka</em> režīmu. Izmantojot navigācijas pogas rūts augšā, var atrast un atvērt vēlamās datnes.</p>
+  </section>
+
+</page>

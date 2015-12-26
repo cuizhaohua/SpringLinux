@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tastenkombinationen</title>
+
+  <p>Verwenden Sie <gui>Tastenkürzel</gui>, um häufig vorkommende Aufgaben schneller als mit der Maus oder über die Menüs auszuführen. In den folgenden Tabellen werden alle Tastenkürzel von <app>gedit</app> aufgelistet.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Tastenkombinationen für Reiter</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Zum nächsten Reiter links wechseln</p></td>
+          <td><p><keyseq><key>Strg</key><key>Alt</key><key>Bild↑</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zum nächsten Reiter rechts wechseln</p></td>
+          <td><p><keyseq><key>Strg</key><key>Alt</key><key>Bild↓</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reiter schließen</p></td>
+          <td><p><keyseq><key>Strg</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Alle Reiter speichern</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Alle Reiter schließen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den zuletzt geschlossenen Reiter erneut öffnen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den <var>n</var>-ten Reiter aktivieren</p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Neue Reitergruppe</p></td>
+          <td><p><keyseq><key>Strg</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Vorherige Reitergruppe</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalt</key><key>Alt</key><key>Bild↑</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Nächste Reitergruppe</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalt</key><key>Alt</key><key>Bild↓</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tastenkombinationen zum Arbeiten mit Dateien</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Eine neues Dokument anlegen</p></td>
+          <td><p><keyseq><key>Strg</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Ein Dokument öffnen</p></td>
+          <td><p><keyseq><key>Strg</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das aktuelle Dokument speichern</p></td>
+          <td><p><keyseq><key>Strg</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das aktuelle Dokument unter einem anderen Dateinamen speichern</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das aktuelle Dokument drucken</p></td>
+          <td><p><keyseq><key>Strg</key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Druckvorschau</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das aktuelle Dokument schließen</p></td>
+          <td><p><keyseq><key>Strg</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Gedit beenden</p></td>
+          <td><p><keyseq><key>Strg</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tastenkombinationen zum Bearbeiten von Dokumenten</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>An den Anfang der aktuellen Zeile springen</p></td>
+          <td><p><key>Pos1</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Ans Ende der aktuellen Zeile springen</p></td>
+          <td><p><key>Ende</key></p></td>
+        </tr>
+        <tr>
+          <td><p>An den Anfang des Dokuments springen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Pos1</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>An das Ende des Dokuments springen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Ende</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das ausgewählte Wort ein Wort nach rechts verschieben</p></td>
+          <td><p><keyseq><key>Alt</key><key>→</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das ausgewählte Wort ein Wort nach links verschieben</p></td>
+          <td><p><keyseq><key>Alt</key><key>←</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den letzten Vorgang rückgängig machen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den rückgängig gemachten Vorgang wiederholen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den markierten Text oder die markierte Region ausschneiden und in die Zwischenablage verschieben</p></td>
+          <td><p><keyseq><key>Strg</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den markierten Text oder den markierten Bereich in die Zwischenablage kopieren</p></td>
+          <td><p><keyseq><key>Strg</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den Inhalt der Zwischenablage einfügen</p></td>
+          <td><p><keyseq><key>Strg</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Sämtlichen Text in der Datei auswählen</p></td>
+          <td><p><keyseq><key>Strg</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Die aktuelle Zeile löschen</p></td>
+          <td><p><keyseq><key>Strg</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Die markierte Zeile um eine Position nach oben verschieben</p></td>
+          <td><p><keyseq><key>Alt</key><key>↑</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Die markierte Zeile um eine Position nach unten verschieben</p></td>
+          <td><p><keyseq><key>Alt</key><key>↓</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Eine Tabulatorposition hinzufügen</p></td>
+          <td><p><keyseq><key>Tabulator</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Eine Tabulatorposition entfernen</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tabulator</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den markierten Text in Großbuchstaben umwandeln</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Den markierten Text in Kleinbuchstaben umwandeln</p></td>
+          <td><p><keyseq><key>Strg</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Die Groß-/Kleinschreibung für den ausgewählten Text umschalten</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tastenkombinationen zum Anzeigen und Verbergen von Leisten</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Die Seitenleiste anzeigen/verbergen</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Die Fußleiste anzeigen/verbergen</p></td>
+          <td><p><keyseq><key>Strg</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tastenkombinationen zum Suchen</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Eine Zeichenkette suchen</p></td>
+          <td><p><keyseq><key>Strg</key><key>F</key></keyseq>.</p></td>
+        </tr>
+        <tr>
+          <td><p>Das nächste Vorkommen der Zeichenkette suchen</p></td>
+          <td><p><keyseq><key>Strg</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Das vorherige Vorkommen der Zeichenkette suchen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Suchen und ersetzen</p></td>
+          <td><p><keyseq><key>Strg</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Hervorhebung zurücksetzen</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Zu einer bestimmten Zeile gehen</p></td>
+          <td><p><keyseq><key>Strg</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tastenkombinationen für Werkzeuge</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Rechtschreibprüfung</p></td>
+          <td><p><keyseq><key>Umschalttaste</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Unnötige Leerzeichen am Zeilenende entfernen (mit Plugin)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>»make« im aktuellen Ordner ausführen (mit Plugin)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Ordnerinhalt anzeigen (mit Plugin)</p></td>
+          <td><p><keyseq><key>Strg</key><key>Umschalttaste</key><key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tastenkombinationen für Hilfe</title>
+      <thead>
+        <tr>
+          <td><p>Um dies zu tun</p></td>
+          <td><p>Drücken Sie dies</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Das Benutzerhandbuch von gedit öffnen</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

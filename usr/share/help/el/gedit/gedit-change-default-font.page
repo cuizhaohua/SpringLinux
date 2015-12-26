@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αλλαγή της προεπιλεγμένης γραμματοσειράς</title>
+
+  <p>Το <app>gedit</app> θα χρησιμοποιήσει την προκαθορισμένη γραμματοσειρά σταθερού πλάτους του συστήματος, αλλά μπορείτε να αλλάξετε την γραμματοσειρά του <app>gedit</app> για να ταιριάζει στις προτιμήσεις σας.</p>
+  
+  <steps>
+    <title>Για να αλλάξετε την προεπιλεγμένη γραμματοσειρά στο <app>gedit</app>:</title>
+      <item><p>Επιλέξτε <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Προτιμήσεις</gui> <gui>Γραμματοσειρά &amp; χρώματα</gui></guiseq>.</p></item>
+      <item><p>Αποεπιλέξτε το κουτί δίπλα από τη φράση, "Χρήση της προκαθορισμένης γραμματοσειράς σταθερού πλάτους του συστήματος."</p></item>
+      <item><p>Πατήστε στο τρέχον όνομα γραμματοσειράς. Το <app>gedit</app> θα ανοίξει ένα παράθυρο επιλογέα γραμματοσειράς, επιτρέποντας σας να δείτε διαθέσιμες γραμματοσειρές και να επιλέξετε αυτή που προτιμάτε.</p></item>
+      <item><p>Μετά την επιλογή της νέας σας γραμματοσειράς, χρησιμοποιήστε τον <gui>ολισθητή</gui> κάτω από τη λίστα των γραμματοσειρών για να επιλέξετε το προεπιλεγμένο μέγεθος της.</p></item>
+      <item><p>Πατήστε στο <gui>Επιλογή</gui>, και μετά πατήστε στο <gui>Κλείσιμο</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

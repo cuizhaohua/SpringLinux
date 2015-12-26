@@ -1,0 +1,527 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian CLI Policy - Packaging Policy</title>
+
+<link href="index.html" rel="start">
+<link href="ch-terms.html" rel="prev">
+<link href="ch-mono.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch-history.html" rel="chapter" title="1 Policy History">
+<link href="ch-terms.html" rel="chapter" title="2 Used Terms">
+<link href="ch-packaging.html" rel="chapter" title="3 Packaging Policy">
+<link href="ch-mono.html" rel="chapter" title="4 Mono Specific Packaging help">
+<link href="ch-pnet.html" rel="chapter" title="5 DotGNU Portable.NET Packaging help">
+<link href="ch-appendix.html" rel="chapter" title="6 Appendix">
+<link href="ch-terms.html#s-CLI" rel="section" title="2.1 CLI - Common Language Infrastructure">
+<link href="ch-terms.html#s-CLR" rel="section" title="2.2 CLR - Common Language Runtime">
+<link href="ch-terms.html#s-CIL" rel="section" title="2.3 CIL - Common Intermediate Language">
+<link href="ch-terms.html#s-.NET" rel="section" title="2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;">
+<link href="ch-terms.html#s-GAC" rel="section" title="2.5 GAC - Global Assembly Cache">
+<link href="ch-terms.html#s-package-names" rel="section" title="2.6 Package Names">
+<link href="ch-packaging.html#s-general-packaging" rel="section" title="3.1 General Packaging">
+<link href="ch-packaging.html#s-gac-library-packaging" rel="section" title="3.2 GAC Library Packaging">
+<link href="ch-packaging.html#s-non-gac-library-packaging" rel="section" title="3.3 non-GAC Library Packaging">
+<link href="ch-mono.html#s4.1" rel="section" title="4.1 Naming">
+<link href="ch-mono.html#s4.2" rel="section" title="4.2 DLL Maps">
+<link href="ch-mono.html#s-mono-disable-shm" rel="section" title="4.3 MONO_DISABLE_SHM">
+<link href="ch-pnet.html#s5.1" rel="section" title="5.1 Naming">
+<link href="ch-appendix.html#s-cli-common-dev" rel="section" title="6.1 Helper Scripts: cli-common-dev">
+<link href="ch-appendix.html#s-examples" rel="section" title="6.2 Examples">
+<link href="ch-appendix.html#s-migrating" rel="section" title="6.3 Migrating Existing Packages">
+<link href="ch-packaging.html#s-architecture" rel="subsection" title="3.1.1 Architecture">
+<link href="ch-packaging.html#s-file-locations" rel="subsection" title="3.1.2 File Locations">
+<link href="ch-packaging.html#s-file-perms" rel="subsection" title="3.1.3 File Permissions">
+<link href="ch-packaging.html#s-build-deps" rel="subsection" title="3.1.4 Build Dependencies">
+<link href="ch-packaging.html#s-gac-naming-versioning" rel="subsection" title="3.2.1 Naming &amp; Versioning">
+<link href="ch-packaging.html#s-gac-policy-files" rel="subsection" title="3.2.2 Policy Files">
+<link href="ch-packaging.html#s-clilibs-control-file" rel="subsection" title="3.2.3 clilibs Control File">
+<link href="ch-packaging.html#s-pkg-config-file" rel="subsection" title="3.2.4 pkg-config File">
+<link href="ch-packaging.html#s-signing" rel="subsection" title="3.2.5 Signing">
+<link href="ch-packaging.html#s-non-gac-naming" rel="subsection" title="3.3.1 Naming">
+<link href="ch-mono.html#s-dll-maps-intro" rel="subsection" title="4.2.1 Introduction">
+<link href="ch-mono.html#s4.2.2" rel="subsection" title="4.2.2 Solution: DLL map config file">
+<link href="ch-appendix.html#s-dh_makeclilibs" rel="subsection" title="6.1.1 dh_makeclilibs">
+<link href="ch-appendix.html#s-dh_clideps" rel="subsection" title="6.1.2 dh_clideps">
+<link href="ch-appendix.html#s-dh_installcligac" rel="subsection" title="6.1.3 dh_installcligac">
+<link href="ch-appendix.html#s-debhelper-example" rel="subsection" title="6.2.1 debhelper 5/6 Example">
+<link href="ch-appendix.html#s-debhelper7-example" rel="subsection" title="6.2.2 debhelper 7 Example">
+<link href="ch-appendix.html#s-cdbs-example" rel="subsection" title="6.2.3 cdbs Example">
+<link href="ch-appendix.html#s-wrapper-script-example" rel="subsection" title="6.2.4 Executable Wrapper Script Example">
+<link href="ch-appendix.html#s-api-compat-example" rel="subsection" title="6.2.5 API Compatibility Check Example">
+<link href="ch-appendix.html#s-gac-policy-file-example" rel="subsection" title="6.2.6 GAC Policy File Example">
+
+</head>
+
+<body>
+
+<p><a name="ch-packaging"></a></p>
+<hr>
+
+<p>
+[ <a href="ch-terms.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ 3 ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-mono.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian CLI Policy
+<br>Chapter 3 - Packaging Policy
+</h1>
+
+<hr>
+
+<p>
+This section describes the additions to the <code><a
+href="http://www.debian.org/doc/debian-policy/">Debian Policy</a></code> that
+are required for <a href="ch-terms.html#s-CLI">CLI</a> packages.
+</p>
+
+<hr>
+
+<h2 id="s-general-packaging">3.1 General Packaging</h2>
+
+<hr>
+
+<h3 id="s-architecture">3.1.1 Architecture</h3>
+
+<p>
+For packages that consist of 100% managed code, &quot;Architecture: all&quot;
+<em>must</em> be chosen in debian/control.
+</p>
+
+<p>
+Packages containing a mix of managed and native code <em>must</em> be
+&quot;Architecure: any&quot; or depending on the specific package a more
+restricted set of architectures is valid.
+</p>
+
+<hr>
+
+<h3 id="s-file-locations">3.1.2 File Locations</h3>
+
+<p>
+The package's applications, libraries and meta-data <em>must</em> be installed
+into <code>/usr/lib/<a
+href="ch-terms.html#s-package-names"><var>upstream_package_name</var></a></code>.
+</p>
+
+<p>
+Libraries that will be installed into the GAC <em>must</em> be installed into
+<code>/usr/lib/cli/<a
+href="ch-terms.html#s-package-names"><var>assembly_name</var></a>-X.Y</code>
+(for more details about the X.Y version see <a
+href="#s-gac-naming-versioning">GAC versioning</a>).  <var>assembly_name</var>
+is the assembly name without the file extension (.dll).  The commonly seen
+<code>/usr/lib/<strong>mono</strong>/<a
+href="ch-terms.html#s-package-names"><var>upstream_package_name</var></a></code>
+path should <em>only</em> be used for Mono project packages.
+</p>
+
+<p>
+Example path for the <code>log4net</code> package:
+</p>
+
+<pre>
+     /usr/lib/cli/log4net-1.2
+</pre>
+
+<p>
+Never install native &quot;glue&quot; libraries into <code>/usr/lib</code>,
+instead install them at <code>/usr/lib/cli/<a
+href="ch-terms.html#s-package-names"><var>assembly_name</var></a>-X.Y</code>.
+When moving libraries update the references to the new location using a DLL
+Map.  See the <a href="ch-mono.html#s-dll-maps-intro">Mono DLL maps</a> section
+for an example.
+</p>
+
+<p>
+The only exception here is for native libraries that are of wider use; can be
+used other packages.  Native libraries should be packaged according to the
+<code><a
+href="http://www.netfort.gr.jp/~dancer/column/libpkg-guide/libpkg-guide.html">Library
+Packaging Guide</a></code> in a Debain Policy conformant way.
+</p>
+
+<p>
+You <em>must not</em> install application files (<code>.exe</code>) directly
+into <code>/usr/bin</code>.  Instead create a <a
+href="ch-appendix.html#s-wrapper-script-example">wrapper script</a> into
+<code>/usr/bin</code> to allow them to be run without path and the
+<code>.exe</code> suffix.
+</p>
+
+<hr>
+
+<h3 id="s-file-perms">3.1.3 File Permissions</h3>
+
+<p>
+Source code files (<code>*.cs</code>, <code>*.vb</code>, <code>*.boo</code>,
+etc.) should be non-executable.
+</p>
+
+<p>
+Library files (<code>*.dll</code>) should be non-executable.
+</p>
+
+<p>
+Debug symbol files (<code>*.mdb</code>) should be non-executable.
+</p>
+
+<p>
+Assembly config files (<code>*.config</code>) should be non-executable.
+</p>
+
+<p>
+Application files (<code>*.exe</code>) <em>must</em> have the executable flag
+(+x) set to enable compatiblity with direct invokation as
+<code>./foo.exe</code> using Linux's BINFMT support.
+</p>
+
+<p>
+To ensure that all files have correct permissions, you <em>should</em> use
+Debhelper's <code>/usr/bin/dh</code> combined with <code>cli.make</code>.
+Otherwise you <em>should</em> add <code>dh_clifixperms</code> after
+<code>dh_fixperms</code> in the binary-* targets of <code>debian/rules</code>.
+</p>
+
+<hr>
+
+<h3 id="s-build-deps">3.1.4 Build Dependencies</h3>
+
+<p>
+At a minimum, CLI packages <em>should</em> Build-Depends on
+<code>cli-common-dev</code> (&gt;= 0.7) and the appropriate CLI compiler or CLI
+SDK package.
+</p>
+
+<p>
+Current CLI compilers in Debian:
+</p>
+<ul>
+<li>
+<p>
+C#: <code>mono-mcs</code> (&gt;= 1.0) | c-sharp-compiler
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+C# 2.0: <code>mono-gmcs</code> (&gt;= 1.1.8) | c-sharp-2.0-compiler
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+C# 3.0: <code>mono-gmcs</code> (&gt;= 1.2.5) | c-sharp-3.0-compiler
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Nemerle: <code>nemerle</code> (&gt;= 0.9)
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Boo: <code>boo</code> (&gt;= 0.5.6)
+</p>
+</li>
+</ul>
+
+<p>
+Current CLI SDKs in Debian:
+</p>
+<ul>
+<li>
+<p>
+Mono: <code>mono-devel</code> (&gt;= 2.4.2.3)
+</p>
+</li>
+</ul>
+
+<p>
+Software that uses Mono via the C interface library (<code>libmono.so</code>)
+or requires the <code>/usr/lib/pkgconfig/mono.pc</code> file <em>must</em>
+Build-Depends on libmono-dev (&gt;= 1.0)
+</p>
+
+<p>
+Note that there are architectures for which no <a
+href="ch-terms.html#s-CLR">CLR</a> is available and thus you may have to
+restrict the Build-Depends for your package to the architectures available.
+</p>
+
+<p>
+If your package is <code>Architecture: all</code>, you should specify this as
+Build-Depends-Indep.  Never put <code>debhelper</code>, <code>cdbs</code>,
+<code>dpatch</code> and <code>quilt</code> into Build-Depends-Indep.  See the
+<code><a
+href="http://www.debian.org/doc/debian-policy/ch-relationships.html#s-sourcebinarydeps">Debian
+Policy Manual</a></code> for more information on this.
+</p>
+
+<hr>
+
+<h2 id="s-gac-library-packaging">3.2 GAC Library Packaging</h2>
+
+<p>
+Libraries that are installed into the <a href="ch-terms.html#s-GAC">GAC</a>
+should provide decent ABI stability and be useful for other packages.
+Otherwise, they should remain private to the package.
+</p>
+
+<hr>
+
+<h3 id="s-gac-naming-versioning">3.2.1 Naming &amp; Versioning</h3>
+
+<p>
+Libraries that are installed into the <a href="ch-terms.html#s-GAC">GAC</a>
+<em>must</em> be strong-named, i.e.  <a href="#s-signing">signed</a>.
+</p>
+
+<p>
+Libraries <em>must</em> to be installed into the GAC at package install time
+(postinst) which is provided by the <a
+href="ch-appendix.html#s-dh_installcligac">dh_installcligac</a> tool of the
+<code>cli-common-dev</code> package.
+</p>
+
+<p>
+Each of the libraries in the <a href="ch-terms.html#s-GAC">GAC</a> has an
+assembly version number that consists of 4 parts (major, minor, build and
+revision number).  When loading libraries from the <a
+href="ch-terms.html#s-GAC">GAC</a> all 4 parts and the public signing key
+fingerprint must match.
+</p>
+
+<p>
+It is general practice and <code><a
+href="http://msdn.microsoft.com/netframework/programming/deployment/default.aspx?pull=/library/en-us/dndotnet/html/dplywithnet.asp#dplywithnet_version">recommended
+by Microsoft</a></code> that a library is ABI compatible when only the build
+and revision number change and the major and minor number stay the same.
+</p>
+
+<p>
+The library package name <em>must</em> be prefixed with <code>lib</code>.
+</p>
+
+<p>
+To reflect the ABI stability and prevent breakages when a ABI-incompatible
+version is released, a similar solution for <code><a
+href="http://www.netfort.gr.jp/~dancer/column/libpkg-guide/libpkg-guide.html#naminglibpkg">native
+library packages</a></code> is used.  The major and minor number <em>must</em>
+mirror the SONAME version and the resulting package name should be
+<code>libfooX.Y-cil</code>, where X is the major and Y the minor number of the
+assembly version.
+</p>
+
+<p>
+One notable exception for this naming are assemblies that end on a number
+(Mono.C5 for example).  In this case the package should be named
+<code>libfoo123-X.Y-cil</code> (i.e.  <code>libmono-c5-0.5-cil</code>) to
+improve the readability.
+</p>
+
+<p>
+The <code>-cil</code> suffix is chosen to prevent confusion with native library
+package names.  Never use &quot;sharp&quot; in the package name as it does not
+represent the language, and a <a href="ch-terms.html#s-CLI">CLI</a> library can
+be used with all <a href="ch-terms.html#s-CLI">CLI</a> implemented / enabled
+languages such as C#, IronPython, IronRuby, Boo, Nemerle, J#, VB.NET (<code><a
+href="http://www.mono-project.com/Languages">full list</a></code>).
+</p>
+
+<p>
+Unnecessary package renames should be avoided.  Existing package names that do
+not follow this policy should not be renamed until the next incompatible ABI
+change, at which point the new naming scheme should be used.
+</p>
+
+<p>
+If the upstream software does not use major and minor number to reflect ABI
+stability or breaks ABI with a change in build or revision, the package
+<em>must</em> be renamed to either <code>libfooA.B.C-cil</code> or
+<code>libfooA.B.C.D-cil</code> (where A, B, C, D are the complete assembly
+version numbers), depending at which point (major or minor) the breakage
+occurred.  All <a href="#s-gac-policy-files">Policy Files</a> <em>must</em> be
+dropped at this stage until a new major or minor version is released.
+</p>
+
+<p>
+The upstream software may use wildcards in the assembly versions (1.2.* for
+example) which are filled by the compiler with a random value.  You
+<em>must</em> replace these wildcards with 0 (1.2.0.0 in the example) to make
+it possible to use <a href="#s-gac-policy-files">Policy Files</a> and make
+predictable version numbers.
+</p>
+
+<p>
+More than one library can be installed in one package but it is required that
+they <em>must</em> all have the same assembly version and belong together.
+</p>
+
+<hr>
+
+<h3 id="s-gac-policy-files">3.2.2 Policy Files</h3>
+
+<p>
+As explained above a exact match of the version number is required to load a
+library from the <a href="ch-terms.html#s-GAC">GAC</a>.  To override this
+behaviour and make different versions of ABI-compatible library packages really
+ABI-compatible you have to use <code><a
+href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpconcreatingpublisherpolicyfile.asp">Policy
+Files</a></code>.  These files have to be named <code>policy.X.Y.foo.dll</code>
+(where X and Y are the major and minor number of the assembly it should be
+compatible with), it <em>must</em> be signed with the same signing key as the
+original assembly and it must be installed into the <a
+href="ch-terms.html#s-GAC">GAC</a>.  For information on how to create policy
+files look at the previous Policy Files link or at the <a
+href="ch-appendix.html#s-gac-policy-file-example">example</a> below.
+</p>
+
+<p>
+Overriding the <a href="ch-terms.html#s-GAC">GAC</a> policy should only be done
+when the different library versions are really ABI-compatible.  This can be
+checked using <a
+href="ch-appendix.html#s-api-compat-example">mono-api-check</a> of the
+<code>mono-devel</code> package.  You <em>must</em> also raise the version in
+the <a href="#s-clilibs-control-file">clilibs control file</a> to the minimum
+version when new interfaces/classes/methods were added.
+</p>
+
+<hr>
+
+<h3 id="s-clilibs-control-file">3.2.3 clilibs Control File</h3>
+
+<p>
+The <code>clilibs</code> control file <em>MUST</em> be present in all <a
+href="ch-terms.html#s-GAC">GAC</a> library packages.  It can be created with
+the <a href="ch-appendix.html#s-dh_makeclilibs">dh_makeclilibs</a> helper
+script and has a format similar to the <code>shlibs</code> file created by
+<code>dh_makeshlibs(1)</code> and also has a similar use: it is used by <a
+href="ch-appendix.html#s-dh_clideps">dh_clideps</a> helper script to find the
+correct dependencies.
+</p>
+
+<p>
+You <em>should</em> always set the minimum required version of the library in
+the <code>clilibs</code> file.
+</p>
+
+<hr>
+
+<h3 id="s-pkg-config-file">3.2.4 pkg-config File</h3>
+
+<p>
+Many libraries deliver a <code>.pc</code> file for use by the
+<code>pkg-config</code> helper utility, which aids other libraries and
+applications to link against libraries.
+</p>
+
+<p>
+All GAC library packages should have a pkg-config <code>.pc</code> file located
+in <code>/usr/lib/pkgconfig</code>.  The filename <em>must</em> be identical to
+that shipped by upstream.
+</p>
+
+<hr>
+
+<h3 id="s-signing">3.2.5 Signing</h3>
+
+<p>
+When installing libraries into the <a href="ch-terms.html#s-GAC">GAC</a>
+signing is required.  The signing key should be supplied by upstream.  If
+upstream is not supplying the key then you <em>must</em> use the
+<code>mono.snk</code> key from the <code>cli-common-dev</code> package.  This
+key <em>must</em> be used for all following versions of the library to maintain
+ABI compatbility.
+</p>
+
+<p>
+Unnecessary ABI breakages should be avoided.  Existing keys shipped by the
+source package should not be replaced (with mono.snk) until the next
+incompatible ABI change.
+</p>
+
+<hr>
+
+<h2 id="s-non-gac-library-packaging">3.3 non-GAC Library Packaging</h2>
+
+<p>
+This includes libraries that are not ABI-stable, may be not strong-named and
+are usually in an early stage of development.  They <em>must</em> not include a
+clilibs control file.
+</p>
+
+<hr>
+
+<h3 id="s-non-gac-naming">3.3.1 Naming</h3>
+
+<p>
+The package should be named <code>libfoo-cil</code> (without a version in the
+package name) and libraries should not be installed into the <a
+href="ch-terms.html#s-GAC">GAC</a> but only into
+<code>/usr/lib/upstream_package_name</code>.
+</p>
+
+<p>
+Applications using non-GAC libraries <em>must</em> copy the libraries they need
+into their own application directory.  You can compare this with static linking
+of native libraries.
+</p>
+
+<hr>
+
+<p>
+[ <a href="ch-terms.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ 3 ]
+[ <a href="ch-mono.html">4</a> ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-mono.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian CLI Policy
+</p>
+
+<address>
+Version 0.7<br>
+<br>
+Mirco Bauer <code><a href="mailto:meebey@debian.org">mailto:meebey@debian.org</a></code><br>
+Brandon Hale <code><a href="mailto:brandon@smarterits.com">mailto:brandon@smarterits.com</a></code><br>
+Sebastian Dr&ouml;ge <code><a href="mailto:slomo@debian.org">mailto:slomo@debian.org</a></code><br>
+Dylan R. E. Moonfire <code><a href="mailto:debian@mfgames.com">mailto:debian@mfgames.com</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

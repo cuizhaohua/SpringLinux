@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Memindah dan mengatur ulang tab</title>
+  <p>Tab dalam <app>gedit</app> dapat dipindah, membuat jadi lebih mudah untuk bekerja dengan berkas Anda. Tab dapat diurut ulang dalam jendela yang sama, dipindahkan ke luar <app>gedit</app> (membuat suatu jendela <app>gedit</app> baru), dan dipindah dari satu jendela ke lainnya.</p>
+
+  <section id="tabs-change-order">
+    <title>Ubah urutan tab dalam jendela gedit</title>
+
+    <p>Untuk mengubah urutan tab dalam suatu jendela.</p>
+
+    <steps>
+      <item>
+        <p>Klik dan tahan tombol tetikus pada tab.</p>
+      </item>
+      <item>
+        <p>Memindah tab ke posisi yang diinginkan di antara tab lain.</p>
+      </item>
+      <item>
+        <p>Lepas tombol tetikus.</p>
+      </item>
+    </steps>
+
+    <p>Tab akan ditempatkan dalam posisi terdekat ke tempat Anda melepas tab, seketika di sebelah tab lain yang terbuka.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Memindah tab, membuat jendela gedit baru</title>
+    <p>Untuk membuat suatu jendela baru dari tab yang ada:</p>
+
+    <steps>
+      <item>
+        <p>Klik dan tahan tombol tetikus pada tab.</p>
+      </item>
+      <item>
+        <p>Seret tab keluar dari jendela <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Lepas tombol tetikus.</p>
+      </item>
+    </steps>
+
+    <p>atau, ketika tab yang akan dipindah terbuka, pilih <guiseq><gui>Dokumen</gui><gui>Pindah ke Jendela Baru</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Untuk memindah tab ke jendela baru ketika <app>gedit</app> dimaksimalkan, seret tab ke bilah puncak di bagian atas layar.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Memindah suatu tab ke jendela gedit lain</title>
+
+    <p>Bila Anda ingin memindah suatu tab dari satu jendela ke lainnya:</p>
+
+    <steps>
+      <item>
+        <p>Klik dan tahan tombol tetikus pada tab.</p>
+      </item>
+      <item>
+        <p>Seret tab ke jendela baru.</p>
+      </item>
+      <item>
+        <p>Tempatkan itu di sebelah tab lain di dalam jendela baru.</p>
+      </item>
+      <item>
+        <p>Lepas tombol tetikus.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Mungkin lebih mudah bagi Anda untuk memindah suatu tab dari jendela satu ke lainnya dengan menyeret tab ke pojok panas <gui>Aktivitas</gui> <gui>GNOME Shell</gui>. Ini akan menyingkap setiap jendela <app>gedit</app> yang terbuka. Anda kemudian dapat melepas tab ke jendela <app>gedit</app> yang dikehendaki.</p>
+    </note>
+
+    <p>Lihat tabel <link xref="gedit-shortcut-keys">tombol pintasan terkait tab</link> agar lebih mudah mengelola tab Anda.</p>
+
+  </section>
+
+</page>

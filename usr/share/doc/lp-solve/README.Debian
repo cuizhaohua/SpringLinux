@@ -1,0 +1,22 @@
+lp-solve for Debian
+----------------------
+
+This package supplies lp_solve, a standalone program for solving
+linear programming problems.
+
+The lp_solve sources also build a library (liblpsolve55) which can be called
+from C programs to solve linear programming problems.  Header files
+are installed in /usr/include/lpsolve/.  See
+/usr/share/doc/liblpsolve55-dev/examples/demo.c.gzfor an example.  No shared
+library is provided, since a dynamically linked program would be
+slower than a statically linked program.
+
+Linear programming problems (but not integer linear programming
+problems) can also be solved with the program PCx.  PCx is available
+in the Debian package pcx, in non-free/math. 
+
+The Debian package is fixed to use libcolamd from the system instead of including
+an own one. If you want to link liblpsolve55.a statically into your project
+you also might need -lcolamd (and therefore libsuitesparse-dev).
+
+ -- 

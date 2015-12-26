@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcairo-script-interpreter2
+/usr/share/doc/libcairo-script-interpreter2/changelog.gz
+/usr/share/doc/libcairo-script-interpreter2/NEWS.gz
+/usr/share/doc/libcairo-script-interpreter2/changelog.Debian.gz
+/usr/share/doc/libcairo-script-interpreter2/copyright
+/usr/share/doc/libcairo-script-interpreter2/AUTHORS.gz
+/usr/share/doc/libcairo-script-interpreter2/README.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libcairo-script-interpreter.so.2.11400.0
+/usr/lib/arm-linux-gnueabihf/libcairo-script-interpreter.so.2

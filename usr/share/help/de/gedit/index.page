@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="de">
+
+  <info>
+    <title type="link">gedit Texteditor</title>
+    <title type="text">gedit Texteditor</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title><media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/> gedit Texteditor</title>
+  <p>Willkommen zur Hilfedokumentation von <app>gedit</app>. Lesen Sie für eine schnelle Einführung in die grundlegenden Funktionen von <app>gedit</app> und einige fortgeschrittene Tastenkombinationen die Seiten <link xref="gedit-quickstart">Erste Schritte mit gedit</link> und <link xref="gedit-shortcut-keys">Tastenkombinationen</link>.</p>
+
+  <p>Weitere Hilfethemen finden Sie nachstehend in Abschnitten gruppiert. Viel Spaß bei der Arbeit mit <app>gedit</app>!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Mit Dateien arbeiten</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>gedit konfigurieren</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>gedit-Plugins</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Drucken mit gedit</title>
+  </section>
+
+</page>

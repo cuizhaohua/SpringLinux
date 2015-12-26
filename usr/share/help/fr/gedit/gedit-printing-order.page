@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Impression des pages dans le bon ordre</title>
+
+  <section id="printing-reverse">
+    <title>Inversion</title>
+
+    <p>Normalement, les imprimantes impriment en premier la première page et en dernier la dernière page et elles se retrouvent donc dans l'ordre inverse quand vous les prenez. Pour inverser cet ordre :</p>
+
+    <steps>
+      <item>
+        <p>Choisissez <guiseq><gui style="menu">Fichier</gui><gui style="menuitem">Imprimer</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Dans l'onglet <gui style="tab">Général</gui> de la fenêtre Imprimer, dans la colonne <em>Copies</em>, cochez la case <gui style="tab">Inverser</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La dernière page sera alors imprimée en premier, et ainsi de suite.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Rassemblement</title>
+    
+    <p>Si vous imprimez plusieurs copies du document, les épreuves vont être groupées par défaut par leur numéro de page (toutes les copies de la première page ensemble, puis toutes les copies de la deuxième, etc). La fonction Rassembler va faire sortir chaque copie du document avec toutes ses pages regroupées dans le bon ordre.</p>
+
+    <p>Pour rassembler :</p>
+    <steps>
+      <item>
+        <p>Cliquez sur <guiseq><gui style="menu">Fichier</gui><gui style="menuitem">Imprimer</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Dans l'onglet <gui style="tab">Général</gui> de la fenêtre Imprimer, dans la colonne <gui style="group">Copies</gui>, cochez la case <gui style="checkbox">Rassembler</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

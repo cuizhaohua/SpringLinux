@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="gl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opción <cmd>--progress</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de progreso</title>
+    <p>Use a opción <cmd>--progress</cmd> para crear un diálogo de progreso.</p>
+
+    <p>
+      <app>Zenity</app> reads data from standard input line by line. If a line is prefixed with #, the text is updated with the text on that line. If a line contains only a number, the percentage is updated with that number.
+    </p>
+	
+    <p>O diálogo de progreso admite as seguintes opcións:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>texto</var></title>
+	  <p>Especifica o texto que se mostra no diálogo de progreso.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>porcentaxe</var></title>
+	  <p>Especifica o porcentaxe inicial que se estabelece no diálogo de progreso.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Pecha o diálogo de progreso cando se alcanza o 100%.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Especifica que a barra de progreso pulse até que un caracter EOF se lee desde a entrada estandar.</p>
+      </item>
+
+    </terms>
+
+    <p>O seguinte script de exemplo mostra como se crea un diálogo de progreso:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Updating mail logs" ; sleep 1
+echo "20" ; sleep 1
+echo "# Resetting cron jobs" ; sleep 1
+echo "50" ; sleep 1
+echo "This line will just be ignored" ; sleep 1
+echo "75" ; sleep 1
+echo "# Rebooting system" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Update System Logs" \
+  --text="Scanning mail logs..." \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Update canceled."
+fi
+</code>
+
+
+    <figure id="zenity-progress-screenshot">
+      <title>Exemplo de diálogo de progreso</title>
+      <desc><app>Zenity</app> progress dialog example</desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

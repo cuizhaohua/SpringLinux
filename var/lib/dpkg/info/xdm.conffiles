@@ -1,0 +1,15 @@
+/etc/logrotate.d/xdm
+/etc/init.d/xdm
+/etc/insserv.conf.d/xdm
+/etc/pam.d/xdm
+/etc/X11/xdm/xdm.options
+/etc/X11/xdm/Xwilling
+/etc/X11/xdm/Xstartup
+/etc/X11/xdm/Xaccess
+/etc/X11/xdm/Xsetup
+/etc/X11/xdm/Xsession
+/etc/X11/xdm/Xreset
+/etc/X11/xdm/Xservers
+/etc/X11/xdm/Xresources
+/etc/X11/xdm/xdm-config
+/etc/X11/app-defaults/Chooser

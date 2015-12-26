@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-close-file" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fourth"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Закрытие файла</title>
+
+  <p>Чтобы закрыть файл в <app>gedit</app>, выберите <guiseq><gui>Файл</gui> <gui>Закрыть</gui></guiseq>. Также можно нажать на значок «X», который находится на вкладке файла справа, или нажать <keyseq><key>Ctrl</key><key>W</key></keyseq>.</p>
+  <p>Любое из этих действий закроет файл в <app>gedit</app>. Если файл содержит изменения, которые не были сохранены, <app>gedit</app> предложит сохранить эти изменения перед закрытием файла.</p>
+
+</page>

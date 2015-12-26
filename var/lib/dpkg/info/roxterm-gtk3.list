@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/bin
+/usr/bin/roxterm
+/usr/bin/roxterm-config
+/usr/share
+/usr/share/applications
+/usr/share/applications/roxterm.desktop
+/usr/share/menu
+/usr/share/menu/roxterm-gtk3
+/usr/share/doc
+/usr/share/doc/roxterm-gtk3
+/usr/share/doc/roxterm-gtk3/changelog.Debian.gz
+/usr/share/doc/roxterm-gtk3/changelog.gz
+/usr/share/doc/roxterm-gtk3/copyright

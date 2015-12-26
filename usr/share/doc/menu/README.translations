@@ -1,0 +1,52 @@
+********************************************************
+***                                                  ***
+***               Menu sections translations         ***
+***                                                  ***
+********************************************************
+
+Debian menu includes translations of menu sections names
+in various languages. The list is available in
+/etc/menu-methods/lang.h.
+
+A) Selecting the language:
+
+1) System-wide:
+The simplest way is to set up root locales and menu will be translated
+accordingly.
+
+Another solution is to add
+outputlanguage="xx"
+in /etc/menu-methods/menu.h
+where xx is you language code.
+
+2) User-wide: 
+Just run update-menus under the locales of your choice.
+You can also copy the file 
+/etc/menu-methods/<your favorite wm> 
+to 
+~/.menu-methods/
+and add 
+outputlanguage="xx" 
+where xx is you language code.
+
+3) KDE
+Make sure menu-xdg is installed and that root locales are not "C".
+Menu will be translated in all languages at once. The users just
+need to configure KDE to use their language and menus will follow.
+
+B) Problems:
+There are unfortunately lots of reasons why translations would fail:
+window-manager not supporting menu translations, not supporting your
+locale encoding or not supporting user menus.
+
+You can try to add
+outputencoding="LOCALE"
+at the start of /etc/menu-methods/<your favorite wm>
+and run update-menus under different locale encodings.
+
+C) Screenshots
+Some screenshots are available at
+<http://people.debian.org/~ballombe/menu-snapshot>.
+
+--
+Bill Allombert <ballombe@debian.org>  Sun,  3 Oct 2004 19:23:53 +0200

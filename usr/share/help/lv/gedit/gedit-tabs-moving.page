@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Pārvietot un sakārtot cilnes</title>
+  <p>Cilnes var pārvietot, lai ērtāk strādātu ar datnēm. Cilnes var pārkārtot tajā pašā logā, izvilkt no <app>gedit</app> loga (izveidojot jaunu logu) un pārvietot no viena loga uz citu.</p>
+
+  <section id="tabs-change-order">
+    <title>Izmainīt ciļņu secību gedit logā</title>
+
+    <p>Lai izmainītu ciļņu secību logā:</p>
+
+    <steps>
+      <item>
+        <p>Piespiediet un turiet peles pogu uz cilnes.</p>
+      </item>
+      <item>
+        <p>Pārvietojiet cilni uz vēlamo vietu starp citām cilnēm.</p>
+      </item>
+      <item>
+        <p>Atlaidiet peles pogu.</p>
+      </item>
+    </steps>
+
+    <p>Cilne tiks novietota pēc iespējas tuvāk jūsu norādītajai vietai, līdzās citām atvērtajām cilnēm.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Pārvietot cilni, izveidojot jaunu gedit logu</title>
+    <p>Lai izveidotu jaunu logu no esošas cilnes:</p>
+
+    <steps>
+      <item>
+        <p>Piespiediet un turiet peles pogu uz cilnes.</p>
+      </item>
+      <item>
+        <p>Izvelciet cilni no <app>gedit</app> loga.</p>
+      </item>
+      <item>
+        <p>Atlaidiet peles pogu.</p>
+      </item>
+    </steps>
+
+    <p>vai, kad pārvietojamā cilne ir atvērta, izvēlieties<guiseq><gui>Dokumenti</gui><gui>Pārvietot uz jaunu logu</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Lai pārvietotu cilni uz jaunu logu, kad <app>gedit</app> logs ir maksimizēts, velciet cilni uz joslu ekrāna augšā.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Pārvietot cilni uz citu gedit logu</title>
+
+    <p>Ja jūs vēlaties pārvietot cilni no viena loga uz citu:</p>
+
+    <steps>
+      <item>
+        <p>Piespiediet un turiet peles pogu uz cilnes.</p>
+      </item>
+      <item>
+        <p>Pārvelciet cilni uz jauno logu.</p>
+      </item>
+      <item>
+        <p>Novietojiet to līdzās citām cilnēm jaunajā logā.</p>
+      </item>
+      <item>
+        <p>Atlaidiet peles pogu.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>You may find it easier to move a tab from one window to another by
+      dragging the tab to the <gui>Activities</gui> hot-corner of
+      <gui>GNOME Shell</gui>. This will reveal each of the open
+      <app>gedit</app> windows. You can then release the tab on the
+      desired <app>gedit</app> window.</p>
+    </note>
+
+    <p>Skatiet <link xref="gedit-shortcut-keys">tastatūras saīsnes cilnēm</link>, kas var atvieglot ciļņu pārvaldību.</p>
+
+  </section>
+
+</page>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Premikanje in prerazporeditev zavihkov</title>
+  <p>Zavihke v <app>gedit</app> lahko premaknete in si s tem olajšate delo z datotekami. Zavihke lahko preuredite v istem oknu, premaknete ven iz <app>gedit</app> (in s tem ustvarite novo okno <app>gedit</app>) in premaknete iz enega okna v drugo.</p>
+
+  <section id="tabs-change-order">
+    <title>Sprememinjanje vrstnega red zavihkov v oknu</title>
+
+    <p>Za spremembo vrstnega red zavihkov v oknu:</p>
+
+    <steps>
+      <item>
+        <p>Kliknite in držite miškin gumb na zavihku.</p>
+      </item>
+      <item>
+        <p>Move the tab to the desired position among the other tab.</p>
+      </item>
+      <item>
+        <p>Izpustite miškin gumb</p>
+      </item>
+    </steps>
+
+    <p>Zavihek bo bil postavljen na položaj, kjer boste spustili zavihek, poleg drugih odprtih zavihkov.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Premaknite zavihek in s tem ustvarite novo okno gedit</title>
+    <p>Za ustvarjanje novega okna iz obstoječega zavihka:</p>
+
+    <steps>
+      <item>
+        <p>Kliknite in držite miškin gumb na zavihku.</p>
+      </item>
+      <item>
+        <p>Povlecite zavihek iz okna <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Izpustite miškin gumb</p>
+      </item>
+    </steps>
+
+    <p>ali izberite <guiseq><gui>Dokumenti</gui><gui>Premakni v novo okno</gui></guiseq>, medtem ko je odprt zavihek za premikanje</p>
+
+    <note style="tip">
+      <p>Za premik zavihka v novo okno, ko je <app>gedit</app> razpet, povlecite zavihek v vrhnjo vrstico na vrhu zaslona.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Povlecite zavihek v novo okno gedit</title>
+
+    <p>V primeru da želite premakniti zavihek iz enega okna v drugo:</p>
+
+    <steps>
+      <item>
+        <p>Kliknite in držite miškin gumb na zavihku.</p>
+      </item>
+      <item>
+        <p>Drag the tab to the new window.</p>
+      </item>
+      <item>
+        <p>Place it beside other tabs in the new window.</p>
+      </item>
+      <item>
+        <p>Izpustite miškin gumb</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>You may find it easier to move a tab from one window to another by
+      dragging the tab to the <gui>Activities</gui> hot-corner of
+      <gui>GNOME Shell</gui>. This will reveal each of the open
+      <app>gedit</app> windows. You can then release the tab on the
+      desired <app>gedit</app> window.</p>
+    </note>
+
+    <p>See the <link xref="gedit-shortcut-keys">tab-related shortcut
+    keys</link> table to make it easier to manage your tabs.</p>
+
+  </section>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="calendar" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Použití přepínače <cmd>--calendar</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s kalendářem</title>
+    <p>K vytvoření dialogového okna s kalendářem použijte přepínač <cmd>--calendar</cmd>. Aplikace <app>Zenity</app> vrátí vybrané datum na standardní výstup. Pokud neurčíte v příkazovém řádku žádné datum, použije se aktuální.</p>
+    <p>Dialogové okno s kalendářem podporuje následující přepínače:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXT</var></title>
+	<p>Určuje text, který se v dialogovém okně s kalendářem zobrazí.</p>
+      </item>
+     	
+      <item>
+        <title><cmd>--day</cmd>=<var>DEN</var></title>
+	<p>Určuje den, který bude v kalendáři vybraný. DEN musí být číslo v rozmezí 1 až 31 včetně.</p>
+      </item>
+
+      <item>
+        <title><cmd>--month</cmd>=<var>MĚSÍC</var></title>
+	<p>Určuje měsíc, který bude v kalendáři vybraný. MĚSÍC musí být číslo v rozmezí 1 až 12 včetně.</p>
+      </item>
+
+      <item>
+        <title><cmd>--year</cmd>=<var>ROK</var></title>
+	<p>Určuje rok, který bude v kalendáři vybraný.</p>
+      </item>
+
+      <item>
+        <title><option>--date-format</option>=<var>FORMÁT</var></title>
+	<p>Určuje formát, v jakém má dialogové okno s kalendářem vrátit vybrané datum. Výchozí formát je daný vaším národním prostředím. Formát musí být formát, který akceptuje funkce <cmd>strftime</cmd>, např. <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s kalendářem:</p>
+
+<code>
+#!/bin/sh
+
+
+if zenity --calendar \
+--title="Výběr data" \
+--text="Vyberte datum kliknutím v kalendáři." \
+--day=10 --month=8 --year=2004
+  then echo $?
+  else echo "Žádné datum nebylo vybráno"
+fi
+</code>
+
+
+    <figure id="zenity-calendar-screenshot">
+      <title>Příklad dialogového okna s kalendářem</title>
+      <desc>Ukázka dialogového okna <app>Zenity</app> s kalendářem</desc>
+      <media type="image" mime="image/png" src="figures/zenity-calendar-screenshot.png"/>
+   </figure>
+</page>

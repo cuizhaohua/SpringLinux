@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="el">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>Πως να εγκαταστήσετε πρόσθετα τρίτων</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επιπλέον πρόσθετα gedit</title>
+
+  <p>Installing third-party plugins gives you extra functionality that isn't 
+  available in default <app>gedit</app> plugins, or even the extra plugins that 
+  are part of the <app>gedit-plugins</app> package. An online list of 
+  third-party plugins is 
+  <link href="https://wiki.gnome.org/Apps/Gedit">kept here</link>.
+  </p>
+  
+  <p>Εγκαθιστώντας ένα πρόσθετο τρίτων περιλαμβάνει τη λήψη του πρόσθετου, την τοποθέτηση των αρχείων του στο σωστό κατάλογο και την ενεργοποίηση του.</p>
+  
+  <steps>
+    <item><p>Συνήθως μπορείτε να κατεβάσετε ένα πρόσθετο από την ιστοσελίδα του πρόσθετου, αλλά μπορεί και να χρειαστεί να χρησιμοποιήσετε ένα πρόγραμμα όπως το <app>git</app>, το <app> bazaar</app>, ή το <app>subversion</app> για να αντιγράψετε τον κώδικα του πρόσθετου από το διαδίκτυο. Δείτε περισσότερες πληροφορίες για τη λήψη του πρόσθετου στην τεκμηρίωση του.</p></item>
+    <item><p>Τοποθετήστε το πρόσθετο στον κατάλογο <file>/home/<var>όνομα_χρήστη</var>/.local/share/gedit/plugins</file>.</p>
+    <p>Φυσικά, αντικαταστήστε τη λέξη <var>όνομα_χρήστη</var> με το δικό σας όνομα.</p></item>
+    <item><p>Αφού μεταφέρετε τα αρχεία του πρόσθετου στο σωστό κατάλογο, το πρόσθετο θα εμφανισθεί στο μενού προτιμήσεων. Επιλέξτε <guiseq><gui>Επεξεργασία </gui><gui style="menuitem">Προτιμήσεις</gui><gui>Πρόσθετα</gui> <gui>[Όνομα του πρόσθετου]</gui></guiseq> για να ενεργοποιήσετε το πρόσθετο.</p></item>
+    <item><p>Πατήστε στο <gui>Κλείσιμο</gui>.</p></item>
+  </steps>
+  
+  <p>Αφού ενεργοποιήσατε το πρόσθετο, θα πρέπει να είναι διαθέσιμο για χρήση.</p>
+  
+  <note style="tip">
+    <p>Ο κατάλογος <file>.local</file> είναι κρυφός. Για να τον δείτε, επιλέξτε <guiseq><gui>Προβολή</gui><gui>Προβολή κρυφών αρχείων</gui></guiseq>, ή πατήστε <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+  </note>
+
+  <note style="tip">
+    <p>Αν ο κατάλογος <file>.local/share/gedit/plugins/</file> δεν υπάρχει στο σύστημα σας, θα χρειαστεί να τον δημιουργήσετε.</p>
+  </note>
+  
+</page>

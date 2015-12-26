@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="es">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use la opción <cmd>--notification</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2012-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alejandro Aravena</mal:name>
+      <mal:email>raidenblast@gmail.com</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>QA: Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.gnome.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+  <title>Icono de notificación</title>
+    <p>Use la opción <cmd>--notification</cmd> para crear un icono de notificación.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>texto</var></title>
+      <p>Especifica el texto que se mostrara en el área de la notificación.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: «<var>texto</var>», message: «<var>texto</var>», tooltip: «<var>texto</var>», visible: «<var>texto</var>»,</title>
+      <p>Escucha comandos en la entrada estándar. Se debe especificar al menos un comando. Los comandos se separan mediante comas. Un comando debe ir seguido de dos puntos y un valor.</p>
+      <note style="tip">
+        <p>El comando <cmd>icon</cmd> también acepta cuatro valores de iconos del almacén, tales como <var>error</var>, <var>info</var>, <var>question</var> y <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>El siguiente script de ejemplo muestra cómo crear un icono de notificación:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Hay actualizaciones necesarias para su sistema"
+  </code>
+
+  <figure id="zenity-notification-screenshot">
+    <title>Ejemplo de icono de notificación</title>
+    <desc>Ejemplo del icono de notificación de <app>Zenity</app></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>El siguiente script de ejemplo muestra cómo crear un icono de notificación con <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: este es el mensaje de texto
+  EOH
+  </code>
+
+  <figure id="zenity-notification-listen-screenshot">
+    <title>Ejemplo de icono de notificación con <cmd>--listen</cmd></title>
+    <desc>Ejemplo del icono de notificación de <app>Zenity</app> con <cmd>--listen</cmd></desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

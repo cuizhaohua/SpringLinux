@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Imprimir documentos</title>
+
+    <note style="important">
+      <p>Imprimir con <app>gedit</app> requiere que tenga conectada y configurada una impresora. Si no lo ha hecho, consulte la <link href="help:gnome-help/printing">ayuda para imprimir en GNOME</link>.</p>
+    </note>
+  
+  <p><app>gedit</app> le permite imprimir a un archivo o en papel.</p>
+
+  <section id="print-preview">
+    <title>Vista previa de impresión</title>
+
+  <p>Antes de imprimir su documento, también puede previsualizar cómo quedará el documento imprimido usando la característica de <app>Vista previa de impresión</app>.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Vista previa de impresión</gui></guiseq>. Alternativamente puede pulsar <keyseq><key>Mayús</key><key>Ctrl</key> <key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Se abrirá una vista previa del documento en la misma pestaña del archivo. Puede examinar esta vista previa con la ayuda de los botones de navegación y de las herramientas de la barra de herramientas de la parte superior de la pestaña del documento. Para cerrar la vista previa y volver al documento, pulse en <gui style="button">Cerrar vista previa</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Imprimir en papel</title>
+
+  <p>Puede imprimir sus documentos en papel usando una impresora local o remota. Para imprimir un archivo:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Imprimir</gui> <gui style="tab">General</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Seleccione la impresora que quiere de la lista de impresoras disponibles.</p>
+    </item>
+    <item>
+      <p>Puede previsualizar el archivo usando el botón de <gui style="button">Vista previa de impresión</gui> y, una vez que esté satisfecho con la configuración, pulse <gui style="button">Imprimir</gui> para enviar el archivo a la impresora.</p>
+    </item>
+  </steps>
+
+  <p>Adicionalmente, en la pestaña <gui style="tab">Configuración de página</gui> puede elegir las opciones <gui style="group">Distribución</gui> y <gui style="group">Papel</gui> options. Dado que estas opciones están disponibles en todos los programas de <app>GNOME</app>, consulte la ayuda sobre <link href="help:gnome-help/printing#paper">Opciones de distribución y de papel</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Imprimir varias copias y entre rangos especificados</title>
+
+    <p>Puede establecer las opciones <gui style="group">Rango</gui> y <gui style="group">Copias</gui> para ayduarle:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Imprimir a un archivo</title>
+
+  <p>También puede usar <app>gedit</app> para imprimir a un archivo. Para imprimir su documento a un archivo con otro formato:</p>
+
+  <steps>
+    <item>
+      <p>Seleccione <guiseq><gui style="menu">Archivo</gui> <gui style="menuitem">Imprimir</gui> <gui style="menuitem">Imprimir a un archivo</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>La impresión está activada para los siguientes formatos de archivo:</p>
+      <list>
+        <item>
+          <p>Formato de documento portable (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Gráfico vectorial escalable (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Para imprimir el documento a un archivo, pulse <gui style="button">Imprimir</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

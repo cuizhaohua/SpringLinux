@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Substituír texto</title>
+
+  <p>Editar texto pode consumir moito tempo. Para aforrar tempo <app>gedit</app> inclúe unha función <app>Substituír</app> que lle axudará a buscar e substituír partes do texto.</p>
+
+  <steps>
+    <title>Substituír texto en <app>gedit</app></title>
+    <item>
+      <p>Open the <gui>Replace</gui> tool by clicking
+      <guiseq><gui style="menu">Search</gui><gui style="menuitem">Replace…</gui></guiseq>
+      or press <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Enter the text that you wish to replace into the <gui>Search
+      for:</gui> field.</p>
+    </item>
+    <item>
+      <p>Enter the new, replacement text into the <gui>Replace with:</gui>
+      field.</p>
+    </item>
+    <item>
+      <p>Once you have entered the original and replacement text, you can add
+      extra parameters to the search. You can also choose what you want to
+      replace:</p>
+      <list>
+        <item>
+          <p>To replace <em>only</em> the next match, click
+          <gui>Replace</gui>.</p>
+        </item>
+        <item>
+          <p>Para substituír <em>tódalas aparicións</em> do texto prema <gui>Substituír todo</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Use the <gui>Replace All</gui> function with care. <gui>Replace
+    All</gui> works on the entirety of your text file, and does not allow you
+    to highlight portions of text where the replace function will be
+    performed.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Máis opcións</title>
+
+  <p>If you wish, you can add some extra parameters to your search:</p>
+
+  <terms>
+    <item>
+      <title>Coincidir con capitalización</title>
+      <p>A función <em>Diferenciar maiúsculas de minúsculas</em> permítelle especificar se quere que a súa busca sexa sensíbel a maiúsculas/minúsculas. Se se selecciona esta opción, as buscas serán sensíbeis a maiúsculas/minúsculas. Do contrario non o serán.</p>
+    </item>
+    <item>
+      <title>Coincidir só coa palabra completa</title>
+      <p>Use esta opción para buscar unha palabra específica sen incluír partes de outras palabras. Por exemplo, se buscou o termo «por» coa opción seleccionada, atoparase a palabra «por» pero non así as palabras <em>por</em>tal, <em>por</em>que e estu<em>por</em>.</p>
+    </item>
+    <item>
+      <title>Buscar cara atrás</title>
+      <p>Esta orde compórtase de forma idéntica á orde Buscar anterior. Seleccione esta opción se quere pasar a través dos resultados da busca desde o final ao principio.</p>
+    </item>
+    <item>
+      <title>Axustar aproximadamente</title>
+      <p>Coa opción <app>Axustar axeitadamente</app> activada, <app>gedit</app> reiniciará a acción de buscar/substituír na parte superior do ficheiro, despois de chegar ao final. Isto asegúralle que a súa acción de buscar/substituír realízase en todo o ficheiro.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Using escape sequences</title>
+
+  <p>You can use <em>escape sequences</em> to search for line breaks and
+  tabs.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Newline</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tab</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Carriage return</p>
+    </item>
+  </terms>
+
+  <p>If you actually want to search for a <output>\</output> (backslash) or one
+  of the escape sequences in the text, you need to escape the backslash with an
+  extra backslash. For example, to search for <input>\</input>, you need to
+  enter <input>\\</input> into the search or replace field. You can search for
+  escape sequences in the same way: to search for or replace with a
+  <input>\n</input>, use the <input>\\n</input> term.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,473 @@
+
+Template: hddtemp/SUID_bit
+Type: boolean
+Default: false
+Description: Should /usr/sbin/hddtemp be installed SUID root?
+ You have the option of installing hddtemp with the SUID bit set,
+ allowing it to be run (reporting hard drive temperatures) by regular
+ users and not only the superuser.
+ .
+ This could potentially allow hddtemp to be used during an attack
+ against the computer's security. If in doubt, do not choose this option.
+ .
+ This setting can be modified later by running 'dpkg-reconfigure hddtemp'.
+Description-ar.UTF-8: هل يجب تثبيت /usr/sbin/hddtemp مع صلاحية SUID للمستخدم root؟
+ لديك خيار تثبيت hddtemp مع صلاحية SUID، مما يسمحللمستخدمين العاديين تشغيله (تقرير درجات حرارة القرص الصلب) وليس فقط المستخدم الخارق.
+ .
+ قد يتسبب هذا باستخدام hddtemp أثناء الهجوم علىأمن الجهاز. إن كنت في شك، لا تنتق هذا الخيار.
+ .
+ يمكن تعديل هذا الإعداد لاحقاً بتنفيذ الأمر 'dpkg-reconfigure hddtemp'.
+Description-cs.UTF-8: Má se /usr/sbin/hddtemp nainstalovat jako SUID root?
+ Máte možnost nainstalovat hddtemp s nastaveným SUID bitem, což znamená, že jej kromě správce budou moci spouštět i běžní uživatelé (a zjišťovat teplotu pevného disku).
+ .
+ Takto nastavený hddtemp může být potenciálně využit ke kompromitování počítače. Pokud si nejste jisti, pak je lepší tuto možnost zamítnout.
+ .
+ Změníte-li později názor, stačí spustit „dpkg-reconfigure hddtemp“.
+Description-da.UTF-8: Skal /usr/sbin/hddtemp installeres SUID root?
+ Du har muligheden for at installere hddtemp med sættet SUID bit, og tillade den at blive kørt (rapportering af temperaturer for harddiske) af normale brugere og ikke kun superbrugeren.
+ .
+ Dette kan potentielt tillade hddtemp at blive brugt under et angreb mod computerens sikkerhed. Hvis du er i tvivl, så vælg ikke denne indstilling.
+ .
+ Denne indstilling kan ændres senere ved at køre »dpkg-reconfigure hddtemp«.
+Description-de.UTF-8: Soll /usr/sbin/hddtemp mit Root-Rechten ausgestattet werden?
+ Sie haben die Möglichkeit, Hddtemp bei der Installation mit Root-Rechten auszustatten. Damit kann es von jedem normalen Benutzer (und nicht nur von Root) gestartet werden, um die Festplattentemperatur zu melden.
+ .
+ Dadurch könnte es aber möglich sein, die Sicherheit des Rechners anzugreifen. Wenn Sie sich nicht sicher sind, lehnen Sie hier ab.
+ .
+ Diese Einstellung kann später durch den Befehl 'dpkg-reconfigure hddtemp' geändert werden.
+Description-es.UTF-8: ¿Desea instalar «/usr/sbin/hddtemp» con el bit SUID root?
+ Puede instalar hddtemp con el bit SUID activado, permitiendo así su ejecución (informando de la temperatura de los discos duros) por parte de usuarios normales y no sólo del superusuario.
+ .
+ Esto podría permitir que se utilizara hddtemp para comprometer la seguridad del sistema durante un ataque. Si está en duda, se recomienda que no active el bit SUID.
+ .
+ Esta elección puede modificarse posteriormente ejecutando «dpkg-reconfigure hddtemp».
+Description-eu.UTF-8: /usr/sbin/hddtemp SUID bit-a gaiturik duela instalatu behar da?
+ Zuk hddtemp SUID bit-a ezarria duela instalatzeko aukera duzu supererabiltzaileak bakarrik beharrean erabiltzaile arrunti exekutatzeko (disko gogor tenperaturak erreportatzeko) baimena emanez.
+ .
+ Honek ordenagailuari eraso batetan hddtemp erabiltzeko aukera ematen du. Zalantzarik baduzu ez hautatu aukera hau.
+ .
+ Ezarpen hau beranduago aldatu daiteke  'dpkg-reconfigure hddtemp' abiaraziz.
+Description-fi.UTF-8: Tulisiko /usr/sbin/hddtemp asentaa asetuksella SUID root?
+ Ohjelma hddtemp voidaan asentaa SUID-bitti asetettuna, jolloin pääkäyttäjien lisäksi myös tavalliset käyttäjät voivat ajaa ohjelman (saaden tietää kovalevyjen lämpötilat).
+ .
+ Tämä saattaa mahdollistaa hddtempin käytön tietoturvahyökkäyksessä konetta vastaan. Jos olet epävarma, älä valitse tätä vaihtoehtoa.
+ .
+ Tätä asetusta voidaan myöhemmin muuttaa ajamalla komento ”dpkg-reconfigure hddtemp”.
+Description-fr.UTF-8: Faut-il exécuter hddtemp avec les privilèges du superutilisateur ?
+ Il est possible d'installer hddtemp avec le bit « setuid » positionné, ce qui lui permet d'être exécuté (et donc d'indiquer la température des disques durs) par les utilisateurs non privilégiés et pas seulement le superutilisateur.
+ .
+ Cela peut théoriquement permettre d'utiliser hddtemp pour une attaque visant à compromettre la sécurité du système. Dans le doute, il est conseillé ne de pas activer cette option.
+ .
+ Ce choix peut être modifié ultérieurement avec la commande « dpkg-reconfigure hddtemp ».
+Description-gl.UTF-8: ¿Quere instalar /usr/sbin/hddtemp con "setuid" root?
+ Ten a posibilidade de instalar hddtemp co bit SUID establecido, o que o permite executar (para que informe da temperatura dos discos duros) por parte de usuarios normais, e non só o administrador.
+ .
+ Con isto é posible que se empregue hddtemp durante un ataque contra a seguridade do ordenador. Se non está seguro, non escolla esta opción.
+ .
+ Esta elección pódese cambiar a posteriori executando "dpkg-reconfigure hddtemp".
+Description-it.UTF-8: Installare /usr/sbin/hddtemp con il SUID root?
+ È possibile installare hddtemp con il bit SUID attivo, questo consente a un utente normale, e non solo al superuser, di eseguire il programma (riportando le temperature dei dischi).
+ .
+ Questo potrebbe permettere l'uso di hddtemp durante un attacco alla sicurezza del sistema. In caso di dubbi, non attivare questa opzione.
+ .
+ In seguito, per modificare questa impostazione si può usare "dpkg-reconfigure hddtemp".
+Description-ja.UTF-8: /usr/sbin/hddtemp を SUID root でインストールしますか?
+ SUID ビットを設定して hddtemp をインストールするかどうかを選択します。これは、スーパーユーザだけでなく一般ユーザでも (ハードドライブの温度の報告を) 実行することを許可することになります。
+ .
+ これは潜在的にはコンピュータのセキュリティに対する攻撃に使われる可能性を hddtemp に許すことになります。疑わしければ、「いいえ」と答えてください。
+ .
+ この設定はあとで 'dpkg-reconfigure hddtemp' を実行することで変更できます。
+Description-nb.UTF-8: Skal /usr/sbin/hddtemp installeres med SUID root?
+ Du kan installere hddtemp med SUID-biten satt, slik at vanlige brukere og ikke bare superbrukeren kan kjøre det for å undersøke temperatur på harddisken(e).
+ .
+ Dette kan kanskje tillate at hddtemp blir brukt i et angrep mot systemets sikkerhet. Er du i tvil, så ikke velg dette.
+ .
+ Denne innstillingen kan endres senere ved å kjøre «dpkg-reconfigure hddtemp».
+Description-nl.UTF-8: Wilt u /usr/sbin/hddtemp als SUID root installeren?
+ U heeft de keuze om hddtemp te installeren met de SUID-bit ingesteld. Dit zorgt ervoor dat het kan worden uitgevoerd (en hardeschijf-temperatuur meldt) door gewone gebruikers en niet enkel de beheerder.
+ .
+ Hierdoor zou hddtemp mogelijk gebruikt kunnen worden bij aan aanval om de beveiling van de computer te omzeilen. Als u twijfelt, kies dan niet voor deze optie.
+ .
+ Deze instelling kan later worden gewijzigd door 'dpkg-reconfigure hddtemp' uit te voeren.
+Description-no.UTF-8: Skal /usr/sbin/hddtemp installeres med SUID root?
+ Du kan installere hddtemp med SUID-biten satt, slik at vanlige brukere og ikke bare superbrukeren kan kjøre det for å undersøke temperatur på harddisken(e).
+ .
+ Dette kan kanskje tillate at hddtemp blir brukt i et angrep mot systemets sikkerhet. Er du i tvil, så ikke velg dette.
+ .
+ Denne innstillingen kan endres senere ved å kjøre «dpkg-reconfigure hddtemp».
+Description-pt.UTF-8: Deve o /usr/sbin/hddtemp ser instalado com SUID root?
+ Você tem a opção de instalar o hddtemp com o SUID, permitindo-o ser executado (relatar temperaturas do disco rigido) por utilizadores normais e não apenas pelo super utilizador.
+ .
+ Isto pode potencialmente permitir que o hddtemp seja utilizado num ataque contra a segurança do computador. Em caso de dúvida, não escolha esta opção.
+ .
+ Esta opção pode ser modificada mais tarde executando 'dpkg-reconfigure hddtemp'.
+Description-ru.UTF-8: Установить /usr/sbin/hddtemp как SUID root?
+ Вы можете выбрать установку hddtemp с включённым SUID битом, чтобы её можно было запускать простым пользователям (для получения температур жёстких дисков), а не только суперпользователю.
+ .
+ Потенциально, это может позволить использовать hddtemp для нарушения компьютерной безопасности. Если не уверены, ответьте отрицательно.
+ .
+ Эту настройку можно позже изменить запустив 'dpkg-reconfigure hddtemp'.
+Description-sk.UTF-8: Má byť /usr/sbin/hddtemp nainštalovaný s SUID root?
+ Môžete si zvoliť inštaláciu hddtemp s nastaveným bitom SUID, ktorý dovoľuje jeho spustenie (hlásenie stavu teploty pevných diskov) obyčajným používateľom a nie len super-používateľovi.
+ .
+ Toto môže potenciálne umožniť, aby bol hddtemp použitý počas útoku na bezpečnosť počítača. Ak si nie ste istý, nevyberajte túto možnosť.
+ .
+ Môžete to zmeniť aj neskôr, spustením „dpkg-reconfigure hddtemp”.
+Description-sv.UTF-8: Vill du att /usr/sbin/hddtemp ska installeras som SUID root?
+ Du kan installera hddtemp med SUID, då kan programmet köras av vanliga användare och inte bara superanvändare.
+ .
+ Detta kan bidra till att intrång kan genomföras om det skulle finnas fel i hddtemp som någon nyttjar för att skaffa otillåten åtkomst. Om du är minsta osäker ska du inte aktivera detta alternativ.
+ .
+ Denna inställning kan ändras senare genom att köra 'dpkg-reconfige hddtemp'
+Description-vi.UTF-8: Có nên cài đặt SUID root « /usr/sbin/hddtemp » không?
+ Bạn có tùy chọn cài đặt phần mềm hddtemp với bit SUID đã đặt, do đó cho phép nó được chạy bởi các người dùng bình thường, không phải chỉ siêu người dùng.
+ .
+ Tuy nhiên, đặt bit SUID cũng có thể cho phép người hiểm độc dùng hddtemp khi tấn công bảo mật của máy tính này. Vì vậy nếu bạn chưa chắc chắn, đừng bật tùy chọn này.
+ .
+ Cũng có thể sửa đổi thiết lập này về sau, bằng cách chạy lệnh cấu hình lại « dpkg-reconfigure hddtemp ».
+
+Template: hddtemp/syslog
+Type: string
+Default: 0
+Description: Interval between hard drive temperature checks:
+ The temperature of the hard drive(s) can be logged by hddtemp via
+ the generic system logging interface.
+ .
+ Please enter a value in seconds corresponding to the interval between
+ two checks. To disable this feature, enter 0.
+Description-ar.UTF-8: الفاصل الزمني للتحقق من حرارة القرص الصلب:
+ يستطيع hddtemp تسجيل حرارة الأقراص الصلبة عبر واجهة سجلات النظام الاعتيادية.
+ .
+ الرجاء إدخال قيمة بالثواني تحدد الفاصل الزمني بين كل عملية. لتعطيل هذه الميزة، أدخل 0.
+Description-cs.UTF-8: Interval mezi kontrolami teploty pevného disku:
+ hddtemp může zaznamenávat teplotu pevného disku (pevných disků) přes obecné logovací rozhraní systému.
+ .
+ Zadejte počet sekund odpovídající době mezi po sobě jdoucími měřeními. Pro zakázání této vlastnosti jednoduše zadejte 0.
+Description-da.UTF-8: Tidsrum mellem to tjek af temperaturen på harddisken:
+ Temperaturen på harddiskene kan logges af hddtemp via den generiske grænseflade til systemlogning.
+ .
+ Indtast venligst en værdi i sekunder, der angiver intervallet mellem to tjek. Du kan deaktivere denne funktion ved at skrive 0.
+Description-de.UTF-8: Zeitraum zwischen den Überprüfungen der Festplattentemperatur:
+ Die Temperatur der Festplatte(n) kann von Hddtemp mittels der allgemeinen System-Protokollierschnittstelle fortlaufend gespeichert werden.
+ .
+ Bitte geben Sie die Zeitspanne zwischen zwei Überprüfungen in Sekunden ein. Um diese Funktion abzuschalten, geben Sie 0 ein.
+Description-es.UTF-8: Período entre dos comprobaciones de temperatura:
+ La temperatura del disco o discos duros puede ser registrada por hddtemp mediante la interfaz de registro genérica del sistema.
+ .
+ Introduzca un valor en segundos para el período entre dos comprobaciones sucesivas. Para desactivar esta característica, introduzca 0.
+Description-eu.UTF-8: Disko gogor tenperatura arakatzeen arteko denbora tartea:
+ Hddtemp-ek disko gorren tenperatura sistemako erregistro interfaze orokorraren bidez erregistratu dezake.
+ .
+ Mesedez idatzi bi arakatzeen arteko denbora tartea segunduetan. Ezaugarri hau ezgaitzeko 0 ezarri.
+Description-fi.UTF-8: Aikaväli kovalevyjen lämpötilojen tarkistusten välillä:
+ Kovalevyjen lämpötilat voidaan kirjoittaa yleiseen järjestelmälokiin hddtempin toimesta.
+ .
+ Anna tarkistusten välinen aika sekunneissa. Syötä 0 poistaaksesi tämän ominaisuuden käytöstä.
+Description-fr.UTF-8: Intervalle entre deux contrôles de température :
+ La température des disques durs peut être enregistrée par hddtemp et restituée par l'interface standard de journalisation du système.
+ .
+ Veuillez choisir l'intervalle en secondes entre deux mesures. Indiquez 0 pour désactiver cette fonctionnalité.
+Description-gl.UTF-8: Intervalo entre comprobacións da temperatura do disco duro:
+ O programa hddtemp pode manter un rexistro da temperatura do(s) disco(s) duro(s) empregando a interface xenérica de rexistro do sistema.
+ .
+ Introduza un valor en segundos correspondente ao intervalo entre comprobacións. Para desactivar esta característica, introduza un 0.
+Description-it.UTF-8: Intervallo fra due controlli della temperatura dei dischi:
+ La temperatura dei dischi può essere registrata da hddtemp tramite l'interfaccia generica offerta dal log di sistema.
+ .
+ Inserire il valore in secondi corrispondente all'intervallo fra due controlli. Per non utilizzare questa funzionalità inserire 0.
+Description-ja.UTF-8: ハードドライブの温度チェックの間隔インターバル:
+ hddtemp でハードドライブの温度を一般的なシステムロギングインターフェイスを通して記録できます。
+ .
+ 2つのチェックの間のインターバルに相当する秒数を入力してください。この機能を無効にするには、0 と入力してください。
+Description-nb.UTF-8: Intervall mellom sjekker på disktemperaturen:
+ hddtemp kan logge disken(e)s temperatur via systemets eget log-grensesnitt.
+ .
+ Oppgi en verdi i sekunder som tilsvarer intervallet mellom to sjekker. Dette blir slått av hvis verdien er 0.
+Description-nl.UTF-8: Interval tussen controles van de hardeschijf-temperatuur:
+ De temperatuur van de harde schijven kan worden bijgehouden via de algemene systeemloginterface.
+ .
+ Geef een waarde (in seconden) overeenkomend met de interval tussen twee controles. '0' schakelt deze functie uit.
+Description-no.UTF-8: Intervall mellom sjekker på disktemperaturen:
+ hddtemp kan logge disken(e)s temperatur via systemets eget log-grensesnitt.
+ .
+ Oppgi en verdi i sekunder som tilsvarer intervallet mellom to sjekker. Dette blir slått av hvis verdien er 0.
+Description-pt.UTF-8: Intervalo entre verificações da temperatura do disco rigido:
+ A temperatura do(s) disco(s) rígido(s) podem ser guardados pelo hddtemp através da interface genérica do sistema para guardar registos.
+ .
+ Por favor introduza um valor em segundos correspondendo ao intervalo entre duas verificações. Para desactivar esta opção, introduza 0.
+Description-ru.UTF-8: Интервал между проверками температуры жёсткого диска:
+ Температура жёсткого диска(ов) может быть протоколироваться hddtemp с помощью стандартного системного интерфейса протоколирования.
+ .
+ Введите значение интервала в секундах между проверками. Для выключения проверок введите 0.
+Description-sk.UTF-8: Interval medzi kontrolami teploty pevného disku:
+ Teplota pevného disko(ov) môže hddtemp zaznamenávať pomocou spoločného rozhrania systémových záznamov.
+ .
+ Prosím, zadajte hodnotu v sekundách, ktorá zodpovedá intervalu medzi dvomi meraniami. Na zakázanie tejto funkcie zadajte 0.
+Description-sv.UTF-8: Intervall mellan temperaturmätningar:
+ Temperaturen för hårddisken/hårddiskarna kan loggas i det vanliga loggningssystemet.
+ .
+ Ange ett värde i sekunder som anger intervallen mellan två mätningar. För att inaktivera den här funktionen, ange 0 som värde.
+Description-vi.UTF-8: Khoảng giữa hai lần kiểm tra nhiệt độ của đĩa cứng:
+ Nhiệt độ của những đĩa cứng có thể được ghi lưu bởi hddtemp thông qua giao diện ghi lưu hệ thống chung.
+ .
+ Hãy nhập một giá trị theo giây mà tương ứng với khoảng thời gian giữa hai lần kiểm tra. Để tắt tính năng này, chỉ đơn giản nhập số 0 ở đây.
+
+Template: hddtemp/daemon
+Type: boolean
+Default: false
+Description: Should the hddtemp daemon be started at boot?
+ The hddtemp program can be run as a daemon, listening on port 7634
+ for incoming connections. It is used by some software such as gkrellm to get
+ the temperature of hard drives.
+ .
+ You have the option of starting the hddtemp daemon automatically on
+ system boot. If in doubt, it is suggested to not start it
+ automatically on boot.
+ .
+ This setting can be modified later by running 'dpkg-reconfigure hddtemp'.
+Description-ar.UTF-8: هل تريد تشغيل عفريت hddtemp عند الإقلاع؟
+ يمكن تشغيل برنامج hddtemp كعفريت، يُصغي للمنفذ 7634 لأياتصالات واردة. يُستخدم البرنامج من قبل بعض البرامج الأخرى مثل gkrellm لمراقبة درجة حرارة الأقراص الصلبة.
+ .
+ لديك خيار تشغيل عفريت hddtemp آلياً عند إقلاع النظام. إن كنت في شك، يقترح عدم تشغيله آلياً عند الإقلاع.
+ .
+ يمكن تعديل هذا الإعداد لاحقاً بتنفيذ الأمر 'dpkg-reconfigure hddtemp'.
+Description-cs.UTF-8: Má se daemon hddtemp spouštět při startu počítače?
+ Program hddtemp může běžet jako daemon a čekat na portu 7634 na příchozí spojení. Takto může být využíván programy typu gkrellm pro zjištění aktuální teploty pevných disků.
+ .
+ Máte možnost spouštět daemona hddtemp automaticky při startu systému. Pokud si nejste jisti, pak jej raději při startu systému nespouštějte.
+ .
+ Změníte-li později názor, stačí spustit „dpkg-reconfigure hddtemp“.
+Description-da.UTF-8: Skal hddtemp-dæmonen igangsættes ved opstart?
+ Programmet hddtemp kan køres som en dæmon, der lytter på port 7634 efter indkommende forbindelser. Programmet bruges af bestemte programmer såsom gkrellm til at hente harddiskenes temperaturer.
+ .
+ Du har mulighed for at igangsætte hddtemp-dæmonen automatisk under opstart. Hvis du er i tvivl, foreslås det, at du ikke igangsætter den automatisk under opstarten.
+ .
+ Denne indstilling kan ændres senere ved at køre »dpkg-reconfigure hddtemp«.
+Description-de.UTF-8: Den Hddtemp-Dienst beim Hochfahren des Systems starten?
+ Hddtemp kann als Dienst betrieben werden und wartet am Port 7634 auf ankommende Verbindungen. Das wird von einigen Programmen wie Gkrellm genutzt, um die Temperatur der Festplatten abzufragen.
+ .
+ Sie haben die Möglichkeit, den Dienst Hddtemp beim Hochfahren des Systems automatisch zu starten. Wenn Sie sich nicht sicher sind, starten Sie den Dienst nicht automatisch beim Hochfahren.
+ .
+ Diese Einstellung kann später durch den Befehl 'dpkg-reconfigure hddtemp' geändert werden.
+Description-es.UTF-8: ¿Desea iniciar el demonio de hddtemp en el arranque del sistema?
+ hddtemp puede ejecutarse en modo demonio, escuchando conexiones entrantes en el puerto 7634. Algunos programas, como gkrellm, lo utilizan para obtener la temperatura de los discos duros.
+ .
+ Puede iniciar el demonio de hddtemp automáticamente cada vez que arranque el sistema. Si está en duda, se recomienda que no lo inicie automáticamente al arrancar.
+ .
+ Esta elección puede modificarse posteriormente ejecutando «dpkg-reconfigure hddtemp».
+Description-eu.UTF-8: Hddtemp deabrua sistema abiaraztean abiarazi behar al da?
+ Hddtemp programa deabru bat bezala erabili daiteke, sarrera konexioak 7624 atakan entzungo ditu. Hau gkrellm bezalako zenbait softwarek disko gogorren tenperatura eskuratzeko erabiltzen dute.
+ .
+ Zuk hddtemp deabrua sistema abiaraztean automatikoki abiarazteko aukera duzu. Zalantzarik baduzu abioan ez automatikoki abiaraztea gomendatzen da.
+ .
+ Ezarpen hau beranduago aldatu daiteke  'dpkg-reconfigure hddtemp' abiaraziz.
+Description-fi.UTF-8: Tulisiko hddtemp-taustaohjelma käynnistää käynnistettäessä tietokone?
+ Ohjelma hddtemp voidaan ajaa taustaohjelmana, joka kuuntelee yhteydenottoja portissa 7634. Jotkin ohjelmat, kuten gkrellm, käyttävät tätä hakeakseen kovalevyjen lämpötilat.
+ .
+ hddtemp-taustaohjelma voidaan käynnistää automaattisesti käynnistettäessä järjestelmä. Jos olet epävarma, ohjelmaa ei suositella käynnistettäväksi automaattisesti.
+ .
+ Tätä asetusta voidaan myöhemmin muuttaa ajamalla komento ”dpkg-reconfigure hddtemp”.
+Description-fr.UTF-8: Faut-il lancer automatiquement le démon hddtemp au démarrage ?
+ Le programme hddtemp peut être lancé en tant que démon, à l'écoute sur le port 7634. Ce démon est utilisé par certains logiciels tel que gkrellm pour obtenir la température des disques durs.
+ .
+ Ce démon peut être lancé automatiquement au démarrage de l'ordinateur. Dans le doute, il est suggéré de ne pas activer cette option.
+ .
+ Ce choix peut être modifié ultérieurement avec la commande « dpkg-reconfigure hddtemp ».
+Description-gl.UTF-8: ¿Quere iniciar o servizo de hddtemp co sistema?
+ Pódese executar o programa hddtemp coma un servizo que espera conexións entrantes no porto 7634. Emprégao algún software coma gkrellm para obter a temperatura dos discos duros.
+ .
+ Ten a posibilidade de arrincar o servizo hddtemp automaticamente ao iniciar o sistema. Se ten dúbidas, suxírese que non o arrinque automaticamente ao iniciar o sistema.
+ .
+ Esta elección pódese cambiar a posteriori executando "dpkg-reconfigure hddtemp".
+Description-it.UTF-8: Far partire il demone hddtemp all'avvio del sistema?
+ Il programma hddtemp può essere avviato come un demone in ascolto di connessioni in arrivo sulla porta 7634. Viene usato da programmi come gkrellm per recuperare la temperatura dei dischi fissi.
+ .
+ È possibile far partire automaticamente il demone hddtemp all'avvio del sistema. In caso di dubbi, si suggerisce di non far partire il demone all'avvio.
+ .
+ In seguito, per modificare questa impostazione si può usare "dpkg-reconfigure hddtemp".
+Description-ja.UTF-8: 起動時に hddtemp デーモンを開始しますか?
+ hddtemp プログラムは、入力接続のためのポート 7634 をリスンするデーモンとして実行できます。ハードドライブの温度を得るために、gkrellm のようないくつかのソフトウェアによって使われます。
+ .
+ コンピュータの起動時に hddtemp デーモンを自動的に開始する選択肢です。疑わしいのであれば、起動時に自動的には開始しないことを提案します。
+ .
+ この設定はあとで 'dpkg-reconfigure hddtemp' を実行することで変更できます。
+Description-nb.UTF-8: Skal hddtemp-daemonen startes ved oppstart?
+ hddtemp-programmet kan kjøres som en daemon som lytter på port 7634. Dette brukes av noen programmer slik som gkrellm for å finne temperaturen på harddisker.
+ .
+ Du kan velge å starte hddtemp-daemonen automatisk når systemet starter opp. Er du i tvil, foreslår vi at den ikke startes automatisk ved oppstart.
+ .
+ Denne innstillingen kan endres senere ved å kjøre «dpkg-reconfigure hddtemp».
+Description-nl.UTF-8: Wilt u dat hddtemp-achtergronddienst wordt gestart bij de systeemstart?
+ Het hddtemp-programma kan worden uitgevoerd als achtergronddienst, luisterend naar inkomende verbindingen op poort 7634. Dit wordt gebruikt door sommige toepassingen zoals gkrellm om de temperatuur van de harde schijven op te halen.
+ .
+ U heeft de optie om de hddtemp-achtergronddienst automatisch op te starten bij de systeemstart. Bij twijfel wordt aangeraden om de dienst niet automatisch op te starten.
+ .
+ Deze instelling kan later worden gewijzigd door 'dpkg-reconfigure hddtemp' uit te voeren.
+Description-no.UTF-8: Skal hddtemp-daemonen startes ved oppstart?
+ hddtemp-programmet kan kjøres som en daemon som lytter på port 7634. Dette brukes av noen programmer slik som gkrellm for å finne temperaturen på harddisker.
+ .
+ Du kan velge å starte hddtemp-daemonen automatisk når systemet starter opp. Er du i tvil, foreslår vi at den ikke startes automatisk ved oppstart.
+ .
+ Denne innstillingen kan endres senere ved å kjøre «dpkg-reconfigure hddtemp».
+Description-pt.UTF-8: Deseja iniciar o daemon hddtemp no arranque?
+ O programa hddtemp pode ser executado como um daemon, à escuta na porta 7634. É utilizada por alguns programas como o gkrellm para obter a temperatura dos discos rígidos.
+ .
+ Você tem a opção de executar o daemon hddtemp automaticamente no arranque do sistema.  Se estiver em dúvida, é sugerido que não o inicie automaticamente no arranque.
+ .
+ Esta opção pode ser modificada mais tarde executando 'dpkg-reconfigure hddtemp'.
+Description-ru.UTF-8: Запускать сервис hddtemp при старте компьютера?
+ Программа hddtemp может работать в виде сервиса, принимая запросы на порту 7634. Это используется некоторым ПО, например gkrellm, для получения температуры жёстких дисков.
+ .
+ Сейчас вы можете включить автоматический запуск сервиса hddtemp во время загрузки системы. Если не уверены, выберите не запускать эту программу во время загрузки.
+ .
+ Эту настройку можно позже изменить запустив 'dpkg-reconfigure hddtemp'.
+Description-sk.UTF-8: Má byť démon hddtemp spustený pri zavedení systému?
+ Program hddtemp môže byť spustený ako démon, načúvajúci príchodzím spojeniam na porte 7634. Je to používané niektorými programami, napr. gkrellm, na získanie teploty pevných diskov.
+ .
+ Môžete si zvoliť automatické spúšťanie démona hddtemp pri zavedení systému. Ak si nie ste istý, odporúčame nespúšťať ho automaticky pri azvedení.
+ .
+ Môžete to zmeniť aj neskôr, spustením „dpkg-reconfigure hddtemp”.
+Description-sv.UTF-8: Vill du starta hddtemp-tjänsten när systemet startas upp?
+ hddtemp kan köras som en tjänst som lyssnar på port 7634 efter inkommande anslutningar. Den används av programvara såsom gkrellm för att läsa av temperaturen på hårddiskarna.
+ .
+ Du har alternativet att starta hddtemp-tjänsten automatiskt när datorn startas upp. Om du är osäker föreslår jag att du inte startar den automatiskt vid uppstarten.
+ .
+ Denna inställning kan ändras senare genom att köra 'dpkg-reconfige hddtemp'
+Description-vi.UTF-8: Có nên khởi chạy trình nền hddtemp khi khởi động hệ thống không?
+ Chương trình hddtemp cũng có thể chạy dưới dạng trình nền (daemon), lắng nghe trên cổng 7634 tìm kết nối gửi đến. Trình nền này được dùng bởi một số phần mềm (v.d. gkrellm) để lấy nhiệt độ của các đĩa cứng.
+ .
+ Tùy chọn bạn có thể tự động khởi chạy trình nền hddtemp khi khởi động hệ thống. Chưa chắc chắc thì khuyên bạn không bật tùy chọn này.
+ .
+ Cũng có thể sửa đổi thiết lập này về sau, bằng cách chạy lệnh cấu hình lại « dpkg-reconfigure hddtemp ».
+
+Template: hddtemp/interface
+Type: string
+Default: 127.0.0.1
+Description: Interface to listen on:
+ The hddtemp program can listen for incoming connections on a specific
+ interface, or on all interfaces. 
+ .
+ To listen on a specific interface, enter the IP address of that interface 
+ (choosing 127.0.0.1 will accept local connections only). To listen on all interfaces,
+ enter 0.0.0.0.
+Description-ar.UTF-8: الواجهة التي يصغي إليها:
+ يستطيع برنامج hddtemp الإصغاء للاتصالات الواردة على واجهة محددة، أو جميع الواجهات.
+ .
+ للإصغاء إلى واجهة محددة، أدخل عنوان IP لتلك الواجهة (اختيار 127.0.0.1 سوف يستقبل الاتصالات المحلية فقط). للإصغاء لجميع الواجهات، أدخل القيمة 0.0.0.0.
+Description-cs.UTF-8: Rozhraní, na kterém naslouchat:
+ Program hddtemp může očekávat příchozí spojení na konkrétním rozhraní nebo na všech rozhraních.
+ .
+ Aby poslouchal na konkrétním rozhraní, zadejte IP adresu daného rozhraní (127.0.0.1 znamená, že bude přijímat pouze lokální spojení). Pokud chcete, aby poslouchal na všech rozhraních, zadejte 0.0.0.0.
+Description-da.UTF-8: Netkort, der skal lyttes på:
+ Programmet hddtemp kan lytte efter indkommende forbindelser på et bestemt netkort eller på alle netkort.
+ .
+ For at lytte til et bestemt netkort, skal du angive IP-adressen på dette (valg af 127.0.0.1 vil kun acceptere lokale forbindelser). For at lytte på alle netkort indtastes 0.0.0.0.
+Description-de.UTF-8: Schnittstelle, an der auf Anfragen gewartet wird:
+ Hddtemp kann an einer speziellen oder an allen Schnittstelle auf ankommende Verbindungen warten.
+ .
+ Um an einer einzelnen Schnittstelle auf Anfragen zu warten, geben Sie deren IP-Adresse ein (Falls Sie 127.0.0.1 wählen, sind nur lokale Verbindungen erlaubt). Um alle Schnittstellen zu verwenden, geben Sie 0.0.0.0 ein.
+Description-es.UTF-8: Interfaz en la que escuchar:
+ hddtemp puede escuchar conexiones entrantes en una interfaz concreta, o bien en todas.
+ .
+ Para escuchar en una interfaz determinada, introduzca la dirección IP de dicha interfaz (si elige 127.0.0.1 sólo se aceptarán conexiones locales). Para escuchar en todas las interfaces, introduzca 0.0.0.0.
+Description-eu.UTF-8: Entzungo den interfazea:
+ Hddtemp programak sarrera konexioak interfaze zehatz batetan bakarrik edo guztietan entzuteko aukera du.
+ .
+ Interfaze zehatz batetan entzuteko, idatzi interfaze horren IP helbidea (127.0.0.1 ipiniaz konexioa lokalak bakarrik onartuko dira). Interfaze guztietan entzuteko , 0.0.0.0 idatzi.
+Description-fi.UTF-8: Kuunneltavat liitynnät:
+ Ohjelma hddtemp voi kuunnella yhteydenottoja tietystä liitynnästä tai kaikista liitynnöistä.
+ .
+ Voit määrittää tietyn liitynnän antamalla sen IP-osoitteen (asetus 127.0.0.1 hyväksyy vain paikalliset yhteydet). Kaikki liitynnät määritetään asetuksella 0.0.0.0.
+Description-fr.UTF-8: Interface où hddtemp sera à l'écoute :
+ Le programme hddtemp peut être à l'écoute de connexions entrantes sur une interface spécifique ou sur toutes les interfaces.
+ .
+ Pour écouter sur une interface spécifique, indiquez l'adresse IP de cette interface (en choisissant 127.0.0.1, seules les connexions locales seront acceptées). Pour écouter sur toutes les interfaces, saisissez simplement 0.0.0.0.
+Description-gl.UTF-8: Interface na que escoitar:
+ O programa hddtemp pode esperar conexións entrantes nunha interface determinada ou en tódalas interfaces.
+ .
+ Para escoitar nunha interface determinada, introduza o enderezo IP desa interface (se escolle 127.0.0.1 hanse aceptar só conexións locais). Para escoitar en tódalas interfaces, introduza 0.0.0.0.
+Description-it.UTF-8: Interfaccia su cui ascoltare:
+ Il programma hddtemp può mettersi in ascolto di connessioni in arrivo su una particolare interfaccia oppure su tutte.
+ .
+ Per ascoltare su una specifica interfaccia, inserire l'indirizzo IP di tale interfaccia (con 127.0.0.1 saranno accettate solo connesioni locali). Per ascoltare su tutte le interfacce inserire 0.0.0.0.
+Description-ja.UTF-8: リスンするインターフェイス:
+ hddtemp プログラムは、特定のインターフェイスまたはすべてのインターフェイスの入力接続をリスンできます。
+ .
+ 特定のインターフェイスをリスンするには、インターフェイスの IP アドレスを入力してください (127.0.0.1 を選ぶと、ローカルの接続のみを許可するようになります)。すべてのインターフェイスをリスンするには、0.0.0.0 と入力してください。
+Description-nb.UTF-8: Grensesnitt det skal lyttes på:
+ hddtemp-programmet kan lytte etter inkommende tilkoblinger på et bestemt grensesnitt, eller alle grensesnitt.
+ .
+ Oppgi grensesnittets IP-adresse for å lytte på det grensesnittet. (127.0.0.1 godtar bare lokale tilkoblinger). Oppgi 0.0.0.0 for å lytte på alle grensesnitt.
+Description-nl.UTF-8: De interface waarop hddtemp moet luisteren:
+ Het hddtemp-programma kan naar inkomende verbindingen luisteren op één specifieke interface, of op alle interfaces.
+ .
+ Om op één specifieke interface te luisteren, voer het IP-addres van deze interface in (als u 127.0.0.1 kiest zullen alleen lokale verbindingen worden geaccepeert). Om op alle interfaces te luisteren, voer 0.0.0.0. in.
+Description-no.UTF-8: Grensesnitt det skal lyttes på:
+ hddtemp-programmet kan lytte etter inkommende tilkoblinger på et bestemt grensesnitt, eller alle grensesnitt.
+ .
+ Oppgi grensesnittets IP-adresse for å lytte på det grensesnittet. (127.0.0.1 godtar bare lokale tilkoblinger). Oppgi 0.0.0.0 for å lytte på alle grensesnitt.
+Description-pt.UTF-8: Interface para utilizar na escuta:
+ O programa hddtemp pode escutar por ligações de entrada numa interface específica, ou em todas as interfaces.
+ .
+ Para escutar numa interface específica, introduza o endereço IP dessa interface  (escolhendo 127.0.0.1 irá aceitar apenas ligações locais). Para escutar em todas as interfaces, introduza 0.0.0.0.
+Description-ru.UTF-8: Интерфейс приёма запросов:
+ Программа hddtemp может принимать входящие запросы на определённом интерфейсе или со всех интерфейсов.
+ .
+ Для приёма на конкретном интерфейса введите IP-адрес этого интерфейса (ввод 127.0.0.1 обеспечит приём только локальных запросов). Для приёма запросов со всех интерфейсов, введите 0.0.0.0.
+Description-sk.UTF-8: Rozhranie, na ktorom načúvať:
+ Program hddtemp môže očakávať príchodzie spojenia na zadanom rozhraní alebo na všetkých rozhraniach.
+ .
+ Aby načúval na zadanom rozhraní, zadajte IP adresu daného rozhrania (zadaním 127.0.0.1 budú prijímané len lokálne spojenia). Na načúvanie na všetkých rozhraniach, zadajte 0.0.0.0.
+Description-sv.UTF-8: Gränssnitt att lyssna på:
+ hddtemp kan lyssna efter inkommande anslutningar på specifika nätverksgränssnitt eller på gränssnitt.
+ .
+ För att lyssna på ett specifik nätverkgränssnitt, ange IP-adressen på det gränssnittet (127.0.0.1, vilket är standardvärdet för gränssnittet lo). För att lyssna på alla, ange 0.0.0.0.
+Description-vi.UTF-8: Giao diện trên đó cần lắng nghe:
+ Chương trình hddtemp có thể lắng nghe kết nối gửi đến trên một giao diện dứt khoát, hoặc trên mọi giao diện.
+ .
+ Để lắng nghe trên một giao diện cụ thể, hãy nhập địa chỉ IP của giao diện đó (giá trị « 127.0.0.0 » sẽ chỉ chấp nhận kết nối cục bộ). Để lắng nghe trên mọi giao diện, chỉ đơn giản hãy nhập địa chỉ « 0.0.0.0 ».
+
+Template: hddtemp/port
+Type: string
+Default: 7634
+Description: Port to listen on:
+ By default, hddtemp listens for incoming connections on port 7634. This
+ can be changed for another port number.
+Description-ar.UTF-8: المنفذ الذي يصغي إليه:
+ بشكل افتراضي، يستمع hddtemp للاتصالات الواردة على المنفذ 7634. ويمكنتغيير هذا الرقم إلى آخر.
+Description-cs.UTF-8: Port, na kterém naslouchat:
+ hddtemp standardně očekává příchozí spojení na portu 7634. Pokud vám tento port nevyhovuje, můžete zadat jiný.
+Description-da.UTF-8: Port, der skal lyttes på:
+ Som udgangspunkt vil hddtemp lytte efter indkommende forbindelser på port 7634. Dette kan ændres til et andet nummer.
+Description-de.UTF-8: Port, an dem auf Anfragen gewartet wird:
+ Normalerweise wartet Hddtemp am Port 7634 auf ankommende Verbindungen. Sie können auch eine andere Port-Nummer eingeben.
+Description-es.UTF-8: Puerto en el que escuchar:
+ De manera predeterminada hddtemp escucha en el puerto 7634, pero puede cambiarlo por otro.
+Description-eu.UTF-8: Entzuteko ataka:
+ Lehenetspen modura hddtemp-ek sarrera konexioak 7634 atakan entzungo ditu. Auker ahonen bidez betste ataka bat ezartzeko auekra dago.
+Description-fi.UTF-8: Kuunneltava portti:
+ Oletuksena hddtemp kuuntelee yhteydenottoja portissa 7634. Tämä portin numero voidaan vaihtaa.
+Description-fr.UTF-8: Port sur lequel hddtemp sera à l'écoute :
+ Par défaut, hddtemp attend les connexions entrantes sur le port 7634. Ce port peut être modifié si nécessaire.
+Description-gl.UTF-8: Porto no que escoitar:
+ Por defecto, hddtemp espera conexións entrantes no porto 7634. Pódese cambiar por outro porto.
+Description-it.UTF-8: Porta su cui ascoltare:
+ Con la configurazione predefinita hddtemp si mette in ascolto di connessioni in arrivo sulla porta 7634. È possibile cambiare questo valore con un altro numero di porta.
+Description-ja.UTF-8: リスンするポート:
+ デフォルトでは、hddtemp はポート 7634 で入力接続をリスンします。これは別のポート番号に変更できます。
+Description-nb.UTF-8: Port å lytte på:
+ Standardporten der hddtemp lytter etter innkommende tilkoblinger er port 7634. Dette kan endres til et annet portnummer.
+Description-nl.UTF-8: De poort waarop hddtemp moet luisteren:
+ Standaard luistert hddtemp naar inkomende verbindingen op poort 7634. Dit kan veranderd worden in een ander poortnummer.
+Description-no.UTF-8: Port å lytte på:
+ Standardporten der hddtemp lytter etter innkommende tilkoblinger er port 7634. Dette kan endres til et annet portnummer.
+Description-pt.UTF-8: Porta a utilizar na escuta:
+ O hddtemp escuta por ligações de entrada na porta 7634 por pré-definição. Isto pode ser alterado para outra porta.
+Description-ru.UTF-8: Порт приёма запросов:
+ По умолчанию, hddtemp принимает входящие запросы с порта 7634. Здесь можно задать другой номер порта.
+Description-sk.UTF-8: Port, na ktorom načúvať:
+ Predvolene hddtemp očakáva príchodzie spojenia na porte 7634. Môžete to zmeniť na akékoľvek iné číslo portu.
+Description-sv.UTF-8: Port att lyssna på:
+ Som standard lyssnar hddtemp efter inkommande anslutningar på port 7634. Om du anser att denna port inte är lämplig kan du ange en annan port här.
+Description-vi.UTF-8: Cổng trên đó cần lắng nghe:
+ Mặc định là hddtemp lắng nghe kết nối gửi đến trên cổng 7634. Cũng có thể thay đổi nó thành một cổng khác.

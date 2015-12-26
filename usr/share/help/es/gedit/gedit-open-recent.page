@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Reabrir un archivo usado recientemente</title>
+
+  <p>De forma predeterminada, <app>gedit</app> proporciona acceso fácil a cinco de los archivos más recientemente usados. Aquí se muestra cómo puede abrir un archivo usado recientemente.</p>
+  <list type="numbered">
+    <item><p>Pulse la flecha hacia abajo junto al botón <gui>Abrir</gui>.</p></item>
+    <item><p><app>gedit</app> mostrará una lista de los cinco archivos más recientemente usados.</p></item>
+    <item><p>Seleccione el archivo que quiera y se abrirá en una pestaña nueva.</p></item>
+  </list>
+
+  <note style="advanced"><p>Para ajustar el número de archivos usados recientemente que muestra gedit, debe usar la aplicación <app>dconf-editor</app>.</p>
+    <list>
+      <item><p>Ejecute <app>dconf-editor</app> y seleccione <guiseq><gui>org</gui><gui>gnome</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui> <gui>max-recents</gui></guiseq>.</p></item>
+      <item><p>Pulse dos veces en el número junto a <gui>max-recents</gui> y cambie el número al valor que quiera.</p></item>
+    </list>
+  </note>
+
+</page>

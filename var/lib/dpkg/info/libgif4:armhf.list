@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgif4
+/usr/share/doc/libgif4/TODO.gz
+/usr/share/doc/libgif4/copyright
+/usr/share/doc/libgif4/ONEWS.gz
+/usr/share/doc/libgif4/changelog.gz
+/usr/share/doc/libgif4/changelog.Debian.gz
+/usr/share/doc/libgif4/NEWS.gz
+/usr/share/doc/libgif4/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgif.so.4.1.6
+/usr/lib/arm-linux-gnueabihf/libgif.so.4

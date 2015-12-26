@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian CLI Policy - Mono Specific Packaging help</title>
+
+<link href="index.html" rel="start">
+<link href="ch-packaging.html" rel="prev">
+<link href="ch-pnet.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch-history.html" rel="chapter" title="1 Policy History">
+<link href="ch-terms.html" rel="chapter" title="2 Used Terms">
+<link href="ch-packaging.html" rel="chapter" title="3 Packaging Policy">
+<link href="ch-mono.html" rel="chapter" title="4 Mono Specific Packaging help">
+<link href="ch-pnet.html" rel="chapter" title="5 DotGNU Portable.NET Packaging help">
+<link href="ch-appendix.html" rel="chapter" title="6 Appendix">
+<link href="ch-terms.html#s-CLI" rel="section" title="2.1 CLI - Common Language Infrastructure">
+<link href="ch-terms.html#s-CLR" rel="section" title="2.2 CLR - Common Language Runtime">
+<link href="ch-terms.html#s-CIL" rel="section" title="2.3 CIL - Common Intermediate Language">
+<link href="ch-terms.html#s-.NET" rel="section" title="2.4 &quot;.NET&quot; or long &quot;Microsoft .NET Framework&quot;">
+<link href="ch-terms.html#s-GAC" rel="section" title="2.5 GAC - Global Assembly Cache">
+<link href="ch-terms.html#s-package-names" rel="section" title="2.6 Package Names">
+<link href="ch-packaging.html#s-general-packaging" rel="section" title="3.1 General Packaging">
+<link href="ch-packaging.html#s-gac-library-packaging" rel="section" title="3.2 GAC Library Packaging">
+<link href="ch-packaging.html#s-non-gac-library-packaging" rel="section" title="3.3 non-GAC Library Packaging">
+<link href="ch-mono.html#s4.1" rel="section" title="4.1 Naming">
+<link href="ch-mono.html#s4.2" rel="section" title="4.2 DLL Maps">
+<link href="ch-mono.html#s-mono-disable-shm" rel="section" title="4.3 MONO_DISABLE_SHM">
+<link href="ch-pnet.html#s5.1" rel="section" title="5.1 Naming">
+<link href="ch-appendix.html#s-cli-common-dev" rel="section" title="6.1 Helper Scripts: cli-common-dev">
+<link href="ch-appendix.html#s-examples" rel="section" title="6.2 Examples">
+<link href="ch-appendix.html#s-migrating" rel="section" title="6.3 Migrating Existing Packages">
+<link href="ch-packaging.html#s-architecture" rel="subsection" title="3.1.1 Architecture">
+<link href="ch-packaging.html#s-file-locations" rel="subsection" title="3.1.2 File Locations">
+<link href="ch-packaging.html#s-file-perms" rel="subsection" title="3.1.3 File Permissions">
+<link href="ch-packaging.html#s-build-deps" rel="subsection" title="3.1.4 Build Dependencies">
+<link href="ch-packaging.html#s-gac-naming-versioning" rel="subsection" title="3.2.1 Naming &amp; Versioning">
+<link href="ch-packaging.html#s-gac-policy-files" rel="subsection" title="3.2.2 Policy Files">
+<link href="ch-packaging.html#s-clilibs-control-file" rel="subsection" title="3.2.3 clilibs Control File">
+<link href="ch-packaging.html#s-pkg-config-file" rel="subsection" title="3.2.4 pkg-config File">
+<link href="ch-packaging.html#s-signing" rel="subsection" title="3.2.5 Signing">
+<link href="ch-packaging.html#s-non-gac-naming" rel="subsection" title="3.3.1 Naming">
+<link href="ch-mono.html#s-dll-maps-intro" rel="subsection" title="4.2.1 Introduction">
+<link href="ch-mono.html#s4.2.2" rel="subsection" title="4.2.2 Solution: DLL map config file">
+<link href="ch-appendix.html#s-dh_makeclilibs" rel="subsection" title="6.1.1 dh_makeclilibs">
+<link href="ch-appendix.html#s-dh_clideps" rel="subsection" title="6.1.2 dh_clideps">
+<link href="ch-appendix.html#s-dh_installcligac" rel="subsection" title="6.1.3 dh_installcligac">
+<link href="ch-appendix.html#s-debhelper-example" rel="subsection" title="6.2.1 debhelper 5/6 Example">
+<link href="ch-appendix.html#s-debhelper7-example" rel="subsection" title="6.2.2 debhelper 7 Example">
+<link href="ch-appendix.html#s-cdbs-example" rel="subsection" title="6.2.3 cdbs Example">
+<link href="ch-appendix.html#s-wrapper-script-example" rel="subsection" title="6.2.4 Executable Wrapper Script Example">
+<link href="ch-appendix.html#s-api-compat-example" rel="subsection" title="6.2.5 API Compatibility Check Example">
+<link href="ch-appendix.html#s-gac-policy-file-example" rel="subsection" title="6.2.6 GAC Policy File Example">
+
+</head>
+
+<body>
+
+<p><a name="ch-mono"></a></p>
+<hr>
+
+<p>
+[ <a href="ch-packaging.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ 4 ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-pnet.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian CLI Policy
+<br>Chapter 4 - Mono Specific Packaging help
+</h1>
+
+<hr>
+
+<p>
+This section offers help with common problems encountered when packaging
+Mono-specific applications for Debian.
+</p>
+
+<hr>
+
+<h2 id="s4.1">4.1 Naming</h2>
+
+<p>
+The official name of the Mono Project is: Mono, mono:: or mono.  To keep this
+consistent for users, it should <em>always</em> be called &quot;Mono&quot; (not
+MONO, mono, mono:: or mixed with the .NET name).  The explanation of what Mono
+is, should be in the package <em>long</em> description.
+</p>
+
+<hr>
+
+<h2 id="s4.2">4.2 DLL Maps</h2>
+
+<p>
+Often times, upstream software developers are not packagers, and vice versa.
+Developers do not necessarily test their software with packaging issues in
+mind.  The most common problem we see from this are missing DLL exceptions.
+</p>
+
+<hr>
+
+<h3 id="s-dll-maps-intro">4.2.1 Introduction</h3>
+
+<p>
+When Mono code invokes an external library, it usually calls something like
+[DllImport(&quot;foo&quot;)] which expands &quot;foo&quot; to a shared library
+name such as &quot;libfoo.so&quot; which is then searched for in the library
+search path.
+</p>
+
+<p>
+In Debian and some other binary Linux distributions, packages are split into
+runtime and developer (-dev) packages.  Since the versioned library libfoo.so.X
+is usually used at runtime, and libfoo.so is a symlink only used when building
+against the library, the libfoo.so symlink is in the libfoo-dev package.
+</p>
+
+<p>
+When packaging an application which uses libfoo.so normal users should not need
+the -dev packages installed just to run the application.  However, Mono
+defaults to looking for the unversioned libfoo.so, which is unavailable in the
+runtime package.
+</p>
+
+<p>
+When the DLL map is missing or upstream forgets to install the DLL map, it will
+result in a <code><a
+href="http://www.mono-project.com/DllNotFoundException">DllNotFoundException</a></code>
+which will stop the execution of the program.
+</p>
+
+<hr>
+
+<h3 id="s4.2.2">4.2.2 Solution: DLL map config file</h3>
+
+<p>
+This can be fixed by creating a DLL map for the application exe or for the
+library DLL that is trying to invoke libfoo.so.  If libfoo.so is invoked by the
+DLL bar.dll, create an xml file, bar.dll.config to tell Mono which .so should
+be loaded at runtime.  bar.dll.config should be installed to the same directory
+as bar.dll.
+</p>
+
+<pre>
+               &lt;configuration&gt;
+               &lt;dllmap dll=&quot;foo&quot; target=&quot;libfoo.so.0&quot;/&gt;
+               &lt;/configuration&gt;
+</pre>
+
+<p>
+A config file can contain as many dllmap directives as are needed.  If the
+upstream developer already ships a config file, but it is incomplete, you
+should create a patch against it in your package.
+</p>
+
+<p>
+Most Mono software developers are very helpful people, and will readily accept
+patches to solve this type of bug if you bring it to their attention.  Please
+be sure to inform them of all these changes.
+</p>
+
+<hr>
+
+<h2 id="s-mono-disable-shm">4.3 MONO_DISABLE_SHM</h2>
+
+<p>
+The Mono runtime uses a shared directory, by default <code>~/.wapi</code>.
+This directory will be created/used when any CLI application is executed (like
+the C# compiler mcs).
+</p>
+
+<p>
+There are 2 problems with this:
+</p>
+<ul>
+<li>
+<p>
+In an autobuilder environment often the running user has no home directory.
+</p>
+</li>
+</ul>
+<ul>
+<li>
+<p>
+Mono uses the wrong home directory when running within fakeroot (it tries
+<code>/root/.wapi</code> instead of <code>$HOME/.wapi</code>).
+</p>
+</li>
+</ul>
+
+<p>
+In these cases, the package building will fail, applications will hang, die
+with strange Mono runtime errors or segfault.  This includes dh_clideps or
+dh_makeclilibs, since they run monodis.
+</p>
+
+<p>
+The solution is to include <code>cli.make</code> from
+<code>cli-common-dev</code> in <code>debian/rules</code> or to manually set the
+MONO_DISABLE_SHM environment variable.
+</p>
+
+<pre>
+             export MONO_DISABLE_SHM = 1
+</pre>
+
+<hr>
+
+<p>
+[ <a href="ch-packaging.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch-history.html">1</a> ]
+[ <a href="ch-terms.html">2</a> ]
+[ <a href="ch-packaging.html">3</a> ]
+[ 4 ]
+[ <a href="ch-pnet.html">5</a> ]
+[ <a href="ch-appendix.html">6</a> ]
+[ <a href="ch-pnet.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian CLI Policy
+</p>
+
+<address>
+Version 0.7<br>
+<br>
+Mirco Bauer <code><a href="mailto:meebey@debian.org">mailto:meebey@debian.org</a></code><br>
+Brandon Hale <code><a href="mailto:brandon@smarterits.com">mailto:brandon@smarterits.com</a></code><br>
+Sebastian Dr&ouml;ge <code><a href="mailto:slomo@debian.org">mailto:slomo@debian.org</a></code><br>
+Dylan R. E. Moonfire <code><a href="mailto:debian@mfgames.com">mailto:debian@mfgames.com</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

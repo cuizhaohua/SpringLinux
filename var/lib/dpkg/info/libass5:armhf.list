@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libass.so.5.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libass5
+/usr/share/doc/libass5/changelog.gz
+/usr/share/doc/libass5/changelog.Debian.gz
+/usr/share/doc/libass5/copyright
+/usr/lib/arm-linux-gnueabihf/libass.so.5

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring" mtime="1262306139" type="schema" stype="string" owner="gksu">
+					<local_schema locale="C" short_desc="Keyring to which passwords will be saved">
+						<default type="string">
+							<stringvalue>session</stringvalue>
+						</default>
+						<longdesc>
+	The name of the keyring gksu should use. Usual values are &quot;session&quot;,
+	which saves the password for the session, and &quot;default&quot;, which saves the
+	password with no timeout.
+	</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring" mtime="1262306139" type="schema" stype="bool" owner="gksu">
+					<local_schema locale="C" short_desc="Save password to gnome-keyring">
+						<default type="bool" value="true"/>
+						<longdesc>
+	gksu can save the password you type to the gnome-keyring so you&apos;ll
+	not be asked everytime
+	</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info" mtime="1262306139" type="schema" stype="bool" owner="gksu">
+					<local_schema locale="C" short_desc="Display information message when no password is needed">
+						<default type="bool" value="true"/>
+						<longdesc>
+	This option determines whether a message dialog will be displayed
+	informing the user that the program is being run without the need
+	of a password being asked for some reason.
+	</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt" mtime="1262306139" type="schema" stype="bool" owner="gksu">
+					<local_schema locale="C" short_desc="Prompt for grabbing">
+						<default type="bool" value="false"/>
+						<longdesc>
+	This option will make gksu prompt the user if he wants to have
+	the screen grabbed before entering the password. Notice that this
+	only has an effect if force-grab is disabled.
+	</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode" mtime="1262306139" type="schema" stype="bool" owner="gksu">
+					<local_schema locale="C" short_desc="Sudo mode">
+						<default type="bool" value="false"/>
+						<longdesc>
+	Whether sudo should be the default backend method. This method
+        is otherwise accessed though the -S switch or by running &apos;gksudo&apos;
+        instead of &apos;gksu&apos;.
+	</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab" mtime="1262306139" type="schema" stype="bool" owner="gksu">
+					<local_schema locale="C" short_desc="Force keyboard and mouse grab">
+						<default type="bool" value="false"/>
+						<longdesc>
+	Grab keyboard and mouse even if -g has been passed as argument
+	on the command line.
+	</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab" mtime="1262306139" type="schema" stype="bool" owner="gksu">
+					<local_schema locale="C" short_desc="Disable keyboard and mouse grab">
+						<default type="bool" value="false"/>
+						<longdesc>
+	Whether the keyboard and mouse grabbing should be turned
+	off. This will make it possible for other X applications to
+	listen to keyboard input events, thus making it not possible
+	to shield from malicious applications which may be running.
+	</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="gksu">
+			<entry name="save-keyring" mtime="1262306139" schema="/schemas/apps/gksu/save-keyring"/>
+			<entry name="save-to-keyring" mtime="1262306139" schema="/schemas/apps/gksu/save-to-keyring"/>
+			<entry name="display-no-pass-info" mtime="1262306139" schema="/schemas/apps/gksu/display-no-pass-info"/>
+			<entry name="prompt" mtime="1262306139" schema="/schemas/apps/gksu/prompt"/>
+			<entry name="sudo-mode" mtime="1262306139" schema="/schemas/apps/gksu/sudo-mode"/>
+			<entry name="force-grab" mtime="1262306139" schema="/schemas/apps/gksu/force-grab"/>
+			<entry name="disable-grab" mtime="1262306139" schema="/schemas/apps/gksu/disable-grab"/>
+		</dir>
+	</dir>
+</gconf>

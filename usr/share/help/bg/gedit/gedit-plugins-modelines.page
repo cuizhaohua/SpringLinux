@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="bg">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Даниел Нийл</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Джим Къмпбел</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Поддръжка в gedit на линиите за режима на Emacs, Kate и Vim</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Линии за режима</title>
+
+  <p>Приставката <app>Линии за режима</app> позволява на <app>gedit</app> да анализира линиите на текст в началото и края на файл и да му приложи различни форматиращи схеми. Приставката поддържа опции използвани от текстовите редактори <app>Emacs</app>, <app>Kate</app> и <app>Vim</app>.</p>
+
+  <p>To enable the <app>Modelines</app> plugin, select <guiseq><gui style="menu">gedit</gui>
+  <gui style="menuitem">Preferences</gui><gui>Plugins</gui><gui>Modelines</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Общи опции</title>
+  <p>Могат да се зададат следните опции чрез <app>gedit</app>:</p>
+  <list>
+    <item><p>Широчина на табулатора</p></item>
+    <item><p>Отстъп надясно на редовете</p></item>
+    <item><p>Вмъкване на интервали вместо табулатори</p></item>
+    <item><p>Режим с пренасяне</p></item>
+    <item><p>Дясна граница</p></item>
+  </list>
+
+  <note>
+    <p>Настройките зададени чрез линии на режима са с по-висок приоритет от тези указани в прозореца с настройки на gedit.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Линии на режима на Emacs</title>
+
+  <p>Първите две линии на документ се анализират за линии на режима на <app>Emacs</app>. <app>gedit</app> поддържа следните опции на <app>Emacs</app>:</p>
+  <list>
+    <item><p>Tab-width</p></item>
+    <item><p>Indent-offset</p></item>
+    <item><p>Indent-tabs-mode</p></item>
+    <item><p>Text auto-wrap</p></item>
+  </list>
+  <p>За повече информация за режима на <app>Emacs</app> посетете <link href="http://www.gnu.org/software/emacs/manual/emacs.html">Ръководството на GNU Emacs</link>.</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Линии на режима на Kate</title>
+
+  <p>Анализират се първите и последните десет линии на документ за линии на режима на <app>Kate</app>. <app>gedit</app> поддържа следните опции на <app>Kate</app>:</p>
+
+  <list>
+    <item><p>tab-width</p></item>
+    <item><p>indent-width</p></item>
+    <item><p>space-indent</p></item>
+    <item><p>word-wrap</p></item>
+    <item><p>word-wrap-column</p></item>
+  </list>
+
+  <p>За повече информация относно линии на режима на <app>Kate</app>, посетете <link href="http://kate-editor.org/">сайта на Kate</link>.</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Редове на режима на Vim</title>
+  <p>Анализират се първите и последните 3 реда на документ за <app>Vim</app>. <app>gedit</app> поддържа следните опции на <app>Vim</app>:</p>
+
+  <list>
+    <item><p>et (expandtab)</p></item>
+    <item><p>ts (tabstop)</p></item>
+    <item><p>sw (shiftwidth)</p></item>
+    <item><p>wrap</p></item>
+    <item><p>textwidth</p></item>
+  </list>
+
+  <p>За повече информация относно линии на режима на <app>Vim</app>, посетете <link href="http://www.vim.org/">сайта на Vim</link>.</p>
+</section>
+</page>

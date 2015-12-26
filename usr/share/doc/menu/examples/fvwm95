@@ -1,0 +1,48 @@
+#!/usr/bin/install-menu
+#I need menu-1!
+#
+#I seem not to have fvwm95 installed, so I havent actually tested this.
+#
+#
+#NOTE: the first line of this script _must_ be
+# equal to "#!/usr/bin/install-menu", otherwise update-menus
+# will feed this script old-compat-mode data.
+#
+#More info: /usr/share/doc/menu/html.
+#
+compat="menu-1"
+
+!include menu.h
+
+compat="menu-2"
+
+function sup($com)="+ \"" escfirst(title(), $hotkey, "&")
+           cond_surr(icon(), "%", "%") "\" " $com "\n";
+
+
+supported;
+  fvwm2module= sup(           $command);
+  fvwmmodule=  sup("Exec "    $command);
+  wm=          sup("Restart " $command);
+  x11fvwm2=    sup("Exec "    $command);
+  x11=         sup("Exec "    $command);
+  text=        sup(term()             );
+endsupported;
+
+startmenu=   "DestroyMenu \"" $section "\"\nAddToMenu \""
+              $section "\" \"" $title "\" Title\n";
+
+endmenu=     "\n";
+submenutitle= "+ \"" escfirst($title,$hotkey,"&") 
+           cond_surr($icon,"%","%") "\" PopUp " $section "\n";
+genmenu=   "menudefs.hook";
+rootprefix="/etc/X11/fvwm95/";
+userprefix="/.fvwm95";
+treewalk="c(m)";
+mainmenutitle="Main Menu";
+
+#this is just as an example of what is possible, I don't think
+#this should go into the default fvwm95:
+# postrun="killall -USR1 /usr/X11R6/bin/fvwm95";
+
+

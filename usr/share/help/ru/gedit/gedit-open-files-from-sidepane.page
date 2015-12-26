@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Просмотр и открытие файлов из боковой панели</title>
+  <p>Наиболее удобным способом переключения между файлами в <app>gedit</app> является использование вкладок в верхней части окна <app>gedit</app>. Однако, в некоторых случаях, особенно если вы работаете с большим количеством открытых файлов, будет проще использовать <app>боковую панель</app>.</p> 
+
+  <p>Для включения <app>боковой панели</app>, выберите <guiseq><gui>Вид</gui> <gui>Боковая панель</gui></guiseq>, или просто нажмите клавишу <key>F9</key>.</p>
+
+  <note style="note">
+    <p>Переключать положение <gui>боковой панели</gui> на открытое или закрытое можно в любое время, нажимая клавишу <key>F9</key>.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Открытие файлов из боковой панели</title>
+    <p>Для открытия файлов из <app>боковой панели</app>, сначала откройте <app>боковую панель</app>, выбрав <guiseq><gui>Вид</gui> <gui>Боковая панель</gui></guiseq>, затем нажмите на значок <gui>Обозреватель файлов</gui> в нижней части панели.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Это включит режим <em>обозревателя файлов</em> <app>боковой панели</app>. Чтобы найти и открыть нужные файлы можно использовать кнопки навигации в верхней части панели.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Использование боковой панели для переключения между открытыми файлами</title>
+    <p>После открытия нескольких файлов, можно использовать боковую панель для переключения между открытыми файлами. Чтобы включить режим обзора открытых файлов <app>боковой панели</app>, нажмите на значок <gui>Документы</gui> в нижней части <gui>боковой панели</gui>.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Нажатие на любое имя файла в <gui>боковой панели</gui> откроет этот файл для редактирования.</p>
+  </section>
+ 
+ </page>

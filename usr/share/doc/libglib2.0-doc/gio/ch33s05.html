@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GIO Reference Manual: Generating code and docs</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GIO Reference Manual">
+<link rel="up" href="ch33.html" title="Migrating to GDBus">
+<link rel="prev" href="ch33s04.html" title="Creating proxies for well-known names">
+<link rel="next" href="gdbus-org.gtk.GDBus.Example.ObjectManager.Animal.html" title="org.gtk.GDBus.Example.ObjectManager.Animal">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch33.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch33s04.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gdbus-org.gtk.GDBus.Example.ObjectManager.Animal.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="id-1.5.5.6"></a>Generating code and docs</h2></div></div></div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="gdbus-example-gdbus-codegen"></a>Using gdbus-codegen</h3></div></div></div>
+<p>
+      dbus-glib comes with <span class="command"><strong>dbus-binding-tool</strong></span>, which
+      can produce somewhat nice client- and server-side wrappers for a D-Bus interface.
+      With GDBus, <span class="command"><strong><a href="gdbus-codegen.html">gdbus-codegen</a></strong></span> is used and like
+      its counterpart, it also takes D-Bus Introspection XML as input:
+    </p>
+<div class="example">
+<a name="gdbus-example-codegen-input"></a><p class="title"><b>Example 2. Example D-Bus Introspection XML</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">FIXME<span class="gtkdoc opt">:</span> MISSING XINCLUDE CONTENT</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break"><p>
+      If this XML is processed like this
+</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6</pre></td>
+        <td class="listing_code"><pre class="programlisting">gdbus<span class="gtkdoc opt">-</span>codegen <span class="gtkdoc opt">--</span>interface<span class="gtkdoc opt">-</span>prefix org<span class="gtkdoc opt">.</span>gtk<span class="gtkdoc opt">.</span>GDBus<span class="gtkdoc opt">.</span>Example<span class="gtkdoc opt">.</span>ObjectManager<span class="gtkdoc opt">.</span> \
+              <span class="gtkdoc opt">--</span>generate<span class="gtkdoc opt">-</span>c<span class="gtkdoc opt">-</span>code generated<span class="gtkdoc opt">-</span>code	                      \
+              <span class="gtkdoc opt">--</span>c<span class="gtkdoc opt">-</span><span class="keyword">namespace</span> Example 				      \
+              <span class="gtkdoc opt">--</span>c<span class="gtkdoc opt">-</span>generate<span class="gtkdoc opt">-</span>object<span class="gtkdoc opt">-</span>manager			      \
+              <span class="gtkdoc opt">--</span>generate<span class="gtkdoc opt">-</span>docbook generated<span class="gtkdoc opt">-</span>docs                       \
+              gdbus<span class="gtkdoc opt">-</span>example<span class="gtkdoc opt">-</span>objectmanager<span class="gtkdoc opt">.</span>xml</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+      then two files <code class="filename">generated-code.h</code> and
+      <code class="filename">generated-code.c</code> are
+      generated. Additionally, two XML files
+      <code class="filename">generated-docs-org.gtk.GDBus.Example.ObjectManager.Animal</code> and
+      <code class="filename">generated-docs-org.gtk.GDBus.Example.ObjectManager.Cat</code>
+      with Docbook XML are generated. For an example of what the docs look
+      like see <a class="link" href="gdbus-org.gtk.GDBus.Example.ObjectManager.Animal.html#gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Animal" title="Description">the Animal D-Bus interface documentation</a>.
+      and
+      <a class="link" href="gdbus-org.gtk.GDBus.Example.ObjectManager.Cat.html#gdbus-interface-org-gtk-GDBus-Example-ObjectManager-Cat" title="Description">the Cat D-Bus interface documentation</a>.
+    </p>
+<p>
+      While the contents of <code class="filename">generated-code.h</code> and
+      <code class="filename">generated-code.c</code> are best described by the
+      <span class="command"><strong><a href="gdbus-codegen.html">gdbus-codegen</a></strong></span> manual
+      page, brief examples of how this generated code can be used can be found in
+      <a class="xref" href="ch33s05.html#gdbus-example-codegen-server" title="Example 3. Server-side application using generated code">Example 3, “Server-side application using generated code”</a>
+      and <a class="xref" href="ch33s05.html#gdbus-example-codegen-client" title="Example 4. Client-side application using generated code">Example 4, “Client-side application using generated code”</a>. Additionally, since
+      the generated code has 100% gtk-doc coverage, see
+      <a class="link" href="ExampleAnimal.html" title="ExampleAnimal"><span class="type">ExampleAnimal</span></a>, <a class="link" href="ExampleCat.html" title="ExampleCat"><span class="type">ExampleCat</span></a>, <a class="link" href="ExampleObject.html" title="ExampleObject"><span class="type">ExampleObject</span></a> and
+      <a class="link" href="ExampleObjectManagerClient.html" title="ExampleObjectManagerClient"><span class="type">ExampleObjectManagerClient</span></a> pages for documentation.
+    </p>
+<div class="example">
+<a name="gdbus-example-codegen-server"></a><p class="title"><b>Example 3. Server-side application using generated code</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">FIXME<span class="gtkdoc opt">:</span> MISSING XINCLUDE CONTENT</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break"><div class="example">
+<a name="gdbus-example-codegen-client"></a><p class="title"><b>Example 4. Client-side application using generated code</b></p>
+<div class="example-contents">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">FIXME<span class="gtkdoc opt">:</span> MISSING XINCLUDE CONTENT</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<br class="example-break">
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

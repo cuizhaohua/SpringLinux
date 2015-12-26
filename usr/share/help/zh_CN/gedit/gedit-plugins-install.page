@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-install" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-additional-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <desc>How to install third-party plugins</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>额外的 gedit 插件</title>
+
+  <p>Installing third-party plugins gives you extra functionality that isn't 
+  available in default <app>gedit</app> plugins, or even the extra plugins that 
+  are part of the <app>gedit-plugins</app> package. An online list of 
+  third-party plugins is 
+  <link href="https://wiki.gnome.org/Apps/Gedit">kept here</link>.
+  </p>
+  
+  <p>Installing a third-party plugin involves downloading the plugin, placing 
+  the plugin files in the right directory, and activating the plugin.</p>
+  
+  <steps>
+    <item><p>You can usually download a plugin from the plugin's website, but 
+    may need to use a revision-control program like <app>git</app>, <app>
+    bazaar</app>, or <app>subversion</app> to copy a plugin's software 
+    repository from the internet. Refer to the plugin's documentation for 
+    information on getting the plugin.</p></item>
+    <item><p>将插件放到 <file>/home/<var>用户名</var>/.local/share/gedit/plugins</file> 目录下。</p>
+    <p>Of course, replace the word <var>username</var> with your own username.
+    </p></item>
+    <item><p>在您将插件文件复制到正确的文件夹后，插件将会出现在首选项菜单中。选择<guiseq><gui>编辑 </gui><gui style="menuitem">首选项</gui><gui>插件</gui> <gui>[插件名]</gui></guiseq>启用插件。</p></item>
+    <item><p>点 <gui>关闭</gui>。</p></item>
+  </steps>
+  
+  <p>在启用插件后，就可以使用了。</p>
+  
+  <note style="tip">
+    <p><file>.local</file> 目录是默认隐藏的。要显示它及其他隐藏文件，点菜单 <guiseq><gui>查看</gui><gui>显示隐藏文件</gui></guiseq> 或者按组合键 <keyseq><key>Ctrl</key><key>H</key></keyseq>。</p>
+  </note>
+
+  <note style="tip">
+    <p>如果在系统中，文件夹 <file>.local/share/gedit/plugins/</file> 不存在，就需要您自己创建它。</p>
+  </note>
+  
+</page>

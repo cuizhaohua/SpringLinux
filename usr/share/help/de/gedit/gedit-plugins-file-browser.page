@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-plugins-file-browser" xml:lang="de">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2011-08-17" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email its:translate="no">dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email its:translate="no">jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Verwenden der Seitenleiste zum Durchsuchen und Öffnen von Dateien</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Dateiverwaltungsleiste</title>
+
+  <p>Abhängig davon, wie Sie <app>gedit</app> verwenden, könnte das <app>Dateiverwaltungsleiste</app>-Plugin nützlich sein. Dieses Plugin bettet einen <app>Dateibaum</app> in die Seitenleiste ein, über den Sie einfachen Zugriff auf häufig verwendete Dateien erhalten.</p>
+  
+  <p>Aktivieren Sie die <gui>Seitenleiste</gui>, indem Sie <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Einstellungen</gui><gui>Plugins</gui><gui>Dateiverwaltungsleiste</gui></guiseq> wählen.</p>
+
+  <section id="sidepane-open">
+    <title>Dateien über die Seitenleiste öffnen</title>
+    <p>Um die Seitenleiste zu aktivieren und zu verwenden, wählen Sie <guiseq><gui>Ansicht</gui><gui>Seitenleiste</gui></guiseq> oder drücken Sie <key>F9</key>. Dann klicken Sie an der Unterseite der Seitenleiste auf den Reiter mit dem <gui>Dateiverwaltung</gui>-Symbol.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Dadurch wird der <em>Dateiverwaltungsmodus</em> der <app>Seitenleiste</app> aktiviert. Sie können dann die Navigationsknöpfe oben in der Seitenleiste verwenden, um die gewünschten Dateien zu suchen und zu öffnen.</p>
+  </section>
+
+</page>

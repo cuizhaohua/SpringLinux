@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Даниел Нийл</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Търсене на текст</title>
+  
+    <p>Инструментът Търсене може да ви помогне да намерите конкретна последователност от текст във вашия файл.</p>
+
+    <steps>
+      <title>Търсене на текст</title>
+      <item>
+        <p>Open the <gui>search window</gui> by clicking 
+        <guiseq><gui style="menu">Search</gui>
+        <gui style="menuitem">Find</gui> </guiseq> or
+        pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move
+        your cursor to the start of the <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Въведете текста, който искате да откриете в прозореца <gui>Замяна</gui>.</p>
+      </item>
+      <item>
+        <p>Докато пишете, <app>gedit</app> ще оцветява частите текст, които съвпадат с търсения текст.</p>
+      </item>
+    </steps>
+    
+    <p>За превъртане през резултатите, направете някое от следните:</p>
+    <list>
+      <item>
+        <p>Click on the <gui style="button">up</gui> or
+        <gui style="button">down</gui> facing arrows next to the
+        <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Press the <key>up arrow</key> or <key>down arrow</key> keys on your
+        keyboard.</p>
+      </item>
+      <item>
+        <p>Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or
+        <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Натиснете клавиша <key>Ctrl</key> и използвайте мишката или функцията на тъчпада за <key>придвижване</key>, за да се придвижвате през текста.</p>
+      </item>
+    </list>
+
+  <p>За да затворите <gui>прозореца за търсене</gui>, натиснете клавиша <key>Esc</key> или <key>Enter</key>. С <key>Esc</key> курсорът ще се върне на позицията, на която е бил преди да започнете търсенето. С <key>Enter</key> курсора ще върне на позицията на текущо намерения резултат.</p>
+
+  <list>
+    <title>Съвети за търсене</title>
+    <item>
+      <p>Ако отбележите част от текст с вашата мишка и натиснете <keyseq><key>Ctrl</key><key>F</key></keyseq>, то той ще се покаже в прозореца за търсене.</p>
+    </item>
+    <item>
+      <p>For more search options, click on the
+      <gui style="button">Magnifying Glass</gui> icon in the search window,
+      or right-click anywhere in the search window. You can select one or more
+      of the following search options:</p>
+      <list>
+        <item>
+          <p>Select <gui>Match Case</gui> to make the search case sensitive.</p>
+        </item>
+        <item>
+          <p>Select <gui>Match Entire Word Only</gui> to search only complete
+          words.</p>
+        </item>
+        <item>
+          <p>Select <gui>Wrap Around</gui> to search text from top to bottom
+          and cycle back again.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Текстът, който търсите ще остане оцветен, дори след като сте завършили търсенето си. За да премахнете оцветяването, натиснете <guiseq><gui>Търсене</gui><gui>Изчистване на оцветяването</gui></guiseq> или натиснете <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

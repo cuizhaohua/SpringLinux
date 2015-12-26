@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="es">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Use recortes para insertar rápidamente fragmentos de texto usados frecuentemente</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Recortes</title>
+
+  <p>Los <app>Recortes</app> proporcionan una manera adecuada de insertar porciones de código repetitivas en sus archivos. Por ejemplo, un recorte HTML para la etiqueta <code>&lt;img&gt;</code> insertará los fragmentos de apertura y cierre de la etiqueta, así como lugares fijos donde puede introducir los atributos de la imagen. Esto hace que escribir código sea más fácil y rápido.</p>
+
+  <section id="enable-snippets">
+    <title>Activar el complemento de recortes</title>
+
+    <p>Para activar el complemento <gui>Recortes</gui>:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferencias</gui> <gui style="tab">Complementos</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Seleccione <gui style="menuitem">Recortes</gui> para activar el complemento.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Examinar los recortes</title>
+
+    <p>Para examinar los recortes disponibles:</p>
+    <steps>
+      <item>
+        <p>Seleccione <guiseq><gui style="menu">Herramientas</gui> <gui style="menuitem">Gestionar recortes</gui></guiseq>.</p>
+        <note style="important">
+          <p>Asegúrese de que la sintaxis está configurada correctamente. La barra de estado en la parte inferior de la ventana de <app>gedit</app> mostrará la configuración del lenguaje actual, que es lo que permite a gedit insertar los recortes adecuados. Normalmente, <app>Gedit</app> detectará el lenguaje o la sintaxis del archivo que está usando, pero es posible que algunas veces deba establecerlo.</p>
+          <figure>
+            <desc>En este ejemplo, el lenguaje establecido es HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Examinar los fragmentos disponibles para su lenguage o sintaxis.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Usar los recortes</title>
+
+    <p>Para insertar un recorte en su documento actual:</p>
+
+    <steps>
+      <item>
+        <p>Escriba el nombre del recorte que quiere en cualquier lugar de su documento actual.</p>
+      </item>
+      <item>
+        <p>Pulse <key>Tab</key> para insertar el recorte asociado al término de entrada.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Ejemplo de uso de Recortes</title>
+
+    <p>Por ejemplo, si establece que la sintaxis es <em>HTML</em>, escriba <code>head</code>, y pulse la tecla <key>Tab</key>. El texto se debería autocompletar con este recorte:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Título de la página&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Añadir recortes</title>
+
+    <p>Puede añadir recortes nuevos que funcionen globalmente (es decir, para cualquier lenguaje) o sólo para una sintaxis determinada.</p>
+
+    <steps>
+      <item>
+        <p>Seleccione <guiseq style="menu"><gui style="menuitem">Herramientas</gui> <gui style="menuitem">Gestionar recortes</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Desde la barra lateral de <gui>Gestionar recortes</gui>, seleccione la sintaxis que quiere y pulse el icono «+» para listar los recortes existentes para la sintaxis seleccionada.</p>
+        <note style="tip">
+          <p>Para añadir un recorte que funcione globalmente (es decir, cuando no se ha establecido una sintaxis o un lenguaje concreto para el documento), seleccione <gui>Global</gui> en la barra lateral de <gui>Gestionar recortes</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Para añadir un recorte nuevo,pulse en el icono «+» en la barra lateral de <gui>Gestionar recortes</gui> sidebar.</p>
+      </item>
+      <item>
+        <p>Introduzca un nombre para el recorte nuevo. El nombre del recorte puede ser diferente del recorte que quiere añadir.</p>
+      </item>
+      <item>
+        <p>En la sección <gui style="group">Activación</gui> debe introducir un término en el área de texto <gui style="input">Disparador:</gui>. Deberá usar este término para insertar el recorte.</p>
+        <note style="tip">
+          <p>Si quiere insertar un recorte con un atajo de teclado, pulse con el ratón en el área de texto <gui style="input">Tecla rápida:</gui> y pulse la combinación de teclas que quiere. Una vez que haya pulsado y soltado las teclas, el atajo de teclado quedará configurado.</p>
+        </note>
+      </item>
+      <item>
+        <p>Introduzca el texto que quiere para el recorte en el área de texto <gui style="input">Editar:</gui>. Puede usar <code>${n}</code> para indicar variables, donde <em>n</em> se reemplaza con un número que representa el orden numérico de las variables incluidas.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Ejemplo de recorte nuevo</title>
+
+    <p>Considere que ha creado un recorte con el término <var>felicidades</var> en <gui style="input">Disparador:</gui>. El área de texto <gui style="input">Editar:</gui> contiene:</p>
+
+    <code>
+      &lt;felicidades&gt;¡Hola ${1:maravilloso}${2:increíble} mundo!
+      &lt;/felicidades&gt;
+    </code>
+
+    <p>Puede insertar este fragmento escribiendo <var>felicidades</var> en el documento y pulsando la tecla <key>Tab</key> key. Se insertará el siguiente recorte de texto:</p>
+
+    <code>
+      &lt;felicidades&gt;¡Hola maravillosoincreíble mundo!&lt;/felicidades&gt;
+    </code>
+
+    <p>Las palabras «maravilloso» e «increíble», se pueden conservar o se pueden eliminar, dependiendo de lo que elija. Para eliminarlas, pulse <key>Tab</key> para elegir entre «maravilloso» e «increíble» y pulse <key>Del</key> para eliminar la opción elegida.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

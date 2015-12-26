@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <style type="text/css">
+            /* Needed for the font. */
+            body {
+                margin: 0;
+                font: 10px "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Lucida Grande", sans-serif;
+                background-color: #fff;
+            }
+
+            /* Needed to make fullscreen . */
+            .fullscreen-pane {
+                /* CSS trick to ensure that the element fills the visible screen */
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden; /* Prevent scrolling */
+                display: none; /* Hide all panes by default */
+            }
+
+            /* Needed to set the background. */
+            .web-screen {
+                background-image: url(ReceiverFullScreenBackground.jpg);
+                background-size: 100% 100%;
+            }
+
+            /* Needed to give the gray bar. */
+            .web-screen .content-area {
+                padding: 62px 0 78px 0;
+                background-color: #3f3643;
+                background-color: rgba(63, 54, 67, 0.8);
+                text-align: center;
+            }
+
+            /* Needed for the title font. */
+            .web-screen .main-text {
+                color: white;
+                font-size: 18px;
+                font-weight: 300;
+            }
+
+            /* Needed to position the gray bar. */
+            .vertical-center-outer {
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            /* Needed to position the gray bar. */
+            .vertical-center-inner {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            /* Needed for spinner. */
+            .spinner {
+                background-image: url("spinner_white.gif");
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 22px;
+            }
+
+            /* Make the button link not get an underline. */
+            a, a:visited, a:link, a:hover {
+                text-decoration: none;
+            }
+
+            /* Give the button its size. */
+            .button {
+                display: inline-block;
+                min-width: 287px;
+                height: 44px;
+                line-height: 44px; /* Vertically center the text in the button */
+                background-color: #bbb;
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+            }
+
+            /* Needed for the button colour. */
+            .button.default {
+                background-color: #02A1C1; /* TODO should this be the same as the theme-highlight-bgcolor? */
+            }
+
+            /* Needed to center spinner. */
+            .logoff-spinner {
+                margin: 30px auto 0 auto;
+            }
+
+            /* Needed to give the title padding. */
+            .shared-user-mode-title {
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+<body class="store-view" style="cursor: default;">
+    
+    <section style="display: block;" class="logoff-view scrollable fullscreen-pane web-screen">
+        <div class="vertical-center-outer">
+            <div class="vertical-center-inner">
+                <div style="display: block;" class="logoff-complete content-area">
+                    <h1 class="shared-user-mode-title main-text" id="welcome_text" >Welcome to Citrix Receiver</h1>
+                    <a href="#" class="logon-button default button" id="logon_button">Log On</a>
+                    <div style="padding: 11px 11px; display: none;" style="background-position: 0px center;" class="spinner logoff-spinner" id="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="strings.js"></script>
+    <script type="text/javascript">
+
+        function getHashParam(param) {
+            var text = window.location.hash;
+
+            var i = text.indexOf(param);
+            if (i == -1) {
+                return "";
+            } else {
+                i += param.length;
+                var j = text.indexOf('&', i);
+                if (j == -1) {
+                    return text.substring(i);
+                } else {
+                    return text.substring(i, j);
+                }
+            }
+        }
+
+        var logon = document.getElementById("logon_button");
+
+        logon.onclick = function ()
+        {
+            document.getElementById('spinner').style.display = 'block';
+            document.getElementById('logon_button').style.display = 'none';
+            window.external.sharedUserModeLogon();
+        };
+
+        var currentLocale;
+
+        var locales = getHashParam("locale=").split(',');
+        if ((navigator) && (navigator.language)) {
+            locales.push(navigator.language);
+        }
+        locales.push('en');
+
+        for (var l = 0, currentLocale = null; currentLocale == null; l++) {
+            currentLocale = localizationStrings[locales[l]];
+        }
+
+        for (var item in currentLocale)
+        {
+            var el = document.getElementById(item);
+            if(el)
+            {
+                var text = currentLocale[item];
+                el.innerHTML = text;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/sunpinyin-data
+/usr/share/doc/sunpinyin-data/changelog.Debian.gz
+/usr/share/doc/sunpinyin-data/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/sunpinyin
+/usr/lib/arm-linux-gnueabihf/sunpinyin/data
+/usr/lib/arm-linux-gnueabihf/sunpinyin/data/pydict_sc.bin
+/usr/lib/arm-linux-gnueabihf/sunpinyin/data/lm_sc.t3g

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-sort" xml:lang="fr">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Sindhu S</name>
+    <email>sindhus@live.in</email>
+  </credit>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <desc>Trier des lignes de texte dans l'ordre alphabétique</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Trier</title>
+
+  <p>Le greffon « Trier » trie les lignes sélectionnées dans l'ordre alphabétique.</p>
+
+  <note style="warning">
+    <p>Il est impossible d'utiliser la fonction <gui>Annuler</gui> pour corriger une opération <gui>Trier</gui>. Il est donc recommandé d'enregistrer le document immédiatement avant d'en faire usage. En cas d'erreur de tri, choisissez <guiseq><gui>Fichier</gui><gui>Rétablir</gui></guiseq> pour revenir à la dernière version enregistrée.</p>
+</note>
+
+  <section id="enable-sort">
+    <title>Activation du greffon Trier</title>
+
+    <p>Pour activer le greffon <app>Trier</app> :</p>
+
+    <steps>
+      <item>
+        <p>Choisissez <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Préférences</gui><gui style="tab">Greffons</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Choisissez <gui style="menuitem">Trier</gui> pour activer le greffon.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="using-sort">
+    <title>Utilisation du greffon Trier</title>
+
+    <p>Pour utiliser le greffon <gui>Trier</gui> :</p>
+
+    <steps>
+      <item>
+        <p>Faites glisser le pointeur de la souris pour sélectionner les lignes de texte voulues.</p>
+      </item>
+      <item>
+        <p>Choisissez <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Trier</gui></guiseq>. </p>
+      </item>
+      <item>
+        <p>La boîte de dialogue <gui>Trier</gui> s'ouvre afin de vous permettre de choisir parmi différentes options de tri :</p>
+        <list>
+          <item>
+            <p><gui>Inverser l'ordre</gui> classe le texte dans l'ordre alphabétique inverse.</p>
+          </item>
+          <item>
+            <p><gui>Enlever les doublons</gui> supprime les valeurs de la liste en double.</p>
+          </item>
+          <item>
+            <p><gui>Ignorer la casse</gui> ne tient pas compte de la casse.</p>
+            <note style="tip">
+              <p>Pour que le tri ignore les caractères en début de ligne, indiquez dans le champ de saisie numérique <gui>Commencer à la colonne</gui> le numéro de colonne du premier caractère devant être utilisé pour le tri.</p>
+            </note>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Pour lancer le tri, cliquez sur le bouton <gui>Trier</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

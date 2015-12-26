@@ -1,0 +1,7 @@
+According to J. Grant <jg@jguk.org>, the following extra TTF fonts are needed
+on Debian systems to get fully working Simplified Chinese:
+
+ttf-arphic-bkai00mp - "AR PL KaitiM Big5" Chinese TrueType font by Arphic Technology
+ttf-arphic-bsmi00lp - "AR PL Mingti2L Big5" Chinese TrueType font by Arphic Technology
+ttf-arphic-gbsn00lp - "AR PL SungtiL GB" Chinese TrueType font by Arphic Technology
+ttf-arphic-gkai00mp - "AR PL KaitiM GB" Chinese TrueType font by Arphic Technology

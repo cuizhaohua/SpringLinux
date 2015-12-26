@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Otevření souboru nebo sady souborů</title>
+
+  <p>Když chcete v editoru <app>gedit</app> otevřít soubor, klikněte na tlačítko <gui>Otevřít</gui> nebo zmáčkněte <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>To způsobí, že se objeví dialogové okno <gui>Otevření</gui>. Použijte myš nebo klávesnici k výběru souboru, který si přejete otevřít a klikněte na <gui>Otevřít</gui>. Soubor, který jste vybrali, se otevře v nové kartě.</p>
+  <p>Kliknutím na <gui>Zrušit</gui> dialogové okno <gui>Otevření</gui> uzavřete, aniž by se soubor otevřel.</p>
+
+  <note style="tip"><p>Můžete použít klávesy <key>Ctrl</key> a <key>Shift</key> k otevření více souborů naráz. Když držíte během označování více souborů zmáčknutou klávesu <key>Ctrl</key>, otevře se pak kliknutím na <gui>Otevřít</gui> každý z těchto souborů, který jste označili.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Když během označování více souborů držíte zmáčknutou klávesu <key>Shift</key>, otevře se první vybraný soubor, poslední vybraný soubor a všechny soubory mezi nimi.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

@@ -1,0 +1,33 @@
+This package was debianized by Jay Berkenbilt <qjb@debian.org>.
+
+It was downloaded from http://xerces.apache.org/
+
+Copyright (C) 1999-2007 The Apache Software Foundation
+
+Xerces-C++ is released under the terms of the Apache License, version
+2.0, which can be found in /usr/share/common-licenses/Apache-2.0.
+
+The source distribution includes a "NOTICE" file as discussed in item
+4(d) below.  Here is the notice file text:
+
+-----------------------------------------------------------------------------
+
+   =========================================================================
+   ==  NOTICE file corresponding to section 4(d) of the Apache License,   ==
+   ==  Version 2.0, in this case for the Apache Xerces distribution.      ==
+   =========================================================================
+
+   This product includes software developed by
+   The Apache Software Foundation (http://www.apache.org/).
+
+   Portions of this software were originally based on the following:
+     - software copyright (c) 1999, IBM Corporation., http://www.ibm.com.
+
+-----------------------------------------------------------------------------
+
+Additionally, portions of this distribution have the following
+copyrights:
+
+  Copyright 1998-2004 W3C (MIT, ERCIM, Keio)
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  Copyright (C) 1994 X Consortium

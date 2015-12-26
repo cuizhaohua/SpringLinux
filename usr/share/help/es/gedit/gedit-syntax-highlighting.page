@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Activar el resaltado de sintaxis</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Resaltado de sintaxis</title>
+    <p><app>gedit</app> proporciona resaltado de sintaxis para un muchos lenguajes de marcado, programación y científicos. Si <app>gedit</app> reconoce la sintaxis usada al abrir el archivo, automáticamente resaltará el texto.</p>
+
+    <p>Si su sintaxis o lenguaje no están resaltados desde el principio, puede seleccionar la sintaxis o lenguaje apropiado pulsando <guiseq><gui style="menu">Ver</gui> <gui style="menuitem">Modo de resaltado</gui></guiseq>, y después seleccionando la sintaxis que quiere. Alternativamente, puede seleccionar el nombre de la sintaxis desde una lista en la parte inferior de la ventana de <app>gedit</app>.</p>
+  </section>
+
+</page>

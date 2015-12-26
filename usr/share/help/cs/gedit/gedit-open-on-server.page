@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Otevření souboru umístěného na serveru</title>
+
+  <p>Než se pustíte v editoru <app>gedit</app> do otevření souboru ze serveru, musíte znát o serveru některé technické údaje. Například potřebujete znát IP adresu nebo adresu URL serveru a možná budete potřebovat vědět, o jaký druh serveru se jedná (např. HTTP, FTP apod.).</p>
+
+  <p>Navíc některé servery uplatňují omezení na to, co se soubory uloženými na serveru můžete dělat. Například můžete soubor otevřít ze serveru, ale provedené změny budete muset uložit na místní disk na svém počítači.</p>
+
+  <p>Vezměte v potaz tato upozornění a můžete se pustit do otevření souboru ze serveru v editoru <app>gedit</app> v následujících krocích:</p>
+
+    <steps>
+      <item><p>Zvolte <guiseq><gui>Soubor</gui> <gui>Otevřít</gui></guiseq> a zobrazí se dialogové okno <gui>Otevření souboru</gui></p></item>
+      <item><p>Klikněte na ikonu <gui>tužky</gui> poblíž horní části dialogového okna <gui>Otevření souboru</gui>.</p></item>
+      <item><p>Zadejte IP adresu nebo URL patřičného serveru.</p></item>
+      <item><p>Najděte a vyberte soubor, který si přejete otevřít.</p></item>
+      <item><p>Použijte rozbalovací seznam <gui>Kódování znaků</gui> k výběru správného kódování znaků.</p></item>
+      <item><p>Klikněte na <gui>Otevřít</gui>.</p></item>
+    </steps>
+
+  <p>Mezi platné typy adres URI patří http:, ftp:, file:, a všechny metody podporované <app>gvfs</app>.</p>
+
+  <note>
+    <p>Soubory z některých typů URI se otevírají v pouze pro čtení a pokud chcete uložit změny, musíte tak provést na jiné místo. Například HTTP umožňuje soubory pouze číst. Soubory otevřené z FTP jsou pouze pro čtení kvůli tomu, že ne všechny FTP servery pracují korektně s ukládáním vzdálených souborů.</p>
+  </note>
+
+</page>

@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libsrtp.so.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsrtp0
+/usr/share/doc/libsrtp0/changelog.gz
+/usr/share/doc/libsrtp0/README.gz
+/usr/share/doc/libsrtp0/buildinfo_armhf.gz
+/usr/share/doc/libsrtp0/TODO
+/usr/share/doc/libsrtp0/changelog.Debian.gz
+/usr/share/doc/libsrtp0/copyright
+/usr/lib/libsrtp.so.0

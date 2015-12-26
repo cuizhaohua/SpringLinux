@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Даниэль Нил (Daniel Neel)</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Шобха Тиаджи (Shobha Tyagi)</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Поиск текста</title>
+  
+    <p>Поиск может помочь найти конкретную последовательность текста внутри файла.</p>
+
+    <steps>
+      <title>Поиск текста</title>
+      <item>
+        <p>Откройте <gui>окно поиска</gui>, выбрав <guiseq><gui style="menu">Поиск</gui> <gui style="menuitem">Найти</gui> </guiseq>, или нажмите <keyseq><key>Ctrl</key><key>F</key></keyseq>. Это переместит указатель в <gui>окно поиска</gui>, к началу.</p>
+      </item>
+      <item>
+        <p>В <gui>окне поиска</gui> введите текст, который нужно найти.</p>
+      </item>
+      <item>
+        <p>По мере ввода, <app>gedit</app> будет подсвечивать соответствующие введённому части текста.</p>
+      </item>
+    </steps>
+    
+    <p>Для перемещения по результатам поиска, выполните любое из следующих действий:</p>
+    <list>
+      <item>
+        <p>Нажмите на значок <gui style="button">стрелка вверх</gui> или <gui style="button">стрелка вниз</gui> рядом с <gui>окном поиска</gui>.</p>
+      </item>
+      <item>
+        <p>Нажмите клавишу <key>стрелка вверх</key> или <key>стрелка вниз</key> на клавиатуре.</p>
+      </item>
+      <item>
+        <p>Нажмите <keyseq><key>Ctrl</key><key>G</key></keyseq> или <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Нажмите кнопку <key>Ctrl</key> и с помощью мыши или <key>прокрутки</key> на тачпаде перемещайтесь вверх или вниз по тексту.</p>
+      </item>
+    </list>
+
+  <p>Чтобы закрыть <gui>окно поиска</gui>, нажмите клавишу <key>Esc</key> или <key>Enter</key>. Нажатие клавиши <key>Esc</key> перенесёт указатель на позицию до начала поиска. Нажатие клавиши <key>Enter</key> перенесёт указатель на позицию текущего результата поиска.</p>
+
+  <list>
+    <title>Советы по поиску</title>
+    <item>
+      <p>Если выделить часть текста с помощью мыши, а затем нажать <keyseq><key>Ctrl</key><key>F</key></keyseq>, выделенный текст появится в окне поиска.</p>
+    </item>
+    <item>
+      <p>Для расширенного поиска, нажмите на значок <gui style="button">Лупа</gui> в окне поиска. Можно выбрать один или несколько следующих параметров поиска:</p>
+      <list>
+        <item>
+          <p>Выберите <gui>Учитывать регистр</gui>, чтобы сделать поиск с учётом регистра.</p>
+        </item>
+        <item>
+          <p>Выберите <gui> Только полные слова</gui> для поиска только полных слов.</p>
+        </item>
+        <item>
+          <p>Выберите <gui>Автоматически переходить к началу документа</gui> для цикличного поиска.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Найденный текст будет оставаться подсвеченным gedit, даже после завершения поиска. Чтобы снять выделение, выберите <guiseq><gui>Поиск</gui><gui>Очистить подсветку</gui></guiseq>, или нажмите <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

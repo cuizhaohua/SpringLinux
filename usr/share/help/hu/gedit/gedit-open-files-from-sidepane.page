@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fájlok megjelenítése és megnyitása az oldalsávból</title>
+  <p>A fájlok közti váltás leggyakoribb módja a <app>geditben</app> a <app>gedit</app> ablak tetején lévő lapok használata. Egyes esetekben azonban, különösen ha sok nyitott fájllal dolgozik, egyszerűbb lehet az <app>oldalsáv</app> használata.</p> 
+
+  <p>Az <app>oldalsáv</app> aktiválásához válassza a <guiseq><gui>Nézet</gui> <gui>Oldalsó ablaktábla</gui></guiseq> menüpontot, vagy nyomja meg az <key>F9</key> billentyűt.</p>
+
+  <note style="note">
+    <p>Az <gui>oldalsávot</gui> bármikor megnyithatja vagy bezárhatja az <key>F9</key> megnyomásával.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Fájlok megnyitása az oldalsávból</title>
+    <p>Fájlok <app>oldalsávból</app> való megnyitásához első lépésként nyissa meg az <app>oldalsávot</app> a <guiseq><gui>Nézet</gui> <gui>Oldalsó ablaktábla</gui></guiseq> menüpont kiválasztásával, majd az ablaktábla alján a <gui>fájlböngészőt</gui> ábrázoló ikonra.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Ez aktiválja az <app>oldalsáv</app> <em>fájlböngésző</em> módját. Ezután az ablaktábla tetején lévő navigációs gombok használatával megkeresheti és megnyithatja a kívánt fájlokat.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Az oldalsáv használata a nyitott fájlok közti váltásra</title>
+    <p>Ha több fájlja van megnyitva, akkor az oldalsáv használatával is válthat a nyitott fájlok közt. Az <app>oldalsáv</app> fájlböngésző részének aktiválásához kattintson az <gui>oldalsáv</gui> <gui>fájl</gui> ikonjára.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Az <gui>oldalsávban</gui> bármely fájlnévre kattintva megnyithatja a fájlt szerkesztésre.</p>
+  </section>
+ 
+ </page>

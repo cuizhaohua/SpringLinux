@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Reemplazar texto</title>
+
+  <p>Editar texto puede consumir mucho tiempo. Para ahorrar tiempo <app>gedit</app> incluye una función <app>Reemplazar</app> que le ayuda a buscar y reemplazar partes de texto.</p>
+
+  <steps>
+    <title>Reemplazar texto en <app>gedit</app></title>
+    <item>
+      <p>Abra la herramienta <gui>Reemplazar</gui> pulsando en <guiseq><gui style="menu">Buscar</gui> <gui style="menuitem">Reemplazar...</gui></guiseq> o pulse <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Introduzca el texto que quiere reemplazar en el campo <gui>Buscar</gui>.</p>
+    </item>
+    <item>
+      <p>Introduzca el nuevo texto de reemplazo en el campo <gui>Reemplazar con:</gui>.</p>
+    </item>
+    <item>
+      <p>Una vez que haya introducido el texto original y el de reemplazo, puede añadir parámetros adicionales a la búsqueda. También puede elegir qué quiere reemplazar.</p>
+      <list>
+        <item>
+          <p>Para reemplazar <em>sólo</em> el siguiente fragmento de texto que coincida, pulse <gui>Reemplazar</gui>.</p>
+        </item>
+        <item>
+          <p>Para reemplazar <em>todas apariciones</em> del texto buscado, pulse <gui>Reemplazar todo</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Use la función <gui>Reemplazar todo</gui> con cuidado. <gui>Reemplazar todo</gui> se ejecuta en todo el texto del archivo y no le permite marcar partes del texto donde no se aplicará la función.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Más opciones</title>
+
+  <p>Si quiere, puede añadir algunas parámetros adicionales a su búsqueda:</p>
+
+  <terms>
+    <item>
+      <title>Coincidir con capitalización</title>
+      <p>La opción <em>Coincidir con capitalización</em> le permite especificar si quiere que su búsqueda sea sensible a mayúsculas/minúsculas. Si se selecciona esta opción, las búsquedas serán sensibles a mayúsculas/minúsculas. De lo contrario no lo serán.</p>
+    </item>
+    <item>
+      <title>Coincidir sólo con la palabra completa</title>
+      <p>Use esta opción para buscar una palabra específica sin incluir partes de otras palabras. Por ejemplo, si buscó el término «por» con la opción seleccionada, se encontrará la palabra «por», pero no así las palabras <em>por</em>tal, <em>por</em>que y estu<em>por</em>.</p>
+    </item>
+    <item>
+      <title>Buscar hacia atrás</title>
+      <p>Este comando se comporta de forma idéntica al comando Buscar anterior. Seleccione esta opción si quiere pasar a través de los resultados de la búsqueda desde el final al principio.</p>
+    </item>
+    <item>
+      <title>Ajustar aproximadamente</title>
+      <p>Con la opción <app>Ajustar aproximadamente</app> activada, <app>gedit</app> reiniciará la acción de buscar/reemplazar en la parte superior del archivo, después de haber llegado al final. Esto le asegura que su acción de buscar/reemplazar se realiza en todo el archivo.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Usar secuencias de escape</title>
+
+  <p>Puede usar <em>secuencias de escape</em> para buscar saltos de línea y tabulaciones.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Nueva línea</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tabulación</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Retorno de carro</p>
+    </item>
+  </terms>
+
+  <p>Actualmente, si quiere buscar una <output>\</output> (barra invertida) o una de las secuencias de escape en el texto, debe añadir una barra invertida adicional. Por ejemplo, para buscar <input>\</input>, debe introducir <input>\\</input> en el cuadro de búsqueda o de reemplazo. Puede buscar secuencias de escape de la misma manera: para buscar o reemplazar <input>\n</input>, use el término <input>\\n</input>.</p>
+
+</section>
+
+</page>

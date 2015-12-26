@@ -1,0 +1,7 @@
+#! /bin/sh
+set -e
+
+if [ "$1" = rtupdate ]; then
+	py3clean -p gdebi /usr/share/gdebi
+	py3compile -p gdebi -V 3.3- /usr/share/gdebi
+fi

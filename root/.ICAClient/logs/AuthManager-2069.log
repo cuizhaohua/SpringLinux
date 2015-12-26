@@ -1,0 +1,105 @@
+ 
+======================================================
+===   Citrix Auth Manager - Logging starting
+======================================================
+
+
+
+Time: 29 Nov 2015 03:08:01 UTC
+LocalTime: 29 Nov 2015 03:08:01
+Type: Information
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: Citrix Authentication Manager starting.
+
+Time: 29 Nov 2015 03:44:48 UTC
+LocalTime: 29 Nov 2015 03:44:48
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem with the server's certificate.
+Exception type: Certificate exception
+Detail: CheckedSendAndReceive(); error code: 60; url: 'https-url-withheld'
+Context:
+	During CServerProbe::Execute while probing https-url-withheld
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.
+
+Time: 29 Nov 2015 03:44:49 UTC
+LocalTime: 29 Nov 2015 03:44:49
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem with the server's certificate.
+Exception type: Certificate exception
+Detail: CheckedSendAndReceive(); error code: 60; url: 'https-url-withheld'
+Context:
+	CAuthHttpRequestImpl::SendAndReceive
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.
+
+Time: 29 Nov 2015 03:47:09 UTC
+LocalTime: 29 Nov 2015 03:47:09
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem with the server's certificate.
+Exception type: Certificate exception
+Detail: CheckedSendAndReceive(); error code: 60; url: 'https-url-withheld'
+Context:
+	During CServerProbe::Execute while probing https-url-withheld
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.
+
+Time: 29 Nov 2015 03:47:09 UTC
+LocalTime: 29 Nov 2015 03:47:09
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem with the server's certificate.
+Exception type: Certificate exception
+Detail: CheckedSendAndReceive(); error code: 60; url: 'https-url-withheld'
+Context:
+	CAuthHttpRequestImpl::SendAndReceive
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.
+
+Time: 29 Nov 2015 04:03:56 UTC
+LocalTime: 29 Nov 2015 04:03:56
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem accessing the HTTP server.
+Exception type: HTTP exception
+Detail: Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https-url-withheld'
+Context:
+	CAuthHttpRequestImpl::SendAndReceive
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.
+
+Time: 29 Nov 2015 04:03:56 UTC
+LocalTime: 29 Nov 2015 04:03:56
+Type: Warning
+Module: Citrix Authentication Manager
+Location: /opt/Citrix/ICAClient/AuthManagerDaemon
+Version: 13.2.1.SF.328609#158719#58805 (Release)
+Platform: Linux
+Description: There was a problem accessing the HTTP server.
+Exception type: HTTP exception
+Detail: Gateway connectivity was indicated, but the resource did not have an associated gateway; server URL: 'https-url-withheld'
+Context:
+	CAuthHttpRequestImpl::SendAndReceive
+
+URLs have been stripped from this log message. To allow URLs in the log, set the logging mode to 'verbose'.

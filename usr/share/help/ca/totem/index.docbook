@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "2.26">
+<!ENTITY manrevision "3.0">
+<!ENTITY date "February 2009">
+<!ENTITY app "Totem Movie Player">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file.
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the GNOME Documentation Project
+  http://developer.gnome.org/projects/gdp
+  Template version: 2.0 beta
+  Template last modified Apr 11, 2002
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ca">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Manual del <application>reproductor de pel·lícules Totem</application></title>
+    <copyright><year>2003</year> <holder>Chee Bin HOH</holder></copyright>
+    <copyright><year>2009</year> <holder>Philip Withnall</holder></copyright>
+    <releaseinfo revision="2.26" role="final">
+    	<ulink type="peerreview" url="http://bugzilla.gnome.org/show_bug.cgi?id=574524"/>
+    </releaseinfo>
+
+    <abstract role="description">
+      <para>El <application>reproductor de pel·lícules Totem</application> és un reproductor de suports pel GNOME que utilitza el GStreamer per defecte, però també pot utilitzar el xine. Pot reproduir la gran majoria de còdecs d'àudio i vídeo, també DVD. El Totem inclou funcions com la televisió externa, la pantalla completa, els subtítols i més.</para>
+    </abstract>
+
+    <publisher>
+      <publishername>Projecte de documentació del GNOME</publishername>
+    </publisher>
+
+      <legalnotice id="legalnotice">
+	<para>Teniu permís per a copiar, distribuir i/o modificar aquest document, sota els termes de la Llicència de documentació lliure GNU (GFDL), versió 1.1 o qualsevol versió publicada posteriorment per la Free Software Foundation, sense seccions invariants, sense texts de portada i sense texts de contraportada. Podeu trobar una còpia de la GFDL en aquest <ulink type="help" url="help:fdl">enllaç</ulink> o en el fitxer COPYING-DOCS distribuït amb aquest manual.</para>
+         <para>Aquest manual forma part d'una col·lecció de manuals del GNOME distribuïts sota la GFDL. Si voleu distribuir aquest manual independentment de la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal com es descriu a la secció 6 de la llicència.</para>
+
+	<para>Molts dels noms que les empreses utilitzen per a distingir els seus productes i serveis es consideren marques comercials. Quan aquests noms apareguin en qualsevol documentació del GNOME, si els membres del Projecte de documentació del GNOME han estat avisats pel que fa a les marques, els noms apareixeran en majúscules o amb les inicials en majúscules.</para>
+
+	<para>EL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT S'OFEREIXEN SOTA ELS TERMES DE LA LLICÈNCIA DE DOCUMENTACIÓ LLIURE DE GNU, TENINT EN COMPTE QUE: <orderedlist>
+		<listitem>
+		  <para>EL DOCUMENT S'OFEREIX «TAL COM ÉS», SENSE CAP TIPUS DE GARANTIA, NI EXPLÍCITA NI IMPLÍCITA; AIXÒ INCLOU, SENSE LIMITAR-S'HI, LES GARANTIES QUE EL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT NO TINGUI DEFECTES, SIGUI COMERCIALITZABLE, SIGUI ADEQUAT PER A UN ÚS CONCRET O NO INFRINGEIXI CAP LLEI. TOT EL RISC PEL QUE FA A LA QUALITAT, EXACTITUD I RENDIMENT DEL DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I </para>
+		</listitem>
+		<listitem>
+		  <para>EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT (INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+    <!-- This file  contains link to license for the documentation (GNU FDL), and
+         other legal stuff such as "NO WARRANTY" statement. Please do not change
+	 any of this. -->
+
+    <authorgroup>
+      <author role="maintainer"><firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> <orgname>Projecte de documentació del GNOME</orgname> </affiliation> <email>cbhoh@gnome.org</email></author>
+      <author><firstname>Baptiste</firstname> <surname>Mille-Mathias</surname> <affiliation> <orgname>Projecte de documentació del GNOME</orgname> </affiliation> <contrib>Actualitza la documentació</contrib> <email>baptiste.millemathias@gmail.org</email></author>
+       <author><firstname>Philip</firstname> <surname>Withnall</surname> <contrib>Actualització de la documentació</contrib> <email>philip@tecnocode.co.uk</email></author>
+
+<!-- This is appropriate place for other contributors: translators,
+     maintainers,  etc. Commented out by default.
+      <othercredit role="translator">
+	<firstname>Latin</firstname>
+	<surname>Translator 1</surname>
+	<affiliation>
+          <orgname>Latin Translation Team</orgname>
+  	  <address> <email>translator@gnome.org</email> </address>
+        </affiliation>
+        <contrib>Latin translation</contrib>
+      </othercredit>
+-->
+    </authorgroup>
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+<!-- Remember to remove the &manrevision; entity from the revision entries other -->
+<!-- than the current revision. -->
+<!-- The revision numbering system for GNOME manuals is as follows: -->
+<!-- * the revision number consists of two components -->
+<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+<!-- to V3.0, and so on. -->
+    <revhistory>
+      <revision><revnumber>Versió 2.0 del manual del reproductor de pel·lícules Totem</revnumber> <date>agost del 2006</date> <revdescription>
+	  <para role="author">Chee Bin HOH <email>cbhoh@gnome.org</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+        </revdescription></revision>
+      <revision><revnumber>Versió 3.0 del manual del reproductor de pel·lícules Totem</revnumber> <date>febrer del 2009</date> <revdescription>
+	  <para role="author">Philip Withnall <email>philip@tecnocode.co.uk</email></para>
+	  <para role="publisher">Projecte de documentació del GNOME</para>
+        </revdescription></revision>
+    </revhistory>
+
+    <releaseinfo>Aquest manual descriu la versió 2.26 del reproductor de pel·lícules Totem.</releaseinfo>
+    <legalnotice>
+      <title>Comentaris</title>
+      <para>Per informar d'un error o fer un suggeriment sobre el <application>reproductor de pel·lícules Totem</application> o aquest manual, seguiu les indicacions de la <ulink url="help:user-guide#feedback" type="help">Pàgina de suggeriments del GNOME</ulink>.</para>
+    </legalnotice>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Gil Forcada</firstname>
+      </personname>
+      <email>gilforcada@guifi.net</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007</year>
+      
+      <holder>Gil Forcada</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Jordi Bultó</firstname>
+      </personname>
+      <email>jbulto@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2011</year>
+      
+      <holder>Jordi Bultó</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Manel Vidal</firstname>
+      </personname>
+      <email>verduler@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2013</year>
+      
+      <holder>Manel Vidal</holder>
+    </copyright>
+  </articleinfo>
+
+  <indexterm zone="index"><primary>Reproductor de pel·lícules Totem</primary></indexterm>
+  <indexterm zone="index"><primary>totem</primary></indexterm>
+
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<!-- Use the Introduction section to give a brief overview of what
+     the application is and what it does. -->
+  <sect1 id="totem-introduction">
+    <title>Introducció</title>
+    <para>L'aplicació <application>reproductor de pel·lícules Totem</application> és un reproductor per a l'escriptori GNOME basat en l'entorn de treball GStreamer i la biblioteca xine, que us permet reproduir pel·lícules o cançons.</para>
+    <para>El <application>reproductor de pel·lícules Totem</application> proporciona les característiques següents:</para>
+    <itemizedlist>
+      <listitem>
+	<para>Permet la reproducció d'una gran varietat de fitxers de vídeo i àudio.</para>
+      </listitem>
+      <listitem>
+	<para>Proporciona diversos nivells de zoom i de relacions d'aspecte a més de visualització a pantalla completa.</para>
+      </listitem>
+      <listitem>
+        <para>Controls de desplaçament i volum.</para>
+      </listitem>
+      <listitem>
+        <para>Llista de reproducció.</para>
+      </listitem>
+      <listitem>
+        <para>Permet l'ús de subtítols.</para>
+      </listitem>
+      <listitem>
+	<para>Navegació totalment per teclat.</para>
+      </listitem>
+      <listitem>
+	<para>Inclou un conjunt important de connectors per baixar subtítols, per navegar pel YouTube i per enregistrar discs.</para>
+      </listitem>
+    </itemizedlist>
+    <note>
+      <para>El <application>reproductor de pel·lícules Totem</application> també incorpora funcionalitats addicionals tals com ara:</para>
+      <itemizedlist>
+	<listitem>
+	  <para>Miniaturitzador de vídeos pel GNOME.</para>
+        </listitem>
+        <listitem>
+	  <para>Previsualització d'àudio pel GNOME</para>
+        </listitem>
+	<listitem>
+	  <para>Pestanya de propietats del Nautilus.</para>
+        </listitem>
+      </itemizedlist>
+    </note>
+  </sect1>
+<!-- =========== End of Introduction ========================= -->
+
+<!-- =========== Getting Started ============================= -->
+<!-- Use the Getting Started section to describe the steps required
+     to start the application and to describe the user interface components
+     of the application. If there is other information that it is important
+     for readers to know before they start using the application, you should
+     also include this information here.
+     If the information about how to get started is very short, you can
+     include it in the Introduction and omit this section. -->
+
+  <sect1 id="totem-getting-started">
+    <title>Primers passos</title>
+
+    <sect2 id="totem-start">
+      <title>Per iniciar el <application>reproductor de pel·lícules Totem</application></title>
+      <para>Podeu iniciar el <application>reproductor de pel·lícules Totem</application> de les maneres següents:</para>
+      <variablelist>
+	<varlistentry>
+	  <term>Des del menú d'<guimenu>Aplicacions</guimenu></term>
+	  <listitem>
+	    <para>Trieu <menuchoice> <guisubmenu>So i vídeo</guisubmenu> <guimenuitem>Reproductor de pel·lícules Totem</guimenuitem> </menuchoice>.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Des de la línia d'ordres</term>
+	  <listitem>
+	    <para>Per iniciar el <application>reproductor de pel·lícules Totem</application> des de la línia d'ordres, teclegeu l'ordre següent i premeu la tecla de <keycap>Retorn</keycap>:</para>
+	    <para><command>totem</command></para>
+	    <tip>
+	      <para>Per veure les altres opcions disponibles des de la línia d'ordres, teclegeu <command>totem --help</command> i després premeu la tecla de <keycap>Retorn</keycap>.</para>
+	    </tip>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="totem-when-start">
+      <title>Quan inicieu el <application>reproductor de pel·lícules Totem</application></title>
+      <para>Quan inicieu el <application>reproductor de pel·lícules Totem</application> es mostrarà la finestra següent.</para>
+
+      <!-- ==== Figure ==== -->
+      <figure id="totem-start-fig">
+	<title>Finestra d'inici del <application>reproductor de pel·lícules Totem</application></title>
+	<screenshot>
+	  <mediaobject><imageobject> <imagedata fileref="figures/totem_start_window.png" format="PNG"/> </imageobject> <textobject> <phrase>Mostra la finestra principal del <application>reproductor de pel·lícules Totem</application> amb la barra lateral oberta amb la llista de reproducció. Conté la barra de menú, l'àrea de visualització, la barra lateral, el lliscador de desplaçament, els botons de control del progrés, el lliscador del volum i la barra d'estat. </phrase> </textobject></mediaobject>
+	</screenshot>
+      </figure>
+      <!-- ==== End of Figure ==== -->
+
+      <!-- Include any descriptions of the GUI immediately after the screenshot of the main UI, -->
+      <!-- for example, the items on the menubar and on the toolbar. This section is optional. -->
+      <para>La finestra del <application>reproductor de pel·lícules Totem</application> conté els elements següents:</para>
+      <variablelist>
+	<varlistentry>
+	  <term>Barra de menú.</term>
+  	  <listitem>
+	    <para>Els menús de la barra de menú contenen totes les ordres que necessiteu per utilitzar el <application>reproductor de pel·lícules Totem</application>.</para>
+ 	  </listitem>
+   	</varlistentry>
+	<varlistentry>
+	  <term>Àrea de visualització.</term>
+	  <listitem>
+	    <para>L'àrea de visualització mostra la pel·lícula o la visualització d'una cançó.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Barra lateral.</term>
+	  <listitem>
+	    <para>La barra lateral mostra les propietats del fitxer que s'està reproduint i a més funciona com a llista de reproducció. També es pot utilitzar amb diversos connectors com el MythTV, el YouTube o el cercador de vídeos. Per utilitzar algun d'aquests connectors feu clic a la llista desplegable que hi ha a la part superior de la barra lateral.</para>
+	  </listitem>
+	</varlistentry>
+	<varlistentry>
+	  <term>Lliscador del temps transcorregut.</term>
+	  <listitem>
+	    <para>El lliscador del temps transcorregut mostra el temps transcorregut de la pel·lícula o cançó que s'està reproduint. També us permet avançar o retrocedir una pel·lícula o cançó si arrossegueu el lliscador del temps per la barra o si feu clic en algun punt de la barra.</para>
+	  </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Botons de control del progrés</term>
+          <listitem>
+            <para>Els botons de control del progrés us permeten anar a la pista següent o anterior, fer una pausa o reproduir una pel·lícula o cançó.</para>
+	  </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Botó del volum.</term>
+          <listitem>
+	    <para>El botó del volum us permet ajustar el volum.</para>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Barra d'estat.</term>
+	  <listitem>
+	    <para>La barra d'estat mostra informació sobre la pel·lícula o cançó que s'està reproduint.</para>
+	  </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+<!-- =========== End of Getting Started ====================== -->
+
+<!-- =========== Usage ======================================= -->
+<!-- Use this section to describe how to use the application to perform the tasks for
+  which the application is designed. -->
+  <sect1 id="totem-usage">
+    <title>Utilització</title>
+
+    <!-- ================ Usage Subsection ================================ -->
+    <sect2 id="totem-open-file">
+      <title>Per obrir un fitxer</title>
+      <para>Per obrir un fitxer de vídeo o d'àudio, trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>O</keycap></keycombo></shortcut> <guimenu>Pel·lícula</guimenu> <guisubmenu>Obre</guisubmenu> </menuchoice>. Es mostrarà el diàleg <application>Seleccioneu pel·lícules o llistes de reproducció</application>. Seleccioneu els fitxers que voleu obrir i feu clic a <guibutton>Afegeix</guibutton>.</para>
+      <para>Podeu arrossegar i deixar anar un fitxer des d'una altra aplicació com ara el gestor de fitxers a la finestra del <application>reproductor de pel·lícules Totem</application>. Si arrossegueu i deixeu anar el fitxer a l'àrea de visualització, el fitxer substituirà la llista de reproducció actual i es reproduirà immediatament. Si arrossegueu i deixeu anar el fitxer a la barra lateral, el fitxer s'afegirà a la llista de reproducció actual. El <application>reproductor de pel·lícules Totem</application> obrirà el fitxer i reproduirà la pel·lícula o cançó. El <application>reproductor de pel·lícules Totem</application> mostra el títol de la pel·lícula o cançó a la barra de títol de la finestra i a la llista de reproducció a la barra lateral.</para>
+      <para lang="en">If you try to open a file format that <application>Totem Movie Player</application> does
+	not recognize, the application displays an error message. This error is most often encountered
+	if you do not have the correct codecs installed. Information on getting codecs working can be found on
+	the <ulink url="https://wiki.gnome.org/Apps/Videos/Codecs" type="http"><application>Totem Movie Player</application> website</ulink>.
+      </para>
+      <tip>
+	<para>Podeu fer un doble clic en un fitxer de vídeo o d'àudio en el gestor de fitxers <application>Nautilus</application> per obrir-lo a la finestra del <application>reproductor de pel·lícules Totem</application>.</para>
+      </tip>
+    </sect2>
+
+    <sect2 id="totem-usage-open-location">
+      <title>Per obrir una ubicació</title>
+      <para>Per obrir un fitxer pel seu URI (ubicació), trieu <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>L</keycap></keycombo></shortcut> <guimenu>Pel·lícula</guimenu> <guimenuitem>Obre una ubicació</guimenuitem> </menuchoice>. Es mostrarà el diàleg <application>Obre una ubicació</application>. Utilitzeu el quadre combinat desplegable per especificar l'URI que voleu obrir (es llistaran tots els URI que hàgiu obert anteriorment) —o escriviu-ne un directament—, després feu clic al botó <guibutton>Obre</guibutton>.</para>
+      <para>L'URI s'enganxarà automàticament al quadre combinat si ja en teniu un al porta-retalls.</para>
+    </sect2>
+
+    <sect2 id="totem-usage-play">
+      <title>Per reproduir una pel·lícula (DVD, VCD o CD)</title>
+	      <para>Inseriu el disc en la unitat òptica de l'ordinador, després trieu <menuchoice><guimenu>Pel·lícula</guimenu><guimenuitem>Reprodueix el disc</guimenuitem> </menuchoice>.</para>
+             <para>Per expulsar un DVD, VCD o CD, trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>E</keycap></keycombo></shortcut> <guimenu>Pel·lícula</guimenu> <guimenuitem>Expulsa</guimenuitem> </menuchoice>.</para>
+       </sect2>
+
+    <sect2 id="totem-usage-pause">
+      <title>Per fer una pausa en una pel·lícula o cançó</title>
+      <para>Per fer una pausa en una pel·lícula o una cançó que s'està reproduint, feu clic en el botó <inlinemediaobject> <imageobject><imagedata fileref="figures/totem_pause_button.png" format="PNG"/></imageobject> <textobject><phrase>Mostra el botó de fes una pausa.</phrase></textobject> </inlinemediaobject>, o trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>barra espaiadora</keycap></keycombo></shortcut> <guimenu>Pel·lícula</guimenu> <guimenuitem>Reprodueix / Fes una pausa</guimenuitem> </menuchoice>. També podeu utilitzar la tecla <keycap>P</keycap> per fer una pausa o reproduir una pel·licula.</para>
+      <para>Per continuar la reproducció d'una pel·lícula o cançó, feu de nou clic en el botó <inlinemediaobject> <imageobject><imagedata fileref="figures/totem_play_button.png" format="PNG"/></imageobject> <textobject><phrase>Mostra el botó reprodueix.</phrase></textobject> </inlinemediaobject>, o trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>barra espaiadora</keycap></keycombo></shortcut> <guimenu>Pel·lícula</guimenu> <guimenuitem>Reprodueix / Fes una pausa</guimenuitem> </menuchoice>.</para>
+    </sect2>
+
+    <sect2 id="totem-usage-view-properties">
+      <title>Per visualitzar les propietats d'una pel·lícula o cançó</title>
+      <para>Per visualitzar les propietats d'una pel·lícula o cançó, trieu <menuchoice> <guimenu>Visualitza</guimenu> <guimenuitem>Barra lateral</guimenuitem></menuchoice> per fer que aparegui la barra lateral i trieu <guimenu>Propietats</guimenu> en el quadre de llista desplegable que hi ha a la part superior de la barra lateral.</para>
+    </sect2>
+
+    <sect2 id="totem-usage-seek">
+      <title>Per desplaçar-se a través de pel·lícules o de cançons</title>
+      <para>Per desplaçar-se a través de pel·lícules o de cançons, podeu emprar els mètodes següents:</para>
+      <variablelist>
+	<varlistentry>
+	  <term>Per saltar endavant</term>
+	  <listitem>
+	    <para>Per saltar endavant en una pel·lícula o una cançó, trieu <menuchoice> <shortcut><keycap>Dreta</keycap></shortcut> <guimenu>Vés</guimenu> <guimenuitem>Salta endavant</guimenuitem> </menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Per saltar enrere</term>
+	  <listitem>
+	    <para>Per saltar enrere en una pel·lícula o una cançó, trieu <menuchoice> <shortcut><keycap>Esquerra</keycap></shortcut> <guimenu>Vés</guimenu> <guimenuitem>Salta enrere</guimenuitem> </menuchoice>.</para>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Per saltar a un instant</term>
+	  <listitem>
+	    <para>Per saltar a un instant en concret d'una pel·lícula o d'una cançó, trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>K</keycap></keycombo></shortcut> <guimenu>Vés</guimenu> <guimenuitem>Salta a</guimenuitem> </menuchoice>. Es mostrarà el diàleg <application>Salta a</application>. Empreu el quadre de selecció de valors per especificar el temps transcorregut al qual saltar (en segons), després feu clic a <guibutton>D'acord</guibutton>.</para>
+            <para>El quadre de selecció de valors també permet introduir valors de forma més natural. Podeu introduir el temps en els formats «hh:mm:ss», «mm:ss» o «ss». En aquests formats «hh» representa les hores, «mm» els minuts, i «ss» els segons on voleu saltar.</para>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Per desplaçar-se a la pel·lícula o la cançó següent</term>
+	  <listitem>
+	    <para>Per desplaçar-se a la pel·lícula o la cançó següent, trieu <menuchoice> <shortcut><keycombo><keycap>Alt</keycap><keycap>Dreta</keycap></keycombo></shortcut> <guimenu>Vés</guimenu> <guimenuitem>Capítol/pel·lícula següent</guimenuitem> </menuchoice> o feu clic en el botó <inlinemediaobject> <imageobject><imagedata fileref="figures/totem_next_button.png" format="PNG"/></imageobject> <textobject><phrase>Mostra el botó de cançó o Capítol/pel·lícula següent</phrase></textobject> </inlinemediaobject>.</para>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Per desplaçar-se a la pel·lícula o la cançó anterior</term>
+	  <listitem>
+	    <para>Per desplaçar-se a la pel·lícula o la cançó anterior, trieu <menuchoice> <shortcut><keycombo><keycap>Alt</keycap><keycap>Esquerra</keycap></keycombo></shortcut> <guimenu>Vés</guimenu> <guimenuitem>Capítol/pel·lícula anterior</guimenuitem> </menuchoice> o feu clic en el botó <inlinemediaobject> <imageobject><imagedata fileref="figures/totem_previous_button.png" format="PNG"/></imageobject> <textobject><phrase>Mostra el botó de cançó o Capítol/pel·lícula anterior</phrase></textobject> </inlinemediaobject>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+    <sect2 id="totem-usage-change-zoom">
+      <title>Per canviar el factor d'escala</title>
+	  <sect3 id="totem-usage-change-size">
+		<title>Per canviar la mida del vídeo</title>
+      <para>Per canviar el factor d'escala de l'àrea de visualització, podeu emprar els mètodes següents:</para>
+      <itemizedlist>
+	<listitem>
+	  <para>Per passar a mode de pantalla completa, trieu <menuchoice><shortcut><keycap>F11</keycap></shortcut> <guimenu>Visualitza</guimenu><guimenuitem>Pantalla completa</guimenuitem></menuchoice>.  També podeu utilitzar la tecla <keycap>F</keycap> per commutar el mode de pantalla completa. Per sortir del mode de pantalla completa, feu clic en el botó <guibutton>Surt de la pantalla completa</guibutton> o premeu la tecla <keycap>Esc</keycap>, <keycap>F11</keycap> o <keycap>F</keycap>.</para>
+    </listitem>
+	<listitem>
+	  <para>Per canviar la visualització o la mida de la pel·lícula original, trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>0</keycap></keycombo></shortcut> <guimenu>Visualitza</guimenu><guimenuitem>Ajusta la finestra a la pel·lícula</guimenuitem> </menuchoice> i trieu una relació d'escala.</para>
+    </listitem>
+	</itemizedlist>
+	</sect3>
+	 <sect3 id="totem-usage-change-ratio">
+		<title>Per canviar la relació d'aspecte del vídeo</title>
+	      <para>Per canviar entre diferents relacions d'aspecte, trieu <menuchoice> <shortcut><keycap>A</keycap></shortcut> <guimenu>Visualitza</guimenu> <guisubmenu>Relació d'aspecte</guisubmenu> </menuchoice>.</para>
+	  </sect3>
+    </sect2>
+
+    <sect2 id="totem-usage-adjust-volume">
+      <title>Per ajustar el volum</title>
+      <para>Per apujar el volum, trieu <menuchoice> <shortcut><keycap>Amunt</keycap></shortcut> <guimenu>So</guimenu> <guimenuitem>Apuja el volum</guimenuitem> </menuchoice>. Per abaixar el volum, trieu <menuchoice> <shortcut><keycap>Avall</keycap></shortcut> <guimenu>So</guimenu> <guimenuitem>Abaixa el volum</guimenuitem> </menuchoice>.</para>
+      <para>Per ajustar el volum del so, també podeu emprar el botó del volum. Premeu el botó del volum i trieu el nivell de volum amb el lliscador.</para>
+    </sect2>
+
+    <sect2 id="totem-usage-on-top">
+      <title>Per fer que la finestra es mantingui sempre per damunt</title>
+      <para>Per fer que la finestra del <application>reproductor de pel·lícules Totem</application> sempre es mantingui per damunt de les finestres d'altres aplicacions, trieu <menuchoice> <guimenu>Edita</guimenu> <guimenuitem>Connectors</guimenuitem> </menuchoice> i seleccioneu el connector <guilabel>Sempre per damunt</guilabel> per habilitar-lo. Així la finestra del <application>reproductor de pel·lícules Totem</application> sempre es mantindrà per sobre de les altres quan s'estigui reproduint una pel·lícula, però no mentre s'estigui reproduint àudio o visualitzacions.</para>
+       <para>Per aturar que la finestra es mantingui sempre per damunt, torneu a deshabilitar el connector <guilabel>Sempre per damunt</guilabel>. Si voleu més informació, vegeu <xref linkend="totem-plugins-always-on-top"/>.</para>
+    </sect2>
+
+    <sect2 id="totem-usage-show-control">
+      <title>Per mostrar o amagar els controls</title>
+      <para>Per mostrar o amagar els controls de la finestra del <application>reproductor de pel·lícules Totem</application>, trieu <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo></shortcut> <guimenu>Visualitza</guimenu><guimenuitem>Mostra els controls</guimenuitem> </menuchoice> o premeu la tecla <keycap>H</keycap>. També podeu fer clic amb el botó secundari en la finestra del <application>reproductor de pel·lícules Totem</application> i llavors trieu en el menú emergent <menuchoice> <shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo></shortcut> <guimenuitem>Mostra els controls</guimenuitem> </menuchoice>.</para>
+      <para>Si està seleccionada l'opció <guilabel>Mostra els controls</guilabel>, el <application>reproductor de pel·lícules Totem</application> mostrarà la barra de menú, el lliscador de temps transcorregut, els botons de control de cerca, el lliscador de volum i la barra d'estat en la finestra. Si no està seleccionada l'opció <guilabel>Mostra els controls</guilabel>, l'aplicació amagarà aquests controls i només mostrarà l'àrea de visualització.</para>
+    </sect2>
+
+    <sect2 id="totem-usage-playlist">
+      <title>Per gestionar la llista de reproducció</title>
+
+      <sect3 id="totem-usage-playlist-show-hide">
+	<title>Per mostrar o amagar la llista de reproducció</title>
+	<para>Per mostrar o amagar la llista de reproducció, trieu <menuchoice> <guimenu>Visualitza</guimenu><guimenuitem>Barra lateral</guimenuitem> </menuchoice>, o feu clic en el botó de la <guibutton>Barra lateral</guibutton> i trieu <guimenu>Llista de reproducció</guimenu> a la part superior de la barra lateral.</para>
+      </sect3>
+
+      <sect3 id="totem-usage-playlist-manage">
+	<title>Per gestionar una llista de reproducció</title>
+	<para>Podeu utilitzar el diàleg de la <application>Llista de reproducció</application> per fer el següent: <variablelist>
+	    <varlistentry>
+	      <term>Per afegir una pista o pel·lícula</term>
+	      <listitem>
+		<para>Per afegir una pista o pel·lícula a la llista de reproducció, feu clic en el botó <guibutton>Afegeix</guibutton>. Es mostrarà el diàleg <guilabel>Seleccioneu pel·lícules o llistes de reproducció</guilabel>. Seleccioneu el fitxer que voleu afegir a la llista de reproducció, després feu clic a <guibutton>D'acord</guibutton>.</para>
+              </listitem>
+            </varlistentry>
+	    <varlistentry>
+	      <term>Per suprimir una pista o pel·lícula</term>
+	      <listitem>
+		<para>Per suprimir una pista o pel·lícula de la llista de reproducció, seleccioneu l'element o els elements que voleu suprimir de la llista de reproducció i després feu clic en el botó <guibutton>Suprimeix</guibutton>.</para>
+              </listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term>Per desar una llista de reproducció a un fitxer</term>
+	      <listitem>
+		<para>Per desar una llista de reproducció a un fitxer, feu clic en el botó <guibutton>Desa la llista de reproducció</guibutton>. Es mostrarà el diàleg <guilabel>Desa la llista de reproducció</guilabel>, especifiqueu el nom de fitxer amb què voleu desar la llista de reproducció i feu clic en el botó <guibutton>Desa</guibutton>.</para>
+              </listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term>Per moure una pista o una pel·lícula cap amunt en la llista de reproducció</term>
+	      <listitem>
+		<para>Per moure una pista o una pel·lícula cap amunt en la llista de reproducció, seleccioneu l'element de la llista de reproducció i després feu clic en el botó <guibutton>Mou amunt</guibutton>.</para>
+              </listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term>Per moure una pista o una pel·lícula cap avall en la llista de reproducció</term>
+	      <listitem>
+		<para>Per moure una pista o una pel·lícula cap avall en la llista de reproducció, seleccioneu l'element de la llista de reproducció i després feu clic en el botó <guibutton>Mou avall</guibutton>.</para>
+              </listitem>
+	    </varlistentry>
+          </variablelist></para>
+      </sect3>
+      <sect3 id="totem-usage-playlist-repeat">
+	<title>Per seleccionar o desseleccionar el mode de repetició</title>
+	<para>Per habilitar o inhabilitar el mode de repetició, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Mode de repetició</guimenuitem></menuchoice>.</para>
+      </sect3>
+      <sect3 id="totem-usage-playlist-shuffle">
+	<title>Per seleccionar o desseleccionar el mode aleatori</title>
+	<para>Per habilitar o inhabilitar el mode aleatori, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Mode aleatori</guimenuitem></menuchoice>.</para>
+      </sect3>
+    </sect2>
+
+    <sect2 id="totem-usage-subtitle">
+	  <title>Per triar els subtítols</title>
+	  <para>Per triar l'idioma dels subtítols, seleccioneu <menuchoice><guimenu>Visualitza</guimenu><guisubmenu>Subtítols</guisubmenu></menuchoice> i trieu l'idioma en què voleu que es mostrin els subtítols.</para>
+	  <para>Per inhabilitar la visualització dels subtítols, trieu <menuchoice><guimenu>Visualitza</guimenu><guisubmenu>Subtítols</guisubmenu><guimenuitem>Cap</guimenuitem></menuchoice>.</para>
+	  <note><para>Per defecte, el <application>reproductor de pel·lícules Totem</application> utilitzarà el mateix idioma en que s'està utilitzant l'ordinador per mostrar els subtítols.</para></note>
+	  <para>El <application>reproductor de pel·lícules Totem</application> carregarà i mostrarà automàticament els subtítols si el nom del fitxer del vídeo i dels subtítols tenen el mateix nom i l'extensió dels subtítols és <filename class="extension">asc</filename>, <filename class="extension">txt</filename>, <filename class="extension">sub</filename>, <filename class="extension">srt</filename>, <filename class="extension">smi</filename>, <filename class="extension">ssa</filename> o <filename class="extension">ass</filename>.</para>
+	  <para>Si el fitxer dels subtítols té un nom diferent del fitxer de vídeo, feu clic amb el botó secundari damunt del nom del fitxer de vídeo a la llista de reproducció i trieu <menuchoice><guimenuitem>Seleccioneu els subtítols de text</guimenuitem></menuchoice> en el menú emergent per carregar el fitxer de subtítols correcte. També podeu seleccionar els subtítols des de <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Seleccioneu els subtítols de text</guimenuitem></menuchoice>.</para>
+	  <para>Podeu baixar els subtítols des del servei d'OpenSubtitles si utilitzeu el connector <guilabel>Baixador de subtítols</guilabel>. Vegeu més informació a <xref linkend="totem-plugins-opensubtitles"/>.</para>
+	</sect2>
+
+    <sect2 id="totem-usage-take-screenshot">
+      <title>Per fer una captura de pantalla</title>
+      <para>Per fer una captura de pantalla d'una pel·lícula o d'una visualització d'una cançó que s'està reproduint, trieu <menuchoice> <guimenu>Edita</guimenu> <guimenuitem>Fes una captura de pantalla</guimenuitem> </menuchoice>. Es mostrarà el diàleg <application>Desa la captura de pantalla</application>. Trieu una ubicació i escriviu el nom del fitxer amb què voleu desar la captura de pantalla i després feu clic en el botó <guibutton>Desa</guibutton> per desar-la.</para>
+      <tip><para>El <application>reproductor de pel·lícules Totem</application> mostrarà una previsualització de la captura de pantalla que es desarà a la part esquerra del diàleg <application>Desa la captura de pantalla</application>.</para></tip>
+    </sect2>
+
+    <sect2 id="totem-usage-create-screenshot-gallery">
+      <title>Per crear una galeria de captures de pantalla</title>
+      <para>Per crear una galeria de captures de pantalla d'una pel·lícula o d'una visualització d'una cançó que s'està reproduint, trieu <menuchoice> <guimenu>Edita</guimenu> <guimenuitem>Crea una galeria de captures de pantalla</guimenuitem> </menuchoice>. Es mostrarà el diàleg <application>Desa la galeria</application>. Trieu una ubicació i escriviu el nom del fitxer amb què voleu desar la galeria d'imatges i després feu clic en el botó <guibutton>Desa</guibutton> per desar-la.</para>
+      <tip><para>Podeu especificar l'amplada de les captures a la galeria si modifiqueu l'entrada <guilabel>Amplada de la captura de pantalla (en píxels)</guilabel>. L'amplada per defecte és de 128 píxels.</para>
+      <para>També podeu especificar el nombre de captures que voleu que es mostrin a la galeria. Per defecte, el nombre es calcula en funció de la durada de la pel·lícula, tot i així aquest nombre es pot substituir si es desselecciona la casella de selecció <guilabel>Calcula el nombre de captures de pantalla</guilabel> i s'introdueix un número nou en el quadre de selecció de valors <guilabel>Nombre de captures de pantalla</guilabel>.</para></tip>
+    </sect2>
+  </sect1>
+
+<!-- =========== Plugins ======================================= -->
+  <sect1 id="totem-plugins">
+    <title>Connectors</title>
+    <para>El <application>reproductor de pel·lícules Totem</application> té moltes característiques que estan presents en forma de connectors —peces de programari que només es carreguen quan és necessari.</para>
+    <sect2 id="totem-plugins-load">
+      <title>Per habilitar un connector</title>
+      <para>Per visualitzar el llistat de connectors instal·lats, trieu <menuchoice><guimenu>Edita</guimenu><guimenuitem>Connectors</guimenuitem></menuchoice>. Es mostrarà el diàleg <application>Configura els connectors</application>. A la part esquerra hi haurà una llista de tots els connectors instal·lats, mentre que a la dreta hi haurà la descripció del connector seleccionat. Els connectors que tinguin opcions que es puguin canviar tindran el botó sensible <guibutton>Preferències</guibutton> a la dreta.</para>
+      <para>Per habilitar un connector, activeu la casella de selecció a l'esquerra del nom a la llista de connectors i el connector es carregarà automàticament. Si hi ha algun error quan el connector es carregui, es mostrarà un diàleg d'error immediatament.</para>
+      <para>Per inhabilitar el connector, desseleccioneu la seva casella de selecció. Els connectors restaran habilitats o inhabilitats tal com hàgiu indicat, fins i tot, quan el <application>reproductor de pel·lícules Totem</application> estigui tancat.</para>
+    </sect2>
+    <sect2 id="totem-plugins-always-on-top">
+      <title>Sempre per damunt</title>
+      <para>Si està habilitat, el connector <guilabel>Sempre per damunt</guilabel> farà que la finestra principal del <application>reproductor de pel·lícules Totem</application> es mantingui per sobre de totes les altres finestres quan s'estigui reproduint una pel·lícula, però no mentre s'estigui reproduint àudio o visualitzacions. Per deixar que la finestra es mantingui sempre per damunt, desactiveu el connector.</para>
+    </sect2>
+    <sect2 id="totem-plugins-coherence">
+      <title>Client DLNA/UPnP de Coherence</title>
+      <para>El connector <guilabel>Client DLNA/UPnP de Coherence</guilabel> permet que el <application>reproductor de pel·lícules Totem</application> reprodueixi contingut multimèdia des dels servidors de suports UPnP (com els servidors Coherence) en una xarxa local.</para>
+      <para>Amb el connector <guilabel>Client DLNA/UPnP de Coherence</guilabel> habilitat, trieu <menuchoice><shortcut><keycap>F9</keycap></shortcut><guimenu>Visualitza</guimenu><guimenuitem>Barra lateral</guimenuitem></menuchoice> o feu clic en el botó <guibutton>Barra lateral</guibutton> per mostrar la barra lateral. Seleccioneu el <guilabel>Client DLNA/UPnP de Coherence</guilabel> en el quadre de llista desplegable de la part superior de la barra lateral per mostrar la barra del <guilabel>Client DLNA/UPnP de Coherence</guilabel>.</para>
+      <para>La visualització en arbre a la barra lateral llistarà els servidors de suports disponibles. Si feu clic en un d'ells s'ampliarà per mostrar els tipus de suports que admet i si feu clic en un directori multimèdia s'ampliarà per llistar tots els fitxers multimèdia disponibles. Si feu doble clic en un fitxer multimèdia s'afegirà a la llista de reproducció del <application>reproductor de pel·lícules Totem</application> i el reproduirà. O bé podeu fer doble clic en un fitxer i triar <menuchoice><guimenuitem>Reprodueix</guimenuitem></menuchoice> o <menuchoice><guimenuitem>Envia a la cua</guimenuitem></menuchoice> per reproduir el fitxer immediatament o afegir-lo a la llista de reproducció, respectivament.</para>
+      <para>Si el servidor de suports ho permet, podeu suprimir un fitxer del servidor de suports si trieu <menuchoice><guimenuitem>Suprimeix</guimenuitem></menuchoice> del menú contextual d'aquest fitxer.</para>
+    </sect2>
+    <sect2 id="totem-plugins-gromit">
+      <title>Anotacions del Gromit</title>
+      <para>El connector <guilabel>Anotacions del Gromit</guilabel> permet dibuixar damunt de les pel·lícules mentre s'estan reproduint si utilitzeu el <ulink type="http" url="http://www.home.unix-ag.org/simon/gromit/"><application>Gromit</application></ulink>. Heu de tenir instal·lat el <application>Gromit</application> abans d'habilitar el connector. Consulteu la documentació del vostre sistema operatiu per instal·lar-lo.</para>
+      <para>Amb el connector habilitat, premeu <keycombo><keycap>Ctrl</keycap><keycap>D</keycap></keycombo> per activar o desactivar el <application>Gromit</application>. Quan el <application>Gromit</application> està habilitat, la busca esdevindrà una creu. Per dibuixar a la pantalla, mantingueu premut el botó del ratolí i arrossegueu la busca abans de deixar-la anar. Torneu a prémer <keycombo><keycap>Ctrl</keycap><keycap>D</keycap></keycombo> per desactivar el <application>Gromit</application>.</para>
+      <para>Per netejar la pantalla de les anotacions, premeu <keycombo><keycap>Ctrl</keycap><keycap>E</keycap></keycombo> o tanqueu el <application>reproductor de pel·lícules Totem</application>.</para>
+    </sect2>
+    <sect2 id="totem-plugins-jamendo">
+      <title>Jamendo</title>
+      <para>El connector <guilabel>Jamendo</guilabel> permet escoltar la col·lecció de música sota la llicència Creative Commons del servei <ulink type="http" url="http://www.jamendo.com/en/">Jamendo</ulink>.</para>
+      <sect3 id="totem-plugins-jamendo-configuration">
+        <title>Per configurar el connector</title>
+        <para>Si ja heu habilitat el connector <guilabel>Jamendo</guilabel>, per configurar-lo feu clic en el botó <guibutton>Preferències</guibutton> i es mostrarà el diàleg del <application>Jamendo</application>. En el diàleg podeu triar en quin format, Ogg o MP3, voleu baixar-vos les cançons (és preferible el format Ogg per la seva naturalesa de codi font obert) i el nombre d'àlbums a recuperar quan es faci una cerca (trieu més àlbums si teniu una connexió ràpida d'Internet).</para>
+        <para>Quan hàgiu finalitzat, feu clic a <guibutton>Tanca</guibutton>.</para>
+      </sect3>
+      <sect3 id="totem-plugins-jamendo-setup">
+        <title>Per mostrar la barra lateral del Jamendo</title>
+        <para>Amb el connector <guilabel>Jamendo</guilabel> habilitat, trieu <menuchoice><shortcut><keycap>F9</keycap></shortcut><guimenu>Visualitza</guimenu><guimenuitem>Barra lateral</guimenuitem></menuchoice> o feu clic en el botó <guibutton>Barra lateral</guibutton>. Seleccioneu el <guilabel>Jamendo</guilabel> en el quadre de llista desplegable de la part superior de la barra lateral per mostrar la barra del <guilabel>Jamendo</guilabel>.</para>
+      </sect3>
+      <sect3 id="totem-plugins-jamendo-search">
+        <title>Per cercar música</title>
+        <para>Escriviu els termes que busqueu al quadre de cerca a la part superior de la barra lateral del <guilabel>Jamendo</guilabel>. Podeu cercar per artista o per etiquetes. Per iniciar la cerca feu clic en el botó «Cerca».</para>
+        <para>Els resultats de la cerca es mostraran en una visualització en arbre a la pestanya <guilabel>Resultats de la cerca</guilabel> de la barra lateral i es poden explorar si utilitzeu el botons de desplaçament de la part inferior de la barra. Es llistaran els àlbums i si feu clic en un àlbum, es llistaran les cançons a sota. Si voleu amagar les cançons, torneu a fer clic en l'àlbum.</para>
+        <para>Si seleccioneu un artista, podeu fer clic en el botó <guibutton>Pàgina a Jamendo de l'àlbum</guibutton> per obrir la pàgina de l'àlbum al lloc web del Jamendo. Si feu doble clic en un àlbum o trieu <menuchoice><guimenuitem>Afegeix a la llista de reproducció</guimenuitem></menuchoice> del menú contextual de l'àlbum, reemplaçareu la vostra llista de reproducció amb totes les cançons de l'àlbum i començareu a reproduir en temps real la primera cançó des del lloc web del Jamendo. Si feu doble clic en una cançó, reemplaçareu la vostra llista de reproducció només amb aquesta cançó.</para>
+      </sect3>
+      <sect3 id="totem-plugins-jamendo-popular">
+        <title>Àlbums populars i últimes versions</title>
+        <para>Quan visualitzeu la pestanya <guilabel>Popular</guilabel> a la barra lateral del <guilabel>Jamendo</guilabel> es carregarà una llista dels àlbums més populars del Jamendo en aquell instant, que es poden reproduir com els resultats de la cerca. De la mateixa manera, quan visualitzeu la pestanya <guilabel>Últimes versions</guilabel> es carregarà una llista dels darrers àlbums que s'hagin publicat al Jamendo.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="totem-plugins-tracker">
+      <title>Cerca local</title>
+      <para>El connector <guilabel>Cerca local</guilabel> permet cercar pel·lícules i fitxers d'àudio en el vostre ordinador des del mateix <application>reproductor de pel·lícules Totem</application>. Si teniu el connector habilitat, trieu <menuchoice><shortcut><keycap>F9</keycap></shortcut><guimenu>Visualitza</guimenu><guimenuitem>Barra lateral</guimenuitem></menuchoice> o feu clic en el botó <guibutton>Barra lateral</guibutton> per mostrar la barra lateral. Seleccioneu <guilabel>Cerca local</guilabel> en el quadre de llista desplegable de la part superior de la barra lateral per mostrar la barra de <guilabel>Cerca local</guilabel>.</para>
+      <para>Per realitzar una cerca, escriviu els termes que busqueu al quadre de cerca a la part superior de la barra lateral i feu clic a <guibutton>Cerca</guibutton>. Els termes de cerca poden incloure caràcters comodí com <literal>*</literal>, que coincidiran amb qualsevol caràcter. Per exemple, la cerca <userinput>*.mpg</userinput> buscarà totes les pel·lícules que tinguin l'extensió <filename class="extension">.mpg</filename>.</para>
+      <para>Els resultats de la cerca es poden explorar si utilitzeu els botons <guibutton>Enrere</guibutton> i <guibutton>Endavant</guibutton> de la part inferior de la barra lateral. Així podreu saltar a una pestanya concreta de resultats si escriviu el seu número en el quadre de selecció de valors.</para>
+    </sect2>
+    <sect2 id="totem-plugins-publish">
+      <title>Publica la llista de reproducció</title>
+      <para>El connector <guilabel>Publica la llista de reproducció</guilabel> permet publicar les llistes de reproducció en una xarxa local perquè hi accedeixin altres ordinadors i puguin reproduir-les.</para>
+      <sect3 id="totem-plugins-publish-configuration">
+        <title>Per configurar el connector</title>
+        <para>Si ja heu habilitat el connector <guilabel>Publica la llista de reproducció</guilabel>, per configurar-lo feu clic en el botó <guibutton>Preferències</guibutton> i es mostrarà el diàleg de configuració. Aquí podeu canviar el nom que apareixerà per compartir la llista de reproducció. Les cadenes següents es reemplaçaran quan es publiquin les llistes de reproducció: <variablelist>
+	    <varlistentry>
+	      <term><literal>%a</literal></term>
+	      <listitem><para>Reemplaçat amb el nom del programa: <application>reproductor de pel·lícules Totem</application></para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><literal>%h</literal></term>
+	      <listitem><para>Reemplaçat amb el vostre nom d'ordinador.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><literal>%u</literal></term>
+	      <listitem><para>Reemplaçat amb el vostre nom d'usuari.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><literal>%U</literal></term>
+	      <listitem><para>Reemplaçat amb el vostre nom real.</para></listitem>
+	    </varlistentry>
+	    <varlistentry>
+	      <term><literal>%%</literal></term>
+	      <listitem><para>Reemplaçat amb un símbol de tant per cent.</para></listitem>
+	    </varlistentry>
+	  </variablelist></para>
+	<para>També podeu seleccionar la casella de selecció <guilabel>Utilitzeu el protocol de transport encriptat</guilabel> si voleu encriptar les llistes de reproducció compartides quan s'estiguin transmetent a la xarxa.</para>
+        <para>Quan hàgiu finalitzat, feu clic a <guibutton>Tanca</guibutton>.</para>
+      </sect3>
+      <sect3 id="totem-plugins-publish-publishing">
+        <title>Per publicar les llistes de reproducció</title>
+        <para>Amb el connector habilitat, no cal que publiqueu les llistes de reproducció explícitament, atès que automàticament estan disponibles a la xarxa com un lloc web Zeroconf.</para>
+      </sect3>
+      <sect3 id="totem-plugins-publish-neighborhood">
+        <title>Per navegar per altres ordinadors de la xarxa</title>
+        <para>Per visualitzar les llistes de reproducció compartides a la xarxa, seleccioneu <guilabel>Altres ordinadors de la xarxa</guilabel> des del quadre de llista desplegable de la part superior de la barra lateral. Si s'ha publicat alguna llista de reproducció a la xarxa, aquesta es llistarà aquí. Feu doble clic en la llista de reproducció per carregar-la i reproduir-la en el vostre ordinador.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="totem-plugins-opensubtitles">
+      <title>Baixador de subtítols</title>
+      <para>El connector <guilabel>Baixador de subtítols</guilabel> permet trobar i baixar els fitxers de subtítols des del servei <ulink type="http" url="http://www.opensubtitles.org/en">OpenSubtitles</ulink>.</para>
+      <para>Els subtítols només es baixen per les pel·lícules locals i no per fitxers d'àudio, DVD, fluxos de DVB, VCD o fluxos d'HTTP. Per cercar subtítols per a la pel·lícula que esteu visualitzant, trieu <menuchoice><guimenu>Visualitza</guimenu><guimenuitem>Baixa els subtítols de la pel·lícula</guimenuitem></menuchoice> i es mostrarà el diàleg <application>Baixa els subtítols de la pel·lícula</application>.</para>
+      <para>Seleccioneu la llengua en què voleu baixar els subtítols des del quadre de llista desplegable a la part superior del diàleg, després feu clic en el botó <guibutton>Cerca</guibutton> per cercar els subtítols de la pel·lícula actual. Els subtítols es troben en funció del contingut de la pel·lícula, més que en funció del seu nom i les seves etiquetes.</para>
+      <para>Els resultats de la cerca es llisten en visualització en arbre al mig del diàleg. Actualment els subtítols només es poden utilitzar si la pel·lícula es <emphasis>torna a carregar</emphasis> amb els subtítols; així que després de seleccionar el fitxer de subtítol que voleu baixar, feu clic en el botó <guibutton>Reprodueix amb subtítols</guibutton> per baixar els subtítols i tornar a carregar la pel·lícula.</para>
+        <note><para>Els fitxers de subtítol baixats es guarden en memòria cau (de forma predeterminada a <filename>~/.cache/totem/subtitles</filename>) per tal que no sigui necessari tornar-los a baixar per veure la pel·lícula. Quan baixeu subtítols nous per una pel·lícula, se suprimeixen qualssevol subtítols que s'hagin baixat anteriorment per a la pel·lícula.</para></note>
+    </sect2>
+    <sect2 id="totem-plugins-thumbnail">
+      <title>Miniatura</title>
+      <para>El connector <guilabel>Miniatura</guilabel> estableix la icona de la finestra principal del <application>reproductor de pel·lícules Totem</application> com una miniatura de la pel·lícula actual i actualitza la icona quan es carreguen pel·lícules noves.</para>
+      <note><para>Si no existeix una miniatura per a la pel·lícula actual (o si esteu reproduint un fitxer d'àudio), la icona de la finestra principal restablirà el logo del <application>reproductor de pel·lícules Totem</application>.</para></note>
+    </sect2>
+    <sect2 id="totem-plugins-brasero">
+      <title>Enregistrador de discs de vídeo</title>
+      <para>El connector <guilabel>Enregistrador de discs de vídeo</guilabel> permet enregistrar la llista de reproducció actual a un DVD, VCD o CD mitjançant el <application>Brasero</application>.</para>
+      <para>Per enregistrar la llista de reproducció actual, trieu <menuchoice><guimenu>Pel·lícula</guimenu><guimenuitem>Crea un disc de vídeo</guimenuitem></menuchoice>. Es mostrarà el diàleg del <application>Brasero</application>, que us donarà opcions per convertir les pel·lícules al format apropiat per enregistrar-les al disc. Per a més informació, vegeu la <ulink type="help" url="help:brasero/brasero-new-project-video">documentació del Brasero</ulink>.</para>
+    </sect2>
+    <sect2 id="totem-plugins-youtube">
+      <title>Navegador del YouTube</title>
+      <para>El connector <guilabel>Navegador del YouTube</guilabel> permet cercar i navegar pel <ulink type="http" url="http://www.youtube.com/">YouTube</ulink> i reproduir directament vídeos del YouTube en el <application>reproductor de pel·lícules Totem</application>. Amb el connector habilitat, trieu <menuchoice><shortcut><keycap>F9</keycap></shortcut><guimenu>Visualitza</guimenu><guimenuitem>Barra lateral</guimenuitem></menuchoice> o feu clic en el botó <guibutton>Barra lateral</guibutton> per mostrar la barra lateral. Seleccioneu <guilabel>YouTube</guilabel> en el quadre de llista desplegable de la part superior de la barra lateral per mostrar la barra del <guilabel>YouTube</guilabel>.</para>
+      <para>Per cercar un vídeo del YouTube, escriviu els termes de cerca al quadre de cerca a la part superior de la barra lateral i feu clic en el botó <guibutton>Cerca</guibutton>. Els resultats de la cerca es llistaran a sota en visualització en arbre. Si us desplaceu per la llista, automàticament es carregaran més resultats.</para>
+      <para>Per reproduir un vídeo, feu doble clic en un vídeo a la llista de resultats o trieu <menuchoice><guimenuitem>Afegeix a la llista de reproducció</guimenuitem></menuchoice> del seu menú contextual. Quan es reprodueix un vídeo, es carreguen automàticament una llista de vídeos relacionats a la pestanya <guilabel>Vídeos relacionats</guilabel> de la barra lateral del <guilabel>YouTube</guilabel>.</para>
+      <para>Els vídeos del YouTube es poden obrir en un navegador si trieu <menuchoice><guimenuitem>Obre en el navegador</guimenuitem></menuchoice> en el seu menú contextual. Així obrireu el vídeo en la seva ubicació original al lloc web del YouTube.</para>
+    </sect2>
+    <sect2 id="totem-plugins-dbus-service">
+      <title>Servei D-Bus</title>
+      <para>El connector <guilabel>Servei D-Bus</guilabel> envia notificacions al subsistema D-Bus sobre les pel·lícules que s'estan reproduint en el <application>reproductor de pel·lícules Totem</application>. Aplicacions com el <application>Gajim</application> poden escoltar aquestes notificacions i poden respondre en conseqüència, per exemple, amb l'actualització del vostre missatge d'estat per mostrar el vídeo que estigueu reproduint en el <application>reproductor de pel·lícules Totem</application>.</para>
+    </sect2>
+  </sect1>
+
+<!-- =========== Usage ======================================= -->
+<!-- Use this section to describe how to customize the
+     application. -->
+  <sect1 id="totem-prefs">
+    <title>Preferències</title>
+    <para>Per modificar les preferències del <application>reproductor de pel·lícules Totem</application>, trieu <menuchoice> <guimenu>Edita</guimenu> <guimenuitem>Preferències</guimenuitem> </menuchoice>.</para>
+
+    <sect2 id="totem-prefs-general">
+      <title>General</title>
+      <variablelist>
+	<varlistentry>
+	  <term>Xarxa</term>
+	  <listitem>
+	    <para>Seleccioneu la velocitat de connexió a la xarxa en el quadre de llista desplegable <guilabel>Velocitat de connexió</guilabel>.</para>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Subtítols</term>
+	  <listitem>
+	    <itemizedlist>
+	      <listitem>
+	      	<para><guilabel>Carrega els fitxers de subtítols quan es carrega una pel·lícula</guilabel>: seleccioneu aquesta opció per carregar automàticament qualsevol fitxer de subtítol que tingui el mateix nom que la pel·lícula que es reproduirà.</para>
+	      </listitem>
+	      <listitem>
+                <para><guilabel>Tipus de lletra</guilabel>: seleccioneu aquesta opció per canviar el tipus de lletra que s'utilitzarà per mostrar els subtítols.</para>
+              </listitem>
+	          <listitem>
+				<para><guilabel>Codificació</guilabel>: seleccioneu aquesta opció per canviar la codificació que s'utilitzarà per mostrar els subtítols.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+    <sect2 id="totem-prefs-display">
+      <title>Pantalla</title>
+      <variablelist>
+	<varlistentry>
+	  <term>Pantalla</term>
+	  <listitem>
+	    <itemizedlist>
+	      <listitem>
+	        <para>Seleccioneu l'opció redimensiona si voleu que el <application>reproductor de pel·lícules Totem</application> redimensioni automàticament la finestra quan es carregui un vídeo nou.</para>
+              </listitem>
+              <listitem>
+                <para>Seleccioneu l'opció d'estalvi de pantalla si voleu que l'estalvi de pantalla s'activi quan estigueu reproduint fitxers d'àudio. Alguns monitors que tinguin els altaveus integrats podrien deixar de reproduir la música quan s'activi l'estalvi de pantalla.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Efectes visuals</term>
+	  <listitem>
+	    <itemizedlist>
+	      <listitem>
+                <para><guilabel>Efectes visuals</guilabel>: seleccioneu aquesta opció per mostrar efectes visuals quan es reprodueix un fitxer d'àudio.</para>
+              </listitem>
+	      <listitem>
+		<para><guilabel>Tipus de visualització</guilabel>: seleccioneu el tipus de visualització des del quadre de llista desplegable.</para>
+              </listitem>
+	      <listitem>
+		<para><guilabel>Mida de la visualització</guilabel>: seleccioneu la mida de la visualització des del quadre de llista desplegable.</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+	<varlistentry>
+	  <term>Balanç del color</term>
+	  <listitem>
+	    <itemizedlist>
+	      <listitem>
+		    <para><guilabel>Brillantor</guilabel>: empreu el lliscador per especificar el nivell de brillantor.</para>
+          </listitem>
+	      <listitem>
+		     <para><guilabel>Contrast</guilabel>: empreu el lliscador per especificar el nivell de contrast.</para>
+          </listitem>
+	      <listitem>
+		    <para><guilabel>Saturació</guilabel>: empreu el lliscador per especificar el nivell de saturació.</para>
+          </listitem>
+	      <listitem>
+		     <para><guilabel>To</guilabel>: empreu el lliscador per especificar el nivell de to.</para>
+          </listitem>
+	    </itemizedlist>
+	    <tip><para>Utilitzeu el botó <guilabel>Torna als valors per defecte</guilabel> per reiniciar els controls del balanç de color a les seves posicions predeterminades.</para></tip>
+      </listitem>
+	</varlistentry>
+      </variablelist>
+    </sect2>
+    <sect2 id="totem-prefs-audio">
+      <title>Àudio</title>
+      <variablelist>
+	<varlistentry>
+	  <term>Sortida d'àudio</term>
+	  <listitem>
+	    <para>Seleccioneu un tipus de sortida d'àudio des del quadre llista desplegable <guilabel>Tipus de sortida d'àudio</guilabel>.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+  </sect1>
+
+<!-- ============= Bugs ================================== -->
+<!-- This section is optional and is commented out by default.
+     You can use it to describe known bugs and limitations of the
+	  program if there are any - please be frank and list all
+     problems you know of.
+
+  <sect1 id="mayapp-bugs">
+  <title>Known Bugs and Limitations</title>
+  <para> </para>
+ </sect1>
+-->
+
+<!-- ============= About ================================== -->
+<!-- This section contains info about the program (not docs), such as
+      author's name(s), web page, license, feedback address. This
+      section is optional: primary place for this info is "About.." box of
+      the program. However, if you do wish to include this info in the
+      manual, this is the place to put it. Alternatively, you can put this information in the title page.-->
+  <sect1 id="totem-about">
+    <title>Quant al <application>reproductor de pel·lícules Totem</application></title>
+    <para lang="en"><application>Totem Movie Player</application> is written by
+      Bastien Nocera (<email>hadess@hadess.net</email>),
+      Julien Moutte (<email>julien@moutte.net</email>) for the GStreamer backend,
+      and Guenter Bartsch (<email>guenter@users.sourceforge.net</email>).
+      To find more information about <application>Totem Movie Player</application>, please visit the
+      <ulink url="https://wiki.gnome.org/Apps/Videos" type="http"><application>Totem Movie Player</application>
+      website</ulink>.
+    </para>
+    <para>Per informar d'un error o fer un suggeriment sobre el <application>reproductor de pel·lícules Totem</application> o aquest manual, seguiu les indicacions de la <ulink url="help:user-guide#feedback" type="help">Pàgina de suggeriments del GNOME</ulink>.</para>
+    <para>Aquest programa es distribueix sota els termes de la Llicència pública general de GNU tal com publica la Free Software Foundation; tant en la versió 2 de la llicència, o (a la vostra opció) una versió posterior. Es pot trobar una còpia d'aquesta llicència en aquest <ulink url="help:gpl" type="help">enllaç</ulink>, o en el fitxer COPYING inclòs amb el codi font d'aquest programa.</para>
+  </sect1>
+</article>

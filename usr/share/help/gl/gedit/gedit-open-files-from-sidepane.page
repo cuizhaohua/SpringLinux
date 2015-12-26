@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files-from-sidepane" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-13" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ver e abrir ficheiros desde o panel lateral</title>
+  <p>A maneira máis habitual de cambiar entre ficheiros en <app>gedit</app> é usando as lapelas na parte superior da xanela de <app>gedit</app>. Porén, nalgúns casos, especialmente cando está traballando con moitos </p> 
+
+  <p>Para activar o <app>panel lateral</app>, seleccione <guiseq><gui>Ver</gui> <gui>Panel lateral</gui> </guiseq>, ou simplemente prema a tecla <key>F9</key>.</p>
+
+  <note style="note">
+    <p>Pode abrir ou pechar o <gui>panel lateral</gui> premendo <key>F9</key> en calquera momento.</p>
+  </note>
+
+  <section id="sidepane-open">
+    <title>Abrir ficheiros desde o panel lateral</title>
+    <p>Para abrir ficheiros desde o <app>panel lateral</app>, primeiro abra o <app>panel lateral</app> seleccionando <guiseq><gui>Ver</gui><gui>Panel lateral</gui></guiseq>, e entón prema na icona <gui>Explorador de ficheiros</gui> na parte inferior do panel.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Isto activará o modo <em>explorador de ficheiros</em> do <app>panel lateral</app>. Despois pode usar os botóns de navegación na parte superior do panel para localizar e abrir os ficheiros que queira.</p>
+  </section>
+
+  <section id="sidepane-switch">
+    <title>Usar o panel lateral para cambiar entre ficheiros abertos</title>
+    <p>Cando teña varios ficheiros abertos pode usar o panel lateral para cambiar entre os ficheiros abertos. Para activar o buscador de ficheiros do <app>panel lateral</app>, prema a icona de <gui>ficheiros</gui> na parte inferior do <gui>panel lateral</gui>.</p>
+    
+    <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"/>
+
+    <p>Premendo en calquera nome de ficheiro no <gui>panel lateral</gui> abrirá ese ficheiro para editalo.</p>
+  </section>
+ 
+ </page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="hu">
+
+  <info>
+    <title type="link">gedit szövegszerkesztő</title>
+    <title type="text">gedit szövegszerkesztő</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title><media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/> gedit szövegszerkesztő</title>
+  <p>Üdvözöljük a <app>gedit</app> súgójában. A <app>gedit</app> alapvető funkcióinak bemutatásáért, valamint a gyorsbillentyűkkel kapcsolatban nézze meg <link xref="gedit-quickstart">A gedit bemutatása</link> és a <link xref="gedit-shortcut-keys">Gyorsbillentyűk</link> oldalakat.</p>
+
+  <p>A további súgótémakörök az alábbi szakaszokban vannak csoportosítva. Sok sikert a <app>gedit</app> használatához!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Fájlok kezelése</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>A gedit beállítása</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>gedit bővítmények</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Nyomtatás a gedittel</title>
+  </section>
+
+</page>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="fi">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>sampo555</mal:name>
+      <mal:email>sampo_75 [at] windowslive [dot] com</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Valto Wirkola</mal:name>
+      <mal:email>valto [dot] wirkola [at] yahoo [dot] com</mal:email>
+      <mal:years>2008, 2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tommi Vainikainen</mal:name>
+      <mal:email>thv [at] iki [dot] fi</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tekstin etsiminen</title>
+  
+    <p>Etsintätyökalu auttaa tietyn tekstinpätkän löytämisessä tiedoston sisältä.</p>
+
+    <steps>
+      <title>Tekstin etsiminen</title>
+      <item>
+        <p>Open the <gui>search window</gui> by clicking 
+        <guiseq><gui style="menu">Search</gui>
+        <gui style="menuitem">Find</gui> </guiseq> or
+        pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move
+        your cursor to the start of the <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Kirjoita etsittävä teksti <gui>hakuun</gui>.</p>
+      </item>
+      <item>
+        <p><app>gedit</app> alkaa korostamaan hakusanaa vastaavia tekstinpätkiä välittömästi.</p>
+      </item>
+    </steps>
+    
+    <p>Hakutulosten selaaminen onnistuu seuraavin tavoin:</p>
+    <list>
+      <item>
+        <p>Click on the <gui style="button">up</gui> or
+        <gui style="button">down</gui> facing arrows next to the
+        <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Press the <key>up arrow</key> or <key>down arrow</key> keys on your
+        keyboard.</p>
+      </item>
+      <item>
+        <p>Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or
+        <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Paina <key>Ctrl</key> pohjaan ja siirry tekstissä ylös- tai alaspäin hiiren tai kosketusalustan <key>vieritysominaisuudella</key>.</p>
+      </item>
+    </list>
+
+  <p><gui>Haun</gui> sulkeminen onnistuu joko <key>Esc</key>- tai <key>Enter</key>-näppäimellä. <key>Esc</key>-näppäin palauttaa tekstikursorin kohtaan, jossa se oli ennen haun alkua ja <key>Enter</key> puolestaan siirtää tekstikursorin valitun hakutuloksen kohdalle.</p>
+
+  <list>
+    <title>Hakuvinkkejä</title>
+    <item>
+      <p>Jos korostat hiirelläsi tekstinpätkän ja painat <keyseq><key>Ctrl</key><key>F</key></keyseq>, korostettu teksti täytetään hakuun.</p>
+    </item>
+    <item>
+      <p>For more search options, click on the
+      <gui style="button">Magnifying Glass</gui> icon in the search window,
+      or right-click anywhere in the search window. You can select one or more
+      of the following search options:</p>
+      <list>
+        <item>
+          <p>Select <gui>Match Case</gui> to make the search case sensitive.</p>
+        </item>
+        <item>
+          <p>Select <gui>Match Entire Word Only</gui> to search only complete
+          words.</p>
+        </item>
+        <item>
+          <p>Select <gui>Wrap Around</gui> to search text from top to bottom
+          and cycle back again.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>gedit korostaa haetun tekstin myös haun valmistumisen jälkeen. Korostuksen poistaminen onnistuu valitsemalla <guiseq><gui>Etsi</gui><gui>Älä korosta osumia</gui></guiseq> tai näppäinyhdistelmällä <keyseq><key>Ctrl</key><key>Vaihto</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

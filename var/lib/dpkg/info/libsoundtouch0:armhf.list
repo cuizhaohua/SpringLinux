@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsoundtouch0
+/usr/share/doc/libsoundtouch0/README.html
+/usr/share/doc/libsoundtouch0/changelog.Debian.gz
+/usr/share/doc/libsoundtouch0/copyright
+/usr/share/doc-base
+/usr/share/doc-base/libsoundtouch0
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libSoundTouch.so.0.0.0
+/usr/lib/arm-linux-gnueabihf/libSoundTouch.so.0

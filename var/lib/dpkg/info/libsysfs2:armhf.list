@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsysfs2
+/usr/share/doc/libsysfs2/changelog.gz
+/usr/share/doc/libsysfs2/CREDITS
+/usr/share/doc/libsysfs2/README
+/usr/share/doc/libsysfs2/TODO
+/usr/share/doc/libsysfs2/NEWS.gz
+/usr/share/doc/libsysfs2/AUTHORS
+/usr/share/doc/libsysfs2/changelog.Debian.gz
+/usr/share/doc/libsysfs2/copyright
+/lib
+/lib/arm-linux-gnueabihf
+/lib/arm-linux-gnueabihf/libsysfs.so.2.0.1
+/lib/arm-linux-gnueabihf/libsysfs.so.2

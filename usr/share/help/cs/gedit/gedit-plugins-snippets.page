@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task 2column" id="gedit-plugins-snippets" xml:lang="cs">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-22" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>Použijte úryvky k rychlému vkládání často používaných částí textu</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Úryvky</title>
+
+  <p><app>Úryvky</app> poskytují pohodlný způsob, jak vkládat opakující se části kódu do vašeho souboru. Například úryvek HTML pro značku <code>&lt;img&gt;</code> by vložil otevírací a zavírací část značky, včetně vyhrazeného místa, do kterého jen dopíšete atributy obrázku. Díky tomu můžete psát kód jednodušeji a rychleji.</p>
+
+  <section id="enable-snippets">
+    <title>Povolení zásuvného modulu Úryvky</title>
+
+    <p>Jestli chcete zásuvný modul <gui>Úryvky</gui> povolit:</p>
+
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Předvolby</gui> <gui style="tab">Zásuvné moduly</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Zaškrtnutím <gui style="menuitem">Úryvky</gui> zásuvný modul povolíte.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="browse-snippets">
+    <title>Procházení úryvků</title>
+
+    <p>Když chcete procházet dostupné úryvky:</p>
+    <steps>
+      <item>
+        <p>Vyberte <guiseq><gui style="menu">Nástroje</gui> <gui style="menuitem">Správa úryvků</gui></guiseq>.</p>
+        <note style="important">
+          <p>Ujistěte se, že je nastavená správná syntax. Statová lišta u spodní části okna <app>gedit</app> zobrazuje aktuálně nastavený jazyk. Toto nastavení jazyku zajišťuje, že gedit bude vkládat správné úryvky. Normálně <app>gedit</app> sám rozpozná jazyk nebo syntax souboru, který používáte, ale občas je potřeba jej nastavit ručně.</p>
+          <figure>
+            <desc>V tomto příkladu je jazyk nastaven na HTML.</desc>
+            <media type="image" mime="image/png" src="figures/gedit-html-snippet.png"/>
+        </figure>
+        </note>
+      </item>
+      <item>
+        <p>Procházejte si úryvky, které jsou dostupné pro zvolený jazyk či syntax.</p>
+      </item>
+    </steps>
+  </section>
+
+  <section id="using-snippets">
+    <title>Používání úryvků</title>
+
+    <p>Když chcete do svého aktuálního dokumentu vložit úryvek:</p>
+
+    <steps>
+      <item>
+        <p>Napište kdekoliv v aktuálním dokumentu název úryvku.</p>
+      </item>
+      <item>
+        <p>Zmáčknutím klávesy <key>Tab</key> vložíte úryvek spřažený ze zadaným názvem.</p>
+      </item>
+    </steps>
+  </section>
+
+    <section id="example-insert-snippet">
+    <title>Příklad použití úryvku</title>
+
+    <p>Napřiklad mějme syntax nastavenu na <em>HTML</em>, napište <code>head</code> a zmáčkněte klávesu <key>Tab</key>. Text by se měl automaticky přeměnit na úryvek:</p>
+
+    <code>
+      &lt;head&gt;
+      &lt;meta http-equiv="Content-type" content="text/html; charset=utf-8" /&gt;
+      &lt;title&gt;Název stránky&lt;/title&gt;
+      &lt;/head&gt;
+    </code>
+
+  </section>
+
+  <section id="adding-snippets">
+    <title>Přidání úryvku</title>
+
+    <p>Můžete přidávat úryvky, které budou fungovat globálně (tj. nezávislé na jazyku) nebo které budou jen pro konkrétní syntax.</p>
+
+    <steps>
+      <item>
+        <p>Vyberte <guiseq style="menu"><gui style="menuitem">Nástroje</gui> <gui style="menuitem">Správa úryvků</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>V postranním panelu <gui>Správa úryvků</gui> vyberte požadovanou syntax a klikněte na tlačítko „+“, aby se pro zvolenou syntax vypsaly stávající úryvky.</p>
+        <note style="tip">
+          <p>Abyste přidali úryvek, který funguje globálně (tj. když není pro dokument nastavena žádná konkrétní syntax nebo jazyk), vyberte v postranním panelu <gui>Správa úravků</gui> skupinu <gui>Globální</gui>.</p>
+        </note>
+      </item>
+      <item>
+        <p>Nový úryvek přidáte kliknutím na ikonu „plus“ v postranním panelu <gui>Správa úryvků</gui>.</p>
+      </item>
+      <item>
+        <p>Zadejte název pro nový úryvek. Název úryvku se může od úryvku, který chcete přidat, lišit.</p>
+      </item>
+      <item>
+        <p>V části <gui style="group">Aktivace</gui> musíte zadat výraz do pole <gui style="input">Tabulátorový spouštěč</gui>. Tento výraz budete používat k zadávání úryvku.</p>
+        <note style="tip">
+          <p>Pokud si přejete úryvek vkládat klávesovou zkratkou, klikněte myší do pole <gui style="input">Klávesová zkratka</gui> a zmáčkněte požadovanou kombinaci kláves. Po té, co klávesy zmáčkněte a pustíte, bude klávesová zkratka nastavena.</p>
+        </note>
+      </item>
+      <item>
+        <p>Do textové oblasti <gui style="input">Upravit:</gui> vložte požadovaný text úryvku. Můžete použít proměnné ve stylu <code>${n}</code>, kde <em>n</em> nahraďte číslem, které představuje pořadí, v jakém se budou proměnné zadávat.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="example-add-snippet">
+    <title>Příklad nového úryvku</title>
+
+    <p>Předpokládejme, že máte vytvořen úryvek s výrazem <var>uvítání</var> v <gui style="input">Tabulátorovém spouštěči:</gui>. Textová oblast <gui style="input">Upravit:</gui> obsahuje:</p>
+
+    <code>
+      &lt;greetings&gt;
+        Ahoj ${1:naprosto} ${2:úžasný} světe!
+      &lt;/greetings&gt;
+      </code>
+
+    <p>Tento úryvek můžete vložit tak, že v dokumentu napíšete <var>uvítání</var> a zmáčknete klávesu <key>Tab</key>. Vloží se následující text:</p>
+
+    <code>
+      &lt;greetings&gt;
+        Ahoj naprosto úžasný světe!
+      &lt;/greetings&gt;
+      </code>
+
+    <p>Slova „naprosto“ a „úžasný“ můžete podle momentální potřeby ponechat nebo smazat. Uděláte to tak, že se mezi těmito slovy přepnete klávesou <key>Tab</key> a případně je pomocí klávesy <key>Del</key> smažete.</p>
+  </section>
+
+  <!--TODO: <section id="modifying-snippets">
+    <title>Modifying Existing Snippets</title>
+
+  </section>-->
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-print-order" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Kopien eines Ausdrucks in der richtigen Reihenfolge ausgeben</title>
+
+  <section id="printing-reverse">
+    <title>Rückwärts</title>
+
+    <p>Drucker geben üblicherweise die erste Seite zuerst aus, und die letzte Seite zuletzt. Auf diese Weise gelangen die Seiten in umgekehrter Reihenfolge in den sich ergebenden Papierstapel. So kehren Sie die Reihenfolge um:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">Datei</gui><gui style="menuitem">Drucken</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Aktivieren Sie im Reiter <gui style="tab">Allgemein</gui> des Druckfensters unter <em>Kopien</em> das Ankreuzfeld <gui style="checkbox">Rückwärts</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Die letzte Seite wird zuerst gedruckt, und so weiter.</p>
+</section>
+
+  <section id="printing-collate">
+    <title>Zusammentragen</title>
+    
+    <p>Falls Sie mehrere Kopien eines Dokuments drucken, werden die Ausdrucke seitenweise zusammengefasst. Das heißt, dass zuerst alle Kopien der ersten Seite ausgegeben werden, danach alle Kopien der zweiten Seite usw. Durch Zusammentragen sorgen Sie dafür, dass die Ausdrucke nach Kopie und nicht seitenweise zusammengefasst werden.</p>
+
+    <p>So tragen Sie zusammen:</p>
+    <steps>
+      <item>
+        <p>Klicken Sie auf <guiseq><gui style="menu">Datei</gui><gui style="menuitem">Drucken</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Aktivieren Sie im Reiter <gui style="tab">Allgemein</gui> des Druckfensters unter <em>Kopien</em> das Ankreuzfeld <gui style="checkbox">Zusammentragen</gui>.</p>
+      </item>
+    </steps>
+
+<!--TODO: Fix image <media type="image" src="reverse-collate.png"/> -->
+</section>
+
+</page>

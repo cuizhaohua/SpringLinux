@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="list" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--list</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος λίστας</title>
+    <p>Χρησιμοποιήστε την επιλογή <cmd>--list</cmd> για να δημιουργήσετε διαλόγους λίστας. Το <app>Zenity</app> αποδίδει τις εγγραφές της πρώτης στήλης κειμένου των επιλεγμένων σειρών σαν κανονική έξοδο.</p>
+
+    <p>Τα δεδομένα για τον διάλογο πρέπει να οριστούν ανά στήλη και ανά σειρά. Μπορείτε να δώσετε τα δεδομένα στον διάλογο με κανονική εισαγωγή. Κάθε εγγραφή πρέπει να διαχωρίζεται από χαρακτήρα νέας γραμμής.</p>
+
+    <p>Αν χρησιμοποιήσετε τις επιλογές <cmd>--checklist</cmd> ή <cmd>--radiolist</cmd>, κάθε σειρά πρέπει να αρχίζει με 'TRUE' ή 'FALSE'.</p>
+
+    <p>Ο διάλογος λίστας υποστηρίζει τις παρακάτω επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--column</cmd>=<var>στήλη</var></title>
+	  <p>Καθορίζει τις κεφαλίδες των στηλών που προβάλλονται στον διάλογο λίστας. Πρέπει να ορίσετε μία επιλογή <cmd>--column</cmd> για κάθε στήλη που θέλετε να προβάλλετε στον διάλογο.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checklist</cmd></title>
+	  <p>Καθορίζει ότι η πρώτη στήλη του διαλόγου λίστας περιέχει κουτιά επιλογής.</p>
+      </item>
+
+      <item>
+        <title><cmd>--radiolist</cmd></title>
+	  <p>Καθορίζει ότι η πρώτη στήλη του διαλόγου λίστας περιέχει κουμπιά επιλογής.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+	  <p>Επιτρέπει την επεξεργασία των προβαλλόμενων αντικειμένων.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>διαχωριστικό</var></title>
+	  <p>Καθορίζει ποια συμβολοσειρά χρησιμοποιείται όταν ο διάλογος λίστας αποδίδει τις επιλεγμένες εγγραφές.</p>
+      </item>
+
+      <item>
+        <title><cmd>--print-column</cmd>=<var>στήλη</var></title>
+	  <p>Καθορίζει ποια στήλη πρέπει να τυπώνεται σαν αποτέλεσμα κατά την επιλογή. Η προεπιλεγμένη στήλη είναι '1'. Το 'ALL' μπορεί να χρησιμοποιηθεί για να εκτυπωθούν όλες οι στήλες της λίστας.</p>
+      </item>
+
+    </terms>
+
+    <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε έναν διάλογο λίστας:</p>
+<code>
+#!/bin/sh
+
+zenity --list \
+  --title="Επιλέξτε τα σφάλματα που θέλετε να δείτε" \
+  --column="Αριθμός σφάλματος" --column="Σοβαρότητα" --column="Περιγραφή" \
+    992383 Κανονική "GtkTreeView crashes on multiple selections" \
+    293823 Υψηλή "GNOME Dictionary does not handle proxy" \
+    393823 Κρίσιμη "Menu editing does not work in GNOME 2.0"
+</code>
+
+
+    <figure id="zenity-list-screenshot">
+      <title>Παράδειγμα διαλόγου λίστας</title>
+      <desc>Παράδειγμα διαλόγου λίστας του <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-list-screenshot.png"/>
+    </figure>
+</page>

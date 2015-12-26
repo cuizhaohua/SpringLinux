@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="gl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use a opción <cmd>--forms</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo de formularios</title>
+    <p>Use a opción <cmd>--forms</cmd> para crear un diálogo de formularios.</p>
+	
+    <p>O diálogo de formularios admite as seguintes opcións:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>FieldName</var></title>
+	<p>Engadir unha entrada nova no diálogo de formularios.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>nome_do_campo</var></title>
+	<p>Engadir un contrasinal novo no diálogo de formularios. (Ocultar o texto)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>FieldName</var></title>
+	<p>Engair un calendario novo no diálogo de formularios</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXTO</var></title>
+	<p>Estabeleza o texto do diálogo.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>SEPARADOR</var></title>
+	<p>Estabelecer o caracter separador de saída. (Por omisión&gt; |)</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>PATRÓN</var></title>
+	<p>Especifica o formato que se devolve datas. O formato predeterminado depende da súa configuración rexional. O formato debe ser un formato que acepte a función <cmd>strftime</cmd>, por exemplo<var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>O seguinte script de exemplo mostra como se crea un diálogo de formularios:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Engadir amigo" \
+	--text="Escribe a información sobre o teu amigo." \
+	--separator="," \
+	--add-entry="Nome" \
+	--add-entry="Apelido" \
+	--add-entry="Correo electrónico" \
+	--add-calendar="Cumpreanos" &gt;&gt; addr.csv
+
+case $? in
+    0)
+        echo "Amigo engadido.";;
+    1)
+        echo "Non se engadiu ningún amigo."
+	;;
+    -1)
+        echo "Produciuse un erro non agardado."
+	;;
+esac
+</code>
+
+    <figure id="zenity-forms-screenshot">
+      <title>Exemplo de diálogo de formularios</title>
+      <desc>Exemplo de diálogo de formulario de <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

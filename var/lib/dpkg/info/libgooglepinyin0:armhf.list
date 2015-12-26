@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgooglepinyin0
+/usr/share/doc/libgooglepinyin0/changelog.Debian.gz
+/usr/share/doc/libgooglepinyin0/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgooglepinyin.so.0.1.0
+/usr/lib/arm-linux-gnueabihf/googlepinyin
+/usr/lib/arm-linux-gnueabihf/googlepinyin/data
+/usr/lib/arm-linux-gnueabihf/googlepinyin/data/dict_pinyin.dat
+/usr/lib/arm-linux-gnueabihf/libgooglepinyin.so.0

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libOsi.so.1.11.9
+/usr/lib/arm-linux-gnueabihf/libOsiCommonTests.so.1.11.9
+/usr/share
+/usr/share/doc
+/usr/share/doc/coinor-libosi1
+/usr/share/doc/coinor-libosi1/changelog.gz
+/usr/share/doc/coinor-libosi1/changelog.Debian.gz
+/usr/share/doc/coinor-libosi1/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/coinor-libosi1
+/usr/lib/arm-linux-gnueabihf/libOsiCommonTests.so.1
+/usr/lib/arm-linux-gnueabihf/libOsi.so.1

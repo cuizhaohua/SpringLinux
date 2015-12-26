@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="hu">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>A <cmd>--notification</cmd> kapcsoló használata.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2014.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Értesítési ikon</title>
+    <p>A <cmd>--notification</cmd> kapcsoló használatával értesítési ikont hozhat létre.</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>szöveg</var></title>
+      <p>Az értesítési területen megjelenítendő szöveg megadása.</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>szöveg</var>', message: '<var>szöveg</var>', tooltip: '<var>szöveg</var>', visible: '<var>szöveg</var>',</title>
+      <p>Parancsokat vár a szabványos bemeneten. Legalább egy parancsot meg kell adni. A parancsokat vesszők választják el. Egy parancsot kettőspontnak és értéknek kell követnie.</p>
+      <note style="tip">
+        <p>Az <cmd>icon</cmd> parancs elfogad négy alap ikonértéket is, mint az <var>error</var>, <var>info</var>, <var>question</var> és <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>A következő példa parancsfájl bemutatja az értesítési ikon létrehozását:</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="Rendszerfrissítés szükséges!"
+  </code>
+
+  <figure id="zenity-notification-screenshot">
+    <title>Példa értesítési ikon</title>
+    <desc><app>Zenity</app> példa értesítési ikon</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>A következő példa parancsfájl bemutatja az értesítési ikon létrehozását a <cmd>--listen</cmd> használatával:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: ez az üzenetszöveg
+  EOH
+  </code>
+
+  <figure id="zenity-notification-listen-screenshot">
+    <title>Példa értesítési ikon a <cmd>--listen</cmd> használatával</title>
+    <desc><app>Zenity</app> példa értesítési ikon a <cmd>--listen</cmd> használatával</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

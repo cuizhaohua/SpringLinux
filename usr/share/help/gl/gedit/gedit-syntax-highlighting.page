@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Activar o resaltado de sintaxe</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Resaltado de sintaxe</title>
+    <p><app>gedit</app> fornece resaltado de sintaxe para moitas linguaxes de marcado, programación e científicos. Se <app>gedit</app> recoñece a sintaxe usada ao abrir o ficheiro, automaticamente resaltará o texto.</p>
+
+    <p>If your syntax or language is not highlighted upon startup, you can
+    select the appropriate syntax or language by clicking
+    <guiseq><gui style="menu">View</gui>
+    <gui style="menuitem">Highlight Mode</gui></guiseq>,
+    and then choosing the desired syntax. Alternately, you can select the syntax
+    name from a list at the bottom of the <app>gedit</app> window.</p>
+  </section>
+
+</page>

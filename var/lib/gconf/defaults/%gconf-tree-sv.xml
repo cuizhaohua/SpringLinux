@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Nyckelring till vilken lösenord kommer att sparas">
+						<longdesc>Namnet på nyckelringen som gksu ska använda. Vanliga värden är &quot;session&quot;, vilket sparar lösenordet för sessionen, och &quot;default&quot; som sparar lösenordet utan maximal tidsgräns.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Spara lösenord i gnome-keyring">
+						<longdesc>gksu kan spara lösenordet som du anger i gnome-keyring så att du inte kommer att bli tillfrågad varje gång det används</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Visa informationsmeddelande när inget lösenord behövs">
+						<longdesc>Det här alternativet bestämmer huruvida en meddelandedialog kommer att visas och informera användaren att programmet kör utan att behöva fråga efter ett lösenord av någon anledning.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Fråga för fångst">
+						<longdesc>Det här alternativet kommer att göra att gksu frågar användaren om denne vill få skärmen fångad innan lösenordet matas in. Observera att det endast har effekt om force-grab är inaktivert.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Sudo-läge">
+						<longdesc>Huruvida sudo ska vara standardbakändemetoden. Den här metoden användas annars genom flaggan -S eller genom att köra &quot;gksudo&quot; istället för &quot;gksu&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Tvinga fångst av tangentbord och mus">
+						<longdesc>Fånga tangentbord och mus även om -g har angivits som argument på kommandoraden.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Inaktivera fångst av tangentbord och mus">
+						<longdesc>Huruvida fångst av tangentbordet och musen ska stängas av. Det här gör det möjligt för andra X-program att lyssna på tangentbordsinmatningshändelser, vilket gör det inte är möjligt att skydda sig mot ondsinta program som kan vara igång.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

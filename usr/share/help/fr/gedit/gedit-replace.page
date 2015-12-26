@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Remplacement de texte</title>
+
+  <p>Modifier du texte peut prendre beaucoup de temps. Pour en gagner, <app>gedit</app> possède une fonction <app>Remplacer</app> qui vous aide à chercher et remplacer des portions de texte.</p>
+
+  <steps>
+    <title>Remplacement de texte dans <app>gedit</app></title>
+    <item>
+      <p>Ouvrez l'outil <gui>Remplacer</gui> en cliquant sur <guiseq><gui style="menu">Rechercher</gui><gui style="menuitem">Remplacer…</gui></guiseq> ou appuyez sur <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Saisissez le texte que vous voulez remplacer dans le champ <gui>Rechercher</gui>.</p>
+    </item>
+    <item>
+      <p>Saisissez le nouveau texte de remplacement dans le champ <gui>Remplacer par :</gui>.</p>
+    </item>
+    <item>
+      <p>Une fois que vous avez saisi le texte original et de remplacement, vous pouvez ajouter des conditions supplémentaires de recherche. Vous pouvez aussi choisir les options de remplacement souhaitées :</p>
+      <list>
+        <item>
+          <p>Pour remplacer <em>seulement</em> la prochaine occurrence, cliquez sur <gui>Remplacer</gui>.</p>
+        </item>
+        <item>
+          <p>Pour remplacer <em>toutes les occurrences</em> du texte recherché, cliquez sur <gui>Tout remplacer</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Utilisez la fonction <gui>Tout remplacer</gui> avec prudence. <gui>Tout remplacer</gui> travaille sur le texte complet de votre fichier et ne vous permet pas de colorer les portions de texte que la fonction va remplacer.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Options supplémentaires</title>
+
+  <p>Si vous le souhaitez, vous pouvez ajouter quelques conditions supplémentaires à votre recherche :</p>
+
+  <terms>
+    <item>
+      <title>Respect de la casse</title>
+      <p>L'option <em>Respecter la casse</em> vous permet d'indiquer si la recherche à réaliser est sensible à la casse (distinction entre minuscules et majuscules). Si cette option est sélectionnée, les recherches sont sensibles à la casse.</p>
+    </item>
+    <item>
+      <title>Mots entiers seulement</title>
+      <p>Utilisez cette option pour rechercher un mot spécifique qui ne comprend pas de parties d'autres mots. Par exemple, si vous recherchez le mot « ou » avec cette option sélectionnée, le mot « ou » correspond mais les mots « verr<em>ou</em> » et « b<em>ou</em>t » ne correspondent pas.</p>
+    </item>
+    <item>
+      <title>Recherche en arrière</title>
+      <p>Cette commande se comporte de la même manière que la commande Rechercher le précédent. Si vous souhaitez parcourir les résultats de la recherche du bas vers le haut, choisissez cette option.</p>
+    </item>
+    <item>
+      <title>Recherche circulaire</title>
+      <p>Avec l'option <app>Recherche circulaire</app> activée, <app>gedit</app> reprend l'action rechercher/remplacer en haut du fichier après qu'il a atteint la fin du fichier. Cela vous permet d'être sûr que l'action rechercher/remplacer s'effectue sur la totalité du fichier.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Utilisation des séquences d'échappement</title>
+
+  <p>Les <em>séquences d'échappement</em> permettent de rechercher les retours à la ligne et les tabulations.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Nouvelle ligne</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tabulation</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Retour à la ligne</p>
+    </item>
+  </terms>
+
+  <p>Si vous souhaitez rechercher des <output>\</output> (barres obliques inverses) ou une des séquences d'échappement dans le texte, vous devez doubler les barres obliques inverses. Par exemple, pour trouver <output>\</output>, vous devez saisir <output>\\</output> dans le champ de recherche ou de remplacement. La méthode est la même pour trouver des séquences d'échappement : pour rechercher ou remplacer <output>\n</output>, saisissez <output>\\n</output>.</p>
+
+</section>
+
+</page>

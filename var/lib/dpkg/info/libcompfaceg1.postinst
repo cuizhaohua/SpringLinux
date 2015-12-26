@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+PACKAGE="libcompfaceg1"
+
+# FSSTND compatible symlinks
+if [ "$1" = "configure" ]; then
+		# Fix libs
+		ldconfig
+fi
+
+
+
+				

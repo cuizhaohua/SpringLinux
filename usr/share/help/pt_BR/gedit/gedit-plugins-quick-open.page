@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-quick-open" xml:lang="pt-BR">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision version="3.4" date="2013-02-24" status="review"/>
+    <revision version="3.8" date="2013-04-23" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <desc>Abre rapidamente um arquivo ou um conjunto de arquivos</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abertura rápida</title>
+
+  <p>Assim como o nome desse plug-in sugere, o plug-in <app>Abertura rápida</app> ajuda você a abrir arquivos mais rapidamente do que usando a maneira tradicional. Para habilitar esse plug-in, selecione <guiseq><gui style="menu">gedit</gui><gui>Preferências</gui><gui>Plug-ins</gui><gui>Abertura rápida</gui></guiseq>.</p>
+    
+  <p>Uma vez que você tenha habilitado o plug-in de <app>Abertura rápida</app>, você poderá usá-lo destes modos:</p>
+
+  <steps>
+    <item><p>Abra o diálogo de <app>Abertura rápida</app> pressionando <keyseq><key>Ctrl</key><key>Alt</key><key>O</key></keyseq> ou selecionando <guiseq><gui>Arquivo</gui><gui>Abertura rápida</gui></guiseq>.</p>
+    <p>O diálogo de arquivo do <gui>Abertura rápida</gui> aparecerá.</p></item>
+    <item><p>Use o mouse para selecionar o arquivo ou os arquivos que deseja abrir.</p>
+    <p>Para selecionar vários arquivos individuais, mantenha pressionado sua tecla <key>Ctrl</key> enquanto você clica nos arquivos que deseja abrir.</p>
+    <p>Para selecionar um conjunto de arquivos, clique no primeiro arquivo que deseja abrir, mantenha pressionado a tecla <key>Shift</key>, e então clique no último arquivo da lista que você deseja abrir.</p></item>
+    <item><p>Clique em <gui>Abrir</gui>.</p></item>
+  </steps>
+
+  <p>A <app>Abertura rápida</app> irá procurar por arquivos em/no:</p>
+
+  <list>
+    <item><p>O diretório do documento atualmente aberto</p></item>
+    <item><p>Diretório raiz do plug-in <app xref="gedit-plugins-file-browser">Painel de navegação de arquivos</app></p></item>
+    <item><p>Documentos recentes que também são mostrados na pasta <file>Recentes</file> em <app>Arquivos</app></p></item>
+    <item><p>Diretórios que você tenha marcado como favoritos em <app>Arquivos</app></p></item>
+    <item><p>Seu diretório de <file>Área de trabalho</file></p></item>
+    <item><p>Seu diretório de <file>Pasta pessoal</file></p></item>
+  </list>
+
+  <note style="tip">
+    <p>A <app>Abertura rápida</app> exibe arquivos em quaisquer um dos locais citados acima, independente de terem sido ou não abertos anteriormente.</p>
+  </note>
+
+</page>

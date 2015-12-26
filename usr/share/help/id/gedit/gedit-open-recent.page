@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Buka ulang berkas yang baru-baru ini dipakai</title>
+
+  <p>Secara baku <app>gedit</app> menyediakan akses mudah ke lima berkas yang terakhir Anda pakai. Beginilah cara bagaimana Anda dapat membuka berkas yang baru-baru ini dipakai:</p>
+  <list type="numbered">
+    <item><p>Klik panah arah bawah di sebelah kanan tombol <gui>Buka</gui>.</p></item>
+    <item><p><app>gedit</app> akan menampilkan daftar dari berkas yang dipakai terakhir kali.</p></item>
+    <item><p>Pilih berkas yang diinginkan, dan itu akan dibuka di tab baru.</p></item>
+  </list>
+
+  <note style="advanced"><p>Untuk menyetel banyaknya berkas yang baru-baru ini dipakai yang ditampilkan oleh gedit, Anda perlu memakai aplikasi <app>dconf-editor</app>.</p>
+    <list>
+      <item><p>Luncurkan <app>dconf-editor</app> dan pilih <guiseq><gui>org</gui> <gui>gnome</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui> <gui>max-recents</gui></guiseq>.</p></item>
+      <item><p>Klik ganda pada angka di sebelah <gui>max-recents</gui> dan ubah angka tersebut ke nilai yang Anda inginkan.</p></item>
+    </list>
+  </note>
+
+</page>

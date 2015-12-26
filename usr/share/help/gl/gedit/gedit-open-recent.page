@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Reabrir un ficheiro usado recentemente</title>
+
+  <p>Por omisión, <app>gedit</app> fornece acceso doado a cinco dos ficheiros máis recentes usados. Aquí móstrase como pode abrir un ficheiro usado recentemente.</p>
+  <list type="numbered">
+    <item><p>Prema a frecha cara abaixo xunto ao botón <gui>Abrir</gui>.</p></item>
+    <item><p><app>gedit</app> mostrará unha lista dos cinco ficheiros máis recentes usados.</p></item>
+    <item><p>Seleccione o ficheiro que queira e abrirase nunha lapela nova.</p></item>
+  </list>
+
+  <note style="advanced"><p>Para axustar o número de ficheiros usados recentemente que mostra gedit, debe usar o aplicativo <app>gconf-editor</app>.</p>
+    <list>
+      <item><p>Inicie <app>dconf-editor</app> e seleccione <guiseq><gui>org</gui><gui>gedit</gui><gui>preferences</gui><gui>ui</gui><gui>recentes</gui></guiseq>.</p></item>
+      <item><p>Prema dúas veces no número xunto a <gui>max-recentes</gui> e cambie o número ao valor que desexa.</p></item>
+    </list>
+  </note>
+
+</page>

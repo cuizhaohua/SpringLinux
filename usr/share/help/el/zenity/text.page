@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--text-info</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος πληροφοριών κειμένου</title>
+    <p>Χρησιμοποιήστε την επιλογή <cmd>--text-info</cmd> για να δημιουργήσετε έναν διάλογο πληροφοριών κειμένου.</p>
+	
+    <p>Ο διάλογος πληροφοριών κειμένου υποστηρίζει τις παρακάτω επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>όνομα αρχείου</var></title>
+	<p>Καθορίζει ένα αρχείο που φορτώνεται στον διάλογο πληροφοριών κειμένου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>Επιτρέπει την επεξεργασία του προβαλλόμενου κειμένου. Το επεξεργασμένο κείμενο αποδίδεται σαν κανονική έξοδος όταν κλείνει ο διάλογος.</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>ΓΡΑΜΜΑΤΟΣΕΙΡΑ</var></title>
+	<p>Καθορίζει τη γραμματοσειρά του κειμένου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>ΚΕΙΜΕΝΟ</var></title>
+	<p>Ενεργοποίηση ενός κουτιού επιλογής για χρήση όπως 'Διάβασα και αποδέχομαι τους όρους'.</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>Ενεργοποίηση υποστήριξης html.</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>URL</var></title>
+	<p>Ορίζει ένα url αντί για ένα αρχείο. Λειτουργεί μόνο αν χρησιμοποιείτε -- html επιλογή.</p>
+      </item>
+
+    </terms>
+
+    <p>Το ακόλουθο παράδειγμα σεναρίου εντολών σας δείχνει πως μπορείτε να δημιουργήσετε έναν διάλογο πληροφοριών κειμένου:</p>
+
+<code>
+#!/bin/sh
+
+# Πρέπει να τοποθετήσετε το αρχείο "COPYING" στον ίδιο φάκελο με το εκτελέσιμο.
+FILE=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="Άδεια" \
+       --filename=$FILE \
+       --checkbox="Διάβασα και αποδέχομαι τους όρους."
+
+case $? in
+    0)
+        echo "Έναρξη εγκατάστασης!"
+	# next step
+	;;
+    1)
+        echo "Διακοπή εγκατάστασης!"
+	;;
+    -1)
+        echo "Προέκυψε ένα σφάλμα."
+	;;
+esac
+</code>
+
+    <figure id="zenity-text-screenshot">
+      <title>Παράδειγμα διαλόγου πληροφοριών κειμένου</title>
+      <desc>Παράδειγμα διαλόγου πληροφοριών κειμένου του <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

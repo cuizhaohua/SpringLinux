@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abrir un archivo o un conjunto de archivos</title>
+
+  <p>Para abrir un archivo en <app>gedit</app>, pulse el botón <gui>Abrir</gui>, o pulse <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>Esto hará que aparezca el diálogo <gui>Abrir</gui>. Use su ratón o su teclado para seleccionar el archivo que quiere abrir y pulse <gui>Abrir</gui>. El archivo que ha seleccionado se abrirá en una pestaña nueva.</p>
+  <p>Para cerrar el diálogo <gui>Abrir</gui> sin abrir un archivo pulse <gui>Cancelar</gui>.</p>
+
+  <note style="tip"><p>Puede usar las teclas <key>Ctrl</key> y <key>Shift</key> para abrir más de un archivo al mismo tiempo. Si mantiene pulsada la tecla <key>Ctrl</key> mientras seleccionar varios archivos, al pulsar <gui>Abrir</gui> se abrirá cada uno de los archivos que ha seleccionado.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Manteniendo pulsada la tecla <key>Mayús</key> mientras selecciona varios archivos, abrirá el primer y el último archivo que haya seleccionado, y todos los archivos que hubiera entre ellos.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

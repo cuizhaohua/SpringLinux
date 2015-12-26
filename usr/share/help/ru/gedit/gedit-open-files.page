@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Шобха Тиаджи (Shobha Tyagi)</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Открытие файла или набора файлов</title>
+
+  <p>Чтобы открыть файл в <app>gedit</app>, нажмите кнопку <gui>Открыть</gui> или нажмите <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>This will cause the <gui>Open</gui> dialog to appear. Use your mouse
+  or keyboard to select the file that you wish to open, and then click
+  <gui>Open</gui>. The file that you've selected will open in a new tab.</p>
+  <p>To close the <gui>Open</gui> dialog without opening a file, click
+  <gui>Cancel</gui>.</p>
+
+  <note style="tip"><p>Для открытия нескольких файлов сразу, можно использовать клавиши <key>Ctrl</key> и <key>Shift</key>. Если удерживать клавишу <key>Ctrl</key> при выборе нескольких файлов, то после нажатия кнопки <gui>Открыть</gui> откроются все выбранные файлы.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Если удерживать клавишу <key>Shift</key>, то откроются первый и последний выбранные файлы, а также все файлы между ними.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

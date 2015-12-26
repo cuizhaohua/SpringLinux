@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Organizar archivos en pestañas agrupadas</title>
+
+  <p>Si está trabajando con varias pestañas en <app>gedit</app> puede agruparlas, haciendo que sea más fácil mantener sus archivos abiertos organizados. Al añadir un nuevo grupo de pestañas se dividirá la ventana de <app>gedit</app> en dos paneles. abra un «Documento sin título» en el panel nuevo y actívelo. Puede abrir varios archivos en ese grupo de pestañas y mover pestañas de un grupo a otro.</p>
+
+<section id="open-new-tab-group">
+  <title>Abrir un grupo de pestañas en la ventana de gedit</title>
+
+  <p>Para abrir un grupo de pestañas nuevo puede:</p>
+
+  <list>
+    <item>
+      <p>Vaya a <guiseq><gui>Documentos</gui><gui>Nuevo grupo de pestañas</gui></guiseq> en el menú principal.</p>
+    </item>
+    <item>
+      <p>Use el atajo <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Esta acción dividirá la ventana de <app>gedit</app> en dos paneles, y el panel con el nuevo grupo de pestañas se colocará a la derecha de la pestaña activa. Puede redimensionarlo para darle más o menos espacio a la ventana de <app>gedit</app> entre los paneles de acuerdo a sus necesidades..</p>
+
+  <p>Puede abrir tantos grupos de pestañas en <app>gedit</app>como le permita el tamaño de su pantalla, pero deberá redimensionarlos para verlos correctamente.</p>
+
+  <p>Para cerrar un grupo de pestañas simplemente cierre todas las pestañas que haya abiertas en él.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Moverse entre grupos de pestañas</title>
+
+  <p>Para moverse al siguiente grupo de pestañas:</p>
+
+  <list>
+    <item>
+      <p>Vaya a <guiseq><gui>Documentos</gui><gui>Siguiente grupo de pestañas</gui></guiseq> en el menú principal.</p>
+    </item>
+    <item>
+      <p>Use el atajo <keyseq><key>Mayús</key><key>Ctrl</key><key>Alt</key><key>Av Pág</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Para moverse al grupo de pestañas anterior:</p>
+
+  <list>
+    <item>
+      <p>Vaya a <guiseq><gui>Documentos</gui><gui>Grupo de pestañas anterior</gui></guiseq> en el menú principal.</p>
+    </item>
+    <item>
+      <p>Use el atajo <keyseq><key>Mayús</key><key>Ctrl</key><key>Alt</key><key>Re Pág</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Mover una pestaña a otro grupo de pestañas</title>
+
+  <p>Si quiere mover una pestaña de un grupo de pestañas a otro:</p>
+
+  <steps>
+    <item>
+      <p>Pulse y mantenga pulsado el botón del ratón en la pestaña.</p>
+    </item>
+    <item>
+      <p>Arrastre la pestaña al panel del otro grupo de pestañas.</p>
+    </item>
+    <item>
+      <p>Sitúela junto a las otras pestañas, en el grupo de pestañas.</p>
+    </item>
+    <item>
+      <p>Suelte el botón del ratón.</p>
+    </item>
+  </steps>
+
+  <p>Consulte los <link xref="gedit-shortcut-keys">atajos relacionados con las pestañas</link> que simplifican la gestión de sus grupos de pestañas.</p>
+
+</section>
+
+</page>

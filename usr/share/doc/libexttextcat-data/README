@@ -1,0 +1,121 @@
+libexttextcat is an N-Gram-Based Text Categorization library primarily intended
+for language guessing.
+
+Fundamentally this is an adaption of wiseguys libtextcat extended to be UTF-8
+aware. See README.libtextcat for details on original libtextcat.
+
+Building:
+
+ * ./configure
+ * make
+ * make check
+
+the tests can be run under valgrind's memcheck with export VALGRIND=memcheck,
+e.g.
+
+ * export VALGRIND=memcheck
+ * make check
+
+Quickstart: language guesser
+  
+ Assuming that you have successfully compiled the library, you need some
+language models to start guessing languages. A collection of over 150 language
+models, mostly derived from using the included "createfp" utility on UDHR
+translations, is bundled, with a matching configuration file, in the langclass
+directory:
+
+  * cd langclass/LM
+  * ../../src/testtextcat ../fpdb.conf
+  	 
+Paste some text onto the commandline, and watch it get classified.
+     
+Using the API:
+  
+Classifying the language of a textbuffer can be as easy as:
+
+ #include "textcat.h"
+ ...
+ void *h = textcat_Init( "fpdb.conf" );
+ ...
+ printf( "Language: %s\n", textcat_Classify(h, buffer, 400);
+ ...
+ textcat_Done(h);
+      
+Creating your own fingerprints:
+  
+The createfp program allows you to easily create your own document
+fingerprints. Just feed it an example document on standard input, and store the
+standard output:
+
+Put the names of your fingerprints in a configuration file, add some id's and
+you're ready to classify.
+
+Here's a worked example. The UN Declaration of Human Rights is available in a
+massive pile of translations[4], and and unicode.org makes much of these
+available as plain text[5], so...
+
+% cd langclass/ShortTexts/
+% wget http://unicode.org/udhr/d/udhr_abk.txt
+% tail -n+7 udhr_abk.txt > ab.txt #skip english header, name is using BCP-47
+% cd ../LM
+% ../../src/createfp < ../ShortTexts/ab.txt > ab.lm
+% echo "ab.lm       ab--utf8" >> ../fpdb.conf
+
+Eventually we'll drop fpdb.conf and assume the name of the fingerprint .lm file
+is the correct BCP-47 tag for the language it detects.
+    
+Performance tuning:
+
+This library was made with efficiency in mind. There are couple of
+parameters you may wish to tweak if you intend to use it for other
+tasks than language guessing.
+
+The most important thing is buffer size. For reliable language
+guessing the classifier only needs a couple of hundreds of bytes max.
+So don't feed it 100KB of text unless you are creating a fingerprint.
+
+If you insist on feeding the classifier lots of text, try fiddling
+with TABLEPOW, which determines the size of the hash table that is
+used to store the n-grams. Making it too small will result in many
+hashtable clashes, making it too large will cause wild memory
+behaviour and both are bad for the performance.
+
+Putting the most probable models at the top of the list in your config
+file improves performance, because this will raise the threshold for
+likely candidates more quickly.
+
+Since the speed of the classifier is roughly linear with respect to
+the number of models, you should consider how many models you really
+need. In case of language guessing: do you really want to recognize
+every language ever invented?
+
+Acknowledgements
+
+UTF-8 conversion and adaption for OpenOffice.org, Jocelyn Merand.
+Original libTextCat, Frank Scheelen & Rob de Wit at wise-guys.nl.
+Original language models, copyright Gertjan van Noord.
+
+References:
+
+[1] The document that started it all can be downloaded at John M.
+Trenkle's site: N-Gram-Based Text Categorization
+
+http://www.novodynamics.com/trenkle/papers/sdair-94-bc.ps.gz
+
+[2] The Perl implementation by Gertjan van Noord (code + language
+models): downloadable from his website
+
+http://odur.let.rug.nl/~vannoord/TextCat/
+
+[3] Original libtextcat implementation at
+
+http://software.wise-guys.nl/libtextcat/
+
+[4] http://www.ohchr.org/EN/UDHR/Pages/SearchByLang.aspx
+
+[5] http://unicode.org/udhr/index_by_name.html
+
+Contact:
+
+Questions or patches can be directed to libreoffice@lists.freedesktop.org.
+Bugs can be directed to https://bugs.freedesktop.org

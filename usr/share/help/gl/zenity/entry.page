@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="entry" xml:lang="gl">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Use opción <cmd>--entry</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2012.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Diálogo para a entrada de texto</title>
+    <p>Use a opción <cmd>--entry</cmd> para crear un diálogo de entrada de texto. <app>Zenity</app> devolve á saída estándar o contido do texto introducido.</p>	
+    <p>O diálogo de entrada de texto admite as seguintes opcións:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>texto</var></title>
+	<p>Especifica o texto que se mostra no diálogo de entrada de texto.</p>
+      </item>
+
+      <item>
+        <title><cmd>--entry-text</cmd>=<var>texto</var></title>
+	<p>Especifica o texto que se mostra no campo de entrada do diálogo de entrada de texto.</p>
+      </item>
+
+      <item>
+        <title><cmd>--hide-text</cmd></title>
+	<p>Oculta o texto no campo de entrada do diálogo de entrada de texto.</p>
+      </item>
+
+    </terms>
+
+    <p>O seguinte script de exemplo mostra como se crea un diálogo de entrada de texto:</p>
+
+<code>
+#!/bin/sh
+
+if zenity --entry \
+--title="Engadir un novo perfíl" \
+--text="Escriba o nome do novo perfíl:" \
+--entry-text "NovoPerfil"
+  then echo $?
+  else echo "Non se escribiu ningún nome"
+fi
+</code>
+
+
+    <figure id="zenity-entry-screenshot">
+      <title>Exemplo de diálogo de entrada de texto</title>
+      <desc>Exemplo do diálogo de entrada de texto de <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-entry-screenshot.png"/>
+    </figure>
+</page>

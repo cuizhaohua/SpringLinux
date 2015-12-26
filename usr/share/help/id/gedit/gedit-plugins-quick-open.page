@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-quick-open" xml:lang="id">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision version="3.4" date="2013-02-24" status="review"/>
+    <revision version="3.8" date="2013-04-23" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <desc>Membuka secara cepat satu berkas atau satu set berkas</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Buka cepat</title>
+
+  <p>Seperti yang disiratkan oleh nama plugin ini, plugin <gui>Buka Cepat</gui> membantu Anda untuk membuka berkas secara lebih cepat daripada memakai cara biasa untuk membuka berkas. Untuk memfungsikan plugin ini, pilih <guiseq><gui style="menu">gedit</gui> <gui>Preferensi</gui><gui>Plugin</gui><gui>Buka Cepat</gui></guiseq>.</p>
+    
+  <p>Sekali Anda telah memfungsikan plugin <app>Buka Cepat</app> Anda dapat memakainya sebagai berikut:</p>
+
+  <steps>
+    <item><p>Buka kotak dialog <app>Buka Cepat</app> dengan menekan <keyseq><key>Ctrl</key><key>Alt</key><key>O</key></keyseq>, atau dengan memilih <guiseq><gui>Berkas</gui><gui>Buka Cepat</gui></guiseq>.</p>
+    <p>Dialog berkas <gui>Buka Cepat</gui> akan muncul.</p></item>
+    <item><p>Gunakan tetikus Anda untuk memilih berkas atau berkas-berkas yang ingin Anda buka.</p>
+    <p>Untuk memilih beberapa berkas individu, tahan tombol <key>Ctrl</key> Anda ketika Anda mengklik pada berkas yang ingin Anda buka.</p>
+    <p>Untuk memilih sekelompok berkas, klik pada berkas pertama yang ingin Anda buka, tahan tombol <key>Shift</key>, lalu klik pada berkas terakhir dalam daftar yang ingin Anda buka.</p></item>
+    <item><p>Klik <gui>Buka</gui>.</p></item>
+  </steps>
+
+  <p><app>Buka Cepat</app> akan mencari berkas dalam:</p>
+
+  <list>
+    <item><p>Direktori dari dokumen yang sedang dibuka</p></item>
+    <item><p>Akar direktori dari plugin <app xref="gedit-plugins-file-browser">Panel Peramban Berkas</app></p></item>
+    <item><p>Dokumen baru-baru ini yang juga ditampilkan dalam folder <file>Baru-baru Ini</file> dalam <app>Berkas</app></p></item>
+    <item><p>Direktori yang telah ditandataut dalam <app>Berkas</app></p></item>
+    <item><p>Direktori <file>Desktop</file> Anda</p></item>
+    <item><p>Direktori <file>Rumah</file> Anda</p></item>
+  </list>
+
+  <note style="tip">
+    <p><app>Buka Cepat</app> menampilkan berkas dalam sebarang lokasi di atas tanpa peduli apakah Anda sebelumnya pernah membukanya atau belum.</p>
+  </note>
+
+</page>

@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libinput.so.5.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libinput5
+/usr/share/doc/libinput5/changelog.Debian.gz
+/usr/share/doc/libinput5/copyright
+/usr/lib/arm-linux-gnueabihf/libinput.so.5

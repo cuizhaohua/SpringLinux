@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nahrazování textu</title>
+
+  <p>Úpravy textu můžou někdy zabrat hodně času. Abyste jej ušetřili, nabízí <app>gedit</app> funkci <app>Nahradit</app>, která vám pomůže najít a nahradit části textu.</p>
+
+  <steps>
+    <title>Náhrada textu v editoru <app>gedit</app></title>
+    <item>
+      <p>Otevřete nástroj <gui>Nahradit</gui> kliknutím na <guiseq><gui style="menu">Hledat</gui> <gui style="menuitem">Nahradit…</gui></guiseq> nebo zmáčknutím <keyseq><key>Ctrl</key> <key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Řetězec, který chcete nahradit, zadejte do pole <gui>Hledat:</gui>.</p>
+    </item>
+    <item>
+      <p>Nový řetězec, kterým chcete nahrazovat ten nalezený, zadejte do pole <gui>Nahradit za:</gui>.</p>
+    </item>
+    <item>
+      <p>Až máte zadán původní a nový text, můžete upravit další parametry hledání. Můžete si také zvolit, co všechno chcete nahradit:</p>
+      <list>
+        <item>
+          <p>Jestliže chcete nahradit <em>pouze</em> následující výskyt hledaného řetězce, tak klikněte na <gui>Nahradit</gui>.</p>
+        </item>
+        <item>
+          <p>Jestliže chcete nahradit úplně <em>všechny výskyty</em> hledaného řetězce, tak klikněte na <gui>Nahradit vše</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Funkci <gui>Nahradit vše</gui> používejte obezřetně. Pracuje totiž s úplně celým textovým souborem a neumožňuje vybrat jen část textu, kde byste chtěli nahrazení provést.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Další volby</title>
+
+  <p>Když si budete přát, můžete upravit některé další parametry hledání:</p>
+
+  <terms>
+    <item>
+      <title>Rozlišovat velikost písmen</title>
+      <p>Volba <em>Rozlišovat velikost písmen</em> umožňuje určit, jestli chcete, aby se při hledání bral ohled na velikost písmen. Když je tato volba vybrána, bude mít velikost písmen vliv na shodu při hledání. Když vybrána není, budou vyhovovat hledání i slova lišící se velikostí písmen.</p>
+    </item>
+    <item>
+      <title>Hledat pouze celá slova</title>
+      <p>Tuto volbu použijte, když chcete vyhledat slova bez předpon a přípon. Například, když budete chtít vyhledat slovo „pan“ a zaškrtnete tuto volbu, vyhledá se opravdu jen „pan“ a ne třeba „<em>pan</em>da“ nebo „ko<em>pan</em>á“.</p>
+    </item>
+    <item>
+      <title>Hledat pozpátku</title>
+      <p>Tato volba v podstatě odpovídá příkazu Najít předchozí. Vyberte ji, pokud chcete při hledání postupovat směrem od konce k začátku.</p>
+    </item>
+    <item>
+      <title>Přecházet přes okraj</title>
+      <p>S vybranou volbou <app>Přecházet přes okraj</app> bude <app>gedit</app> při hledání/nahrazování pokračovat od začátku souboru po té, co narazí na jeho konec. Tím máte zaručeno, že při hledání/nahrazování projdete opravdu celý soubor.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Používání řídících sekvencí</title>
+
+  <p>Můžete používat <em>řídící sekvece</em> (tzv. sekvence escape) pro hledání zalomení řádků a tabulátorů.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Nový řádek (NL)</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tabulátor</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Na začátek řádku (CR)</p>
+    </item>
+  </terms>
+
+  <p>Pokud chcete hledat <output>\</output> (zpětné lomítko) nebo nějakou řídící sekvenci uvedenou v textu, musíte jim předřadit další zpětné lomítko. Například, když chcete vyhledat <input>\</input>, musíte do polí, co hledat nebo čím nahradit, uvést <input>\\</input>. Obdobně, když chcete vyhledat v textu popsanou řídící sekvenci <input>\n</input>, použijte výraz <input>\\n</input>.</p>
+
+</section>
+
+</page>

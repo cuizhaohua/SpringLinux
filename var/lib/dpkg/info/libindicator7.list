@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libindicator7
+/usr/share/doc/libindicator7/copyright
+/usr/share/doc/libindicator7/changelog.gz
+/usr/share/doc/libindicator7/changelog.Debian.gz
+/usr/share/doc/libindicator7/AUTHORS
+/usr/lib
+/usr/lib/libindicator.so.7.0.0
+/usr/lib/libindicator.so.7

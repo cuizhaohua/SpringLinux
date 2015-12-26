@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-view-open-files-in-sidepane" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+      <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email its:translate="no">dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Skatīt datņu sarakstu sānu rūtī</title>
+
+  <p>Pārskatīt daudzas datnes, izmantojot cilnes, var būt sarežģīti. Viens risinājums ir skatīt tās sānu rūtī. Sānu rūts parāda vairāk datnes vienlaicīgi nekā cilnes.</p>
+
+  <p>Lai skatītu sarakstu ar atvērtajām datnēm sānu rūtī, nospiediet <guiseq><gui style="menu">Skats</gui><gui style="menuitem">Sānu rūts</gui></guiseq>. Pa kreisi no darba laukuma parādīsies rūts ar sarakstu, kurā būs visas šobrīd atvērtās datnes. Izpildot klikšķi uz datnes sānu rūtī, datne tiks atvērts darba laukumā.</p>
+
+  <p>Sānu rūts satur arī <app>Datņu pārlūka</app> skatu. Ja logs rāda datņu sarakstu, nevis šobrīd atvērtās datnes, spiediet <media type="image" mime="image/png" src="figures/gedit-side-pane2.png" its:translate="no"><span its:translate="yes">dokumentu ikona</span></media> loga lejasdaļā, lai pārslēgtos uz <app>dokumentu</app> skatu.</p>
+
+  <note>
+    <p>Sānu rūts parāda tikai datnes, kas ir atvērtas aktīvajā logā. Kad ir atvērti vairāki logi, tikai esošā loga datnes tiks parādīti tā sānu rūtī.</p>
+  </note>
+</page>

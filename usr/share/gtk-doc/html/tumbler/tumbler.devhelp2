@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="tumbler Reference Manual" link="index.html" author="Jannis Pohlmann" name="tumbler" version="2" language="c">
+  <chapters>
+    <sub name="Overview" link="pt01.html"/>
+    <sub name="Miscellaneous" link="miscellaneous.html">
+      <sub name="Error Domain and Types" link="tumbler-Error-Domain-and-Types.html"/>
+      <sub name="Various Enumeration Types" link="tumbler-Various-Enumeration-Types.html"/>
+      <sub name="Version Information and Compatibility Checks" link="tumbler-Version-Information-and-Compatibility-Checks.html"/>
+    </sub>
+    <sub name="Querying and Generating Thumbnails" link="thumbnails.html">
+      <sub name="tumbler-file-info" link="tumbler-tumbler-file-info.html"/>
+      <sub name="TumblerThumbnail" link="TumblerThumbnail.html"/>
+      <sub name="TumblerCache" link="TumblerCache.html"/>
+    </sub>
+    <sub name="Extension API" link="extension-api.html">
+      <sub name="tumbler-provider-factory" link="tumbler-tumbler-provider-factory.html"/>
+      <sub name="tumbler-provider-plugin" link="tumbler-tumbler-provider-plugin.html"/>
+      <sub name="TumblerAbstractThumbnailer" link="TumblerAbstractThumbnailer.html"/>
+      <sub name="TumblerThumbnailerProvider" link="TumblerThumbnailerProvider.html"/>
+    </sub>
+    <sub name="Tutorial: Extending Tumbler" link="extension-tutorial.html"/>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+  </chapters>
+  <functions>
+    <keyword type="macro" name="TUMBLER_ERROR" link="tumbler-Error-Domain-and-Types.html#TUMBLER-ERROR:CAPS"/>
+    <keyword type="macro" name="TUMBLER_ERROR_DOMAIN" link="tumbler-Error-Domain-and-Types.html#TUMBLER-ERROR-DOMAIN:CAPS"/>
+    <keyword type="enum" name="enum TumblerErrorEnum" link="tumbler-Error-Domain-and-Types.html#TumblerErrorEnum"/>
+    <keyword type="macro" name="TUMBLER_CHECK_VERSION()" link="tumbler-Version-Information-and-Compatibility-Checks.html#TUMBLER-CHECK-VERSION:CAPS"/>
+    <keyword type="function" name="tumbler_check_version ()" link="tumbler-Version-Information-and-Compatibility-Checks.html#tumbler-check-version"/>
+    <keyword type="macro" name="TUMBLER_MAJOR_VERSION" link="tumbler-Version-Information-and-Compatibility-Checks.html#TUMBLER-MAJOR-VERSION:CAPS"/>
+    <keyword type="macro" name="TUMBLER_MINOR_VERSION" link="tumbler-Version-Information-and-Compatibility-Checks.html#TUMBLER-MINOR-VERSION:CAPS"/>
+    <keyword type="macro" name="TUMBLER_MICRO_VERSION" link="tumbler-Version-Information-and-Compatibility-Checks.html#TUMBLER-MICRO-VERSION:CAPS"/>
+    <keyword type="variable" name="tumbler_major_version" link="tumbler-Version-Information-and-Compatibility-Checks.html#tumbler-major-version"/>
+    <keyword type="variable" name="tumbler_minor_version" link="tumbler-Version-Information-and-Compatibility-Checks.html#tumbler-minor-version"/>
+    <keyword type="variable" name="tumbler_micro_version" link="tumbler-Version-Information-and-Compatibility-Checks.html#tumbler-micro-version"/>
+    <keyword type="macro" name="G_GNUC_NULL_TERMINATED" link="tumbler-Version-Information-and-Compatibility-Checks.html#G-GNUC-NULL-TERMINATED:CAPS"/>
+    <keyword type="macro" name="G_GNUC_WARN_UNUSED_RESULT" link="tumbler-Version-Information-and-Compatibility-Checks.html#G-GNUC-WARN-UNUSED-RESULT:CAPS"/>
+    <keyword type="function" name="tumbler_file_info_new ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-new"/>
+    <keyword type="function" name="tumbler_file_info_load ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-load"/>
+    <keyword type="function" name="tumbler_file_info_get_uri ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-get-uri"/>
+    <keyword type="function" name="tumbler_file_info_get_mime_type ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-get-mime-type"/>
+    <keyword type="function" name="tumbler_file_info_get_mtime ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-get-mtime"/>
+    <keyword type="function" name="tumbler_file_info_needs_update ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-needs-update"/>
+    <keyword type="function" name="tumbler_file_info_get_thumbnail ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-get-thumbnail"/>
+    <keyword type="function" name="tumbler_file_info_array_new_with_flavor ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-array-new-with-flavor"/>
+    <keyword type="function" name="tumbler_file_info_array_copy ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-array-copy"/>
+    <keyword type="function" name="tumbler_file_info_array_free ()" link="tumbler-tumbler-file-info.html#tumbler-file-info-array-free"/>
+    <keyword type="property" name="The “flavor” property" link="tumbler-tumbler-file-info.html#TumblerFileInfo--flavor"/>
+    <keyword type="property" name="The “mime-type” property" link="tumbler-tumbler-file-info.html#TumblerFileInfo--mime-type"/>
+    <keyword type="property" name="The “mtime” property" link="tumbler-tumbler-file-info.html#TumblerFileInfo--mtime"/>
+    <keyword type="property" name="The “uri” property" link="tumbler-tumbler-file-info.html#TumblerFileInfo--uri"/>
+    <keyword type="function" name="tumbler_thumbnail_load ()" link="TumblerThumbnail.html#tumbler-thumbnail-load"/>
+    <keyword type="function" name="tumbler_thumbnail_needs_update ()" link="TumblerThumbnail.html#tumbler-thumbnail-needs-update"/>
+    <keyword type="function" name="tumbler_thumbnail_save_image_data ()" link="TumblerThumbnail.html#tumbler-thumbnail-save-image-data"/>
+    <keyword type="function" name="tumbler_thumbnail_save_file ()" link="TumblerThumbnail.html#tumbler-thumbnail-save-file"/>
+    <keyword type="function" name="tumbler_thumbnail_get_flavor ()" link="TumblerThumbnail.html#tumbler-thumbnail-get-flavor"/>
+    <keyword type="struct" name="struct TumblerImageData" link="TumblerThumbnail.html#TumblerImageData"/>
+    <keyword type="property" name="The “cache” property" link="TumblerThumbnail.html#TumblerThumbnail--cache"/>
+    <keyword type="property" name="The “flavor” property" link="TumblerThumbnail.html#TumblerThumbnail--flavor"/>
+    <keyword type="property" name="The “uri” property" link="TumblerThumbnail.html#TumblerThumbnail--uri"/>
+    <keyword type="function" name="tumbler_cache_get_default ()" link="TumblerCache.html#tumbler-cache-get-default"/>
+    <keyword type="function" name="tumbler_cache_get_thumbnail ()" link="TumblerCache.html#tumbler-cache-get-thumbnail"/>
+    <keyword type="function" name="tumbler_cache_cleanup ()" link="TumblerCache.html#tumbler-cache-cleanup"/>
+    <keyword type="function" name="tumbler_cache_delete ()" link="TumblerCache.html#tumbler-cache-delete"/>
+    <keyword type="function" name="tumbler_cache_copy ()" link="TumblerCache.html#tumbler-cache-copy"/>
+    <keyword type="function" name="tumbler_cache_move ()" link="TumblerCache.html#tumbler-cache-move"/>
+    <keyword type="function" name="tumbler_cache_is_thumbnail ()" link="TumblerCache.html#tumbler-cache-is-thumbnail"/>
+    <keyword type="function" name="tumbler_cache_get_flavors ()" link="TumblerCache.html#tumbler-cache-get-flavors"/>
+    <keyword type="function" name="tumbler_cache_get_flavor ()" link="TumblerCache.html#tumbler-cache-get-flavor"/>
+    <keyword type="function" name="tumbler_provider_factory_get_default ()" link="tumbler-tumbler-provider-factory.html#tumbler-provider-factory-get-default"/>
+    <keyword type="function" name="tumbler_provider_factory_get_providers ()" link="tumbler-tumbler-provider-factory.html#tumbler-provider-factory-get-providers"/>
+    <keyword type="function" name="tumbler_provider_plugin_new ()" link="tumbler-tumbler-provider-plugin.html#tumbler-provider-plugin-new"/>
+    <keyword type="function" name="tumbler_provider_plugin_get_types ()" link="tumbler-tumbler-provider-plugin.html#tumbler-provider-plugin-get-types"/>
+    <keyword type="function" name="tumbler_thumbnailer_provider_get_thumbnailers ()" link="TumblerThumbnailerProvider.html#tumbler-thumbnailer-provider-get-thumbnailers"/>
+  </functions>
+</book>

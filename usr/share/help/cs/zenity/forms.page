@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Použití přepínače <cmd>--forms</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s formuláři</title>
+    <p>K vytvoření dialogového okna s formuláři použijte přepínač <cmd>--forms</cmd>.</p>
+	
+    <p>Dialogové okno s formuláři podporuje následující přepínače:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>NÁZEV_POLE</var></title>
+	<p>Přidá nové vstupní pole do dialogového okna s formulářem.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>NÁZEV_POLE</var></title>
+	<p>Přidá nové vstupní pole pro heslo do dialogového okna s formulářem. (skrytý text)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>NÁZEV_POLE</var></title>
+	<p>Přidá nový kalendář do dialogového okna s formulářem.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXT</var></title>
+	<p>Nastaví text dialogového okna.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>ODDĚLOVAČ</var></title>
+	<p>Nastaví oddělovací znak pro výstup. (výchozí: |)</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>VZOR</var></title>
+	<p>Nastavuje formát vraceného data. Výchozí formát je dán vaším národním prostředím. VZOR musí být formát, který akceptuje funkce <cmd>strftime</cmd>, např. <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s formuláři:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Přidání přítele" \
+	--text="Zadejte informace o svém příteli." \
+	--separator="," \
+	--add-entry="Křestní jméno" \
+	--add-entry="Příjmení" \
+	--add-entry="E-mail" \
+	--add-calendar="Datum narození" &gt;&gt; addr.csv
+
+case $? in
+    0)
+        echo "Přítel přidán.";;
+    1)
+        echo "Žádný přítel nepřidán."
+	;;
+    -1)
+        echo "Vyskytla se neočekávaná chyba."
+	;;
+esac
+</code>
+
+    <figure id="zenity-forms-screenshot">
+      <title>Příklad dialogového okna s formuláři</title>
+      <desc>Ukázka dialogového okna <app>Zenity</app> s formuláři</desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

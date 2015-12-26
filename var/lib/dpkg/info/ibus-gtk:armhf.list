@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/ibus-gtk
+/usr/share/doc
+/usr/share/doc/ibus-gtk
+/usr/share/doc/ibus-gtk/changelog.Debian.gz
+/usr/share/doc/ibus-gtk/changelog.gz
+/usr/share/doc/ibus-gtk/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/gtk-2.0
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0/immodules
+/usr/lib/arm-linux-gnueabihf/gtk-2.0/2.10.0/immodules/im-ibus.so

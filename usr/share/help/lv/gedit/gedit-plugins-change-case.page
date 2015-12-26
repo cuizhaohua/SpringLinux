@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-change-case" xml:lang="lv">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Mainīt izvēlēta teksta burtu reģistru (lielie, mazie burti)</desc>
+</info>
+
+<title>Mainīt burtu reģistru</title>
+
+  <p>Šis spraudnis palīdz mainīt burtu reģistru izvēlētajā teksta daļā. To var izmantot, lai pārvērstu visu tekstu mazos vai lielos burtos, mainītu katra burta reģistru uz pretējo, vai sāktu katru vārdu ar lielo burtu. Lai ieslēgtu šo spraudni, izvēlieties <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Iestatījumi</gui><gui>Spraudņi</gui><gui>Mainīt burtu reģistru</gui></guiseq>.</p>
+
+  <p>Kad spraudnis <em>Mainīt burtu reģistru</em> ir ieslēgts, to var lietot, veicot šādus soļus:</p>
+
+  <steps>
+    <item><p>Iezīmējiet teksta daļu, kuru vēlaties mainīt.</p></item>
+    <item><p>Izvēlieties <guiseq><gui style="menu">gedit</gui><gui>Mainīt reģistru</gui></guiseq></p>
+    </item>
+    <item><p>Izvēlieties vajadzīgo teksta formatēšanas iespēju.</p></item> 
+  </steps>
+
+  <p>Teksta formatēšanas izmaiņas tiks veiktas nekavējoties.</p>
+
+  <note style="tip">
+    <p>Komanda <gui>Pārslēgt reģistru</gui> pārveidos visus mazos burtus par lielajiem burtiem un visus lielos burtus par mazajiem.</p>
+    <p>Komanda <gui>Virsraksta reģistrs</gui> pārveidos katra vārda pirmo burtu par lielo burtu. Visi pārējie burti tiks pārveidoti par mazajiem burtiem.</p>
+  </note>
+
+  <note>
+    <p>Ja nekas nav iezīmēts, iespēja <em>Mainīt reģistru</em> nebūs pieejama. Lai izmantotu šo iespēju, jāiezīmē teksts, kuram mainīt reģistru.</p>
+  </note>
+
+</page>

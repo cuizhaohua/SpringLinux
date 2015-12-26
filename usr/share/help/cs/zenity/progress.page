@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="progress" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Použití přepínače <cmd>--progress</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s ukazatelem průběhu</title>
+    <p>K vytvoření dialogového okna s ukazatelem průběhu použijte přepínač <cmd>--progress</cmd>.</p>
+
+    <p><app>Zenity</app> čte data ze standardního vstupu řádek po řádku. Když řádek začíná znakem #, provede se aktualizace textu pomocí textu na zbytku tohoto řádku. Když řádek obsahuje pouze číslo, aktualizují se procenta ukazatele na tuto hodnotu.</p>
+	
+    <p>Dialogové okno s ukazatelem průběhu podporuje následující přepínače:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>TEXT</var></title>
+	  <p>Určuje text, který se má v dialogovém okně zobrazit.</p>
+      </item>
+
+      <item>
+        <title><cmd>--percentage</cmd>=<var>PROCENTA</var></title>
+	  <p>Určuje počáteční stav procent, na které se má ukazatel průběhu nastavit.</p>
+      </item>
+
+      <item>
+	<title><cmd>--auto-close</cmd></title>
+	  <p>Zavře dialogové okno po dosažení 100%.</p>
+      </item>
+
+      <item>
+        <title><cmd>--pulsate</cmd></title>
+	  <p>Určuje, že ukazatel průběhu bude pulzovat, dokud se ze standardního vstupu nenačte znak EOF (konce souboru).</p>
+      </item>
+
+    </terms>
+
+    <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s ukazatelem průběhu:</p>
+
+<code>
+#!/bin/sh
+(
+echo "10" ; sleep 1
+echo "# Aktualizují se záznamy o poště" ; sleep 1
+echo "20" ; sleep 1
+echo "# Restartují se úlohy cronu" ; sleep 1
+echo "50" ; sleep 1
+echo "Tento řádek se bude ignorovat" ; sleep 1
+echo "75" ; sleep 1
+echo "# Restartuje se systém" ; sleep 1
+echo "100" ; sleep 1
+) |
+zenity --progress \
+  --title="Aktualizace systémových záznamů" \
+  --text="Prohledávají se záznamy o poště…" \
+  --percentage=0
+
+if [ "$?" = -1 ] ; then
+        zenity --error \
+          --text="Aktualizace byla přerušena."
+fi
+</code>
+
+
+    <figure id="zenity-progress-screenshot">
+      <title>Příklad dialogového okna s ukazatelem průběhu</title>
+      <desc>Ukázka dialogového okna <app>Zenity</app> s ukazatelem průběhu</desc>
+      <media type="image" mime="image/png" src="figures/zenity-progress-screenshot.png"/>
+    </figure>
+</page>

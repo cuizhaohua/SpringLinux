@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+if [ -f /usr/share/debconf/confmodule ]; then
+  . /usr/share/debconf/confmodule
+fi
+
+db_purge
+
+

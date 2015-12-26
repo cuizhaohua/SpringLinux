@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Depósito de claves en el que se guardarán las contraseñas">
+						<longdesc>El nombre del depósito de claves que debería utilizar gksu. Los valores usuales son «sesión», que guarda la contraseña durante la sesión, y «predeterminado», que guarda la contraseña sin fecha de caducidad.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Guardar la contraseña en el depósito de claves de GNOME («gnome-keyring»)">
+						<longdesc>gksu puede guardar la contraseña que ha escrito en el depósito de claves de GNOME («gnome-keyring»). de modo que no se le pregunte siempre por ella</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Mostrar el mensaje de información cuando no se necesite la contraseña">
+						<longdesc>Esta opción determina si un diálogo de mensajes se mostrará informando al usuario de que el programa se está ejecutando sin necesidad de pedirle una contraseña por alguna razón.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Preguntar al bloquear">
+						<longdesc>Esta opción hará que gksu pregunte al usuario si quiere tener la pantalla bloqueada antes de introducir la contraseña. Tenga en cuenta que esto sólo tiene efecto si no fuerza el bloqueo.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Modo de sudo">
+						<longdesc>Cuando sudo sea el método predeterminado, a este método se accederá mediante el parámetro «-S» o ejecutando «gksudo» en lugar de «gksu».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Forzar el bloqueo del teclado y el ratón">
+						<longdesc>Bloquear el teclado y el ratón incluso si se ha pasado la opción «-g» en la línea de órdenes.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Desactivar el bloqueo del teclado y el ratón">
+						<longdesc>Si el bloqueo del teclado y el ratón esté desactivado, otras aplicaciones de X podrán escuchar los eventos de entrada del teclado, incluso no pudiendo protegerse de aplicaciones malignas que pueden estar ejecutándose.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

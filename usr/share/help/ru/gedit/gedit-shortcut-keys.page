@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Паоло Борелли (Paolo Borelli)</name>
+    </credit>
+    <credit type="author">
+      <name>Джесси Ван ден Кибум (Jesse van den Kieboom)</name>
+    </credit>
+    <credit type="author">
+      <name>Стив Фресинукс (Steve Frécinaux)</name>
+    </credit>
+    <credit type="author">
+      <name>Игнасио Касал Куантеро (Ignacio Casal Quinteiro)</name>
+    </credit>
+    <credit type="editor">
+      <name>Синдху С (Sindhu S)</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Радина Матик (Radina Matic)</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Комбинации клавиш</title>
+
+  <p>Использование <gui>комбинаций клавиш</gui> ускоряет работу по сравнению с использованием только мыши и меню. В следующей таблице представлены все комбинации клавиш <app>gedit</app>.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Комбинация клавиш для работы с вкладками</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Переключиться на следующую вкладку влево</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Переключиться на следующую вкладку вправо</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Закрыть вкладку</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Сохранить все вкладки</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Закрыть все вкладки</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reopen the most recently closed tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Перейти на <var>n</var>-ю вкладку</p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Создать группу вкладок</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Предыдущая группа вкладок</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Следующая группа вкладок</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Комбинации клавиш для работы с файлами</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Создать новый документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Открыть документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Сохранить текущий документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Сохранить текущий документ под новым именем</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Напечатать текущий документ</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Предпросмотр печати</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Закрыть текущий документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Завершить gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Комбинации клавиш для редактирования файлов</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Перейти в начало текущей строки</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Перейти в конец текущей строки</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Перейти к началу документа</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Перейти к концу документа</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Переместить выделенное слово вправо на одно слово</p></td>
+          <td><p><keyseq><key>Alt</key><key>Стрелка вправо</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Переместить выделенное слово влево на одно слово</p></td>
+          <td><p><keyseq><key>Alt</key><key>Стрелка влево</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Отменить последнее действие</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Вернуть последнее отменённое действие</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Вырезать выделенный текст и поместить его в буфер обмена</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Скопировать выделенный текст в буфер обмена</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Вставить содержимое буфера обмена</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Выделить весь текст в файле</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Удалить текущую строку</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Переместить выделенную строку на одну строку вверх</p></td>
+          <td><p><keyseq><key>Alt</key><key>Стрелка вверх</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Переместить выделенную строку на одну строку вниз</p></td>
+          <td><p><keyseq><key>Alt</key><key>Стрелка вниз</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Добавить табуляцию</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Убрать табуляцию</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to upper case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to lower case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Toggle case of the selected text</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Комбинации клавиш для отображения или скрытия панелей</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Отобразить или скрыть боковую панель</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Отобразить или скрыть нижнюю панель.</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Комбинации клавиш для поиска</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Найти строку</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Найти следующее совпадение</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Найти предыдущее совпадение</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Найти и заменить</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Убрать подсветку</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Перейти к строке</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Комбинации клавиш для управления инструментами</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Проверить орфографию</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Удалить завершающие пробелы (при наличии модуля)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Запустить «make» в текущем каталоге (при наличии модуля)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Вывести список файлов (при наличии модуля)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Комбинации клавиш для управления справкой</title>
+      <thead>
+        <tr>
+          <td><p>Действие</p></td>
+          <td><p>Комбинация</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Открыть руководство пользователя gedit</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

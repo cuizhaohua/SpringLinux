@@ -1,0 +1,30 @@
+This is the Debian menu system, written and maintained by Joost
+Witteveen <joostje@debian.org> until version 2.1.5-10.
+
+The Debian menu system is now maintained by Bill Allombert and Morten Brix
+Pedersen.
+
+The original source can always be found at:
+	ftp://ftp.debian.org/dists/unstable/main/source/
+
+This software is developed at: 
+        http://alioth.debian.org/projects/menu
+
+Copyright (C) 1996-2003  Joost Witteveen, 
+Modifications:
+Copyright (C) 2002-2005  Bill Allombert and Morten Brix Pedersen.
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License with
+  the Debian GNU/Linux distribution in file /usr/share/common-licenses/GPL;
+  if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth
+  Floor, Boston, MA 02110-1301, USA.

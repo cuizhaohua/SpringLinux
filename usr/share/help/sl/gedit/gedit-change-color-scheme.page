@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="sl">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Spremeni barvno shemo</title>
+
+  <p><app>gedit</app> vključuje več različnih barvnih shem, ki vam omogočajo spremembo videza glavnega okna besedila. </p>
+
+  <p>Za spremembo barvne sheme izvedite naslednje korake:</p>
+  <steps>
+    <item><p>Select <guiseq><gui style="menu">gedit</gui>
+    <gui style="menuitem">Preferences</gui>
+    <gui>Font &amp; Colors</gui></guiseq>.</p></item>
+    <item><p>Izberite svojo želeno barvno shemo.</p></item>
+  </steps>
+
+  <p>Nova barvna shema bo nemudoma uveljavljena.</p>
+
+  <section id="custom-color-scheme">
+    <title>Uporabi barvno shemo po meri</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Uporabite lahko barvne sheme, ki so jih ustvarili drugi ali pa ustvarite in uporabite svoje lastne barvne sheme.</p>
+    <p>Instructions on how to install custom color schemes, as well as examples
+    of color schemes that you can download and use, are available on the
+    <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">gedit
+    wiki</link>.</p>
+  </section>
+
+</page>

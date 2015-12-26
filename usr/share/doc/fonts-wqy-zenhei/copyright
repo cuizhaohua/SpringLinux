@@ -1,0 +1,79 @@
+This package was debianized by Zhengpeng Hou <zhengpeng-hou@ubuntu.com> on
+Sat, 1 Dec 2007 16:54:11 +0800.
+
+It was downloaded from http://wqy.sourceforge.net/
+
+Upstream Authors:
+
+    Qianqian Fang <fangq #nmr _mgh _harvard _edu>
+    and The WenQuanYi Project Contributors
+
+Copyright:
+
+    Copyright (C) 2007-2009  Qianqian Fang and The WenQuanYi Project
+                             Board of Trustees, All rights reserved
+
+    This font contains the Latin/Hangul glyphs from un-fonts (UnDotum)
+      http://kldp.net/projects/unfonts/
+        Copyright (C) 1998-2004  Koanughi Un
+
+    The Bopomofo glyphs U3100-U3127 were imported from GPL font
+      cwTeX (cwming.ttf)
+	Copyright (C) 1999, 2004  Tsong-Min Wu, Tsong-Huey Wu.
+        Copyright (C) 2005  Tsong-Min Wu, Tsong-Huey Wu and Edward G.J. Lee.
+
+    Part of the embedded bitmap glyphs were derived from
+      "Firefly bitmap fonts" http://www.study-area.org/apt/firefly-font/
+        Copyright (C) 2004  Firefly
+
+    The mono-spaced Latin glyphs were derived from M+ M2 Light
+      http://mplus-fonts.sourceforge.jp/ 
+        Copyright (C) 2002-2008 M+ FONTS PROJECT
+	License for M+ M2 Light as below
+
+License:
+
+    ** GPL v2 with font embedding exception:
+
+    This package is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this package; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+    As a special exception, if you create a document which uses this
+    font, and embed this font or unaltered portions of this font into
+    the document, this font does not by itself cause the resulting
+    document to be covered by the GNU General Public License.  This
+    exception does not however invalidate any other reasons why the
+    document might be covered by the GNU General Public License.  If you
+    modify this font, you may extend this exception to your version of
+    the font, but you are not obligated to do so.  If you do not wish to
+    do so, delete this exception statement from your version.
+
+On Debian systems, the complete text of the GNU General Public License
+version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+The Debian packaging is Copyright (C) 2007-2009 ZhengPeng Hou <zhengpeng-hou@ubuntu.com>
+and is licensed under the GPL, see above.
+
+-------------------------------------------------------------------------
+M+ FONTS License
+-------------------------------------------------------------------------
+
+M+ FONTS                     Copyright (C) 2002-2008 M+ FONTS PROJECT
+
+These fonts are free softwares.
+Unlimited permission is granted to use, copy, and distribute it, with
+or without modification, either commercially and noncommercially.
+THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+http://mplus-fonts.sourceforge.jp/
+

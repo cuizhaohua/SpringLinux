@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-change-case" xml:lang="fr">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Modifier la casse du texte sélectionné</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Modification de la casse</title>
+
+  <p>Ce greffon vous aide à modifier la casse du morceau de texte que vous avez sélectionné. Vous pouvez l'utiliser pour mettre du texte tout en minuscules, tout en majuscules, pour inverser la casse ou pour appliquer une casse de titre. Pour activer ce greffon, choisissez <guiseq><gui>gedit</gui><gui>Préférences</gui><gui>Greffons</gui><gui>Modifier la casse</gui></guiseq>.</p>
+
+  <p>Une fois que le greffon <em>Modifier la casse</em> est activé, vous pouvez l'utiliser de la manière suivante :</p>
+
+  <steps>
+    <item><p>Sélectionnez le morceau de texte que vous voulez modifier.</p></item>
+    <item><p>Choisissez <guiseq><gui>gedit</gui><gui>Modifier la casse</gui></guiseq></p>
+    </item>
+    <item><p>Choisissez l'option de mise en forme de texte souhaitée.</p></item> 
+  </steps>
+
+  <p>Les mises à jour du format du texte s'effectuent immédiatement.</p>
+
+  <note style="tip">
+    <p>L'option <gui>Inverser la casse</gui> convertit toutes les minuscules en majuscules et réciproquement.</p>
+    <p>L'option <gui>Casse de titre</gui> convertit la première lettre de chaque mot en majuscules. Toutes les autres lettres sont converties en minuscules.</p>
+  </note>
+
+  <note>
+    <p>Si aucun texte n'est sélectionné, la fonction <em>Modifier la casse</em> est grisée (non active). Vous devez sélectionner un morceau de texte avant d'utiliser la fonction <em>Modifier la casse</em>.</p>
+  </note>
+
+</page>

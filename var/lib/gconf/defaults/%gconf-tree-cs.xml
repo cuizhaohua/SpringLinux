@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Klíčenka, ve které se budou uchovávat hesla">
+						<longdesc>Jméno klíčenky, kterou má gksu použít. Obvyklé hodnoty jsou „session&quot;, což uloží heslo po dobu sezení a „default&quot;, což uloží heslo bez časového omezení.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Uložit hesla do klíčenky gnome-keyring">
+						<longdesc>gksu může ukládat zadaná hesla do gnome-keyring, takže nebudete dotazováni při každém použití gksu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Pokud není potřeba heslo, upozorní na to hláškou">
+						<longdesc>Tato volba určuje, zda se zobrazí informační dialog v případě, kdy se může program spustit bez nutnosti zadání hesla.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Dotáže se na zachycení">
+						<longdesc>Povolením této volby zajistíte, aby se gksu před zadáním hesla zeptal uživatele, zda chce zachytit obrazovku. Toto však funguje pouze v případě, že je vypnuta volba force-grab.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Režim sudo">
+						<longdesc>Zda má být sudo výchozím backendem. Tento backend je jinak dostupný 
+přepínačem -S, nebo spuštěním „gksudo&quot; místo „gksu&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Vynutí zachycení klávesnice a myši">
+						<longdesc>Zachytí klávesnici a myš i v případě, že byl na příkazové řádce použit parametr -g.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Zakáže zachytávání klávesnice a myši">
+						<longdesc>Zda se má vypnout zachytávání klávesnice a myši. Tímto umožníte jiným X aplikacím, aby naslouchaly událostem vstupu z klávesnice a tím pádem ztrácíte ochranu před zlovolnými aplikacemi, které by mohly v systému běžet.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

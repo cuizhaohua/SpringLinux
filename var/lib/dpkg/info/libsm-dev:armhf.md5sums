@@ -1,0 +1,9 @@
+24717be33f1335cc802c757fb4c78eb3  usr/include/X11/SM/SM.h
+0691aa5164b6d668922be777ccf62711  usr/include/X11/SM/SMlib.h
+790e74e8e382e86e956ec4e848d45196  usr/include/X11/SM/SMproto.h
+803e244d74d2a387969323b62a8e028e  usr/lib/arm-linux-gnueabihf/libSM.a
+17e718b020f4ed32a1f884ac50b60489  usr/lib/arm-linux-gnueabihf/pkgconfig/sm.pc
+c1a9cbcba68de07ab71948ccad417a08  usr/share/doc/libsm-dev/changelog.Debian.armhf.gz
+72b8145118e585d9319505798b4e379a  usr/share/doc/libsm-dev/changelog.Debian.gz
+e5d54db87feeb2abb2659cc4f5f04f7d  usr/share/doc/libsm-dev/changelog.gz
+4896f2fc8eeb03b7f3655384b72417a7  usr/share/doc/libsm-dev/copyright

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-printing-select" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Фил Булл (Phil Bull)</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Синдху С (Sindhu S)</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Печать только указанных страниц</title>
+
+  <p>Можно выборочно печатать лишь некоторые страницы документа. Например, если в текстовое поле Страницы ввести «1,3,5-7,9», то будут распечатаны страницы 1, 3, 5, 6, 7 и 9. Чтобы выборочно напечатать страницы:</p>
+
+  <steps>
+   <item>
+    <p>Выберите <guiseq><gui style="menu">Файл</gui> <gui style="menuitem">Печать…</gui></guiseq>.</p>
+   </item>
+   <item>
+    <p>На вкладке <gui style="tab">Общие</gui>, в группе параметров <gui style="group">Диапазон</gui>, выберите параметр <gui style="radiobutton">Страницы</gui>.</p></item>
+   <item>
+    <p>В текстовом поле введите, разделяя запятыми, номера страниц документа, которые нужно распечатать. Для указания диапазона страниц используйте дефис.</p>
+   </item>
+  </steps>
+
+  <!--TODO: Fix this <media type="image" src="print-select.png"/> -->
+</page>

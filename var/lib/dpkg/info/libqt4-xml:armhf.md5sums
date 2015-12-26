@@ -1,0 +1,5 @@
+85191a2446b690021497b069fb21307a  usr/lib/arm-linux-gnueabihf/libQtXml.so.4.8.6
+eb6c371255e1262c55ae9b652a90b528  usr/share/doc/libqt4-xml/LGPL_EXCEPTION.txt
+1aad410c5e3360bff07c858261ff92ba  usr/share/doc/libqt4-xml/changelog.Debian.gz
+d49cf542b1b3ba75bad90e9560c459d3  usr/share/doc/libqt4-xml/copyright
+cd9521d522e33de3205a3682c7d3304a  usr/share/lintian/overrides/libqt4-xml

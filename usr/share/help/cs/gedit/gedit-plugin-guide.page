@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nastavení a používání zásuvných modulů</title>
+  <p>S použitím zásuvných modulů můžete v editoru <app>gedit</app> dělat daleko víc věcí. Několik zásuvných modulů je přítomno už ve výchozím stavu, ale většina je dodávána odděleně.</p>
+  
+  <note><p>Hodně linuxových distribucí poskytuje tyto zásuvné moduly dohromady v jednom balíčku s názvem <app>gedit-plugins</app>. Po nainstalování tohoto balíčku budete mít dodatečné zásuvné moduly k dispozici.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Výchozí zásuvné moduly editoru gedit</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Dodatečné zásuvné moduly editoru gedit</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

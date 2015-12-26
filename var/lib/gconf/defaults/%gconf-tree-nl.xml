@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Sleutelbos waarin de wachtwoorden zullen worden opgeslagen">
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Wachtwoord opslaan in de gnome-sleutelbos">
+						<longdesc>gksu kan het wachtwoord opslaan in de gnome-sleutelbos zodat het niet telkens opnieuw gevraagd wordt</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Informatief bericht weergeven als er geen wachtwoord vereist is">
+						<longdesc>Hiermee bepaalt u of een melding wordt weergegeven die de gebruiker informeert dat het programma uitgevoerd wordt zonder dat er om een wachtwoord gervraagd wordt.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Vragen om bevestiging van blokkering">
+						<longdesc>Hiermee bepaalt u dat gksu de gebruiker vraagt of het scherm geblokkeerd dient te worden voordat het wachtwoord ingevoerd wordt. Merk op dat dit alleen werkt wanneer de optie force-grab uitgeschakeld is.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Sudo-modus">
+						<longdesc>Hiermee wordt bepaald of sudo de standaard methode is. Deze methode wordt normaal gesproken ingesteld met het -S-argument of door &apos;gksudo&apos; te starten in plaats van &apos;gksu&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Blokkering van toetsenbord en muis forceren">
+						<longdesc>Toetsenbord en muis blokkeren zelfs wanneer het argument -g opgegegeven is.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Blokkering van toetsenbord en muis uitzetten">
+						<longdesc>Hiermee wordt bepaald of het blokkeren van toetsenbord en muis uitgeschakeld dient te worden. Op die manier is het mogelijk dat andere X-toepassingen de toetsenbord-invoer onderscheppen; het is dan onmogelijk om bescherming te bieden tegen schadelijke programma&apos;s. </longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

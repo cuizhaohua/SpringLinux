@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libglew1.10
+/usr/share/doc/libglew1.10/changelog.Debian.gz
+/usr/share/doc/libglew1.10/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libGLEW.so.1.10.0
+/usr/lib/arm-linux-gnueabihf/libGLEW.so.1.10

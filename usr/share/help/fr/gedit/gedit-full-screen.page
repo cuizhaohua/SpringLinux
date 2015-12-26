@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Utilisation du mode plein écran</title>
+
+  <p>Lorsque vous travaillez avec un grand document, il peut être utile d'utiliser le mode plein écran de <app>gedit</app>. L'utilisation du mode plein écran masque la <gui>barre des menus</gui>, la <gui>barre des onglets</gui> et la <gui>barre d'outils</gui>, ce qui permet d'afficher une plus grande partie de texte et de mieux vous concentrer sur vos travaux.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Basculement en mode plein écran</title>
+    <p>Pour passer en mode plein écran, appuyez sur <key>F11</key>. Les barres des menus, des onglets et d'outils de <app>gedit</app> disparaissent et seul le texte du fichier actuel s'affiche.</p>
+    <p>Si vous avez besoin de réaliser une action à partir du menu <app>gedit</app> alors que vous travaillez en mode plein écran, déplacez le pointeur de la souris en haut de l'écran. La barre de menus de <app>gedit</app> réapparaît et vous pouvez sélectionner l'action souhaitée.</p>
+
+    <note>
+      <p>Pour basculer entre les onglets ouverts en mode plein écran, appuyez soit sur <keyseq><key>Ctrl</key><key>Alt</key><key>Page haut</key></keyseq> ou <keyseq><key>Ctrl</key><key>Alt</key><key>Page bas</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Sortie du mode plein écran</title>
+    <p>Pour quitter le mode plein écran et retrouver la fenêtre standard de <app>gedit</app>, appuyez sur <key>F11</key>.</p>
+    <p>Vous pouvez aussi déplacer le curseur de la souris en haut de l'écran et attendre que la <gui>barre des menus</gui> apparaisse. Sélectionnez ensuite <gui>Quitter le plein écran</gui>.</p>
+  </section>
+
+</page>

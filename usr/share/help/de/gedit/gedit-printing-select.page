@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-printing-select" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="gedit-printing#printing-order-select"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Phil Bull</name>
+      <email>philbull@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Nur bestimmte Seiten drucken</title>
+
+  <p>Sie können gezielt nur bestimmte Seiten eines Dokuments drucken. Wenn Sie beispielsweise die Seitenzahlen »1,3,5-7,9« eingeben, so werden nur die Seiten 1, 3, 5, 6, 7 und 9 gedruckt. So drucken Sie Seiten Ihrer Wahl:</p>
+
+  <steps>
+   <item>
+    <p>Wählen Sie <guiseq><gui style="menu">Datei</gui><gui style="menuitem">Drucken …</gui></guiseq>.</p>
+   </item>
+   <item>
+    <p>Wählen Sie im Reiter <gui style="tab">Allgemein</gui> des Druckfensters <gui style="radiobutton">Seiten</gui> im Abschnitt <gui style="group">Bereich</gui>.</p></item>
+   <item>
+    <p>Geben Sie die Nummern der zu druckenden Seiten in das Textfeld ein, durch Kommata getrennt. Verwenden Sie einen Bindestrich, um einen zusammenhängenden Bereich anzugeben.</p>
+   </item>
+  </steps>
+
+  <!--TODO: Fix this <media type="image" src="print-select.png"/> -->
+</page>

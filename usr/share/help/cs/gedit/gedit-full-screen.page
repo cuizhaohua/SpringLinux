@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Používání režimu celé obrazovky</title>
+
+  <p>Když pracujete s rozsáhlými dokumenty, může se vám v editoru <app>gedit</app> hodit režim celé obrazovky. Při použití tohoto režimu se skryje <gui>nabídková lišta</gui>, <gui>lišta karet</gui> i <gui>nástrojová lišta</gui> a získáte tak více místa pro svůj text a můžete se lépe zaměřit na vlastní práci.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Zapnutí režimu celé obrazovky</title>
+    <p>Režim celé obrazovky zapnete zmáčknutím <key>F11</key>. Nabídky, záhlaví a lišta karet se v aplikaci <app>gedit</app> skryjí a zobrazen bude čistě text z aktuálního souboru.</p>
+    <p>Pokud se v režimu celé obrazovky potřebujete dostat k nějaké funkci z nabídky <app>gedit</app>, přesuňte ukazatel myši k horní hraně obrazovky. Nabídková lišta se znovu objeví a můžete si vybrat požadovanou položku.</p>
+
+    <note>
+      <p>K přepínání mezi otevřenými kartami v režimu celé obrazovky používejte kombinace kláves <keyseq><key>Ctrl</key><key>Alt</key><key>PageUp</key></keyseq> nebo <keyseq><key>Ctrl</key><key>Alt</key><key>PageDown</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Vypnutí režimu celé obrazovky</title>
+    <p>Pro vypnutí režimu celé obrazovky a návrat k běžnému oknu <app>gedit</app> zmáčkněte <key>F11</key>.</p>
+    <p>Můžete také přesunout ukazatel myši k horní hraně obrazovky a vyčkat, až se objeví <gui>nabídková lišta</gui>. Po té vyberte <gui>Opustit celou obrazovku</gui>.</p>
+  </section>
+
+</page>

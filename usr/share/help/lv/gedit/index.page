@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:e="http://projectmallard.org/experimental/" type="guide" style="2column task" id="index" xml:lang="lv">
+
+  <info>
+    <title type="link">gedit teksta redaktors</title>
+    <title type="text">gedit teksta redaktors</title>
+
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+
+   <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/> 
+
+  </info>
+  
+  <title><media type="image" mime="image/png" src="figures/gedit-icon.png" its:translate="no"/> gedit teksta redaktors</title>
+  <p>Laipni lūgti <app>gedit</app> palīdzības ceļvedī. Īsam ievadam <app>gedit</app> pamatfunkcijās, kā arī sarežģītākās tastatūras saīsnēs, apmeklējiet lapas <link xref="gedit-quickstart">Sākt darbu ar gedit</link> un <link xref="gedit-shortcut-keys">Tastatūras saīsnes</link>.</p>
+
+  <p>Citi palīdzības temati ir sagrupēti nodaļās zemāk. Veiksmi darbā, lietojot <app>gedit</app>!</p>
+
+  <section id="gedit-working-with-files">
+    <title>Strādāšana ar datnēm</title>
+    <links type="topic" groups="first second third fourth fifth sixth last" style="2column"/>
+  </section>
+
+  <section id="configure-gedit" style="2column">
+    <title>Konfigurēt gedit</title>
+  </section> 
+ 
+  <section id="gedit-plugins" style="2column">
+    <title>gedit spraudņi</title>
+  </section>
+
+  <section id="gedit-printing-guide" style="2column">
+    <title>Drukāšana ar gedit</title>
+  </section>
+
+</page>

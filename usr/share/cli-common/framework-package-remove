@@ -1,0 +1,33 @@
+#!/bin/bash
+
+function supports_framework_remove ()
+{
+    echo Checking $1
+    if [ -x $1 ]; then
+	if $1 2>&1 | grep "remove-framework" > /dev/null; then
+	    echo supported
+	    return 0
+	fi
+    fi
+    echo unsupported
+    return 1
+}
+
+# If there is a second argument, it's the only runtime to remove
+if [ -n "$2" ]; then
+    RUNTIMES=/usr/share/cli-common/runtimes.d/$2
+else
+    RUNTIMES=/usr/share/cli-common/runtimes.d/*
+fi
+
+for file in $RUNTIMES
+  do
+  if supports_framework_remove $file ; then
+      # Figure out the formal name
+      F="$($file name)"
+
+      # Remove it
+      echo "Removing $1 from $F"
+      $file remove-framework $1
+  fi
+done

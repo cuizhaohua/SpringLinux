@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libclucene-contribs-lib.so.2.3.3.4
+/usr/share
+/usr/share/doc
+/usr/share/doc/libclucene-contribs1
+/usr/share/doc/libclucene-contribs1/changelog.Debian.gz
+/usr/share/doc/libclucene-contribs1/changelog.gz
+/usr/share/doc/libclucene-contribs1/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libclucene-contribs1
+/usr/lib/arm-linux-gnueabihf/libclucene-contribs-lib.so.1

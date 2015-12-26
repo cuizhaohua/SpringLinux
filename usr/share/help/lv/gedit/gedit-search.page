@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Meklēt tekstu</title>
+  
+    <p>Meklēšanas rīks var palīdzēt atrast datnē konkrētu teksta fragmentu.</p>
+
+    <steps>
+      <title>Teksta meklēšana</title>
+      <item>
+        <p>Atveriet <gui>meklēšanas logu</gui>, izvēloties <guiseq><gui style="menu">Meklēt</gui><gui style="menuitem">Meklēt</gui></guiseq> vai spiežot <keyseq><key>Ctrl</key><key>F</key></keyseq>. Kursors automātiski tiks pārvietots, lai varētu sākt meklēšanu.</p>
+      </item>
+      <item>
+        <p>Ierakstiet tekstu, kuru vēlaties meklēt,  <gui>meklēšanas logā</gui>.</p>
+      </item>
+      <item>
+        <p>Kamēr rakstāt, <app>gedit</app> izcels datnē teksta daļas, kas sakrīt ar ievadīto.</p>
+      </item>
+    </steps>
+    
+    <p>Lai caurskatītu meklēšanas rezultātus, veiciet kādu no šīm darbībām:</p>
+    <list>
+      <item>
+        <p>Izpildiet klikšķi uz <gui style="button">augšup</gui> vai <gui style="button">lejup</gui> vērstās bultas <gui>meklēšanas logā</gui></p>
+      </item>
+      <item>
+        <p>Nospiediet <key>bultiņu augšup</key> vai <key>bultiņu lejup</key> uz tastatūras.</p>
+      </item>
+      <item>
+        <p>Nospiediet <keyseq><key>Ctrl</key><key>G</key></keyseq> vai <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p>
+      </item>
+      <item>
+        <p>Turot nospiestu <key>Ctrl</key> taustiņu, izmantojiet peles vai skārienpaliktņa <key>ritināšanas</key> funkciju.</p>
+      </item>
+    </list>
+
+  <p>Lai aizvērtu <gui>meklēšanas logu</gui>, nospiediet <key>Esc</key> vai <key>Enter</key>. <key>Esc</key> nospiešana atgriezīs kursoru tur, kur tas bija, pirms uzsākāt meklēšanu. <key>Enter</key> nospiešana pārvietos kursoru uz pašreizējo pozīciju meklēšanas rezultātos.</p>
+
+  <list>
+    <title>Meklēšanas padomi</title>
+    <item>
+      <p>Ja kāds teksta fragments ir izcelts (atlasīts), pēc <keyseq><key>Ctrl</key><key>F</key></keyseq> nospiešanas tas parādīsies meklēšanas logā.</p>
+    </item>
+    <item>
+      <p>Lai izmantotu papildu meklēšanas iespējas, spiediet uz <gui>palielināmā stikla</gui> ikonas meklēšanas logā, vai ar spiediet labo peles pogu jebkur meklēšanas logā. Jūs varat izvēlēties vienu vai vairākas meklēšanas opcijas:</p>
+      <list>
+        <item>
+          <p>Izvēlieties <gui>Reģistrjutīgs</gui>, lai meklējot būtu burtu reģistram būtu nozīme.</p>
+        </item>
+        <item>
+          <p>Select <gui>Match Entire Word Only</gui> to search only complete
+          words.</p>
+        </item>
+        <item>
+          <p>Select <gui>Wrap Around</gui> to search text from top to bottom
+          and cycle back again.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>Atrastais teksts paliks izcelts arī pēc meklēšanas beigām. Lai novāktu izcēlumu, izvēlieties <guiseq><gui>Meklēt</gui><gui>Noņemt izcēlumu</gui></guiseq> vai nospiediet <keyseq><key>Ctrl</key><key>Shift</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

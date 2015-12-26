@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libgcr-base-3-1
+/usr/share/doc/libgcr-base-3-1/README
+/usr/share/doc/libgcr-base-3-1/AUTHORS
+/usr/share/doc/libgcr-base-3-1/NEWS.gz
+/usr/share/doc/libgcr-base-3-1/changelog.Debian.gz
+/usr/share/doc/libgcr-base-3-1/changelog.gz
+/usr/share/doc/libgcr-base-3-1/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libgcr-base-3.so.1.0.0
+/usr/lib/arm-linux-gnueabihf/libgcr-base-3.so.1

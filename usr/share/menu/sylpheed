@@ -1,0 +1,8 @@
+?package(sylpheed):\
+needs="X11"\
+section="Applications/Network/Communication"\
+title="Sylpheed"\
+longtitle="Sylpheed Lightweight GTK+ Email Client"\
+hints="GTK+-based Mail and News Client"\
+icon="/usr/share/pixmaps/sylpheed-debian.xpm"\
+command="/usr/bin/sylpheed"

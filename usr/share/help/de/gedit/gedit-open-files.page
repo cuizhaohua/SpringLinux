@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eine Datei oder mehrere Dateien öffnen</title>
+
+  <p>Um eine Datei in <app>gedit</app> zu öffnen, klicken Sie auf den Knopf <gui>Öffnen</gui> oder drücken Sie <keyseq><key>Strg</key><key>O</key></keyseq>.</p>
+  <p>Daraufhin wird der <gui>Dateien öffnen</gui>-Dialog verborgen. Wählen Sie mit der Maus oder der Tastatur die zu öffnende Datei aus und klicken Sie anschließend auf <gui>Öffnen</gui>. Die von Ihnen ausgewählte Datei wird in einem neuen Reiter geöffnet.</p>
+  <p>Um den <gui>Dateien öffnen</gui>-Dialog zu schließen, ohne eine Datei zu öffnen, klicken Sie auf <gui>Abbrechen</gui>.</p>
+
+  <note style="tip"><p>Sie können mit der <key>Strg</key>-Taste und der <key>Umschalttaste</key> mehrere Dateien gleichzeitig öffnen. Halten Sie die <key>Strg</key>-Taste gedrückt, um mehrere Dateien zu öffnen. Ein Klick auf <gui>Öffnen</gui> öffnet dann jede der ausgewählten Dateien</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Durch Gedrückthalten der <key>Umschalttaste</key> werden die erste gewählte Datei, die letzte gewählte Datei und alle in der Ansicht dazwischen liegenden Dateien geöffnet.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

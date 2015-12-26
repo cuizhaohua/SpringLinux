@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Substituindo texto</title>
+
+  <p>A editar de textos pode consumir muito tempo. Para poupar tempo, o <app>gedit</app> inclui a função <app>Substituir</app> que pode ajudá-lo a localizar e substituir partes do texto.</p>
+
+  <steps>
+    <title>Substituindo texto no <app>gedit</app></title>
+    <item>
+      <p>Abra a ferramenta <gui>Substituir</gui> clicando em <guiseq><gui style="menu">Pesquisar</gui><gui style="menuitem">Substituir…</gui></guiseq> ou pressione <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Digite o texto que você deseja substituir no campo <gui>Pesquisar por:</gui>.</p>
+    </item>
+    <item>
+      <p>Digite o texto substituto novo no campo <gui>Substituir por:</gui>.</p>
+    </item>
+    <item>
+      <p>Uma vez que tenha inserido o texto original e texto substituto, você pode adicionar parâmetros extras à pesquisa. Você também pode escolher o que você deseja substituir:</p>
+      <list>
+        <item>
+          <p>Para substituir <em>apenas</em> a próxima ocorrência, clique em <gui>Substituir</gui>.</p>
+        </item>
+        <item>
+          <p>Para substituir <em>todas as ocorrências do texto</em> por todo documento, clique no botão <gui>Substituir todas</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Use a função <gui>Substituir todas</gui> com cuidado. <gui>Substituir todas</gui> funciona sobre a totalidade do seu arquivo de texto, e não permite que você para destacar partes do texto onde a função de substituir serão executadas.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Mais opções</title>
+
+  <p>Se você quiser, você pode adicionar alguns parâmetros extras à sua pesquisa:</p>
+
+  <terms>
+    <item>
+      <title>Diferenciando maiúsculas de minúsculas</title>
+      <p>A opção <em>Diferenciar maiúsculas/minúsculas</em> permite se você deseja que sua pesquisa diferencie caracteres maiúsculos de minúsculos. Se essa opção é selecionada, pesquisas diferenciarão. Do contrário, as pesquisas não diferenciarão.</p>
+    </item>
+    <item>
+      <title>Coincidindo apenas com palavra completa</title>
+      <p>Use esta opção para procurar uma palavra específica, sem incluir fragmentos de outras palavras. Por exemplo, se você procurou pela palavra "and" com esta opção selecionada, a palavra "and" coincidirá, mas as palavras "b<em>and</em>eira" e "com<em>and</em>o" não coincidirão.</p>
+    </item>
+    <item>
+      <title>Pesquisando para trás</title>
+      <p>Esse comando se comporta identicamente ao comando <gui>Localizar anterior</gui>. Se deseja passar por resultados de pesquisa do fim para o inicio, selecione essa opção.</p>
+    </item>
+    <item>
+      <title>Voltando ao início</title>
+      <p>Com a opção <app>Voltar ao início</app> habilitada, o <app>gedit</app> reiniciará a ação de pesquisa/substituição no topo do arquivo depois que tiver chegado ao fim do arquivo. Isso garante que sua ação de pesquisa/substituição é feita no arquivo por inteiro.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Usando sequências de escapes</title>
+
+  <p>Você pode usar <em>sequências de escape</em> para pesquisar por quebras de linhas e tabulações.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Nova linha</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tabulação</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Retorno (carriage return)</p>
+    </item>
+  </terms>
+
+  <p>Se você deseja, na verdade, pesquisar por um <output>\</output> (barra invertida) ou uma da sequências de escapes no texto, você precisa escapar a barra invertida com uma barra invertida extra. Por exemplo, para pesquisar por <input>\</input>, você precisa digitar <input>\\</input> no campo de pesquisar ou de substituir. Você pode pesquisar por sequências de escape da mesma forma: para pesquisar por ou substituir com um <input>\n</input>, use o termo <input>\\n</input>.</p>
+
+</section>
+
+</page>

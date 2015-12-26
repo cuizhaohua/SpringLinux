@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-sort" xml:lang="id">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <credit type="editor">
+    <name>Sindhu S</name>
+    <email>sindhus@live.in</email>
+  </credit>
+  <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  <desc>Urutkan baris-baris teks secara alfabet</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Urutkan</title>
+
+  <p>Plugin Urutkan mengatur baris-baris teks yang dipilih ke dalam urutan alfabetis.</p>
+
+  <note style="warning">
+    <p>Anda tidak bisa memakai fitur <gui>Batalkan</gui> untuk memperbaiki suatu operasi <gui>Urutkan</gui>, sehingga kami sarankan agar Anda menyimpan berkas tepat sebelum melakukan pengurutan. Bila Anda membuat kesalahan dalam pengurutan, Anda dapat kembali ke versi berkas yang sebelumnya disimpan dengan memilih <guiseq><gui>Berkas</gui><gui>Kembalikan</gui></guiseq>.</p>
+</note>
+
+  <section id="enable-sort">
+    <title>Fungsikan Plugin Urutkan</title>
+
+    <p>Untuk memfungsikan plugin <app>Urutkan</app>:</p>
+
+    <steps>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferensi</gui> <gui style="tab">Plugin</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Pilih <gui style="menuitem">Urutkan</gui> untuk memfungsikan plugin.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="using-sort">
+    <title>Memakai Plugin Urutkan</title>
+
+    <p>Untuk memakai plugin <gui>Urutkan</gui>:</p>
+
+    <steps>
+      <item>
+        <p>Seret dan sorot baris teks yang diinginkan.</p>
+      </item>
+      <item>
+        <p>Pilih <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Urutkan</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Dialog <gui>Urutkan</gui> akan terbuka, memungkinkan Anda memilih diantara beberapa opsi pengurutan:</p>
+        <list>
+          <item>
+            <p><gui>Urutan terbalik</gui> akan mengatur teks dalam urutan alfabetis terbalik.</p>
+          </item>
+          <item>
+            <p><gui>Hapus duplikat</gui> akan menghapus nilai yang duplikat dari daftar.</p>
+          </item>
+          <item>
+            <p><gui>Abaikan kapitalisasi</gui> akan mengabaikan perbedaan huruf besar kecil.</p>
+            <note style="tip">
+              <p>Agar pengurutan mengabaikan karakter-karakter di awal baris, atur karakter pertama yang mesti dipakai untuk mengurutkan dalam kotak spin kolom <gui>Mulai pada</gui>.</p>
+            </note>
+          </item>
+        </list>
+      </item>
+      <item>
+        <p>Untuk melakukan operasi pengurutan, klik <gui>Urutkan</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

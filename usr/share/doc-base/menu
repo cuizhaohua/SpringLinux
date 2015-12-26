@@ -1,0 +1,19 @@
+Document: menu
+Title: Debian Menu System Manual
+Author: Joost Witteveen, Joey Hess, Christian Schwarz, Bill Allombert
+Abstract: This manual describes the how packages can register themselves
+ in the Debian Menu, how window-managers can interface with
+ the Menu System to build up-to-date menu files, and how administrators
+ and users can control the generated menus.
+Section: Debian
+
+
+Format: debiandoc-sgml
+Files: /usr/share/doc/menu/menu.sgml.gz
+
+Format: text
+Files: /usr/share/doc/menu/menu.txt.gz
+
+Format: HTML
+Index: /usr/share/doc/menu/html/index.html
+Files: /usr/share/doc/menu/html/*.html

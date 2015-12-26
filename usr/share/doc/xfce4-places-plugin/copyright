@@ -1,0 +1,30 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Diego Ongaro <ongardie@gmail.com>
+Upstream-Name: xfce4-places-plugin
+Source: http://goodies.xfce.org/projects/panel-plugins/xfce4-places-plugin
+
+Files: *
+Copyright: (C) 2007-2008 Diego Ongaro <ongardie@gmail.com>
+License: GPL-2.0+
+
+Files: debian/*
+Copyright: (C) 2007 David Paleino <d.paleino@gmail.com>
+	   (C) 2008 Yves-Alexis Perez <corsac@debian.org>	
+License: GPL-2.0+
+
+License: GPL-2.0+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

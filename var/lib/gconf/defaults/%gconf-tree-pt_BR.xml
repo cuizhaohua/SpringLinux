@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Chaveiro no qual armazenar as senhas">
+						<longdesc>O nome do chaveiro a ser usado pelo gksu. Valores usuais são &quot;session&quot;, que armazena a senha durante a sessão e &quot;default&quot;, que armazena a senha por um tempo ilimitado.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Armazenar a senha no chaveiro do GNOME (gnome-keyring)">
+						<longdesc>O gksu pode armazenar a senha que você digitar no chaveiro do GNOME (gnome-keyring). Assim você não seja perguntado toda vez</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Exibir uma mensagem informativa quando não houver necessidade de senha">
+						<longdesc>Esta opção determina se uma mensagem será exibida informando o usuário que o programa, por alguma razão, está sendo executado sem a necessidade de pedir senha.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Perguntar pela captura">
+						<longdesc>Esta opção fará com que o gksu pergunte ao usuário se ele quer que a tela seja capturada antes de inserir a senha. Note que isso só tem efeito se force-grab (forçar a captura) estiver desabilitado.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Modo sudo">
+						<longdesc>Se o sudo deve ser o método estrutural padrão. Esse método também pode ser utilizado através da opção -S ou executando-se &quot;gksudo&quot; em vez de &quot;gksu&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Forçar a captura do teclado e do mouse">
+						<longdesc>Capturar o teclado e o mouse ainda que -g tenha sido passado como argumento na linha de comando.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Desabilitar a captura do teclado e do mouse">
+						<longdesc>Se a captura do teclado e do mouse deve ser desabilitada. Isso permitirá a outros aplicativos gráficos monitorar eventos de entrada, de modo que não será possível proteger-se de eventuais aplicativos maliciosos que estiverem em execução.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

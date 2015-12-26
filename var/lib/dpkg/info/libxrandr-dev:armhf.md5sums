@@ -1,0 +1,8 @@
+ac623a5001539d91b842efef5ffa8414  usr/include/X11/extensions/Xrandr.h
+83732832db2857bc54feb500581aca86  usr/lib/arm-linux-gnueabihf/libXrandr.a
+42529241bf8e3d17f902dcec6c377f02  usr/lib/arm-linux-gnueabihf/pkgconfig/xrandr.pc
+ed4f51c74f3627f87995a1ae96cf89c6  usr/share/doc/libxrandr-dev/changelog.Debian.armhf.gz
+eb7416ace9f1046163c9425137002624  usr/share/doc/libxrandr-dev/changelog.Debian.gz
+f588bc3da2835c8a476e595638f2ab43  usr/share/doc/libxrandr-dev/changelog.gz
+ec6eae186524f95a612ecc600685f82e  usr/share/doc/libxrandr-dev/copyright
+2fa95e2bba8af1c25a9498e18b0d4e9d  usr/share/man/man3/Xrandr.3.gz

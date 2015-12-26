@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-edit-as-root" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Edit a file as the root user</title>
+
+  <note style="warning">
+    <p>Редактирането на файлове като администратор е много опасно и може да повреди вашата система. Бъдете много внимателни, когато редактирате файлове като администратор.</p>
+  </note>
+
+  <p>За редактиране на файловете като администратор, стартирайте <app>gedit</app> от терминала като въведете:</p>
+  <code>sudo gedit</code>
+
+  <p>Когато използвате командата <cmd>sudo</cmd>, ще е нужно да въведете вашата парола преди да се стартира <app>gedit</app>.</p>
+
+  <p>Като алтернатива на командата <cmd>sudo</cmd>, можете да получите администраторски привилегии като въведете командата:</p>
+  <code>su -</code>
+
+  <p>После можете да стартирате <app>gedit</app> като въведете командата <cmd>gedit</cmd>.</p>
+
+  <note style="tip">
+    <p>Once you have opened <app>gedit</app> with administrative privileges,
+    <app>gedit</app> will keep those privileges until you close it.</p>
+  </note>
+
+</page>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mengganti teks</title>
+
+  <p>Menyunting teks bisa menghabiskan waktu. Untuk menghematnya, <app>gedit</app> menyertakan suatu fungsi <app>Gantikan</app> yang membantu Anda menemukan dan menggantikan bagian dari teks.</p>
+
+  <steps>
+    <title>Mengganti teks dalam <app>gedit</app></title>
+    <item>
+      <p>Buka alat <gui>Gantikan</gui> dengan mengklik <guiseq><gui style="menu">Cari</gui><gui style="menuitem">Ganti…</gui></guiseq> atau tekan <keyseq><key>Ctrl</key><key>H</key></keyseq>.</p>
+    </item>
+    <item>
+      <p>Masukkan teks yang hendak Anda ganti ke dalam ruas <gui>Mencari:</gui>.</p>
+    </item>
+    <item>
+      <p>Masukkan teks pengganti yang baru ke dalam ruas <gui>Ganti dengan:</gui>.</p>
+    </item>
+    <item>
+      <p>Sekali Anda telah memasukkan teks asli dan pengganti, Anda dapat menambah parameter ekstra ke pencarian. Anda juga bisa memilih apa yang ingin Anda gantikan:</p>
+      <list>
+        <item>
+          <p>Untuk mengganti <em>hanya</em> kecocokan berikutnya, klik <gui>Ganti</gui>.</p>
+        </item>
+        <item>
+          <p>Untuk mengganti <em>semua kemunculan</em> dari teks yang dicari, klik <gui>Ganti Semua</gui>.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Pakailah fungsi <gui>Ganti Semua</gui> secara hati-hati. <gui>Ganti Semua</gui> bekerja pada seluruh berkas teks Anda, dan tidak mengijinkan Anda menyorot bagian teks dimana fungsi penggantian akan dilaksanakan.</p>
+  </note>
+
+<section id="replace-options">
+  <title>Lebih banyak opsi</title>
+
+  <p>Bila Anda mau, Anda dapat menambah beberapa parameter ekstra ke pencarian Anda:</p>
+
+  <terms>
+    <item>
+      <title>Cocok huruf besar kecil</title>
+      <p>Opsi <em>Cocok huruf besar/kecil</em> memungkinkan Anda menyatakan apakah Anda ingin pencarian Anda membedakan huruf besar kecil. Bila opsi ini dipilih, pencarian akan membedakan huruf besar kecil. Bila tidak, pencarian tidak membedakan huruf besar kecil.</p>
+    </item>
+    <item>
+      <title>Cocok hanya seluruh kata</title>
+      <p>Pakai opsi ini untuk mencari suatu kata tertentu tanpa menyertakan fragmen dari kata lain. Sebagai contoh, bila Anda mencari kata 'and' dengan opsi ini dipili, kata 'and' akan cocok, tapi kata 's<em>and</em>' dan 'comm<em>and</em>er' tidak akan cocok.</p>
+    </item>
+    <item>
+      <title>Pencarian mundur</title>
+      <p>Perintah ini berperilaku identik dengan perintah Cari Sebelumnya. Bila Anda hendak menelusu melalui hasil pencarian dari akhir ke awal, pilih opsi ini.</p>
+    </item>
+    <item>
+      <title>Putar balik</title>
+      <p>Dengan opsi <app>putar balik</app> difungsikan, <app>gedit</app> akan mengulangi aksi cari/ganti di puncak berkas setelah mencapai bagian bawah berkas. Ini memastikan bahwa aksi cari/ganti Anda dilakukan di seluruh berkas Anda.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Memakai urutan escape</title>
+
+  <p>Anda dapat memakai <em>urutan escape</em> untuk mencari pemutusan baris dan tab.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Ganti baris</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tab</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Carriage return</p>
+    </item>
+  </terms>
+
+  <p>Bila Anda ingin mencari suatu <output>\</output> (backslash) atau satu dari urutan escape dalam teks, Anda perlu meng-escape backslash dengan backslash ekstra. Sebagai contoh, untuk mencari <input>\</input>, Anda perlu memasukkan <input>\\</input> ke dalam ruas cari atau ganti. Anda dapat mencari urutan escape dengan cara yang sama: untuk mencari atau mengganti dengan <input>\n</input>, gunakan istilah <input>\\n</input>.</p>
+
+</section>
+
+</page>

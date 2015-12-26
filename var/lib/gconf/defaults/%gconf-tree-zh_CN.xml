@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="密码将要被保存到的密钥环">
+						<longdesc>gksu 应该使用的密钥环的名称。通常的取值有用于只为当前会话保存的“session”和保存密码而不过期的“default”。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="保存密码到 gnome 密钥环">
+						<longdesc>gksu 能将您输入的密码保存到 GNOME 密钥环从而不会每次都询问您密码</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="不需要密码时显示通知消息">
+						<longdesc>此选项决定在运行由于某种原因不需要询问密码的程序时是否应当显示消息对话框以通知用户。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="提示是否独占">
+						<longdesc>此选项将使 gksu 提示用户在输入密码前是否要独占屏幕。注意这仅在 force-grab 被禁用时有效。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Sudo 模式">
+						<longdesc>是否将 sudo 作为默认的后端方法。否则须通过 -S 开关或运行‘gksudo’而不是‘gksu’来启用。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="强制键盘和鼠标独占">
+						<longdesc>独占键盘和鼠标，即使命令行参数中有 -g 。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="禁用键盘和鼠标独占">
+						<longdesc>是否应当关闭对键盘和鼠标的独占。这将使其它的应用程序能够监听键盘输入事件，因而无法防护可能在运行的恶意程序。</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,27 @@
+/usr/share/fonts: skipping, existing cache is valid: 0 fonts, 2 dirs
+/usr/share/fonts/X11: skipping, existing cache is valid: 0 fonts, 6 dirs
+/usr/share/fonts/X11/100dpi: skipping, existing cache is valid: 358 fonts, 0 dirs
+/usr/share/fonts/X11/75dpi: skipping, existing cache is valid: 358 fonts, 0 dirs
+/usr/share/fonts/X11/Type1: skipping, existing cache is valid: 8 fonts, 0 dirs
+/usr/share/fonts/X11/encodings: skipping, existing cache is valid: 0 fonts, 1 dirs
+/usr/share/fonts/X11/encodings/large: skipping, existing cache is valid: 0 fonts, 0 dirs
+/usr/share/fonts/X11/misc: skipping, existing cache is valid: 61 fonts, 0 dirs
+/usr/share/fonts/X11/util: skipping, existing cache is valid: 0 fonts, 0 dirs
+/usr/share/fonts/truetype: skipping, existing cache is valid: 2 fonts, 7 dirs
+/usr/share/fonts/truetype/arphic: skipping, existing cache is valid: 4 fonts, 0 dirs
+/usr/share/fonts/truetype/dejavu: skipping, existing cache is valid: 21 fonts, 0 dirs
+/usr/share/fonts/truetype/gentium-basic: skipping, existing cache is valid: 8 fonts, 0 dirs
+/usr/share/fonts/truetype/openoffice: skipping, existing cache is valid: 1 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-bitstream-vera: skipping, existing cache is valid: 10 fonts, 0 dirs
+/usr/share/fonts/truetype/ttf-dejavu: skipping, existing cache is valid: 6 fonts, 0 dirs
+/usr/share/fonts/truetype/wqy: skipping, existing cache is valid: 3 fonts, 0 dirs
+/usr/X11R6/lib/X11/fonts: skipping, no such directory
+/usr/local/share/fonts: skipping, existing cache is valid: 0 fonts, 0 dirs
+/.local/share/fonts: skipping, no such directory
+/usr/share/fonts: caching, new cache contents: 0 fonts, 2 dirs
+/usr/X11R6/lib/X11/fonts: skipping, no such directory
+/usr/local/share/fonts: caching, new cache contents: 0 fonts, 0 dirs
+/.local/share/fonts: skipping, no such directory
+/var/cache/fontconfig: cleaning cache directory
+/.cache/fontconfig: not cleaning non-existent cache directory
+fc-cache: succeeded

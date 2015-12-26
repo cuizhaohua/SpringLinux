@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: Daniel Folkinshteyn
+Label: Mozilla .debs packaged by Ubuntuzilla
+Suite: stable
+Codename: all
+Date: Wed, 02 Dec 2015 13:44:36 UTC
+Architectures: i386 amd64
+Components: main
+Description: The Ubuntuzilla repository of Mozilla software
+MD5Sum:
+ 4a3ecc7958511067891130e7fef6ea35 2844 main/binary-i386/Packages
+ bf13a7971ba7288b6179d357420dc85a 893 main/binary-i386/Packages.gz
+ 878368b77bf33e04b575a4db7f9d0e0a 184 main/binary-i386/Release
+ c1871b6d69ee17e9462f0c3e4cda9313 2850 main/binary-amd64/Packages
+ 446fbaa7c8639deeea5a886fb01fc843 891 main/binary-amd64/Packages.gz
+ 0d3919e9078585bba0c73d1cf7d3ba16 185 main/binary-amd64/Release
+SHA1:
+ 0e64e237360f414ba0f5c55da51681e79a47256a 2844 main/binary-i386/Packages
+ c3ca0eae508d1b0170611e8c1302b6f7d4d6d666 893 main/binary-i386/Packages.gz
+ 7fe36b651b9db7b6628e0e67feb06f82c30e7ae7 184 main/binary-i386/Release
+ 3b6ab93ab317a66e03e211929aedfcc5df60500c 2850 main/binary-amd64/Packages
+ c1f07b9ba7c914d80630fc7f60c6f4cf852afe45 891 main/binary-amd64/Packages.gz
+ fdc5ec460738d75f723cbf57496ce7e227ec4495 185 main/binary-amd64/Release
+SHA256:
+ 5291a7262cfd5db1b18299c539b134c3e4f3d1822636c98e3fb171de4c3d2f04 2844 main/binary-i386/Packages
+ 7fefb82722a56ee553e6796a4f7683b22a416cf76552f17ac763271f98ca6612 893 main/binary-i386/Packages.gz
+ ac933c4e4b14030f606d730ced907758cd9b581df1fc4c2d744e3605992746a9 184 main/binary-i386/Release
+ e172910809624eac083104fa879a1c8328e9fc5bb83e6b2f065cfc480968f90c 2850 main/binary-amd64/Packages
+ 492a5916dabf1337cd984cd2fabddb4f619eed6c2101fe7740449f02f8775158 891 main/binary-amd64/Packages.gz
+ 0947f90f4d8b5ed8061950e5747d5549f058e34cb76d6b69a597f68257900a14 185 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iEYEARECAAYFAlZe9cQACgkQzMFYr8EomikT7ACfRwezkS2STLHCIJdBS/eabPjQ
+D0UAoMPiSFEfzp5tu0bA9YOfCbrxfblv
+=m1f5
+-----END PGP SIGNATURE-----

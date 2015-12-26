@@ -1,0 +1,8 @@
+Reporting menu bugs
+-------------------
+
+If you are reporting a bug about the way menus are displayed, please
+provide the name and version of the window manager (or menu manager)
+you use. You can use the output of 
+dpkg-query -l <window manager package name>
+

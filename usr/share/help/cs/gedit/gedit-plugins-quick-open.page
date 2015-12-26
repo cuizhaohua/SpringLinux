@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-quick-open" xml:lang="cs">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision version="3.4" date="2013-02-24" status="review"/>
+    <revision version="3.8" date="2013-04-23" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <desc>Rychlé otevření souboru nebo sady souborů</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Rychle otevřít</title>
+
+  <p>Jak napovídá název tohoto zásuvného modulu <app>Rychle otevřít</app>, pomáhá otevírat soubory rychlejším způsobem, než se soubory běžně otevírají. Povolíte jej pomocí <guiseq><gui style="menu">gedit</gui> <gui>Předvolby</gui> <gui>Zásuvné moduly</gui> <gui>Rychle otevřít</gui></guiseq>.</p>
+    
+  <p>Až máte zásuvný modul <app>Rychle otevřít</app> povolen, můžete jej použít následovně:</p>
+
+  <steps>
+    <item><p>Otevřete dialogové okno <app>Rychlé otevření</app> zmáčknutím <keyseq><key>Ctrl</key> <key>Alt</key> <key>O</key></keyseq> nebo pomocí <guiseq><gui>Soubor</gui> <gui>Rychle otevřít</gui></guiseq>.</p>
+    <p>Objeví se dialogové okno <gui>Rychlé otevření</gui>.</p></item>
+    <item><p>Použijte myš k výběru souboru či souborů, které chcete otevřít.</p>
+    <p>Jestli chcete vybrat několik jednotlivých souborů, držte během klikání na ně zmáčknutou klávesu <key>Ctrl</key>.</p>
+    <p>Pokud chcete vybrat skupinu souborů, klikněte na první soubor, který chcete otevřít, a pak držte zmáčknutý <key>Shift</key> a klikněte na poslední soubor, který chcete otevřít.</p></item>
+    <item><p>Klikněte na <gui>Otevřít</gui>.</p></item>
+  </steps>
+
+  <p><app>Rychlé otevření</app> bude hledat soubory v:</p>
+
+  <list>
+    <item><p>Složce aktuálního otevřeného dokumentu</p></item>
+    <item><p>Kořenové složce zásuvného modulu <app xref="gedit-plugins-file-browser">Panel prolížeče souborů</app></p></item>
+    <item><p>Nedávných dokumentech, které jsou známé také jako složka <file>Nedávné</file> v aplikaci <app>Soubory</app></p></item>
+    <item><p>Složkách, pro které máte v aplikaci <app>Soubory</app> vytvořeny záložky</p></item>
+    <item><p>Vaší složce <file>Plocha</file></p></item>
+    <item><p>Vaší <file>Domovské</file> složce</p></item>
+  </list>
+
+  <note style="tip">
+    <p><app>Rychlé otevření</app> zobrazuje soubory z těchto umístění bez ohledu na to, jestli jste je už dříve měly otevřeny nebo ne.</p>
+  </note>
+
+</page>

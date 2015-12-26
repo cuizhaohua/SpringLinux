@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = remove ]; then
+  # Remove alternatives for figlet
+  update-alternatives --remove figlet /usr/bin/figlet-figlet
+fi
+
+

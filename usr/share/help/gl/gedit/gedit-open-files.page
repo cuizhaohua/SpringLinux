@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-open-files" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="second"/>
+    <link type="seealso" xref="gedit-open-on-server"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <link type="seealso" xref="gedit-open-recent"/>
+    <link type="seealso" xref="gedit-quickstart"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-12" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abrir un ficheiro ou un conxunto de ficheiros</title>
+
+  <p>Para abrir un ficheiro en <app>gedit</app>, prema o botón <gui>Abrir</gui> ou prema <keyseq><key>Ctrl</key><key>O</key></keyseq>.</p>
+  <p>This will cause the <gui>Open</gui> dialog to appear. Use your mouse
+  or keyboard to select the file that you wish to open, and then click
+  <gui>Open</gui>. The file that you've selected will open in a new tab.</p>
+  <p>To close the <gui>Open</gui> dialog without opening a file, click
+  <gui>Cancel</gui>.</p>
+
+  <note style="tip"><p>Pode usar as teclas <key>Ctrl</key> e <key>Maiús</key> para abrir máis dun ficheiro ao mesmo tempo. Se mantén premida a tecla <key>Ctrl</key> mentres seleccionar varios ficheiros, ao premer <gui>Abrir</gui> abrirase cada  un dos ficheiros que seleccionou.</p>
+
+  <!-- Insert Image Here -->
+
+  <p>Mantendo premida a tecla <key>Maíus</key> mentres selecciona varios ficheiros, abrirá o primeiro e o último ficheiro que teña seleccionado e tódolos ficheiros que houbera neles.</p></note>
+
+  <!-- Insert Image Here -->
+
+</page>

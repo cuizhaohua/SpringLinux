@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/python3.4
+/usr/bin/python3.4m
+/usr/share
+/usr/share/binfmts
+/usr/share/binfmts/python3.4
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/python3.4.1.gz
+/usr/share/doc
+/usr/share/doc/python3.4-minimal
+/usr/share/doc/python3.4-minimal/README.Debian
+/usr/share/doc/python3.4-minimal/changelog.Debian.gz
+/usr/share/doc/python3.4-minimal/copyright
+/usr/share/man/man1/python3.4m.1.gz

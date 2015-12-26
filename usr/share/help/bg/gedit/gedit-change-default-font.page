@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="bg">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Избор на шрифт</title>
+
+  <p><app>gedit</app> използва стандартния шрифт на системата, но можете да установите друг, който по-добре отговаря на нуждите ви.</p>
+  
+  <steps>
+    <title>За да изберете шрифт в <app>gedit</app></title>
+      <item><p>Select <guiseq><gui style="menu">gedit</gui>
+      <gui style="menuitem">Preferences</gui>
+      <gui>Font &amp; Colors</gui></guiseq>.</p></item>
+      <item><p>Премахнете отметката до „Използване на системния шрифт с фиксирана широчина“</p></item>
+      <item><p>Click on the current font name. <app>gedit</app> will open
+      a font-chooser window, allowing you to see available fonts and choose the
+      one that you prefer.</p></item>
+      <item><p>After you have chosen a new font, use the <gui>slider</gui>
+      under the list of fonts to set the default font size.</p></item>
+      <item><p>Щракнете <gui>Избор</gui> и после <gui>Затваряне</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

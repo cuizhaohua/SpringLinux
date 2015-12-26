@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="ru">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Настройка и использование модулей gedit</title>
+  <p>Расширить функционал <app>gedit</app> можно с помощью модулей. Некоторые модули установлены по умолчанию, но большое количество других модулей доступны отдельно.</p>
+  
+  <note><p>В большинстве дистрибутивов Linux группа этих модулей доступна в виде пакета <app>gedit-plugins</app>. Чтобы дополнительные модули были доступны в <app>gedit</app>, установите пакет <app>gedit-plugins</app>.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Стандартные модули gedit</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Дополнительные модули gedit</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

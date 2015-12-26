@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libopenal-data
+/usr/share/doc/libopenal-data/changelog.Debian.gz
+/usr/share/doc/libopenal-data/copyright
+/etc
+/etc/openal
+/etc/openal/alsoft.conf

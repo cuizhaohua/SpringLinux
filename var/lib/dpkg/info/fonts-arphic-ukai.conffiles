@@ -1,0 +1,10 @@
+/etc/fonts/conf.avail/90-ttf-arphic-ukai-embolden.conf
+/etc/fonts/conf.avail/25-arphic-ukai-render.conf
+/etc/fonts/conf.avail/41-arphic-ukai.conf
+/etc/fonts/conf.avail/41-ttf-arphic-ukai.conf
+/etc/fonts/conf.avail/35-arphic-ukai-aliases.conf
+/etc/fonts/conf.avail/35-ttf-arphic-ukai-aliases.conf
+/etc/fonts/conf.avail/90-arphic-ukai-embolden.conf
+/etc/fonts/conf.avail/75-ttf-arphic-ukai-select.conf
+/etc/fonts/conf.avail/25-ttf-arphic-ukai-render.conf
+/etc/fonts/conf.avail/75-arphic-ukai-select.conf

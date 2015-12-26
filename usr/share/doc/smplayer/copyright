@@ -1,0 +1,250 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: SMPlayer
+Upstream-Contact: Ricardo Villalba <rvm@escomposlinux.org>
+Source: http://smplayer.sf.net
+
+Files: *
+License: GPL-2+
+Copyright:
+ 2006-2012, Ricardo Villalba <rvm@escomposlinux.org>
+
+Files: debian/*
+License: GPL-2+
+Copyright:
+ 2007, Cyril Breuil <cyrilbport@gmail.com>
+ 2008-2012, Maia Kozheva <sikon@ubuntu.com>
+
+Files:
+ src/myslider.cpp
+ src/myslider.h
+Copyright: 2006-2012, Ricardo Villalba <rvm@escomposlinux.org>
+License: LGPL-2.1+
+
+Files:
+ src/verticaltext.cpp
+ src/verticaltext.h
+Copyright: 2003-2004, Christian Esken <esken@kde.org>
+License: LGPL-2+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this program; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian GNU/Linux systems, the complete text of the GNU Library General
+ Public License version 2 can be found in the file
+ `/usr/share/common-licenses/LGPL-2'.
+
+Files: src/findsubtitles/filedownloader/main.cpp:
+Copyright: 2004-2008, Trolltech ASA
+License: GPL-2 or GPL-3 or other
+ This file is part of the example classes of the Qt Toolkit.
+ .
+ This file may be used under the terms of the GNU General Public
+ License versions 2.0 or 3.0 as published by the Free Software
+ Foundation and appearing in the files LICENSE.GPL2 and LICENSE.GPL3
+ included in the packaging of this file.  Alternatively you may (at
+ your option) use any later version of the GNU General Public
+ License if such license has been publicly approved by Trolltech ASA
+ (or its successors, if any) and the KDE Free Qt Foundation. In
+ addition, as a special exception, Trolltech gives you certain
+ additional rights. These rights are described in the Trolltech GPL
+ Exception version 1.2, which can be found at
+ http://www.trolltech.com/products/qt/gplexception/ and in the file
+ GPL_EXCEPTION.txt in this package.
+ .
+ Please review the following information to ensure GNU General
+ Public Licensing requirements will be met:
+ http://trolltech.com/products/qt/licenses/licensing/opensource/. If
+ you are unsure which license is appropriate for your use, please
+ review the following information:
+ http://trolltech.com/products/qt/licenses/licensing/licensingoverview
+ or contact the sales department at sales@trolltech.com.
+ .
+ In addition, as a special exception, Trolltech, as the sole
+ copyright holder for Qt Designer, grants users of the Qt/Eclipse
+ Integration plug-in the right for the Qt/Eclipse Integration to
+ link to functionality provided by Qt Designer and its related
+ libraries.
+ .
+ This file is provided "AS IS" with NO WARRANTY OF ANY KIND,
+ INCLUDING THE WARRANTIES OF DESIGN, MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE. Trolltech reserves all rights not expressly
+ granted herein.
+ .
+ This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
+ WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+Files: src/findsubtitles/quazip/crypt.h
+Copyright: 1998-2005, Gilles Vollant
+License: infozip
+
+Files: src/findsubtitles/quazip/unzip.c
+Copyright: 1990-2000 Info-ZIP
+License: infozip
+
+Files:
+ src/findsubtitles/quazip/unzip.h
+ src/findsubtitles/quazip/zip.h
+Copyright: 1998-2005, Gilles Vollant
+License: Zlib
+
+Files: src/findsubtitles/maia/
+Copyright: 2010 Sebastian Wiedenroth
+License: BSD-2-clause
+
+Files: src/findsubtitles/quazip/quazip*
+Copyright: 2005-2007, Sergey A. Tachenov
+License: GPL-2+
+
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) version 3, or any
+ later version accepted by the membership of KDE e.V. (or its
+ successor approved by the membership of KDE e.V.), Trolltech ASA
+ (or its successors, if any) and the KDE Free Qt Foundation, which shall
+ act as a proxy defined in Section 6 of version 3 of the license.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library.  If not, see http://www.gnu.org/licenses/.
+ .
+ On Debian GNU/Linux systems, the complete text of the GNU Lesser General
+ Public License version 2.1 can be found in the file
+ `/usr/share/common-licenses/LGPL-2.1'.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA 02110-1301, USA.
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: infozip
+ This software is provided 'as-is', without any express or implied
+ warranty.  In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
+ .
+ This software is provided "as is," without warranty of any kind, express or
+ implied. In no event shall Info-ZIP or its contributors be held liable for any
+ direct, indirect, incidental, special or consequential damages arising out of
+ the use of or inability to use this software.
+ .
+ Permission is granted to anyone to use this software for any purpose, including
+ commercial applications, and to alter it and redistribute it freely, subject to
+ the above disclaimer and the following restrictions:
+ .
+ Redistributions of source code (in whole or in part) must retain the above
+ copyright notice, definition, disclaimer, and this list of conditions.
+ .
+ Redistributions in binary form (compiled executables and libraries) must
+ reproduce the above copyright notice, definition, disclaimer, and this list of
+ conditions in documentation and/or other materials provided with the
+ distribution. Additional documentation is not needed for executables where a
+ command line license option provides these and a note regarding this option is
+ in the executable's startup banner. The sole exception to this condition is
+ redistribution of a standard UnZipSFX binary (including SFXWiz) as part of a
+ self-extracting archive; that is permitted without inclusion of this license, as
+ long as the normal SFX banner has not been removed from the binary or disabled.
+ .
+ Altered versions--including, but not limited to, ports to new operating systems,
+ existing ports with new graphical interfaces, versions with modified or added
+ functionality, and dynamic, shared, or static library versions not from
+ Info-ZIP--must be plainly marked as such and must not be misrepresented as being
+ the original source or, if binaries, compiled from the original source. Such
+ altered versions also must not be misrepresented as being Info-ZIP
+ releases--including, but not limited to, labeling of the altered versions with
+ the names "Info-ZIP" (or any variation thereof, including, but not limited to,
+ different capitalizations), "Pocket UnZip," "WiZ" or "MacZip" without the
+ explicit permission of Info-ZIP. Such altered versions are further prohibited
+ from misrepresentative use of the Zip-Bugs or Info-ZIP e-mail addresses or the
+ Info-ZIP URL(s), such as to imply Info-ZIP will provide support for the altered
+ versions.
+ .
+ Info-ZIP retains the right to use the names "Info-ZIP," "Zip," "UnZip,"
+ "UnZipSFX," "WiZ," "Pocket UnZip," "Pocket Zip," and "MacZip" for its own source
+ and binary releases.
+
+License: Zlib
+ Condition of use and distribution are the same than zlib :
+ .
+ This software is provided 'as-is', without any express or implied
+ warranty.  In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+ claim that you wrote the original software. If you use this software
+ in a product, an acknowledgment in the product documentation would be
+ appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+ misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+ .
+    1. Redistributions of source code must retain the above copyright notice, this list of
+       conditions and the following disclaimer.
+ .
+    2. Redistributions in binary form must reproduce the above copyright notice, this list
+       of conditions and the following disclaimer in the documentation and/or other materials
+       provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ The views and conclusions contained in the software and documentation are those of the
+ authors and should not be interpreted as representing official policies, either expressed
+ or implied, of the author.

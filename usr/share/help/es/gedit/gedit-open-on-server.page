@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-on-server" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="sixth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Abrir un archivo ubicado en un servidor</title>
+
+  <p>Antes de abrir un archivo desde un servidor con <app>gedit</app>, necesita conocer cierta información técnica sobre el servidor. Por ejemplo, necesita saber la dirección IP o el URL del servidor, y puede necesitar conocer qué tipo de servidor es (ej. HTTP, FTP, etc.).</p>
+
+  <p>Además, algunos tipos de servidores imponen restricciones sobre qué puede hacer con los archivos almacenados en el servidor. Por ejemplo, puede ser capaz de abrir un archivo de un servidor, pero puede necesitar guardar los cambios en el archivo de manera local, o en su propio equipo.</p>
+
+  <p>Con estas advertencias en mente, realice los siguientes pasos para abrir un archivo desde un servidor usando <app>gedit</app>:</p>
+
+    <steps>
+      <item><p>Seleccione <guiseq><gui>Archivo</gui><gui>Abrir</gui></guiseq> para mostrar el diálogo <gui>Abrir archivos</gui>.</p></item>
+      <item><p>Seleccione el icono <gui>Lápiz</gui> en la parte superior del diálogo <gui>Abrir archivos</gui>.</p></item>
+      <item><p>Introduzca la dirección IP o el URL del servidor apropiado.</p></item>
+      <item><p>Buscar y seleccionar el archivo que quiere abrir.</p></item>
+      <item><p>Use la lista desplegable «Codificación de caracteres» para seleccionar la codificación de caracteres apropiada.</p></item>
+      <item><p>Pulse <gui>Abrir</gui>.</p></item>
+    </steps>
+
+  <p>Los tipos de URI válidos incluyen http:, ftp:, file: y todos los métodos soportados por <app>gnome-vfs</app>.</p>
+
+  <note>
+    <p>Archivos desde algunos tipos de URI se abren como sólo lectura, y cualquier cambio que realice deberá guardarlo en una ubicación diferente. Por ejemplo, HTTP sólo permite lectura de archivos. Los archivos abiertos desde FTP son de sólo lectura porque no todos los servidores FTP trabajan correctamente con guardado remoto de archivos.</p>
+  </note>
+
+</page>

@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmono-security4.0-cil
+/usr/share/doc/libmono-security4.0-cil/changelog.Debian.gz
+/usr/share/doc/libmono-security4.0-cil/copyright
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/gac
+/usr/lib/mono/gac/Mono.Security
+/usr/lib/mono/gac/Mono.Security/4.0.0.0__0738eb9f132ed756
+/usr/lib/mono/gac/Mono.Security/4.0.0.0__0738eb9f132ed756/Mono.Security.dll
+/usr/lib/mono/4.5
+/usr/lib/mono/4.0
+/usr/lib/mono/4.0/Mono.Security.dll
+/usr/lib/mono/4.5/Mono.Security.dll

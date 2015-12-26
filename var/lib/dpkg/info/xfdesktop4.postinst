@@ -1,0 +1,92 @@
+#!/bin/sh
+
+set -e
+
+# Remove a no-longer used conffile
+rm_conffile() {
+    CONFFILE="$1"
+
+    if [ -e "$CONFFILE" ]; then
+        md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+        old_md5sum="`dpkg-query -W -f='${Conffiles}' $PKGNAME | sed -n -e \"\\\\' $CONFFILE '{s/ obsolete$//;s/.* //p}\"`"
+
+        if [ "$md5sum" != "$old_md5sum" ]; then
+            echo "Obsolete conffile $CONFFILE has been modified by you."
+            echo "Saving as $CONFFILE.dpkg-bak ..."
+            mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+        else
+            echo "Removing obsolete conffile $CONFFILE ..."
+            rm -f "$CONFFILE"
+        fi
+    fi
+}
+
+case "$1" in
+install|upgrade)
+    if dpkg --compare-versions "$2" le "4.4.2"; then
+        rm_conffile "/etc/menu-methods/xfdesktop4"
+        rm_conffile "/etc/xdg/xfce4/desktop/menudefs.hook"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.be"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.ca"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.cs"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.da"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.de"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.el"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.es"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.et"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.eu"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.fi"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.fr"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.he"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.hu"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.it"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.ja"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.ko"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.nb_NO"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.nl"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.pa"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.pl"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.pt_BR"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.ro"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.ru"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.sk"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.sv"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.tr"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.uk"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.vi"
+        rm_conffile "/etc/xdg/xfce4/desktop/menu.xml.zh_TW"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.ca"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.cs"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.de"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.el"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.es"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.eu"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.fi"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.fr"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.he"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.hu"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.it"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.ja"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.nb_NO"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.nl"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.pl"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.pt_BR"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.ro"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.ru"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.sk"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.sv"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.tr"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.zh_CN"
+        rm_conffile "/etc/xdg/xfce4/desktop/xfce-registered-categories.xml.zh_TW"
+    fi
+esac
+
+
+# Automatically added by dh_installmenu
+if [ "$1" = "configure" ] && [ -x "`which update-menus 2>/dev/null`" ]; then
+	update-menus
+fi
+# End automatically added section
+

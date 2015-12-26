@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="error" xml:lang="cs">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>Použití přepínače <cmd>--error</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s chybovým hlášením</title>
+      <p>K vytvoření dialogového okna s chybovým hlášením použijte přepínač <cmd>--error</cmd>.</p>
+
+      <p>Následující příklad skriptu ukazuje, jak vytvořit dialogové okno s chybovým hlášením:</p>
+
+<code>
+#!/bin/bash
+
+zenity --error \
+--text="Nelze najít /var/log/syslog."
+</code>
+
+
+      <figure id="zenity-error-screenshot">
+        <title>Příklad dialogového okna s chybovým hlášením</title>
+        <desc>Ukázka dialogového okna <app>Zenity</app> s chybovým hlášením</desc>
+        <media type="image" mime="image/png" src="figures/zenity-error-screenshot.png"/>
+      </figure>
+</page>

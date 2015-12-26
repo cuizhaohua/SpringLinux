@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmono-system-configuration4.0-cil
+/usr/share/doc/libmono-system-configuration4.0-cil/changelog.Debian.gz
+/usr/share/doc/libmono-system-configuration4.0-cil/copyright
+/usr/lib
+/usr/lib/mono
+/usr/lib/mono/gac
+/usr/lib/mono/gac/System.Configuration
+/usr/lib/mono/gac/System.Configuration/4.0.0.0__b03f5f7f11d50a3a
+/usr/lib/mono/gac/System.Configuration/4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+/usr/lib/mono/4.5
+/usr/lib/mono/4.0
+/usr/lib/mono/4.0/System.Configuration.dll
+/usr/lib/mono/4.5/System.Configuration.dll

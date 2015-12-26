@@ -1,0 +1,422 @@
+Package: astromenace
+Description-md5: 7c917fc438581d4d2c23163e30ce5289
+Description-en: hardcore 3D space shooter with spaceship upgrade possibilities
+ AstroMenace is an astonishing hardcore scroll-shooter where brave space
+ warriors may find a great opportunity to hone their combat skills.
+ Gather money during the battle to spend them on turning your spaceship
+ into an ultimate weapon of mass destruction and give hell to swarms of
+ adversaries. Enjoy the wonderfully crafted 3d graphics and high-quality
+ special effects along with a detailed difficulty adjustment and a handy
+ interface of AstroMenace.
+
+Package: boinc-amd-opencl
+Description-md5: 6e0625247955d16f5c815fea6934b5fa
+Description-en: metapackage for AMD/ATI OpenCL-savvy BOINC client and manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (righteously) often find it an unbearable nuisance to
+ care for the configuration of BOINC for the OpenCL-savvy AMD/ATI
+ graphics cards.  This package adds a series of dependencies from the
+ non-free section to the regular boinc package. This also meant this
+ binary package to be redistributed in the contrib section of Debian.
+ .
+ This package is not perfect, yet. A major problem for the moment
+ is the availability of the OpenCL driver for 32bit binaries for
+ amd64. If this is planned, install the amd-app package provided
+ through the AMD developer forum.
+
+Package: boinc-nvidia-cuda
+Description-md5: 9384e2173f2ed43c0d057c1770da614c
+Description-en: metapackage for CUDA-savvy BOINC client and manager
+ The Berkeley Open Infrastructure for Network Computing (BOINC) is a
+ software platform for distributed computing: several initiatives of
+ various scientific disciplines all compete for the idle time of
+ desktop computers. The developers' web site at the University of
+ Berkeley serves as a common portal to the otherwise independently run
+ projects.
+ .
+ Regular users (righteously) often find it an unbearable nuisance to
+ care for the exact configuration of BOINC for CUDA-savvy graphics
+ cards. This package adds a series of dependencies from the non-free
+ section to the regular boinc package. This also meant this binary
+ package to be redistributed in the contrib section of Debian.
+
+Package: bumblebee-nvidia
+Description-md5: 1590560d4120c0dce5a765cdd8ec59b7
+Description-en: NVIDIA Optimus support using the proprietary NVIDIA driver
+ This metapackage ensures that the proprietary NVIDIA driver is installed in a
+ way such that 3D acceleration does not break. It does so by configuring the
+ OpenGL library path to use the Mesa graphics library.
+
+Package: glx-alternative-fglrx
+Description-md5: e8f7c11cb884cb4b9667693d4083bb72
+Description-en: allows the selection of FGLRX as GLX provider
+ In setups with several GLX providers (e.g. the free MESA implementation and
+ proprietary graphics hardware vendor implementations) this metapackage
+ allows one to switch to the non-free FGLRX driver and libraries.
+ .
+ Use 'update-alternatives --config glx' to select an implementation.
+ .
+ This package does not depend on the corresponding FGLRX libraries.
+ In order to install the FGLRX driver and libraries, install the fglrx-glx and
+ fglrx-driver packages instead.
+
+Package: glx-alternative-mesa
+Description-md5: 200ca6b44a4c106706c118acdc5ff487
+Description-en: allows the selection of MESA as GLX provider
+ In setups with several GLX providers (e.g. the free MESA implementation and
+ proprietary graphics hardware vendor implementations) this metapackage
+ allows one to switch back to MESA.
+ .
+ Use 'update-alternatives --config glx' to select an implementation.
+ .
+ This package does not depend on the corresponding MESA libraries.
+ In order to install the MESA libraries, install the libgl1-mesa-glx package
+ instead.
+
+Package: glx-alternative-nvidia
+Description-md5: 7ab05334273271d45d4ba5eb2d8d22d0
+Description-en: allows the selection of NVIDIA as GLX provider
+ In setups with several GLX providers (e.g. the free MESA implementation and
+ proprietary graphics hardware vendor implementations) this metapackage
+ allows one to switch to the non-free NVIDIA driver and libraries.
+ .
+ Use 'update-alternatives --config glx' to select an implementation.
+ .
+ This package does not depend on the corresponding NVIDIA libraries.
+ In order to install the NVIDIA driver and libraries, install the
+ nvidia-driver package instead.
+
+Package: glx-diversions
+Description-md5: 11d73a2c74770f5f3371f8803595735d
+Description-en: prepare for using accelerated GLX implementations from GPU vendors
+ Diverts the free libGL.so implementation (MESA) and the xserver module
+ libglx.so (Xorg), preparing the system for plugging in accelerated
+ implementations from GPU vendors via alternatives, see the
+ glx-alternative-* packages.
+
+Package: gns3
+Description-md5: 2697ef1d40fd47e3020ae5c02b56c046
+Description-en: Graphical Network Simulator
+ GNS3 is a graphical network simulator that allows simulation of
+ complex networks and to launch simulations on them. It is an excellent
+ complementary tool to real labs for administrators of Cisco networks
+ or people wanting to pass their CCNA, CCNP, CCIP or CCIE certifications.
+ It can also be used to experiment with features of Cisco IOS or to check
+ configurations that need to be deployed later on real routers.
+ .
+ You may configure devices ranging from Cisco routers, Cisco PIX firewalls,
+ Cisco ASA Firewalls, Cisco IDS to JunOS routers using Qemu or Pemu. GNS3
+ uses dynamips as an emulation back end, an IOS emulator which allows users
+ to run IOS binary images from Cisco Systems.
+ .
+ Cisco IOS, PIX, ASA or JunOS software images are not included.
+
+Package: iucode-tool
+Description-md5: 85b8e9a4d04e1dafc3c5baa7e46a23a4
+Description-en: Intel processor microcode tool
+ iucode_tool is a program to manipulate Intel® X86 and X86-64 processor
+ microcode collections, and to use the kernel facilities to upgrade the
+ microcode on Intel system processors.
+ .
+ It can load microcode data files in text and binary format, sort, list and
+ filter the microcodes contained in these files, write selected microcodes to a
+ new file in binary format, or upload them to the kernel.
+ .
+ It operates on non-free microcode data downloaded directly from Intel or
+ installed by the intel-microcode package.
+
+Package: java-package
+Description-md5: c033e8bfaf32e7c8cc20160f00f8d9cc
+Description-en: Utility for creating Java Debian packages
+ This package provides the capability to build a Debian package from
+ a Java binary distribution by running make-jpkg <java binary archive file>.
+ (with archive files downloaded from providers listed below)
+ .
+ Supported java binary distributions currently include:
+   * Oracle (http://www.oracle.com/technetwork/java/javase/downloads) :
+     - The Java Development Kit (JDK), version 6, 7 and 8
+     - The Java Runtime Environment (JRE), version 6, 7 and 8
+     - The Java API Javadoc, version 6, 7 and 8
+ (Choose tar.gz archives or self-extracting archives, do _not_ choose the RPM!)
+ .
+ Please note that Debian recommends the use of openjdk-7-jdk/openjdk-7-jre.
+ java-package will install non-free packages.
+
+Package: nvidia-modprobe
+Description-md5: 681d2ef8dc157284d3ffc1ee5f3b75f7
+Description-en: utility to load NVIDIA kernel modules and create device nodes
+ This setuid program is used to create NVIDIA Linux device files and load the
+ NVIDIA kernel module, on behalf of NVIDIA Linux driver components which may
+ not have sufficient privileges to perform these actions on their own.
+
+Package: libxnvctrl-dev
+Description-md5: 71c9cd04112d6cef6a0d35dd8ec66dd8
+Description-en: NV-CONTROL X extension (development files)
+ The NV-CONTROL X extension provides a mechanism for X clients to
+ query and set configuration parameters of the NVIDIA X driver.
+ State set by the NV-CONTROL X extension is assumed to be persistent
+ only for the current server generation.
+
+Package: libxnvctrl0
+Description-md5: 6d4f8aebac836277193a58e922a49603
+Description-en: NV-CONTROL X extension (runtime library)
+ The NV-CONTROL X extension provides a mechanism for X clients to
+ query and set configuration parameters of the NVIDIA X driver.
+ State set by the NV-CONTROL X extension is assumed to be persistent
+ only for the current server generation.
+ .
+ This package contains the shared library.
+
+Package: nvidia-settings
+Description-md5: d6ff1b5a311dc3f000c62ad0eab8b14f
+Description-en: tool for configuring the NVIDIA graphics driver
+ The nvidia-settings utility is a tool for configuring the NVIDIA
+ Linux graphics driver.  It operates by communicating with the NVIDIA
+ X driver, querying and updating state as appropriate.  This
+ communication is done with the NV-CONTROL X extension.
+ Values such as brightness and gamma, XVideo attributes, temperature,
+ and OpenGL settings can be queried and configured via nvidia-settings.
+
+Package: nvidia-settings-legacy-173xx
+Description-md5: d1bce6a8f769b5648c1379558c892656
+Description-en: tool for configuring the NVIDIA graphics driver (173xx legacy version)
+ The nvidia-settings utility is a tool for configuring the NVIDIA
+ Linux graphics driver.  It operates by communicating with the NVIDIA
+ X driver, querying and updating state as appropriate.  This
+ communication is done with the NV-CONTROL X extension.
+ Values such as brightness and gamma, XVideo attributes, temperature,
+ and OpenGL settings can be queried and configured via nvidia-settings.
+
+Package: nvidia-settings-legacy-304xx
+Description-md5: f537b2b6aa0c3c1b5fccd8df00ac71b5
+Description-en: tool for configuring the NVIDIA graphics driver (304xx legacy version)
+ The nvidia-settings utility is a tool for configuring the NVIDIA
+ Linux graphics driver.  It operates by communicating with the NVIDIA
+ X driver, querying and updating state as appropriate.  This
+ communication is done with the NV-CONTROL X extension.
+ Values such as brightness and gamma, XVideo attributes, temperature,
+ and OpenGL settings can be queried and configured via nvidia-settings.
+
+Package: nvidia-settings-legacy-96xx
+Description-md5: a9fe5278a496b58e1efe241c863cda34
+Description-en: tool for configuring the NVIDIA graphics driver (96xx legacy version)
+ The nvidia-settings utility is a tool for configuring the NVIDIA
+ Linux graphics driver.  It operates by communicating with the NVIDIA
+ X driver, querying and updating state as appropriate.  This
+ communication is done with the NV-CONTROL X extension.
+ Values such as brightness and gamma, XVideo attributes, temperature,
+ and OpenGL settings can be queried and configured via nvidia-settings.
+
+Package: nvidia-installer-cleanup
+Description-md5: a7e93baeef316d8ae4a7474c8bcd35d5
+Description-en: cleanup after driver installation with the nvidia-installer
+ This package ensures that no remnants of the non-free NVIDIA graphics
+ drivers that were installed with the nvidia-installer remain on the
+ system. Such an installation conflicts with the packaged drivers.
+ .
+ Furthermore using the nvidia-installer to install a new version of the
+ drivers is prevented as long as this package is installed.
+
+Package: nvidia-kernel-common
+Description-md5: 08e163be5ed51d6f89e7d5dda78f4651
+Description-en: NVIDIA binary kernel module support files
+ This package contains support files used for any version of the NVIDIA
+ kernel module. It sets up udev and ConsoleKit rules, ensures the NVIDIA
+ control device is created, associates the NVIDIA card with the correct
+ kernel module, and performs any other tasks required for the module to
+ work properly.
+
+Package: nvidia-support
+Description-md5: 943d1592a97e18d9a44c62914b34b0c1
+Description-en: NVIDIA binary graphics driver support files
+ This package contains support files needed for all current and legacy
+ versions of the non-free NVIDIA graphics drivers. These include scripts
+ used for warning about a mismatching version of the kernel module or for
+ creating a minimal xorg.conf to enable the NVIDIA driver.
+
+Package: nvidia-xconfig
+Description-md5: e257cfd7e0ccee6ce217ff8d95a27b62
+Description-en: X configuration tool for non-free NVIDIA drivers
+ The nvidia-xconfig program helps with manipulation of X configuration
+ files, primarily for systems that use the non-free drivers provided by
+ NVIDIA.  It automatically changes the configuration to use the NVIDIA
+ driver and can add additional options given on the command line.
+
+Package: onionshare
+Description-md5: cf7eb40c92bfe04f791d46e22677864e
+Description-en: Share a file over Tor Hidden Services anonymously and securely.
+ OnionShare lets you securely and anonymously share a file of any size with
+ someone. It works by starting a web server, making it accessible as a Tor
+ hidden service, and generating an unguessable URL to access and download
+ the file. It doesn't require setting up a server on the Internet somewhere
+ or using a third party filesharing service. You host the file on your own
+ computer and use a Tor hidden service to make it temporarily accessible
+ over the Internet. The other user just needs to use the Tor Browser and
+ to enter the URL to download the file from you.
+
+Package: pepperflashplugin-nonfree
+Description-md5: 308421c13180fc4cf682be0755dca66d
+Description-en: Pepper Flash Player - browser plugin
+ This package will download Chrome from Google, and unpack it to make the
+ included Pepper Flash Player available for use with Chromium.  The end user
+ license agreement is available at Google.
+
+Package: redeclipse
+Description-md5: 66f3f18253fa5179aee393c47a78544a
+Description-en: multiplayer FPS game based on Cube2
+ A single-player and multi-player first-person ego-shooter, built on Cube
+ Engine 2, which lends itself toward a balanced gameplay, completely at the
+ control of map makers, while maintaining a general theme of agility in a
+ variety of environments.
+ .
+ Features:
+  * Balanced gameplay, with a general theme of agility in a variety of
+    environments
+  * Parkour, impulse boosts, dashing, sliding, and other tricks
+  * Favourite gamemodes with tons of mutators and variables
+  * Available for Windows, Linux/BSD and Mac OSX
+  * Builtin editor lets you create your own maps cooperatively online
+
+Package: redeclipse-dbg
+Description-md5: 472a3994437308850b2d85085b11423f
+Description-en: debug symbols for the Red Eclipse FPS game
+ This package contains the debugging symbols for the Red Eclipse FPS game.
+
+Package: redeclipse-server
+Description-md5: 315338a2439def5a06eb51a250e84e31
+Description-en: server for the Red Eclipse FPS game
+ This package contains the dedicated server for the Red Eclipse FPS game, it
+ also includes some example scripts for configuring the server. It contains no
+ init integration.
+
+Package: redeclipse-server-dbg
+Description-md5: 845a03d775cde2c92ef0a0d918bdbf50
+Description-en: debug symbols for the Red Eclipse dedicated server
+ This package contains the debugging symbols for the dedicated server of the
+ Red Eclipse FPS game.
+
+Package: torbrowser-launcher
+Description-md5: a2c6e1e2b71558a7ee26f9813f4f843c
+Description-en: helps download, update and run the Tor Browser Bundle
+ Tor Browser Launcher is intended to make the Tor Browser Bundle (TBB) easier
+ to maintain and use for GNU/Linux users. torbrowser-launcher handles
+ downloading the most recent version of TBB for you, in your language and for
+ your architecture. It also adds a "Tor Browser" application launcher to your
+ operating system's menu.
+ .
+ When you first launch Tor Browser Launcher, it will download TBB from
+ https://www.torproject.org/ and extract it to ~/.local/share/torbrowser,
+ and then execute it.
+ Cache and configuration files will be stored in ~/.cache/torbrowser and
+ ~/.config/torbrowser.
+ Each subsequent execution after installation will simply launch the most
+ recent TBB. Tor Browser will be fetched, verified and unpacked each time a new
+ version of TBB is released. When you open Tor Browser Launcher after an update,
+ it will download the newer version of TBB for you and extract it over your old
+ TBB directory in ~/.local/share/torbrowser, so you will maintain your TBB
+ bookmarks.
+
+Package: virtualbox
+Description-md5: 30f96d22c1a6ca04db16bdc1e79ad965
+Description-en: x86 virtualization solution - base binaries
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the binaries for VirtualBox. Either the virtualbox-dkms
+ or the virtualbox-source package is also required in order to compile the
+ kernel modules needed for virtualbox. A graphical user interface for
+ VirtualBox is provided by the package virtualbox-qt.
+
+Package: virtualbox-dbg
+Description-md5: b271b8956187eca407d52354cf368938
+Description-en: x86 virtualization solution - debugging symbols
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the debugging symbols for VirtualBox.
+
+Package: virtualbox-dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+Description-en: x86 virtualization solution - kernel module sources for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox kernel module to be
+ build with dkms. Kernel sources or headers are required to compile this
+ module.
+
+Package: virtualbox-guest-dkms
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+Description-en: x86 virtualization solution - guest addition module source for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules to be build with dkms. Kernel sources or headers are required to
+ compile these modules.
+
+Package: virtualbox-guest-source
+Description-md5: fd60384a9f99f9f360a9dcc85b3fd6cc
+Description-en: x86 virtualization solution - guest addition module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules. The virtualbox-guest-utils package is also required in order to
+ make use of these modules. Kernel sources or headers are required to compile
+ these modules.
+
+Package: virtualbox-guest-utils
+Description-md5: 0c420aa026ad03a572b15c6e38dbebf7
+Description-en: x86 virtualization solution - non-X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the non-X11 guest utilities for VirtualBox. These
+ utilities are meant to be run inside the virtual machine.
+ They provide closer integration and allow to share data through shared folders
+ between the host system and the virtual machine.
+
+Package: virtualbox-guest-x11
+Description-md5: 3487afde0b114ec7e205b11f1dd3f7a5
+Description-en: x86 virtualization solution - X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the X11 guest utilities for VirtualBox. These utilities
+ are meant to be run inside the virtual machine.
+ They provide closer integration and improve the interactive performance.
+
+Package: virtualbox-qt
+Description-md5: 41ed29f36ba23b3ce0155f9a8efcff60
+Description-en: x86 virtualization solution - Qt based user interface
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the Qt based graphical user interface for VirtualBox.
+
+Package: virtualbox-source
+Description-md5: acc86918ad52775dbe11e2ad558ba197
+Description-en: x86 virtualization solution - kernel module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox kernel module.
+ The virtualbox package is also required in order to make use of these
+ modules. Kernel sources or headers are required to compile this module.
+

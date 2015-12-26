@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usar o modo a pantalla completa</title>
+
+  <p>Cando traballe con un documento grande, pode resultarlle útil traballar no modo a pantalla completa de <app>gedit</app>. Usando o modo a pantalla completa ocultarase a <gui>barra de menú</gui>, a <gui>barra de lapelas</gui> e a <gui>barra de ferramentas</gui>, mostrándolle máis texto e permitíndolle centrarse mellor nas súas tarefas.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Abrir o modo a pantalla completa</title>
+    <p>To turn on fullscreen mode, press <key>F11</key>. <app>gedit's</app>
+    menu, title, and tab-bars will hide, and you will only be presented with
+    the text of your current file.</p>
+    <p>Se precisa realizar unha acción desde o menú de <app>gedit</app> mentres traballa en modo a pantalla completa, mova o cursor do seu rato até a parte superior da pantalla. A barra de menú de <app>gedit</app> reaparecerá, e poderá seleccionar a acción que queira.</p>
+
+    <note>
+      <p>Para cambiar entre lapelas en modo a pantalla completa, prema <keyseq><key>Ctrl</key><key>Alt</key><key>Re Páx</key></keyseq> ou <keyseq><key>Ctrl</key><key>Alt</key><key>Av Páx</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Desactivar o modo a pantalla completa</title>
+    <p>Para desactivar o modo a pantalla completa e volver á xanela estándar de <app>gedit</app> prema <key>F11</key>.</p>
+    <p>Tamén pode move o cursor do seu rato á parte superior da pantalla e agardar que apareza a <gui>barra de menú</gui>. Cando apareza a <gui>barra de menú</gui> seleccione <gui>Deixar pantalla completa</gui>.</p>
+  </section>
+
+</page>

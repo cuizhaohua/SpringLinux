@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+# Automatically added by dh_installxfonts
+if which update-fonts-dir >/dev/null 2>&1; then
+	update-fonts-dir --x11r7-layout misc
+fi
+# End automatically added section
+
+
+XFS_PKG="none"
+
+# Have a look which one is installed.
+if [ -x /etc/init.d/xfs ]; then
+	XFS_PKG="xfs"
+elif [ -x /etc/init.d/xfs-xtt ]; then
+	XFS_PKG="xfs-xtt"
+fi
+
+# Exit if no xfs variant is installed.
+if [ "$XFS_PKG" = "none" ]; then
+	exit 0
+fi
+
+# Force-reload the xfs variant.
+if which invoke-rc.d >/dev/null 2>&1; then
+	invoke-rc.d $XFS_PKG force-reload
+else
+	/etc/init.d/$XFS_PKG force-reload
+fi
+
+exit 0

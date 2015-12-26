@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="fr">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Untz</mal:name>
+      <mal:email>vuntz@gnome.org</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonathan Ernst</mal:name>
+      <mal:email>jonathan@ernstfamily.ch</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Philippe Lefevre</mal:name>
+      <mal:email>ph.l@libertysurf.fr</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Bliard</mal:name>
+      <mal:email>christophe.bliard@trux.info</mal:email>
+      <mal:years>2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2007-2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luc Pionchon</mal:name>
+      <mal:email>pionchon.luc@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011-2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alexandre Franke</mal:name>
+      <mal:email>alexandre.franke@gmail.com</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2013.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Organisation des fichiers dans des onglets groupés</title>
+
+  <p>Lorsque vous travaillez avec de nombreux onglets dans <app>gedit</app>, vous pouvez les grouper pour améliorer l'organisation des fichiers ouverts. Ajouter un nouveau groupe d'onglets divise la fenêtre de <app>gedit</app> en deux panneaux, ouvre un nouveau « Document sans nom 1 » dans le deuxième et le rend actif. Vous pouvez alors ouvrir des fichiers dans ce nouveau groupe d'onglets et déplacer les onglets d'un groupe à un autre.</p>
+
+<section id="open-new-tab-group">
+  <title>Ouverture d'un nouveau groupe d'onglets dans la fenêtre gedit</title>
+
+  <p>Pour ouvrir un nouveau groupe d'onglets :</p>
+
+  <list>
+    <item>
+      <p>Allez dans <guiseq><gui>Documents</gui><gui>Nouveau groupe d'onglets</gui></guiseq> du menu principal.</p>
+    </item>
+    <item>
+      <p>Ou bien utilisez le raccourci <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Cette action divise la fenêtre de <app>gedit</app> en deux parties, le nouveau panneau du nouveau groupe d'onglets se trouvant à droite de l'onglet actif. Vous pouvez redimensionner selon vos besoins les panneaux de la fenêtre de <app>gedit</app> à l'aide des poignées droite ou gauche.</p>
+
+  <p>Vous pouvez ouvrir autant de groupes d'onglets dans la fenêtre de <app>gedit</app> que votre écran peut en contenir, en sachant malgré tout qu'il vous faudra les redimensionner à l'aide des poignées pour les voir correctement.</p>
+
+  <p>Pour fermer un panneau contenant un groupe d'onglets, fermez tous les onglets s'y trouvant.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Déplacements entre des groupes d'onglets</title>
+
+  <p>Pour avancer vers le groupe d'onglets suivant :</p>
+
+  <list>
+    <item>
+      <p>Allez dans <guiseq><gui>Documents</gui><gui>Groupe d'onglets suivant</gui></guiseq> du menu principal.</p>
+    </item>
+    <item>
+      <p>Ou bien faites le raccourci <keyseq><key>Ctrl</key><key>Alt</key><key>Page bas</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Pour revenir vers le groupe d'onglets précédent :</p>
+
+  <list>
+    <item>
+      <p>Allez dans <guiseq><gui>Documents</gui><gui>Groupe d'onglets précédent</gui></guiseq> du menu principal.</p>
+    </item>
+    <item>
+      <p>Ou bien faites le raccourci <keyseq><key>Ctrl</key><key>Alt</key><key>Page haut</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Déplacement d'un onglets vers un autre groupe</title>
+
+  <p>Pour déplacer un onglets vers un autre groupe :</p>
+
+  <steps>
+    <item>
+      <p>cliquez sur l'onglet sans relâcher le bouton de la souris,</p>
+    </item>
+    <item>
+      <p>faites glisser l'onglet dans un autre groupe d'onglets,</p>
+    </item>
+    <item>
+      <p>positionnez-le à côté d'un des autres onglets de l'autre groupe,</p>
+    </item>
+    <item>
+      <p>relâchez le bouton de la souris.</p>
+    </item>
+  </steps>
+
+  <p>Consultez le tableau des <link xref="gedit-shortcut-keys">Raccourcis clavier</link> pour des raccourcis facilitant la gestion de vos groupes d'onglets.</p>
+
+</section>
+
+</page>

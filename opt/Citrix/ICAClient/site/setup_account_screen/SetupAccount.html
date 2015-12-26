@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <style type="text/css">
+            /* Needed to make fullscreen . */
+            .fullscreen-pane {
+                /* CSS trick to ensure that the element fills the visible screen */
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                overflow: hidden; /* Prevent scrolling */
+                display: none; /* Hide all panes by default */
+            }
+
+            /* Needed to set the background. */
+            .web-screen {
+                background-image: url(ReceiverFullScreenBackground.jpg);
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+<body class="store-view" style="cursor: default;">
+    
+    <section style="display: block;" class="logoff-view scrollable fullscreen-pane web-screen">
+    </section>
+</body>
+</html>

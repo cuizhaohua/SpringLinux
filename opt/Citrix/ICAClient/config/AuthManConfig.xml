@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<dict>
+        <!-- TracingEnabled - true, false -->
+	<key>TracingEnabled</key>
+	<value>false</value>
+	<!-- LoggingMode - none, normal, verbose -->
+	<key>LoggingMode</key>
+	<value>normal</value>
+	<!-- CardReaderDetectionType - SCardGetStatusChange, PollReaders -->
+	<key>SessionTypeOverride</key>
+	<value></value>
+	<!-- PKCS11module - name of file in $ICAROOT/PKCS#11, full path (without environment variables) -->
+	<key>PKCS11module</key>
+	<value></value>
+	<!-- SmartCardRemovalAction - what to do when smart card removed - noaction, forcelogoff -->
+	<key>SmartCardRemovalAction</key>
+	<value></value>
+</dict>

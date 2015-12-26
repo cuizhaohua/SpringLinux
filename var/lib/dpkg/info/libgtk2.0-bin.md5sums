@@ -1,0 +1,8 @@
+80a83034c4bb4df42a288ee762d96b47  usr/sbin/update-icon-caches
+b28a69ea48afea0baa396cbbdea26b28  usr/share/doc/libgtk2.0-bin/changelog.Debian.gz
+779aed7ad5b7a1630eb18ca1ad47e7e6  usr/share/doc/libgtk2.0-bin/changelog.gz
+ee33a72106fe2d531df2659d6d2ec914  usr/share/doc/libgtk2.0-bin/copyright
+756ea460c96143a224dee73cee85cfe1  usr/share/man/man1/gtk-query-immodules-2.0.1.gz
+ca8285439134649de70192fb8da7b071  usr/share/man/man1/gtk-update-icon-cache.1.gz
+b21da927243a058c5a7b8189e8c32b13  usr/share/man/man7/gtk-options.7.gz
+7a8d5cc34c66f4b3cc0fe1a08067946c  usr/share/man/man8/update-icon-caches.8.gz

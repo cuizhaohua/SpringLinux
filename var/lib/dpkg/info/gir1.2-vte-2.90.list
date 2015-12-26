@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/gir1.2-vte-2.90
+/usr/share/doc/gir1.2-vte-2.90/README
+/usr/share/doc/gir1.2-vte-2.90/AUTHORS
+/usr/share/doc/gir1.2-vte-2.90/NEWS.gz
+/usr/share/doc/gir1.2-vte-2.90/changelog.Debian.gz
+/usr/share/doc/gir1.2-vte-2.90/changelog.gz
+/usr/share/doc/gir1.2-vte-2.90/copyright
+/usr/lib
+/usr/lib/girepository-1.0
+/usr/lib/girepository-1.0/Vte-2.90.typelib

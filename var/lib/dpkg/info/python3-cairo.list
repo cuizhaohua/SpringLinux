@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-cairo
+/usr/share/doc/python3-cairo/changelog.Debian.armhf.gz
+/usr/share/doc/python3-cairo/changelog.Debian.gz
+/usr/share/doc/python3-cairo/copyright
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/cairo
+/usr/lib/python3/dist-packages/cairo/__init__.py
+/usr/lib/python3/dist-packages/cairo/_cairo.cpython-34m-arm-linux-gnueabihf.so

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="file-selection" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--file-selection</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>文件选择对话框</title>
+    <p>使用 <cmd>--file-selection</cmd> 选项创建一个文件选择对话框。<app>Zenity</app> 在标准输出返回选中的文件或目录。默认的文件选择对话框模式是打开对话框。</p>
+    <p>文件选择对话框支持以下选项：</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>文件名</var></title>
+	<p>指定文件选择对话框在第一次显示时，选定的文件或文件夹。</p>
+      </item>
+
+      <item>
+	<title><cmd>--multiple</cmd></title>
+	<p>允许在文件选择对话框里选中多个文件名。</p>
+      </item>
+
+      <item>
+	<title><cmd>--directory</cmd></title>
+	<p>在文件选择对话框里只允许选中文件夹。</p>
+      </item>
+
+      <item>
+	<title><cmd>--save</cmd></title>
+	<p>设置文件选择对话框模式为保存对话框。</p>
+      </item>
+
+      <item>
+	<title><cmd>--separator</cmd>=<var>分隔符</var></title>
+	<p>指定用于分隔返回的文件名列表的字符。</p>
+      </item>
+
+    </terms>
+
+    <p>下面的脚本示范了如何创建一个文件选择对话框：</p>
+
+<code>
+#!/bin/sh
+
+FILE=`zenity --file-selection --title="选择文件"`
+
+case $? in
+         0)
+                 echo "\"$FILE\" 被选中。";;
+         1)
+                 echo "没有选择文件。";;
+         -1)
+                 echo "发生意外错误。";;
+esac
+</code>
+
+    <figure id="zenity-fileselection-screenshot">
+      <title>文件选择对话框范例</title>
+      <desc><app>Zenity</app> 文件选择对话框范例</desc>
+      <media type="image" mime="image/png" src="figures/zenity-fileselection-screenshot.png"/>
+    </figure>
+</page>

@@ -1,0 +1,5 @@
+?package(rhythmbox):needs="X11" \
+ section="Applications/Sound" \
+ title="Rhythmbox" \
+ command="/usr/bin/rhythmbox" \
+ icon="/usr/share/pixmaps/rhythmbox-small.xpm"

@@ -1,0 +1,33 @@
+This directory contains some examples of /etc/menu-methods scripts.
+
+These are just that: examples. The files here are included to show
+you how to write menu-methods, or to copy them to the
+window-manager you're maintaining (please check them if you do!)
+if you're not interested in all that, but just want to have menus
+you're probably better of using any of the window-managers that
+work together with menu already (olvwm, fvwm2, afterstep, wm2, pdmenu...)
+
+The menu-methods in this directory, all use the "!include" feature, which
+means, that by changing the definitions in /etc/menu-methods/menu.h, you can
+change the look of all menus in all window managers (that use these new
+features).
+
+For more info on the menu-methods themselves, read /usr/share/doc/menu/html.
+
+Some of the menu-methods in this directory use the "rcfile" stuff
+(grep "examplercfile" $f; to see). If they do, then you'll also need to
+copy the corresponding system.$wm-menu file to the right directory
+(see "examplercfile" def, along with rootdir).
+
+***************************
+The 9wm window manager:
+   If you want to get Debian menus, you should type
+   
+     /etc/X11/9wm/system.9wmrc --start /Debian
+   
+   and the menus will appear in the 9wm menu (mouse 3).
+   
+   Also, if you, for example, select Apps/Games/Puzzles/xtriangles,
+   then, apart from MainMenu, you'll also have an entry for
+   Apps, Games and Puzzles in your 9wm menu. I don't know 
+   how to fix this (or if it should be "fixed").

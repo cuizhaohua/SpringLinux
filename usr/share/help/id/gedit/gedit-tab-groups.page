@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tab-groups" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tabs-moving"/>
+    <link type="seealso" xref="gedit-shortcut-keys"/>
+    <revision pkgversion="3.8" date="2013-06-19" status="draft"/>
+
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Organisasikan berkas dalam tab terkelompok</title>
+
+  <p>Bila Anda bekerja dengan multi tab dalam <app>gedit</app> Anda dapat mengelompokkan mereka, membuat jadi lebih mudah untuk mengorganisasi berkas Anda yang terbuka. Menambahkan suatu grup tab baru akan membagi jendela <app>gedit</app> ke dalam dua panel, buka suatu "Dokumen Tanpa Judul" dalam panel baru, dan jadikan itu aktif. Anda dapat membuka berkas ke dalam grup tab itu dan memindah tab dari satu grup tab ke lainnya.</p>
+
+<section id="open-new-tab-group">
+  <title>Buka suatu grup tab baru dalam jendela gedit</title>
+
+  <p>Untuk membuka suatu grup tab baru Anda bisa:</p>
+
+  <list>
+    <item>
+      <p>Pergi ke <guiseq><gui>Dokumen</gui><gui>Grup Tab Baru</gui></guiseq> dalam menu utama.</p>
+    </item>
+    <item>
+      <p>Pakai pintasan <keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Aksi ini akan membagi jendela <app>gedit</app> ke dalam dua panel, dan panel dengan grup tab baru akan ditempatkan di kanan tab aktif. Anda dapat memindah pegangan ke kanan atau kiri yang memberi ruang lebih atau kurang dari jendela <app>gedit</app> antara panel-panel sesuai kebutuhan Anda.</p>
+
+  <p>Anda dapat membuka grup tab dalam jendela <app>gedit</app> sebanyak mungkin yang diijinkan oleh layar Anda, tapi Anda mesti menggeser pegangan agar dapat melihat mereka dengan benar.</p>
+
+  <p>Untuk menutup suatu panel grup tab tutup saja semua tab yang terbuka di dalamnya.</p>
+
+</section>
+
+<section id="moving-through-tab-groups">
+  <title>Berpindah di antara grup tab</title>
+
+  <p>Untuk memindah maju ke grup tab (selanjutnya):</p>
+
+  <list>
+    <item>
+      <p>Pergi ke <guiseq><gui>Dokumen</gui><gui>Grup Tab Selanjutnya</gui></guiseq> dalam menu utama.</p>
+    </item>
+    <item>
+      <p>Pakai pintasan <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq>.</p>
+    </item>
+  </list>
+
+  <p>Untuk memindah maju ke grup tab (sebelumnya):</p>
+
+  <list>
+    <item>
+      <p>Pergi ke <guiseq><gui>Dokumen</gui><gui>Grup Tab Sebelumnya</gui></guiseq> dalam menu utama.</p>
+    </item>
+    <item>
+      <p>Pakai pintasan <keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq>.</p>
+    </item>
+  </list>
+
+</section>
+
+<section id="moving-tabs-among-groups">
+  <title>Memindah suatu tab ke grup tab lain</title>
+
+  <p>Bila Anda ingin memindah suatu tab dari satu grup tab ke lainnya:</p>
+
+  <steps>
+    <item>
+      <p>Klik dan tahan tombol tetikus pada tab.</p>
+    </item>
+    <item>
+      <p>Seret tab ke panel grup tab lain.</p>
+    </item>
+    <item>
+      <p>Tempatkan itu di sebelah tab lain di dalam grup tab.</p>
+    </item>
+    <item>
+      <p>Lepas tombol tetikus.</p>
+    </item>
+  </steps>
+
+  <p>Lihat tabel <link xref="gedit-shortcut-keys">tombol pintasan terkait tab</link> agar lebih mudah mengelola grup tab Anda.</p>
+
+</section>
+
+</page>

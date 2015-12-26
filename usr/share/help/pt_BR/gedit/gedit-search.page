@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pesquisando por texto</title>
+  
+    <p>A ferramenta de <gui>Localizar</gui> pode ajudá-lo a localizar sequências específicas de texto no seu arquivo.</p>
+
+    <steps>
+      <title>Localizando texto</title>
+      <item>
+        <p>Abra a <gui>janela de pesquisa</gui> clicando em <guiseq><gui style="menu">Pesquisar</gui><gui style="menuitem">Localizar</gui> </guiseq> ou pressionando <keyseq><key>Ctrl</key><key>F</key></keyseq>. Isso irá mover seu cursor para começo da <gui>janela de pesquisa</gui>.</p>
+      </item>
+      <item>
+        <p>Digite o texto que deseja pesquisar na <gui>janela de pesquisa</gui>.</p>
+      </item>
+      <item>
+        <p>Enquanto você digita, o <app>gedit</app> irá começar a destacar as partes do texto que correspondem com a que você digitou.</p>
+      </item>
+    </steps>
+    
+    <p>Para rolar pelos resultados de pesquisa, faça qualquer uma das ações a seguir:</p>
+    <list>
+      <item>
+        <p>Clique nas setas apontando para <gui style="button">cima</gui> ou para <gui style="button">baixo</gui> próximas a <gui>janela de pesquisa</gui>.</p>
+      </item>
+      <item>
+        <p>Pressione as teclas <key>seta para cima</key> ou <key>seta pra baixo</key> no seu teclado.</p>
+      </item>
+      <item>
+        <p>Pressione <keyseq><key>Ctrl</key><key>G</key></keyseq> ou <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Pressione <key>Ctrl</key> e use o recurso de <key>rolagem</key> do seu mouse ou touchpad para mover para cima ou para baixo através do texto.</p>
+      </item>
+    </list>
+
+  <p>Para fechar a <gui>janela de pesquisa</gui>, pressione <key> Esc</key> ou <key>Enter</key>. Pressionando <key>Esc</key> irá retornar o cursor para onde estava antes de você começar a sua pesquisa. Pressionando <key>Enter</key> irá retornar o cursor para a posição atual nos resultados da pesquisa.</p>
+
+  <list>
+    <title>Dicas de pesquisa</title>
+    <item>
+      <p>Se você destacar uma porção do texto com seu mouse e então pressionar <keyseq><key>Ctrl</key><key>F</key></keyseq>, o texto que você destacou irá aparecer na janela de pesquisa.</p>
+    </item>
+    <item>
+      <p>Para mais opções de pesquisa, você pode clicar no ícone de <gui style="button">Lupa</gui> na janela de pesquisa ou pode clicar com o botão direito em qualquer parte da janela de pesquisa. Você pode selecionar uma ou mais das seguintes opções de pesquisa:</p>
+      <list>
+        <item>
+          <p>Selecione <gui>Diferenciar maiúsculas/minúsculas</gui> para tornar a pesquisa sensível a caixa de texto maiúscula ou minúscula.</p>
+        </item>
+        <item>
+          <p>Selecione <gui>Coincidir apenas com palavra completa</gui> para pesquisar apenas palavras completas.</p>
+        </item>
+        <item>
+          <p>Selecione <gui>Voltar ao início</gui> para pesquisar o texto de cima para baixo e retornar novamente.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>O texto pelo qual você pesquisou permanecerá destacado pelo gedit, ainda depois que você tiver completado sua pesquisa. Para remover o destaque, clique em <guiseq><gui>Pesquisar</gui><gui>Limpar Pesquisa</gui></guiseq> ou pressione <keyseq><key>Ctrl</key><key>Shift</key><key>N</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

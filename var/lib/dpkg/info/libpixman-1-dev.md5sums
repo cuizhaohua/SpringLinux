@@ -1,0 +1,7 @@
+8c28e43837016105a3ce2b21f9254209  usr/include/pixman-1/pixman-version.h
+186d75ab934bdb5b463af52167cbff27  usr/include/pixman-1/pixman.h
+4d025f80b7ba9e3adcb7db8e9f0f479a  usr/lib/arm-linux-gnueabihf/libpixman-1.a
+8f7ea57696ff25ff6eaeb456bb8a756a  usr/lib/arm-linux-gnueabihf/pkgconfig/pixman-1.pc
+a3f7b86461dc8aa1388b7597d123d960  usr/share/doc/libpixman-1-dev/changelog.Debian.gz
+8799ae35ad96435fe80597f14dc1f003  usr/share/doc/libpixman-1-dev/changelog.gz
+d8676ec98895998ca800f67a0ab8e8a1  usr/share/doc/libpixman-1-dev/copyright

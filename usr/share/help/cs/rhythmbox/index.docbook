@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.11.5">
+<!ENTITY manrevision "2.0.3">
+<!ENTITY date "May 2008">
+<!ENTITY app "Rhythmbox Music Player">
+<!ENTITY mdash "&#8212;">
+]>
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.2
+  Last modified: October 02, 2002
+  Maintainers:
+               Mark Finlay <sisob@eircom.net>
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.3
+  Last modified: August 08, 2003
+  Maintainers:
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.4
+  Last modified: October 01, 2005
+  Maintainers:
+	       Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Hudební přehrávač Rhythmbox</title>
+	<copyright><year>2002</year> <holder>Mark Finlay</holder></copyright>
+        <copyright><year>2002</year> <year>2002</year> <holder>Mark Humphreys</holder></copyright>
+	<copyright><year>2005</year> <year>2006</year> <holder>Baptiste Mille-Mathias</holder></copyright>
+	<copyright><year>2006</year> <holder>Victor Osadci</holder></copyright>
+	<copyright><year>2008</year> <holder>Dean Sas</holder></copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	<publisher>
+	 	<publishername>Dokumentační projekt GNOME</publishername>
+	</publisher>
+
+   
+
+  <legalnotice id="legalnotice">
+	<para>Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License (GFDL) ve verzi 1.1 nebo v jakékoli další verzi vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopii licence GFDL naleznete pod <ulink type="help" url="help:fdl">tímto odkazem</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou.</para>
+         <para>Tato příručka je součástí sbírky příruček GNOME šířených za podmínek licence GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte přiložit kopii licence dle popisu v oddílu 6 dané licence.</para>
+
+	<para>Mnoho užívaných názvů určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“, BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ, NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL, NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, NESETE VY. POKUD JE TENTO DOKUMENT NEBO JEHO UPRAVENÁ VERZE VADNÁ V JAKÉMKOLIV SMYSLU, VY (NIKOLIV PŮVODCE, AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE ODPOVĚDNOST ZA JAKÉKOLIV NÁKLADY NA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ PODLE TÉTO DOHODY POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+   other legal stuff such as "NO WARRANTY" statement. Please do not change
+   any of this. -->
+   <authorgroup>
+   		<author><firstname>Mark</firstname> <surname>Finlay</surname> <affiliation> <orgname>Dokumentační projetk GNOME</orgname> <address><email>sisob@eircom.net</email></address> </affiliation></author>
+		<author><firstname>Mark</firstname> <surname>Humphreys</surname> <affiliation> <orgname>Dokumentační projekt GNOME</orgname> <address><email>marquee@users.sourceforge.net</email></address> </affiliation></author>		
+		<author role="maintainer"><firstname>Baptiste</firstname> <surname>Mille-Mathias</surname> <affiliation> <orgname>Dokumentační projekt GNOME</orgname> <address><email>baptiste.millemathias@gmail.com</email></address> </affiliation></author>
+		<author><firstname>Victor</firstname> <surname>Osadci</surname> <affiliation> <orgname>Dokumentační projekt GNOME</orgname> <address><email>Victor.Osadci.GNOME@xhtml.md</email></address> </affiliation></author>
+		<author><firstname>Dean</firstname> <surname>Sas</surname> <affiliation> <orgname>Dokumentační projekt Ubuntu</orgname> <address><email>dean@deansas.org</email></address> </affiliation></author>
+   </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+   <revhistory>
+      <revision><revnumber>Příručka V0.0.2 k hudebnímu přehrávači Rhythmbox</revnumber> <date>říjen 2002</date> <revdescription> 
+	  		<para role="author">Mark Finlay</para>
+	  		<para role="publisher">Dokumentační projekt GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Příručka V0.0.3 k hudebnímu přehrávači Rhythmbox</revnumber> <date>srpen 2003</date> <revdescription> 
+	  		<para role="author">Mark Humphreys</para>
+	  		<para role="publisher">Dokumentační projekt GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Příručka V0.0.4 k hudebnímu přehrávači Rhythmbox</revnumber> <date>říjen 2005</date> <revdescription> 
+	  		<para role="author">Baptiste Mille-Mathias</para>
+	  		<para role="publisher">Dokumentační projekt GNOME</para>
+		</revdescription></revision> 
+      <revision><revnumber>Příručka V2.0.2 k hudebnímu přehrávači Rhythmbox</revnumber> <date>duben 2006</date> <revdescription> 
+	  		<para role="author">Luca Ferretti</para>
+	  		<para role="publisher">Dokumentační projekt GNOME</para>
+		</revdescription></revision> 
+	  <revision><revnumber>Příručka V2.0.3 k hudebnímu přehrávači Rhythmbox</revnumber> <date>květen 2008</date> <revdescription>
+			<para role="author">Dean Sas</para>
+			<para role="publisher">Dokumentační projekt GNOME</para>
+        </revdescription></revision>
+    </revhistory> 
+
+    <releaseinfo>Tato příručka popisuje hudební přehrávač Rhythmbox ve verzi 0.11.5</releaseinfo> 
+    <legalnotice> 
+      <title>Ohlasy</title> 
+      <para>Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci Rhythmbox nebo této příručce, postupujte dle instrukcí na stránce <ulink url="ghelp:gnome-feedback" type="help">Stránka s ohlasy na GNOME</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+   <abstract role="description">
+     <para>Rhythmbox je plně vybavený hudební přehrávač pro prostředí GNOME.</para>
+   </abstract>
+
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Martin Picek</firstname>
+      </personname>
+      <email>picek.martin@gnome-cesko.cz</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2009</year>
+      
+      <holder>Martin Picek</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Lucas Lommer</firstname>
+      </personname>
+      <email>llommer@svn.gnome.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2009</year>
+      
+        <year>2010</year>
+      
+      <holder>Lucas Lommer</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Marek Černocký</firstname>
+      </personname>
+      <email>marek@manet.cz</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2013</year>
+      
+      <holder>Marek Černocký</holder>
+    </copyright>
+  </articleinfo> 
+
+
+  <indexterm zone="index"><primary>Rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>rhythmbox</primary></indexterm>
+  <indexterm zone="index"><primary>Hudební přehrávač</primary></indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="introduction">
+    <title>Úvod</title>
+      <para><application>Hudební přehrávač Rhythmbox</application> je hudební přehrávač a knihovna pro oštítkované soubory, který podporuje nejrůznější hudební formáty.</para>
+      <para>Funkce <application>hudebního přehrávače Rhythmbox</application> v současné době zahrnují:</para>
+      	<itemizedlist>
+          <listitem>
+            <para>Přehrávání souborů z vaší popsané kolekce v nejrůznějších hudebních formátech.</para>
+          </listitem>
+          <listitem>
+            <para>Zobrazování informací o skladbách díky čtení metadat.</para>
+          </listitem>
+          <listitem>
+            <para>Tříděné zobrazování skladeb.</para>
+          </listitem>
+          <listitem>
+            <para>Vytváření statických seznamů skladeb přetahováním skladeb z kolekce.</para>
+          </listitem>
+          <listitem>
+            <para>Vytváření automatických seznamů skladeb dle pravidel.</para>
+          </listitem>
+          <listitem>
+            <para>Vyhledávání skladeb v seznamu zdrojů, jako jsou Kolekce nebo Seznamy skladeb.</para>
+          </listitem>
+          <listitem>
+            <para>Poslech stanic internetových rádií.</para>
+          </listitem>
+          <listitem>
+            <para>Čtení hudebních CD a získávání informací, jako je název skladby, o nich z Internetu.</para>
+          </listitem>
+          <listitem>
+            <para>Vypalování hudebních CD ze seznamů skladeb.</para>
+          </listitem>
+          <listitem>
+            <para>Přenos souborů do přehrávačů iPod, MTP a zažízeni USB Mass Storage.</para>
+          </listitem>
+        </itemizedlist>
+  </sect1>
+  <sect1 id="rb-getting-started">
+  	<title>Začínáme</title>
+	
+		<sect2 id="rb-launch">
+			<title>Spuštění <application>hudebního přehrávače Rhythmbox</application></title>
+			<para><application>Hudební přehrávač Rhythmbox</application> lze spustit následujícími způsoby: <variablelist>
+					<varlistentry>
+						<term>Nabídka <guimenu>Aplikace</guimenu></term>
+						<listitem>
+							<para>Vyberte <menuchoice><guisubmenu>Zvuk a video</guisubmenu><guimenuitem>Hudební přehrávač Rhythmbox</guimenuitem></menuchoice>.</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term>Příkazový řádek</term>
+						<listitem>
+							<para>Zadejte <command>rhythmbox</command> a zmáčkněte <keycap>Enter</keycap>.</para>
+						</listitem>
+					</varlistentry>
+				</variablelist></para>
+		</sect2>
+		<sect2 id="rb">
+			<title>Spuštění průvodce</title>
+			<para>Když poprvé spustíte <application>hudební přehrávač Rhythmbox</application>, průvodce vám pomůže importovat vaši hudbu. Ve druhé části průvodce zmáčkněte tlačítko <guibutton>Procházet</guibutton> a vyberte složku, ve které je uložena vaše hudba.</para>
+		</sect2>
+  </sect1>
+  <sect1 id="rb-window">
+    <title>Okno hudebního přehrávače Rhythmbox</title>
+    <sect2 id="rb-window-intro">
+      <title>Přehled</title>
+      	<para>Okno <application>hudebního přehrávače Rhythmbox</application> umožňuje procházet a přehrávat vaši oblíbenou hudbu. <xref linkend="fig-rb-window"/> zobrazuje <application>hudební přehrávač Rhythmbox</application> a jeho hlavní komponenty.</para>
+      	<figure id="fig-rb-window">
+        <title>Okno <application>hudebního přehrávače Rhythmbox</application></title>
+        <screenshot>
+          <mediaobject><imageobject> <imagedata fileref="figures/rb-window.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje okno <application>Hudební přehrávač Rhythmbox</application> zobrazující různé části uživatelského rozhraní <application>hudebního přehrávače Rhythmbox</application>. Nazývají se: nabídková lišta, oblast přehrávání, prohlížeč, postranní panel, stavová lišta. </phrase> </textobject></mediaobject>
+        </screenshot>
+      </figure>
+      <para>Tabulka 1 popisuje komponenty okna <application>hudebního přehrávače Rhythmbox</application>.</para>
+      <table frame="topbot" id="table-rb-window">
+        <title>Komponenty okna <application>hudebního přehrávače Rhythmbox</application></title>
+        <tgroup cols="3" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <colspec colname="COLSPEC2"/>
+          <thead>
+            <row rowsep="1">
+              <entry valign="top">Číslo</entry>
+              <entry valign="top">Komponenta</entry>
+              <entry valign="top">Popis</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry valign="top">1</entry>
+              <entry valign="top">Nabídková lišta</entry>
+              <entry valign="top">Obsahuje nabídky, které používáte k provádění činností v okně <application>hudebního přehrávače Rhythmbox</application>.</entry>
+            </row>
+            <row>
+              <entry valign="top">2</entry>
+              <entry valign="top">Nástrojová lišta</entry>
+              <entry valign="top">Poskytuje přítup k funkcím přehrávače a podrobnostem týkajících se právě přehrávané skladby.</entry>
+            </row>
+            <row>
+              <entry valign="top">3</entry>
+              <entry valign="top">Časové táhlo</entry>
+              <entry valign="top">Znázorňuje pozici v přehrávané skladbě a umožňuje přechod na jinou pozici.</entry>
+            </row>
+            <row>
+              <entry valign="top">4</entry>
+              <entry valign="top">Postranní panel</entry>
+              <entry valign="top">Zobrazuje seznam dostupných zdrojů.</entry>
+
+            </row>
+            <row>
+              <entry valign="top">5</entry>
+              <entry valign="top">Prohlížeč</entry>
+              <entry valign="top">Umožňuje procházet skladby v kolekci a třídit je podle žánru, jména umělce a názvu alba. Prohlížeč také poskytuje vyhledávání, pomocí něhož se zobrazují jen skladby odpovídající zadaným kritériím.</entry>
+            </row>
+            <row>
+              <entry valign="top">6</entry>
+              <entry valign="top">Seznam skladeb</entry>
+              <entry valign="top">Vypisuje skladby patřící vybranému zdroji.</entry>
+            </row>
+            <row>
+              <entry valign="top">7</entry>
+              <entry valign="top">Stavová lišta</entry>
+              <entry valign="top">Zobrazuje informace o zdroji vybraném v postranním panelu.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="intro-sourcelist">
+      <title>Postranní panel</title>
+      <para>Postranní panel je prostor, z něhož můžete přistupovat ke své hudební kolekci, internetovým rádiím, seznamům skladeb a hudebním CD. Seznam zdrojů může obsahovat následující zdroje: <itemizedlist>
+				  <listitem><para>Kolekce <application>hudebního přehrávače Rhythmbox</application>, kde se zobrazují všechny importované skladby.</para></listitem>
+				  <listitem><para>Zdroj Rádio se všemi stanicemi internetových rádií.</para></listitem>
+				  <listitem><para>Podcasty.</para></listitem>
+				  <listitem><para>Všechny seznamy skladeb (běžné i automatické).</para></listitem>
+				  <listitem><para>Hudební CD vložená do příslušných mechanik počítače.</para></listitem>
+				  <listitem><para>Přenosné přehrávače jako iPod připojené k vašemu počítači.</para></listitem>
+				  <listitem><para>Sdílení hudby DAAP nalezená na lokální síti.</para></listitem>
+				  <listitem><para>Hudební obchody jako Jamendo a Magnatune.</para></listitem>
+				</itemizedlist></para>
+      	<para>Zobrazení seznamu zdrojů může být zapnuto nebo vypnuto zaškrtnutím nebo odškrtnutím <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Postranní panel</guimenuitem></menuchoice>.</para>
+    </sect2>
+    <sect2 id="player-toolbar">
+      <title>Nástrojová lišta přehrávače</title>
+      <para>Oblast nástrojové lišty poskytuje přístup k podrobnostem týkajícím se právě přehrávané skladby. Pokud se žádná skladba nepřehrává, tato oblast nezobrazuje žádné informace. Pokud se přehrává, je zobrazen název skladby a pod ním jméno umělce a název alba.</para>
+      <para>Je zobrazeno také táhlo zobrazující průběh přehrávání skladby. Je-li táhlo zaměřeno, šipky vlevo a vpravo mohou skladbu převíjet.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje oblast přehrávače</phrase> </textobject></mediaobject>
+      </screenshot>
+      <tip>
+        <para>Jestliže používáte myš s kolečkem, můžete ovládat hlasitost otáčením kolečka nahoru a dolů, je-li kurzor nad tlačítkem ovládajícím hlasitost.</para>
+      </tip>
+    </sect2>
+    <sect2 id="status-area">
+      <title>Stavová lišta</title>
+      <para>Stavová lišta obsahuje dodatečné informace o počtu skladeb ve vybraném zdroji a jejich celkové délce. Zobrazení stavové lišty může být zapnuto nebo vypnuto zaškrtnutím nebo odškrtnutím <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Stavová lišta</guimenuitem></menuchoice>.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-statusbar.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje stavovou lištu</phrase> </textobject></mediaobject>
+      </screenshot>
+    </sect2>
+    <sect2 id="rb-window-small">
+      <title>Malé zobrazení okna <application>hudebního přehrávače Rhythmbox</application></title>
+      <para><application>Hudební přehrávač Rhythmbox</application> nabízí malé zobrazení okna. Toto zobrazení poskytuje přístup pouze k nabídkové liště a k funkcím týkajícím se přehrávání.</para>
+      <para>Chcete-li se přepnout do malého zobrazení, zaškrtněte <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Malé zobrazení</guimenuitem></menuchoice>.</para>
+      <screenshot>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-window-small.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje <application>hudební přehrávače Rhythmbox</application> v malém zobrazení</phrase> </textobject></mediaobject>
+      </screenshot>
+    </sect2>
+  </sect1>
+  <sect1 id="Usage">
+    <title>Používání hudebního přehrávače Rhythmbox</title>
+    <sect2 id="Playing">
+      <title>Přehrávání hudby</title>
+      <para>Chcete-li přehrávat skladbu, vyberte <menuchoice><guimenu>Ovládání</guimenu><guimenuitem>Přehrávat</guimenuitem></menuchoice>, nebo vyberte požadovanou skladbu a zmáčkněte tlačítko <guibutton>Přehrávat</guibutton> na nástrojové liště, nebo dvakrát klikněte přímo na skladbu.</para>
+      <para>Když skladba skončí, <application>hudební přehrávač Rhythmbox</application> začne přehrávat následující skladbu v seznamu skladeb.</para>
+      <para>V kolekci můžete přehrávat všechny skladby jednoho umělce nebo z jednoho alba, pokud vyberete položku <guilabel>Album</guilabel> nebo <guilabel>Umělec</guilabel> v <link linkend="library-filter-browser">prohlížeči kolekce</link>.</para>
+      <sect3 id="next-previous">
+        <title>Přehrávat, Předchozí, Následující</title>
+        <para>Tlačítka <guibutton>Předchozí</guibutton> a <guibutton>Následující</guibutton> lze při přehrávání použít k přecházení mezi skladbami. Jestliže se právě přehrává nějaká skladba, tlačítko <guibutton>Předchozí</guibutton> restartuje skladbu. Zmáčknutí tlačítka <guibutton>Přehrávat</guibutton> se spustí přehrávání aktuální skladby. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-prevplaynext.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje tlačítka <guibutton>Předchozí</guibutton>, <guibutton>Přehrávat</guibutton> a <guibutton>Následující</guibutton> na liště nástrojů.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="repeat">
+        <title>Opakovat</title>
+        <para>Volba <guibutton>Opakovat</guibutton> způsobí, že <application>hudební přehrávač Rhythmbox</application> obnoví přehrávání skladeb od začátku seznamu po přehrání poslední skladby.</para>
+        <para>Chcete-li aktivovat opakování, zaškrtněte <menuchoice><guimenu>Ovládání</guimenu><guimenuitem>Opakovat</guimenuitem></menuchoice>, nebo zmáčkněte tlačítko <guibutton>Opakovat</guibutton> na nástrojové liště. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-repeat.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje tlačítko Opakovat na liště nástrojů.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="shuffle">
+        <title>Zamíchat</title>
+        <para>Volba <guibutton>Zamíchat</guibutton> způsobí, že <application>hudební přehrávač Rhythmbox</application> bude přehrávat skladby v náhodném pořadí.</para>
+        <para>Chcete-li aktivovat přehrávání v náhodném pořadí, zaškrtněte <menuchoice><guimenu>Ovládání</guimenu><guimenuitem>Zamíchat</guimenuitem></menuchoice>, nebo zmáčkněte tlačítko <guibutton>Zamíchat</guibutton> na nástrojové liště. <screenshot>
+				<mediaobject><imageobject> <imagedata fileref="figures/rb-toolbar-shuffle.png" format="PNG"/> </imageobject> <textobject> <phrase>Ukazuje tlačítko Zamíchat na liště nástrojů.</phrase> </textobject></mediaobject>
+			</screenshot></para>
+      </sect3>
+      <sect3 id="volume">
+        <title>Ovládání hlasitosti</title>
+        <para>Ovládání hlasitosti je umístěno v pravé části nástrojové lišty. Po zmáčknutí ikonky se zobrazí táhlo hlasitosti. Posouvání tohoto táhla nahoru a dolů způsobí zvýšení nebo snížení hlasitosti. Vzhled ikonky se mění dle nastavené hlasitosti. <screenshot><mediaobject><imageobject><imagedata fileref="figures/rb-volume-changer.png" format="PNG"/></imageobject><textobject><phrase>Ukazuje táhlo hlasitosti na liště nástrojů. </phrase></textobject></mediaobject></screenshot></para>
+        <tip>
+          <para>Hlasitost můžete ovládat použitím kolečka myši nad ikonkou hlasitosti.</para>
+        </tip>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="library">
+    <title>Zdroj Kolekce</title>
+    	<para>Kolekce je hlavním zdrojem dostupným v <application>hudebním přehrávači Rhythmbox</application>. Jedná se o databázi obsahující všechny hudební soubory, které jste importovali do <application>hudebního přehrávače Rhythmbox</application> (kolekce ale ukládá jen cesty vedoucí k vašim hudebním souborům, nikoli soubory samotné).</para>
+    	<para>Kolekce může obsahovat nejen hudební soubory, které jsou fyzicky na vašem počítači (například v domovské složce), ale i soubory dostupné pomocí vzdálených síťových služeb. Příklady některých podporovaných síťových služeb: <itemizedlist>
+				<listitem>
+					<para>Veřejné FTP</para>
+				</listitem>
+				<listitem>
+					<para>FTP s přihlášením</para>
+				</listitem>
+				<listitem>
+					<para>NFS</para>
+				</listitem>
+				<listitem>
+					<para>Sdílení Windows</para>
+				</listitem>
+			</itemizedlist></para>
+    	<para>Soubory importované do kolekce jsou zobrazeny v seznamu skladeb včetně informací (například jméno umělce nebo název alba) uložených ve štítcích uvnitř skladeb. <application>Hudební přehrávač Rhythmbox</application> používá tyto popisky také k třídění skladeb. <tip>
+				<para>Popisky můžete upravovat vložením podrobností v okně, které zobrazíte zvolením položky <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Vlastnosti</guimenuitem></menuchoice>.</para>
+			</tip></para>
+    <sect2 id="library-tracks-add">
+      <title>Přidání skladeb do kolekce</title>
+      		<para>Skladby můžete do kolekce přidávat několika různými způsoby: <itemizedlist>
+					<listitem>
+						<para>Chcete-li importovat jen jednu skladbu, z nabídkové lišty vyberte <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Importovat soubor</guimenuitem></menuchoice>, pak v dialogu pro otevírání souborů zvolte požadovaný soubor a zmáčkněte tlačítko <guibutton>Otevřít</guibutton>.</para>
+					</listitem>
+					<listitem>
+						<para>Chcete-li importovat několik hudebních souborů ve složce, vyberte z nabídkové lišty <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Importovat složku</guimenuitem></menuchoice>, pak v dialogovém okně pro otevírání souborů zvolte požadovanou složku a zmáčkněte tlačítko <guibutton>Otevřít</guibutton>. Všechny hudební soubory umístěné ve vybrané složce i jejích podsložkách budou importovány.</para>
+					</listitem>
+					<listitem>
+						<para>Ve správci souborů (například <application>Nautilus</application>) chytněte soubory a přetáhněte je do okna <application>hudebního přehrávače Rhythmbox</application>.</para>
+					</listitem>
+				</itemizedlist></para>
+      	<tip>
+       		<para>Pakliže jste povolili funkci hledání nových souborů (viz <xref linkend="prefs-library"/>), všechny hudební soubory uložené ve zvolené složce budou přidány do kolekce. Nové soubory přidané později budou do kolekce také přidány.</para>
+      	</tip>
+    </sect2>
+    <sect2 id="library-tracks-del">
+    	<title>Odstranění skladeb z kolekce</title>
+      	<para>Chcete-li z kolekce odstranit skladbu, ale chcete-li ji ponechat na disku, v nabídkové liště vyberte <menuchoice><guimenu>Upravit</guimenu><guimenu>Odstranit</guimenu></menuchoice>. Skladba i její vlastnosti (například hodnocení nebo počet přehrání) budou odstraněny z databáze.</para>
+      	<para>Chcete-li odstranit skladbu z kolekce a zároveň ji smazat z disku, v z nabídky vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Přesunout do koše</guimenuitem></menuchoice>. Skladba bude odstraněna z kolekce stejně, jako je popsáno v minulém odstavci, ale zároveň bude přesunuta do koše ve správci souborů.</para>
+    </sect2>
+    <sect2 id="library-filter-search">
+    	<title>Hledání skladeb pomocí vyhledávání</title>
+      	<para>Hudební přehrávač Rhythmbox nabízí funkci vyhledávání, která umožňuje filtrovat skladby pomocí klíčových slov.</para>
+      	<para>Napište nějaký text do vyhledávacího políčka – jak budete psát, budou se postupně zobrazovat pouze skladby splňující zadané podmínky hledání. Vyhledávání prohledává všechny popisky všech skladeb v kolekci.</para>
+		<para>Chcete-li vyhledávat pouze v určitých štítcích, můžete zmáčknout tlačítko <guilabel>Umělci</guilabel> k vyhledávání pouze ve jménech umělců, tlačítko <guilabel>Alba</guilabel> k vyhledávání pouze v názvech alb nebo tlačítko <guilabel>Skladby</guilabel> k vyhledávání pouze v názvech skladeb.</para>
+    </sect2>
+    <sect2 id="library-filter-browser">
+    	<title>Hledání skladeb pomocí prohlížeče</title>
+      	<para>Dalším dobrým způsobem hledání skladeb je použití prohlížeče. Prohlížeč je oblast se dvěmi nebo třemi částmi, která umožňuje procházení žánrů, umělců a alb a zobrazuje skladby odpovídající zvoleným kritériím.</para>
+      	<para>Nejprve je třeba prohlížeč zobrazit – zaškrtněte políčko v nabídkové liště <menuchoice><guimenu>Zobrazit</guimenu><guimenuitem>Procházet</guimenuitem></menuchoice>. Pak vybírejte žánry, uměce a alba – jak budete vybírat, budou se v seznamu skladeb zobrazovat pouze skladby odpovídající vašemu výběru.</para>
+      	<tip>
+        	<para>Můžete vybrat několik kritérií stejné kategorie najednou, když použijete klávesu <keycombo><keycap>Ctrl</keycap></keycombo>.</para>
+      	</tip>
+      		<para>Můžete také procházet všechny skladby v seznamu skladeb se stejným žánrem, umělcem a albem, jako má vybraná skladba. Klikněte pravým tlačítkem myši na skladbu a vyberte <guilabel>Procházet tento žánr</guilabel>, <guilabel>Procházet tohoto umělce</guilabel> nebo <guilabel>Procházet toto album</guilabel>. Prohlížeč bude zobrazovat pouze skladby splňující zadané podmínky.</para>
+  	</sect2>
+  </sect1>
+  <sect1 id="radio">
+  	<title>Zdroj Rádio</title>
+    <para>Pomocí tuneru internetového rádia lze poslouchat po lokální síti nebo Internetu poskytované soubory hudebních proudů.</para>
+    <figure id="fig-iradio">
+      <title>Internetové rádio v <application>hudebním přehrávači Rhythmbox</application></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+	    <imagedata format="PNG" fileref="figures/rb-iradio-main.png"/>
+	  </imageobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+    <sect2 id="iradio-adding">
+      	<title>Přidání stanice</title>
+      	<para>Chcete-li přidat novou stanici rádia, vyberte <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Nová stanice internetového rádia</guimenuitem></menuchoice>, zadejte URL stanice a zmáčkněte tlačítko <guibutton>Přidat</guibutton>.</para>
+    </sect2>
+    <sect2 id="iradio-modify">
+      	<title>Zobrazování a upravování vlastností stanice</title>
+      	<para>Vlastnosti stanice internetového rádia můžete zobrazit nebo upravovat pomocí nabídkové lišty <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Vlastnosti</guimenuitem></menuchoice>.</para>
+      	<para>Vlastnosti stanice lze také upravovat kliknutím pravým tlačítkem na stanici a vybráním položky <guimenuitem>Vlastnosti</guimenuitem>.</para>
+      	<para>Pokud máte otevřeny vlastnosti stanice, můžete upravovat její název, její žánr a její umístění. Také ji lze ohodnotit.</para>
+    </sect2>
+    <sect2 id="iradio-delete">
+    	<title>Odstranění stanice</title>
+      	<para>Chcete-li odstranit stanici rádia, vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Odstranit</guimenuitem></menuchoice>, nebo klikněte pravým tlačítkem na stanici a vyberte <guimenuitem>Odstranit</guimenuitem>.</para>
+    </sect2>
+  </sect1>
+  <sect1 id="podcast">
+  	<title>Zdroj Podcast</title>
+    <para>Podcast je nový způsob vysílání zvukového obsahu po webu. Když autor publikuje epizodu podcastu, jsou o tom odběratelé podcastu informováni prostřednictvím kanálu XML.</para>
+    <para>Hudební přehrávač Rhythmbox umožňuje odebírat kanály podcastu, takže když je vydána nová epizoda, budete o tom informováni, epizoda se stáhne a vy si ji budete moci přehrát.</para>
+    <tip>
+      	<para>Více informací o podcastech se nachází na stránce <ulink url="http://cs.wikipedia.org/">Wikipedia</ulink> pod heslem <ulink url="http://cs.wikipedia.org/wiki/Podcasting">Podcasting</ulink>.</para>
+    </tip>
+    <para>
+      <figure>
+        <title>Rozhraní zdroje Podcast</title>
+        <mediaobject><imageobject> <imagedata fileref="figures/rb-podcast-main.png" format="PNG"/> </imageobject> <textobject> <phrase>Uživatelské rozhraní podcastů s několika zaregistrovanými podcasty</phrase> </textobject></mediaobject>
+      </figure>
+    </para>
+    <sect2 id="podcast-management">
+      <title>Správa podcastů</title>
+      <sect3 id="podcast-feed-add">
+        <title>Přidání podcastu</title>
+        <para>Chcete-li odebírat podcast, vyberte <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Nový kanál podcastu…</guimenuitem></menuchoice> a do vyvolaného okna vložte URL kanálu podcastu. <application>Hudební přehrávač Rhythmbox</application> bude přijímat seznam epizod a nejnovější epizody budou stahovány na váš pevný disk.</para>
+        <para>Kanál podcastu lze přidat také kliknutím pravým tlačítkem na zdroj <guimenuitem>Podcasty</guimenuitem> a vybráním <guimenuitem>Nový kanál podcastu…</guimenuitem>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-del">
+        <title>Odstranění podcastu</title>
+        <para>Chcete-li podcast odstranit, klikněte v prohlížeči pravým tlačítkem na název kanálu a vyberte <menuchoice><guimenuitem>Odstranit kanál podcastu</guimenuitem></menuchoice>. Pokud si přejete ponechat epizody podcastu, zvolte dále <menuchoice><guimenuitem>Odstranit jen kanál</guimenuitem></menuchoice>, jinak zvolte <menuchoice><guimenuitem>Odstranit kanál a soubory</guimenuitem></menuchoice>, aby se odstranily i epizody.</para>
+      </sect3>
+      <sect3 id="podcast-feed-update">
+        <title>Aktualizace kanálů</title>
+        <para>Abyste věděli, jestli byly vydány nové epizody podcastu, klikněte v prohlížeči pravým tlačítkem myši na název podcastu a vyberte <menuchoice><guimenuitem>Aktualizovat kanál podcastu</guimenuitem></menuchoice>. Jestliže byly vydány nové epizody, budou zobrazeny v seznamu epizod.</para>
+        <tip>
+          <para>Hudební přehrávač Rhythmbox sám pravidelně kontroluje seznam kanálů podcastu, jestli byly aktualizovány.</para>
+        </tip>
+        <para>Můžete zkontrolovat i všechny podcasty najednou. Klikněte pravým tlačítkem na zdroj <menuchoice><guimenuitem>Podcasty</guimenuitem></menuchoice> a  vyberte <menuchoice><guimenuitem>Aktualizovat všechny kanály</guimenuitem></menuchoice>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-show">
+        <title>Přístup k vlastnostem kanálu podcastu</title>
+        <para>Pro přístup k vlastnostem kanálu klikněte pravým tlačítkem na název podcastu a vyberte <menuchoice><guimenuitem>Vlastnosti</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Na kartě <guilabel>Základní</guilabel> je zobrazeno: <guilabel>Název</guilabel>, <guilabel>Autor</guilabel>, datum <guilabel>Poslední aktualizace</guilabel> a <guilabel>Popis</guilabel>.</para></listitem><listitem><para>Na kartě <guilabel>Podrobnosti</guilabel> je zobrazeno: <guilabel>Zdroj</guilabel>, <guilabel>Jazyk</guilabel> a <guilabel>Autorská práva</guilabel>.</para></listitem></itemizedlist> Vlastnosti podcastu si můžete prohlížet a také měnit hodnocení.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="episode-management">
+      <title>Správa epizod</title>
+      <sect3 id="podcast-episode-download">
+        <title>Stažení epizody podcastu</title>
+        <para>Chcete-li stáhnout epizodu na disk, klikněte pravým tlačítkem myši na epizodu a vyberte <menuchoice><guimenuitem>Stáhnout epizodu</guimenuitem></menuchoice>. <application>Hudební přehrávač Rhythmbox</application> spustí stahování epizody na umístění vybrané v nastavení aplikace. Průběh stahování epizody můžete vidět ve sloupci <guilabel>Stav</guilabel>.</para>
+        <tip>
+          <para>Dle výchozího nastavení se podcasty stahují do složky <filename class="directory">Podcasty/</filename> ve vaší domovské složce. Změna tohoto umístění viz <xref linkend="prefs-podscast"/>.</para>
+        </tip>
+      </sect3>
+      <sect3 id="podcast-episode-read">
+        <title>Čtení epizody podcastu</title>
+        <para>Chcete-li přehrát epizodu podcastu, vyberte epizodu, kterou chcete číst, a zvolte <menuchoice><guimenu>Ovládání</guimenu><guimenuitem>Přehrávat</guimenuitem></menuchoice>. Můžete také použít tlačítko <guibutton>Přehrávat</guibutton>.</para>
+        <para>Epizoda musí být stažena před čtením, viz <xref linkend="podcast-episode-download"/>, kde se dozvíte, jak stahovat epizodu podcastu.</para>
+      </sect3>
+      <sect3 id="podcast-episode-delete">
+        <title>Odstranění epizody podcastu</title>
+        <para>Chcete-li odstranit epizodu z podcastu, klikněte pravým tlačítkem na epizodu a vyberte <menuchoice><guimenuitem>Odstranit</guimenuitem></menuchoice>. Pak vyberte <menuchoice><guimenuitem>Odstranit jen epizodu</guimenuitem></menuchoice>, chcete-li zachovat soubor s epizodou na disku, nebo vyberte <menuchoice><guimenuitem>Odstranit epizodu a soubor</guimenuitem></menuchoice>, chcete-li odstranit epizodu ze seznamu a zároveň smazat soubor z disku.</para>
+        <warning>
+          <para>Pokud epizodu odstraníte, již nebude dostupná v seznamu epizod, a to ani když aktualizujete podcast.</para>
+        </warning>
+      </sect3>
+      <sect3>
+        <title>Zobrazení vlastností epizody podcastu</title>
+        <para>Pokud chcete zobrazit vlastnosti epizody, klikněte na epizodu a vyberte <menuchoice><guimenuitem>Vlastnosti</guimenuitem></menuchoice>. <itemizedlist><listitem><para>Na kartě <guilabel>Základní</guilabel> je zobrazeno: <guilabel>Název</guilabel>, <guilabel>Kanál</guilabel>, <guilabel>Datum</guilabel> a <guilabel>Popis</guilabel>.</para></listitem><listitem><para>Na kartě <guilabel>Podrobnosti</guilabel> je zobrazeno: <guilabel>Zdroj</guilabel>, <guilabel>Délka</guilabel>, <guilabel>Bitrate</guilabel>, <guilabel>Datum posledního přehrání</guilabel>, <guilabel>Počet přehrání</guilabel> a <guilabel>Hodnocení</guilabel>.</para></listitem></itemizedlist></para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="playqueue">
+  	<title>Zdroj Fronta</title>
+	<para>Fronta je zdroj navržený k dočasnému uložení skladeb, které chcete dále přehrávat. Když přidáte skladby do fronty, <application>hudební přehrávač Rhythmbox</application> automaticky přepne na tento zdroj po tom, co se přehraje právě přehrávaná skladba.</para>
+	<para>Jakmile je skladba ve frontě přehrána, automaticky se odstraní z fronty. Když je fronta prázdná, <application>hudební přehrávač Rhythmbox</application> spustí přehrávání zdroje přehrávaného předtím.</para>
+		<sect2 id="playqueue-track-add">
+			<title>Přidání skladby do fronty</title>
+			<para>Přidání skladby: <orderedlist>
+					<listitem>
+						<para>Z libovolného zdroje vyberte skladbu, kterou chcete přehrávat.</para>
+					</listitem>
+					<listitem>
+						<para>Vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Přidat do fronty</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+		<sect2 id="playqueue-track-del">
+			<title>Odstranění skladby z fronty</title>
+			<para>Odstranění skladby uložené ve frontě: <orderedlist>
+					<listitem>
+						<para>Ve frontě vyberte skladbu, kterou chcete odstranit.</para>
+					</listitem>
+					<listitem>
+						<para>Vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Odstranit</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist></para>
+		</sect2>
+  </sect1>
+  
+  <sect1 id="playlist">
+  	<title>Zdroj Seznamy skladeb</title>
+    <para>Seznamy skladeb jsou zdroje, které jsou vytvořené ze skladeb uložených ve zdroji Kolekce. Umožňují shromažďovat skladby s nějakým žánrem, nějakou skupinu umělců nebo podle libovolného jiného kritéria, které si zvolíte.</para>
+    <para>Hudební přehrávač Rhythmbox má dva druhy seznamů skladeb: <itemizedlist>
+				<listitem>
+					<para>Statické seznamy skladeb</para>
+				</listitem>
+				<listitem>
+					<para>Automatické seznamy skladeb</para>
+				</listitem>
+			</itemizedlist></para>
+    <para><application>Hudební přehrávač Rhythmbox</application> umožňuje skladby v seznamech skladeb vypalovat na hudební CD.</para>
+    <sect2 id="playlist-static">
+    	<title>Statické seznamy skladeb</title>
+      	<para>Statické seznamy skladeb jsou seznamy skladeb sestavené ze skladeb, které do nich byly přetažené z kolekce.</para>
+      <sect3 id="playlist-static-new">
+        <title>Vytvoření statického seznamu skladeb</title>
+        <para>Chcete-li vytvořit nový seznam skladeb, vyberte <menuchoice><guimenu>Hudba</guimenu><guisubmenu>Seznam skladeb</guisubmenu><guimenuitem>Nový seznam skladeb…</guimenuitem></menuchoice>. V postranním panelu se zobrazí prázdný seznam skladeb bez názvu. Zadejte název seznamu skladeb a zmáčkněte <keycombo><keycap>Enter</keycap></keycombo>.</para>
+      </sect3>
+      <sect3 id="playlist-static-tracks-add">
+        <title>Přidání skladeb do seznamu skladeb</title>
+        <para>Chcete-li přidat skladby do seznamu skladeb, vyberte je v kolekci a přetáhněte do seznamu skladeb v postranním panelu.</para>
+        <para>Do seznamu skladeb můžete z prohlížeče přetahovat i žánry, umělce a alba. Všechny skladby patřící do vybrané kategorie se přidají do seznamu skladeb.</para>
+        <tip>
+          <para>Vytvářet seznamy skladeb lze i jedinou akcí. Vyberte skladby nebo kategorie prohlížeče  (<guilabel>Žánr</guilabel>, <guilabel>Umělec</guilabel>, <guilabel>Album</guilabel>) a přetáhněte výběr do <guilabel>postranního panelu</guilabel>. Automaticky se vytvoří pojmenovaný seznam skladeb.</para>
+        </tip>
+      </sect3>
+      <sect3 id="playlist-static-tracks-del">
+        <title>Ostranění skladeb ze seznamu skladeb</title>
+        <para>Chcete-li odstranit skladby ze seznamu skladeb, vyberte nechtěné skladby a použijte jeden ze dvou způsobů odstranění: <itemizedlist><listitem><para>Vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Odstranit</guimenuitem></menuchoice>.</para></listitem><listitem><para>Klikněte pravým tlačítkem na skladbu a vyberte <guimenuitem>Odstranit</guimenuitem>.</para></listitem></itemizedlist> Tato operace skladby odstraní pouze ze seznamu skladeb, nikoli z kolekce.</para>
+      </sect3>
+      <sect3 id="playlist-static-del">
+        <title>Odstranění statického seznamu skladeb</title>
+        <para>Chcete-li odstranit statický seznam skladeb, vyberte jej a pak použijte jeden ze dvou způsobů odstranění: <itemizedlist><listitem><para>Vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Odstranit</guimenuitem></menuchoice>.</para></listitem><listitem><para>Klikněte pravým tlačítkem na seznam skladeb a vyberte <guimenuitem>Odstranit</guimenuitem>.</para></listitem></itemizedlist> Tato operace odstraní pouze seznam skladeb, nikoli skladby uložené v něm.</para>
+      </sect3>
+    </sect2>
+    <sect2 id="playlist-smart">
+      <title>Automatické seznamy skladeb</title>
+      <para>Automatické seznamy skladeb jsou seznamy skladeb sestavené dle kritérií – skladby jsou přidávány dynamicky; všechny skladby splňující kritéria jsou přidány do seznamu skladeb.</para>
+      <sect3 id="playlist-smart-new">
+        <title>Vytvoření automatického seznamu skladeb</title>
+        <para>Vytvoření nového seznamu skladeb: <orderedlist><listitem><para>Vyberte <menuchoice><guimenu>Hudba</guimenu><guisubmenu>Seznam skladeb</guisubmenu><guimenuitem>Nový automatický seznam skladeb</guimenuitem></menuchoice>.</para></listitem><listitem><para>V editoru pravidel upravte kritéria seznamu skladeb.</para></listitem><listitem><para>Když nastavíte kritéria, kliknutím na tlačítko <guibutton>Nový</guibutton>.vytvoříte nové pravidlo.</para></listitem></orderedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-edit">
+        <title>Úprava automatického seznamu skladeb</title>
+        <para>Úprava automatického seznamu skladeb vám umožní změnit kritéria tohoto seznamu skladeb. Chcete-li upravit seznam skladeb, vyberte <menuchoice><guimenu>Hudba</guimenu><guisubmenu>Seznam skladeb</guisubmenu><guimenuitem>Upravit</guimenuitem></menuchoice> a změňťe kritéria. Až budete hotovi, zmáčkněte tlačítko <guibutton>Zavřít</guibutton>.</para>
+      </sect3>
+      <sect3 id="playlist-smart-del">
+        <title>Odstranění automatického seznamu skladeb</title>
+        <para>Chcete-li odstranit automatický seznam skladeb, vyberte jej a použijte jeden ze dvou způsobů odstranění: <itemizedlist><listitem><para>Vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Odstranit</guimenuitem></menuchoice>.</para></listitem><listitem><para>Klikněte pravým tlačítkem na seznam skladeb a vyberte <guimenuitem>Odstranit</guimenuitem>.</para></listitem></itemizedlist></para>
+      </sect3>
+      <sect3 id="playlist-smart-query-use">
+        <title>Použití editoru pravidel</title>
+        <para>Zvolte kritéria, která chcete na pravidlo použít. Jestliže potřebujete více kritérií, klikněte na tlačítko <guibutton>Přidat</guibutton>. Zobrazí se nový řádek a vy můžete nastavit nové kritérium.</para>
+        <para>Jestliže chcete omezit množství skladeb v seznamu, zaškrtněte volbu <guilabel>Omezit na:</guilabel> a zvolte limit. Limit může být nastaven na počet skladeb, celkovou velikost (v MB nebo GB) nebo délku v minutách.</para>
+        <para>Když ukončíte nastavení kritérií seznamu skladeb, klikněte na tlačítko <guibutton>Nový</guibutton>. Okno editoru pravidel seznamu skladeb se uzavře a seznam skladeb zobrazí skladby splňující kritéria.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="AudioCD">
+    <title>Zdroj Hudební CD</title>
+	<para><application>Hudební přehrávač Rhythmbox</application> umí obsluhovat také hudební CD – přehrávat je a vypalovat vlastní kompilace skladeb.</para>
+    <sect2 id="cd-playing">
+      <title>Přehrávání</title>
+      <para>Jakmile vložíte hudební CD, zobrazí se v postranním panelu a skladby na něm se zobrazí v hlavním okně <application>Hudební přehrávač Rhythmbox</application>. Pokud jste připojeni k Internetu, stáhnou a zobrazí se i názvy skladeb.</para>
+      <para>Ke spuštění a pozastavení přehrávání nebo k přecházení na předchozí či následující skladbu používejte stejné ovládací prvky jako při přehrávání skladeb v kolekci.</para>
+    </sect2>
+    <sect2 id="cd-import">
+      <title>Importování hudebního CD</title>
+      <para>Přejete-li si uchovat skladby z hudebního CD na vašem počítači, můžete je z CD importovat.</para>
+      <para>Pokud chcete provést import skladeb z hudebního CD vyberte <menuchoice><guimenu>Hudba</guimenu><guimenuitem>Importovat hudební CD</guimenuitem></menuchoice> – spustí se <application>Sound-Juicer</application>, aplikace GNOME určená k importu hudebních CD. Chcete-li o aplikaci <application>Sound-Juicer</application> vědět více, přečtete si jeho <ulink url="ghelp:sound-juicer">uživatelskou příručku</ulink>.</para>
+      <tip>
+        <para>Aby se skladby importované pomocí Sound-Juicer automaticky přidaly do kolekce, budete muset Sound-Juicer nastavit tak, aby skladby rozbaloval do složky s vaší kolekcí. Zároveň musí být povolena funkce hledání nových souborů v <application>hudebním přehrávači Rhythmbox</application>. Viz <ulink url="ghelp:sound-juicer#preferences">nastavení aplikace Sound-Juicer</ulink> a <link linkend="prefs-library">nastavení kolekce</link>.</para>
+      </tip>
+    </sect2>
+    <sect2 id="cd-burning">
+      <title>Vytvoření hudebního CD</title>
+      <para><application>Hudební přehrávač Rhythmbox</application> umožňuje vytvářet vaše vlastní hudební CD sestavená z hudby uložené v kolekci.</para>
+      <para>Vytvoření hudebního CD: <orderedlist><listitem><para>Vytvořte seznam skladeb – statický nebo automatický (viz <xref linkend="playlist"/>) – a přidejte do něj skladby.</para></listitem>
+                <listitem><para>Vyberte <menuchoice><guimenu>Hudba</guimenu><guisubmenu>Seznam skladeb</guisubmenu><guimenuitem>Vytvořit hudební CD</guimenuitem></menuchoice>.</para></listitem>
+                <listitem><para>Vložte prázdné CD.</para></listitem>
+                <listitem><para>Klikněte na tlačítko <guibutton>Vytvořit</guibutton>, aby se vypalování spustilo.</para></listitem>
+                </orderedlist></para>
+    </sect2>
+  </sect1>
+  <sect1 id="portable-audio-player">
+    <title>Zdroj Přenosné přehrávače hudby</title>
+    <para><application>Hudební přehrávač Rhythmbox</application> umí zjistit, je-li k vašemu počítači připojen přenosný přehrávač hudby a umí z něj číst skladby. <application>Hudební přehrávač Rhythmbox</application> by měl být schopen spolupracovat s většinou přenosných přehrávčů hudby, jako je například Apple iPod, zařízení MTP a zařízení dostupná jako Mass Storage.</para>
+    <para>Když připojíte přenosný přehrávač hudby, v postranním panelu se zobrazí nová ikonka. S tímto novým zdrojem se pracuje stejně jako s kolekcí.</para>
+	<tip><para>Pokud <application>hudební přehrávač Rhythmbox</application> nedetekuje vaše zařízení jako přenosný přehrávač hudby, můžete vytvořit prázdný soubor <filename>.is_audio_player</filename> na nejvyšší úrovni souborového systému vašeho přenosného přehrávače.</para></tip>
+  </sect1>
+  <sect1 id="daap">
+    <title>Zdroj Sdílení DAAP</title>
+    <para>DAAP je síťový protokol umožňující sdílet hudbu uloženou v <application>hudebním přehrávači Rhythmbox</application>. Zkratka DAAP znamená Digital Audio Access Protocol.</para>
+    <para>Vzhledem k tomu, že DAAP je standardní protokol pro sdílení hudby, můžete poslouchat a sdílet hudbu nejen s dalšími uživateli <application>hudebního přehrávače Rhythmbox</application>, ale i s dalšími uživateli používajícími software podporující DAAP, například iTunes.</para>
+    <para>Když je <application>hudební přehrávač Rhythmbox</application> spuštěn, vyhledá všechna sdílení DAAP na vaší lokální (například domácí) síti publikovaná dalšími uživateli a zobrazí je v postranním panelu. Pokud máte povoleno sdílení, bude zároveň publikována vaše kolekce a seznamy skladeb. Tímto způsobem můžete poslouchat hudbu uloženou na počítačích vašich přátel a oni mohou poslouchat vaši.</para>
+    <para>Jak zakázat sdílení DAAP, viz <xref linkend="prefs-sharing"/>.</para>
+  </sect1>
+  <sect1 id="notification">
+    <title>Oznamovací oblast</title>
+    <sect2 id="notification-overview">
+      <title>Přehled</title>
+      <para>Oznamovací oblast je funkce GNOME, která přidává malou ikonku do panelu, pokud program běží. To umožňuje ovládat <application>hudební přehrávač Rhythmbox</application> a získávat z něj informace, pokud hlavní okno není zobrazeno.</para>
+      <figure id="fig-notification-zone">
+        <title><application>Hudební přehrávač Rhythmbox</application> v oznamovací oblasti</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-zone.png"/>
+	    </imageobject>
+	  </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+    <sect2 id="notification-info-receive">
+      <title>Získávání informací</title>
+      <sect3 id="notification-info-tooltip">
+        <title>Plovoucí informace</title>
+        <para>Když přejedete kurzorem přes ikonku <application>hudebního přehrávače Rhythmbox</application>, uvidíte jméno umělce, název skladby a pozici ve skladbě.</para>
+      </sect3>
+      <sect3 id="notification-info-window">
+        <title>Oznamovací okno</title>
+        <para>Pokaždé, když se změní přehrávaná skladba nebo je stažena epizoda podcastu, <application>hudební přehrávač Rhythmbox</application> vás o tom umí informovat; zobrazuje oznamovací okno obsahující příslušnou informaci.</para>
+        <figure id="fig-notification-window">
+          <title>Oznamovací okno <application>hudebního přehrávače Rhythmbox</application></title>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata format="PNG" fileref="figures/rb-notification-window.png"/>
+	      </imageobject>
+	    </mediaobject>
+          </screenshot>
+        </figure>
+        <tip>
+          <para>Oznamovací okno může být zakázáno odškrtnutím volby <guilabel>Zobrazovat upozornění</guilabel> v kontextové nabídce ikonky v oznamovací oblasti.</para>
+        </tip>
+      </sect3>
+    </sect2>
+    <sect2 id="notification-control">
+      <title>Ovládání Rhythmoxu</title>
+      <para>Používáním ikonky <application>hudebního přehrávače Rhythmbox</application> v oznamovací oblasti mohou být aplikaci odeslány následující příkazy:</para>
+      <figure id="fig-notification-menu">
+        <title>Oznamovací oblast (se zobrazenou nabídkou)</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-area-menu.png"/>
+            </imageobject>
+           </mediaobject>
+        </screenshot>
+      </figure>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para><guibutton>Přehrávat</guibutton> – Je-li zaškrtnuto, je přehrávána právě vybraná skladba.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Předchozí</guibutton> – Přejít na předchozí skladbu vybraného zdoje.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Následující</guibutton> – Přejít na následující skladbu vybraného zdroje.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Zobrazit přehrávač</guibutton> – Zaškrtněte, má-li být okno <application>hudebního přehrávače Rhythmbox</application> zobrazeno.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Zobrazovat upozornění</guibutton> – Zaškrtněte, má-li vás <application>hudební přehrávač Rhythmbox</application> upozorňovat na změny skladeb a jiné informace.</para>
+          </listitem>
+          <listitem>
+            <para><guibutton>Ukončit</guibutton> – Ukončit <application>hudební přehrávač Rhythmbox</application>.</para>
+          </listitem>
+        </itemizedlist>
+        <tip>
+        	<para>Používáte-li kolečko myši, můžete jeho otáčením měnit hlasitost, je-li kurzor na ikonce.</para>
+          <para>Stiskutím prostředního tlačítka myši lze rychle přepínat mezi přehráváním a pauzou.</para>
+        </tip>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="customize">
+    <title>Nastavení hudebního přehrávače Rhythmbox</title>
+    <para>Tenhle oddíl popisuje, jak přizpůsobit <application>hudební přehrávač Rhythmbox</application>, aby odpovídal vašim požadavkům a představám.</para>
+    <sect2 id="prefs">
+      <title>Úprava nastavení</title>
+      <para>Pomocí dialogu <guilabel>Nastavení</guilabel> můžete upravovat chování a vzhled <application>hudebního přehrávače Rhythmbox</application>. Chcete-li tento dialog zobrazit, vyberte <menuchoice><guimenu>Upravit</guimenu><guimenuitem>Nastavení</guimenuitem></menuchoice>.</para>
+      <sect3 id="prefs-general">
+      	<title>Obecné</title>
+		<para>V sekci <guilabel>Pohledy prohlížeče</guilabel> vyberte způsob, jakým bude zobrazen prohlížeč. Vybrat si můžete dva nebo tři panely a co budou zobrazovat.</para>
+      	<para>V sekci <guilabel>Videtelné sloupce</guilabel> vyberte sloupce, které chcete v <application>hudebním přehrávači Rhythmbox</application> zobrazovat. Tato volba ovlivní následující zdroje: <itemizedlist>
+				<listitem><para>Kolekce</para></listitem>
+				<listitem><para>Hudební CD</para></listitem>
+				<listitem><para>Přenosné přehrávače</para></listitem>
+				<listitem><para>Seznamy skladeb</para></listitem>
+				<listitem><para>Sdílení hudby DAAP</para></listitem>
+			</itemizedlist></para>
+      </sect3>
+      <sect3 id="prefs-library">
+        <title>Hudba</title>
+        <itemizedlist>
+          <listitem>
+            <para><guilabel>Umístění kolekce</guilabel> je složka, ve kterém <application>hudební přehrávač Rhythmbox</application> hledá nové skladby. Pokud do této složky nebo jejích podsložek pomocí správce souborů (například Nautilus) přidáte nové hudební soubory, <application>hudební přehrávač Rhythmbox</application> je najde a automaticky přidá do kolekce.</para>
+            <warning>
+            	<para>Vyhněte se nastavení vaší domovské složky jako kolekce, protože by to spotřebovávalo výkon procesoru.</para>
+            </warning>
+            <para>Chcete-li zakázat tuto funkci, odškrtněte <guilabel>Hledat v mé kolekci nové soubory</guilabel>.</para>
+            <tip>
+            	<para>Chcete-li přidat více než jednu složku k prohledávání, použijte  <application>gconf-editor</application> a upravte seznam /app/rhythmbox/library_locations.</para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-podscast">
+        <title>Podcasty</title>
+        <itemizedlist>
+          <listitem>
+            <para><guilabel>Umístění pro stahování</guilabel> je ve výchozím nastavení složka <filename class="directory">Podcasty/</filename> nacházející se ve vaší domovské složce.</para>
+            <para>Nesplňuje-li toto umístění vaše požadavky, vyberte v rozbalovací nabídce jiné, nebo zvolte <guilabel>Jiné</guilabel>, aby se zobrazil dialog pro otevírání souborů.</para>
+          </listitem>
+          <listitem>
+            <para>Zvolte frekvenci, jak často má <application>hudební přehrávač Rhythmbox</application> hledat nové epizody.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-sharing">
+        <title>Sdílení</title>
+        <para><application>Hudební přehrávač Rhythmbox</application> umí sdílet obsah vaší kolekce po lokální síti s jinými uživateli <application>hudebního přehrávače Rhythmbox</application> nebo Apple iTunes.</para>
+        <itemizedlist>
+          <listitem>
+            <para>Zaškrtněte <guilabel>Sdílet mou hudbu</guilabel>, aby uživatelé na vaší síti mohli vidět a číst vaše skladby.</para>
+          </listitem>
+          <listitem>
+            <para>Do políčka <guilabel>Název sdílené hudby</guilabel> zadejte název, který se na síti bude zobrazovat.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-lastfm">
+        <title>Profil na Last.fm</title>
+        <para>Zásuvný modul profilu na Last.fm shromažďuje informace o skladbách, které jste poslouchali, odesílá je na webovou stránku <ulink url="http://www.last.fm/">Last.fm</ulink> a vytváří z nich profil vašich posluchačských zvyklostí. Pomocí tohoto profilu můžete: <itemizedlist>
+				<listitem>
+					<para>prohlížet statistiky, například nejpřehrávanějších skladeb nebo umělců</para>
+				</listitem>
+				<listitem>
+					<para>dostávat doporučení na umělce, kteří by se vám mohli líbit</para>
+				</listitem>
+			</itemizedlist></para>
+        <warning>
+          <para>Abyste mohli používat zásuvný modul profilu na Last.fm, musíte mít na Last.fm účet. Pokud ještě účet nemáte, použijte <ulink url="http://www.last.fm/signup.php">registrační stránku</ulink>, kde si jej můžete vytvořit. Informace o vašem účtu na Last.fm vložte do políček <guilabel>Uživatelské jméno</guilabel> a <guilabel>Heslo</guilabel> v okně nastavení zásuvného modulu profilu Last.fm.</para>
+        </warning>
+		<para>Okno s nastavením zásuvného modulu profilu na Last.fm zobrazuje také informace o stavu. Jestliže stránka s vaším profilem na Last.fm říká, že váš profil ještě nebyl aktualizován, zde zobrazené informace mohou pomoci odhalit problém.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="shortcuts">
+    <title>Zkratky</title>
+    <sect2 id="keyboard-keys">
+      <title>Klávesové zkratky</title>
+      <table frame="topbot" id="rb-shorcuts-1">
+	  	<title>Klávesové zkratky přehrávače</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Zkratky</entry>
+              <entry>Činnosti</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>P</keycap></keycombo></entry>
+              <entry>
+                <para>Přehrávat nebo pozastavit</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>←</keycap></keycombo></entry>
+              <entry>
+                <para>Přejít na předchozí skladbu nebo na začátek skladby</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>→</keycap></keycombo></entry>
+              <entry>
+                <para>Přejít na následující skladbu</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>↑</keycap></keycombo></entry>
+              <entry>
+                <para>Zvýšit hlasitost přehrávání</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>↓</keycap></keycombo></entry>
+              <entry>
+                <para>Snížit hlasitost přehrávání</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>R</keycap></keycombo></entry>
+              <entry>
+                <para>Povolit nebo zakázat opakované přehrávání</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>U</keycap></keycombo></entry>
+              <entry>
+                <para>Povolit nebo zakázat náhodné přehrávání</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-2">
+	  	<title>Obecné klávesové zkratky</title>
+		<tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Zkratky</entry>
+              <entry>Činnosti</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>A</keycap></keycombo></entry>
+              <entry>
+                <para>Vybrat vše</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Shift</keycap> <keycap>Ctrl</keycap> <keycap>A</keycap></keycombo></entry>
+              <entry>
+                <para>Zrušit výběr všeho</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>J</keycap></keycombo></entry>
+              <entry>
+                <para>Přejít na přehrávanou skladbu</para>
+              </entry>
+	    </row>
+	    <!--
+            <row>
+              <entry>
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Y</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Clear the search field text and remove all filters in the browser</para>
+              </entry>
+	    </row>
+            -->
+            <row>
+              <entry><keycombo><keycap>Alt</keycap> <keycap>S</keycap></keycombo></entry>
+              <entry>
+                <para>Přejít na vyhledávací pole</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Alt</keycap> <keycap>Enter</keycap></keycombo></entry>
+              <entry>
+                <para>Zobrazit vlastnosti skladby</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-3">
+	  	<title>Klávesové zkratky okna</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Zkratky</entry>
+              <entry>Činnosti</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>Q</keycap></keycombo></entry>
+              <entry>
+                <para>Ukončit <application>hudební přehrávač Rhythmbox</application></para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>B</keycap></keycombo></entry>
+              <entry>
+                <para>Zobrazit nebo skrýt prohlížeč</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>F9</keycap></keycombo></entry>
+              <entry>
+                <para>Zobrazit / skrýt postranní panel</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>Ctrl</keycap> <keycap>K</keycap></keycombo></entry>
+              <entry>
+                <para>Zobrazit nebo skrýt frontu jako postranní lištu</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycombo><keycap>F11</keycap></keycombo></entry>
+              <entry>
+                <para>Zapnout nebo vypnout režim celé obrazovky</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="multimedia-keys">
+      <title>Multimediální klávesy</title>
+      <para><application>Hudební přehrávač Rhythmbox</application> podporuje klávesy na multimediálních klávesnicích, jsou-li ve vašem pracovním prostředí nastaveny.</para>
+      <table frame="none">
+	  	<title>Klávesové zkratky okna</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Zkratky</entry>
+              <entry>Činnosti</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>Zastavit</keycap></entry>
+              <entry>
+                <para>Pozastavit</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Přehrávat / Pozastavit</keycap></entry>
+              <entry>
+                <para>Přehrávat / Pozastavit</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Předchozí</keycap></entry>
+              <entry>
+                <para>Předchozí přehrávaná skladba</para>
+              </entry>
+            </row>
+            <row>
+              <entry><keycap>Následující</keycap></entry>
+              <entry>
+                <para>Následující skladba</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="lirc">
+      <title>Linux Infrared Remote Control</title>
+      <para><application>Hudební přehrávač Rhythmbox</application> obsahuje zásuvný modul pro podporu Linux Infrared Remote Control (LIRC). Následující řetězce s příkazy jsou podporovány při použití programu „rhythmbox“.</para>
+      <table frame="none">
+	  	<title>Klávesové zkratky okna</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Řetězec s příkazem</entry>
+              <entry>Činnost</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry><keycap>play</keycap></entry>
+              <entry> <para>Spustit přehrávání</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>pause</keycap></entry>
+              <entry> <para>Pozastavit přehrávání</para> </entry>
+            </row>
+	    <row>
+	      <entry><keycap>playpause</keycap></entry>
+	      <entry> <para>Přepnout mezi přehráváním a pauzou</para> </entry>
+	    </row>
+            <row>
+              <entry><keycap>shuffle</keycap></entry>
+              <entry> <para>Přepnout náhodné pořadí přehrávání</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>repeat</keycap></entry>
+              <entry> <para>Přepnout opakované přehrávání</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>next</keycap></entry>
+              <entry> <para>Přejít na následující skladbu</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>previous</keycap></entry>
+              <entry> <para>Přejít na předchozí skladbu</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>seek_forward</keycap></entry>
+              <entry> <para>Přejít v přehrávané skladbě o 10 sekund vpřed</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>seek_backward</keycap></entry>
+              <entry> <para>Přejít v přehrávané skladbě o 10 sekund zpět</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volume_up</keycap></entry>
+              <entry> <para>Zvýšit hlasitost přehrávání o 10 %</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>volume_down</keycap></entry>
+              <entry> <para>Snížit hlasitost přehrávání o 10 %</para> </entry>
+            </row>
+            <row>
+              <entry><keycap>mute</keycap></entry>
+              <entry> <para>Ztlumit přehrávání</para> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+  </sect1>
+</article>

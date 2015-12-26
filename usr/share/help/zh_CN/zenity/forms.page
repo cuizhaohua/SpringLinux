@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--forms</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>表单对话框</title>
+    <p>使用 <cmd>--forms</cmd> 选项创建一个表单对话框。</p>
+	
+    <p>表单对话框支持以下选项：</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>字段名称</var></title>
+	<p>在表单对话框中添加新的输入框。</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>字段名</var></title>
+	<p>在表格对话框中输入新的密码输入框。(隐藏文本)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>字段名称</var></title>
+	<p>在表格对话框中添加新日历。</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>文本</var></title>
+	<p>设置对话框文本。</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>分隔符</var></title>
+	<p>设置输出分隔符字符。(默认：|)</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>格式</var></title>
+	<p>设置返回日期的格式。默认的格式取决于您的区域设置。格式必须可以被 <cmd>strftime</cmd> 函数接受，例如 <var>%A %d/%m/%y</var>。</p>
+      </item>
+
+    </terms>
+
+    <p>下面的脚本示范了如何创建一个进度对话框：</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="添加好友" \
+	--text="输入您朋友的信息。" \
+	--separator="," \
+	--add-entry="名" \
+	--add-entry="姓" \
+	--add-entry="邮件" \
+	--add-calendar="生日" &gt;&gt; addr.csv
+
+case $? in
+    0)
+        echo "好友已添加。";;
+    1)
+        echo "未添加好友。"
+	;;
+    -1)
+        echo "发生意外错误。"
+	;;
+esac
+</code>
+
+    <figure id="zenity-forms-screenshot">
+      <title>表单对话框范例</title>
+      <desc><app>Zenity</app> 表单对话框范例</desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

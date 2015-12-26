@@ -1,0 +1,822 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GTK+ 2 Reference Manual: GtkPreview</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="GTK+ 2 Reference Manual">
+<link rel="up" href="DeprecatedObjects.html" title="Deprecated">
+<link rel="prev" href="GtkPixmap.html" title="GtkPixmap">
+<link rel="next" href="GtkProgress.html" title="GtkProgress">
+<meta name="generator" content="GTK-Doc V1.21.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GtkPreview.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GtkPreview.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#GtkPreview.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GtkPreview.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="DeprecatedObjects.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GtkPixmap.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GtkProgress.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GtkPreview"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GtkPreview.top_of_page"></a>GtkPreview</span></h2>
+<p>GtkPreview — A widget to display RGB or grayscale data</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GtkPreview.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-uninit" title="gtk_preview_uninit ()">gtk_preview_uninit</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-new" title="gtk_preview_new ()">gtk_preview_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-size" title="gtk_preview_size ()">gtk_preview_size</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-put" title="gtk_preview_put ()">gtk_preview_put</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-draw-row" title="gtk_preview_draw_row ()">gtk_preview_draw_row</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-set-expand" title="gtk_preview_set_expand ()">gtk_preview_set_expand</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-set-gamma" title="gtk_preview_set_gamma ()">gtk_preview_set_gamma</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-set-color-cube" title="gtk_preview_set_color_cube ()">gtk_preview_set_color_cube</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-set-install-cmap" title="gtk_preview_set_install_cmap ()">gtk_preview_set_install_cmap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-set-reserved" title="gtk_preview_set_reserved ()">gtk_preview_set_reserved</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-set-dither" title="gtk_preview_set_dither ()">gtk_preview_set_dither</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gdk3/gdk2-Visuals.html#GdkVisual"><span class="returnvalue">GdkVisual</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-get-visual" title="gtk_preview_get_visual ()">gtk_preview_get_visual</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="returnvalue">GdkColormap</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-get-cmap" title="gtk_preview_get_cmap ()">gtk_preview_get_cmap</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="GtkPreview.html#GtkPreviewInfo" title="struct GtkPreviewInfo"><span class="returnvalue">GtkPreviewInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-get-info" title="gtk_preview_get_info ()">gtk_preview_get_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GtkPreview.html#gtk-preview-reset" title="gtk_preview_reset ()">gtk_preview_reset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="GtkPreview.html#GtkPreview--expand" title="The “expand” property">expand</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GtkPreview.html#GtkPreview-struct" title="struct GtkPreview">GtkPreview</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="GtkPreview.html#GtkPreviewInfo" title="struct GtkPreviewInfo">GtkPreviewInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">union</td>
+<td class="function_name"><a class="link" href="GtkPreview.html#GtkDitherInfo" title="union GtkDitherInfo">GtkDitherInfo</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a class="link" href="GtkObject.html" title="GtkObject">GtkObject</a>
+            <span class="lineart">╰──</span> <a class="link" href="GtkWidget.html" title="GtkWidget">GtkWidget</a>
+                <span class="lineart">╰──</span> GtkPreview
+</pre>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GtkPreview implements
+ AtkImplementorIface and  <a class="link" href="GtkBuildable.html" title="GtkBuildable">GtkBuildable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gtk/gtk.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.description"></a><h2>Description</h2>
+<p>
+The <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> widget provides a simple interface
+used to display images as RGB or grayscale data.
+It's deprecated; just use a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> displayed by a <a class="link" href="GtkImage.html" title="GtkImage"><span class="type">GtkImage</span></a>, or
+perhaps a <a class="link" href="GtkDrawingArea.html" title="GtkDrawingArea"><span class="type">GtkDrawingArea</span></a>. <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> has no advantage over those
+approaches.
+</p>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gtk-preview-uninit"></a><h3>gtk_preview_uninit ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_uninit (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_uninit</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This function is deprecated and does nothing.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-new"></a><h3>gtk_preview_new ()</h3>
+<pre class="programlisting"><a class="link" href="GtkWidget.html" title="GtkWidget"><span class="returnvalue">GtkWidget</span></a> *
+gtk_preview_new (<em class="parameter"><code><a class="link" href="gtk2-Standard-Enumerations.html#GtkPreviewType" title="enum GtkPreviewType"><span class="type">GtkPreviewType</span></a> type</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_new</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Create a new preview widget.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.3.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type data contained by the widget.
+(Grayscale or RGB)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.3.7"></a><h4>Returns</h4>
+<p>a new <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-size"></a><h3>gtk_preview_size ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_size (<em class="parameter"><code><a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> *preview</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_size</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Set the size that the preview widget will request
+in response to a "size_request" signal. The
+drawing area may actually be allocated a size
+larger than this depending on how it is packed
+within the enclosing containers. The effect
+of this is determined by whether the preview
+is set to expand or not (see <code class="function">gtk_preview_expand()</code>)
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>the new width.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>the new height.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-put"></a><h3>gtk_preview_put ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_put (<em class="parameter"><code><a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> *preview</code></em>,
+                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Windows.html#GdkWindow"><span class="type">GdkWindow</span></a> *window</code></em>,
+                 <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-Graphics-Contexts.html#GdkGC"><span class="type">GdkGC</span></a> *gc</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> srcx</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> srcy</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> destx</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> desty</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> width</code></em>,
+                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> height</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_put</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Takes a portion of the contents of a preview widget
+and draws it onto the given drawable, <em class="parameter"><code>window</code></em>.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>a window or pixmap.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gc</p></td>
+<td class="parameter_description"><p>The graphics context for the operation. Only the
+clip mask for this GC matters.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>srcx</p></td>
+<td class="parameter_description"><p>the x coordinate of the upper left corner in the source image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>srcy</p></td>
+<td class="parameter_description"><p>the y coordinate of the upper left corner in the source image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>destx</p></td>
+<td class="parameter_description"><p>the x coordinate of the upper left corner in the destination image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>desty</p></td>
+<td class="parameter_description"><p>the y coordinate of the upper left corner in the destination image.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>width</p></td>
+<td class="parameter_description"><p>the width of the rectangular portion to draw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>height</p></td>
+<td class="parameter_description"><p>the height of the rectangular portion to draw.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-draw-row"></a><h3>gtk_preview_draw_row ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_draw_row (<em class="parameter"><code><a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> *preview</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guchar"><span class="type">guchar</span></a> *data</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> x</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> y</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> w</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_draw_row</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Sets the data for a portion of a row.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>the new data for the portion. It should contain
+<em class="parameter"><code>w</code></em>
+bytes of data if the preview is of type
+GTK_TYPE_GRAYSCALE, and 3*<em class="parameter"><code>w</code></em>
+bytes of data
+if the preview is of type GTK_TYPE_COLOR.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>x</p></td>
+<td class="parameter_description"><p>the starting value on the row to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>y</p></td>
+<td class="parameter_description"><p>the row to change.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>w</p></td>
+<td class="parameter_description"><p>the number of pixels in the row to change.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-set-expand"></a><h3>gtk_preview_set_expand ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_set_expand (<em class="parameter"><code><a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> *preview</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> expand</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_set_expand</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Determines the way that the the preview widget behaves
+when the size it is allocated is larger than the requested
+size. If <em class="parameter"><code>expand</code></em> is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a>, then the preview's window
+and buffer will be no larger than the size set with
+<a class="link" href="GtkPreview.html#gtk-preview-size" title="gtk_preview_size ()"><code class="function">gtk_preview_size()</code></a>, and the data set will be centered
+in the allocation if it is larger. If <em class="parameter"><code>expand</code></em> is <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>
+then the window and buffer will expand with the allocation;
+the application is responsible for catching
+the "size_allocate" signal and providing the data
+appropriate for this size.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>expand</p></td>
+<td class="parameter_description"><p>whether the preview's window should expand or not.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-set-gamma"></a><h3>gtk_preview_set_gamma ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_set_gamma (<em class="parameter"><code><span class="type">double</span> gamma_</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_set_gamma</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Set the gamma-correction value for all preview widgets.
+(This function will eventually be replaced with a
+function that sets a per-preview-widget gamma value).
+The resulting intensity is given by:
+<code class="literal">destination_value * pow (source_value/255, 1/gamma)</code>.
+The gamma value is applied when the data is
+set with <a class="link" href="GtkPreview.html#gtk-preview-draw-row" title="gtk_preview_draw_row ()"><code class="function">gtk_preview_draw_row()</code></a> so changing this
+value will not affect existing data in preview
+widgets.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.8.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>gamma_</p></td>
+<td class="parameter_description"><p>the new gamma value.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-set-color-cube"></a><h3>gtk_preview_set_color_cube ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_set_color_cube (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nred_shades</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ngreen_shades</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nblue_shades</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> ngray_shades</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_set_color_cube</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This function is deprecated and does nothing. GdkRGB
+automatically picks an optimium color cube for the
+display.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.9.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>nred_shades</p></td>
+<td class="parameter_description"><p>ignored</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngreen_shades</p></td>
+<td class="parameter_description"><p>ignored</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>nblue_shades</p></td>
+<td class="parameter_description"><p>ignored</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ngray_shades</p></td>
+<td class="parameter_description"><p>ignored</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-set-install-cmap"></a><h3>gtk_preview_set_install_cmap ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_set_install_cmap (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> install_cmap</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_set_install_cmap</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This function is deprecated
+and does nothing. GdkRGB will automatically pick
+a private colormap if it cannot allocate sufficient
+colors.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.10.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>install_cmap</p></td>
+<td class="parameter_description"><p>ignored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-set-reserved"></a><h3>gtk_preview_set_reserved ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_set_reserved (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> nreserved</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_set_reserved</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This function is deprecated and does nothing.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.11.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>nreserved</p></td>
+<td class="parameter_description"><p>ignored.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-set-dither"></a><h3>gtk_preview_set_dither ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_set_dither (<em class="parameter"><code><a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a> *preview</code></em>,
+                        <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk3/gdk2-GdkRGB.html#GdkRgbDither"><span class="type">GdkRgbDither</span></a> dither</code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_set_dither</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Set the dithering mode for the display.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.12.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>preview</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>dither</p></td>
+<td class="parameter_description"><p>the dithering mode.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-get-visual"></a><h3>gtk_preview_get_visual ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Visuals.html#GdkVisual"><span class="returnvalue">GdkVisual</span></a> *
+gtk_preview_get_visual (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_get_visual</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Returns the visual used by preview widgets. This
+function is deprecated, and you should use
+<a href="http://library.gnome.org/devel/gdk3/gdk2-GdkRGB.html#gdk-rgb-get-visual"><code class="function">gdk_rgb_get_visual()</code></a> instead.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.13.6"></a><h4>Returns</h4>
+<p>the visual for previews.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-get-cmap"></a><h3>gtk_preview_get_cmap ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="returnvalue">GdkColormap</span></a> *
+gtk_preview_get_cmap (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_get_cmap</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Returns the colormap used by preview widgets. This
+function is deprecated, and you should use
+<a href="http://library.gnome.org/devel/gdk3/gdk2-GdkRGB.html#gdk-rgb-get-cmap"><code class="function">gdk_rgb_get_cmap()</code></a> instead.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.14.6"></a><h4>Returns</h4>
+<p>the colormap for previews.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-get-info"></a><h3>gtk_preview_get_info ()</h3>
+<pre class="programlisting"><a class="link" href="GtkPreview.html#GtkPreviewInfo" title="struct GtkPreviewInfo"><span class="returnvalue">GtkPreviewInfo</span></a> *
+gtk_preview_get_info (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_get_info</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Return a <a class="link" href="GtkPreview.html#GtkPreviewInfo" title="struct GtkPreviewInfo"><span class="type">GtkPreviewInfo</span></a> structure containing
+global information about preview widgets.
+</p>
+<div class="refsect3">
+<a name="id-1.4.23.12.10.15.6"></a><h4>Returns</h4>
+<p>a <a class="link" href="GtkPreview.html#GtkPreviewInfo" title="struct GtkPreviewInfo"><span class="type">GtkPreviewInfo</span></a> structure. The return
+value belongs to GTK+ and must not be modified
+or freed.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gtk-preview-reset"></a><h3>gtk_preview_reset ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gtk_preview_reset (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="warning"><p><code class="literal">gtk_preview_reset</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This function is deprecated and does nothing. It was
+once used for changing the colormap and visual on the fly.
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GtkPreview-struct"></a><h3>struct GtkPreview</h3>
+<pre class="programlisting">struct GtkPreview;</pre>
+<div class="warning"><p><code class="literal">GtkPreview</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+The <a class="link" href="GtkPreview.html#GtkPreview-struct" title="struct GtkPreview"><span class="type">GtkPreview</span></a> struct contains private data only, and
+should be accessed using the functions below.
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtkPreviewInfo"></a><h3>struct GtkPreviewInfo</h3>
+<pre class="programlisting">struct GtkPreviewInfo {
+  guchar *lookup;
+
+  gdouble gamma;
+};
+</pre>
+<div class="warning"><p><code class="literal">GtkPreviewInfo</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+Contains information about global properties
+of preview widgets.
+The <a class="link" href="GtkPreview.html#GtkPreviewInfo" title="struct GtkPreviewInfo"><span class="type">GtkPreviewInfo</span></a> struct contains the following fields.
+(These fields should be considered read-only. They should never be set by
+an application.)
+</p>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td>
+<a href="http://library.gnome.org/devel/gdk3/gdk2-Visuals.html#GdkVisual"><span class="type">GdkVisual</span></a> *visual;</td>
+<td>the visual used by all previews.</td>
+</tr>
+<tr>
+<td>
+<a href="http://library.gnome.org/devel/gdk3/gdk2-Colormaps-and-Colors.html#GdkColormap"><span class="type">GdkColormap</span></a> *cmap;</td>
+<td>the colormap used by all previews.</td>
+</tr>
+<tr>
+<td>gdouble gamma;</td>
+<td>the gamma correction value used by all previews (See <a class="link" href="GtkPreview.html#gtk-preview-set-gamma" title="gtk_preview_set_gamma ()"><code class="function">gtk_preview_set_gamma()</code></a>).</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GtkDitherInfo"></a><h3>union GtkDitherInfo</h3>
+<div class="warning"><p><code class="literal">GtkDitherInfo</code> is deprecated and should not be used in newly-written code.</p></div>
+<p>
+This union not used in GTK+.
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GtkPreview--expand"></a><h3>The <code class="literal">“expand”</code> property</h3>
+<pre class="programlisting">  “expand”                   <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether the preview widget should take up the entire space it is allocated.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GtkPreview.see-also"></a><h2>See Also</h2>
+<p>
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><span class="type">GdkRGB</span></span></p></td>
+<td><p>the backend used by <a class="link" href="GtkPreview.html" title="GtkPreview"><span class="type">GtkPreview</span></a>.</p></td>
+</tr></tbody>
+</table></div>
+<p>
+</p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21.1</div>
+</body>
+</html>

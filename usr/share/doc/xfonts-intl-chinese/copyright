@@ -1,0 +1,26 @@
+This package was debianized by Milan Zamazal <pdm@debian.org> on
+Fri,  9 Oct 1998 23:43:38 +0200.
+
+It was downloaded from ftp://ftp.gnu.org/pub/gnu/ .
+
+The CNS Plane 1..7 fonts with unclear copying conditions were removed.
+
+Copyright:
+
+Chinese simplified (GB2312.1980):
+	guob16.bdf	GB2312 + GB8565-88 by Koichi Yasuoka
+
+	This file is in public domain.
+
+Chinese tranditional (BIG5):
+	taipei16.bdf	ftp.ifcss.org: /software/fonts
+	taipei24.bdf	...
+
+	These files are in public domain.
+
+Chinese SiSheng:
+	sish14-etl.bdf		by ETL, still under development
+	sish16-etl.bdf		...
+	sish24-etl.bdf		...
+
+	You can use, copy, modify, distribute these files for free.

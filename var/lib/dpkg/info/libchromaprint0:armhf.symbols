@@ -1,0 +1,18 @@
+libchromaprint.so.0 libchromaprint0 #MINVER#
+| libchromaprint-private
+ _ZNSt6vectorIcSaIcEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPcS1_EERKc@Base 0.6 1
+ _ZNSt6vectorIdSaIdEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPdS1_EEjRKd@Base 0.6 1
+ _ZNSt6vectorIdSaIdEEaSERKS1_@Base 0.6 1
+ _ZNSt6vectorIiSaIiEEaSERKS1_@Base 0.6 1
+ chromaprint_dealloc@Base 0.2
+ chromaprint_decode_fingerprint@Base 0.2
+ chromaprint_encode_fingerprint@Base 0.2
+ chromaprint_feed@Base 0.2
+ chromaprint_finish@Base 0.2
+ chromaprint_free@Base 0.2
+ chromaprint_get_fingerprint@Base 0.2
+ chromaprint_get_raw_fingerprint@Base 0.2
+ chromaprint_get_version@Base 0.2
+ chromaprint_new@Base 0.2
+ chromaprint_set_option@Base 0.7
+ chromaprint_start@Base 0.2

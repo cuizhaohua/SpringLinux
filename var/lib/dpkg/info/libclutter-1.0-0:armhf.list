@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libclutter-1.0-0
+/usr/share/doc/libclutter-1.0-0/changelog.gz
+/usr/share/doc/libclutter-1.0-0/NEWS.gz
+/usr/share/doc/libclutter-1.0-0/changelog.Debian.gz
+/usr/share/doc/libclutter-1.0-0/copyright
+/usr/share/doc/libclutter-1.0-0/README.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libclutter-1.0.so.0.2000.0
+/usr/lib/arm-linux-gnueabihf/libclutter-glx-1.0.so.0
+/usr/lib/arm-linux-gnueabihf/libclutter-1.0.so.0

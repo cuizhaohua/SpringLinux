@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Промяна на цветова схема</title>
+
+  <p><app>gedit</app> включва няколко цветови схеми, които ви позволяват да промените облика на главния прозорец.</p>
+
+  <p>За да промените цветовата схема извършете следните стъпки:</p>
+  <steps>
+    <item><p>Select <guiseq><gui style="menu">gedit</gui>
+    <gui style="menuitem">Preferences</gui>
+    <gui>Font &amp; Colors</gui></guiseq>.</p></item>
+    <item><p>Изберете желаната цветова схема.</p></item>
+  </steps>
+
+  <p>Избраната цветова схема ще бъде приложена веднага.</p>
+
+  <section id="custom-color-scheme">
+    <title>Използване на потребителска цветова схема</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>Също така можете да използвате цветови схеми, които са били създадени от други хора или да създадете и използвате ваша собствена.</p>
+    <p>Инструкции за инсталиране на потребителски цветови схеми, както и примери, които можете да изтеглите и използвате, можете да намерите в <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">Уикито на gedit</link>.</p>
+  </section>
+
+</page>

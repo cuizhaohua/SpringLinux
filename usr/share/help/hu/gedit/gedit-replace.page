@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-replace" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-search"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.10" date="2013-11-05" status="candidate"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email>kittykat3756@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Szöveg cseréje</title>
+
+  <p>A szöveg szerkesztése időigényes lehet. Az időspórolás érdekében a <app>gedit</app> tartalmazza a <app>Csere</app> funkciót, amely segíti a szövegrészek keresésében és helyettesítésében.</p>
+
+  <steps>
+    <title>Szöveg cseréje a <app>geditben</app></title>
+    <item>
+      <p>A <gui>Csere</gui> eszközt a <guiseq><gui style="menu">Keresés</gui><gui style="menuitem">Csere</gui></guiseq> menüpont kiválasztásával, vagy a <keyseq><key>Ctrl</key><key>H</key></keyseq> billentyűkombináció megnyomásával indíthatja el.</p>
+    </item>
+    <item>
+      <p>A cserélni kívánt szöveget írja be a <gui>Keresés erre:</gui> mezőbe.</p>
+    </item>
+    <item>
+      <p>Az új helyettesítő szöveget írja be a <gui>Csere ezzel:</gui> mezőbe.</p>
+    </item>
+    <item>
+      <p>Az eredeti és helyettesítő szöveg megadása után további paramétereket adhat a kereséshez. Kiválaszthatja azt is, mit kíván cserélni:</p>
+      <list>
+        <item>
+          <p><em>Csak</em> a következő előfordulás cseréjéhez kattintson a <gui>Csere</gui> gombra.</p>
+        </item>
+        <item>
+          <p>A dokumentumban lévő <em>összes előfordulás</em> cseréléséhez kattintson az <gui>Összes cseréje</gui> gombra.</p>
+        </item>
+      </list>
+    </item>
+  </steps>
+
+  <note style="warning">
+    <p>Az <gui>Összes cseréje</gui> funkciót óvatosan használja. Az <gui>Összes cseréje</gui> funkció a teljes szövegfájlon működik, és nem teszi lehetővé azon szövegrészek kiemelését, amelyen a csere funkció végrehajtásra kerül.</p>
+  </note>
+
+<section id="replace-options">
+  <title>További beállítások</title>
+
+  <p>Ha szeretné, a kereséshez további paramétereket is megadhat:</p>
+
+  <terms>
+    <item>
+      <title>Kis- és nagybetű</title>
+      <p>A <em>Kis- és nagybetű</em> beállítással megadhatja, hogy a keresés megkülönböztesse-e a kis- és nagybetűket. Ha ez be van jelölve, akkor a keresés megkülönbözteti a kis- és nagybetűket, ellenkező esetben nem.</p>
+    </item>
+    <item>
+      <title>Csak teljes szóra</title>
+      <p>Ezen beállítással megadható, hogy adott szóra más szavak töredékeit kizárva szeretne-e keresni. Ha például az „és” szót keresi, és ez a beállítás be van jelölve, akkor az „és” szót megtalálja, de a „köt<em>és</em>” vagy a „k<em>és</em>ik” szót már nem.</p>
+    </item>
+    <item>
+      <title>Keresés visszafelé</title>
+      <p>Ez a beállítás azonosan működik az Előző keresése paranccsal. Ha a találatokat a vége felől az eleje felé szeretné bejárni, akkor jelölje be ezt a négyzetet.</p>
+    </item>
+    <item>
+      <title>Körbe</title>
+      <p>Ha a <app>körbe</app> négyzet be van jelölve, akkor a <app>gedit</app> a keresés/csere műveletet újraindítja a fájl elejétől, miután elérte a fájl végét. Ez biztosítja, hogy a keresés/csere művelet a teljes fájlra végrehajtásra kerüljön.</p>
+    </item>
+  </terms>
+
+</section>
+
+<section id="escape-sequences">
+  <title>Escape sorozatok használata</title>
+
+  <p>Sorvégjelek és tabulátorok kereséséhez használhatja az <em>escape sorozatokat</em>.</p>
+
+  <terms>
+    <item>
+      <title>\n</title>
+      <p>Új sor</p>
+    </item>
+    <item>
+      <title>\t</title>
+      <p>Tab</p>
+    </item>
+    <item>
+      <title>\r</title>
+      <p>Kocsi vissza karakter</p>
+    </item>
+  </terms>
+
+  <p>Ha egy <output>\</output> (fordított osztásjelet) vagy egy más escape sorozatot szeretne keresni a szövegben, a fordított osztásjelet egy extra \ jellel kell védenie. Például, a <input>\</input> jelek kereséséhez a <input>\\</input> szöveget kell beírnia a keresés vagy csere mezőbe. A különböző escape jelöléseket hasonló módon keresheti: A <input>\n</input> kereséséhez vagy cseréjéhez használja a <input>\\n</input> kifejezést.</p>
+
+</section>
+
+</page>

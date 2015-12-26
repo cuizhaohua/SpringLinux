@@ -1,0 +1,7 @@
+In random order:
+* Check for minimal versions of dependencies
+* Check for regressions from monolith
+* Upgrade testing
+* Review maintainer scripts once again
+ - stop/nostop issue especially.
+* Pull in changelogs from monolith

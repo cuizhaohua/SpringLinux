@@ -1,0 +1,33 @@
+#!/bin/bash
+
+#I need to be executable!!
+#
+#(all the other system.*wm*.rc files don't need to be executable,
+#but the 9wm one does.
+#(the system.9wmrc-menu file doesn't need to be executable, though)
+
+config=/etc/X11/9wm/system.9wmrc
+
+#
+#the next line inludes the /etc/X11/9wm/menudefs.hook file (or
+#the personalised version from the user.
+#
+include-menu-defs
+
+while test "$#" != "1" ; do
+  case "$1" in
+    --menu)
+      (echo /usr/bin/X11/9menu -teleport -label $2 -popdown \
+            `$2` exit)|/bin/sh; 
+      shift;;
+    --start)
+      (echo /usr/bin/X11/9menu -iconic -teleport -label $2 -popdown \
+            `$2` exit)|/bin/sh; 
+      shift;;
+
+    *)
+      echo Usage: $config --menu menu-name
+      exit;;
+  esac
+done
+

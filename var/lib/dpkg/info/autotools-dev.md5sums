@@ -1,0 +1,14 @@
+8509b811bb8b165e3e06120e08ff1a35  usr/bin/dh_autotools-dev_restoreconfig
+077b7fbb3e54e7f42c405cd05efc84bf  usr/bin/dh_autotools-dev_updateconfig
+158376335f053e99c5614540922966ce  usr/share/doc/autotools-dev/NEWS.Debian.gz
+f693a14f30d8a9d017ba09fb0a5022ac  usr/share/doc/autotools-dev/README.Debian.gz
+c71b8f9ddf21dd8a413746a5735fd386  usr/share/doc/autotools-dev/TODO
+1bf666976ded207a0952e03dfa09d237  usr/share/doc/autotools-dev/changelog.Debian.gz
+ca62c5cc24b6953ee1c78517dc521fc6  usr/share/doc/autotools-dev/changelog.gz
+446c4cd854b8364d9eba40e36507fd0f  usr/share/doc/autotools-dev/copyright
+e7c34c1ecad66d9f27bea50de5fc6beb  usr/share/doc/autotools-dev/upstream.mail.template
+ee2cdd356580d7e6728cd28b3768240d  usr/share/man/man1/dh_autotools-dev_restoreconfig.1.gz
+81d2cc3b63356ab72cd2becbc76808ad  usr/share/man/man1/dh_autotools-dev_updateconfig.1.gz
+0fb81517303511f05a01b14f41cec2cf  usr/share/misc/config.guess
+6277d71b2125f2bd6390226a906f0b0c  usr/share/misc/config.sub
+ef09df37f34ee47f1035af1dcd3c933e  usr/share/perl5/Debian/Debhelper/Sequence/autotools_dev.pm

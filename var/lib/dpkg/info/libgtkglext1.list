@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libgtkglext1
+/usr/share/doc
+/usr/share/doc/libgtkglext1
+/usr/share/doc/libgtkglext1/copyright
+/usr/share/doc/libgtkglext1/changelog.gz
+/usr/share/doc/libgtkglext1/changelog.Debian.gz
+/usr/lib
+/usr/lib/libgdkglext-x11-1.0.so.0.0.0
+/usr/lib/libgtkglext-x11-1.0.so.0.0.0
+/usr/lib/libgdkglext-x11-1.0.so.0
+/usr/lib/libgtkglext-x11-1.0.so.0

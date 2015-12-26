@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libopenexr6
+/usr/share/doc/libopenexr6/README
+/usr/share/doc/libopenexr6/AUTHORS
+/usr/share/doc/libopenexr6/buildinfo_armhf.gz
+/usr/share/doc/libopenexr6/NEWS.gz
+/usr/share/doc/libopenexr6/changelog.Debian.gz
+/usr/share/doc/libopenexr6/changelog.gz
+/usr/share/doc/libopenexr6/copyright
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libIlmImf.so.6.0.0
+/usr/lib/arm-linux-gnueabihf/libIlmImf.so.6

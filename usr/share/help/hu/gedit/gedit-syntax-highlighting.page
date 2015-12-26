@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="hu">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Szintaxiskiemelés bekapcsolása</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Szintaxiskiemelés</title>
+    <p>A <app>gedit</app> számos jelölő-, programozási és tudományos nyelvhez biztosít szintaxiskiemelést. Ha a <app>gedit</app> felismeri a megnyitott fájlban használt szintaxist, akkor automatikusan kiemeli a szöveget.</p>
+
+    <p>Ha a szintaxis vagy a nyelv nem kerül kiemelésre indításkor, akkor kiválaszthatja a megfelelő szintaxist vagy nyelvet a <guiseq><gui style="menu">Nézet</gui><gui style="menuitem">Kiemelési mód</gui></guiseq> menüpont, majd a kívánt szintaxis kiválasztásával. Ennek alternatívájaként kiválaszthatja a szintaxisnevet a <app>gedit</app> ablak alján lévő listából.</p>
+  </section>
+
+</page>

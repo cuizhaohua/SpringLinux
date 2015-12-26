@@ -1,0 +1,11 @@
+TARGETS = brcm40183-patch xdm hostapd cgproxy lirc hddtemp bluetooth network-manager urandom alsa-utils sendsigs cgmanager rsyslog umountnfs.sh ramlog hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: xdm hostapd network-manager bluetooth lirc hddtemp alsa-utils
+rsyslog: sendsigs network-manager bluetooth lirc hddtemp
+umountnfs.sh: sendsigs xdm rsyslog hostapd network-manager bluetooth lirc hddtemp alsa-utils
+ramlog: rsyslog
+hwclock.sh: rsyslog
+networking: xdm hddtemp umountnfs.sh
+umountfs: xdm networking hwclock.sh hostapd urandom network-manager bluetooth lirc hddtemp alsa-utils umountnfs.sh
+umountroot: umountfs
+halt: umountroot
+reboot: umountroot

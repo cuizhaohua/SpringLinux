@@ -1,0 +1,6 @@
+c5a01126d24d14407e19ef804c27cfb7  usr/lib/libgdkglext-x11-1.0.so.0.0.0
+61ee4086c39b7de4017dc09c911a32fb  usr/lib/libgtkglext-x11-1.0.so.0.0.0
+2106a7d46c55b159ee963155cbabdaf5  usr/share/doc/libgtkglext1/changelog.Debian.gz
+9526ab4fe067c8f0e6608536b27f3416  usr/share/doc/libgtkglext1/changelog.gz
+009ec692fc25d67df29f4c7c40b47bdd  usr/share/doc/libgtkglext1/copyright
+ff41806fb37fa32037da6b9ea89bf22d  usr/share/lintian/overrides/libgtkglext1

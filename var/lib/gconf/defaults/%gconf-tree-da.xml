@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Nøglering som adgangskoder vil blive gemt i">
+						<longdesc>Navnet på nøgleringen skal bruge. Normale værdier er &quot;session&quot;, som gemmer adgangskoden i sessionen, og &quot;standard&quot; som gemmer adgangskoden uden timeout.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Gem adgangskode til gnome-keyring">
+						<longdesc>gksu kan gemme adgangskoden du skriver til gnome-keyring så du ikke behøver at blive spurgte hver gang</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Vis informationsbesked når ingen adgangskode kræves">
+						<longdesc>Denne indstilling bestemmer om en besked-dialog skal vises der oplyser brugeren om at programmet der køres ikke kræver nogen adgangskode.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Spørg om der skal låses">
+						<longdesc>Denne indstilling vil lade gksu spørge brugeren om han vil have skærmen låst før indtastning af adgangskoden. Bemærk at dette kun har en virkning hvis force-grab er slået fra.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Sudo-tilstand">
+						<longdesc>Om sudo skal være standard backend-metoden. Denne metode kan ellers opnås ved at anvende -S tilvalget, eller ved at køre &apos;gksudo&apos; i stedet for &apos;gksu&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Tving keyboard og muse lås">
+						<longdesc>Lås keyboard og mus selvom -g er blevet angivet som argument på kommandolinjen.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Deaktiér keyboard og muse lås">
+						<longdesc>Om keyboard og mus låsning skal være slået fra. Dette vil gøre det muligt for andre X-programmet at lytte til keyboard handlinger, som kan gøre at andre ondsindede programmer kan lytte til adgangskoden.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

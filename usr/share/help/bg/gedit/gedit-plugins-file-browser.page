@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-plugins-file-browser" xml:lang="bg">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2011-08-17" status="review"/>
+  <credit type="author">
+    <name>Даниел Нийл</name>
+    <email its:translate="no">dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Джим Къмпбел</name>
+    <email its:translate="no">jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Лесен файлов достъп от страничния панел</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Панел на файловия браузър</title>
+
+  <p>В зависимост от това как използвате <app>gedit</app>, може да ви е полезно да използвате приставката <app>Панел на файловия браузър</app>. Тази приставка вгражда <app>Панел на файловия браузър</app> в страничния панел, като ви дава бърз достъп до вашите често използвани файлове.</p>
+  
+  <p>You can enable the <gui>Side Pane</gui> by selecting
+  <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferences</gui>
+  <gui>Plugins</gui><gui>File Browser Pane</gui></guiseq>.</p>
+
+  <section id="sidepane-open">
+    <title>Отваряне на файлове от страничния панел</title>
+    <p>За да активирате и използвате <app>Страничен панел</app>, изберете <guiseq><gui>Изглед</gui><gui>Страничен панел</gui></guiseq> (или просто натиснете <key>F9</key>) и после натиснете иконата <gui>файлов браузър</gui> в долната част на панела.</p>
+
+    <media type="image" mime="image/png" src="figures/gedit-side-pane1.png" its:translate="no"/>
+
+    <p>Това ще активира режима <em>файлов браузър</em> в <app>страничния панел</app>. После можете да използвате бутоните за навигация в горната част на панела, за да намерите и отворите вашите файлове.</p>
+  </section>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-quickstart" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <link type="seealso" xref="gedit-open-files"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Comezar con gedit</title>
+  <p><app>gedit</app> é un editor de texto cheo de características para o contorno de escritorio GNOME. Pode usalo para preparar simples notas e documentos ou pode usar algunhas das súas características avanzadas, facendo que sexa o seu contorno de desenvolvemento de software.</p>
+
+  <media type="image" mime="image/png" src="figures/gedit3-screenshot.png"/>
+
+  <p>Once <app>gedit</app> launches, you can start writing right away. To save
+  your text, just click the <gui>Save</gui> icon in the <app>gedit</app>
+  toolbar.</p>
+
+  <p>Para aprender máis sobre as características de <app>gedit</app> e para obter axuda para realizar tarefas adicionais, explore <link xref="index">as outras partes</link> da axuda de <app>gedit</app>.</p>
+
+</page>

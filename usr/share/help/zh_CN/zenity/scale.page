@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="scale" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--scale</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>范围对话框</title>
+  <p>使用 <cmd>--scale</cmd> 选项创建一个范围对话框。</p>
+  <p>范围对话框支持以下选项：</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--text</cmd>=<var>文本</var></title>
+      <p>设置对话框文本。(默认：调整范围值)</p>
+    </item>
+
+    <item>
+      <title><cmd>--value</cmd>=<var>值</var></title>
+      <p>设置初始值。(默认：0)您必须在最小值和最大值之间指定一个值。</p>
+    </item>
+
+    <item>
+      <title><cmd>--min-value</cmd>=<var>值</var></title>
+      <p>设置最小值。(默认：0)</p>
+    </item>
+
+    <item>
+      <title><cmd>--max-value</cmd>=<var>值</var></title>
+      <p>设置最大值。(默认：100)</p>
+    </item>
+
+    <item>
+      <title><cmd>--step</cmd>=<var>值</var></title>
+      <p>设置步长。(默认：1)</p>
+    </item>
+
+    <item>
+      <title><cmd>--print-partial</cmd></title>
+      <p>将值打印为标准输出，无论值何时变化。</p>
+    </item>
+
+    <item>
+      <title><cmd>--hide-value</cmd></title>
+      <p>隐藏对话框中的值。</p>
+    </item>
+
+  </terms>
+
+  <p>下面的脚本示范了如何创建一个范围对话框：</p>
+
+<code>
+#!/bin/sh
+
+VALUE=`zenity --scale --text="选择窗口透明度。" --value=50`
+
+case $? in
+         0)
+		echo "您选中了 $VALUE%。";;
+         1)
+                echo "未选中值。";;
+        -1)
+                echo "发生意外错误。";;
+esac
+</code>
+
+  <figure id="zenity-scale-screenshot">
+    <title>范围对话框范例</title>
+    <desc><app>Zenity</app> 范围对话框范例</desc>
+    <media type="image" mime="image/png" src="figures/zenity-scale-screenshot.png"/>
+  </figure>
+
+</page>

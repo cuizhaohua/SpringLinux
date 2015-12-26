@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-open-recent" xml:lang="cs">
+
+  <info>
+    <link type="guide" xref="gedit-files-basic" group="fifth"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Lucas Lommer</mal:name>
+      <mal:email>llommer@svn.gnome.org</mal:email>
+      <mal:years>2009.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Opětovné otevření nedávno použitého souboru</title>
+
+  <p>Standardně poskytuje <app>gedit</app> přístup k posledním pěti nedávno použitým souborům. Zde je postup, jak můžete nedávno použitý soubor otevřít:</p>
+  <list type="numbered">
+    <item><p>Klikněte na šipku ukazující dolů po pravé straně tlačítka <gui>Otevřít</gui>.</p></item>
+    <item><p><app>gedit</app> zobrazí seznam posledních pěti použitých souborů.</p></item>
+    <item><p>Vyberte požadovaný soubor a ten se otevře v nové kartě.</p></item>
+  </list>
+
+  <note style="advanced"><p>Jestli chcete změnit počet nedávno použitých souborů, které <app>gedit</app> zobrazuje, budete muset použít aplikaci <app>dconf-editor</app>.</p>
+    <list>
+      <item><p>Spusťte <app>dconf-editor</app> a vyberte <guiseq><gui>org</gui> <gui>gnome</gui> <gui>gedit</gui> <gui>preferences</gui> <gui>ui</gui> <gui>max-recents</gui></guiseq>.</p></item>
+      <item><p>Dvojitě klikněte na číslo vedle <gui>max-recents</gui> a změňte hodnotu na tu požadovanou.</p></item>
+    </list>
+  </note>
+
+</page>

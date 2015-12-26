@@ -1,0 +1,4 @@
+libxerces-c3.1: package-name-doesnt-match-sonames libxerces-c-3.1
+# The xerces-3 packages install their shared libaries with weird
+# names, which confuses lintian.
+libxerces-c3.1: dev-pkg-without-shlib-symlink usr/lib/x86_64-linux-gnu/libxerces-c-3.1.so usr/lib/x86_64-linux-gnu/libxerces-c-3.1.so

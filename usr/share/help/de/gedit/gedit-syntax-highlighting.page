@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-syntax-highlighting" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Syntax-Hervorhebung aktivieren</title>
+
+  <section id="gedit-syntax-highlighting-section">
+    <title>Hervorhebung</title>
+    <p><app>gedit</app> bietet Syntax-Hervorhebung für eine breite Auswahl an Auszeichnungs-, Programmier- und wissenschaftlichen Sprachen. Falls <app>gedit</app> die Syntax beim Öffnen einer Datei erkennt, wird der Text automatisch hervorgehoben.</p>
+
+    <p>Falls die gewünschte Syntax oder Sprache nicht sofort beim Start angezeigt wird, können Sie die entsprechende Syntax oder Sprache auswählen, indem Sie <guiseq><gui style="menu">Ansicht</gui><gui> style="menuitem"Hervorhebungsmodus</gui></guiseq> klicken und dann die gewünschte Syntax auswählen. Alternativ können Sie den Namen der Syntax aus einer Liste in der Fußleiste des <app>gedit</app>-Fensters auswählen.</p>
+  </section>
+
+</page>

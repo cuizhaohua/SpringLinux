@@ -1,0 +1,5 @@
+/etc/default/ramlog
+/etc/init.d/ramlog
+/etc/cron.daily/ramlog
+/etc/logrotate.d/ramlog
+/etc/ramlog.conf.upstart

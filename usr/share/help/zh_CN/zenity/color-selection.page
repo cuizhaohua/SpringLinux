@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="color-selection" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>使用 <cmd>--color-selection</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>颜色选择对话框</title>
+  <p>使用 <cmd>--color-selection</cmd> 选项创建一个颜色选择对话框。</p>
+  <p>颜色选择对话框支持以下选项：</p>
+
+  <terms>
+
+    <item>
+      <title><cmd>--color</cmd>=<var>值</var></title>
+      <p>设置初始颜色。(例如：#FF0000)</p>
+    </item>
+
+    <item>
+      <title><cmd>--show-palette</cmd></title>
+      <p>显示调色板。</p>
+    </item>
+
+  </terms>
+
+  <p>下面的脚本示范了如何创建一个颜色选择对话框：</p>
+
+<code>
+#!/bin/sh
+
+COLOR=`zenity --color-selection --show-palette`
+
+case $? in
+         0)
+		echo "您选择了 $COLOR。";;
+         1)
+                echo "未选择颜色。";;
+        -1)
+                echo "发生意外错误。";;
+esac
+</code>
+
+  <figure id="zenity-colorselection-screenshot">
+    <title>颜色选择对话框范例</title>
+    <desc><app>Zenity</app> 颜色选择对话框范例</desc>
+    <media type="image" mime="image/png" src="figures/zenity-colorselection-screenshot.png"/>
+  </figure>
+
+</page>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-quick-open" xml:lang="gl">
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision version="3.4" date="2013-02-24" status="review"/>
+    <revision version="3.8" date="2013-04-23" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+
+    <desc>Abrir rapidamente un ficheiro ou un conxunto de ficheiros</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Apertura rápida</title>
+
+  <p>Como o seu propio nome indica, o engadido de <app>Apertura rápida</app> axúdalle a abrir ficheiros máis rapidamente que da maneira habitual. Para activar este engadido, seleccione <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Preferencias</gui><gui>Engadidos</gui><gui>Apertura rápida</gui></guiseq>.</p>
+    
+  <p>En canto active o engadido <app>Apertura rápida</app> poderá usalo como segue:</p>
+
+  <steps>
+    <item><p>Abra o diálogo <app>Apertura rápida</app> premendo <keyseq><key>Ctrl</key><key>Alt</key><key>O</key></keyseq>, ou seleccionando <guiseq><gui>Ficheiro</gui><gui>Apertura rápida</gui></guiseq>.</p>
+    <p>Aparecerá o diálogo <gui>Apertura rápida</gui> de ficheiros.</p></item>
+    <item><p>Use o seu rato para activar os ficheiros que quere abrir.</p>
+    <p>Para seleccionar varios ficheiros individuais, manteña pulsada a tecla <key>Ctrl</key> mentres preme sobre os ficheiros que quere abrir.</p>
+    <p>Para seleccionar un grupo de ficheiros, prema sobre o primeiro de eles, manteña premida a tecla <key>Maiús</key> e prema sobre o último ficheiro da lista de ficheiros que queira abrir.</p></item>
+    <item><p>Prema <gui>Abrir</gui>.</p></item>
+  </steps>
+
+  <p><app>Apertura rápida</app> buscará ficheiros en:</p>
+
+  <list>
+    <item><p>O cartafol do seu documento aberto actualmente</p></item>
+    <item><p>O cartafol raíz do engadido <app xref="gedit-plugins-file-browser">Panel explorador de ficheiros</app></p></item>
+    <item><p>Recent documents which are also shown in the <file>Recent</file>
+    folder in <app>Files</app></p></item>
+    <item><p>Cartafoles que marcara en <app>Ficheiros</app></p></item>
+    <item><p>O seu cartafol <file>Escritorio</file></p></item>
+    <item><p>O seu <file>Cartafol persoal</file></p></item>
+  </list>
+
+  <note style="tip">
+    <p><app>Apertura rápida</app> mostra os ficheiros de calquera das localizacións de arriba sen importar se xa os abrira anteriormente.</p>
+  </note>
+
+</page>

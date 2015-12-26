@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+
+
+import os, urllib, json, sys, urllib.request
+from gi.repository import Gtk, Gdk
+
+lang = os.getenv('GEDIT_CURRRENT_DOCUMENT_LANGUAGE')
+if lang is None:
+    lang = "text"
+
+current_document_path = os.getenv('GEDIT_CURRENT_DOCUMENT_PATH')
+selected_text = os.getenv('GEDIT_SELECTED_TEXT')
+
+if selected_text is None:
+    selected_text = sys.stdin.read()
+
+url_params = urllib.parse.urlencode({'paste_data': selected_text, 'paste_lang': lang, 'mode':'json', 'api_submit':'true'})
+openfpaste = urllib.request.urlopen("http://fpaste.org", bytes(url_params, 'utf-8')).read().decode("utf-8")
+final_data = json.loads(openfpaste)
+
+paste_url = "http://fpaste.org/" + final_data['result']['id']
+
+print(paste_url + " has been copied to clipboard.")
+
+disp = Gdk.Display.get_default()
+clipper = Gtk.Clipboard.get_for_display(disp, Gdk.SELECTION_CLIPBOARD)
+clipper.set_text(paste_url, len(paste_url))
+clipper.store()

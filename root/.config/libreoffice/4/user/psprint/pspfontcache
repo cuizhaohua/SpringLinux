@@ -1,0 +1,280 @@
+LibreOffice PspFontCacheFile format 5
+FontCacheDirectory:1448190914:/usr/share/fonts/truetype/wqy
+File:wqy-zenhei.ttc
+2;3
+文泉驿正黑;WenQuanYi Zen Hei;文泉驛正黑
+0;WenQuanYiZenHei;0;6;5;2;65535;962;296;258;0;1175;1258;1175;1258;0;0;0;8;Regular
+文泉驿等宽正黑;WenQuanYi Zen Hei Mono;文泉驛等寬正黑
+1;WenQuanYiZenHeiMono;0;6;5;2;65535;962;296;258;0;1175;1258;1175;1258;0;0;0;8;Regular
+文泉驿点阵正黑;WenQuanYi Zen Hei Sharp;文泉驛點陣正黑
+2;WenQuanYiZenHeiSharp;0;6;5;2;65535;962;296;258;0;1175;1258;1175;1258;0;0;0;8;Regular
+
+FontCacheDirectory:1262304764:/usr/share/fonts/truetype/openoffice
+File:opens___.ttf
+2;1
+OpenSymbol
+0;OpenSymbol;0;5;5;2;65535;799;200;-1;0;1262;999;1262;999;0;0;0;8;Regular
+
+FontCacheDirectory:1262304764:/usr/share/fonts/truetype
+File:msyh.ttf
+2;1
+微软雅黑;Microsoft YaHei
+0;MicrosoftYaHei;0;5;5;2;65535;1058;261;319;1;1427;1319;1427;1319;0;0;0;8;Regular
+
+File:msyhbd.ttf
+2;1
+微软雅黑;Microsoft YaHei
+0;MicrosoftYaHeiBold;0;8;5;2;65535;1058;261;319;1;1448;1319;1448;1319;0;0;0;8;Bold
+
+FontCacheDirectory:1262304766:/usr/share/fonts/truetype/gentium-basic
+File:GenBkBasR.ttf
+2;1
+Gentium Book Basic
+0;GentiumBookBasic;0;5;5;2;65535;874;283;157;0;1501;1157;1501;1157;0;0;0;0;Regular
+
+File:GenBasR.ttf
+2;1
+Gentium Basic
+0;GentiumBasic;0;5;5;2;65535;874;283;157;0;1477;1157;1477;1157;0;0;0;0;Regular
+
+File:GenBkBasI.ttf
+2;1
+Gentium Book Basic
+0;GentiumBookBasic-Italic;2;5;5;2;65535;874;283;157;0;1330;1157;1330;1157;0;0;0;0;Italic
+
+File:GenBasI.ttf
+2;1
+Gentium Basic
+0;GentiumBasic-Italic;2;5;5;2;65535;874;283;157;0;1292;1157;1292;1157;0;0;0;0;Italic
+
+File:GenBkBasBI.ttf
+2;1
+Gentium Book Basic
+0;GentiumBookBasic-BoldItalic;2;8;5;2;65535;874;283;157;0;1445;1157;1445;1157;0;0;0;0;Bold Italic
+
+File:GenBasBI.ttf
+2;1
+Gentium Basic
+0;GentiumBasic-BoldItalic;2;8;5;2;65535;874;283;157;0;1407;1157;1407;1157;0;0;0;0;Bold Italic
+
+File:GenBkBasB.ttf
+2;1
+Gentium Book Basic
+0;GentiumBookBasic-Bold;0;8;5;2;65535;874;283;157;0;1579;1157;1579;1157;0;0;0;0;Bold
+
+File:GenBasB.ttf
+2;1
+Gentium Basic
+0;GentiumBasic-Bold;0;8;5;2;65535;874;283;157;0;1549;1157;1549;1157;0;0;0;0;Bold
+
+FontCacheDirectory:1262308724:/usr/share/fonts/truetype/ttf-dejavu
+File:DejaVuSerif.ttf
+2;1
+DejaVu Serif
+0;DejaVuSerif;0;5;5;2;65535;928;235;163;0;2448;1163;2448;1163;0;0;0;0;Book
+
+File:DejaVuSerif-Bold.ttf
+2;1
+DejaVu Serif
+0;DejaVuSerif-Bold;0;8;5;2;65535;938;235;173;0;2630;1173;2630;1173;0;0;0;0;Bold
+
+File:DejaVuSansMono-Bold.ttf
+2;1
+DejaVu Sans Mono
+0;DejaVuSansMono-Bold;0;8;5;1;65535;928;235;163;0;1176;1163;1176;1163;0;0;0;0;Bold
+
+File:DejaVuSansMono.ttf
+2;1
+DejaVu Sans Mono
+0;DejaVuSansMono;0;5;5;1;65535;928;235;163;0;1274;1163;1274;1163;0;0;0;0;Book
+
+File:DejaVuSans.ttf
+2;1
+DejaVu Sans
+0;DejaVuSans;0;5;5;2;65535;928;235;163;0;2700;1163;2700;1163;0;0;0;0;Book
+
+File:DejaVuSans-Bold.ttf
+2;1
+DejaVu Sans
+0;DejaVuSans-Bold;0;8;5;2;65535;928;235;163;0;3044;1163;3044;1163;0;0;0;0;Bold
+
+FontCacheDirectory:1262304761:/usr/share/fonts/truetype/dejavu
+File:DejaVuSerif-BoldItalic.ttf
+2;1
+DejaVu Serif
+0;DejaVuSerif-BoldItalic;2;8;5;2;65535;938;235;173;0;2658;1173;2658;1173;0;0;0;0;Bold Italic
+
+File:DejaVuSerifCondensed-Bold.ttf
+2;1
+DejaVu Serif Condensed
+0;DejaVuSerifCondensed-Bold;0;8;4;2;65535;938;235;173;0;2368;1173;2368;1173;0;0;0;0;Condensed Bold
+
+File:DejaVuSansMono-BoldOblique.ttf
+2;1
+DejaVu Sans Mono
+0;DejaVuSansMono-BoldOblique;1;8;5;1;65535;928;235;163;0;1232;1163;1232;1163;0;0;0;0;Bold Oblique
+
+File:DejaVuSansMono-Oblique.ttf
+2;1
+DejaVu Sans Mono
+0;DejaVuSansMono-Oblique;1;5;5;1;65535;928;235;163;0;1148;1163;1148;1163;0;0;0;0;Oblique
+
+File:DejaVuSerifCondensed-Italic.ttf
+2;1
+DejaVu Serif Condensed
+0;DejaVuSerifCondensed-Italic;2;5;4;2;65535;928;235;163;0;2235;1163;2235;1163;0;0;0;0;Condensed Italic
+
+File:DejaVuSerif-Italic.ttf
+2;1
+DejaVu Serif
+0;DejaVuSerif-Italic;2;5;5;2;65535;928;235;163;0;2483;1163;2483;1163;0;0;0;0;Italic
+
+File:DejaVuSans-ExtraLight.ttf
+2;1
+DejaVu Sans Light
+0;DejaVuSans-ExtraLight;0;2;5;2;65535;928;235;163;0;2391;1163;2391;1163;0;0;0;0;ExtraLight
+
+File:DejaVuSerifCondensed-BoldItalic.ttf
+2;1
+DejaVu Serif Condensed
+0;DejaVuSerifCondensed-BoldItalic;2;8;4;2;65535;938;235;173;0;2393;1173;2393;1173;0;0;0;0;Condensed Bold Italic
+
+File:DejaVuSansCondensed-Bold.ttf
+2;1
+DejaVu Sans Condensed
+0;DejaVuSansCondensed-Bold;0;8;4;2;65535;928;235;163;0;2739;1163;2739;1163;0;0;0;0;Condensed Bold
+
+File:DejaVuSansCondensed-BoldOblique.ttf
+2;1
+DejaVu Sans Condensed
+0;DejaVuSansCondensed-BoldOblique;1;8;4;2;65535;928;235;163;0;2758;1163;2758;1163;0;0;0;0;Condensed Bold Oblique
+
+File:DejaVuSerifCondensed.ttf
+2;1
+DejaVu Serif Condensed
+0;DejaVuSerifCondensed;0;5;4;2;65535;928;235;163;0;2203;1163;2203;1163;0;0;0;0;Condensed
+
+File:DejaVuSansCondensed-Oblique.ttf
+2;1
+DejaVu Sans Condensed
+0;DejaVuSansCondensed-Oblique;1;5;4;2;65535;928;235;163;0;2407;1163;2407;1163;0;0;0;0;Condensed Oblique
+
+File:DejaVuSansCondensed.ttf
+2;1
+DejaVu Sans Condensed
+0;DejaVuSansCondensed;0;5;4;2;65535;928;235;163;0;2430;1163;2430;1163;0;0;0;0;Condensed
+
+File:DejaVuSans-BoldOblique.ttf
+2;1
+DejaVu Sans
+0;DejaVuSans-BoldOblique;1;8;5;2;65535;928;235;163;0;3064;1163;3064;1163;0;0;0;0;Bold Oblique
+
+File:DejaVuSans-Oblique.ttf
+2;1
+DejaVu Sans
+0;DejaVuSans-Oblique;1;5;5;2;65535;928;235;163;0;2674;1163;2674;1163;0;0;0;0;Oblique
+
+FontCacheDirectory:1448174119:/usr/share/fonts/truetype/ttf-bitstream-vera
+File:VeraSeBd.ttf
+2;1
+Bitstream Vera Serif
+0;BitstreamVeraSerif-Bold;0;8;5;2;65535;938;235;173;0;1546;1173;1546;1173;0;0;0;4;Bold
+
+File:VeraMoBd.ttf
+2;1
+Bitstream Vera Sans Mono
+0;BitstreamVeraSansMono-Bold;0;8;5;1;65535;928;235;163;0;624;1163;624;1163;0;0;0;4;Bold
+
+File:VeraMoBI.ttf
+2;1
+Bitstream Vera Sans Mono
+0;BitstreamVeraSansMono-BoldOb;1;8;5;1;65535;928;235;163;0;754;1163;754;1163;0;0;0;4;Bold Oblique
+
+File:VeraMono.ttf
+2;1
+Bitstream Vera Sans Mono
+0;BitstreamVeraSansMono-Roman;0;5;5;1;65535;928;235;163;0;609;1163;609;1163;0;0;0;4;Roman
+
+File:VeraSe.ttf
+2;1
+Bitstream Vera Serif
+0;BitstreamVeraSerif-Roman;0;5;5;2;65535;928;235;163;0;1470;1163;1470;1163;0;0;0;4;Roman
+
+File:VeraMoIt.ttf
+2;1
+Bitstream Vera Sans Mono
+0;BitstreamVeraSansMono-Oblique;1;5;5;1;65535;928;235;163;0;760;1163;760;1163;0;0;0;4;Oblique
+
+File:VeraBI.ttf
+2;1
+Bitstream Vera Sans
+0;BitstreamVeraSans-BoldOblique;1;8;5;2;65535;928;235;163;0;1677;1163;1677;1163;0;0;0;4;Bold Oblique
+
+File:VeraBd.ttf
+2;1
+Bitstream Vera Sans
+0;BitstreamVeraSans-Bold;0;8;5;2;65535;928;235;163;0;1615;1163;1615;1163;0;0;0;4;Bold
+
+File:VeraIt.ttf
+2;1
+Bitstream Vera Sans
+0;BitstreamVeraSans-Oblique;1;5;5;2;65535;928;235;163;0;1520;1163;1520;1163;0;0;0;4;Oblique
+
+File:Vera.ttf
+2;1
+Bitstream Vera Sans
+0;BitstreamVeraSans-Roman;0;5;5;2;65535;928;235;163;0;1470;1163;1470;1163;0;0;0;4;Roman
+
+FontCacheDirectory:1262309056:/usr/share/fonts/X11/Type1
+File:c0583bt_.pfb
+1;1
+Courier 10 Pitch
+0;Courier10PitchBT-Bold;0;8;5;1;91;875;310;185;0;665;579;665;579;0;0;0;c0583bt_.afm;Bold
+
+File:c0582bt_.pfb
+1;1
+Courier 10 Pitch
+0;Courier10PitchBT-Italic;2;5;5;1;91;858;299;157;0;664;579;664;579;0;0;0;c0582bt_.afm;Italic
+
+File:c0649bt_.pfb
+1;1
+Bitstream Charter
+0;CharterBT-Italic;2;5;5;2;91;980;237;217;0;1175;672;1175;672;0;0;0;c0649bt_.afm;Italic
+
+File:c0648bt_.pfb
+1;1
+Bitstream Charter
+0;CharterBT-Roman;0;5;5;2;91;963;237;200;0;1194;672;1194;672;0;0;0;c0648bt_.afm;Regular
+
+File:c0633bt_.pfb
+1;1
+Bitstream Charter
+0;CharterBT-BoldItalic;2;8;5;2;91;972;237;209;0;1243;672;1243;672;0;0;0;c0633bt_.afm;Bold Italic
+
+File:c0611bt_.pfb
+1;1
+Courier 10 Pitch
+0;Courier10PitchBT-BoldItalic;2;8;5;1;91;875;310;185;0;665;579;665;579;0;0;0;c0611bt_.afm;Bold Italic
+
+File:c0419bt_.pfb
+1;1
+Courier 10 Pitch
+0;Courier10PitchBT-Roman;0;5;5;1;91;858;299;157;0;664;579;664;579;0;0;0;c0419bt_.afm;Regular
+
+File:c0632bt_.pfb
+1;1
+Bitstream Charter
+0;CharterBT-Bold;0;8;5;2;91;963;237;200;0;1263;672;1263;672;0;0;0;c0632bt_.afm;Bold
+
+FontCacheDirectory:1448174969:/usr/share/fonts/truetype/arphic
+File:ukai.ttc
+2;4
+AR PL UKai CN
+0;UKaiCN;0;5;5;2;65535;973;129;102;0;1629;1102;1629;1102;0;0;0;0;Book
+AR PL UKai HK
+1;UKaiHK;0;5;5;2;65535;973;129;102;0;1629;1102;1629;1102;0;0;0;0;Book
+AR PL UKai TW
+2;UKaiTW;0;5;5;2;65535;973;129;102;0;1629;1102;1629;1102;0;0;0;0;Book
+AR PL UKai TW MBE
+3;UKaiTWMBE;0;5;5;2;65535;973;129;102;0;1629;1102;1629;1102;0;0;0;0;Book
+

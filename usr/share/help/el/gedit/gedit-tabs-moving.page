@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="gedit-tabs-moving" xml:lang="el">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files" group="last"/>
+    <link type="seealso" xref="gedit-tabs"/>
+    <link type="seealso" xref="gedit-tab-groups"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="collaborator">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Μετακίνηση και ανακατάταξη καρτελών</title>
+  <p>Οι καρτέλες στο <app>gedit</app> μπορούν να μετακινηθούν, κάνοντας ευκολότερη την εργασία σας με τα έγγραφα. Οι καρτέλες μπορούν να ταξινομηθούν μέσα στο ίδιο παράθυρο, να μετακινηθούν έξω από το <app>gedit</app> (δημιουργώντας νέο παράθυρο του <app>gedit</app>), και να μετακινηθούν από το ένα παράθυρο στο άλλο.</p>
+
+  <section id="tabs-change-order">
+    <title>Αλλάξτε τη σειρά των καρτελών σε ένα παράθυρο</title>
+
+    <p>Για να αλλάξετε την σειρά των καρτελών σε ένα παράθυρο:</p>
+
+    <steps>
+      <item>
+        <p>Πατήστε και κρατήστε το κουμπί του ποντικιού στην καρτέλα.</p>
+      </item>
+      <item>
+        <p>Μετακινήστε την καρτέλα στην επιθυμητή θέση μεταξύ των άλλων καρτελών.</p>
+      </item>
+      <item>
+        <p>Απελευθερώστε το κουμπί του ποντικιού.</p>
+      </item>
+    </steps>
+
+    <p>Η καρτέλα θα τοποθετηθεί στην πλησιέστερη περιοχή όπου απελευθερώσατε την καρτέλα, αμέσως μεταξύ των άλλων ανοιχτών καρτελών.</p>
+
+  </section>
+
+  <section id="tabs-moving-new-window">
+    <title>Σύρετε μία καρτέλα σε ένα νέο παράθυρο</title>
+    <p>Για τη δημιουργία ενός νέου παραθύρου από μια υπάρχουσα καρτέλα:</p>
+
+    <steps>
+      <item>
+        <p>Πατήστε και κρατήστε το κουμπί του ποντικιού στην καρτέλα.</p>
+      </item>
+      <item>
+        <p>Σύρσιμο της καρτέλας έξω από το παράθυρο του <app>gedit</app>.</p>
+      </item>
+      <item>
+        <p>Απελευθερώστε το κουμπί του ποντικιού.</p>
+      </item>
+    </steps>
+
+    <p>ή, ενώ η καρτέλα που θα μετακινηθεί είναι ανοιχτή, επιλέξτε <guiseq><gui>Έγγραφα</gui><gui>Μετακίνηση στο νέο παράθυρο</gui></guiseq></p>
+
+    <note style="tip">
+      <p>Για να μετακινήσετε ένα παράθυρο του <app>gedit</app> όταν είναι μεγιστοποιημένο, σύρετε την καρτέλα στην πάνω γραμμή στην κορυφή της οθόνης.</p>
+    </note>
+  </section>
+
+  <section id="tabs-moving-other-window">
+    <title>Σύρσιμο της καρτέλας στο νέο παράθυρο gedit</title>
+
+    <p>Αν θέλετε να μετακινήσετε μια καρτέλα από ένα παράθυρο σε άλλο:</p>
+
+    <steps>
+      <item>
+        <p>Πατήστε και κρατήστε το κουμπί του ποντικιού στην καρτέλα.</p>
+      </item>
+      <item>
+        <p>Σύρσιμο της καρτέλας στο νέο παράθυρο.</p>
+      </item>
+      <item>
+        <p>Τοποθετήστε το δίπλα στις άλλες καρτέλες στο νέο παράθυρο.</p>
+      </item>
+      <item>
+        <p>Απελευθερώστε το κουμπί του ποντικιού.</p>
+      </item>
+    </steps>
+    
+
+    <note style="tip">
+      <p>Μπορεί να βρείτε πιο εύκολο να μετακινήσετε μια καρτέλα από ένα παράθυρο σε ένα άλλο μεταφέροντας την καρτέλα στην καυτή γωνία <gui>Ενέργειες</gui> του <gui>κελύφους GNOME</gui>. Αυτό θα αποκαλύψει καθένα από τα ανοικτά παράθυρα <app>gedit</app>. Μπορείτε τότε να απελευθερώσετε την καρτέλα στο επιθυμητό παράθυρο <app>gedit</app>.</p>
+    </note>
+
+    <p>Δείτε τον πίνακα <link xref="gedit-shortcut-keys">καρτέλα-σχετικά πλήκτρα συντομεύσεων</link> για διευκόλυνση της διαχείρισης των καρτελών σας.</p>
+
+  </section>
+
+</page>

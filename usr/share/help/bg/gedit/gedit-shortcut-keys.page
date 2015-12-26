@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="bg">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Джим Къмпбел</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Паоло Борели</name>
+    </credit>
+    <credit type="author">
+      <name>Джеси ван де Кибуум</name>
+    </credit>
+    <credit type="author">
+      <name>Стив Фрецино</name>
+    </credit>
+    <credit type="author">
+      <name>Игнасио Касъл Кунтиро</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ростислав „zbrox“ Райков</mal:name>
+      <mal:email>zbrox@i-space.org</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Красимир Чонов</mal:name>
+      <mal:email>mk2616@abv.bg</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Александър Шопов</mal:name>
+      <mal:email>ash@kambanaria.org</mal:email>
+      <mal:years>2012.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Бързи клавиши</title>
+
+  <p>Използвайте <gui>бързите клавиши</gui>, за да извършвате често използвани задачи по-бързо отколкото с мишката и менютата. Следните таблици описват всички бързи клавиши на  <app>gedit</app>.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Бързи клавиши за работа с раздели</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Превключване към раздела вляво</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key>
+          <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Превключване към раздела вдясно</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key>
+          <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Затваряне на раздел</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Запазване на всички раздели</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Затваряне на всички раздели</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Reopen the most recently closed tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Превключване на раздел № <var>n</var></p></td>
+          <td><p><keyseq><key>Alt</key><key>
+          <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>New tab group</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Previous tab group</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Next tab group</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Бързи клавиши за работа с файлове</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Създаване на нов документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Отваряне на документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Запазване на текущия документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Запазване на текущия документ с друго име</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Печат на документа</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Преглед за печат</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Затваряне на текущия документ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Затваряне на програмата</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Бързи клавиши за обработка на файлове</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Move to the beginning of the current line</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the end of the current line</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the beginning of the document</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move to the end of the document</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move the selected word right one word</p></td>
+          <td><p><keyseq><key>Alt</key><key>Right Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Move the selected word left one word</p></td>
+          <td><p><keyseq><key>Alt</key><key>Left Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Отмяна на последното действие</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Повторение на последното отменено действие</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Изрязване на избрания текст и поставяне в буфера за обмен</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Копиране на избрания текст и поставяне в буфера за обмен</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Поставяне на съдържанието от буфера за обмен</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Избиране на целия текст във файла</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Изтриване на текущия ред</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Преместване на избраната линия нагоре</p></td>
+          <td><p><keyseq><key>Alt</key><key>Up Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Преместване на избраната линия надолу</p></td>
+          <td><p><keyseq><key>Alt</key><key>Down Arrow</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Add a tab stop</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Remove a tab stop</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to upper case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Convert the selected text to lower case</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Toggle case of the selected text</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Бързи клавиши за показване/скриване на панели</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Показване / скриване на страничния панел</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Показване/скриване на долния панел</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Бързи клавиши за търсене</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Намиране на низ</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Намиране на следващата поява на низа</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Намиране на предишната поява на низа</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Търсене и замяна</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Изчистване на оцветяването</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Отиване на линия</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Бързи клавиши за инструменти</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Проверка на правописа</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Премахване на празните знаци в краищата на редовете (с приставка)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Изпълнение на "make" в текущата папка (с приставка)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Списък обектите в папка (с приставка)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key>
+          <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Бързи клавиши за потребителска помощ</title>
+      <thead>
+        <tr>
+          <td><p>За да направите това</p></td>
+          <td><p>Натиснете това</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Отваряне на потребителското ръководство на gedit</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

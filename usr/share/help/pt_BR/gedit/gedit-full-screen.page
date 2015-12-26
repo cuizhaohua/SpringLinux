@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="pt-BR">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Wagner Luís de Araújo Menezes Macêdo</mal:name>
+      <mal:email>wagnerluis1982@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pedro Vaz de Mello de Medeiros</mal:name>
+      <mal:email>pedrovmm@gmail.com</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leonardo Ferreira Fontenelle</mal:name>
+      <mal:email>leonardof@gnome.org</mal:email>
+      <mal:years>2007, 2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vladimir Melo</mal:name>
+      <mal:email>vmelo@gnome.org</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fabricio Godoy</mal:name>
+      <mal:email>skarllot@gmail.com</mal:email>
+      <mal:years>2008</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Krix Apolinário</mal:name>
+      <mal:email>krixapolinario@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>José Carlos Menezes</mal:name>
+      <mal:email>jcmenezes.91@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Rafael Ferreira</mal:name>
+      <mal:email>rafael.f.f1@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Enrico Nicoletto</mal:name>
+      <mal:email>liverig@gmail.com</mal:email>
+      <mal:years>2013, 2014.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Usando o modo tela cheia</title>
+
+  <p>Quando se está trabalhando com um documento grande, pode lhe ser útil trabalhar no modo de tela cheia do <app>gedit</app>. Usando o modo de tela cheia, oculta-se a <gui>barra de menu</gui>, <gui>barra de abas</gui> e a <gui>barra de ferramentas</gui>, mostrando mais do seu texto e permitindo-lhe ter mais foco em suas tarefas.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Ativando o modo de tela cheia</title>
+    <p>Para ativar o modo de tela cheia, pressione<key>F11</key>. As barras de menu, título e abas do <app>gedit</app> serão ocultadas e será apenas apresentado a você o texto de seu arquivo atual.</p>
+    <p>Se você precisa executar uma ação no menu do <app>gedit</app> ao trabalhar no modo de tela cheia, mova o ponteiro do mouse para o topo da tela. A barra de menu do <app>gedit</app> voltará a aparecer, e você pode selecionar a ação desejada.</p>
+
+    <note>
+      <p>Para alternar entre as abas abertas, enquanto em modo de tela cheia, pressione <keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq> ou <keyseq><key> Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Desativando o modo de tela cheia</title>
+    <p>Para desabilitar o modo tela cheia e voltar para a janela padrão do <app>gedit</app>, pressione <key>F11</key>.</p>
+    <p>Você também pode mover o cursor do seu mouse para o topo da tela e esperar aparecer a <gui>barra de menu</gui>. Quando ela aparecer, selecione <gui>Sair de tela cheia</gui>.</p>
+  </section>
+
+</page>

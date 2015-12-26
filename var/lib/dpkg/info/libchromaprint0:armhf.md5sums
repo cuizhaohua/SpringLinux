@@ -1,0 +1,5 @@
+ae3681ce2cec6a001189fb08124f7133  usr/lib/arm-linux-gnueabihf/libchromaprint.so.0.2.3
+71e0cd36377501f7682b1710c1f1d31b  usr/share/doc/libchromaprint0/changelog.Debian.gz
+c4ea12df60748f6c337fba2656142e19  usr/share/doc/libchromaprint0/changelog.gz
+4f132437963ed1c1e6c55dd0602212af  usr/share/doc/libchromaprint0/copyright
+534beefaf1e073b98cac24f98da1b269  usr/share/lintian/overrides/libchromaprint0

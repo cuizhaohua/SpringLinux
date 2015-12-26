@@ -1,0 +1,65 @@
+Sylpheed for Debian
+-------------------
+
+1. Helpers and tools
+--------------------
+
+There are some useful tools for users of this package. These tools 
+were from the sylpheed-claws package, later renamed to claws-mail
+and are now available in the claws-mail-tools package, but not 
+installed by default.
+Once installed, they can be found on /usr/share/doc/claws-mail/tools, 
+please read the README file found in this directory for information
+on how to use the tools and what they are for.
+
+To create a X-Face you have to use the gif2xface script. You need
+to install compface and netpbm for the script to work. Read 
+/usr/share/doc/claws-mail/tools/README to learn how to use it.
+A cortesy from Chris Hessmann <news@hessmann.de>, a Debian-swirl
+X-Face:
+
+X-Face: yuSM.z0$PasG_!+)P;ugu5P+@#JEocHIpArGcQZ^hcGos8:DBJ-tfTQYWyf`$2r0vfaoo7F|h.;Agl'@x8v]?{#ZLQDqSB:L^6RXGfF_fD+G9$c:)p<yycF[Da]*=*
+
+2. External editor encoding issues
+----------------------------------
+
+Editing with a external editor can cause loss of data by mangling encoding of
+non-ASCII chars, as described in http://bugs.debian.org/326073
+
+To avoid that the best option is to use an UTF-8 locale for the system. 
+Using the local encoding in the external editor is also possible. 
+
+See author's response for this at:
+http://www.sraoss.jp/pipermail/sylpheed/2006-October/000287.html
+
+3. Alternatives
+---------------
+
+Sylpheed is not a Sylpheed Claws nor Claws Mail alternative now because of 
+the filtering rules differences between both versions which can lead to user
+confusion and possibly (rules) data loss in case of a user trying claws and 
+then main. Anyway files are still there in hope of a future rules format 
+unification for both applications.
+
+4. Automatic new version check
+------------------------------
+
+There's now an option to check periodically over the network if a new 
+Sylpheed version has been released upstream. This option is ENABLED by 
+default, so if you're running a stable version it may be a bit nagging.
+
+To disable it go "Configuration" menu, "Common preferences" option,
+"Details" tab, "Update" tab, uncheck "Enable auto update check".
+
+On the other hand it can be useful for unstable/testing users to remind
+the lazy maintainer about packaging new versions when they're available ;-)
+
+5. Mbox format support
+----------------------
+
+Sylpheed is able to import mbox files which are mboxrd formatted. Other
+variants, specially the ones without "From" quoting, like the mboxcl2,
+may not be readable. See http://www.qmail.org/man/man5/mbox.html for
+details on mbox variants.
+
+ -- Ricardo Mones <mones@debian.org>, Sat, 14 Apr 2012 18:49:07 +0200

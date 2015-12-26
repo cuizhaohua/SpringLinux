@@ -1,0 +1,3 @@
+libOsiCbc 3 coinor-libcbc3
+libCbc 3 coinor-libcbc3
+libCbcSolver 3 coinor-libcbc3

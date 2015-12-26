@@ -1,0 +1,126 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Sylpheed
+Upstream-Contact: ML <sylpheed@sraoss.jp>, Hiroyuki Yamamoto <hiro-y@kcn.ne.jp>
+Source: http://sylpheed.sraoss.jp/en/download.html
+
+Files: *
+Copyright: 1999-2014, Hiroyuki Yamamoto
+License: GPL-2+ with OpenSSL exception
+
+Files: src/colorlabel.? src/action.? src/prefs_actions.?
+Copyright: 1999-2011, Hiroyuki Yamamoto & The Sylpheed Claws Team 
+License: GPL-2+
+
+Files: src/addr_compl.? src/gtkshruler.?
+Copyright: 2000-2005, Alfons Hoogervorst & The Sylpheed Claws Team 
+License: GPL-2+
+
+Files: src/addrbook.? src/addrcache.? src/addressadd.?
+ src/addrindex.? src/addritem.c src/editbook.? src/editgroup.h
+ src/editjpilot.? src/editldap* src/editvcard.? src/importldif.?
+ src/jpilot.? src/ldif.? src/mgutils.? src/syldap.?
+ src/vcard.?
+Copyright: 2001, Match Grun
+License: GPL-2+
+
+Files: src/passphrase.? src/rfc2015.? src/select-keys.?
+ src/sigstatus.?
+Copyright: 2001, Werner Koch (dd9jn)
+License: GPL-2+
+
+Files: src/prefs_template.? src/template.?
+Copyright: 2001, Alexander Barinov
+License: GPL-2+
+
+Files: src/eggtrayicon.?
+Copyright: 2002, Anders Carlsson <anders@gnu.org> 
+License: LGPL-2+
+
+Files: src/simple-gettext.c
+Copyright: 1995-1999, Free Software Foundation, Inc.
+           1999, Ulrich Drepper
+License: GPL-2+
+
+Files: libsylph/ssl_hostname_validation.?
+Copyright: 2012, iSEC Partners. Author: Alban Diquet
+ 1998-2013, Daniel Stenberg, <daniel@haxx.se>, et al.
+License: MIT and cURL
+Comment: https://github.com/iSECPartners/ssl-conservatory
+ The following host_match() function is based on cURL/libcurl code
+
+Files: debian/*
+Copyright: 2000-2001, Takuo KITAME <kitame@northeye.org> 
+           2001-2004, Gustavo Noronha Silva <kov@debian.org>
+	   2004-2014, Ricardo Mones <mones@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ The full text of the GPL-2 license is available in
+ /usr/share/common-licenses/GPL-2 on Debian systems.
+
+License: LGPL-2+
+ The full text of the LGPL-2 license is available in
+ /usr/share/common-licenses/LGPL-2 on Debian systems.
+
+License: GPL-2+ with OpenSSL exception
+ Sylpheed is Copyright 1999-2012 by Hiroyuki Yamamoto and
+ Sylpheed Development Team, and distributed under the GNU GPL (COPYING).
+ .
+ Specific permission is granted for the GPLed code in this distribition to
+ be linked to OpenSSL without invoking GPL clause 2(b).
+ .
+ LibSylph is distributed under the GNU LGPL (COPYING.LIB).
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: cURL
+ This software is licensed as described in the file COPYING, which
+ you should have received as part of this distribution. The terms
+ are also available at http://curl.haxx.se/docs/copyright.html.
+ .
+ You may opt to use, copy, modify, merge, publish, distribute and/or sell
+ copies of the Software, and permit persons to whom the Software is
+ furnished to do so, under the terms of the COPYING file.
+ .
+ This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY
+ KIND, either express or implied.
+ .
+ For convenience the license terms from the above URL follows:
+ .
+ Copyright (c) 1996 - 2014, Daniel Stenberg, daniel@haxx.se.
+ .
+ All rights reserved.
+ .
+ Permission to use, copy, modify, and distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of a copyright holder shall
+ not be used in advertising or otherwise to promote the sale, use or other
+ dealings in this Software without prior written authorization of the
+ copyright holder.

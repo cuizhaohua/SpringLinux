@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-change-color-scheme" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cambiar el esquema de color</title>
+
+  <p><app>gedit</app> incluye diferentes esquemas de colores, permitiéndole cambiar la apariencia de la ventana de texto principal.</p>
+
+  <p>Para cambiar el esquema de colores complete los siguientes pasos:</p>
+  <steps>
+    <item><p>Seleccione <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Preferencias</gui> <gui>Tipografía y colores</gui></guiseq>.</p></item>
+    <item><p>Elija el esquema de color que quiera.</p></item>
+  </steps>
+
+  <p>Se aplicará el nuevo esquema de color inmediatamente.</p>
+
+  <section id="custom-color-scheme">
+    <title>Usar un esquema de color personalizado</title>
+  <!-- I'm not sure if I should link to the wiki for this chunk of help, or if
+  I should describe it here.  I'm linking to the wiki for now because the wiki
+  page includes downloads and screenshots. I'm open to including the help here,
+  though. -->
+    <p>También puede usar esquemas de colores creados por otros o crear y usar su propio esquema de colores.</p>
+    <p>Las instrucciones para instalar esquemas de colores personalizados, así como ejemplos de esquemas de colores que puede descargar y usar, están disponibles en el <link href="http://live.gnome.org/GtkSourceView/StyleSchemes">wiki de gedit</link>.</p>
+  </section>
+
+</page>

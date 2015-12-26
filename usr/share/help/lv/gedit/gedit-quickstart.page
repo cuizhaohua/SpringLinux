@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-quickstart" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <link type="seealso" xref="gedit-open-files"/>
+    <link type="seealso" xref="gedit-close-file"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Sākt darbu ar gedit</title>
+  <p><app>gedit</app> ir teksta redaktors ar pilnu iespēju klāstu GNOME darbvirsmas videi. To var lietot vienkāršu piezīmju un dokumentu rakstīšanai, vai arī, izmantojot papildiespējas, padarīt to par savu programmatūras izstrādes vidi.</p>
+
+  <media type="image" mime="image/png" src="figures/gedit3-screenshot.png"/>
+
+  <p>Once <app>gedit</app> launches, you can start writing right away. To save
+  your text, just click the <gui>Save</gui> icon in the <app>gedit</app>
+  toolbar.</p>
+
+  <p>Lai uzzinātu par citām <app>gedit</app> funkcijām un gūtu palīdzību citu darbību veikšanā, apskatiet <app>gedit</app> palīdzības <link xref="index">pārējās sadaļas</link>.</p>
+
+</page>

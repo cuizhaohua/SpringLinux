@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Dokumentu drukāšana</title>
+
+    <note style="important">
+      <p>Lai drukātu ar <app>gedit</app>, ir jābūt pieslēgtam un konfigurētam printerim. Ja šis priekšnosacījums sagādā grūtības, lūdzu, skatiet <link href="help:gnome-help/printing">GNOME drukāšanas palīdzību</link>.</p>
+    </note>
+  
+  <p><app>gedit</app> ļauj drukāt gan datnē, gan uz papīra.</p>
+
+  <section id="print-preview">
+    <title>Drukas priekšskatījums</title>
+
+  <p>Pirms drukāšanas var arī apskatīt, kā izskatīsies izdrukātais dokuments, izmantojot funkciju <app>Drukas priekšskatījums</app>. Lai priekšskatītu dokumentu:</p>
+
+  <steps>
+    <item>
+      <p>Izvēlieties <guiseq><gui style="menu">Datne</gui> <gui style="menuitem">Drukas priekšskatījums</gui></guiseq>. Varat arī spiest taustiņus <keyseq><key>Shift</key><key>Ctrl</key> <key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>A preview of your document will open in the same tab as the file. You can
+  browse this preview with help of navigation buttons and tools in the toolbar
+  at the top of the document preview tab. To close and return to the document
+  click <gui style="button">Close Preview</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Drukāšana uz papīra</title>
+
+  <p>You can print your documents to paper using a local or remote printer. To
+  print a file:</p>
+
+  <steps>
+    <item>
+      <p>Izvēlieties <guiseq><gui style="menu">Datne</gui> <gui style="menuitem">Drukāt</gui> <gui style="tab">Vispārīgi</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Izvēlieties vēlamo printeri no pieejamo printeru saraksta.</p>
+    </item>
+    <item>
+      <p>You can preview the file using <gui style="button">Print Preview</gui>
+      and once you are satisfied with the settings, click
+      <gui style="button">Print</gui> to send the file to printer.</p>
+    </item>
+  </steps>
+
+  <p>Additionally, from <gui style="tab">Page Setup</gui> tab: you can choose
+  <gui style="group">Layout</gui> and <gui style="group">Paper</gui> options. As
+  these settings are available throughout <app>GNOME</app> programs, please
+  consult
+  <link href="help:gnome-help/printing#paper">Layout and Paper options</link>
+  help.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Print Multiple Copies And Between Specified Ranges</title>
+
+    <p>You can set <gui style="group">Range</gui> and
+    <gui style="group">Copies</gui> options to help you:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Drukāšana datnē</title>
+
+  <p>You can also use <app>gedit</app> to print to a file. To print your
+  document to file of a different format:</p>
+
+  <steps>
+    <item>
+      <p>Izvēlieties <guiseq><gui style="menu">Datne</gui> <gui style="menuitem">Drukāt</gui> <gui style="menuitem">Drukāt datnē</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Drukāšanai pieejami šādi datņu formāti, jūs varat izvēlēties no:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Lai drukātu dokumentu datnē, spiediet <gui>Drukāt</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

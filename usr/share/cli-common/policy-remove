@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+# This file is actually used to remove entries from a policy.
+
+# Variables
+ASSEMBLY=$1
+VERSION=$2
+COMBINED="$VERSION.$ASSEMBLY"
+POLICY="policy.$VERSION.$ASSEMBLY"
+
+#echo "Removing GAC policy file ($POLICY) from available GACs"
+/usr/share/cli-common/gac-package-remove $POLICY > /dev/null
+rm /usr/share/cli-common/packages.d/$POLICY.installcligac

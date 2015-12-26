@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="de">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>Die Rechtschreibprüfung aktivieren und verwenden</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jan Arne Petersen</mal:name>
+      <mal:email>jap@gnome.org</mal:email>
+      <mal:years>2007</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2011, 2012, 2013, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Benjamin Steinwender</mal:name>
+      <mal:email>b@stbe.at</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>Das Dokument auf Rechtschreibfehler prüfen</title>
+  <section id="enable-spell-check">
+    <title>Rechtschreibprüfung aktivieren</title>
+    <p>Die Rechtschreibkorrektur wird als Plugin in <app>gedit</app> angeboten und kann nach Bedarf aktiviert werden. So aktivieren Sie das Plugin:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">gedit</gui><gui style="menuitem">Einstellungen</gui><gui>Plugins</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Wählen Sie <gui style="menuitem">Rechtschreibprüfung</gui>, um das Plugin zu aktivieren.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>Das Dokument auf Rechtschreibfehler prüfen</title>
+
+    <p>So prüfen Sie auf falsch geschriebene Wörter in Ihrem Dokument:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui style="menu">Werkzeuge</gui><gui style="menuitem">Rechtschreibung prüfen</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Damit <app>gedit</app> automatisch in Ihrem Dokument falsch geschrieben Wörter während des Schreibens hervorhebt, wählen Sie <guiseq><gui style="menu">Werkzeuge</gui><gui style="menuitem">Rechtschreibfehler hervorheben</gui></guiseq>.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Die Rechtschreibprüfung verwenden</title>
+
+    <p>Sie können die korrekte Ersetzung für falsch geschriebene Wörter im Dialog »Rechtschreibung« prüfen wählen. Das falsch geschriebene Wort in Prüfung wird in fetter Schrift neben <gui>Falsch geschriebenes Wort:</gui> angezeigt. Sie können eine der folgenden korrigierenden Aktionen wählen:</p>
+
+    <list>
+      <item>
+        <p><gui style="input">Ändern in:</gui> ermöglicht es Ihnen ein Wort einzugeben und mittels <gui style="button">Wort prüfen</gui> die Rechtschreibung zu prüfen.</p>
+      </item>
+      <item>
+        <p><gui style="menu">Vorschläge:</gui> Führt mögliche Substitutionen für das Wort auf.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ignorieren</gui> überspringt die Rechtschreibprüfung <em>einmal</em> für das aktuelle Wort.</p>
+      </item>
+      <item>
+        <p><gui style="button">Alle ignorieren</gui> überspringt die Rechtschreibprüfung für <em>alle</em> Vorkommen des aktuellen Worts.</p>
+      </item>
+      <item>
+        <p><gui style="button">Ändern</gui> ersetzt das falsch geschriebene oder unbekannte Wort mit <em>einem</em> gewählten Ersatz aus der Liste der <gui style="menuitem">Vorschläge:</gui> .</p>
+      </item>
+      <item>
+        <p><gui style="button">Alle ändern</gui> ersetzt <em>alle</em> falsch geschriebenen oder unbekannten Wörter mit dem gewählten Ersatz aus der Liste der <gui style="menuitem">Vorschläge:</gui>.</p>
+      </item>
+      <item>
+        <p><gui style="button">Wort hinzufügen</gui> ermöglicht es das aktuelle Wort in <app>gedit</app> in das <gui>Benutzerwörterbuch</gui> aufzunehmen. Indem Sie eigene Wörter in das <gui>Benutzerwörterbuch</gui> aufnehmen wird <app>gedit</app> das Wort in Dokumenten erkennen und es nicht mehr als falsch geschrieben markieren.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>Die Sprache für die Rechtschreibprüfung festlegen</title>
+    <p>Standardmäßig verwendet <app>gedit</app> die aktuelle Sprache für die Rechtschreibprüfung Ihres Dokuments. Wenn Sie eine andere Sprache verwenden wollen, wählen Sie <guiseq><gui style="menu">Werkzeuge</gui><gui style="menuitem">Sprache festlegen</gui></guiseq> und wählen dann die gewünschte Sprache aus.</p>
+  </section>
+
+  <section id="dict">
+    <title>Wörterbücher</title>
+
+    <p><app>gedit</app> verwendet <link href="http://www.abisource.com/projects/enchant/">Enchant</link> zur Rechtschreibkorrektur, ein kleines Systemprogramm. Enchant kann mehrere verschiedene Wörterbücher zur Rechtschreibprüfung einsetzen. Zwei dieser Wörterbücher sind <em>Hunspell</em> und <em>Aspell</em>.</p>
+
+    <p>Falls die Sprache, die Sie verwenden möchten, nicht in <app>gedit</app> verfügbar ist, so nutzen Sie die Softwareverwaltung oder die Paketverwaltung, um das Back-End des gewünschten Wörterbuchs zu installieren.</p>
+  </section>
+</page>

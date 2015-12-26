@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="es">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Buscar texto</title>
+  
+    <p>La herramienta de búsqueda le puede ayudar a encontrar secuencias de texto específicas en su archivo.</p>
+
+    <steps>
+      <title>Buscar texto</title>
+      <item>
+        <p>Abra la <gui>ventana de búsqueda</gui> pulsando <guiseq><gui style="menu">Buscar</gui> <gui style="menuitem">Buscar</gui> </guiseq> o pulsando <keyseq><key>Ctrl</key><key>F</key></keyseq>. Esto moverá su cursor hasta el principio de la <gui>ventana de búsqueda</gui>.</p>
+      </item>
+      <item>
+        <p>Introduzca el texto que quiere buscar en la <gui>ventana de búsqueda</gui>.</p>
+      </item>
+      <item>
+        <p>A medida que escribe, <app>gedit</app> empezará a resaltar los recortes de texto que coniciden con lo que ha escrito.</p>
+      </item>
+    </steps>
+    
+    <p>Para desplazarse por los resultados de la búsqueda, realice cualquiera de los siguientes pasos:</p>
+    <list>
+      <item>
+        <p>Pulse en las flechas <gui style="button">arriba</gui> o <gui style="button">abajo</gui> junto a la <gui>ventana de búsqueda</gui></p>
+      </item>
+      <item>
+        <p>Pulse las teclas <key>flecha arriba</key> o <key>flecha abajo</key> en su teclado.</p>
+      </item>
+      <item>
+        <p>Pulse <keyseq><key>Ctrl</key><key>G</key></keyseq> or<keyseq><key>Ctrl</key><key>Mayús</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Pulse <key>Ctrl</key> y use el <key>deslizador</key> de su ratón o «touchpad» para moverse hacia arriba o hacia abajo a través del texto.</p>
+      </item>
+    </list>
+
+  <p>Para cerrar la <gui>ventana de búsqueda</gui> pulse <key>Esc</key> o <key>Intro</key>. Al pulsar <key>Esc</key> el cursor volverá a la posición donde estaba antes de comenzar la búsqueda. Al pulsar <key>Intro</key> el cursor volverá a la posición actual en los resultados de la búsqueda.</p>
+
+  <list>
+    <title>Consejos de búsqueda</title>
+    <item>
+      <p>Si resalta un fragmento de texto con el ratón y pulsa <keyseq><key>Ctrl</key><key>F</key></keyseq>, el texto que ha resaltado aparecerá en la ventana de búsqueda.</p>
+    </item>
+    <item>
+      <p>Para opciones de búsqueda avanzadas, pulse el icono de la <gui style="button">Lupa</gui> en la ventana de búsqueda, o pulse con el botón derecho en cualquier parte de la ventana de búsqueda. Puede seleccionar una o más de las siguientes opciones de búsqueda:</p>
+      <list>
+        <item>
+          <p>Seleccione <gui>Coincidir con capitalización</gui> para que la búsqueda distinga entre mayúsculas y minúsculas.</p>
+        </item>
+        <item>
+          <p>Seleccione <gui>Coincidir sólo con la palabra completa</gui> para buscar solo palabras completas.</p>
+        </item>
+        <item>
+          <p>Seleccione <gui>Volver al principio</gui> para buscar el texto de arriba a abajo y volver a empezar.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>El texto que ha buscado permanecerá resaltado en gedit, aunque haya terminado la búsqueda. Para quitar el resaltado, pulse <guiseq><gui>Buscar</gui><gui>Quitar resaltado</gui></guiseq>, o pulse <keyseq><key>Ctrl</key><key>Mayús</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

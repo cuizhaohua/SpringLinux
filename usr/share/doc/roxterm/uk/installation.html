@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-US" lang="uk-UA" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="author" content="Adrian Sampson" />
+	<meta name="description" content="ROXTerm, a full-featured VTE terminal emulator" />
+	<title>ROXTerm</title>
+	<link rel="stylesheet" type="text/css" href="../lib/roxterm.css" />
+	
+	<!--[if lte IE 7]>
+
+	<link rel="stylesheet" type="text/css" href="../lib/roxterm_ie.css" />
+	<![endif]-->
+<link rel="shortcut icon" type="image/x-icon" href="../lib/favicon.ico" />
+</head>
+<body>
+	<div id="Container">
+		<div id="Header">
+			<div>
+				<a id="Logo" href="index.html">
+					<img src="../lib/logo_text.png" alt="ROXTerm" />
+				</a>
+
+				<ul>
+					<li><a id="MainNav_Home" class="active" href="#">Хата</a></li>
+					<li><a id="MainNav_News" href="news.html">Новини</a></li>
+					<li><a id="MainNav_Installation" href="installation.html">Встановлення</a></li>
+					<li><a id="MainNav_UserGuide" href="guide.html">Інструкція</a></li>
+					<li><a id="MainNav_Forums"
+href="https://sourceforge.net/projects/roxterm/forums">Форуми</a></li>
+				</ul>
+			</div>
+			
+		<!-- PHP PLACEHOLDER -->
+</div>
+
+		<div id="Middle" class="clear">
+			<ol id="SubNav">
+				<li><a href="#Download">Звантажити</a></li>
+				<li><a href="#Requirements">Вимоги</a></li>
+				<li><a href="#Installing">Встановлення</a></li>
+			</ol>
+
+			<div id="Content" class="partialWidth">
+				<h1>Встановлення</h1>
+
+
+				<h2>Звантажити <a class="pageAnchor" name="Download">:</a></h2>
+
+				<p>Звантажте ROXTerm, відвідавши <a
+href="http://sourceforge.net/projects/roxterm">сторінку проекту на
+SourceForge</a> або використавши інший інструмент Sourceforge. Отримати
+версію, що знаходиться в розробці, можна за допомогою git. Для старих версій
+(нижче, ніж 1.19.0) використовуйте svn (subversion). Ймовірна команда:</p>
+
+				<p class="snippet">
+					<span>git clone git://git.code.sf.net/p/roxterm/code roxterm</span>
+				</p>
+
+				<h2>Вимоги <a class="pageAnchor" name="Requirements">:</a></h2>
+
+				<p>Потрібні бібліотеки GTK+2 та/чи GTK+3, швидше за все, вже встановлені на
+вашій системі. Мінімально підтримувані версії: glib — 2.16, GTK+ —
+2.18. Також потрібен vte/libvte, компонент Gnome; більшість дистрибутивів
+розділяють версії GTK+2 й GTK+3. Вам також знадобиться D-Bus.</p>
+
+				<p>Для збору ROXTerm вам потрібні файли заголовків перерахованих
+бібліотек. Зазвичай їм відповідають пакунки з суфіксами «-dev» чи «-devel».</p>
+
+				<p>ROXTerm використовує нову, власну систему збірки, «maitch», котра потребує
+python та його модуль «lockfile».</p>
+
+                <h3>D-Bus</h3>
+
+				<p>D-Bus— система повідомлень, використовувана ROXTerm для з’єднання
+налаштовувального засобу з терміналами. ROXTerm використовує «сеансову»
+шину, яка зазвичай запускається з вашим робочим оточенням. Усі поточні
+версії сеансових менеджерів ROX, GNOME та KDE запускають D-Bus потрібним
+шляхом. Якщо ваше оточення не запускає D-Bus автоматично, вставте наступний
+рядок на початок вашого .xinitrc чи .xsession:</p>
+
+				<p class="snippet">
+					<span>if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then</span> <span
+class="indented">eval `dbus-launch --sh-syntax --exit-with-session`</span>
+<span class="indented">export DBUS_SESSION_BUS_ADDRESS</span>
+<span>fi</span>
+				</p>
+
+				<p>Причиною використання власної системи налаштування через D-Bus є
+неможливість використання довільної кількості імен профілів через gconf.</p>
+
+				<h2>Встановлення <a class="pageAnchor" name="Installing">:</a></h2>
+
+				<p>Для встановлення ROXTerm у середовище ROX достатньо розпакувати архів у теку
+«Програми» й запустити його звідти. Відповідну нову теку можна перейменувати
+на ROXTerm. На інших системах встановлення ROXTerm схоже на використання
+джерельного пакунка на основі autoconf, але з використанням аналогів maitch:</p>
+
+				<p class="snippet">
+					<span>python ./mscript.py configure</span> <span>python ./mscript.py
+build</span> <span>python ./mscript.py install</span>
+				</p>
+
+				<p>Наявні параметри збірки, запустіть
+				<p class="snippet">
+					<span>python ./mscript.py help</span>
+				</p>
+				для отримання подробиць.</p>
+
+				<p>Autoconf-збірка більше не підтримується.</p>
+
+				<h3>Debian та Ubuntu</h3>
+
+				<p>Debian офіційно надає сучасні <a
+href="http://packages.debian.org/roxterm">пакунки</a>.</p>
+
+				<p>Ubuntu також надає пакунки ROXTerm, але, відповідно до циклу випусків
+Ubuntu, вони часто дещо застарілі. Я підняв <a
+href="https://launchpad.net/~h-realh/+archive/roxterm">PPA</a>, що за
+потреби надає свіжі версії ROXTerm поточному випуску Ubuntu.</p>
+
+				<p>Для охочих зібрати власні пакунки потрібні файли надаються головною гілкою
+git. <a href="Download">Вище</a> детальніше описано, як отримати roxterm
+через git.</p>
+
+				<p>Для збірки конкретної версії:</p>
+				<p><code>git checkout</code> <i>версія</i></p>
+
+				<p>Для старіших версій дистрибутивів, котрі не включають пакунки GTK3 тощо:</p>
+				<p><code>git fetch origin lucid:lucid<br/>
+				git checkout lucid</code></p>
+
+				<p>Тепер ви можете використати <code>sudo apt-get build-dep</code>, але
+(залежно від встановлених версій) набір пакунків може бути
+застарілим. Будьте готові до пізніших помилок залежностей, а краще зразу
+встановіть потрібні пакунки. Слід встановити imagemagick та librsvg2-bin,
+але вони пошкоджені в Ubuntu Lucid (можливо, і в раніших випусках), тому
+перед збиранням скопіюйте з теки архіву <code>Help/lib</code> наступні
+файли: <code>roxterm_logo.png favicon.ico logo_text.png</code>.</p>
+
+			    <p>Якщо ви не бажаєте використовувати зріз випуску, хорошою ідеєю є впевнитись
+за допомогою <code>dch</code>, що <code>debian/changelog</code> містить
+потрібну версію (ту, що <code>./mscript.py configure</code> генерує для
+файлу <code>version</code>, базуючись на виводі <code>git
+describe</code>). Тепер ви можете зібрати пакунки з <code>debuild -b -uc
+-us</code>. Зверніть увагу на <code>-b</code>: лише бінарні пакунки можна
+збудувати при відсутності початкового архіву.</p>
+
+            </div>
+        </div>
+
+		<div id="Footer">
+			<div id="FooterButtons">
+				<a id="SourceforgeLink" href="http://sourceforge.net/projects/roxterm"
+title="RoxTerm Sourceforge"> roxterm @ sourceforge </a>
+
+				<br />
+
+				<a id="DonationLink" class="spriteLink"
+href="http://sourceforge.net/donate/index.php?group_id=124080">Внести
+пожертвування</a> <a id="ValidMarkupLink" class="spriteLink"
+href="http://validator.w3.org/check?uri=referer">Дійсний XHTML</a>
+			</div>
+
+			<p>ROXTerm підлягає умовам <a
+href="http://www.gnu.org/licenses/gpl-3.0-standalone.html">GPL</a> |
+Дизайнер сайту — Adrian Sampson</p>
+		</div>
+	</div>
+</body>
+</html>

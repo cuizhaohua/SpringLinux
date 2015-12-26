@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-plugin-guide" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Menata dan memakai Plugin gedit</title>
+  <p>Anda dapat melakukan lebih banyak hal dengan <app>gedit</app> memakai plugin. Beberapa plugin terpasang secara baku, tapi sejumlah besar plugin lain tersedia secara terpisah.</p>
+  
+  <note><p>Banyak distribusi Linux yang membuat grup plugin ini tersedia sebagai suatu paket <app>gedit-plugins</app>. Pasanglah paket <app>gedit-plugins</app> untuk membuat plugin tambahan ini tersedia bagi <app>gedit</app>.</p></note>
+
+  <section id="gedit-default-plugins" style="2column">
+	<title>Plugin gedit baku</title>
+  </section>
+
+  <section id="gedit-additional-plugins" style="2column">
+	<title>Plugin tambahan gedit</title>
+  </section>
+
+<!-- TODO document how to create gedit plugins 
+  <section id="gedit-create-plugins">
+	<title>Create your own gedit Plugins</title>
+  </section>
+-->
+</page>

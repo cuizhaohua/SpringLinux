@@ -1,0 +1,1439 @@
+Fri Jan  1 02:31:55 2010 xdm info (pid 1827): Starting
+Fri Jan  1 02:31:55 2010 xdm info (pid 1827): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 02:31:56 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 03:29:51 2010 xdm info (pid 1481): Starting
+Fri Jan  1 03:29:51 2010 xdm info (pid 1481): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 03:29:51 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 03:29:53 2010 xdm info (pid 1540): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 03:29:59 2010 xdm info (pid 1540): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 03:29:59 2010 xdm info (pid 1987): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 04:02:47 2010 xdm info (pid 1481): Shutting down
+Fri Jan  1 04:02:47 2010 xdm info (pid 1540): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Fri Jan  1 04:02:47 2010 xdm info (pid 1481): Exiting
+Fri Jan  1 01:02:15 2010 xdm info (pid 1521): Starting
+Fri Jan  1 01:02:15 2010 xdm info (pid 1521): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:02:16 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:02:18 2010 xdm info (pid 1580): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:02:25 2010 xdm info (pid 1580): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:02:25 2010 xdm info (pid 2026): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 01:13:22 2010 xdm info (pid 1580): sourcing /etc/X11/xdm/Xreset
+Fri Jan  1 01:13:22 2010 xdm info (pid 1521): Starting X server on :0
+Fri Jan  1 01:13:23 2010 xdm info (pid 2464): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:13:29 2010 xdm info (pid 2464): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:13:29 2010 xdm info (pid 2482): executing session /etc/X11/xdm/Xsession
+Sun Nov 22 03:41:51 2015 xdm info (pid 1521): Shutting down
+Sun Nov 22 03:41:51 2015 xdm info (pid 2464): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Sun Nov 22 03:41:51 2015 xdm info (pid 1521): Exiting
+Sun Nov 22 03:42:54 2015 xdm info (pid 1291): Starting
+Sun Nov 22 03:42:54 2015 xdm info (pid 1291): Starting X server on :0
+Sun Nov 22 04:42:00 2015 xdm info (pid 1279): Starting
+Sun Nov 22 04:42:00 2015 xdm info (pid 1279): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 04:42:00 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 04:52:26 2015 xdm info (pid 1275): Starting
+Sun Nov 22 04:52:26 2015 xdm info (pid 1275): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 04:52:27 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 04:52:31 2015 xdm info (pid 1582): sourcing /etc/X11/xdm/Xsetup
+Sun Nov 22 07:09:40 2015 xdm info (pid 1290): Starting
+Sun Nov 22 07:09:40 2015 xdm info (pid 1290): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 07:09:41 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 07:09:46 2015 xdm info (pid 1563): sourcing /etc/X11/xdm/Xsetup
+Sun Nov 22 07:09:52 2015 xdm info (pid 1563): sourcing /etc/X11/xdm/Xstartup
+Sun Nov 22 07:09:52 2015 xdm info (pid 1888): executing session /etc/X11/xdm/Xsession
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Type "ONE_LEVEL" has 1 levels, but <RALT> has 2 symbols
+>                   Ignoring extra symbols
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Type "ONE_LEVEL" has 1 levels, but <RALT> has 2 symbols
+>                   Ignoring extra symbols
+Errors from xkbcomp are not fatal to the X server
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Type "ONE_LEVEL" has 1 levels, but <RALT> has 2 symbols
+>                   Ignoring extra symbols
+Errors from xkbcomp are not fatal to the X server
+Sun Nov 22 07:19:04 2015 xdm info (pid 1290): Shutting down
+Sun Nov 22 07:19:04 2015 xdm info (pid 1563): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Sun Nov 22 07:19:05 2015 xdm info (pid 1290): Exiting
+Sun Nov 22 07:19:50 2015 xdm info (pid 1278): Starting
+Sun Nov 22 07:19:50 2015 xdm info (pid 1278): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 07:19:51 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 07:53:32 2015 xdm info (pid 1281): Starting
+Sun Nov 22 07:53:32 2015 xdm info (pid 1281): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 07:53:33 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 08:23:05 2015 xdm info (pid 1275): Starting
+Sun Nov 22 08:23:05 2015 xdm info (pid 1275): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 08:23:06 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 08:39:58 2015 xdm info (pid 1279): Starting
+Sun Nov 22 08:39:58 2015 xdm info (pid 1279): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 08:39:58 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 09:27:32 2015 xdm info (pid 1275): Starting
+Sun Nov 22 09:27:32 2015 xdm info (pid 1275): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 09:27:32 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 09:54:24 2015 xdm info (pid 1278): Starting
+Sun Nov 22 09:54:24 2015 xdm info (pid 1278): Starting X server on :0
+Sun Nov 22 09:58:06 2015 xdm info (pid 1282): Starting
+Sun Nov 22 09:58:06 2015 xdm info (pid 1282): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 09:58:07 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 10:21:19 2015 xdm info (pid 1276): Starting
+Sun Nov 22 10:21:19 2015 xdm info (pid 1276): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 10:21:20 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 10:47:54 2015 xdm info (pid 1275): Starting
+Sun Nov 22 10:47:54 2015 xdm info (pid 1275): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 10:47:54 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 12:19:08 2015 xdm info (pid 1279): Starting
+Sun Nov 22 12:19:08 2015 xdm info (pid 1279): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 12:19:08 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Nov 22 12:48:47 2015 xdm info (pid 1275): Starting
+Sun Nov 22 12:48:47 2015 xdm info (pid 1275): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 22 12:48:47 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:51 2010 xdm info (pid 1292): Starting
+Fri Jan  1 01:00:51 2010 xdm info (pid 1292): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:51 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:55 2010 xdm info (pid 1528): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:01:01 2010 xdm info (pid 1528): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:01:01 2010 xdm info (pid 1900): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 01:16:01 2010 xdm info (pid 1528): sourcing /etc/X11/xdm/Xreset
+Fri Jan  1 01:16:01 2010 xdm info (pid 1292): Starting X server on :0
+Fri Jan  1 01:16:01 2010 xdm info (pid 2154): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:16:22 2010 xdm info (pid 2154): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:16:22 2010 xdm info (pid 2167): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 01:16:31 2010 xdm info (pid 2154): sourcing /etc/X11/xdm/Xreset
+Fri Jan  1 01:16:31 2010 xdm info (pid 1292): Starting X server on :0
+Fri Jan  1 01:16:32 2010 xdm info (pid 2266): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:00:51 2010 xdm info (pid 1307): Starting
+Fri Jan  1 01:00:51 2010 xdm info (pid 1307): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:51 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:57 2010 xdm info (pid 1692): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:01:08 2010 xdm info (pid 1692): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:01:08 2010 xdm info (pid 1895): executing session /etc/X11/xdm/Xsession
+Sun Nov 29 03:04:31 2015 xdm info (pid 1692): sourcing /etc/X11/xdm/Xreset
+Sun Nov 29 03:04:32 2015 xdm info (pid 1307): Shutting down
+(EE) Server terminated successfully (0). Closing log file.
+Sun Nov 29 03:04:32 2015 xdm info (pid 1307): Exiting
+Sun Nov 29 03:05:25 2015 xdm info (pid 1302): Starting
+Sun Nov 29 03:05:25 2015 xdm info (pid 1302): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Nov 29 03:05:25 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:50 2010 xdm info (pid 1309): Starting
+Fri Jan  1 01:00:50 2010 xdm info (pid 1309): Starting X server on :0
+Sat Dec  5 07:42:08 2015 xdm info (pid 1300): Starting
+Sat Dec  5 07:42:08 2015 xdm info (pid 1300): Starting X server on :0
+Sat Dec  5 07:51:36 2015 xdm info (pid 1307): Starting
+Sat Dec  5 07:51:36 2015 xdm info (pid 1307): Starting X server on :0
+Sat Dec  5 08:15:33 2015 xdm info (pid 1297): Starting
+Sat Dec  5 08:15:33 2015 xdm info (pid 1297): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec  5 08:15:33 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec  5 08:21:59 2015 xdm info (pid 1302): Starting
+Sat Dec  5 08:21:59 2015 xdm info (pid 1302): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec  5 08:22:00 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec  5 08:48:00 2015 xdm info (pid 1305): Starting
+Sat Dec  5 08:48:00 2015 xdm info (pid 1305): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec  5 08:48:01 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec  5 09:52:24 2015 xdm info (pid 1310): Starting
+Sat Dec  5 09:52:24 2015 xdm info (pid 1310): Starting X server on :0
+Fri Jan  1 01:00:46 2010 xdm info (pid 1314): Starting
+Fri Jan  1 01:00:47 2010 xdm info (pid 1314): Starting X server on :0
+Fri Jan  1 01:00:45 2010 xdm info (pid 1303): Starting
+Fri Jan  1 01:00:45 2010 xdm info (pid 1303): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:46 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:51 2010 xdm info (pid 1652): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:00:56 2010 xdm info (pid 1652): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:00:57 2010 xdm info (pid 1921): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 01:00:45 2010 xdm info (pid 1327): Starting
+Fri Jan  1 01:00:45 2010 xdm info (pid 1327): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:45 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:50 2010 xdm info (pid 1642): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 01:00:55 2010 xdm info (pid 1642): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 01:00:56 2010 xdm info (pid 1944): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 01:03:24 2010 xdm info (pid 1327): Shutting down
+Fri Jan  1 01:03:24 2010 xdm info (pid 1642): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Fri Jan  1 01:03:25 2010 xdm info (pid 1327): Exiting
+Fri Jan  1 01:04:23 2010 xdm info (pid 1298): Starting
+Fri Jan  1 01:04:23 2010 xdm info (pid 1298): Starting X server on :0
+Fri Jan  1 01:09:43 2010 xdm info (pid 1300): Starting
+Fri Jan  1 01:09:43 2010 xdm info (pid 1300): Starting X server on :0
+Sun Dec 13 02:53:46 2015 xdm info (pid 1318): Starting
+Sun Dec 13 02:53:46 2015 xdm info (pid 1318): Starting X server on :0
+Sun Dec 13 02:56:29 2015 xdm info (pid 1283): Starting
+Sun Dec 13 02:56:29 2015 xdm info (pid 1283): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Dec 13 02:56:29 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Dec 13 03:01:26 2015 xdm info (pid 1293): Starting
+Sun Dec 13 03:01:26 2015 xdm info (pid 1293): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Dec 13 03:01:26 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Dec 13 03:01:30 2015 xdm info (pid 1589): sourcing /etc/X11/xdm/Xsetup
+Sun Dec 13 03:01:34 2015 xdm info (pid 1589): sourcing /etc/X11/xdm/Xstartup
+Sun Dec 13 03:01:35 2015 xdm info (pid 1876): executing session /etc/X11/xdm/Xsession
+Sun Dec 13 03:09:30 2015 xdm info (pid 1285): Starting
+Sun Dec 13 03:09:30 2015 xdm info (pid 1285): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Dec 13 03:09:31 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sun Dec 13 03:09:36 2015 xdm info (pid 1534): sourcing /etc/X11/xdm/Xsetup
+Sun Dec 13 03:29:00 2015 xdm error (pid 1534): pam_authenticate failure: Authentication failure
+Sun Dec 13 03:29:05 2015 xdm info (pid 1534): sourcing /etc/X11/xdm/Xstartup
+Sun Dec 13 03:29:05 2015 xdm info (pid 2127): executing session /etc/X11/xdm/Xsession
+Sun Dec 13 03:45:57 2015 xdm info (pid 1534): sourcing /etc/X11/xdm/Xreset
+Sun Dec 13 03:45:57 2015 xdm info (pid 1285): Starting X server on :0
+Sun Dec 13 03:45:58 2015 xdm info (pid 2500): sourcing /etc/X11/xdm/Xsetup
+Sun Dec 13 03:45:58 2015 xdm info (pid 1285): Shutting down
+Sun Dec 13 03:45:58 2015 xdm info (pid 1285): display :0 is being disabled
+(EE) Server terminated successfully (0). Closing log file.
+Sun Dec 13 03:45:59 2015 xdm info (pid 1285): Exiting
+Fri Jan  1 01:01:11 2010 xdm info (pid 1303): Starting
+Fri Jan  1 01:01:11 2010 xdm info (pid 1303): Starting X server on :0
+Fri Jan  1 01:03:15 2010 xdm info (pid 1181): Starting
+Fri Jan  1 01:03:15 2010 xdm info (pid 1181): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:03:16 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 02:42:05 2010 xdm info (pid 1184): Starting
+Fri Jan  1 02:42:05 2010 xdm info (pid 1184): Starting X server on :0
+Fri Jan  1 02:54:19 2010 xdm info (pid 1182): Starting
+Fri Jan  1 02:54:19 2010 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 02:54:20 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 02:54:24 2010 xdm info (pid 1438): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 02:55:23 2010 xdm info (pid 1197): Starting
+Fri Jan  1 02:55:23 2010 xdm info (pid 1197): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 02:55:24 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 02:55:26 2010 xdm info (pid 1389): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 02:55:32 2010 xdm info (pid 1389): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 02:55:33 2010 xdm info (pid 1797): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 02:59:21 2010 xdm info (pid 1189): Starting
+Fri Jan  1 02:59:21 2010 xdm info (pid 1189): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 02:59:22 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 02:59:25 2010 xdm info (pid 1396): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 02:59:37 2010 xdm info (pid 1396): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 02:59:37 2010 xdm info (pid 1797): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 03:40:38 2010 xdm info (pid 1189): Shutting down
+Fri Jan  1 03:40:38 2010 xdm info (pid 1396): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Fri Jan  1 03:40:38 2010 xdm info (pid 1189): Exiting
+Fri Jan  1 03:41:06 2010 xdm info (pid 1181): Starting
+Fri Jan  1 03:41:06 2010 xdm info (pid 1181): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 03:41:06 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 03:48:53 2010 xdm info (pid 1181): Starting
+Fri Jan  1 03:48:53 2010 xdm info (pid 1181): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 03:48:53 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 03:48:59 2010 xdm info (pid 1463): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 03:49:05 2010 xdm info (pid 1463): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 03:49:05 2010 xdm info (pid 1788): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 03:54:11 2010 xdm info (pid 1200): Starting
+Fri Jan  1 03:54:11 2010 xdm info (pid 1200): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 03:54:12 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 03:54:15 2010 xdm info (pid 1487): sourcing /etc/X11/xdm/Xsetup
+Fri Jan  1 03:54:20 2010 xdm info (pid 1487): sourcing /etc/X11/xdm/Xstartup
+Fri Jan  1 03:54:21 2010 xdm info (pid 1790): executing session /etc/X11/xdm/Xsession
+Fri Jan  1 03:57:26 2010 xdm info (pid 1200): Shutting down
+Fri Jan  1 03:57:26 2010 xdm info (pid 1487): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Fri Jan  1 03:57:26 2010 xdm info (pid 1200): Exiting
+Fri Jan  1 01:00:05 2010 xdm info (pid 1182): Starting
+Fri Jan  1 01:00:05 2010 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:06 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:07:54 2010 xdm info (pid 1135): Starting
+Fri Jan  1 01:07:54 2010 xdm info (pid 1135): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:07:54 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:10:39 2010 xdm info (pid 1183): Starting
+Fri Jan  1 01:10:39 2010 xdm info (pid 1183): Starting X server on :0
+Fri Jan  1 01:19:27 2010 xdm info (pid 1135): Starting
+Fri Jan  1 01:19:27 2010 xdm info (pid 1135): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:19:27 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:29:35 2010 xdm info (pid 1138): Starting
+Fri Jan  1 01:29:35 2010 xdm info (pid 1138): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:29:35 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:41:16 2010 xdm info (pid 1243): Starting
+Fri Jan  1 01:41:16 2010 xdm info (pid 1243): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:41:16 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 02:30:28 2010 xdm info (pid 1297): Starting
+Fri Jan  1 02:30:28 2010 xdm info (pid 1297): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 02:30:29 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 02:39:57 2010 xdm info (pid 1285): Starting
+Fri Jan  1 02:39:57 2010 xdm info (pid 1285): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 02:39:58 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Wed Dec 16 13:42:01 2015 xdm info (pid 1186): Starting
+Wed Dec 16 13:42:01 2015 xdm info (pid 1186): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Dec 16 13:42:01 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Wed Dec 16 13:49:42 2015 xdm info (pid 1296): Starting
+Wed Dec 16 13:49:43 2015 xdm info (pid 1296): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Dec 16 13:49:43 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Wed Dec 16 13:54:50 2015 xdm info (pid 1305): Starting
+Wed Dec 16 13:54:50 2015 xdm info (pid 1305): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Dec 16 13:54:50 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Wed Dec 16 13:54:54 2015 xdm info (pid 1605): sourcing /etc/X11/xdm/Xsetup
+Wed Dec 16 13:54:58 2015 xdm info (pid 1605): sourcing /etc/X11/xdm/Xstartup
+Wed Dec 16 13:54:59 2015 xdm info (pid 1916): executing session /etc/X11/xdm/Xsession
+Wed Dec 16 13:59:27 2015 xdm info (pid 1305): Shutting down
+Wed Dec 16 13:59:27 2015 xdm info (pid 1605): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Wed Dec 16 13:59:27 2015 xdm info (pid 1305): Exiting
+Wed Dec 16 14:00:20 2015 xdm info (pid 1284): Starting
+Wed Dec 16 14:00:20 2015 xdm info (pid 1284): Starting X server on :0
+Wed Dec 16 14:05:22 2015 xdm info (pid 1284): Starting
+Wed Dec 16 14:05:22 2015 xdm info (pid 1284): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Dec 16 14:05:22 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Wed Dec 16 14:21:48 2015 xdm info (pid 1288): Starting
+Wed Dec 16 14:21:48 2015 xdm info (pid 1288): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Dec 16 14:21:49 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Wed Dec 16 14:21:55 2015 xdm info (pid 1620): sourcing /etc/X11/xdm/Xsetup
+Wed Dec 16 14:22:00 2015 xdm info (pid 1620): sourcing /etc/X11/xdm/Xstartup
+Wed Dec 16 14:22:00 2015 xdm info (pid 1915): executing session /etc/X11/xdm/Xsession
+Wed Dec 16 14:27:41 2015 xdm info (pid 1288): Shutting down
+Wed Dec 16 14:27:42 2015 xdm info (pid 1620): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Wed Dec 16 14:27:42 2015 xdm info (pid 1288): Exiting
+Wed Dec 16 14:28:32 2015 xdm info (pid 1285): Starting
+Wed Dec 16 14:28:32 2015 xdm info (pid 1285): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Wed Dec 16 14:28:33 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:00:59 2010 xdm info (pid 1303): Starting
+Fri Jan  1 01:00:59 2010 xdm info (pid 1303): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:59 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:03:43 2010 xdm info (pid 1185): Starting
+Fri Jan  1 01:03:43 2010 xdm info (pid 1185): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:03:44 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:17:10 2010 xdm info (pid 1182): Starting
+Fri Jan  1 01:17:10 2010 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:17:11 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Thu Dec 17 13:02:25 2015 xdm info (pid 1189): Starting
+Thu Dec 17 13:02:25 2015 xdm info (pid 1189): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Thu Dec 17 13:02:26 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Thu Dec 17 13:45:38 2015 xdm info (pid 1193): Starting
+Thu Dec 17 13:45:38 2015 xdm info (pid 1193): Starting X server on :0
+Fri Jan  1 01:00:05 2010 xdm info (pid 1183): Starting
+Fri Jan  1 01:00:05 2010 xdm info (pid 1183): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:06 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Jan  1 01:17:05 2010 xdm info (pid 1191): Starting
+Fri Jan  1 01:17:05 2010 xdm info (pid 1191): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:17:07 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Dec 18 12:13:13 2015 xdm info (pid 1182): Starting
+Fri Dec 18 12:13:13 2015 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Dec 18 12:13:13 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Dec 18 12:13:17 2015 xdm info (pid 1474): sourcing /etc/X11/xdm/Xsetup
+Fri Dec 18 12:24:10 2015 xdm error (pid 1474): pam_authenticate failure: Authentication failure
+Fri Dec 18 12:24:20 2015 xdm error (pid 1474): pam_authenticate failure: Authentication failure
+Fri Dec 18 12:24:23 2015 xdm error (pid 1474): pam_authenticate failure: Authentication failure
+Fri Dec 18 12:24:26 2015 xdm info (pid 1474): sourcing /etc/X11/xdm/Xstartup
+Fri Dec 18 12:24:26 2015 xdm info (pid 1860): executing session /etc/X11/xdm/Xsession
+Fri Dec 18 13:22:06 2015 xdm info (pid 1474): sourcing /etc/X11/xdm/Xreset
+Fri Dec 18 13:22:06 2015 xdm info (pid 1182): Starting X server on :0
+Fri Dec 18 13:22:07 2015 xdm info (pid 1182): Shutting down
+Fri Dec 18 13:22:07 2015 xdm info (pid 1182): display :0 is being disabled
+(EE) Server terminated successfully (0). Closing log file.
+Fri Dec 18 13:22:09 2015 xdm info (pid 1182): Exiting
+Fri Dec 18 13:22:38 2015 xdm info (pid 1180): Starting
+Fri Dec 18 13:22:38 2015 xdm info (pid 1180): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1280x720p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Dec 18 13:22:38 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Fri Dec 18 13:22:43 2015 xdm info (pid 1462): sourcing /etc/X11/xdm/Xsetup
+Fri Dec 18 13:22:53 2015 xdm info (pid 1462): sourcing /etc/X11/xdm/Xstartup
+Fri Dec 18 13:22:53 2015 xdm info (pid 1817): executing session /etc/X11/xdm/Xsession
+Fri Dec 18 13:30:26 2015 xdm info (pid 1462): sourcing /etc/X11/xdm/Xreset
+Fri Dec 18 13:30:26 2015 xdm info (pid 1180): Starting X server on :0
+Fri Dec 18 13:30:27 2015 xdm info (pid 1180): Shutting down
+Fri Dec 18 13:30:27 2015 xdm info (pid 1180): display :0 is being disabled
+(EE) Server terminated successfully (0). Closing log file.
+Fri Dec 18 13:30:27 2015 xdm info (pid 1180): Exiting
+Fri Jan  1 01:00:05 2010 xdm info (pid 1182): Starting
+Fri Jan  1 01:00:05 2010 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Fri Jan  1 01:00:05 2010
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 02:13:32 2015 xdm info (pid 1181): Starting
+Sat Dec 26 02:13:32 2015 xdm info (pid 1181): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 02:13:33 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 02:13:36 2015 xdm info (pid 1432): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 02:13:41 2015 xdm info (pid 1432): sourcing /etc/X11/xdm/Xstartup
+Sat Dec 26 02:13:41 2015 xdm info (pid 1769): executing session /etc/X11/xdm/Xsession
+Sat Dec 26 02:24:08 2015 xdm info (pid 1181): Shutting down
+Sat Dec 26 02:24:08 2015 xdm info (pid 1432): sourcing /etc/X11/xdm/Xreset
+(EE) Server terminated successfully (0). Closing log file.
+Sat Dec 26 02:24:09 2015 xdm info (pid 1181): Exiting
+Sat Dec 26 02:24:38 2015 xdm info (pid 1182): Starting
+Sat Dec 26 02:24:38 2015 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 02:24:38 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 02:39:17 2015 xdm info (pid 1186): Starting
+Sat Dec 26 02:39:17 2015 xdm info (pid 1186): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 02:39:17 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 03:11:27 2015 xdm info (pid 1182): Starting
+Sat Dec 26 03:11:27 2015 xdm info (pid 1182): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p2 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 03:11:27 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 03:11:31 2015 xdm info (pid 1544): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 03:11:37 2015 xdm info (pid 1544): sourcing /etc/X11/xdm/Xstartup
+Sat Dec 26 03:11:37 2015 xdm info (pid 1771): executing session /etc/X11/xdm/Xsession
+Sat Dec 26 03:56:05 2015 xdm info (pid 1544): sourcing /etc/X11/xdm/Xreset
+Sat Dec 26 03:56:05 2015 xdm info (pid 1182): Starting X server on :0
+Sat Dec 26 03:56:06 2015 xdm info (pid 2258): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 03:56:07 2015 xdm info (pid 1182): Shutting down
+Sat Dec 26 03:56:07 2015 xdm info (pid 1182): display :0 is being disabled
+(EE) Server terminated successfully (0). Closing log file.
+Sat Dec 26 03:56:07 2015 xdm info (pid 1182): Exiting
+Sat Dec 26 07:45:12 2015 xdm info (pid 1176): Starting
+Sat Dec 26 07:45:12 2015 xdm info (pid 1176): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 07:45:13 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 07:45:16 2015 xdm info (pid 1454): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 07:45:22 2015 xdm info (pid 1454): sourcing /etc/X11/xdm/Xstartup
+Sat Dec 26 07:45:22 2015 xdm info (pid 1775): executing session /etc/X11/xdm/Xsession
+Sat Dec 26 07:49:26 2015 xdm info (pid 1454): sourcing /etc/X11/xdm/Xreset
+Sat Dec 26 07:49:26 2015 xdm info (pid 1176): Starting X server on :0
+Sat Dec 26 07:49:27 2015 xdm info (pid 2003): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 07:49:27 2015 xdm info (pid 1176): Shutting down
+Sat Dec 26 07:49:27 2015 xdm info (pid 1176): display :0 is being disabled
+(EE) Server terminated successfully (0). Closing log file.
+Sat Dec 26 07:49:28 2015 xdm info (pid 1176): Exiting
+Sat Dec 26 07:49:55 2015 xdm info (pid 1181): Starting
+Sat Dec 26 07:49:55 2015 xdm info (pid 1181): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 07:49:56 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 08:04:14 2015 xdm info (pid 1185): Starting
+Sat Dec 26 08:04:14 2015 xdm info (pid 1185): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 08:04:14 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 08:08:02 2015 xdm info (pid 1185): Starting
+Sat Dec 26 08:08:02 2015 xdm info (pid 1185): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 08:08:02 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Sat Dec 26 08:08:08 2015 xdm info (pid 1512): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 08:08:12 2015 xdm info (pid 1512): sourcing /etc/X11/xdm/Xstartup
+Sat Dec 26 08:08:12 2015 xdm info (pid 1769): executing session /etc/X11/xdm/Xsession
+Sat Dec 26 08:16:58 2015 xdm info (pid 1512): sourcing /etc/X11/xdm/Xreset
+Sat Dec 26 08:16:58 2015 xdm info (pid 1185): Starting X server on :0
+Sat Dec 26 08:16:59 2015 xdm info (pid 2278): sourcing /etc/X11/xdm/Xsetup
+Sat Dec 26 08:16:59 2015 xdm info (pid 1185): Shutting down
+Sat Dec 26 08:16:59 2015 xdm info (pid 1185): display :0 is being disabled
+(EE) Server terminated successfully (0). Closing log file.
+Sat Dec 26 08:16:59 2015 xdm info (pid 1185): Exiting
+Sat Dec 26 08:18:09 2015 xdm info (pid 1181): Starting
+Sat Dec 26 08:18:09 2015 xdm info (pid 1181): Starting X server on :0
+
+X.Org X Server 1.16.4
+Release Date: 2014-12-20
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 3.16.0-0.bpo.4-armmp-lpae armv7l Debian
+Current Operating System: Linux cubietruck 3.4.79 #3 SMP PREEMPT Wed Nov 12 11:39:10 CST 2014 armv7l
+Kernel command line: console=ttyS0,115200 root=/dev/mmcblk0p1 rootwait loglevel=8 panic=10 rootfstype=ext4 sunxi_ve_mem_reserve=0 sunxi_g2d_mem_reserve=0 sunxi_no_mali_mem_reserve sunxi_fb_mem_reserve=16 hdmi.audio=EDID:0 disp.screen0_output_mode=EDID:1600x900p60 panic=10 consoleblank=0
+Build Date: 11 February 2015  01:18:06AM
+xorg-server 2:1.16.4-1 (http://www.debian.org/support) 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sat Dec 26 08:18:09 2015
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"

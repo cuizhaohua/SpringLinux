@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-spellcheck" xml:lang="hu">
+  
+  <info>
+    <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/> 
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <revision pkgversion="3.8" date="2013-03-21" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Baptiste Mille-Mathias</name>
+      <email>baptistem@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    
+    <desc>A helyesírás-ellenőrzés bekapcsolása és használata</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Hammer Attila</mal:name>
+      <mal:email>hammera at pickup dot hu</mal:email>
+      <mal:years>2014.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2007, 2008, 2009, 2010, 2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Őry Máté</mal:name>
+      <mal:email>orymate at gmail dot com</mal:email>
+      <mal:years>2007, 2008.</mal:years>
+    </mal:credit>
+  </info>
+  
+  <title>A dokumentum helyesírásának ellenőrzése</title>
+  <section id="enable-spell-check">
+    <title>Helyesírás-ellenőrző bekapcsolása</title>
+    <p>A helyesírás-ellenőrzés funkciót a <app>geditben</app> egy bővítmény biztosítja, amely igény szerint engedélyezhető. A bővítmény engedélyezéséhez:</p>
+
+    <steps>
+      <item>
+        <p>Válassza a <guiseq><gui style="menu">gedit</gui> <gui>Beállítások</gui><gui>Bővítmények</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Válassza a <gui style="menuitem">Helyesírás-ellenőrző</gui> bejegyzést a bővítmény engedélyezéséhez.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section id="spell-check">
+    <title>A dokumentum helyesírásának ellenőrzése</title>
+
+    <p>Az elgépelt szavak kereséséhez a dokumentumban:</p>
+
+    <steps>
+      <item>
+        <p>Válassza az <guiseq><gui style="menu">Eszközök</gui> <gui style="menuitem">Helyesírás-ellenőrzés</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Ha azt szeretné, hogy a <app>gedit</app> gépelés közben automatikusan kiemelje az elgépelt szavakat a dokumentumban, akkor válassza az <guiseq><gui style="menu">Eszközök</gui><gui style="menuitem">Elgépelt szavak kiemelése</gui></guiseq> menüpontot.</p>
+    </note>
+  </section>
+
+  <section id="use-spell-check">
+    <title>Helyesírás-ellenőrzés használata</title>
+
+    <p>A Helyesírás-ellenőrzés ablakban kiválaszthatja az elgépelt szavak megfelelő helyettesítését. A helyesírás-ellenőrző által hibásnak vélt szó a <gui>Hibásan írt szó:</gui> mellett vastagon jelenik meg. A következő javítási műveletek közül választhat:</p>
+
+    <list>
+      <item>
+        <p>Az <gui style="input">Erre:</gui> mezőbe beírhat egy szót, és a <gui style="button">Szó ellenőrzése</gui> gombbal ellenőrizheti annak helyesírását.</p>
+      </item>
+      <item>
+        <p>A <gui style="menu">Javaslatok:</gui> felsorolja a szóhoz elérhető helyettesítéseket.</p>
+      </item>
+      <item>
+        <p>A <gui style="button">Kihagyás</gui> gomb lehetővé teszi a helyesírás-ellenőrzés elhagyását az aktuális szó <em>egy</em> előfordulásának esetén.</p>
+      </item>
+      <item>
+        <p>A <gui style="button">Mindet kihagyja</gui> gomb lehetővé teszi a helyesírás-ellenőrzés elhagyását az aktuális szó <em>összes</em> előfordulásának esetén.</p>
+      </item>
+      <item>
+        <p>A <gui style="button">Módosítás</gui> gomb az elgépelt vagy ismeretlen szó <em>egy</em> előfordulását lecseréli a <gui style="menuitem">Javaslatok:</gui> listában kiválasztott kifejezésre.</p>
+      </item>
+      <item>
+        <p>A <gui style="button">Mindet módosítja</gui> gomb az elgépelt vagy ismeretlen szó <em>összes</em> előfordulását lecseréli a <gui style="menuitem">Javaslatok:</gui> listában kiválasztott kifejezésre.</p>
+      </item>
+      <item>
+        <p>A <gui style="button">Szó hozzáadása</gui> gomb lehetővé teszi az aktuális szó felvételét a <app>gedit</app> <gui>Felhasználói szótárába</gui>. Az egyéni szavak felvétele a <gui>Felhasználói szótárba</gui> lehetővé teszi a <app>geditnek</app>, hogy felismerje a szót a dokumentumokban, és azt később már ne emelje ki elgépeltként.</p>
+      </item>
+    </list>
+
+  </section>
+
+  <section id="define-spell-check-language">
+    <title>A helyesírás-ellenőrzés nyelvének megadása</title>
+    <p>Alapesetben a <app>gedit</app> az aktuális nyelvet használja a dokumentum helyesírásának ellenőrzéséhez. Ha másik nyelvet szeretne használni, akkor válassza az <guiseq><gui style="menu">Eszközök</gui><gui style="menuitem">Nyelv megadása</gui></guiseq> menüpontot, majd válassza ki a használandó nyelvet.</p>
+  </section>
+
+  <section id="dict">
+    <title>Szótárak</title>
+
+    <p>A <app>gedit</app> az <link href="http://www.abisource.com/projects/enchant/">Enchant</link> nevű segédeszközt használja a helyesírás-ellenőrzéshez. Az Enchant több különböző szótárat is tud használni a helyesírás ellenőrzésére, például a <em>Hunspellt</em> vagy az <em>Aspellt</em>.</p>
+
+    <p>Ha a használandó nyelv nem érhető el a <app>geditben</app>, akkor telepítse a számítógép szoftvertelepítőjével vagy csomagkezelőjével a kívánt szótár-háttérprogramot.</p>
+  </section>
+</page>

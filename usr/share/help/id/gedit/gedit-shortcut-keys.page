@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" xmlns:ui="http://projectmallard.org/ui/1.0/" type="guide" style="tip" version="1.0 ui/1.0" id="gedit-shortcut-keys" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index"/>
+    <revision pkgversion="3.14" date="2014-07-06" status="review"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email its:translate="no">jcampbell@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Paolo Borelli</name>
+    </credit>
+    <credit type="author">
+      <name>Jesse van den Kieboom</name>
+    </credit>
+    <credit type="author">
+      <name>Steve Frécinaux</name>
+    </credit>
+    <credit type="author">
+      <name>Ignacio Casal Quinteiro</name>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email its:translate="no">sindhus@live.in</email>
+    </credit>
+    <credit type="author copyright">
+      <name>Radina Matic</name>
+      <email its:translate="no">radina.matic@gmail.com</email>
+      <years>2013</years>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tombol pintas</title>
+
+  <p>Gunakan <gui>tombol pintasan</gui> untuk melakukan tugas-tugas biasa secara lebih cepat daripada memakai tetikus dan menu. Tabel berikut menampilkan daftar semua tombol pintasan <app>gedit</app>.</p>
+
+    <table rules="rows" frame="top bottom" ui:expanded="true">
+    <title>Tombol Pintasan terkait tab</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Pindah ke teks selanjutnya di kiri</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageUp</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pindah ke teks selanjutnya di kanan</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key> <key>PageDown</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Tutup tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Simpan semua tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Tutup semua tab</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Buka ulang tab yang baru-baru ini ditutup</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>T</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Lompat ke tab ke-<var>n</var></p></td>
+          <td><p><keyseq><key>Alt</key><key> <var>n</var></key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Grup tab baru</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Alt</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Grup tab sebelumnya</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page up</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Grup tab selanjutnya</p></td>
+          <td><p><keyseq><key>Shift</key><key>Ctrl</key><key>Alt</key><key>Page down</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tombol pintas untuk bekerja dengan berkas</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Buat dokumen baru</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>N</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Buka dokumen</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>O</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Simpan dokumen kini</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Simpan dokumen kini dengan nama berkas baru</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>S</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Cetak dokumen kini</p></td>
+          <td><p><keyseq><key>Ctrl </key><key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pratinjau cetak</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>P</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Tutup dokumen kini</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>W</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Keluar gedit</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Q</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tombol pintasan untuk menyunting berkas</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Pindah ke awal baris kini</p></td>
+          <td><p><key>Home</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Pindah ke akhir baris kini</p></td>
+          <td><p><key>End</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Pindah ke awal dokumen</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Home</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pindah ke akhir dokumen</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>End</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pindahkan kata yang dipilih satu kata ke kanan</p></td>
+          <td><p><keyseq><key>Alt</key><key>Panah Kanan</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pindahkan kata yang dipilih satu kata ke kiri</p></td>
+          <td><p><keyseq><key>Alt</key><key>Panah Kiri</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Membatalkan aksi terakhir</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Menjadikan lagi aksi terakhir yang dibatalkan</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>Z</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Memotong teks atau wilayah yang dipilih dan menempatkannya pada papan klip</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>X</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Menyalin teks atau wilayah yang dipilih dan menempatkannya pada papan klip</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>C</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Tempelkan isi dari papan klip</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>V</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Pilih semua berkas dalam berkas</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>A</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Menghapus baris saat ini</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>D</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Memindah baris yang dipilih sebaris ke atas</p></td>
+          <td><p><keyseq><key>Alt</key><key>Panah Atas</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Memindah baris yang dipilih sebaris ke bawah</p></td>
+          <td><p><keyseq><key>Alt</key><key>Panah Bawah</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Menambah tab</p></td>
+          <td><p><keyseq><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Menghapus tab</p></td>
+          <td><p><keyseq><key>Shift</key><key>Tab</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Jadikan huruf besar teks yang dipilih</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>U</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Jadikan huruf kecil teks yang dipilih</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>L</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Jungkitkan besar kecil huruf teks yang dipilih</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>~</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tombol pintasan untuk menampilkan dan menyembunyikan panel</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Tampilkan / sembunyikan panel sisi</p></td>
+          <td><p><key>F9</key></p></td>  
+        </tr>
+        <tr>
+          <td><p>Tampilkan / sembunyikan panel dasar</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F9</key></keyseq></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tombol pintas untuk mencari</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Temukan suatu string</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>F</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Temukan kemunculan selanjutnya dari string</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Temukan kemunculan sebelumnya dari string</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Cari dan Ganti</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>H</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Bersihkan sorotan</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>K</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Ke baris</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>I</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tombol pintas untuk perkakas</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Memerika ejaan</p></td>
+          <td><p><keyseq><key>Shift</key><key>F7</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Menghapus spasi di ekor (dengan plugin)</p></td>
+          <td><p><keyseq><key>Alt</key><key>F12</key></keyseq></p></td>
+        </tr>
+        <tr>
+          <td><p>Jalankan "make" dalam direktori saat ini (dengan plugin)</p></td>
+          <td><p><key>F8</key></p></td>
+        </tr>
+        <tr>
+          <td><p>Daftar direktori (dengan plugin)</p></td>
+          <td><p><keyseq><key>Ctrl</key><key>Shift</key> <key>D</key></keyseq></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table rules="rows" frame="top bottom" ui:expanded="false">
+    <title>Tombol pintasan untuk bantuan pengguna</title>
+      <thead>
+        <tr>
+          <td><p>Untuk Melakukan Ini</p></td>
+          <td><p>Tekan Ini</p></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p>Buka panduan pengguna gedit</p></td>
+          <td><p><key>F1</key></p></td>
+        </tr>
+      </tbody>
+    </table>
+
+</page>

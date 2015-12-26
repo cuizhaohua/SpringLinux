@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gnome-version>
+ <platform>3</platform>
+ <minor>14</minor>
+ <micro>1</micro>
+ <distributor>Debian</distributor>
+ <date>2014-10-19</date>
+</gnome-version>

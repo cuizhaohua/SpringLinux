@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appversion "0.11.5">
+<!ENTITY manrevision "2.0.3">
+<!ENTITY date "May 2008">
+<!ENTITY app "Rhythmbox Music Player">
+<!ENTITY mdash "&#8212;">
+]>
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.2
+  Last modified: October 02, 2002
+  Maintainers:
+               Mark Finlay <sisob@eircom.net>
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.3
+  Last modified: August 08, 2003
+  Maintainers:
+	       Mark Humphreys <marquee@users.sourceforge.net>
+-->
+<!--
+      (Do not remove this comment block.)
+  Version: 0.0.4
+  Last modified: October 01, 2005
+  Maintainers:
+	       Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="sl">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+    <title>Rhythmbox predvajalnik glasbe</title>
+	<copyright lang="en">
+		<year>2002</year>
+		<holder>Mark Finlay</holder>
+	</copyright>
+        <copyright lang="en">
+                <year>2002</year>
+                <year>2002</year>
+                <holder>Mark Humphreys</holder>
+        </copyright>
+	<copyright lang="en">
+		<year>2005</year>
+		<year>2006</year>
+		<holder>Baptiste Mille-Mathias</holder>
+	</copyright>
+	<copyright lang="en">
+		<year>2006</year>
+		<holder>Victor Osadci</holder>
+	</copyright>
+	<copyright lang="en">
+		<year>2008</year>
+		<holder>Dean Sas</holder>
+	</copyright>
+
+<!-- translators: uncomment this:
+  <copyright>
+   <year>2000</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+  -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	<publisher>
+	 	<publishername>Projekt dokumentacije GNOME</publishername>
+	</publisher>
+
+   
+
+  <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Ta priročnik je del zbirke priročnikov GNOME distribuiran pod GFDL. V primeru da želite ta priročnik distribuirati ločeno od zbirke, lahko to storite z dodatkom kopije licence priročnika, kot je opisano v odseku 6 licence.</para>
+
+	<para lang="en">
+	  Many of the names used by companies to distinguish their
+	  products and services are claimed as trademarks. Where those
+	  names appear in any GNOME documentation, and the members of
+	  the GNOME Documentation Project are made aware of those
+	  trademarks, then the names are in capital letters or initial
+	  capital letters.
+	</para>
+
+	<para lang="en">
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+
+	  <orderedlist>
+		<listitem>
+		  <para lang="en">DOCUMENT IS PROVIDED ON AN "AS IS" BASIS,
+                    WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES
+                    THAT THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR
+                    A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE
+                    RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE
+                    OF THE DOCUMENT OR MODIFIED VERSION OF THE
+                    DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR
+                    MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT,
+                    YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY
+                    CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY
+                    SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER
+                    OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS
+                    LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED
+                    VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER
+                    EXCEPT UNDER THIS DISCLAIMER; AND
+		  </para>
+		</listitem>
+		<listitem>
+		  <para lang="en">UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist>
+	</para>
+  </legalnotice>
+
+
+   <!-- This file  contains link to license for the documentation (GNU FDL), and
+   other legal stuff such as "NO WARRANTY" statement. Please do not change
+   any of this. -->
+   <authorgroup>
+   		<author lang="en">
+			<firstname>Mark</firstname>
+			<surname>Finlay</surname>
+			<affiliation>
+				<orgname>GNOME Documentation Project</orgname>
+				<address><email>sisob@eircom.net</email></address>
+			</affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Mark</firstname>
+			<surname>Humphreys</surname>
+			<affiliation>
+				<orgname>GNOME Documentation Project</orgname>
+				<address><email>marquee@users.sourceforge.net</email></address>
+			</affiliation>
+		</author>		
+		<author role="maintainer" lang="en">
+			<firstname>Baptiste</firstname>
+			<surname>Mille-Mathias</surname>
+			<affiliation>
+				<orgname>GNOME Documentation Project</orgname>
+				<address><email>baptiste.millemathias@gmail.com</email></address>
+			</affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Victor</firstname>
+			<surname>Osadci</surname>
+			<affiliation>
+				<orgname>GNOME Documentation Project</orgname>
+				<address><email>Victor.Osadci.GNOME@xhtml.md</email></address>
+			</affiliation>
+		</author>
+		<author lang="en">
+			<firstname>Dean</firstname>
+			<surname>Sas</surname>
+			<affiliation>
+				<orgname>Ubuntu Documentation Project</orgname>
+				<address><email>dean@deansas.org</email></address>
+			</affiliation>
+		</author>
+   </authorgroup>
+
+<!-- According to GNU FDL, revision history is mandatory if you are -->
+<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+   <revhistory>
+      <revision lang="en"> 
+		<revnumber>Rhythmbox Music Player Manual V0.0.2</revnumber>
+		<date>October 2002</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Mark Finlay
+	  		</para>
+	  		<para role="publisher" lang="en">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+      <revision lang="en"> 
+		<revnumber>Rhythmbox Music Player Manual V0.0.3</revnumber>
+		<date>August 2003</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Mark Humphreys
+	  		</para>
+	  		<para role="publisher" lang="en">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+      <revision lang="en"> 
+		<revnumber>Rhythmbox Music Player Manual V0.0.4</revnumber>
+		<date>October 2005</date> 
+		<revdescription> 
+	  		<para role="author" lang="en">Baptiste Mille-Mathias
+	  		</para>
+	  		<para role="publisher" lang="en">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+      <revision lang="en"> 
+		<revnumber>Rhythmbox Music Player Manual V2.0.2</revnumber>
+		<date>April 2006</date>
+		<revdescription> 
+	  		<para role="author" lang="en">Luca Ferretti
+	  		</para>
+	  		<para role="publisher" lang="en">GNOME Documentation Project</para>
+		</revdescription> 
+      </revision> 
+	  <revision lang="en">
+		<revnumber>Rhythmbox Music Player Manual V2.0.3</revnumber>
+		<date>May 2008</date>
+		<revdescription>
+			<para role="author" lang="en">Dean Sas</para>
+			<para role="publisher" lang="en">GNOME Documentation Project</para>
+        </revdescription>
+      </revision>
+    </revhistory> 
+
+    <releaseinfo>Ta priročnik opisuje različico 0.11.5 Rhythmbox predvajalnika glasbe.</releaseinfo> 
+    <legalnotice> 
+      <title>Odziv</title> 
+      <para>Za poročilo o hrošču ali predlog glede programa Rhythmbox predvajalnik glasbe ali tega priročnika sledite navodilom na <ulink url="ghelp:gnome-feedback" type="help">GNOME strani odziva</ulink>.</para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice> 
+
+   <abstract role="description">
+     <para>Rhythmbox je predvajalnik glasbe z veliko zmožnostmi za namizje GNOME.</para>
+   </abstract>
+
+  </articleinfo> 
+
+
+  <indexterm zone="index" lang="en">
+    <primary>Rhythmbox</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>rhythmbox</primary>
+  </indexterm>
+  <indexterm zone="index" lang="en">
+    <primary>Music Player</primary>
+  </indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+  <sect1 id="introduction">
+    <title>Uvod</title>
+      <para lang="en">
+        <application>Rhythmbox Music Player</application> is a music player and library for
+        tagged files that supports various music formats.
+      </para>
+      <para>Trenutne zmožnosti <application>Rhythmbox predvajalnika glasbe</application> vključujejo:</para>
+      	<itemizedlist>
+          <listitem>
+            <para>Predvajanje različnih vrst glasbenih datotek iz vaše z oznakami organizirane knjižnice.</para>
+          </listitem>
+          <listitem>
+            <para>Prikaz podatkov o skladbah s pomočjo branja metapodatkov.</para>
+          </listitem>
+          <listitem>
+            <para>Prikaz skladb v organiziranem pogledu.</para>
+          </listitem>
+          <listitem>
+            <para>Ustvarjanje statičnih seznamov predvajanja z vleko in spustom iz pogleda knjižnice.</para>
+          </listitem>
+          <listitem>
+            <para>Ustvarjanje samodejnih seznamov predvajanja iz kriterijev.</para>
+          </listitem>
+          <listitem>
+            <para>Iskanje skladb v seznamu virov kot sta knjižnica ali seznami predvajanja.</para>
+          </listitem>
+          <listitem>
+            <para>Poslušanje medmrežnih radijskih postaj.</para>
+          </listitem>
+          <listitem>
+            <para>Branje zvočnih CD-jev in pridobivanje podatkov kot je naslov skladbe z medmrežja.</para>
+          </listitem>
+          <listitem>
+            <para>Zapis zvočnih CD-jev iz seznamov predvajanja.</para>
+          </listitem>
+          <listitem>
+            <para>Prenos glasbe na iPod, MTP in predvajalnike glasbe obsežnega hranjenja.</para>
+          </listitem>
+        </itemizedlist>
+  </sect1>
+  <sect1 id="rb-getting-started">
+  	<title>Prvi koraki</title>
+	
+		<sect2 id="rb-launch">
+			<title>Zagon <application>Rhythmbox predvajalnika glasbe</application></title>
+			<para lang="en">
+				You can launch the <application>Rhythmbox Music Player</application> in the following ways:
+				<variablelist>
+					<varlistentry>
+						<term lang="en"><guimenu>Applications</guimenu> menu</term>
+						<listitem>
+							<para lang="en">
+						 		Choose
+								<menuchoice><guisubmenu>Sound &amp; Video</guisubmenu>
+								<guimenuitem>Rhythmbox Music
+								Player</guimenuitem></menuchoice>.
+							</para>
+						</listitem>
+					</varlistentry>
+					<varlistentry>
+						<term lang="en">Command Line</term>
+						<listitem>
+							<para lang="en">
+								Type <command>rhythmbox</command>, then press
+								<keycap>Return</keycap>.
+							</para>
+						</listitem>
+					</varlistentry>
+				</variablelist>
+			</para>
+		</sect2>
+		<sect2 id="rb">
+			<title>Uporaba pomočnika</title>
+			<para>Ob prvem zagonu <application>Rhythmbox predvajalnika glasbe</application> vam bo pomočnik pomagal uvoziti vašo glasbo. Na drugem pultu pomočnika pritisnite <guibutton>Prebrskaj</guibutton> in izberite mapo, kjer je shranjena vaša glasba.</para>
+		</sect2>
+  </sect1>
+  <sect1 id="rb-window">
+    <title>Okno predvajalnika glasbe Rhythmbox</title>
+    <sect2 id="rb-window-intro">
+      <title>Pregled</title>
+      	<para>Okno <application>Rhythmbox predvajalnika glasbe</application> vam omogoča brskanje in predvajanje vaše najljubše glasbe. <xref linkend="fig-rb-window"/> prikazuje vmesnik <application>Rhythmbox predvajalnika glasbe</application> z glavnimi sestavnimi deli.</para>
+      	<figure id="fig-rb-window">
+        <title>Okno <application>Rhythmbox predvajalnika glasbe</application></title>
+        <screenshot>
+          <mediaobject lang="en">
+            <imageobject>
+              <imagedata fileref="figures/rb-window.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase>Show the <application>Rhythmbox Music Player</application> window showing 
+                the different parts on the <application>Rhythmbox Music Player</application> interface.
+                Callouts: Menubar, Player area, Browser, Side pane, Statusbar.
+              </phrase>
+            </textobject>
+          </mediaobject>
+        </screenshot>
+      </figure>
+      <para>Razpredelnica 1 opisuje sestavne dele okna <application>Rhythmbox predvajalnika glasbe</application>.</para>
+      <table frame="topbot" id="table-rb-window">
+        <title>Enote okna <application>Rhythmbox predvajalnika glasbe</application></title>
+        <tgroup cols="3" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <colspec colname="COLSPEC2"/>
+          <thead>
+            <row rowsep="1">
+              <entry valign="top">Številka</entry>
+              <entry valign="top">Enota</entry>
+              <entry valign="top">Opis</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry valign="top">1</entry>
+              <entry valign="top">Menijska vrstica</entry>
+              <entry valign="top" lang="en">Contains menus that you use to perform
+							tasks in <application>Rhythmbox Music Player</application> window.</entry>
+            </row>
+            <row>
+              <entry valign="top">2</entry>
+              <entry valign="top">Orodna vrstica</entry>
+              <entry valign="top">Zagotavlja dostop do zmožnosti predvajalnika in podrobnosti o trenutno predvajani skladbi.</entry>
+            </row>
+            <row>
+              <entry valign="top">3</entry>
+              <entry valign="top">Časovni drsnik</entry>
+              <entry valign="top">Prikazuje položaj branja skladbe; omogoča skok na drug del skladbe.</entry>
+            </row>
+            <row>
+              <entry valign="top">4</entry>
+              <entry valign="top">Stranski pladenj</entry>
+              <entry valign="top">Prikazuje seznam razpoložljivih virov.</entry>
+
+            </row>
+            <row>
+              <entry valign="top">5</entry>
+              <entry valign="top">Brskalnik</entry>
+              <entry valign="top">Omogoča brskanje in filtriranje skladb knjižnice po imenu zvrsti, albuma ali izvajalca. Brskalnik zagotavlja tudi funkcijo iskanja za prikaz le skladb, ki se skladajo z vašimi kriteriji.</entry>
+            </row>
+            <row>
+              <entry valign="top">6</entry>
+              <entry valign="top">Seznam skladb</entry>
+              <entry valign="top">Našteje skladbe, ki pripadajo izbranemu viru.</entry>
+            </row>
+            <row>
+              <entry valign="top">7</entry>
+              <entry valign="top">Vrstica stanja</entry>
+              <entry valign="top">Prikazuje podatke o izbranem viru v stranskem pladnju.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="intro-sourcelist">
+      <title>Stranski pladenj</title>
+      <para lang="en">The side pane is where you can access your music library,
+			internet radio,	your playlists and audio CDs. The side pane can contain
+			the following sources:
+				<itemizedlist>
+				  <listitem><para lang="en">The <application>Rhythmbox Music Player</application> library, where 
+				  all of the imported tracks will appear.</para></listitem>
+				  <listitem><para lang="en">The iRadio source, with all internet radio stations.
+				  </para></listitem>
+				  <listitem><para lang="en">Podcasts.</para></listitem>
+				  <listitem><para lang="en">All playlists (normal and smart).</para></listitem>
+				  <listitem><para lang="en">Audio CD's inserted into the computer's CD drives.
+				  </para></listitem>
+				  <listitem><para lang="en">Portable players like iPod plugged to your computer.
+				  </para></listitem>
+				  <listitem><para lang="en">The DAAP Music shares discovered on the local network.
+				  </para></listitem>
+				  <listitem><para lang="en">Music stores like Jamendo and Magnatune.
+				  </para></listitem>
+				</itemizedlist>
+		</para>
+      	<para lang="en">
+				The display of the side pane can be toggled on or off by selecting
+				<menuchoice><guimenu>View</guimenu><guimenuitem>Side Pane</guimenuitem>
+				</menuchoice>.
+			</para>
+    </sect2>
+    <sect2 id="player-toolbar">
+      <title>Orodna vrstica predvajalnika</title>
+      <para>Področje orodne vrstice zagotavlja dostop do podrobnosti o trenutno predvajani skladbi. Ko ni predvajana nobena skladba, to področje ne prikazuje podrobnosti. Ko se skladba predvaja, je prikazano ime skladbe in pod imenom ime izvajalca in albuma.</para>
+      <para>Prikazan je tudi sledilec, ki prikazuje napredek predvajane skladbe. Ko je sledilec v žarišču, je mogoče uporabiti tipke s puščicami za hitro predvajanje ali previjanje predvajane skladbe.</para>
+      <screenshot>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-toolbar.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Shows player area</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+      <tip>
+        <para>V primeru da uporabljate miško z drsnim koleščkom, lahko prilagodite glasnost z drsanjem navzgor ali navzdol medtem ko je miškin kazalec nad gumbom glasnosti.</para>
+      </tip>
+    </sect2>
+    <sect2 id="status-area">
+      <title>Vrstica stanja</title>
+      <para lang="en">
+				The statusbar contains additional information about the number
+				of songs and the duration of the source selected. The display of the 
+				statusbar can be toggled on or off by selecting <menuchoice>
+				<guimenu>View</guimenu><guimenuitem>Statusbar</guimenuitem></menuchoice>.
+			</para>
+      <screenshot>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-statusbar.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Shows statusbar</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </sect2>
+    <sect2 id="rb-window-small">
+      <title>Pomanjšano okno <application>Rhythmbox predvajalnika glasbe</application></title>
+      <para><application>Rhythmbox predvajalnik glasbe</application> vsebuje pomanjšan način. Ta način omogoča dostop le do menijske vrstice in zmožnosti predvajalnika <application>Rhythmbox predvajalnika glasbe</application>.</para>
+      <para lang="en">
+				To switch to the small display, select <menuchoice><guimenu>View</guimenu>
+				<guimenuitem>Small Display</guimenuitem></menuchoice>. 
+			</para>
+      <screenshot>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-window-small.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>Shows the <application>Rhythmbox Music Player</application> in small display mode</phrase>
+          </textobject>
+        </mediaobject>
+      </screenshot>
+    </sect2>
+  </sect1>
+  <sect1 id="Usage">
+    <title>Uporaba predvajalnika glasbe Rhythmbox</title>
+    <sect2 id="Playing">
+      <title>Predvajanje glasbe</title>
+      <para lang="en">To play a track, choose <menuchoice><guimenu>Control</guimenu>
+      <guimenuitem>Play</guimenuitem></menuchoice>, or select the track and 
+      press the <guibutton>Play</guibutton> button on the toolbar, or simply 
+      double-click on the track to start playing.
+		</para>
+      <para>Ko se skladba konča, <application>Rhythmbox predvajalnik glasbe</application> skoči na predvajanje naslednje skladbe na seznamu prikazanem v pladnju ogleda.</para>
+      <para>V knjižnici lahko predvajate vse skladbe izvajalca ali posamezen album z izbiro vnosa <guilabel>Album</guilabel> ali <guilabel>Izvajalec</guilabel> v <link linkend="library-filter-browser">brskalniku knjižnice</link>.</para>
+      <sect3 id="next-previous">
+        <title>Naslednja/Predvajaj/Predhodna</title>
+        <para lang="en">The <guibutton>Next</guibutton> and <guibutton>Previous</guibutton> 
+        buttons can be used to skip between tracks while playing. If a track is 
+        currently playing, the previous button will restart the	track. Pressing 
+        the <guibutton>Play</guibutton> button will start playing the current track. 
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/rb-toolbar-prevplaynext.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows buttons <guibutton>Previous</guibutton>,
+						<guibutton>Play</guibutton> and <guibutton>Next</guibutton> in toolbar.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</para>
+      </sect3>
+      <sect3 id="repeat">
+        <title>Ponovi</title>
+        <para>Možnost <guibutton>Ponovi</guibutton> določi da <application>Rhythmbox predvajalnik glasbe</application> ponovno začne predvajati skladbe od začetka seznama, ko doseže zadnjo skladbo.</para>
+        <para lang="en">To activate repeat, choose <menuchoice><guimenu>Control</guimenu>
+        <guimenuitem>Repeat</guimenuitem></menuchoice>, or press the button 
+        <guibutton>Repeat</guibutton> on the toolbar.
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/rb-toolbar-repeat.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows repeat button in the statusbar.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</para>
+      </sect3>
+      <sect3 id="shuffle">
+        <title>Premešaj</title>
+        <para>Možnost <guibutton>Premešaj</guibutton> določi da <application>Rhythmbox predvajalnik glasbe</application> predvaja skladbe v naključnem redu.</para>
+        <para lang="en">To activate shuffle, choose <menuchoice><guimenu>Control</guimenu>
+        <guimenuitem>Shuffle</guimenuitem></menuchoice>, or press the button 
+        <guibutton>Shuffle</guibutton> on the toolbar.
+			<screenshot>
+				<mediaobject lang="en">
+					<imageobject>
+						<imagedata fileref="figures/rb-toolbar-shuffle.png" format="PNG"/>
+					</imageobject>
+					<textobject>
+						<phrase>Shows shuffle button in the statusbar.</phrase>
+					</textobject>
+				</mediaobject>
+			</screenshot>
+		</para>
+      </sect3>
+      <sect3 id="volume">
+        <title>Nadzor glasnosti</title>
+        <para lang="en">
+				The volume control is located in the right hand of the toolbar.
+				Pressing the loudspeaker icon will show the volume slider.
+				Sliding this up and down will increase and decrease the volume.
+				The loudspeaker icon will change to reflect the relative volume.
+			<screenshot><mediaobject lang="en"><imageobject><imagedata fileref="figures/rb-volume-changer.png" format="PNG"/></imageobject><textobject><phrase>Shows volume slider in toolbar.
+				</phrase></textobject></mediaobject></screenshot>
+
+			</para>
+        <tip>
+          <para>Glasnost lahko prilagodite z uporabo drsnega miškinega koleščka nad ikono zvočnika.</para>
+        </tip>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="library">
+    <title>Vir knjižnica</title>
+    	<para>Knjižnica je glaven razpoložljiv vir v <application>Rhythmbox predvajalniku glasbe</application>; je podatkovna zbirka, ki vsebuje vse glasbene datoteke uvožene v <application>Rhythmbox predvajalnik glasbe</application>. (Knjižnica shranjuje pot za dostop do vaših glasbenih datotek, ne samih datotek).</para>
+    	<para lang="en">
+			The Library can not only contains music files which are physically 
+			on your computer (in your HOME Directory for instance), but it can
+			also contains music files available over remote network services. 
+			Some examples of supported network services are :
+			<itemizedlist>
+				<listitem>
+					<para lang="en">Public FTP</para>
+				</listitem>
+				<listitem>
+					<para lang="en">Authenticated FTP</para>
+				</listitem>
+				<listitem>
+					<para lang="en">NFS</para>
+				</listitem>
+				<listitem>
+					<para lang="en">Windows Share</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+    	<para lang="en">
+			The files imported in the Library are displayed in the track list
+			with the information (like the Artist name or the Album name) stored 
+			in the tags embedded on the tracks. <application>Rhythmbox Music Player</application> uses 
+			these tags to display the tracks in an organized manner.
+			<tip>
+				<para lang="en">Tags can be modified by choosing <menuchoice><guimenu>
+				Music</guimenu><guimenuitem>Properties</guimenuitem>
+				</menuchoice> and filling in the details on the window that appears.</para>
+			</tip>
+		</para>
+    <sect2 id="library-tracks-add">
+      <title>Dodajanje skladb v knjižnico</title>
+      		<para lang="en">
+				To add tracks to the Library, you can follow these different
+				methods:
+				<itemizedlist>
+					<listitem>
+						<para lang="en">
+							To import only one track, choose 
+							<menuchoice><guimenu>Music</guimenu><guimenuitem>Import File
+							</guimenuitem></menuchoice> from the menu, then select the file
+							in the file selector and press the <guibutton>Open</guibutton> button.
+						</para>
+					</listitem>
+					<listitem>
+						<para lang="en">
+							If you want to import several music files located in a
+							folder, choose <menuchoice><guimenu>Music</guimenu><guimenuitem>Import
+							Folder</guimenuitem></menuchoice> from the menu, then select the
+							folder in the file selector and press the 
+							<guibutton>Open</guibutton> button. All the music files located
+							in the folder and its sub-folders will be imported.
+						</para>
+					</listitem>
+					<listitem>
+						<para lang="en">
+							Drag and drop files from the file manager (like
+							<application>Nautilus</application>) over the Rhythmbox window.
+						</para>
+					</listitem>
+				</itemizedlist>
+			</para>
+      	<tip>
+       		<para>V primeru da ste omogočili zmožnost opazovanja map (oglejte si <xref linkend="prefs-library"/>), bodo vse glasbene datoteke shranjene v izbrani mapi dodane v knjižnico. Dodane bodo tudi kasneje dodane datoteke .</para>
+      	</tip>
+    </sect2>
+    <sect2 id="library-tracks-del">
+    	<title>Odstranjevanje skladb iz knjižnice</title>
+      	<para>Za odstranitev skladbe iz knjižnice, toda ne z diska izberite <menuchoice><guimenu>Uredi</guimenu><guimenu>Odstrani</guimenu></menuchoice>. Skladba in njene lastnosti (kot sta ocena in število predvajanj) bodo odstranjene iz podatkovne zbirke Rhythmbox.</para>
+      	<para>Za izbris skladbe iz knjižnice in z diska izberite <menuchoice><guimenu>Uredi</guimenu><guimenuitem>Premakni v smeti</guimenuitem></menuchoice>. Skladba bo odstranjena na enak način kot predhodna, toda datoteka bo premaknjena v smeti upravljalnika datotek.</para>
+    </sect2>
+    <sect2 id="library-filter-search">
+    	<title>Iskanje skladb z uporabo iskanja</title>
+      	<para>Rhythmbox vsebuje zmožnost iskanja, ki vam omogoča iskanje in filtriranje skladb z uporabo izraza iskanja.</para>
+      	<para>V iskalno polje vnesite nekaj besedila in medtem ko tipkate bodo prikazane le skladbe, ki se skladajo z vnesenim besedilom. Zmožnost iskanja išče po vseh oznakah skladb shranjenih v knjižnici.</para>
+		<para>Za izvedbo bolj natančnega iskanja lahko iščete le v določenih oznakah <guilabel>Izvajalci</guilabel>, <guilabel>Albumi</guilabel> ali <guilabel>Naslovi</guilabel>.</para>
+    </sect2>
+    <sect2 id="library-filter-browser">
+    	<title>Iskanje skladb z uporabo brskalnika</title>
+      	<para>Brskalnik je še en priročen način za iskanje skladb. Brskalnik je pogled dveh ali treh pladnjev, ki vam omogoča krmarjenje med glasbenimi zvrstmi, izvajalci in albumi ter prikaz skladb, ki se ujemajo z izbranimi kriteriji.</para>
+      	<para lang="en">
+			First, to display the Browser, select <menuchoice><guimenu>View</guimenu>
+			<guimenuitem>Browser</guimenuitem></menuchoice>. Select artist, album 
+			and genre, and as you choose, only the tracks that match your choice will 
+			be displayed in the track list. The criteria on the columns apply
+			from the left to the right.
+		</para>
+      	<tip>
+        	<para>Izberete lahko več kriterijev iste kategorije z uporabo tipke <keycombo><keycap>Ctrl</keycap></keycombo>.</para>
+      	</tip>
+      		<para>Iz izbrane skladbe v seznamu skladb lahko najdete vse skladbe z enako zvrstjo, izvajalcem ali imenom albuma. Izberite skladbo v seznamu skladb, desno kliknite nanjo in izberite <guilabel>Prebrskaj to zvrst/izvajalca/album</guilabel>. Nato bo brskalnik filtriral skladbe z izbranimi kriteriji.</para>
+  	</sect2>
+  </sect1>
+  <sect1 id="radio">
+  	<title>Vir radio</title>
+    <para>Sprejemnik medmrežnega radia je mogoče uporabiti za poslušanje pretočnih datotek preko omrežja, krajevnega ali medmrežja.</para>
+    <figure id="fig-iradio">
+      <title>Medmrežni radio v <application>Rhythmbox predvajalniku glasbe</application></title>
+      <screenshot>
+        <mediaobject>
+          <imageobject>
+	    <imagedata format="PNG" fileref="figures/rb-iradio-main.png"/>
+	  </imageobject>
+	</mediaobject>
+      </screenshot>
+    </figure>
+    <sect2 id="iradio-adding">
+      	<title>Dodajanje postaje</title>
+      	<para lang="en">
+			To add a new station to the Internet Radio tuner, choose <menuchoice><guimenu>Music</guimenu>
+			<guimenuitem>New Internet Radio Station</guimenuitem></menuchoice>, then enter the URL of
+			the Internet radio, then press the button <guibutton>Add</guibutton>.
+		</para>
+    </sect2>
+    <sect2 id="iradio-modify">
+      	<title>Ogledovanje in spreminjanje lastnosti postaje</title>
+      	<para>Lastnosti medmrežne radijske postaje si lahko ogledate in spremenite z uporabo menija <menuchoice><guimenu>Glasba</guimenu><guimenuitem>Lastnosti</guimenuitem></menuchoice>.</para>
+      	<para>Lastnosti postaje lahko spremenite tudi z izbiro postaje ter desnim klikom in izbiro <guimenuitem>Lastnosti</guimenuitem>.</para>
+      	<para>Ob dostopu do lastnosti radijskega pretoka lahko spremenite njegov naslov, zvrst in mesto pretoka ter ga ocenite.</para>
+    </sect2>
+    <sect2 id="iradio-delete">
+    	<title>Odstranjevanje postaje</title>
+      	<para lang="en">
+			To remove a radio station from the radio stations list, choose <menuchoice><guimenu>Edit</guimenu>
+			<guimenuitem>Remove</guimenuitem></menuchoice>; you can also right-click on the station and select
+			<guimenuitem>Remove</guimenuitem>.
+		</para>
+    </sect2>
+  </sect1>
+  <sect1 id="podcast">
+  	<title>Vir podcasti</title>
+    <para>Podcasting je nov način vsesmernega oddajanja zvočnih vsebin preko mreže; ko avtor objavi epizodo, so naročniki podcasta obveščeni preko XML vira.</para>
+    <para>Rhythmbox predvajalnik glasbe vam omogoča naročanje na vire podcastov, da boste ob razpoložljivosti nove epizode obveščeni, lahko jo boste prejeli in predvajali.</para>
+    <tip>
+      	<para>Več podrobnosti o podcastih in podcastanju lahko najdete z obiskom definicije <ulink url="http://en.wikipedia.org/wiki/Podcast">Podcast</ulink> na strani <ulink url="http://en.wikipedia.org/">Wikipedia</ulink>.</para>
+    </tip>
+    <para>
+      <figure>
+        <title>Vmesnik podcastov</title>
+        <mediaobject lang="en">
+          <imageobject>
+            <imagedata fileref="figures/rb-podcast-main.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase>The Podcast interface with some registered podcasts</phrase>
+          </textobject>
+        </mediaobject>
+      </figure>
+    </para>
+    <sect2 id="podcast-management">
+      <title>Upravljanje s podcasti</title>
+      <sect3 id="podcast-feed-add">
+        <title>Dodajanje podcasta</title>
+        <para>Za vpis podcasta izberite <menuchoice><guimenu>Glasba</guimenu><guimenuitem>Nov vir podcasta</guimenuitem></menuchoice>. Nato v novo okno vnesite URL vira podcasta. Rhythmbox bo pridobil seznam epizod in zadnja epizoda bo prejeta na vaš trdi disk.</para>
+        <para>Za dodajanje novega vira podcastov lahko tudi desno kliknete na vir <guimenuitem>Podcasti</guimenuitem> in izberete <guimenuitem>Nov vir podcasta</guimenuitem>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-del">
+        <title>Izbris podcasta</title>
+        <para>Za izbris podcasta v brskalniku desno kliknite na ime vira podcasta in izberite <menuchoice><guimenuitem>Izbriši vir podcasta</guimenuitem></menuchoice>. Nato izberite <menuchoice><guimenuitem>Izbriši le vir</guimenuitem></menuchoice>, če želite obdržati epizode podcasta ali pa izberite <menuchoice><guimenuitem>Izbriši vir in predmet</guimenuitem></menuchoice>, če želite izbrisati vir in vse njegove povezane epizode.</para>
+      </sect3>
+      <sect3 id="podcast-feed-update">
+        <title>Posodobitev virov</title>
+        <para>Za podatke ali so bile za podcast objavljene nove epizode v brskalniku desno kliknite na ime podcasta in izberite <menuchoice><guimenuitem>Posodobi vir podcasta</guimenuitem></menuchoice>. V primeru da so bile objavljene nove epizode, se bodo pojavile na seznamu epizod.</para>
+        <tip>
+          <para>Rhythmbox predvajalnik glasbe redno samodejno preverja seznam virov podcastov za posodobitve.</para>
+        </tip>
+        <para>Preverite lahko tudi vse podcaste z desnim klikom nad virom <menuchoice><guimenuitem>Podcasti</guimenuitem></menuchoice> in izbiro <menuchoice><guimenuitem>Posodobi vse vire</guimenuitem></menuchoice>.</para>
+      </sect3>
+      <sect3 id="podcast-feed-show">
+        <title>Dostop do lastnosti vira podcasta</title>
+        <para lang="en">
+			To access to the Feed properties, right-click on the Feed name, and
+			choose
+			<menuchoice><guimenuitem>Properties</guimenuitem></menuchoice>.
+			<itemizedlist><listitem><para lang="en">
+					On the <guilabel>Basic</guilabel> tab you can view the
+					podcast <guilabel>Title</guilabel>, <guilabel>Author
+					</guilabel>, the <guilabel>Last Updated</guilabel>
+					date and the <guilabel>Description</guilabel>.
+				</para></listitem><listitem><para lang="en">
+					On the <guilabel>Details</guilabel> tab you can view the
+					feed <guilabel>Source</guilabel>, <guilabel>Language
+					</guilabel>and the <guilabel>Copyright</guilabel>
+					properties.
+				</para></listitem></itemizedlist>
+			You can view the properties, and also edit the rating.
+			</para>
+      </sect3>
+    </sect2>
+    <sect2 id="episode-management">
+      <title>Upravljanje epizod</title>
+      <sect3 id="podcast-episode-download">
+        <title>Prejem epizode podcasta</title>
+        <para>Za prejem epizode na vaš disk desno kliknite na epizodo in izberite <menuchoice><guimenuitem>Prejmi epizodo</guimenuitem></menuchoice>. Rhythmbox bo začel prejem epizode na mesto določeno v možnostih. Napredek prejema epizode lahko vidite v stolpcu <guilabel>Stanje</guilabel>.</para>
+        <tip>
+          <para>Privzeto so podcasti prejeti v mapo <filename class="directory">Podcasti/</filename> v vaši domači mapi. Za spremembo mesta si oglejte <xref linkend="prefs-podscast"/>.</para>
+        </tip>
+      </sect3>
+      <sect3 id="podcast-episode-read">
+        <title>Predvajanje epizode podcasta</title>
+        <para>Za predvajanje epizode podcasta izberite epizodo, ki jo želite brati in izberite <menuchoice><guimenu>Nadzor</guimenu><guimenuitem>Predvajanje</guimenuitem></menuchoice>; lahko tudi pritisnite gumb <guibutton>Predvajanje</guibutton>.</para>
+        <para>Pred branjem mora biti epizoda prejeta. Za podatke kako prejeti epizodo podcasta si oglejte <xref linkend="podcast-episode-download"/>.</para>
+      </sect3>
+      <sect3 id="podcast-episode-delete">
+        <title>Izbris epizode podcasta</title>
+        <para>Za izbris epizode iz podcasta desno kliknite na epizodo in izberite <menuchoice><guimenuitem>Izbriši</guimenuitem></menuchoice>. V primeru da želite epizodo obdržati na disku izberite <menuchoice><guimenuitem>Izbriši le epizodo</guimenuitem></menuchoice>, če želite izbrisati epizodo s seznama in izbrisati datoteko z diska pa izberite <guibutton>Izbriši epizodo in datoteko</guibutton>.</para>
+        <warning>
+          <para>Po izbrisu epizoda ne bo več na voljo v seznamu epizod, tudi če podcast posodobite.</para>
+        </warning>
+      </sect3>
+      <sect3>
+        <title>Prikaz lastnosti epizode podcasta </title>
+        <para lang="en">
+			To access to the episode properties, right-click on the episode, and
+			choose
+			<menuchoice><guimenuitem>Properties</guimenuitem></menuchoice>.
+			<itemizedlist><listitem><para lang="en">
+					On the <guilabel>Basic</guilabel> tab you can view the podcast
+					<guilabel>Title</guilabel>, <guilabel>Feed</guilabel>, the
+					publication <guilabel>Data</guilabel> and the
+					<guilabel>Description</guilabel>.
+				</para></listitem><listitem><para lang="en">
+					On the <guilabel>Details</guilabel> tab you can view the podcast
+					<guilabel>Source</guilabel>, <guilabel>Duration</guilabel>, the
+					<guilabel>Bitrate</guilabel>, the <guilabel>Last Played
+					Date</guilabel>, the <guilabel>Play count</guilabel> and
+					the <guilabel>Rating</guilabel>.
+				</para></listitem></itemizedlist>
+			</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="playqueue">
+  	<title>Vir vrsta predvajanja</title>
+	<para>Vrsta predvajanja je vir narejen za začasno shrambo skladb, ki jih želite predvajati naslednje. Ko dodate skladbo v vrsto predvajanja, bo <application>Rhythmbox predvajalnik glasbe</application> po koncu predvajanja skladbe samodejno zamenjal na ta vir.</para>
+	<para>Ko je bila skladba predvajanja, bo samodejno odstranjena iz vira vrste predvajanja. Ko je vrsta predvajanja prazna, bo <application>Rhythmbox predvajalnik glasbe</application> predvajal prehodno predvajan vir.</para>
+		<sect2 id="playqueue-track-add">
+			<title>Dodajanje skladbe v vrsto predvajanja</title>
+			<para lang="en">To add a track:
+				<orderedlist>
+					<listitem>
+						<para lang="en">
+							Select the track you want to play, in any
+							source.
+						</para>
+					</listitem>
+					<listitem>
+						<para lang="en">Choose
+						<menuchoice><guimenu>Edit</guimenu><guimenuitem>Add to
+						playqueue</guimenuitem></menuchoice>.</para>
+					</listitem>
+				</orderedlist>
+			</para>
+		</sect2>
+		<sect2 id="playqueue-track-del">
+			<title>Odstranijevanje skladbe iz vrste predvajanja</title>
+			<para lang="en">To remove a track stored in Play Queue:
+				<orderedlist>
+					<listitem>
+						<para lang="en">Select the track you want to remove in Play Queue
+						source.</para>
+					</listitem>
+					<listitem>
+						<para lang="en">Choose
+							<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem>
+							</menuchoice>.
+						</para>
+					</listitem>
+				</orderedlist>
+			</para>
+		</sect2>
+  </sect1>
+  
+  <sect1 id="playlist">
+  	<title>Vir seznami predvajanja</title>
+    <para>Seznami predvajanja so viri, ki so ustvarjeni iz sklad dostopnih v viru knjižnica. Omogočajo vam zbiranje skladb, ki sledijo določeni 'zvrsti', določeni skupini izvajalcev ali celo skladbam ki so določene 'volje', ali čemurkoli želite.</para>
+    <para lang="en">
+			Rhythmbox Music Player has 2 kinds of playlists:
+			<itemizedlist>
+				<listitem>
+					<para lang="en">Static Playlists</para>
+				</listitem>
+				<listitem>
+					<para lang="en">Smart Playlists</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+    <para>Rhytmbox vam omogoča zapis skladb vaših seznamov predvajanja na zvočni CD.</para>
+    <sect2 id="playlist-static">
+    	<title>Statični seznami predvajanja</title>
+      	<para>Statični seznami predvajanja so seznami predvajanja izgrajeni iz skladb, spuščenih iz knjižnice.</para>
+      <sect3 id="playlist-static-new">
+        <title>Ustvarjanje statičnega seznama predvajanja</title>
+        <para>Za ustvarjanje novega seznama predvajanja izberite <menuchoice><guimenu>Glasba</guimenu><guisubmenu>Seznam predvajanja</guisubmenu><guimenuitem>Nov seznam predvajanja</guimenuitem></menuchoice>. V stranskem pladnju se bo pojavil prazen seznam predvajanja brez imena. Vnesite ime za seznam predvajanja in pritisnite <keycombo><keycap>Vnosno tipko</keycap></keycombo>.</para>
+      </sect3>
+      <sect3 id="playlist-static-tracks-add">
+        <title>Dodajanje skladb na seznam predvajanja</title>
+        <para>Za dodajanje skladb na seznam predvajanja izberite skladbe iz seznama skladb v knjižnici, ter svojo izbiro povlecite in spustite nad ikono seznama predvajanja v stranskem pladnju. </para>
+        <para>Na seznam predvajanja lahko spustite zvrst, izvajalca ali ime albuma iz brskalnika. Vse skladbe, ki pripadajo izbrani kategoriji, bodo dodane na seznam predvajanja.</para>
+        <tip>
+          <para>Seznam predvajanja s skladbami lahko ustvarite v enem koraku. Izberite skladbe s <guilabel>seznama skladb</guilabel>,  eno ali več kategorij iz brskalnika (<guilabel>Zvrst</guilabel>, <guilabel>Izvajalec</guilabel> ali <guilabel>Album</guilabel>) ali spustite izbor nad <guilabel>stranskim pladnjem</guilabel>. Imenovan seznam predvajanja bo samodejno ustvarjen.</para>
+        </tip>
+      </sect3>
+      <sect3 id="playlist-static-tracks-del">
+        <title>Odstranjevanje skladb iz seznama predvajanja</title>
+        <para lang="en">
+					To remove tracks from a playlist, first select the tracks to
+					remove, and then you have two methods:
+					<itemizedlist><listitem><para lang="en">
+								Choose
+								<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Right-click over the selection and choose <guimenuitem>Delete</guimenuitem>.
+							</para></listitem></itemizedlist>
+					This operation deletes the track only from playlist and not
+					from the Library.
+				</para>
+      </sect3>
+      <sect3 id="playlist-static-del">
+        <title>Izbris statičnega seznam predvajanja</title>
+        <para lang="en">
+					To delete a static playlist, select the playlist to delete,
+					then you have two ways to delete it:
+					<itemizedlist><listitem><para lang="en">
+								Choose
+								<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Right-click over the playlist and choose <guimenuitem>Delete</guimenuitem>.
+							</para></listitem></itemizedlist>
+					This operation deletes only the playlist and not the tracks
+					stored in the playlist deleted.
+				</para>
+      </sect3>
+    </sect2>
+    <sect2 id="playlist-smart">
+      <title>Pametni seznami predvajanja </title>
+      <para>Pametni seznami predvajanja so izgrajeni iz kriterijev, zato so skladbe na njih dodane dinamično; vse skladbe, ki se skladajo s kriteriji, bodo dodane na seznam predvajanja.</para>
+      <sect3 id="playlist-smart-new">
+        <title>Ustvarjanje novega pametnega seznama predvajanja</title>
+        <para lang="en">
+					To create a new playlist:
+					<orderedlist><listitem><para lang="en">
+								Choose <menuchoice><guimenu>Music</guimenu><guisubmenu>Playlist</guisubmenu><guimenuitem>New
+								Automatic Playlist</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Edit the playlist criteria through the query editor.
+							</para></listitem><listitem><para lang="en">
+								Once your criteria have been chosen, click <guibutton>New</guibutton> to create the
+								query.
+							</para></listitem></orderedlist>
+				</para>
+      </sect3>
+      <sect3 id="playlist-smart-edit">
+        <title>Urejanje pametnega seznama predvajanja</title>
+        <para>Urejanje pametnega seznama predvajanja vam omogoča spremembo kriterijev nastavljenih za ta seznam predvajanja. Za urejanje pametnega seznama predvajanja izberite <menuchoice><guimenu>Glasba</guimenu><guisubmenu>Seznam predvajanja</guisubmenu><guimenuitem>Uredi</guimenuitem></menuchoice> in uredite kriterije. Ko ste končali, izberite <guibutton>Zapri</guibutton>.</para>
+      </sect3>
+      <sect3 id="playlist-smart-del">
+        <title>Izbris pametnega seznama predvajanja</title>
+        <para lang="en">
+					To delete a smart playlist, select the playlist to delete,
+					then you have two ways to delete it:
+					<itemizedlist><listitem><para lang="en">
+								Choose
+								<menuchoice><guimenu>Edit</guimenu><guimenuitem>Delete</guimenuitem></menuchoice>.
+							</para></listitem><listitem><para lang="en">
+								Right-click over the playlist and choose <guimenuitem>Delete</guimenuitem>.
+							</para></listitem></itemizedlist>
+				</para>
+      </sect3>
+      <sect3 id="playlist-smart-query-use">
+        <title>Uporaba urejevalnika poizvedbe</title>
+        <para>Izberite kriterije za uveljavitev novega pravila. V primeru da potrebujete več kot en kriterij kliknite na gumb <guibutton>Dodaj</guibutton>. Pojavi se nova vrstica kjer lahko nastavite nov kriterij.</para>
+        <para>V primeru da želite omejiti število skladb v seznamu predvajanja, izberite <guilabel>Omeji na:</guilabel> in izberite način omejitve. Omejite lahko po skladbah, po skupni velikosti (v <guilabel>MB</guilabel> ali <guilabel>GB</guilabel>) ali po trajanju (izraženo v <guilabel>Minutah</guilabel>).</para>
+        <para>Ko končate nastavljanje kriterijev za seznam predvajanja, izberite <guibutton>Nov</guibutton>; okno urejevalnika poizvedb seznama predvajanja se bo zaprlo in seznam predvajanj bo prikazal skladbe, ki se skladajo z vašimi kriteriji.</para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="AudioCD">
+    <title>Vir zvočni CD</title>
+	<para><application>Rhythmbox predvajalnik glasbe</application> lahko upravlja z zvočnimi CD-ji. Lahko predvaja CD-je in vam omogoča zapis vaših lastnih.</para>
+    <sect2 id="cd-playing">
+      <title>Predvajanje</title>
+      <para>Ko je vstavljen zvočni CD, se bo pojavil v stranskem pladnju. Skladbe v njem so lahko prikazane v glavnem oknu <application>Rhythmbox predvajalnika glasbe</application>. V primeru da ste povezani na medmrežje bodo pridobljene in prikazane podrobnosti CD-ja. </para>
+      <para>Za predvajanje in premor predvajanja ali za skok naprej ali nazaj uporabite enake tipke kot so uporabljene za predvajanje iz knjižnice.</para>
+    </sect2>
+    <sect2 id="cd-import">
+      <title>Uvažanje zvočnega CD-ja</title>
+      <para>V primeru da želite obdržati skladbe svojih zvočnih CD-jev na svojem računalniku, jih lahko uvozite.</para>
+      <para lang="en">To import Audio CD tracks, choose <menuchoice><guimenu>Music</guimenu>
+	  <guimenuitem>Import Audio CD</guimenuitem></menuchoice>, it will start <application>Sound-Juicer</application>,
+			an application dedicated to importing Audio CDs. To know more about <application>Sound-Juicer</application>,
+			you can read the <ulink url="ghelp:sound-juicer">Sound-Juicer manual</ulink>.</para>
+      <tip>
+        <para>Za samodejno dodajanje skladb iz Sound-Juicer v knjižnico Rhythmbox boste morali nastaviti Sound-Juicer tako, da bo pretvoril skladbe na mesto vaše knjižnice Rhythmbox in omogočiti Rhythmboxovo zmožnost opazovanje knjižnice. Oglejte si <ulink url="ghelp:sound-juicer#preferences">možnosti Sound-Juicer</ulink> in <link linkend="prefs-library">možnosti knjižnice Rhythmbox</link>.</para>
+      </tip>
+    </sect2>
+    <sect2 id="cd-burning">
+      <title>Ustvarjanje zvočnega CD-ja</title>
+      <para>Rhythmbox vam omogoča ustvarjanje vaših lastnih zvočnih CD-jev z glasbo shranjeno v knjižnici Rhythmbox.</para>
+      <para lang="en">To create an Audio CD: 
+				<orderedlist><listitem><para lang="en">Create a playlist, static or smart
+				(see <xref linkend="playlist"/>) and add tracks.</para></listitem>
+                <listitem><para lang="en">Choose <menuchoice><guimenu>Music</guimenu><guisubmenu>Playlist</guisubmenu><guimenuitem>Create Audio CD</guimenuitem></menuchoice></para></listitem>
+                <listitem><para lang="en">Insert a blank CD.</para></listitem>
+                <listitem><para lang="en">Click the button <guibutton>Create</guibutton>, the burning process starts.</para></listitem>
+                </orderedlist>
+			</para>
+    </sect2>
+  </sect1>
+  <sect1 id="portable-audio-player">
+    <title>Vir prenosni zvočni predvajalniki</title>
+    <para><application>Rhythmbox</application> lahko zazna kdaj je prenosni predvajalnik zvoka priklopljen na vaš računalnik in je zmožen prebrati shranjene skladbe. <application>Rhythmbox predvajalnik glasbe</application> bi moral znati upravljati z večino prenosnih predvajalnikov zvoka, vključno z Apple iPod, MTP predvajalniki in predvajalniki obsežnega hranjenja.</para>
+    <para>Ko priklopite prenosni predvajalnik zvoka, je na stranski pladenj dodana ikona prenosnega zvočnega predvajalnika. Ta vir deluje na enak način kot vir knjižnica.</para>
+	<tip><para>V primeru da <application>Rhythmbox predvajalnik glasbe</application> ne zazna vaše naprave kot prenosni predvajalnik zvoka, ustvarite prazno datoteko z imenom <filename>.is_audio_player</filename> v vrhnji ravni datotečnega sistema na vašem predvajalniku.</para></tip>
+  </sect1>
+  <sect1 id="daap">
+    <title>Vir souporaba DAAP</title>
+    <para>DAAP je omrežni protokol, ki vam omogoča souporabo glasbe shranjene v Rhythmbox. DAAP pomeni Protokol digitalnega zvočnega dostopa.</para>
+    <para>Ker je DAAP standarden protokol za souporabo glasbe, lahko poslušate in souporabljate glasbo ne le z uporabniki Rhythmbox, marveč z vsemi uporabniki, ki uporabljajo programsko opremo združljivo z DAAP kot je iTunes, .</para>
+    <para>Ob zagonu bo Rhythmbox poiskal vse DAAP souporabe, ki so jih na vašem krajevnem omrežju (vaš dom ali vaša pisarna, ne celotno medmrežje) objavili drugi uporabniki in jih prikazal v stranskem pladnju. V primeru da je souporaba omogočena, bo Rhythmbox istočasno objavil vašo knjižnico in vaše sezname predvajanja. Na ta način lahko poslušate glasbo shranjeno na prijateljevemu računalniku in on lahko posluša vašo. </para>
+    <para>Za onemogočenje Rhythmbox DAAP souporabe si oglejte <xref linkend="prefs-sharing"/> v možnostih.</para>
+  </sect1>
+  <sect1 id="notification">
+    <title>Obvestilno področje</title>
+    <sect2 id="notification-overview">
+      <title>Pregled</title>
+      <para>Obvestilno področje je zmožnost GNOME, ki med delovanjem programa na pladenj doda majhno ikono. Ta vam omogoča nadzor <application>Rhythmbox predvajalnika glasbe</application> iz vaše vrstice in prejemanje podatkov, ko vmesnik <application>Rhythmbox predvajalnika glasbe</application> ni viden.</para>
+      <figure id="fig-notification-zone">
+        <title><application>Rhythmbox predvajalnik glasbe</application> v obvestilnem področju</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-zone.png"/>
+	    </imageobject>
+	  </mediaobject>
+        </screenshot>
+      </figure>
+    </sect2>
+    <sect2 id="notification-info-receive">
+      <title>Pridobivanje podrobnosti</title>
+      <sect3 id="notification-info-tooltip">
+        <title>Namigi podrobnosti</title>
+        <para>Ko premaknete miškin kazalec nad ikono <application>Rhythmbox predvajalnika glasbe</application>, lahko vidite izvajalca glasbe, ime skladbe in položaj časa.</para>
+      </sect3>
+      <sect3 id="notification-info-window">
+        <title>Obvestilno okno</title>
+        <para>Vsakič ko se je skladba spremenila, ali je bila epizoda podcasta prejeta vas lahko <application>Rhythmbox predvajalnik glasbe</application> obvesti. Na namizju prikaže obvestilno okno, ki vsebuje podatke.</para>
+        <figure id="fig-notification-window">
+          <title>Obvestilno okno <application>Rhythmbox predvajalnika glasbe</application></title>
+          <screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata format="PNG" fileref="figures/rb-notification-window.png"/>
+	      </imageobject>
+	    </mediaobject>
+          </screenshot>
+        </figure>
+        <tip>
+          <para>Okno obvestil je mogoče onemogočiti z odstranitvijo izbire možnosti <guilabel>Pokaži obvestila</guilabel> iz vsebinskega menija ikone v obvestilnem področju.</para>
+        </tip>
+      </sect3>
+    </sect2>
+    <sect2 id="notification-control">
+      <title>Nadzor Rhythmbox</title>
+      <para>Z uporabo ikone <application>Rhythmbox predvajalnika glasbe</application> v obvestilnem področju je mogoče programu poslati naslednje ukaze:</para>
+      <figure id="fig-notification-menu">
+        <title>Obvestilno področje (prikazujoči meni)</title>
+        <screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata format="PNG" fileref="figures/rb-notification-area-menu.png"/>
+            </imageobject>
+           </mediaobject>
+        </screenshot>
+      </figure>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para lang="en"><guibutton>Play</guibutton> — If selected, plays the 
+            currently selected song.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Previous</guibutton> — Skip to previous song 
+            in the selected source.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Next</guibutton> — Skip to next song in the 
+            selected source.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Show Window Player</guibutton> — Choose whether 
+            or not the <application>Rhythmbox Music Player</application>	window is visible or not 
+            on the desktop.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Show Notifications</guibutton> — Choose whether
+            or not the <application>Rhythmbox Music Player</application> will notify you about 
+            track changes and various information.</para>
+          </listitem>
+          <listitem>
+            <para lang="en"><guibutton>Quit</guibutton> — Quit the 
+            <application>Rhythmbox Music Player</application>.</para>
+          </listitem>
+        </itemizedlist>
+        <tip>
+        	<para>V primeru da uporabljate miško z drsnim koleščkom, lahko z drsenjem navzgor ali navzdol medtem ko je miškin kazalec nad apletom pladnja prilagodite glasnost.</para>
+          <para>Predvajanje/premor lahko hitro preklopite s pritiskom na srednji miškin gumb.</para>
+        </tip>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="customize">
+    <title>Prilagajanje predvajalnika glasbe Rhythmbox</title>
+    <para>Ta odsek opisuje kako lahko <application>Rhythmbox predvajalnik glasbe</application> prilagodite, da ustreza vašim zahtevam in željam.</para>
+    <sect2 id="prefs">
+      <title>Nastavljanje vaših možnosti.</title>
+      <para>Z uporabo pogovornega okna <guilabel>Možnosti</guilabel> lahko prilagodite izgled in obnašanje <application>Rhythmbox predvajalnika glasbe</application>. Za prikaz pogovornega okna <guilabel>Možnosti</guilabel> izberite <menuchoice><guimenu>Uredi</guimenu><guimenuitem>Možnosti</guimenuitem></menuchoice>.</para>
+      <sect3 id="prefs-general">
+      	<title>Splošno</title>
+		<para>Izberite način prikaza <guilabel>Pogleda brskalnika</guilabel>. Izberete lahko tri ali dva pladnja in kateri pulti naj bodo prikazani.</para>
+      	<para lang="en">
+			Choose the <guilabel>Visible Columns</guilabel> you want to
+			display in <application>Rhythmbox Music Player</application>. This option affects
+			the following sources:
+			<itemizedlist>
+				<listitem><para lang="en">Library</para></listitem>
+				<listitem><para lang="en">Audio CD</para></listitem>
+				<listitem><para lang="en">Portable Players</para></listitem>
+				<listitem><para lang="en">Playlists</para></listitem>
+				<listitem><para lang="en">DAAP Music shares</para></listitem>
+			</itemizedlist>
+		</para>
+      </sect3>
+      <sect3 id="prefs-library">
+        <title>Glasba</title>
+        <itemizedlist>
+          <listitem>
+            <para><guilabel>Mesto knjižnice</guilabel> je mapa, ki jo bo <application>Rhythmbox predvajalnik glasbe</application> nadziral za iskanje novih skladb. Ko z brskalnikom datotek (kot je Nautilus) dodate nove zvočne datoteke, jih bo <application>Rhythmbox predvajalnik glasbe</application> zaznal in bodo samodejno dodane v knjižnico.</para>
+            <warning>
+            	<para>Izognite se nastavitvi vaše mape <filename class="directory">Doma</filename> kot mesto knjižnice, ker ta zmožnost zahteva veliko CPE.</para>
+            </warning>
+            <para>Za onemogočenje zmožnosti opazovanja odstranite izbiro <guilabel>Opazovanje knjižnice za nove datoteke</guilabel>.</para>
+            <tip>
+            	<para>V primeru da želite dodati več kot eno mapo za ogled uporabite <application>gconf-editor</application> in mapo dodajte  na seznam /app/rhythmbox/library_locations </para>
+            </tip>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-podscast">
+        <title>Podcasti</title>
+        <itemizedlist>
+          <listitem>
+            <para><guilabel>Mesto prejemov</guilabel> podcastov je privzeto mapa <filename class="directory">Podcasti/ </filename> v vaši domači mapi.</para>
+            <para>V primeru da to mesto ne ustreza vašim potrebam izberite drugo mapo v spustnem seznamu ali izberite <guilabel>Drugo</guilabel> za pojav izbirnika datotek.</para>
+          </listitem>
+          <listitem>
+            <para>Izberite frekvenco, ki jo naj <application>Rhythmbox predvajalnik glasbe</application> preveri za nove epizoda podcastov.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-sharing">
+        <title>Souporaba</title>
+        <para><application>Rhythmbox predvajalnik glasbe</application> lahko souporabi vsebino vaše knjižnice preko krajevnega omrežja z drugimi uporabniki <application>Rhythmbox predvajalnika glasbe</application> in Apple iTunes.</para>
+        <itemizedlist>
+          <listitem>
+            <para>Izberite <guilabel>Souporabi mojo glasbo</guilabel> za omogočitev ogleda in branja vaših skladb uporabnikom vašega omrežja. </para>
+          </listitem>
+          <listitem>
+            <para>Vnesite ime, ki naj se pojavi na omrežju, v polje <guilabel>Ime souporabe glasbe</guilabel>.</para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
+      <sect3 id="prefs-lastfm">
+        <title>Profil last.fm</title>
+        <para lang="en">
+			The Last.fm profile plugin collects information about the songs you listen to
+			and sends it to the <ulink url="http://www.last.fm/">Last.fm</ulink> website,
+			building up a profile of your listening habits.  With this profile, you can:
+			<itemizedlist>
+				<listitem>
+					<para lang="en">consult statistics, such as most played songs or most played artists.</para>
+				</listitem>
+				<listitem>
+					<para lang="en">receive recommendations about artists that you might like.</para>
+				</listitem>
+			</itemizedlist>
+		</para>
+        <warning>
+          <para>Za uporabo vstavka profila Last.fm morate imeti profil Last.fm. V primeru da ga še nimate za ustvarjanje novega uporabite <ulink url="http://www.last.fm/signup.php">Vpisno stran Last.fm </ulink> . V polji <guilabel>Uporabniško ime</guilabel> in <guilabel>Geslo</guilabel> v oknu nastavitev vstavka profila Last.fm vnesite podrobnosti računa.</para>
+        </warning>
+		<para>Nastavitveno okno vstavka profila Last.fm prikazuje tudi podrobnosti stanja. V primeru da vaša stran profila Last.fm pokaže, da se vaš profil ne posodablja, vam lahko podatki tukaj pomagajo diagnosticirati težavo. </para>
+      </sect3>
+    </sect2>
+  </sect1>
+  <sect1 id="shortcuts">
+    <title>Bližnjice</title>
+    <sect2 id="keyboard-keys">
+      <title>Tipkovne bližnjice</title>
+      <table frame="topbot" id="rb-shorcuts-1">
+	  	<title>Bližnjice predvajalnika</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Bližnjice</entry>
+              <entry>Dejanja</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>p</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Predvajajanje / Premor</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Left</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Skok na predhodno skladbo ali nazaj na začetek skladbe</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Right</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Skok na naslednjo skladbo</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Up</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Increase playback volume</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Down</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Decrease playback volume</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>R</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Omogoči ali onemogoči ponavljajoče predvajanje</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>U</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Omogoči ali onemogoči premešano predvajanje</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-2">
+	  	<title>Splošne bližnjice</title>
+		<tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Bližnjice</entry>
+              <entry>Dejanja</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>A</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Izberi vse</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Shift</keycap>
+                  <keycap>Ctrl</keycap>
+                  <keycap>A</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Odstrani izbor vsega</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>J</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Skoči na predvajano pesem</para>
+              </entry>
+	    </row>
+	    <!--
+            <row>
+              <entry>
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Y</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Clear the search field text and remove all filters in the browser</para>
+              </entry>
+	    </row>
+            -->
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Alt</keycap>
+                  <keycap>S</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para lang="en">Jump to search field</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Alt</keycap>
+                  <keycap>Return</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Prikaže lastnosti skladbe</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <table frame="topbot" id="rb-shorcuts-3">
+	  	<title>Bližnjice oken</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0" colwidth="30*"/>
+          <colspec colname="COLSPEC1" colwidth="70*"/>
+          <thead>
+            <row>
+              <entry>Bližnjice</entry>
+              <entry>Dejanja</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>Q</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Konča <application>Rhythmbox predvajalnik glasbe</application></para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>B</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Pokaže ali skrije brskalnik</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>F9</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Pokaže ali skrije stranski pladenj</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>Ctrl</keycap>
+                  <keycap>K</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Pokaže ali skrije stransko vrstico vrste</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycombo>
+                  <keycap>F11</keycap>
+                </keycombo>
+              </entry>
+              <entry>
+                <para>Preklopi celozaslonski način</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="multimedia-keys">
+      <title>Večpredstavnostne tipke</title>
+      <para><application>Rhythmbox predvajalnik glasbe</application> podpira tipke na večpredstavnostnih tipkovnicah, če so nastavljene v vašem namiznem okolju.</para>
+      <table frame="none">
+	  	<title>Bližnjice oken</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Bližnjice</entry>
+              <entry>Dejanja</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en">
+                <keycap>Stop</keycap>
+              </entry>
+              <entry>
+                <para>Zaustavi</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycap>Pause / Play</keycap>
+              </entry>
+              <entry>
+                <para>Predvajanje / Premor</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycap>Prev</keycap>
+              </entry>
+              <entry>
+                <para>Predhodno predvajana skladba</para>
+              </entry>
+            </row>
+            <row>
+              <entry lang="en">
+                <keycap>Next</keycap>
+              </entry>
+              <entry>
+                <para>Naslednja skladba</para>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+    <sect2 id="lirc">
+      <title>Linux Infrardeči daljinski upravljalec</title>
+      <para><application>Rhythmbox predvajalnik glasbe</application> vključuje vstavek za Linux infrardeči daljinski predvajalnik (LIRC). Podprti so naslednji nizi ukaza z uporabo imena programa 'rhythmbox':</para>
+      <table frame="none">
+	  	<title>Bližnjice oken</title>
+        <tgroup cols="2" colsep="0" rowsep="0">
+          <colspec colname="COLSPEC0"/>
+          <colspec colname="COLSPEC1"/>
+          <thead>
+            <row>
+              <entry>Niz ukaza</entry>
+              <entry>Dejanje</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry lang="en"> <keycap>play</keycap> </entry>
+              <entry> <para>Začetek predvajanja</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>pause</keycap> </entry>
+              <entry> <para>Premor predvajanja</para> </entry>
+            </row>
+	    <row>
+	      <entry lang="en"> <keycap>playpause</keycap> </entry>
+	      <entry> <para>Preklop med predvajanjem in premorom</para> </entry>
+	    </row>
+            <row>
+              <entry lang="en"> <keycap>shuffle</keycap> </entry>
+              <entry> <para>Preklop premešanega predvajanja</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>repeat</keycap> </entry>
+              <entry> <para>Preklop ponavljajočega predvajanja</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>next</keycap> </entry>
+              <entry> <para>Preskoči na naslednjo skladbo</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>previous</keycap> </entry>
+              <entry> <para>Preskoči na predhodno skladbo</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>seek_forward</keycap> </entry>
+              <entry> <para>Skoči 10 sekund naprej v predvajani skladno</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>seek_backward</keycap> </entry>
+              <entry> <para>Skoči 10 sekund nazaj v predvajani skladbi</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>volume_up</keycap> </entry>
+              <entry> <para>Poveča glasnost predvajanja za 10%</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>volume_down</keycap> </entry>
+              <entry> <para>Zmanjša glasnost predvajanja za 10%</para> </entry>
+            </row>
+            <row>
+              <entry lang="en"> <keycap>mute</keycap> </entry>
+              <entry> <para>Nemo predvajanje</para> </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
+  </sect1>
+</article>

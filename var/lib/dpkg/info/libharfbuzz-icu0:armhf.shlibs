@@ -1,0 +1,2 @@
+libharfbuzz-icu 0 libharfbuzz-icu0 (>= 0.9.35)
+udeb: libharfbuzz-icu 0 libharfbuzz0-udeb (>= 0.9.35)

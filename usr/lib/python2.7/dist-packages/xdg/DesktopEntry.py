@@ -1,0 +1,1 @@
+../../../../share/pyshared/xdg/DesktopEntry.py

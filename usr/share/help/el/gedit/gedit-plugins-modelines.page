@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-modelines" xml:lang="el">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+  <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Υποστήριξη του gedit για γραμμές διαμόρφωσης τύπου Emacs, Kate και Vim.</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Μάριος Ζηντίλης</mal:name>
+      <mal:email>m.zindilis@dmajor.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Βασίλης Τσιβίκης</mal:name>
+      <mal:email>vasitsiv@hotmail.gr</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name> Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Γραμμές διαμόρφωσης - Modelines</title>
+
+  <p>Το πρόσθετο <app>Γραμμές διαμόρφωσης</app> επιτρέπει το <app>gedit</app> να αναλύσει τις γραμμές κειμένου στην αρχή και το τέλος ενός αρχείου, και μετά να εφαρμόσει μια συλλογή προτιμήσεων εγγράφων στο αρχείο. Το πρόσθετο <app>Γραμμές διαμόρφωσης</app> υποστηρίζει ένα υποσύνολο επιλογών που χρησιμοποιείται από τους <app>Emacs</app>,<app>Kate</app> και <app>Vim</app> επεξεργαστές κειμένου.</p>
+
+  <p>Για να ενεργοποιήσετε το πρόσθετο <app>Γραμμές διαμόρφωσης</app>, επιλέξτε <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Προτιμήσεις</gui><gui>Πρόσθετα</gui><gui>Γραμμές διαμόρφωσης</gui></guiseq>.</p>
+
+<section id="modelines-general">
+  <title>Γενικές επιλογές γραμμών διαμόρφωσης</title>
+  <p>Οι ακόλουθες επιλογές μπορούν να ορισθούν χρησιμοποιώντας γραμμές διαμόρφωσης του <app>gedit</app>:</p>
+  <list>
+    <item><p>Πλάτος στηλοθέτη</p></item>
+    <item><p>Πλάτος εσοχής</p></item>
+    <item><p>Εισαγωγή κενών διαστημάτων αντί στηλοθετών</p></item>
+    <item><p>Αναδίπλωση κειμένου</p></item>
+    <item><p>Πλάτος δεξιού περιθωρίου</p></item>
+  </list>
+
+  <note>
+    <p>Οι προτιμήσεις που ορίζονται με τις γραμμές διαμόρφωσης υπερισχύουν αυτών που καθορίζονται στο παράθυρο διαλόγου προτιμήσεις.</p>
+  </note>
+</section>
+
+<section id="modelines-emacs">
+  <title>Γραμμές διαμόρφωσης Emacs</title>
+
+  <p>Η πρώτες δύο γραμμές ενός εγγράφου σαρώνονται για γραμμές διαμόρφωσης <app>Emacs</app> και το <app>gedit</app> υποστηρίζει τις ακόλουθες επιλογές γραμμής διαμόρφωσης <app>Emacs</app>:</p>
+  <list>
+    <item><p>Πλάτος-καρτέλας</p></item>
+    <item><p>Offset-εσοχής</p></item>
+    <item><p>Λειτουργία-εσοχής-καρτελών</p></item>
+    <item><p>Αυτόματη αναδίπλωση κειμένου</p></item>
+  </list>
+  <p>Για περισσότερες πληροφορίες για τις γραμμές διαμόρφωσης <app>Emacs</app>, επισκεφτείτε το <link href="http://www.gnu.org/software/emacs/manual/emacs.html">Εγχειρίδιο GNU Emacs</link>.</p>
+</section>
+
+<section id="modelines-kate">
+  <title>Γραμμές διαμόρφωσης Kate</title>
+
+  <p>Η πρώτη και οι τελευταίες δέκα γραμμές ενός εγγράφου σαρώνονται για γραμμές διαμόρφωσης <app>Kate</app> και το <app>gedit</app> υποστηρίζει τις ακόλουθες επιλογές γραμμής διαμόρφωσης<app>Kate</app>:</p>
+
+  <list>
+    <item><p>tab-width</p></item>
+    <item><p>indent-width</p></item>
+    <item><p>space-indent</p></item>
+    <item><p>word-wrap</p></item>
+    <item><p>word-wrap-column</p></item>
+  </list>
+
+  <p>Για περισσότερες πληροφορίες για τις γραμμές διαμόρφωσης<app>Kate</app>, επισκεφτείτε την <link href="http://kate-editor.org/">Ιστοσελίδα Kate</link>.</p>
+</section>
+
+<section id="modelines-vim">
+  <title>Γραμμές διαμόρφωσης Vim</title>
+  <p>Η πρώτη και οι τελευταίες τρεις γραμμές ενός κειμένου σαρώνονται για γραμμές διαμόρφωσης <app>Vim</app>, και το <app>gedit</app> υποστηρίζει τις ακόλουθες επιλογές γραμμής διαμόρφωσης <app>Vim</app>:</p>
+
+  <list>
+    <item><p>et (expandtab)</p></item>
+    <item><p>ts (tabstop)</p></item>
+    <item><p>sw (shiftwidth)</p></item>
+    <item><p>αναδίπλωση</p></item>
+    <item><p>textwidth</p></item>
+  </list>
+
+  <p>Για περισσότερες πληροφορίες για τις γραμμές διαμόρφωσης <app>Vim</app>, επισκεφτείτε την <link href="http://www.vim.org/">ιστοσελίδα του Vim</link>.</p>
+</section>
+</page>

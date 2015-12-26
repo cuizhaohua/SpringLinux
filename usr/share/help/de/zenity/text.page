@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="text" xml:lang="de">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Die Option <cmd>--text-info</cmd> verwenden.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2008-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>Christian.Kirbach@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>Text-Informationsdialog</title>
+    <p>Verwenden Sie die Option <cmd>--text-info</cmd>, um einen Textinformationsdialog zu erzeugen.</p>
+	
+    <p>Der Textinformationsdialog unterstützt die folgenden Optionen:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--filename</cmd>=<var>Dateiname</var></title>
+	<p>Legt eine Datei fest, die im Textinformationsdialog geladen wird.</p>
+      </item>
+
+      <item>
+        <title><cmd>--editable</cmd></title>
+        <p>Ermöglicht die Bearbeitung des angezeigten Texts. Der bearbeitete Text wird an die Standardausgabe zurückgegeben, wenn der Dialog geschlossen wird.</p>
+      </item>
+
+      <item>
+        <title><cmd>--font</cmd>=<var>SCHRIFT</var></title>
+	<p>Die Schriftart des Textes festlegen.</p>
+      </item>
+
+      <item>
+        <title><cmd>--checkbox</cmd>=<var>TEXT</var></title>
+	<p>Aktivieren Sie das Ankreuzfeld zur Verwendung von z.B. »Ich habe die Bedingungen gelesen und akzeptiere diese.«</p>
+      </item>
+
+      <item>
+        <title><cmd>--html</cmd></title>
+        <p>HTML-Unterstützung aktivieren.</p>
+      </item>
+
+      <item>
+        <title><cmd>--url</cmd>=<var>URL</var></title>
+	<p>Eine URL anstelle einer Datei angeben. Das funktioniert nur mit der Option --html.</p>
+      </item>
+
+    </terms>
+
+    <p>Das folgende Beispielskript zeigt, wie Sie einen Textinformationsdialog erzeugen:</p>
+
+<code>
+#!/bin/sh
+
+# Sie müssen die Datei »COPYING« in den selben Ordner wie dieses Skript ablegen.
+FILE=`dirname $0`/COPYING
+
+zenity --text-info \
+       --title="Lizenz" \
+       --filename=$FILE \
+       --checkbox="Ich habe die Bedingungen gelesen und akzeptiere sie."
+
+case $? in
+    0)
+        echo "Installation starten!"
+	# next step
+	;;
+    1)
+        echo "Installation anhalten!"
+	;;
+    -1)
+        echo "Ein unerwarteter Fehler ist aufgetreten."
+	;;
+esac
+</code>
+
+    <figure id="zenity-text-screenshot">
+      <title>Beispiel für einen Text-Informationsdialog</title>
+      <desc>Beispiel für einen Textinformationsdialog in <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-text-screenshot.png"/>
+    </figure>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gksu">
+				<entry name="save-keyring">
+					<local_schema short_desc="Portachiavi nel quale le password verranno salvate">
+						<longdesc>Il nome del portachiavi che gksu dovrebbe utilizzare. Valori usuali sono &quot;session&quot;, che salva la password per la sessione, e &quot;default&quot;, che salva la password senza una scadenza.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="save-to-keyring">
+					<local_schema short_desc="Salva la password in gnome-keyring">
+						<longdesc>gksu può salvare la password digitata in gnome-keyring così da non essere richiesta ogni volta</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="display-no-pass-info">
+					<local_schema short_desc="Visualizza un messaggio informativo quando la password non è necessaria">
+						<longdesc>Questa opzione determina se un dialogo di messaggio verrà visualizzato per informare l&apos;utente che il programma sta per essere eseguito senza la necessità di richiesta di una password per qualche ragione.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="prompt">
+					<local_schema short_desc="Richiede se catturare">
+						<longdesc>Questa opzione farà sì che gksu chieda all&apos;utente se vuole avere lo schermo catturato prima dell&apos;inserimento della password. Notare che questo ha effetto solo se force-grab è disabilitato.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="sudo-mode">
+					<local_schema short_desc="Modalità sudo">
+						<longdesc>Se sudo debba essere il metodo sottostante predefinito. Questo metodo è altrimenti accessibile attraverso l&apos;argomento -S o eseguendo &apos;gksudo&apos; invece di &apos;gksu&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="force-grab">
+					<local_schema short_desc="Forza la cattura di tastiera e mouse">
+						<longdesc>Cattura la tastiera e il mouse anche se -g è stato passato come argomento sulla linea di comando.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="disable-grab">
+					<local_schema short_desc="Disabilita la cattura di tastiera e mouse">
+						<longdesc>Se la cattura di tastiera e mouse debba essere disabilitata. Questo renderà possibile ad altre applicazioni X di ascoltare eventi di inserimento da tastiera, rendendo così impossibile la protezione da applicazioni malevole che possono essere in esecuzione.</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

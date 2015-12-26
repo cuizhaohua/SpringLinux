@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libopenal1
+/usr/share/doc/libopenal1/changelog.Debian.gz
+/usr/share/doc/libopenal1/copyright
+/usr/share/doc/libopenal1/examples
+/usr/share/doc/libopenal1/examples/alsoftrc.sample.gz
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libopenal.so.1.15.1
+/usr/lib/arm-linux-gnueabihf/libopenal.so.1

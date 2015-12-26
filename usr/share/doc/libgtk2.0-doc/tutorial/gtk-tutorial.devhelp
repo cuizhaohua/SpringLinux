@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<book title="GTK+ 2.0 Tutorial" name ="gtk-tutorial" link="index.html">
+<chapters>
+<sub name="Tutorial Availability" link="c17.html">
+</sub>
+<sub name="Introduction" link="c24.html">
+</sub>
+<sub name="Getting Started" link="c39.html">
+<sub name="Hello World in GTK" link="c39.html#SEC-HELLOWORLD">
+</sub>
+<sub name="Compiling Hello World" link="x111.html">
+</sub>
+<sub name="Theory of Signals and Callbacks" link="x159.html">
+</sub>
+<sub name="Events" link="x182.html">
+</sub>
+<sub name="Stepping Through Hello World" link="x281.html">
+</sub>
+</sub>
+<sub name="Moving On" link="c325.html">
+<sub name="Data Types" link="c325.html#SEC-DATATYPES">
+</sub>
+<sub name="More on Signal Handlers" link="x334.html">
+</sub>
+<sub name="An Upgraded Hello World" link="x344.html">
+</sub>
+</sub>
+<sub name="Packing Widgets" link="c354.html">
+<sub name="Theory of Packing Boxes" link="c354.html#SEC-THEORYOFPACKINGBOXES">
+</sub>
+<sub name="Details of Boxes" link="x363.html">
+</sub>
+<sub name="Packing Demonstration Program" link="x386.html">
+</sub>
+<sub name="Packing Using Tables" link="x389.html">
+</sub>
+<sub name="Table Packing Example" link="x441.html">
+</sub>
+</sub>
+<sub name="Widget Overview" link="c450.html">
+<sub name="Casting" link="c450.html#SEC-CASTING">
+</sub>
+<sub name="Widget Hierarchy" link="x477.html">
+</sub>
+<sub name="Widgets Without Windows" link="x481.html">
+</sub>
+</sub>
+<sub name="The Button Widget" link="c489.html">
+<sub name="Normal Buttons" link="c489.html#SEC-NORMALBUTTONS">
+</sub>
+<sub name="Toggle Buttons" link="x518.html">
+</sub>
+<sub name="Check Buttons" link="x535.html">
+</sub>
+<sub name="Radio Buttons" link="x542.html">
+</sub>
+</sub>
+<sub name="Adjustments" link="c563.html">
+<sub name="Creating an Adjustment" link="c563.html#SEC-CREATINGANADJUSTMENT">
+</sub>
+<sub name="Using Adjustments the Easy Way" link="x587.html">
+</sub>
+<sub name="Adjustment Internals" link="x602.html">
+</sub>
+</sub>
+<sub name="Range Widgets" link="c633.html">
+<sub name="Scrollbar Widgets" link="c633.html#SEC-SCROLLBARWIDGETS">
+</sub>
+<sub name="Scale Widgets" link="x645.html">
+<sub name="Creating a Scale Widget" link="x645.html#AEN648">
+</sub>
+<sub name="Functions and Signals (well, functions, at least)" link="x645.html#AEN660">
+</sub>
+</sub>
+<sub name="Common Range Functions" link="x684.html">
+<sub name="Setting the Update Policy" link="x684.html#AEN688">
+</sub>
+<sub name="Getting and Setting Adjustments" link="x684.html#AEN713">
+</sub>
+</sub>
+<sub name="Key and Mouse bindings" link="x725.html">
+</sub>
+<sub name="Example" link="x743.html">
+</sub>
+</sub>
+<sub name="Miscellaneous Widgets" link="c753.html">
+<sub name="Labels" link="c753.html#SEC-LABELS">
+</sub>
+<sub name="Arrows" link="x793.html">
+</sub>
+<sub name="The Tooltips Object" link="x810.html">
+</sub>
+<sub name="Progress Bars" link="x829.html">
+</sub>
+<sub name="Dialogs" link="x861.html">
+</sub>
+<sub name="Rulers" link="x891.html">
+</sub>
+<sub name="Statusbars" link="x919.html">
+</sub>
+<sub name="Text Entries" link="x939.html">
+</sub>
+<sub name="Spin Buttons" link="x967.html">
+</sub>
+<sub name="Combo Box" link="x1063.html">
+</sub>
+<sub name="Calendar" link="x1100.html">
+</sub>
+<sub name="Color Selection" link="x1184.html">
+</sub>
+<sub name="File Selections" link="x1207.html">
+</sub>
+</sub>
+<sub name="Container Widgets" link="c1226.html">
+<sub name="The EventBox" link="c1226.html#SEC-EVENTBOX">
+</sub>
+<sub name="The Alignment widget" link="x1243.html">
+</sub>
+<sub name="Fixed Container" link="x1258.html">
+</sub>
+<sub name="Layout Container" link="x1279.html">
+</sub>
+<sub name="Frames" link="x1291.html">
+</sub>
+<sub name="Aspect Frames" link="x1317.html">
+</sub>
+<sub name="Paned Window Widgets" link="x1335.html">
+</sub>
+<sub name="Viewports" link="x1352.html">
+</sub>
+<sub name="Scrolled Windows" link="x1368.html">
+</sub>
+<sub name="Button Boxes" link="x1390.html">
+</sub>
+<sub name="Toolbar" link="x1402.html">
+</sub>
+<sub name="Notebooks" link="x1450.html">
+</sub>
+</sub>
+<sub name="Menu Widget" link="c1499.html">
+<sub name="Manual Menu Creation" link="c1499.html#SEC-MANUALMENUCREATION">
+</sub>
+<sub name="Manual Menu Example" link="x1577.html">
+</sub>
+<sub name="Using ItemFactory" link="x1586.html">
+<sub name="ItemFactory entries" link="x1586.html#SEC-ITEMFACTORYENTRIES">
+</sub>
+<sub name="Creating an ItemFactory" link="x1586.html#SEC-ITEMFACTORYCREATION">
+</sub>
+<sub name="Making use of the menu and its menu items" link="x1586.html#SEC-USINGMENUANDITEMS">
+</sub>
+</sub>
+<sub name="Item Factory Example" link="x1697.html">
+</sub>
+</sub>
+<sub name="Undocumented Widgets" link="c1701.html">
+<sub name="Accel Label" link="c1701.html#SEC-ACCELLABEL">
+</sub>
+<sub name="Option Menu" link="x1709.html">
+</sub>
+<sub name="Menu Items" link="x1712.html">
+<sub name="Check Menu Item" link="x1712.html#SEC-CHECKMENUITEM">
+</sub>
+<sub name="Radio Menu Item" link="x1712.html#SEC-RADIOMENUITEM">
+</sub>
+<sub name="Separator Menu Item" link="x1712.html#SEC-SEPARATORMENUITEM">
+</sub>
+<sub name="Tearoff Menu Item" link="x1712.html#SEC-TEAROFFMENUITEM">
+</sub>
+</sub>
+<sub name="Curves" link="x1727.html">
+</sub>
+<sub name="Drawing Area" link="x1730.html">
+</sub>
+<sub name="Font Selection Dialog" link="x1733.html">
+</sub>
+<sub name="Message Dialog" link="x1736.html">
+</sub>
+<sub name="Gamma Curve" link="x1739.html">
+</sub>
+<sub name="Image" link="x1742.html">
+</sub>
+<sub name="Plugs and Sockets" link="x1745.html">
+</sub>
+<sub name="Tree View" link="x1748.html">
+</sub>
+<sub name="Text View" link="x1751.html">
+</sub>
+</sub>
+<sub name="Setting Widget Attributes" link="c1754.html">
+</sub>
+<sub name="Timeouts, IO and Idle Functions" link="c1759.html">
+<sub name="Timeouts" link="c1759.html#SEC-TIMEOUTS">
+</sub>
+<sub name="Monitoring IO" link="x1770.html">
+</sub>
+<sub name="Idle Functions" link="x1790.html">
+</sub>
+</sub>
+<sub name="Advanced Event and Signal Handling" link="c1797.html">
+<sub name="Signal Functions" link="c1797.html#SEC-SIGNALFUNCTIONS">
+<sub name="Connecting and Disconnecting Signal Handlers" link="c1797.html#AEN1801">
+</sub>
+<sub name="Blocking and Unblocking Signal Handlers" link="c1797.html#AEN1804">
+</sub>
+<sub name="Emitting and Stopping Signals" link="c1797.html#AEN1807">
+</sub>
+</sub>
+<sub name="Signal Emission and Propagation" link="x1810.html">
+</sub>
+</sub>
+<sub name="Managing Selections" link="c1834.html">
+<sub name="Overview" link="c1834.html#SEC-SELECTIONSOVERVIEW">
+</sub>
+<sub name="Retrieving the selection" link="x1850.html">
+</sub>
+<sub name="Supplying the selection" link="x1873.html">
+</sub>
+</sub>
+<sub name="Drag-and-drop (DND)" link="c1899.html">
+<sub name="Overview" link="c1899.html#SEC-DRAGANDDROPOVERVIEW">
+</sub>
+<sub name="Properties" link="x1921.html">
+</sub>
+<sub name="Functions" link="x1939.html">
+<sub name="Setting up the source widget" link="x1939.html#SEC-DNDSOURCEWIDGETS">
+</sub>
+<sub name="Signals on the source widget:" link="x1939.html#SEC-SIGNALSONSOURCEWIDGETS">
+</sub>
+<sub name="Setting up a destination widget:" link="x1939.html#SEC-DNDDESTWIDGETS">
+</sub>
+<sub name="Signals on the destination widget:" link="x1939.html#SEC-SIGNALSONDESTWIDGETS">
+</sub>
+</sub>
+</sub>
+<sub name="GLib" link="c2023.html">
+<sub name="Definitions" link="c2023.html#SEC-DEFINITIONS">
+</sub>
+<sub name="Doubly Linked Lists" link="x2035.html">
+</sub>
+<sub name="Singly Linked Lists" link="x2055.html">
+</sub>
+<sub name="Memory Management" link="x2059.html">
+</sub>
+<sub name="Timers" link="x2076.html">
+</sub>
+<sub name="String Handling" link="x2080.html">
+</sub>
+<sub name="Utility and Error Functions" link="x2095.html">
+</sub>
+</sub>
+<sub name="GTK's rc Files" link="c2116.html">
+<sub name="Functions For rc Files" link="c2116.html#SEC-FUNCTIONSFORRCFILES">
+</sub>
+<sub name="GTK's rc File Format" link="x2136.html">
+</sub>
+<sub name="Example rc file" link="x2177.html">
+</sub>
+</sub>
+<sub name="Writing Your Own Widgets" link="c2180.html">
+<sub name="Overview" link="c2180.html#SEC-WIDGETSOVERVIEW">
+</sub>
+<sub name="The Anatomy Of A Widget" link="x2189.html">
+</sub>
+<sub name="Creating a Composite widget" link="x2200.html">
+<sub name="Introduction" link="x2200.html#AEN2202">
+</sub>
+<sub name="Choosing a parent class" link="x2200.html#AEN2213">
+</sub>
+<sub name="The header file" link="x2200.html#AEN2216">
+</sub>
+<sub name="The _get_type() function" link="x2200.html#AEN2228">
+</sub>
+<sub name="The _class_init() function" link="x2200.html#AEN2240">
+</sub>
+<sub name="The _init() function" link="x2200.html#AEN2293">
+</sub>
+<sub name="And the rest..." link="x2200.html#AEN2298">
+</sub>
+</sub>
+<sub name="Creating a widget from scratch" link="x2310.html">
+<sub name="Introduction" link="x2310.html#AEN2312">
+</sub>
+<sub name="Displaying a widget on the screen" link="x2310.html#AEN2319">
+</sub>
+<sub name="The origins of the Dial Widget" link="x2310.html#AEN2352">
+</sub>
+<sub name="The Basics" link="x2310.html#AEN2356">
+</sub>
+<sub name="gtk_dial_realize()" link="x2310.html#AEN2368">
+</sub>
+<sub name="Size negotiation" link="x2310.html#AEN2377">
+</sub>
+<sub name="gtk_dial_expose()" link="x2310.html#AEN2385">
+</sub>
+<sub name="Event handling" link="x2310.html#AEN2391">
+</sub>
+<sub name="Possible Enhancements" link="x2310.html#AEN2407">
+</sub>
+</sub>
+<sub name="Learning More" link="x2419.html">
+</sub>
+</sub>
+<sub name="Scribble, A Simple Example Drawing Program" link="c2422.html">
+<sub name="Overview" link="c2422.html#SEC-SCRIBBLEOVERVIEW">
+</sub>
+<sub name="Event Handling" link="x2431.html">
+</sub>
+<sub name="The DrawingArea Widget, And Drawing" link="x2470.html">
+</sub>
+<sub name="Adding XInput support" link="x2529.html">
+<sub name="Enabling extended device information" link="x2529.html#AEN2557">
+</sub>
+<sub name="Using extended device information" link="x2529.html#AEN2570">
+</sub>
+<sub name="Finding out more about a device" link="x2529.html#AEN2588">
+</sub>
+<sub name="Further sophistications" link="x2529.html#SEC-FURTHERSOPHISTICATIONS">
+</sub>
+</sub>
+</sub>
+<sub name="Tips For Writing GTK Applications" link="c2615.html">
+</sub>
+<sub name="Contributing" link="c2620.html">
+</sub>
+<sub name="Credits" link="c2627.html">
+</sub>
+<sub name="Tutorial Copyright and Permissions Notice" link="c2689.html">
+</sub>
+<sub name="GTK Signals" link="a2698.html">
+<sub name="GtkObject" link="a2698.html#SEC-GTKOBJECT">
+</sub>
+<sub name="GtkWidget" link="x2704.html">
+</sub>
+<sub name="GtkData" link="x2707.html">
+</sub>
+<sub name="GtkContainer" link="x2710.html">
+</sub>
+<sub name="GtkCalendar" link="x2713.html">
+</sub>
+<sub name="GtkEditable" link="x2716.html">
+</sub>
+<sub name="GtkNotebook" link="x2719.html">
+</sub>
+<sub name="GtkList" link="x2722.html">
+</sub>
+<sub name="GtkMenuShell" link="x2725.html">
+</sub>
+<sub name="GtkToolbar" link="x2728.html">
+</sub>
+<sub name="GtkButton" link="x2731.html">
+</sub>
+<sub name="GtkItem" link="x2734.html">
+</sub>
+<sub name="GtkWindow" link="x2737.html">
+</sub>
+<sub name="GtkHandleBox" link="x2740.html">
+</sub>
+<sub name="GtkToggleButton" link="x2743.html">
+</sub>
+<sub name="GtkMenuItem" link="x2746.html">
+</sub>
+<sub name="GtkCheckMenuItem" link="x2749.html">
+</sub>
+<sub name="GtkInputDialog" link="x2752.html">
+</sub>
+<sub name="GtkColorSelection" link="x2755.html">
+</sub>
+<sub name="GtkStatusBar" link="x2758.html">
+</sub>
+<sub name="GtkCurve" link="x2761.html">
+</sub>
+<sub name="GtkAdjustment" link="x2764.html">
+</sub>
+</sub>
+<sub name="GDK Event Types" link="a2767.html">
+</sub>
+<sub name="Code Examples" link="a2901.html">
+<sub name="Tictactoe" link="a2901.html#SEC-TICTACTOE">
+<sub name="tictactoe.h" link="a2901.html#AEN2906">
+</sub>
+<sub name="tictactoe.c" link="a2901.html#AEN2909">
+</sub>
+<sub name="ttt_test.c" link="a2901.html#AEN2912">
+</sub>
+</sub>
+<sub name="GtkDial" link="x2915.html">
+<sub name="gtkdial.h" link="x2915.html#AEN2917">
+</sub>
+<sub name="gtkdial.c" link="x2915.html#AEN2920">
+</sub>
+<sub name="dial_test.c" link="x2915.html#AEN2923">
+</sub>
+</sub>
+<sub name="Scribble" link="x2926.html">
+<sub name="scribble-simple.c" link="x2926.html#AEN2928">
+</sub>
+<sub name="scribble-xinput.c" link="x2926.html#AEN2931">
+</sub>
+</sub>
+</sub>
+<sub name="Source widget signals" link="x1939.html#AEN1973">
+</sub>
+<sub name="Destination widget signals" link="x1939.html#AEN2013">
+</sub>
+</chapters>
+</book>

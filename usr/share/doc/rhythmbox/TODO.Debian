@@ -1,0 +1,14 @@
+$Id: TODO 11631 2007-06-19 13:24:25Z lool $
+
+This is a short compilation of nice things we could to improve rhythmbox in
+Debian.
+
+- more mailcap entries, /usr/lib/mime/packages/rhythmbox only lists some known
+  types, but the list is not exhaustive
+
+- reportbug plugin, most users can't diagnostic wether problems are coming from
+  gstreamer or from rhythmbox itself, it would be nice to extend reportbug to
+  do some basic tests or to print a message
+
+- vala support
+

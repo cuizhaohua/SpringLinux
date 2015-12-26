@@ -1,0 +1,1249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+
+<title>Debian Menu System - The menu file</title>
+
+<link href="index.html" rel="start">
+<link href="ch2.html" rel="prev">
+<link href="ch4.html" rel="next">
+<link href="index.html#contents" rel="contents">
+<link href="index.html#copyright" rel="copyright">
+<link href="ch1.html" rel="chapter" title="1 Introduction">
+<link href="ch2.html" rel="chapter" title="2 Menu from the viewpoint of a user">
+<link href="ch3.html" rel="chapter" title="3 The menu file">
+<link href="ch4.html" rel="chapter" title="4 What packages with applications should do">
+<link href="ch5.html" rel="chapter" title="5 What packages with menu managers should do">
+<link href="ch6.html" rel="chapter" title="6 How a user can override the menus">
+<link href="ch7.html" rel="chapter" title="7 The internals of the menu package">
+<link href="ch8.html" rel="chapter" title="8 Variables and functions in the install-menu scripts">
+<link href="ch2.html#s2.1" rel="section" title="2.1 How/when do the window manager startup files get created?">
+<link href="ch2.html#s2.2" rel="section" title="2.2 Tuning of the generated window manager startup files">
+<link href="ch2.html#s2.3" rel="section" title="2.3 Optimization of menu tree: hints">
+<link href="ch3.html#s3.1" rel="section" title="3.1 Location">
+<link href="ch3.html#s3.2" rel="section" title="3.2 Syntax">
+<link href="ch3.html#s3.3" rel="section" title="3.3 The title field">
+<link href="ch3.html#s3.4" rel="section" title="3.4 The needs field">
+<link href="ch3.html#s3.5" rel="section" title="3.5 The section field">
+<link href="ch3.html#s3.6" rel="section" title="3.6 The command field">
+<link href="ch3.html#s3.7" rel="section" title="3.7 The icon field">
+<link href="ch3.html#s3.8" rel="section" title="3.8 The hints field">
+<link href="ch3.html#s3.9" rel="section" title="3.9 Entries for menu sections.">
+<link href="ch3.html#s3.10" rel="section" title="3.10 Fvwm's task and title bars">
+<link href="ch4.html#s4.1" rel="section" title="4.1 Providing a menu file">
+<link href="ch4.html#s4.2" rel="section" title="4.2 Adding a hook for dpkg in your packages">
+<link href="ch6.html#s6.1" rel="section" title="6.1 Configuring the menus">
+<link href="ch6.html#s6.2" rel="section" title="6.2 Specifying that a menu entry should not be displayed">
+<link href="ch6.html#s6.3" rel="section" title="6.3 Including other files">
+<link href="ch7.html#s7.1" rel="section" title="7.1 The update-menus program">
+<link href="ch7.html#s7.2" rel="section" title="7.2 The install-menu program">
+<link href="ch7.html#s7.3" rel="section" title="7.3 The install-menu config script definitions">
+<link href="ch7.html#s7.4" rel="section" title="7.4 Hints, tree optimization">
+<link href="ch8.html#s8.1" rel="section" title="8.1 String constants">
+<link href="ch8.html#s8.2" rel="section" title="8.2 Variables">
+<link href="ch8.html#s8.3" rel="section" title="8.3 Functions">
+<link href="ch8.html#s8.2.1" rel="subsection" title="8.2.1 Special variables">
+<link href="ch8.html#s8.2.2" rel="subsection" title="8.2.2 Preferred variables">
+<link href="ch8.html#s8.2.3" rel="subsection" title="8.2.3 Suggested variables">
+
+</head>
+
+<body>
+
+<p><a name="ch3"></a></p>
+<hr>
+
+<p>
+[ <a href="ch2.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ 3 ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch4.html">next</a> ]
+</p>
+
+<hr>
+
+<h1>
+Debian Menu System
+<br>Chapter 3 - The menu file
+</h1>
+
+<hr>
+
+<hr>
+
+<h2 id="s3.1">3.1 Location</h2>
+
+<p>
+Packages-provided menu files should be in <code>/usr/share/menu/</code>, unless
+the menu files are actually executable binaries, in which case they go in
+<code>/usr/lib/menu/</code>.  System-local menu files should be in
+<code>/etc/menu/</code>.  User-specific menu files should be in
+<code>~/.menu/</code>
+</p>
+
+<hr>
+
+<h2 id="s3.2">3.2 Syntax</h2>
+
+<p>
+The format is:
+</p>
+
+<pre>
+     ?package(package[,package2,...]): \
+        field1=&quot;value1&quot;\
+        field2=&quot;value2&quot;\
+</pre>
+
+<p>
+Here is an example to describe the syntax of such a file:
+</p>
+
+<pre>
+     ?package(gnumeric):\             specifies what packages need to be installed
+                                      multiple requirements should be separated by
+                                      comma
+       needs=&quot;X11&quot;\                   what kind of environment this command expects
+       section=&quot;Applications/Office&quot;\ in what section this menu entry should be
+       title=&quot;Gnumeric&quot;\              the title of the menu entry
+       command=&quot;gnumeric&quot; \           the command to run
+       hints=&quot;Gnome,Spreadsheets&quot; \   some hints about menu placement.
+       icon=&quot;/usr/share/pixmaps/gnumeric.xpm&quot;  the path to the icon to use.
+</pre>
+
+<p>
+A number sign (&quot;#&quot;) can be used to include comments.  An entry must
+be terminated by a newline; however you can use a backslash to escape a
+newline.
+</p>
+
+<p>
+Values must be quoted with &quot;, and meta-characters (&quot;, backslash,
+newline) must be escaped with a backslash.
+</p>
+
+<p>
+You can include several entries in the same file.
+</p>
+
+<p>
+The file must be encoded in 7-bit ASCII.  This is necessary to accomodate
+window managers that do not support 8-bit encodings.  However the translations
+are not limited in encoding.
+</p>
+
+<p>
+<samp>?package(...)</samp> contains a comma-separated list of packages that
+need to be installed for the menu entry to be displayed.  That should include
+the package containing the menu file and any packages necessary to run the
+command not depended on by the package nor essential.  Users can use
+pseudo-package names starting with &quot;<samp>local.</samp>&quot; which are
+assumed to be always installed.
+</p>
+
+<p>
+The fields <samp>needs</samp>, <samp>section</samp>, <samp>title</samp> and
+<samp>command</samp> are mandatory.  Other fields are optional.  Custom fields
+are supported, so you can add new fields for you own purpose.  If a field is
+specified multiple times in a menu entry, the last instance will be used.
+</p>
+
+<hr>
+
+<h2 id="s3.3">3.3 The <samp>title</samp> field</h2>
+
+<p>
+The <samp>title</samp> must follow the following requirements:
+</p>
+<ol type="1" start="1" >
+<li>
+<p>
+It must be short.  There is an optional <samp>longtitle</samp> field for users
+that want longer titles.
+</p>
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+<p>
+It must be properly capitalized.  Use <em>Emacs</em> and not <em>emacs</em>.
+</p>
+</li>
+</ol>
+<ol type="1" start="3" >
+<li>
+<p>
+It must be unique.  Two entries must not have the same title.
+</p>
+</li>
+</ol>
+
+<hr>
+
+<h2 id="s3.4">3.4 The <samp>needs</samp> field</h2>
+
+<p>
+The following <samp>needs</samp> are documented for use in the Debian menu.
+</p>
+<ol type="1" start="1" >
+<li>
+<p>
+<samp>X11</samp>: if this program runs under X11.
+</p>
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+<p>
+<samp>text</samp>: if it runs under a terminal.  X11 window managers will spawn
+an X terminal emulator.
+</p>
+</li>
+</ol>
+<ol type="1" start="3" >
+<li>
+<p>
+<samp>vc</samp>: if it runs under a linux virtual console but not under a X
+terminal emulator.
+</p>
+</li>
+</ol>
+<ol type="1" start="4" >
+<li>
+<p>
+<samp>wm</samp>: if it is a X11 window manager.  The current window manager
+will exec(2) this program to avoid &quot;Another window manager is
+running&quot; errors.
+</p>
+</li>
+</ol>
+
+<p>
+A menu manager can use a special <samp>needs</samp> value reflecting the menu
+manager name for menu entries that must only be displayed in this menu manager.
+Examples include <samp>fvwm</samp> modules, <samp>dwww</samp> menu entries.
+</p>
+
+<p>
+A program like gnuplot which can be run on X11 as well as on a text terminal
+should <em>not</em> have an extra entry with <samp>needs=X11</samp> with an
+hard-coded call to an X terminal emulator, because this would defeat the
+configuration mechanism of menu that allow to choose which window manager is
+called.
+</p>
+
+<p>
+On the other hand, if a program (like <code>emacs</code>) can be run as real X
+application as well as in a terminal, two entries should be listed, otherwise
+the program will always be run in an <code>xterm</code> (or <code>rxvt</code>).
+However, two entries are not allowed to have the same title.  The title must be
+unique.
+</p>
+
+<hr>
+
+<h2 id="s3.5">3.5 The <samp>section</samp> field</h2>
+
+<p>
+The <samp>section</samp> field holds a slash-separated list of hierarchical
+sections components.
+</p>
+
+<p>
+The <em>authoritative list of Debian's menu structure</em> is maintained in the
+Debian Menu sub-policy document which is part of the Debian Policy package.
+The current menu structure was drafted in 2006 by Linas Zvirblis with input
+from the debian-devel mailing list.
+</p>
+
+<p>
+The menu structure below is included only for convenience and is not
+authoritative.  If it disagrees with the structure in the Debian Menu
+sub-policy, please send a wishlist bug to the <samp>menu</samp> package.
+</p>
+
+<p>
+Packages must be placed in leaf sections.  Please do <em>not</em> put your
+packages into any other sections.
+</p>
+<dl>
+<dt>Applications</dt>
+<dd>
+<p>
+Normal applications
+</p>
+<dl>
+<dt>Accessibility</dt>
+<dd>
+<p>
+Tools to aid people with disabilities or for machines lacking usual input
+devices.
+</p>
+
+<p>
+Examples: gok, yasr, dasher.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Amateur Radio</dt>
+<dd>
+<p>
+Anything relating to HAM radio.
+</p>
+
+<p>
+Examples: baken, hamsoft, twlog
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Data Management</dt>
+<dd>
+<p>
+Interactive database programs, collection managers, address books, bibliography
+tools, etc.
+</p>
+
+<p>
+gaby, alexandria, mdbtools
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Editors</dt>
+<dd>
+<p>
+Editors, other than office word processors, for text-based information.
+</p>
+
+<p>
+Examples: ksubtile, nano, hexedit
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Education</dt>
+<dd>
+<p>
+Educational and training softwares.
+</p>
+
+<p>
+Examples: gtypist, gcompris, quiz
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Emulators</dt>
+<dd>
+<p>
+Software that allows you to run non-native software or more than one OS at a
+time.
+</p>
+
+<p>
+Examples: wine, dosemu, qemu
+</p>
+</dd>
+</dl>
+<dl>
+<dt>File Management</dt>
+<dd>
+<p>
+Tools for file management, archiving, searching, CD/DVD burning, backup, etc.
+</p>
+
+<p>
+Examples: file-roller, mc, baobab
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Graphics</dt>
+<dd>
+<p>
+2D and 3D graphics manipulation software.
+</p>
+
+<p>
+Examples: gimp, inkscape, imagemagick
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Mobile Devices</dt>
+<dd>
+<p>
+Software that allows you to interface with mobile devices (phones, PDAs, etc.).
+</p>
+
+<p>
+Examples: kandy, gnokii, gnome-pilot
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Network</dt>
+<dd>
+<p>
+Network related software.  This is a three-level section, do not put entries
+directly here.
+</p>
+<dl>
+<dt>Communication</dt>
+<dd>
+<p>
+Mail, USENET news, chat, instant messaging, IP telephony, video conferencing
+software, etc.
+</p>
+
+<p>
+Examples: xchat, gaim, mutt
+</p>
+</dd>
+</dl>
+<dl>
+<dt>File Transfer</dt>
+<dd>
+<p>
+File transfer software such as download managers, FTP clients, P2P clients,
+etc.
+</p>
+
+<p>
+Examples: amule, gftp, d4x
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Monitoring</dt>
+<dd>
+<p>
+Network monitoring software
+</p>
+
+<p>
+Examples: gip, ettercap, iptstate
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Web Browsing</dt>
+<dd>
+<p>
+Web browsers, tools for offline browsing, etc.
+</p>
+
+<p>
+Examples: elinks, epiphany-browser, webhttrack
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Web News</dt>
+<dd>
+<p>
+Web feed (RSS, Atom, etc.) and podcast aggregators.
+</p>
+
+<p>
+Examples: akregator, kitty, liferea
+</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>Office</dt>
+<dd>
+<p>
+Office suites, word processors, spreadsheets, CRM, ERP, financial sofware, etc.
+</p>
+
+<p>
+Examples: openoffice.org, tinyerp-client, gnucash
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Programming</dt>
+<dd>
+<p>
+IDEs, debuggers, etc.
+</p>
+
+<p>
+Examples: anjuta, gdb, eclipse
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Project Management</dt>
+<dd>
+<p>
+Timetable managers, group task trackers, bug tracking software, etc.
+</p>
+
+<p>
+Examples: planner, bugzilla, gnotime
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Science</dt>
+<dd>
+<p>
+Scientific and engineering-related software.
+</p>
+<dl>
+<dt>Astronomy</dt>
+<dd>
+<p>
+Astronomy-related software.
+</p>
+
+<p>
+Examples: celestia, spacechart, stellarium
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Biology</dt>
+<dd>
+<p>
+Biology-related software.
+</p>
+
+<p>
+Examples: arb, ncbi-tools-x11, seaview
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Chemistry</dt>
+<dd>
+<p>
+Chemistry-related software.
+</p>
+
+<p>
+Examples: chemtool, kalzium, xdrawchem
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Data Analysis</dt>
+<dd>
+<p>
+Software designed for processing, extracting, and presenting generic scientific
+data.
+</p>
+
+<p>
+Examples: fityk, ygraph, mn-fit
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Electronics</dt>
+<dd>
+<p>
+Circuit design tools, simulators and assemblers for microprocessors, etc
+</p>
+
+<p>
+Examples: geda, gnucap, tkgate
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Engineering</dt>
+<dd>
+<p>
+CAD, UML tools, diagram-drawing and other engineering-related software.
+</p>
+
+<p>
+Examples: tcm, dia, qcad
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Geoscience</dt>
+<dd>
+<p>
+Geoscience-related software.
+</p>
+
+<p>
+Examples: earth3d, qgis, therion
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Mathematics</dt>
+<dd>
+<p>
+Mathematics-related software.
+</p>
+
+<p>
+Examples: gcalctool, snappea, xeukleides
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Medicine</dt>
+<dd>
+<p>
+Medicine-related software.
+</p>
+
+<p>
+Examples: mssstest, gnumed-client, xmedcon
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Physics</dt>
+<dd>
+<p>
+Physics-related software.
+</p>
+
+<p>
+Examples: kxterm, ifrit, paw
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Social</dt>
+<dd>
+<p>
+Social sciences-related software.
+</p>
+
+<p>
+Examples: gnomesword, hanzim, bibletime
+</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>Shells</dt>
+<dd>
+<p>
+Various shells to be used inside a terminal emulator.
+</p>
+
+<p>
+Examples: bash, ksh, zsh
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Sound</dt>
+<dd>
+<p>
+Sound players, editors, and rippers/recorders.
+</p>
+
+<p>
+Examples: beep-media-player, grip, audacity
+</p>
+</dd>
+</dl>
+<dl>
+<dt>System</dt>
+<dd>
+<p>
+System related software.
+</p>
+<dl>
+<dt>Administration</dt>
+<dd>
+<p>
+Administrative and system configuration utilities, also tools for personal user
+settings.
+</p>
+
+<p>
+Examples: gnome-control-center, configure-debian, gksu
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Hardware</dt>
+<dd>
+<p>
+Tools for manipulating specific hardware, especially non-standard laptop
+hardware.
+</p>
+
+<p>
+Examples: toshutils, nvclock-gtk, nvtv
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Language Environment</dt>
+<dd>
+<p>
+This section is reserved for language-env as a special case.
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Monitoring</dt>
+<dd>
+<p>
+System information and monitoring tools, log viewers, etc.
+</p>
+
+<p>
+Examples: top, hal-device-manager, gtkdiskfree
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Package Management</dt>
+<dd>
+<p>
+Package managers and related tools.
+</p>
+
+<p>
+Examples: aptitude, deborphan, smartpm
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Security</dt>
+<dd>
+<p>
+Security, cryptography and privacy related software, antiviruses, tools to
+track and report bugs, etc.
+</p>
+
+<p>
+Examples: gpgkeys, bastille, avscan
+</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>Terminal Emulators</dt>
+<dd>
+<p>
+Graphical terminal emulators.
+</p>
+
+<p>
+Examples: xterm, gnome-terminal, rxvt
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Text</dt>
+<dd>
+<p>
+Text oriented tools like dictionaries, OCR, translation, text analysis
+software, etc.
+</p>
+
+<p>
+Examples: kdrill, stardict, turkey
+</p>
+</dd>
+</dl>
+<dl>
+<dt>TV and Radio</dt>
+<dd>
+<p>
+TV-in, TV-out, FM radio, teletext browsers, etc.
+</p>
+
+<p>
+Examples: gradio, gatos, alevt
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Viewers</dt>
+<dd>
+<p>
+Software for viewing images, documents and other (non-video) media.
+</p>
+
+<p>
+Examples: gqview, evince, gthumb
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Video</dt>
+<dd>
+<p>
+Video players, editors, and rippers/recorders.
+</p>
+
+<p>
+Examples: istanbul, totem, kino
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Web Development</dt>
+<dd>
+<p>
+Software for web site editing, web programming, and site administration.
+</p>
+
+<p>
+Examples: bluefish, screem, gphpedit
+</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>Games</dt>
+<dd>
+<p>
+Games and recreations
+</p>
+<dl>
+<dt>Action</dt>
+<dd>
+<p>
+Games that involve a lot of action and require fast reflexes.
+</p>
+
+<p>
+Examples: xsoldier, supertux, xmoto
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Adventure</dt>
+<dd>
+<p>
+Role playing and adventure games, interactive movies and stories, etc.
+</p>
+
+<p>
+Examples: beneath-a-steel-sky, egoboo, kq
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Blocks</dt>
+<dd>
+<p>
+Tetris-like games involving falling blocks.
+</p>
+
+<p>
+Examples: crack-attack, frozen-bubble, netris
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Board</dt>
+<dd>
+<p>
+Games played on a board.
+</p>
+
+<p>
+Examples: phalanx, xshogi, xboard
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Card</dt>
+<dd>
+<p>
+Games involving a deck of cards.
+</p>
+
+<p>
+Examples: pysol, ace-of-penguins, xpat2
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Puzzles</dt>
+<dd>
+<p>
+Tests of ingenuity and logic.
+</p>
+
+<p>
+Examples: xmpuzzles, sgt-puzzles, enigma
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Simulation</dt>
+<dd>
+<p>
+Simulations of the real world in all detail and complexity.
+</p>
+
+<p>
+Examples: flightgear, torcs
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Strategy</dt>
+<dd>
+<p>
+Games involving long-term strategic thinking.
+</p>
+
+<p>
+Examples: wesnoth, widelands, netpanzer
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Tools</dt>
+<dd>
+<p>
+Server browsers, configurators, editors, and other game-related tools that are
+not games themselves.
+</p>
+
+<p>
+Examples: xqf, crystalspace
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Toys</dt>
+<dd>
+<p>
+Amusements, eye-candy, entertaining demos, screen hacks (screensavers), etc.
+</p>
+
+<p>
+Examples: xdesktopwaves, xphoon, xpenguins
+</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>Help</dt>
+<dd>
+<p>
+programs that provide user documentation
+</p>
+
+<p>
+Examples: debian-reference, apt-howto, dhelp
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Screen</dt>
+<dd>
+<p>
+Programs that affect the whole screen.
+</p>
+<dl>
+<dt>Saving</dt>
+<dd>
+<p>
+Tools for blanking the screen.  Entries of screen hacks and configuration GUIs
+should go to other appropriate sections.
+</p>
+
+<p>
+Examples: xscreensaver, xlockmore
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Locking</dt>
+<dd>
+<p>
+Tools for locking the screen.
+</p>
+
+<p>
+Examples: xscreensaver, xlockmore
+</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>Window Managers</dt>
+<dd>
+<p>
+X window managers.
+</p>
+
+<p>
+Examples: fluxbox, metacity, waimea
+</p>
+</dd>
+</dl>
+<dl>
+<dt>FVWM Modules</dt>
+<dd>
+<p>
+FVWM-based window manager modules.  As only modules related to the running
+window-manager are displayed, do not create subsections for specific
+window-managers.
+</p>
+
+<p>
+Examples: fvwm, fvwm-gnome, fvwm95
+</p>
+</dd>
+</dl>
+<dl>
+<dt>Window Maker</dt>
+<dd>
+<p>
+This section is reserved for wmaker as a special case.
+</p>
+
+<p>
+All wmaker specific entries must go here.
+</p>
+</dd>
+</dl>
+
+<p>
+Users wanting to access some menu entries quickly can also put them in the root
+menu.  This is done by using <em>section=&quot;/&quot;</em>.  Package-provided
+menu entries must never use this feature.
+</p>
+
+<hr>
+
+<h2 id="s3.6">3.6 The <samp>command</samp> field</h2>
+
+<p>
+The command field holds the command that should be executed when the menu entry
+is selected.  Commands will be executed with <code>sh -c</code> using
+</p>
+
+<pre>
+     execl(&quot;/bin/sh&quot;,&quot;sh&quot;,&quot;-c&quot;,command)
+</pre>
+
+<p>
+or the equivalent.
+</p>
+
+<hr>
+
+<h2 id="s3.7">3.7 The <samp>icon</samp> field</h2>
+
+<p>
+Please make sure the icons you specify are always available on the system.  So,
+if you want to have an icon with your menu entry, the preferred method is to
+supply the icon with that package.  Icons should generally be installed in the
+directory <code>/usr/share/pixmaps</code>.
+</p>
+
+<p>
+Debian package maintainers should ensure that any icons they include for use in
+the Debian menus conform to the following points:
+</p>
+<ol type="1" start="1" >
+<li>
+<p>
+The icons should be in xpm format.
+</p>
+</li>
+</ol>
+<ol type="1" start="2" >
+<li>
+<p>
+The icons may not be larger than 32x32 pixels, although smaller sizes are ok.
+</p>
+</li>
+</ol>
+<ol type="1" start="3" >
+<li>
+<p>
+The background area of the icon should be transparent, if possible.
+</p>
+</li>
+</ol>
+
+<p>
+You can provide both 16x16 and 32x32 pixels icons using the variables icon16x16
+and icon32x32 so that the user can configure menu to use one or the other.
+</p>
+
+<p>
+If you, as a system administrator, don't like the icons in the menus, simply
+change the <samp>icon()</samp> function from the file
+<code>/etc/menu-methods/menu.h</code>, and run <code>update-menus</code>.
+</p>
+
+<hr>
+
+<h2 id="s3.8">3.8 The <samp>hints</samp> field</h2>
+
+<p>
+Hints are used to help menu structure generated menus in a more optimal way.
+For example:
+</p>
+
+<pre>
+     ?package(emacs20):\
+       needs=&quot;x11&quot;\
+       hints=&quot;Big,Expert,Featureful&quot; \
+       section=&quot;Applications/Editors&quot;\
+       title=&quot;Emacs 20&quot;\
+       command=&quot;/usr/bin/emacs20&quot;\
+       icon=/usr/share/emacs/20.3/etc/emacs.xbm
+</pre>
+
+<p>
+The above hints will tell <samp>menu</samp> to consider grouping
+<samp>emacs</samp> together with other editors that are marked similar.  For
+example, if <samp>vi</samp> on your system has a hints=&quot;Small,Expert&quot;
+definition, and there are too many entries in the
+<samp>/Applications/Editors</samp> menu entry, then menu will consider creating
+a <samp>/Applications/Editors/Expert</samp> submenu, and put both
+<samp>vi</samp> and <samp>emacs</samp> in it.  (Of course, only if you have
+<samp>hint_optimize=true</samp> in your <code>/etc/menu-methods/menu.h</code>
+file).
+</p>
+
+<hr>
+
+<h2 id="s3.9">3.9 Entries for menu sections.</h2>
+
+<p>
+It is possible to add entries for menu sections, but it is not mandatory since
+section entries are created automatically.  However, this allows to specify
+fields for sections like <samp>icon</samp> and <samp>sort</samp>.  The syntax
+for menu sections entries is the same as for regular entries, the
+<samp>section</samp> field holding the name of the parent section.  For example
+</p>
+
+<pre>
+     ?package(local.games): needs=&quot;text&quot; title=&quot;Games&quot; section=&quot;/&quot; sort=&quot;001&quot;
+</pre>
+
+<p>
+will sort <samp>Games</samp> first.
+</p>
+
+<hr>
+
+<h2 id="s3.10">3.10 Fvwm's task and title bars</h2>
+
+<p>
+The problem with the stuff in the task bar is that all items are displayed all
+of the time.  So, if 1500 Debian packages all were to register a button, the
+buttons would quickly fill the screen, making the exercise useless.  The few
+applications that are considered important enough to be listed in the task bar
+usually vary widely on each system, making it impossible to select a ``happy
+few'' apps that are allowed there on every Debian system.  If you (as a local
+system administrator) want your <code>fvwm2</code> to have a few buttons, you
+can install files for those packages in <samp>/menu/$package</samp>, containing
+a menu entry like this:
+</p>
+
+<pre>
+       ?Package(xmball):needs=button\
+                     section=Games/Puzzles\
+                     icon=path-to-pixmap.xpm\
+                     title=&quot;Xmball&quot;\
+                     command=/usr/games/xmball
+</pre>
+
+<p>
+Then, do the following:
+</p>
+
+<pre>
+       cd /etc/menu-methods/
+       cp fvwm2 fvwm2button
+       vi fvwm2button
+</pre>
+
+<p>
+and remove all the &quot;supported&quot; entries, adding the one below.  For
+the rest, leave everything the same except those listed below.
+</p>
+
+<pre>
+       supported 
+         button=&quot;+ Style \&quot;&quot; $title &quot;\&quot; TitleIcon&quot; $icon &quot; Exec &quot;  $command &quot;\n&quot;
+       endsupported
+       startmenu:   &quot;AddToTitlebar \n&quot;
+       endmenu:     &quot;\n&quot;
+       submenutitle:&quot;&quot;
+       mainmenu:
+       genmenu:   &quot;buttondefs.hook&quot;
+</pre>
+
+<p>
+(Of course regular users (not system administrators) can also specify
+`buttonfiles' in their ~/.menu/ directory).
+</p>
+
+<hr>
+
+<p>
+[ <a href="ch2.html">previous</a> ]
+[ <a href="index.html#contents">Contents</a> ]
+[ <a href="ch1.html">1</a> ]
+[ <a href="ch2.html">2</a> ]
+[ 3 ]
+[ <a href="ch4.html">4</a> ]
+[ <a href="ch5.html">5</a> ]
+[ <a href="ch6.html">6</a> ]
+[ <a href="ch7.html">7</a> ]
+[ <a href="ch8.html">8</a> ]
+[ <a href="ch4.html">next</a> ]
+</p>
+
+<hr>
+
+<p>
+Debian Menu System
+</p>
+
+<address>
+version 1.4, 4 June 2014<br>
+<br>
+Joost Witteveen <code><a href="mailto:joostje@debian.org">mailto:joostje@debian.org</a></code><br>
+Joey Hess <code><a href="mailto:joeyh@debian.org">mailto:joeyh@debian.org</a></code><br>
+Christian Schwarz <code><a href="mailto:schwarz@debian.org">mailto:schwarz@debian.org</a></code><br>
+Bill Allombert <code><a href="mailto:ballombe@debian.org">mailto:ballombe@debian.org</a></code><br>
+<br>
+</address>
+<hr>
+
+</body>
+
+</html>
+

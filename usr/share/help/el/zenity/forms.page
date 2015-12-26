@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="forms" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--forms</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος φορμών</title>
+    <p>Χρησιμοποιήστε την επιλογή <cmd>--forms</cmd> για να δημιουργήσετε έναν διάλογο φορμών.</p>
+	
+    <p>Ο διάλογος φορμών υποστηρίζει τις παρακάτω επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--add-entry</cmd>=<var>Όνομα πεδίου</var></title>
+	<p>Προσθήκη νέας καταχώρισης στο διάλογο φορμών.</p>
+      </item>
+
+      <item>
+        <title>--add-password<cmd/>=<var>Όνομα πεδίου</var></title>
+	<p>Προσθήκη μίας νέας καταχώρησης κωδικού στο διάλογο φορμών. (Απόκρυψη κειμένου)</p>
+      </item>
+
+      <item>
+        <title><cmd>--add-calendar</cmd>=<var>Όνομα πεδίου</var></title>
+	<p>Προσθήκη ενός νέου ημερολογίου στο διάλογο φορμών.</p>
+      </item>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>ΚΕΙΜΕΝΟ</var></title>
+	<p>Ορίστε το κείμενο του διαλόγου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--separator</cmd>=<var>ΔΙΑΧΩΡΙΣΤΙΚΟ</var></title>
+	<p>Ορίστε το διαχωριστικό χαρακτήρα εξόδου. (Προεπιλεγμένο: | )</p>
+      </item>
+
+      <item>
+        <title><cmd>--forms-date-format</cmd>=<var>ΜΟΤΙΒΟ</var></title>
+	<p>Καθορίζει την μορφή που αποδίδεται από τον διάλογο ημερολογίου μετά την επιλογή ημερομηνίας. Η προεπιλεγμένη μορφή εξαρτάται από την προσαρμογή εντοπιότητας(locale) που χρησιμοποιείτε. Η μορφή πρέπει να συντάσσεται έτσι ώστε να γίνεται αποδεκτή από την λειτουργία <cmd>strftime</cmd>, για παράδειγμα <var>%A %d/%m/%y</var>.</p>
+      </item>
+
+    </terms>
+
+    <p>Το παρακάτω παράδειγμα δέσμης ενεργειών κελύφους δείχνει πως να δημιουργήσετε έναν διάλογο φορμών:</p>
+
+<code>
+#!/bin/sh
+
+zenity --forms --title="Προσθήκη φίλοι" \
+	--text="Πληκτρολογήστε πληροφορίες για τον φίλο σας." \
+	--separator="," \
+	--add-entry="Όνομα" \
+	--add-entry="Επώνυμο" \
+	--add-entry="Email" \
+	--add-calendar="Γενέθλια" &gt;&gt; addr.csv
+
+case $? in
+    0)
+        echo "Προστέθηκε ο φίλος.";;
+    1)
+        echo "Δεν προστέθηκε κανένας φίλος."
+	;;
+    -1)
+        echo "Προέκυψε ένα σφάλμα."
+	;;
+esac
+</code>
+
+    <figure id="zenity-forms-screenshot">
+      <title>Παράδειγμα διαλόγου φορμών</title>
+      <desc>Παράδειγμα διαλόγου φορμών του <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-forms-screenshot.png"/>
+    </figure>
+</page>

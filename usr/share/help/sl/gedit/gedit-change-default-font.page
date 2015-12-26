@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="sl">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  </info>
+
+  <title>Sprememba privzete pisave</title>
+
+  <p><app>gedit</app> bo privzeto uporabil sistemsko pisavo stalne širine, vendar lahko izberte privzeto pisavo <app>gedit</app> tako, da ustreza vašemu okusu.</p>
+  
+  <steps>
+    <title>Za spremembo privzete pisave v programu <app>gedit</app>:</title>
+      <item><p>Select <guiseq><gui style="menu">gedit</gui>
+      <gui style="menuitem">Preferences</gui>
+      <gui>Font &amp; Colors</gui></guiseq>.</p></item>
+      <item><p>Odstranite polje poleg fraze "Uporabi sistemsko pisavo stalne širine."</p></item>
+      <item><p>Click on the current font name. <app>gedit</app> will open
+      a font-chooser window, allowing you to see available fonts and choose the
+      one that you prefer.</p></item>
+      <item><p>After you have chosen a new font, use the <gui>slider</gui>
+      under the list of fonts to set the default font size.</p></item>
+      <item><p>Kliknite <gui>Izberi</gui> in nato kliknite <gui>Zapri</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-change-case" xml:lang="es">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>Cambiar la capitalización del texto seleccionado</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011-2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2006-2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>María Majadas</mal:name>
+      <mal:email>maria.majadas@hispalinux.es</mal:email>
+      <mal:years>2005</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Cambiar capitalización</title>
+
+  <p>Este complemento le ayuda a cambiar la capitalización de fragmentos de texto seleccionados. Puede usarlo para cambiar todo el texto a minúsculas, a mayúsculas, para invertir la capitalización o para aplicar títulos. Para activar este complemento, seleccione <guiseq><gui style="menu">gedit</gui><gui> Preferencias</gui><gui>Complementos</gui><gui>Cambiar capitalización</gui></guiseq>.</p>
+
+  <p>Una vez que el complemento <em>Cambiar capitalización</em> está activado, puede usarlo completando los siguientes pasos:</p>
+
+  <steps>
+    <item><p>Resalte el fragmento de texto que quiere cambiar.</p></item>
+    <item><p>Seleccione <guiseq><gui style="menu">gedit</gui><gui>Cambiar capitalización</gui></guiseq></p>
+    </item>
+    <item><p>Elija la opción de formateo de texto que quiera.</p></item> 
+  </steps>
+
+  <p>Las actualizaciones del formato del texto se aplicarán inmediatamente.</p>
+
+  <note style="tip">
+    <p>La opción <gui>Invertir capitalización</gui> convertirá todas las letras en minúscula a mayúsculas, y todas las letras en mayúscula a minúsculas.</p>
+    <p>La opción <gui>Capitalización de titular</gui> cambiará la primera letra de cada palabra a mayúsculas. El resto de las letras se cambiarán a minúsculas.</p>
+  </note>
+
+  <note>
+    <p>Si no ha resaltado ningún texto, la característica <em>Cambiar capitalización</em> estará en gris. Debe seleccionar una parte del texto antes de poder usar la característica <em>Cambiar capitalización</em>.</p>
+  </note>
+
+</page>

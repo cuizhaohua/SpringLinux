@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-plugins-change-case" xml:lang="zh-CN">
+
+<info>
+  <link type="guide" xref="gedit-plugin-guide#gedit-default-plugins"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+  <credit type="author">
+    <name>Daniel Neel</name>
+    <email>dneelyep@gmail.com</email>
+  </credit>
+
+  <credit type="author">
+    <name>Jim Campbell</name>
+    <email>jwcampbell@gmail.com</email>
+  </credit>
+  <desc>更改选中文本的大小写</desc>
+
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2009, 2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Colin Zhao</mal:name>
+      <mal:email>lonely.ibm@gmail.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>wancheng zhang</mal:name>
+      <mal:email>wancheng.com.cn@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+<title>改变大小写</title>
+
+  <p>这个插件帮助您更改选中文本的大小写，您可以将文本全部改为小写字母，全部改为大写字母，大小写翻转，或者让字首大写。要启用此插件，点菜单 <guiseq><gui style="menu">gedit</gui><gui style="menuitem">首选项</gui> <gui>插件</gui><gui>更改大小写</gui></guiseq>。</p>
+
+  <p>一旦启用了<em>更改大小写</em>插件，您可以按下列步骤来使用它：</p>
+
+  <steps>
+    <item><p>选中你想更改的文本内容。</p></item>
+    <item><p>点菜单 <guiseq><gui style="menu">gedit</gui><gui>更改大小写</gui></guiseq></p>
+    </item>
+    <item><p>选择您想使用的格式选项。</p></item> 
+  </steps>
+
+  <p>文本格式的更改会立即生效。</p>
+
+  <note style="tip">
+    <p><gui>反转大小写</gui> 选项把小写字母改成大写，把大写字母改成小写。</p>
+    <p><gui>字首大写</gui>选项将会把每个单词的第一个字母改成大写，其他字母会转成小写。</p>
+  </note>
+
+  <note>
+    <p>如果您没有选中任何的文本内容，<em>更改大小写</em>将变成灰色不可用状态。因此，在使用此项功能前，您必须要选中文本内容。</p>
+  </note>
+
+</page>

@@ -1,0 +1,142 @@
+Aug 16 10:06:26 cubietruck shutdown[5072]: shutting down for system reboot
+Aug 16 10:25:09 cubietruck shutdown[3215]: shutting down for system reboot
+Aug 16 10:40:37 cubietruck shutdown[2750]: shutting down for system reboot
+Aug 16 10:47:01 cubietruck shutdown[2493]: shutting down for system reboot
+Aug 16 11:22:54 cubietruck shutdown[2477]: shutting down for system reboot
+Sep 23 05:20:02 cubietruck shutdown[2610]: shutting down for system reboot
+Jan  1 01:04:55 cubietruck shutdown[2414]: shutting down for system halt
+Jan  1 01:03:23 cubietruck shutdown[2470]: shutting down for system reboot
+Jan  1 02:30:55 cubietruck shutdown[28218]: shutting down for system reboot
+Jan  1 02:50:48 cubietruck shutdown[3490]: shutting down for system halt
+Jan  1 03:29:56 cubietruck NetworkManager[1894]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 04:02:44 cubietruck shutdown[3023]: shutting down for system halt
+Jan  1 01:02:20 cubietruck NetworkManager[1931]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 03:41:50 cubietruck shutdown[11168]: shutting down for system reboot
+Nov 22 03:42:59 cubietruck NetworkManager[1768]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 04:41:05 cubietruck shutdown[4351]: shutting down for system reboot
+Nov 22 04:42:03 cubietruck NetworkManager[1684]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 04:51:28 cubietruck shutdown[2250]: shutting down for system reboot
+Nov 22 07:09:46 cubietruck NetworkManager[1773]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 07:19:02 cubietruck shutdown[2727]: shutting down for system reboot
+Nov 22 07:19:54 cubietruck NetworkManager[1705]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 07:52:35 cubietruck shutdown[2869]: shutting down for system reboot
+Nov 22 07:53:37 cubietruck NetworkManager[1714]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 08:22:05 cubietruck shutdown[3009]: shutting down for system reboot
+Nov 22 08:23:09 cubietruck NetworkManager[1719]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 08:39:02 cubietruck shutdown[2544]: shutting down for system reboot
+Nov 22 08:40:02 cubietruck NetworkManager[1735]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 09:26:35 cubietruck shutdown[4632]: shutting down for system reboot
+Nov 22 09:27:35 cubietruck NetworkManager[1675]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 09:53:26 cubietruck shutdown[3174]: shutting down for system reboot
+Nov 22 09:54:28 cubietruck NetworkManager[1694]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 09:57:14 cubietruck shutdown[2042]: shutting down for system reboot
+Nov 22 09:58:10 cubietruck NetworkManager[1671]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 10:20:19 cubietruck shutdown[2937]: shutting down for system reboot
+Nov 22 10:21:24 cubietruck NetworkManager[1741]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 10:46:54 cubietruck shutdown[2717]: shutting down for system reboot
+Nov 22 10:47:57 cubietruck NetworkManager[1663]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 12:18:03 cubietruck shutdown[6269]: shutting down for system reboot
+Nov 22 12:19:11 cubietruck NetworkManager[1644]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 12:47:46 cubietruck shutdown[2973]: shutting down for system reboot
+Nov 22 12:48:51 cubietruck NetworkManager[1727]: Libgcrypt warning: missing initialization - please fix the application
+Nov 22 12:55:10 cubietruck shutdown[2276]: shutting down for system halt
+Jan  1 01:00:56 cubietruck NetworkManager[1809]: Libgcrypt warning: missing initialization - please fix the application
+Nov 29 03:04:27 cubietruck shutdown[5250]: shutting down for system reboot
+Nov 29 03:05:29 cubietruck NetworkManager[1676]: Libgcrypt warning: missing initialization - please fix the application
+Nov 29 04:16:56 cubietruck shutdown[4451]: shutting down for system halt
+Jan  1 01:00:55 cubietruck NetworkManager[1801]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 03:39:55 cubietruck shutdown[3862]: shutting down for system halt
+Dec  5 07:42:12 cubietruck NetworkManager[1717]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 07:50:41 cubietruck shutdown[2198]: shutting down for system reboot
+Dec  5 07:51:41 cubietruck NetworkManager[1791]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 08:14:36 cubietruck shutdown[2403]: shutting down for system reboot
+Dec  5 08:15:37 cubietruck NetworkManager[1706]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 08:21:05 cubietruck shutdown[2158]: shutting down for system reboot
+Dec  5 08:22:03 cubietruck NetworkManager[1787]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 08:47:03 cubietruck shutdown[3260]: shutting down for system reboot
+Dec  5 08:48:04 cubietruck NetworkManager[1788]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 09:51:20 cubietruck shutdown[4397]: shutting down for system reboot
+Dec  5 09:52:28 cubietruck NetworkManager[1747]: Libgcrypt warning: missing initialization - please fix the application
+Dec  5 10:07:05 cubietruck shutdown[2161]: shutting down for system halt
+Jan  1 01:00:50 cubietruck NetworkManager[1686]: Libgcrypt warning: missing initialization - please fix the application
+Dec 12 03:36:32 cubietruck shutdown[9840]: shutting down for system halt
+Jan  1 01:00:49 cubietruck NetworkManager[1709]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:03:23 cubietruck shutdown[2296]: shutting down for system reboot
+Jan  1 01:04:29 cubietruck NetworkManager[1795]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:08:34 cubietruck shutdown[2426]: shutting down for system reboot
+Jan  1 01:09:47 cubietruck NetworkManager[1667]: Libgcrypt warning: missing initialization - please fix the application
+Dec 13 02:52:37 cubietruck shutdown[2955]: shutting down for system reboot
+Dec 13 02:53:50 cubietruck NetworkManager[1734]: Libgcrypt warning: missing initialization - please fix the application
+Dec 13 02:55:29 cubietruck shutdown[2079]: shutting down for system reboot
+Dec 13 02:56:33 cubietruck NetworkManager[1691]: Libgcrypt warning: missing initialization - please fix the application
+Dec 13 02:57:45 cubietruck NetworkManager[2085]: Libgcrypt warning: missing initialization - please fix the application
+Dec 13 03:00:22 cubietruck shutdown[2195]: shutting down for system reboot
+Dec 13 03:09:36 cubietruck NetworkManager[1684]: Libgcrypt warning: missing initialization - please fix the application
+Dec 13 03:45:55 cubietruck shutdown[2491]: shutting down for system halt
+Jan  1 01:01:16 cubietruck NetworkManager[1737]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:02:26 cubietruck shutdown[2081]: shutting down for system reboot
+Jan  1 02:41:23 cubietruck shutdown[2450]: shutting down for system reboot
+Jan  1 02:53:39 cubietruck shutdown[2028]: shutting down for system reboot
+Jan  1 03:40:36 cubietruck shutdown[2364]: shutting down for system reboot
+Jan  1 03:48:13 cubietruck shutdown[2068]: shutting down for system reboot
+Jan  1 03:57:26 cubietruck shutdown[2296]: shutting down for system halt
+Jan  1 01:07:12 cubietruck shutdown[2240]: shutting down for system reboot
+Jan  1 01:07:58 cubietruck NetworkManager[1562]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:09:35 cubietruck NetworkManager[1979]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:10:00 cubietruck shutdown[2006]: shutting down for system reboot
+Jan  1 01:18:48 cubietruck shutdown[2139]: shutting down for system reboot
+Jan  1 01:19:32 cubietruck NetworkManager[1574]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:20:57 cubietruck NetworkManager[1973]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:22:00 cubietruck NetworkManager[2140]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:27:56 cubietruck NetworkManager[2226]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:28:13 cubietruck NetworkManager[2304]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:28:43 cubietruck NetworkManager[2382]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:28:56 cubietruck shutdown[2411]: shutting down for system reboot
+Jan  1 01:29:40 cubietruck NetworkManager[1638]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:36:14 cubietruck NetworkManager[2096]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:40:34 cubietruck shutdown[2380]: shutting down for system reboot
+Jan  1 01:41:20 cubietruck NetworkManager[1750]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:47:26 cubietruck NetworkManager[2465]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 02:02:06 cubietruck NetworkManager[2810]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 02:03:09 cubietruck NetworkManager[2902]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 02:04:55 cubietruck shutdown[2951]: shutting down for system halt
+Jan  1 02:30:33 cubietruck NetworkManager[1694]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 02:32:46 cubietruck NetworkManager[2501]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 02:38:50 cubietruck shutdown[2768]: shutting down for system reboot
+Jan  1 02:40:02 cubietruck NetworkManager[1769]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 13:41:16 cubietruck shutdown[2935]: shutting down for system reboot
+Dec 16 13:45:25 cubietruck NetworkManager[2196]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 13:46:49 cubietruck NetworkManager[2468]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 13:48:34 cubietruck shutdown[3029]: shutting down for system reboot
+Dec 16 13:49:47 cubietruck NetworkManager[1722]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 13:53:41 cubietruck shutdown[2903]: shutting down for system reboot
+Dec 16 13:54:54 cubietruck NetworkManager[1697]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 13:59:26 cubietruck shutdown[2572]: shutting down for system reboot
+Dec 16 14:00:25 cubietruck NetworkManager[1726]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 14:04:15 cubietruck shutdown[2880]: shutting down for system reboot
+Dec 16 14:05:27 cubietruck NetworkManager[1717]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 14:20:40 cubietruck shutdown[3470]: shutting down for system reboot
+Dec 16 14:21:55 cubietruck NetworkManager[1772]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 14:27:40 cubietruck shutdown[3023]: shutting down for system reboot
+Dec 16 14:28:38 cubietruck NetworkManager[1770]: Libgcrypt warning: missing initialization - please fix the application
+Dec 16 14:33:02 cubietruck shutdown[2418]: shutting down for system halt
+Jan  1 01:01:04 cubietruck NetworkManager[1787]: Libgcrypt warning: missing initialization - please fix the application
+Jan  1 01:02:59 cubietruck shutdown[2116]: shutting down for system reboot
+Jan  1 01:16:24 cubietruck shutdown[2232]: shutting down for system reboot
+Dec 17 13:01:38 cubietruck shutdown[3471]: shutting down for system reboot
+Dec 17 13:44:46 cubietruck shutdown[2720]: shutting down for system reboot
+Dec 17 13:53:45 cubietruck shutdown[2217]: shutting down for system halt
+Jan  1 01:16:18 cubietruck shutdown[2457]: shutting down for system reboot
+Dec 18 12:12:21 cubietruck shutdown[3198]: shutting down for system reboot
+Dec 18 13:22:02 cubietruck shutdown[3568]: shutting down for system reboot
+Dec 18 13:30:24 cubietruck shutdown[2270]: shutting down for system halt
+Dec 26 02:12:41 cubietruck shutdown[2408]: shutting down for system reboot
+Dec 26 02:24:01 cubietruck shutdown[2129]: shutting down for system reboot
+Dec 26 02:38:25 cubietruck shutdown[2244]: shutting down for system reboot
+Dec 26 03:10:39 cubietruck shutdown[2392]: shutting down for system reboot
+Dec 26 03:56:03 cubietruck shutdown[2250]: shutting down for system halt
+Dec 26 07:49:25 cubietruck shutdown[1995]: shutting down for system reboot
+Dec 26 08:03:28 cubietruck shutdown[2407]: shutting down for system reboot
+Dec 26 08:07:16 cubietruck shutdown[2068]: shutting down for system reboot
+Dec 26 08:16:57 cubietruck shutdown[2270]: shutting down for system halt
+Dec 26 08:21:11 cubietruck shutdown[2147]: shutting down for system halt

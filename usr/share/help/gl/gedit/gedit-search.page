@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-search" xml:lang="gl">
+
+  <info>
+    <link type="guide" xref="index#gedit-working-with-files"/>
+    <link type="seealso" xref="gedit-replace"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Daniel Neel</name>
+      <email>dneelyep@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email>tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Fran Dieguez</mal:name>
+      <mal:email>frandieguez@gnome.org</mal:email>
+      <mal:years>2011-2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Leandro Regueiro</mal:name>
+      <mal:email>leandro.regueiro@gmail.com</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Buscar texto</title>
+  
+    <p>A ferramenta de busca pódelle axudar a atopar secuencias de texto específicas nos seus ficheiros.</p>
+
+    <steps>
+      <title>Buscar texto</title>
+      <item>
+        <p>Open the <gui>search window</gui> by clicking 
+        <guiseq><gui style="menu">Search</gui>
+        <gui style="menuitem">Find</gui> </guiseq> or
+        pressing <keyseq><key>Ctrl</key><key>F</key></keyseq>. This will move
+        your cursor to the start of the <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Escriba o texto que quere buscar na <gui>xanela de busca</gui>.</p>
+      </item>
+      <item>
+        <p>A medida que escribe, <app>gedit</app> comezará a resaltar os fragmentos de texto que coinciden co que escribiu.</p>
+      </item>
+    </steps>
+    
+    <p>Para desprazarse polos resultados da busca, realice calquera dos seguintes pasos:</p>
+    <list>
+      <item>
+        <p>Click on the <gui style="button">up</gui> or
+        <gui style="button">down</gui> facing arrows next to the
+        <gui>search window</gui>.</p>
+      </item>
+      <item>
+        <p>Press the <key>up arrow</key> or <key>down arrow</key> keys on your
+        keyboard.</p>
+      </item>
+      <item>
+        <p>Press <keyseq><key>Ctrl</key><key>G</key></keyseq> or
+        <keyseq><key>Ctrl</key><key>Shift</key><key>G</key></keyseq>.</p>
+      </item>
+      <item>
+        <p>Prema <key>Ctrl</key> e use o <key>deslizador</key> do seu rato ou área táctil para moverse cara arriba ou cara abaixo polo texto</p>
+      </item>
+    </list>
+
+  <p>Para prechar a <gui>xanela de busca</gui> prema <key>Esc</key> ou <key>Intro</key>. Ao pulsar <key>Esc</key> o cursor volverá á posición onde estaba antes de comezar a busca. Ao premer <key>Intro</key> o cursor volverá á posición actual nos resultados da busca.</p>
+
+  <list>
+    <title>Consellos de busca</title>
+    <item>
+      <p>Se resalta un fragmento de texto co rato e preme <keyseq><key>Ctrl</key><key>F</key></keyseq>, o texto que resaltou aparecerá na xanela de busca.</p>
+    </item>
+    <item>
+      <p>For more search options, click on the
+      <gui style="button">Magnifying Glass</gui> icon in the search window,
+      or right-click anywhere in the search window. You can select one or more
+      of the following search options:</p>
+      <list>
+        <item>
+          <p>Select <gui>Match Case</gui> to make the search case sensitive.</p>
+        </item>
+        <item>
+          <p>Select <gui>Match Entire Word Only</gui> to search only complete
+          words.</p>
+        </item>
+        <item>
+          <p>Select <gui>Wrap Around</gui> to search text from top to bottom
+          and cycle back again.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <p>O texto que buscou permanecerá realzado en gedit, aínda que rematara a busca. Para quitar o resaltado, prema <guiseq><gui>Buscar</gui><gui>Quitar realzado</gui></guiseq>, ou prema <keyseq><key>Ctrl</key><key>Maiús</key><key>K</key></keyseq>.</p>
+    </item>
+  </list>
+
+</page>

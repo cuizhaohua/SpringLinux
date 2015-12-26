@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="notification" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc><cmd>--notification</cmd> オプションの使用</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>赤星　柔充</mal:name>
+      <mal:email>yasumichi@vinelinux.org</mal:email>
+      <mal:years>2011,2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>通知アイコン</title>
+    <p>通知アイコンを作成するには、<cmd>--notification</cmd> というオプションを使ってください。</p>
+
+  <terms>
+    <item>
+      <title><cmd>--text</cmd>=<var>テキスト</var></title>
+      <p>通知領域に表示するテキストを指定します。</p>
+    </item>
+    <item>
+      <title><cmd>--listen</cmd>=icon: '<var>text</var>', message: '<var>text</var>', tooltip: '<var>text</var>', visible: '<var>text</var>',</title>
+      <p>Listens for commands at standard input. At least one command must be specified. Commands are comma seperated. A command must be followed by a colon and a value. </p>
+      <note style="tip">
+        <p>The <cmd>icon</cmd> command also accepts four stock icon values such as <var>error</var>, <var>info</var>, <var>question</var> and <var>warning</var>.</p>
+      </note>
+    </item>
+  </terms>
+
+  <p>以下のスクリプトの例で通知アイコンの作成方法を示します。</p>
+  <code>
+  #!/bin/sh
+
+  zenity --notification\
+    --window-icon="info" \
+    --text="There are system updates necessary!"
+  </code>
+
+  <figure id="zenity-notification-screenshot">
+    <title>通知アイコンの例</title>
+    <desc><app>Zenity</app> 通知アイコンの例</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-screenshot.png"/>
+  </figure>
+
+  <p>The following example script shows how to create a notification icon along with <cmd>--listen</cmd>:</p>
+  <code>
+  #!/bin/sh
+  cat &lt;&lt;EOH| zenity --notification --listen
+  message: this is the message text
+  EOH
+  </code>
+
+  <figure id="zenity-notification-listen-screenshot">
+    <title>Notification Icon with <cmd>--listen</cmd> Example</title>
+    <desc><app>Zenity</app> notification with <cmd>--listen</cmd> example</desc>
+    <media type="image" mime="image/png" src="figures/zenity-notification-listen-screenshot.png"/>
+  </figure>
+
+</page>

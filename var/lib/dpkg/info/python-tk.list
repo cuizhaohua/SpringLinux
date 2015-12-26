@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/python-tk
+/usr/share/doc
+/usr/share/doc/python-tk
+/usr/share/doc/python-tk/copyright
+/usr/share/doc/python-tk/changelog.Debian.gz
+/usr/share/doc/python-tk/README.Debian
+/usr/share/doc/python-tk/README.Tk
+/usr/share/doc/python-tk/changelog.Debian.armhf.gz
+/usr/lib
+/usr/lib/python2.7
+/usr/lib/python2.7/lib-dynload
+/usr/lib/python2.7/lib-dynload/_tkinter.so

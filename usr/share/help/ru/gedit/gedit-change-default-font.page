@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="gedit-change-default-font" xml:lang="ru">
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision version="3.8" date="2013-03-07" status="final"/>
+
+    <credit type="author">
+      <name>Джим Кэмпбелл (Jim Campbell)</name>
+      <email>jwcampbell@gmail.com</email>
+      <years>2011 2012 2013</years>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stas Solovey</mal:name>
+      <mal:email>whats_up@tut.by</mal:email>
+      <mal:years>2011, 2012, 2013.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Misha Shnurapet</mal:name>
+      <mal:email>shnurapet@fedoraproject.org</mal:email>
+      <mal:years>2011.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Изменение шрифта по умолчанию</title>
+
+  <p>Текстовый редактор <app>gedit</app> по умолчанию использует системный моноширинный шрифт, но можно изменить шрифт по умолчанию в соответствии с вашими предпочтениями.</p>
+  
+  <steps>
+    <title>Чтобы изменить шрифт по умолчанию в <app>gedit</app> выполните следующие действия:</title>
+      <item><p>Выберите <guiseq><gui style="menu">gedit</gui> <gui style="menuitem">Параметры</gui> <gui>Шрифты и цвета</gui></guiseq>.</p></item>
+      <item><p>Снимите флажок рядом с «Использовать системный моноширинный шрифт».</p></item>
+      <item><p>Нажмите на имя текущего шрифта. <app>gedit</app> откроет окно выбора шрифтов, позволяя увидеть доступные шрифты и выбрать нужный.</p></item>
+      <item><p>После выбора нужного шрифта используйте <gui>ползунок</gui> под списком шрифтов, чтобы установить размер шрифта по умолчанию.</p></item>
+      <item><p>Нажмите <gui>Выбрать</gui>, затем нажмите <gui>Закрыть</gui>.</p>
+      </item>
+  </steps>
+  
+</page>

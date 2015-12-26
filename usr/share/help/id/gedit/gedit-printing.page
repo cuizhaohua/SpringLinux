@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="gedit-printing" xml:lang="id">
+
+  <info>
+    <link type="guide" xref="index#gedit-printing-guide"/>
+    <revision pkgversion="3.8" date="2013-02-24" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="author">
+      <name>Sindhu S</name>
+      <email>sindhus@live.in</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2013, 2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Mencetak dokumen</title>
+
+    <note style="important">
+      <p>Mencetak dengan <app>gedit</app> menuntut bahwa Anda Anda telah menyambungkan dan menata pencetak Anda. Bila Anda belum melakukan hal ini, silakan baca <link href="help:gnome-help/printing">bantuan pencetakan bagi GNOME</link>.</p>
+    </note>
+  
+  <p><app>gedit</app> memungkinkan Anda mencetak ke berkas dan ke kertas.</p>
+
+  <section id="print-preview">
+    <title>Pratinjau Cetak</title>
+
+  <p>Sebelum mencetak dokumen Anda, Anda dapat melihat bagaimana dokumen tercetak akan terlihat dengan memakai <gui>Pratinjau Cetak</gui>. Untuk mempratinjau dokumen:</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui style="menu">Berkas</gui> <gui style="menuitem">Pratinjau Cetak</gui></guiseq>. Sebagai alternative, Anda dapat menekan <keyseq><key>Shift</key><key>Ctrl</key> <key>P</key></keyseq>.</p>
+    </item>
+  </steps>
+
+  <p>Pratilik dokumen Anda akan terbuka dalam tab yang sama dengan berkas. Anda dapat meramban pratilik ini dengan bantuan tombol navigasi dan perkakas dalam bilah alat di puncak tab pratilik dokumen. Untuk menutup dan kembali ke dokumen klik <gui style="button">Tutup Pratilik</gui>.</p>
+
+  </section>
+
+  <section id="printing-to-paper">
+    <title>Mencetak Ke Kertas</title>
+
+  <p>Anda dapat mencetak dokumen Anda ke kertas memakai pencetak lokal atau jauh. Untuk mencetak suatu berkas:</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui style="menu">Berkas</gui> <gui style="menuitem">Cetak</gui> <gui style="tab">Umum</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pilih pencetak yang diinginkan dari daftar pencetak yang tersedia.</p>
+    </item>
+    <item>
+      <p>Anda dapat mempratinjau berkas memakai <gui style="button">Pratinjau Cetak</gui> dan setelah Anda puas dengan pengaturan, klik <gui style="button">Cetak</gui> untuk mengirim berkas ke pencetak.</p>
+    </item>
+  </steps>
+
+  <p>Sebagai tambahan, dari tab <gui style="tab">Penyiapan Halaman</gui>: Anda bisa memilih opsi <gui style="group">Tata Letak</gui> dan <gui style="group">Kertas</gui>. Karena pengaturan ini tersedia di seluruh program-program <app>GNOME</app>, silakan pelajari bantuan <link href="help:gnome-help/printing#paper">Opsi Tata Letak dan Kertas</link>.</p>
+
+  </section>
+
+  <section id="printing-order-select">
+    <title>Mencetak Beberapa Salinan Dan Memilih Halaman Tertentu</title>
+
+    <p>Anda bisa mengatur opsi <gui style="group">Jangkauan</gui> dan <gui style="group">Salinan</gui> untuk membantu Anda:</p>
+
+  </section>
+
+  <section id="printing-to-file">
+    <title>Mencetak Ke Berkas</title>
+
+  <p>Anda juga bisa memakai <app>gedit</app> untuk mencetak ke berkas. Untuk mencetak dokumen Anda ke berkas dengan format berbeda:</p>
+
+  <steps>
+    <item>
+      <p>Pilih <guiseq><gui style="menu">Berkas</gui> <gui style="menuitem">Cetak</gui> <gui style="menuitem">Cetak ke Berkas</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Pencetakan difungsikan untuk format-format berkas berikut, Anda bisa memilih dari:</p>
+      <list>
+        <item>
+          <p>Portable Document Format (.pdf)</p>
+        </item>
+        <item>
+          <p>PostScript (.ps)</p>
+        </item>
+        <item>
+          <p>Scalable Vector Graphic (.svg)</p>
+        </item>
+        </list>
+    </item>
+    <item>
+      <p>Untuk mencetak dokumen ke berkas, klik <gui style="button">Cetak</gui>.</p>
+    </item>
+  </steps>
+
+  </section>
+
+</page>

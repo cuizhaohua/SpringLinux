@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="task" id="gedit-full-screen" xml:lang="lv">
+
+  <info>
+    <link type="guide" xref="index#configure-gedit"/>
+    <revision pkgversion="3.8" date="2013-03-07" status="final"/>
+    <revision pkgversion="3.12" date="2014-02-17" status="review"/>
+    <credit type="author">
+      <name>Jim Campbell</name>
+      <email>jwcampbell@gmail.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Shobha Tyagi</name>
+      <email its:translate="no">tyagishobha@gmail.com</email>
+    </credit>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+  </info>
+
+  <title>Lietot pilnekrāna režīmu</title>
+
+  <p>Strādājot ar lielu dokumentu, var noderēt <app>gedit</app> pilnekrāna režīms. Šajā režīmā tiek noslēpta <gui>izvēlņu josla</gui>, <gui>ciļņu josla</gui> un <gui>rīku josla</gui>, atstājot vairāk vietas tekstam un ļaujot jums labāk koncentrēties darbam.</p>
+
+  <section id="turn-on-full-screen">
+    <title>Ieslēgt pilnekrāna režīmu</title>
+    <p>Lai ieslēgtu pilnekrāna režīmu, nospiediet <key>F11</key>. <app>gedit</app> izvēļņu, loga virsraksta un ciļņu joslas tiks paslēptas, un jūs redzēsiet tikai pašlaik atvērtās datnes tekstu.</p>
+    <p>Lai veiktu kādu darbību no <app>gedit</app> izvēlnes, strādājot pilnekrāna režīmā, pārvietojiet peles rādītāju uz ekrāna augšējo malu. <app>Gedit</app> izvēlņu josla atkal parādīsies, un jūs varēsiet izvēlēties vēlamo darbību.</p>
+
+    <note>
+      <p>Lai pārslēgtos starp atvērtajām cilnēm pilnekrāna režīmā, nospiediet vai nu <keyseq><key>Ctrl</key><key>Alt</key><key>PgUp</key></keyseq>, vai <keyseq><key>Ctrl</key><key>Alt</key><key>PgDn</key></keyseq>.</p>
+    </note>
+
+  </section>
+
+  <section id="turn-off-full-screen">
+    <title>Izslēgt pilnekrāna režīmu</title>
+    <p>Lai izslēgtu pilnekrāna režīmu un atgrieztos pie standarta <app>gedit</app> loga, spiediet <key>F11</key>.</p>
+    <p>Jūs varat arī pārvietot peles rādītāju augšup, kamēr parādās <gui>izvēļņu josla</gui>. Tad izvēlieties <gui>Pamest pilnekrānu</gui>.</p>
+  </section>
+
+</page>

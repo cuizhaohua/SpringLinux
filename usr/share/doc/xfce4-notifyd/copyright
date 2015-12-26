@@ -1,0 +1,29 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Xfce4-notifyd
+Upstream-Contact: Brian Tarricone <bjt23@cornell.edu>
+Source: http://goodies.xfce.org/projects/applications/xfce4-notifyd
+
+Files: *
+Copyright: © 2008 Brian Tarricone <bjt23@cornell.edu>
+License: GPL-2+
+
+Files: xfce4-notifyd/xfce-notify-window.c xfce4-notifyd/xfce-notify-window.h
+Copyright: © 2008 Brian Tarricone <bjt23@cornell.edu>
+           © 2010 Jérôme Guelfucci <jeromeg@xfce.org>
+License: GPL-2+
+
+Files: xfce4-notifyd/xfce-notify-daemon.c
+Copyright: © 2008 Brian Tarricone <bjt23@cornell.edu>
+           © 2010 Jérôme Guelfucci <jeromeg@xfce.org>
+License: GPL-2+
+
+Files: debian/*
+Copyright: © 2008-2013 Evgeni Golov <evgeni@debian.org>
+           © 2010-2013 Yves-Alexis Perez <corsac@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2'.
+

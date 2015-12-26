@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ ! -x /usr/share/cli-common/runtimes.d/$1 ]; then
+    echo ! Cannot remove GAC $1
+    exit 1
+fi
+
+echo "* Removing packages from $1"
+
+for file in /usr/share/cli-common/packages.d/*.installcligac
+do
+  if [ -f $file ]; then
+      /usr/share/cli-common/runtimes.d/$1 remove \
+	  $(basename $file .installcligac)
+  fi
+done

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Make sure the GAC file exists
+if [ ! -x /usr/share/cli-common/runtimes.d/$1 ]; then
+    echo ! Cannot install GAC $1
+    exit 1
+fi
+
+# Make some useful noise
+#echo "Installing packages in $1"
+
+for file in /usr/share/cli-common/packages.d/*.installcligac
+do
+  if [ -f $file ]; then
+      /usr/share/cli-common/gac-package-install \
+	  $(basename $file .installcligac) \
+	  $1
+  fi
+done

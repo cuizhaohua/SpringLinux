@@ -1,0 +1,13 @@
+b2428d950b74e8b9c59a41d05e5cc68f  usr/bin/thunar
+c79f3d90b9d1c3940c0d2e4c63272608  usr/bin/thunar-settings
+83d4aa4dc2328c92304a92bf7a536711  usr/lib/arm-linux-gnueabihf/Thunar/ThunarBulkRename
+b1265421713eb1132de2319913c8d2eb  usr/lib/arm-linux-gnueabihf/Thunar/thunar-sendto-email
+e29f96b160d8341a96fada5b1ea6e13d  usr/lib/arm-linux-gnueabihf/xfce4/panel/plugins/libthunar-tpa.so
+500c7f596cfc5ff62df9d1b58d5a34f5  usr/share/Thunar/sendto/thunar-sendto-email.desktop
+3218c3dd9261b95b81ad43ddb8b41f89  usr/share/applications/Thunar-bulk-rename.desktop
+902a6e2918c59904f1ccc8bc4716b621  usr/share/applications/Thunar-folder-handler.desktop
+325267517448796d9c883b88b66f3fc0  usr/share/applications/Thunar.desktop
+f931574e4d613c82d8ab95e47c6e1f5a  usr/share/applications/thunar-settings.desktop
+adbad611ad4d0ebdcd5c25c69fa555dd  usr/share/man/man1/Thunar.1.gz
+4758789cfcc104d92203bbc632ba719b  usr/share/menu/thunar
+e668c042e3ec89bca8cfe42f26b19949  usr/share/xfce4/panel-plugins/thunar-tpa.desktop

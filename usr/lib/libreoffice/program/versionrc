@@ -1,0 +1,12 @@
+[Version]
+AllLanguages=en-US af ar as ast be bg bn br bs ca ca-valencia cs cy da de dz el en-GB en-ZA eo es et eu fa fi fr ga gd gl gu he hi hr hu id is it ja ka kk km ko kmr-Latn lt lv mk mn ml mr nb ne nl nn nr nso oc om or pa-IN pl pt pt-BR ro ru rw si sk sl sr ss st sv ta te tg th tn tr ts ug uk uz ve vi xh zh-CN zh-TW zu
+BuildVersion=
+buildid=430m0(Build:2)
+ExtensionUpdateURL=http://updateexte.libreoffice.org/ExtensionUpdateService/check.Update
+ProductMajor=430
+ProductMinor=0
+ReferenceOOoMajorMinor=3.4
+UpdateID=LibreOffice_4_en-US_af_ar_as_ast_be_bg_bn_br_bs_ca_ca-valencia_cs_cy_da_de_dz_el_en-GB_en-ZA_eo_es_et_eu_fa_fi_fr_ga_gd_gl_gu_he_hi_hr_hu_id_is_it_ja_ka_kk_km_ko_kmr-Latn_lt_lv_mk_mn_ml_mr_nb_ne_nl_nn_nr_nso_oc_om_or_pa-IN_pl_pt_pt-BR_ro_ru_rw_si_sk_sl_sr_ss_st_sv_ta_te_tg_th_tn_tr_ts_ug_uk_uz_ve_vi_xh_zh-CN_zh-TW_zu
+UpdateURL=
+UpdateUserAgent=<PRODUCT> (${buildid}; ${_OS}; ${_ARCH}; BundledLanguages=${AllLanguages})
+Vendor=The Document Foundation/Debian

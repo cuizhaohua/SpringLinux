@@ -1,0 +1,8 @@
+4e01c95f364cd2516b3015428e7a9859  usr/lib/arm-linux-gnueabihf/refdbg/libgobject-2.0.so.0.4200.1
+e99bab0b31bc159013caeb61f3c3d5ef  usr/share/doc/libglib2.0-0-refdbg/AUTHORS
+8e1940c636340ca6b0866743b0f2dfab  usr/share/doc/libglib2.0-0-refdbg/NEWS.gz
+51b4651b81cae347719d011798ac12ff  usr/share/doc/libglib2.0-0-refdbg/README.gz
+cba7e93a44ea7f343e34bc4e53d5c1d0  usr/share/doc/libglib2.0-0-refdbg/changelog.Debian.gz
+3bb8d74a01d6c6156293265ee22eedfa  usr/share/doc/libglib2.0-0-refdbg/changelog.gz
+37aa7cdc50eb504646d52e9263328ac9  usr/share/doc/libglib2.0-0-refdbg/copyright
+4d8a0a8f275c689aa374ba54d296302d  usr/share/lintian/overrides/libglib2.0-0-refdbg

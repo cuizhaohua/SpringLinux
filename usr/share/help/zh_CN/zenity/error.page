@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="error" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="message"/>
+    <desc>使用 <cmd>--error</cmd> 选项。</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>TeliuTe</mal:name>
+      <mal:email>teliute@163.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>tuhaihe</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+  <title>错误框</title>
+      <p>使用 <cmd>--error</cmd> 选项创建一个错误对话框。</p>
+
+      <p>下面的脚本示范了如何创建一个错误对话框：</p>
+
+<code>
+#!/bin/bash
+
+zenity --error \
+--text="找不到 /var/log/syslog。"
+</code>
+
+
+      <figure id="zenity-error-screenshot">
+        <title>错误框范例</title>
+        <desc><app>Zenity</app> 错误对话框范例</desc>
+        <media type="image" mime="image/png" src="figures/zenity-error-screenshot.png"/>
+      </figure>
+</page>

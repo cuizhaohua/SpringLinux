@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libaa1
+/usr/share/doc/libaa1/copyright
+/usr/share/doc/libaa1/changelog.gz
+/usr/share/doc/libaa1/changelog.Debian.gz
+/usr/share/doc/libaa1/NEWS.gz
+/usr/share/doc/libaa1/README
+/usr/share/doc/libaa1/AUTHORS
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libaa.so.1.0.4
+/usr/lib/arm-linux-gnueabihf/libaa.so.1

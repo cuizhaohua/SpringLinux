@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="message" xml:lang="cs">
+  <info>
+    <link type="guide" xref="index#dialogs" group="message"/>
+    <desc><link xref="error">Chyba</link>, <link xref="info">Informace</link>, <link xref="question">Dotaz</link>, <link xref="warning">Varování</link></desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Marek Černocký</mal:name>
+      <mal:email>marek@manet.cz</mal:email>
+      <mal:years>2009, 2010, 2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Dialogové okno s hlášením</title>
+  <p>U každého z typů použijte přepínač <cmd>--text</cmd> k zadání textu, který se má v dialogovém okně zobrazit.</p>
+  <links type="topic" style="2column"/>
+</page>

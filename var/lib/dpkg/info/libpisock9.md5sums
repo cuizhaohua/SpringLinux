@@ -1,0 +1,11 @@
+6634ce83f1b586f179d19e735cda39d9  lib/udev/rules.d/60-libpisock9.rules
+a049904565b6c5ec5e01a6a885d647e0  usr/lib/libpisock.so.9.0.2
+71d0db636136fd92097e1aeea9eb0d1c  usr/share/doc/libpisock9/NEWS.gz
+692400a3a9a07f57b0e1a4e8df66325f  usr/share/doc/libpisock9/README.debugging
+2e8405ca3dade3548f9bd3bab85e7225  usr/share/doc/libpisock9/README.gz
+857225d4c9bc3fb595595f25ec906118  usr/share/doc/libpisock9/README.libusb.gz
+2149b0ce98d36b75ebdce12a204ba40d  usr/share/doc/libpisock9/README.usb.gz
+f1c65d8e91b4a7ae76c4e35a888593f0  usr/share/doc/libpisock9/TODO
+32021a89c7ab9b70f5f538165ab209ec  usr/share/doc/libpisock9/changelog.Debian.gz
+ce8242f5ca9cebdc31f13001d5c94105  usr/share/doc/libpisock9/changelog.gz
+0177aaf40760e9db9d82610a6609d0ec  usr/share/doc/libpisock9/copyright

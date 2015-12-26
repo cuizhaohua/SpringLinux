@@ -1,0 +1,3 @@
+?package(alsamixergui):needs="X11" section="Apps/Sound"\
+  title="Alsamixergui" command="/usr/bin/alsamixergui" \
+  icon="/usr/share/pixmaps/alsamixergui.xpm"

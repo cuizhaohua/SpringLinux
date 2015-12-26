@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="entry" xml:lang="el">
+  <info>
+    <link type="guide" xref="index#dialogs"/>
+    <desc>Χρησιμοποιήστε την επιλογή <cmd>--entry</cmd>.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Στέργιος Προσινικλής</mal:name>
+      <mal:email>steriosprosiniklis@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Θάνος Τρυφωνίδης</mal:name>
+      <mal:email>tomtryf@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Διάλογος καταχώρησης κειμένου</title>
+    <p>Χρησιμοποιήστε την επιλογή <cmd>--entry</cmd> για να δημιουργήσετε έναν διάλογο καταχώρησης κειμένου. Το <app>Zenity</app> αποδίδει τα περιεχόμενα της καταχώρησης κειμένου στην κανονική έξοδο.</p>	
+    <p>Ο διάλογος καταχώρησης κειμένου υποστηρίζει τις ακόλουθες επιλογές:</p>
+
+    <terms>
+
+      <item>
+        <title><cmd>--text</cmd>=<var>κείμενο</var></title>
+	<p>Καθορίζει το κείμενο που προβάλλεται στον διάλογο καταχώρησης κειμένου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--entry-text</cmd>=<var>κείμενο</var></title>
+	<p>Καθορίζει το κείμενο που προβάλλεται στο πεδίο εισαγωγής του διαλόγου καταχώρησης κειμένου.</p>
+      </item>
+
+      <item>
+        <title><cmd>--hide-text</cmd></title>
+	<p>Αποκρύπτει το κείμενο στο πεδίο εισαγωγής του διαλόγου καταχώρησης κειμένου.</p>
+      </item>
+
+    </terms>
+
+    <p>Το παρακάτω παράδειγμα σεναρίου εντολών σας δείχνει πως μπορείτε να δημιουργήσετε έναν διάλογο καταχώρησης κειμένου:</p>
+
+<code>
+#!/bin/sh
+
+if zenity --entry \
+--title="Προσθέστε νέο προφίλ" \
+--text="Πληκτρολογήστε το όνομα του νέου προφίλ:" \
+--entry-text "Νέο προφίλ"
+  then echo $?
+  else echo "Δε δόθηκε όνομα"
+fi
+</code>
+
+
+    <figure id="zenity-entry-screenshot">
+      <title>Παράδειγμα διαλόγου καταχώρησης κειμένου</title>
+      <desc>Παράδειγμα διαλόγου καταχώρησης κειμένου του <app>Zenity</app></desc>
+      <media type="image" mime="image/png" src="figures/zenity-entry-screenshot.png"/>
+    </figure>
+</page>
