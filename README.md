@@ -1,10 +1,11 @@
 SpringLinux
 ===========
 
-Linux based ARM and Debian .
+Linux based ARM , Debian  and XFCE4
 
 Support :
-1. cubietrunk/cubieboard3
+
+cubietrunk/cubieboard3
 
 Install:
 
